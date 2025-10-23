@@ -1,0 +1,57 @@
+baseURL = "http://localhost:1313/"
+languageCode = "fr-fr"
+title = "High-Tech"
+theme = "hightech"
+[pagination]
+  pagerSize = 10
+
+[params]
+  mainColor = "emerald-400"
+  sliderInterval = 5000  # milliseconds
+
+[menu]
+  [[menu.main]]
+    identifier = "smartphones"
+    name = "Smartphones"
+    url = "/smartphones/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tablettes"
+    name = "Tablettes"
+    url = "/tablettes/"
+    weight = 2
+  [[menu.main]]
+    identifier = "pc-portables"
+    name = "PCs portables"
+    url = "/pcs-portables/"
+    weight = 3
+  [[menu.main]]
+    identifier = "ordinateurs"
+    name = "Ordinateurs"
+    url = "/ordinateurs/"
+    weight = 4
+  [[menu.main]]
+    identifier = "ecrans"
+    name = "Ecrans"
+    url = "/ecrans/"
+    weight = 5
+  [[menu.main]]
+    identifier = "disques"
+    name = "Disques Externes"
+    url = "/disques-externes/"
+    weight = 6
+  [[menu.main]]
+    identifier = "cameras"
+    name = "Caméras"
+    url = "/cameras/"
+    weight = 7
+  [[menu.main]]
+    identifier = "accessoires"
+    name = "Accessoires"
+    url = "/accessoires/"
+    weight = 8
+  [[menu.main]]
+    identifier = "televisions"
+    name = "Téléviseurs"
+    url = "/televisions/"
+    weight = 9

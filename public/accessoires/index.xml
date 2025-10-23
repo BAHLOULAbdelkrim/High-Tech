@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Accessoires on High-Tech</title>
+    <link>http://localhost:1313/accessoires/</link>
+    <description>Recent content in Accessoires on High-Tech</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <atom:link href="http://localhost:1313/accessoires/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Marque A (Accessoires)</title>
+      <link>http://localhost:1313/accessoires/brand-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/accessoires/brand-1/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque A dans Accessoires.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque B (Accessoires)</title>
+      <link>http://localhost:1313/accessoires/brand-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/accessoires/brand-2/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque B dans Accessoires.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

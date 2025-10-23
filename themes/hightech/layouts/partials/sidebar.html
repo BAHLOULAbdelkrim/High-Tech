@@ -1,0 +1,21 @@
+<aside class="w-64 hidden lg:block">
+  <div class="bg-white border rounded p-4 sticky top-6">
+    <h3 class="font-semibold mb-3">Marques</h3>
+    <ul class="space-y-2">
+      {{ if .IsSection }}
+        {{ range .Pages }}
+          <li><a class="block py-1 px-2 rounded hover:bg-gray-100" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      {{ else if .IsHome }}
+        <li class="text-sm text-gray-500">Choisis une catégorie en haut pour voir les marques.</li>
+      {{ else }}
+        {{ $sec := .Section }}
+        {{ with .Site.GetPage (printf "/%s/" $sec) }}
+          {{ range .Pages }}
+            <li><a class="block py-1 px-2 rounded hover:bg-gray-100" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+</aside>

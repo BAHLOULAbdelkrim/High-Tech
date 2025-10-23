@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>High-Tech - Accueil on High-Tech</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in High-Tech - Accueil on High-Tech</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sun, 19 Oct 2025 12:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mon premier article - Test smartphone</title>
+      <link>http://localhost:1313/smartphones/mon-premier-article/</link>
+      <pubDate>Sun, 19 Oct 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/smartphones/mon-premier-article/</guid>
+      <description>&lt;p&gt;Bienvenue sur le site High-Tech ! Ceci est un article de test sur les smartphones.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque A (Accessoires)</title>
+      <link>http://localhost:1313/accessoires/brand-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/accessoires/brand-1/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque A dans Accessoires.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque A (Caméras)</title>
+      <link>http://localhost:1313/cameras/brand-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cameras/brand-1/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque A dans Caméras.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque A (Disques Externes)</title>
+      <link>http://localhost:1313/disques-externes/brand-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/disques-externes/brand-1/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque A dans Disques Externes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque A (Ecrans)</title>
+      <link>http://localhost:1313/ecrans/brand-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ecrans/brand-1/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque A dans Ecrans.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque A (Ordinateurs)</title>
+      <link>http://localhost:1313/ordinateurs/brand-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/brand-1/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque A dans Ordinateurs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque A (PCs portables)</title>
+      <link>http://localhost:1313/pcs-portables/brand-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pcs-portables/brand-1/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque A dans PCs portables.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque A (Smartphones)</title>
+      <link>http://localhost:1313/smartphones/brand-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/smartphones/brand-1/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque A dans Smartphones.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque A (Tablettes)</title>
+      <link>http://localhost:1313/tablettes/brand-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tablettes/brand-1/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque A dans Tablettes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque A (Téléviseurs)</title>
+      <link>http://localhost:1313/televisions/brand-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/televisions/brand-1/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque A dans Téléviseurs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque B (Accessoires)</title>
+      <link>http://localhost:1313/accessoires/brand-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/accessoires/brand-2/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque B dans Accessoires.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque B (Caméras)</title>
+      <link>http://localhost:1313/cameras/brand-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cameras/brand-2/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque B dans Caméras.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque B (Disques Externes)</title>
+      <link>http://localhost:1313/disques-externes/brand-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/disques-externes/brand-2/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque B dans Disques Externes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque B (Ecrans)</title>
+      <link>http://localhost:1313/ecrans/brand-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ecrans/brand-2/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque B dans Ecrans.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque B (Ordinateurs)</title>
+      <link>http://localhost:1313/ordinateurs/brand-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/brand-2/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque B dans Ordinateurs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque B (PCs portables)</title>
+      <link>http://localhost:1313/pcs-portables/brand-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pcs-portables/brand-2/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque B dans PCs portables.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque B (Smartphones)</title>
+      <link>http://localhost:1313/smartphones/brand-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/smartphones/brand-2/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque B dans Smartphones.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque B (Tablettes)</title>
+      <link>http://localhost:1313/tablettes/brand-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tablettes/brand-2/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque B dans Tablettes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque B (Téléviseurs)</title>
+      <link>http://localhost:1313/televisions/brand-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/televisions/brand-2/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque B dans Téléviseurs.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

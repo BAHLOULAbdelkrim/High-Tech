@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smartphones on High-Tech</title>
+    <link>http://localhost:1313/smartphones/</link>
+    <description>Recent content in Smartphones on High-Tech</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sun, 19 Oct 2025 12:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/smartphones/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mon premier article - Test smartphone</title>
+      <link>http://localhost:1313/smartphones/mon-premier-article/</link>
+      <pubDate>Sun, 19 Oct 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/smartphones/mon-premier-article/</guid>
+      <description>&lt;p&gt;Bienvenue sur le site High-Tech ! Ceci est un article de test sur les smartphones.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque A (Smartphones)</title>
+      <link>http://localhost:1313/smartphones/brand-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/smartphones/brand-1/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque A dans Smartphones.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marque B (Smartphones)</title>
+      <link>http://localhost:1313/smartphones/brand-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/smartphones/brand-2/</guid>
+      <description>&lt;p&gt;Article de présentation pour Marque B dans Smartphones.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
