@@ -1,13 +1,22 @@
-baseURL = "http://localhost:1313/"
-languageCode = "fr-fr"
-title = "High-Tech"
+baseURL = 'https://high-tech.pages.dev/'
+languageCode = 'fr-fr'
+title = 'High-Tech — Nouvelles Technologies, Tests et Comparatifs'
 theme = "hightech"
 [pagination]
   pagerSize = 10
 
 [params]
+  description = "Découvrez les dernières nouveautés high-tech : smartphones, ordinateurs, tablettes, caméras et plus encore. Tests, actualités et comparatifs complets."
   mainColor = "emerald-400"
   sliderInterval = 5000  # milliseconds
+  # Auteur
+  #  author = "Abdelkrim Bahloul"
+
+  # Réseaux sociaux
+  twitter = "https://twitter.com/tonprofil"
+  facebook = "https://facebook.com/tonprofil"
+  linkedin = "https://linkedin.com/in/tonprofil"
+  instagram = "https://instagram.com/tonprofil"
 
 [menu]
   [[menu.main]]

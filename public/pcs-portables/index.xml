@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PCs portables on High-Tech</title>
+    <title>PCs portables on High-Tech — Nouvelles Technologies, Tests et Comparatifs</title>
     <link>http://localhost:1313/pcs-portables/</link>
-    <description>Recent content in PCs portables on High-Tech</description>
+    <description>Recent content in PCs portables on High-Tech — Nouvelles Technologies, Tests et Comparatifs</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <atom:link href="http://localhost:1313/pcs-portables/index.xml" rel="self" type="application/rss+xml" />
