@@ -4,24 +4,60 @@
   <img src="{{ "images/Logo_2.png" | relURL }}" alt="High-Tech" class="w-12 h-12">
   <span class="text-2xl font-bold text-purple-900" style="font-family: 'Orbitron', sans-serif;">High-Tech</span>
 </a>
-<!--
-<a href="/" class="flex items-center gap-2">
-  <img src="{{ "images/logo.png" | relURL }}" alt="High-Tech" class="w-16 h-16">
-  <span class="text-2xl font-bold text-emerald-600">High-Tech</span>
-  </a>
-  -->
-  
-  <!--<a href="/" class="text-2xl font-bold text-emerald-600">High-Tech</a>-->
     <nav>
-      <ul class="flex gap-3">
+
+<ul class="grid grid-cols-5 gap-3 justify-center w-full max-w-5xl mx-auto">
+  {{ range first 5 .Site.Menus.main }}
+    <li class="w-full">
+      <a href="{{ .URL }}" 
+         class="block w-full text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+        {{ .Name }}
+      </a>
+    </li>
+  {{ end }}
+</ul>
+
+<ul class="grid grid-cols-5 gap-3 justify-center w-full max-w-5xl mx-auto mt-2">
+  {{ range after 5 .Site.Menus.main }}
+    <li class="w-full">
+      <a href="{{ .URL }}" 
+         class="block w-full text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+        {{ .Name }}
+      </a>
+    </li>
+  {{ end }}
+</ul>
+
+<!-- <ul class="grid grid-cols-6 gap-3 justify-center">
+  {{ range first 6 .Site.Menus.main }}
+    <li>
+      <a href="{{ .URL }}" 
+         class="px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+        {{ .Name }}
+      </a>
+    </li>
+  {{ end }}
+</ul>
+<ul class="grid grid-cols-4 gap-3 justify-center mt-2">
+  {{ range after 6 .Site.Menus.main }}
+    <li>
+      <a href="{{ .URL }}" 
+         class="px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+        {{ .Name }}
+      </a>
+    </li>
+  {{ end }}
+</ul> -->
+
+      <!--      <ul class="grid grid-cols-5 gap-3 justify-center">
         {{ range .Site.Menus.main }}
           <li>
-            <a href="{{ .URL }}" class="px-3 py-2 hover:bg-gray-100 rounded">
-              {{ .Name }}
+            <a href="{{ .URL }}" class="px-3 py-2 text-[20px] font-semibold text-violet-800 bg-gray-200 hover:text-emerald-700 hover:bg-violet-200 rounded transition-colors duration-300">
+             {{ .Name }}
             </a>
           </li>
         {{ end }}
-      </ul>
+      </ul>      -->
     </nav>
   </div>
 </header>

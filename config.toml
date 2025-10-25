@@ -41,7 +41,7 @@ theme = "hightech"
     weight = 4
   [[menu.main]]
     identifier = "ecrans"
-    name = "Ecrans"
+    name = "Écrans"
     url = "/ecrans/"
     weight = 5
   [[menu.main]]
@@ -55,12 +55,17 @@ theme = "hightech"
     url = "/cameras/"
     weight = 7
   [[menu.main]]
-    identifier = "accessoires"
-    name = "Accessoires"
-    url = "/accessoires/"
+    identifier = "montres"
+    name = "Montres"
+    url = "/montres/"
     weight = 8
   [[menu.main]]
     identifier = "televisions"
     name = "Téléviseurs"
     url = "/televisions/"
     weight = 9
+  [[menu.main]]
+    identifier = "accessoires"
+    name = "Accessoires"
+    url = "/accessoires/"
+    weight = 10

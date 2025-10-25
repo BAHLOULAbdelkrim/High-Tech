@@ -7,7 +7,7 @@
           <li><a class="block py-1 px-2 rounded hover:bg-gray-100" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
         {{ end }}
       {{ else if .IsHome }}
-        <li class="text-sm text-gray-500">Choisis une catégorie en haut pour voir les marques.</li>
+        <li class="text-sm font-roboto text-black">Choisir une catégorie en haut pour voir plus de détails !</li>
       {{ else }}
         {{ $sec := .Section }}
         {{ with .Site.GetPage (printf "/%s/" $sec) }}
