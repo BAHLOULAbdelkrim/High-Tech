@@ -1,6 +1,6 @@
-baseURL = 'https://baby-welcome.pages.dev/'
+baseURL = 'https://high-tech.pages.dev/'
 languageCode = 'fr-fr'
-title = 'Baby-Welcome — Nouvelles Technologies, Tests et Comparatifs'
+title = 'High-Tech — Nouvelles Technologies, Tests et Comparatifs'
 theme = "hightech"
 [pagination]
   pagerSize = 10
