@@ -8,7 +8,7 @@ theme = "hightech"
 [params]
   description = "Découvrez les dernières nouveautés high-tech : smartphones, ordinateurs, tablettes, caméras et plus encore. Tests, actualités et comparatifs complets."
   mainColor = "emerald-400"
-  sliderInterval = 5000  # milliseconds
+  sliderInterval = 3000  # milliseconds
   # Auteur
   #  author = "Abdelkrim Bahloul"
 
