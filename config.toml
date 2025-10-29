@@ -1,4 +1,278 @@
-baseURL = 'https://high-tech.pages.dev/'
-languageCode = 'fr-fr'
-title = 'High-Tech — Nouvelles Technologies, Tests et Comparatifs'
+baseURL = "https://high-tech.pages.dev/"
+languageCode = "fr-fr"
+defaultContentLanguage = "fr"
+title = "High-Tech — Nouvelles Technologies, Tests et Comparatifs"
 theme = "hightech"
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = "Nouveautés & Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d'achat complets."
+  mainColor = "emerald-400"
+  sliderInterval = 3000  # millisecondes
+  logo = "images/Logo_2.png"
+  author = "Abdelkrim Bahloul"
+
+  # Réseaux sociaux
+  twitter = "https://twitter.com/tonprofil"
+  facebook = "https://facebook.com/tonprofil"
+  linkedin = "https://linkedin.com/in/tonprofil"
+  instagram = "https://instagram.com/tonprofil"
+
+  # Langues disponibles
+  languages = ["fr", "en", "ar"]
+
+[languages]
+  [languages.fr]
+    languageName = "Français"
+    weight = 1
+  [languages.en]
+    languageName = "English"
+    weight = 2
+  [languages.ar]
+    languageName = "العربية"
+    weight = 3
+    direction = "rtl"
+
+[menu]
+
+  # 1. Smartphones
+  [[menu.main]]
+    identifier = "smartphones"
+    name = "Smartphones"
+    url = "/smartphones/"
+    weight = 1
+
+  [[menu.smartphones]]
+    name = "Android"
+    url = "/smartphones/android/"
+  [[menu.smartphones]]
+    name = "iPhone"
+    url = "/smartphones/iphone/"
+  [[menu.smartphones]]
+    name = "Pliables"
+    url = "/smartphones/pliables/"
+
+  # 2. Tablettes
+  [[menu.main]]
+    identifier = "tablettes"
+    name = "Tablettes"
+    url = "/tablettes/"
+    weight = 2
+
+  [[menu.tablettes]]
+    name = "Android"
+    url = "/tablettes/android/"
+  [[menu.tablettes]]
+    name = "iPad"
+    url = "/tablettes/ipad/"
+  [[menu.tablettes]]
+    name = "Windows"
+    url = "/tablettes/windows/"
+
+  # 3. Ordinateurs
+  [[menu.main]]
+    identifier = "ordinateurs"
+    name = "Ordinateurs"
+    url = "/ordinateurs/"
+    weight = 3
+
+  [[menu.ordinateurs]]
+    name = "Portables"
+    url = "/ordinateurs/portables/"
+  [[menu.ordinateurs]]
+    name = "PC de bureau"
+    url = "/ordinateurs/pc-de-bureau/"
+  [[menu.ordinateurs]]
+    name = "Mini PC"
+    url = "/ordinateurs/mini-pc/"
+  [[menu.ordinateurs]]
+    name = "Ultrabooks"
+    url = "/ordinateurs/ultrabooks/"
+  [[menu.ordinateurs]]
+    name = "Gaming"
+    url = "/ordinateurs/gaming/"
+
+  # 4. Appareils photo & Caméras
+  [[menu.main]]
+    identifier = "cameras"
+    name = "Appareils photo & Caméras"
+    url = "/cameras/"
+    weight = 4
+
+  [[menu.cameras]]
+    name = "Reflex"
+    url = "/cameras/reflex/"
+  [[menu.cameras]]
+    name = "Mirrorless"
+    url = "/cameras/mirrorless/"
+  [[menu.cameras]]
+    name = "Action Cam"
+    url = "/cameras/action-cam/"
+  [[menu.cameras]]
+    name = "Objectifs"
+    url = "/cameras/objectifs/"
+  [[menu.cameras]]
+    name = "Caméras de surveillance"
+    url = "/cameras/surveillance/"
+  [[menu.cameras]]
+    name = "Projecteurs"
+    url = "/cameras/projecteurs/"
+  [[menu.cameras]]
+    name = "Webcam"
+    url = "/cameras/webcam/"
+
+  # 5. Wearables
+  [[menu.main]]
+    identifier = "wearables"
+    name = "Wearables"
+    url = "/wearables/"
+    weight = 5
+
+  [[menu.wearables]]
+    name = "Smartwatches"
+    url = "/wearables/smartwatches/"
+  [[menu.wearables]]
+    name = "Bracelets fitness"
+    url = "/wearables/bracelets-fitness/"
+  [[menu.wearables]]
+    name = "Lunettes connectées"
+    url = "/wearables/lunettes-connectees/"
+  [[menu.wearables]]
+    name = "Réalité virtuelle"
+    url = "/wearables/vr/"
+
+  # 6. TV & Audio
+  [[menu.main]]
+    identifier = "tv-audio"
+    name = "TV & Audio"
+    url = "/tv-audio/"
+    weight = 6
+
+  [[menu.tv-audio]]
+    name = "Smart TV"
+    url = "/tv-audio/smart-tv/"
+  [[menu.tv-audio]]
+    name = "OLED"
+    url = "/tv-audio/oled/"
+  [[menu.tv-audio]]
+    name = "QLED"
+    url = "/tv-audio/qled/"
+  [[menu.tv-audio]]
+    name = "Projecteurs"
+    url = "/tv-audio/projecteurs/"
+
+  # 7. Gaming
+  [[menu.main]]
+    identifier = "gaming"
+    name = "Gaming"
+    url = "/gaming/"
+    weight = 7
+
+  [[menu.gaming]]
+    name = "Consoles"
+    url = "/gaming/consoles/"
+  [[menu.gaming]]
+    name = "Accessoires"
+    url = "/gaming/accessoires/"
+  [[menu.gaming]]
+    name = "Jeux vidéo"
+    url = "/gaming/jeux-video/"
+
+  # 8. Domotique
+  [[menu.main]]
+    identifier = "domotique"
+    name = "Domotique & Santé"
+    url = "/domotique/"
+    weight = 8
+
+  [[menu.domotique]]
+    name = "Assistants vocaux"
+    url = "/domotique/assistants-vocaux/"
+  [[menu.domotique]]
+    name = "Lampes connectées"
+    url = "/domotique/lampes/"
+  [[menu.domotique]]
+    name = "Thermostats"
+    url = "/domotique/thermostats/"
+  [[menu.domotique]]
+    name = "Santé connectée"
+    url = "/domotique/sante/"
+
+  # 9. Casques & Écouteurs
+  [[menu.main]]
+    identifier = "audio"
+    name = "Casques & Écouteurs"
+    url = "/audio/"
+    weight = 9
+
+  [[menu.audio]]
+    name = "Filaire"
+    url = "/audio/filaire/"
+  [[menu.audio]]
+    name = "Sans fil"
+    url = "/audio/sans-fil/"
+  [[menu.audio]]
+    name = "True Wireless"
+    url = "/audio/true-wireless/"
+
+  # 10. Objets connectés & Drones
+  [[menu.main]]
+    identifier = "objets"
+    name = "Objets connectés & Drones"
+    url = "/objets-connectes/"
+    weight = 10
+
+  [[menu.objets]]
+    name = "Drones"
+    url = "/objets-connectes/drones/"
+  [[menu.objets]]
+    name = "Caméras sportives"
+    url = "/objets-connectes/cameras-sportives/"
+  [[menu.objets]]
+    name = "Gadgets"
+    url = "/objets-connectes/gadgets/"
+
+  # 11. Impression & Consommables
+  [[menu.main]]
+    identifier = "impression"
+    name = "Impression & Consommables"
+    url = "/impression/"
+    weight = 11
+
+  [[menu.impression]]
+    name = "Imprimantes"
+    url = "/impression/imprimantes/"
+  [[menu.impression]]
+    name = "Imprimantes 3D"
+    url = "/impression/imprimantes-3d/"
+  [[menu.impression]]
+    name = "Photocopieuses"
+    url = "/impression/photocopieuses/"
+  [[menu.impression]]
+    name = "Scanners"
+    url = "/impression/scanners/"
+  [[menu.impression]]
+    name = "Consommables"
+    url = "/impression/consommables/"
+
+  # 12. Accessoires & Périphériques
+  [[menu.main]]
+    identifier = "accessoires"
+    name = "Accessoires & Périphériques"
+    url = "/accessoires/"
+    weight = 12
+
+  [[menu.accessoires]]
+    name = "Périphériques"
+    url = "/accessoires/peripheriques/"
+  [[menu.accessoires]]
+    name = "Stockage"
+    url = "/accessoires/stockage/"
+  [[menu.accessoires]]
+    name = "Énergie & Charge"
+    url = "/accessoires/energie-charge/"
+  [[menu.accessoires]]
+    name = "Protections"
+    url = "/accessoires/protections/"

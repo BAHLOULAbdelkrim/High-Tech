@@ -1,4 +1,78 @@
-<header>
-  <h1>High-Tech</h1>
-  <!-- Menu principal, barre de recherche et méga-menu ici -->
+<header class="bg-white shadow relative z-50">
+  <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Logo + Titre -->
+    <a href="/" class="flex items-center gap-2">
+      <img src="{{ 'images/Logo_2.png' | relURL }}" alt="High-Tech" class="w-12 h-12">
+      <span class="text-2xl font-bold text-purple-900" style="font-family: 'Orbitron', sans-serif;">High-Tech</span>
+    </a>
+
+    <!-- Bouton Burger -->
+    <button id="menu-toggle" class="md:hidden flex flex-col justify-between w-8 h-6 z-50 focus:outline-none" aria-label="Menu">
+      <span class="block w-full h-0.5 bg-violet-800 transition-transform duration-300"></span>
+      <span class="block w-full h-0.5 bg-violet-800 transition-opacity duration-300"></span>
+      <span class="block w-full h-0.5 bg-violet-800 transition-transform duration-300"></span>
+    </button>
+
+    <!-- Navigation principale (desktop) -->
+    <nav id="main-nav" class="hidden md:block w-full">
+      <ul class="grid grid-cols-6 gap-2 justify-center w-full max-w-6xl mx-auto">
+        {{ range first 6 .Site.Menus.main }}
+        <li class="group relative">
+          <a href="{{ .URL }}" class="block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+            {{ .Name }}
+          </a>
+          <!-- Mega-menu -->
+          <div class="absolute left-0 top-full hidden group-hover:flex w-80 bg-white shadow-lg p-4 z-50 flex-col space-y-2">
+            <p class="font-bold text-lg">{{ .Name }}</p>
+            <ul class="grid grid-cols-1 gap-2">
+              {{ range .Children }}
+              <li class="flex items-center gap-2">
+                <img src="{{ .Params.image | relURL }}" alt="{{ .Name }}" class="w-12 h-12 object-cover rounded">
+                <a href="{{ .URL }}" class="text-violet-800 hover:text-emerald-700">{{ .Name }}</a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </li>
+        {{ end }}
+      </ul>
+      <ul class="grid grid-cols-6 gap-2 justify-center w-full max-w-6xl mx-auto mt-2">
+        {{ range after 6 .Site.Menus.main }}
+        <li class="group relative">
+          <a href="{{ .URL }}" class="block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+            {{ .Name }}
+          </a>
+          <!-- Mega-menu -->
+          <div class="absolute left-0 top-full hidden group-hover:flex w-80 bg-white shadow-lg p-4 z-50 flex-col space-y-2">
+            <p class="font-bold text-lg">{{ .Name }}</p>
+            <ul class="grid grid-cols-1 gap-2">
+              {{ range .Children }}
+              <li class="flex items-center gap-2">
+                <img src="{{ .Params.image | relURL }}" alt="{{ .Name }}" class="w-12 h-12 object-cover rounded">
+                <a href="{{ .URL }}" class="text-violet-800 hover:text-emerald-700">{{ .Name }}</a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Menu mobile -->
+  <nav id="mobile-nav" class="absolute top-full left-0 w-full transform -translate-y-0 opacity-0 transition-all duration-300 ease-out flex-col space-y-2 bg-white border-t border-gray-200 px-4 py-3 md:hidden pointer-events-none shadow-lg">
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}" class="block text-center px-3 py-2 text-[18px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-all duration-300">
+      {{ .Name }}
+    </a>
+    {{ end }}
+  </nav>
+
+  <!-- Barre de recherche -->
+  <div class="container mx-auto px-4 py-4">
+    <input type="text" placeholder="Rechercher un article..." class="w-full md:w-1/2 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-emerald-400">
+  </div>
 </header>
+
+<script src="{{ 'assets/js/menu.js' | relURL }}"></script>
