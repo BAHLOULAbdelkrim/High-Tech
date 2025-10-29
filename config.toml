@@ -6,7 +6,7 @@ theme = "hightech"
   pagerSize = 10
 
 [params]
-  description = "Découvrez les dernières nouveautés high-tech : smartphones, ordinateurs, tablettes, caméras et plus encore. Tests, actualités et comparatifs complets."
+  description = "Nouveautés & Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d'achat complets."
   mainColor = "emerald-400"
   sliderInterval = 3000  # milliseconds
   # Auteur
