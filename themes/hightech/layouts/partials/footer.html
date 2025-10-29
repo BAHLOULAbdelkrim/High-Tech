@@ -33,7 +33,7 @@
         <button id="lang-toggle" class="flex items-center gap-2 px-3 py-2 bg-white border rounded shadow">
           🌐 <span id="current-lang">FR</span>
         </button>
-        <ul id="lang-menu" class="hidden absolute left-0 mt-2 bg-white border rounded shadow w-32">
+        <ul id="lang-menu" class="hidden absolute left-0 mt-2 bg-white border rounded shadow w-40">
           <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="fr">🇫🇷 Français</li>
           <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="en">🇬🇧 English</li>
           <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="ar">🇸🇦 العربية</li>
@@ -49,7 +49,7 @@
   </div>
 
   <div class="text-center mt-8 text-sm">
-    &copy; {{ now.Format \"2006\" }} High-Tech. Tous droits réservés.
+    &copy; {{ now.Format "2006" }} High-Tech. Tous droits réservés.
   </div>
 
   <script>
