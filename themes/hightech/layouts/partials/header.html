@@ -87,17 +87,20 @@
     <form id="search-form" class="flex items-center gap-2" action="{{ "/search/" | relURL }}" method="get">
       <input id="search-input" name="q" type="search" placeholder="Rechercher par mot-clé..." class="flex-1 px-4 py-2 border rounded focus:outline-none" />
       <button type="submit" class="px-4 py-2 rounded border font-semibold">Rechercher</button>
+
+      <!-- Sélecteur de langue déplacé ici -->
+      <div class="relative inline-block">
+        <button id="lang-toggle" class="flex items-center gap-2 px-3 py-2 bg-white border rounded shadow ml-2">
+          🌐 <span id="current-lang">FR</span>
+        </button>
+        <ul id="lang-menu" class="hidden absolute right-0 mt-2 bg-white border rounded shadow w-40">
+          <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="fr">🇫🇷 Français</li>
+          <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="en">🇬🇧 English</li>
+          <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="ar">🇸🇦 العربية</li>
+        </ul>
+      </div>
+
     </form>
-  </div>
-  <div class="relative inline-block">
-    <button id="lang-toggle" class="flex items-center gap-2 px-3 py-2 bg-white border rounded shadow">
-      🌐 <span id="current-lang">FR</span>
-    </button>
-    <ul id="lang-menu" class="hidden absolute right-0 mt-2 bg-white border rounded shadow w-40">
-      <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="fr">🇫🇷 Français</li>
-      <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="en">🇬🇧 English</li>
-      <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="ar">🇸🇦 العربية</li>
-    </ul>
   </div>
 </div>
 
