@@ -1,12 +1,86 @@
-<footer class="bg-gray-100 py-4 text-center">
-  <p>© {{ now.Year }} {{ .Site.Params.author }} — Tous droits réservés</p>
-  <div class="flex justify-center gap-4 mt-2">
-    <a href="{{ .Site.Params.twitter }}" target="_blank">Twitter</a>
-  <!-- <a href="{{ .Site.Params.facebook }}" target="_blank">Facebook</a> -->
-  <a href="{{ .Site.Params.facebook }}" target="_blank">
-      <img src="{{ "images/facebook.svg" | relURL }}" alt="Facebook" class="w-5 h-5">
-    </a>
-    <a href="{{ .Site.Params.linkedin }}" target="_blank">LinkedIn</a>
-    <a href="{{ .Site.Params.instagram }}" target="_blank">Instagram</a>
+<footer class="bg-gray-100 mt-10 pt-8 pb-4 text-gray-700">
+  <div class="container mx-auto px-4 grid md:grid-cols-4 gap-8">
+    <!-- Section Articles -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">Actualités – Nouveautés</h3>
+      <ul class="space-y-2">
+        {{ range first 5 (where .Site.RegularPages "Section" "actualites") }}
+        <li><a href="{{ .RelPermalink }}" class="hover:text-emerald-500">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-xl font-bold mb-4">Tests – Comparatifs</h3>
+      <ul class="space-y-2">
+        {{ range first 5 (where .Site.RegularPages "Section" "tests") }}
+        <li><a href="{{ .RelPermalink }}" class="hover:text-emerald-500">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-xl font-bold mb-4">Guides d’achat</h3>
+      <ul class="space-y-2">
+        {{ range first 5 (where .Site.RegularPages "Section" "guides") }}
+        <li><a href="{{ .RelPermalink }}" class="hover:text-emerald-500">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <!-- Langues et réseaux sociaux -->
+    <div class="space-y-4">
+      <h3 class="text-xl font-bold mb-2">Langue / Language</h3>
+      <div class="relative inline-block">
+        <button id="lang-toggle" class="flex items-center gap-2 px-3 py-2 bg-white border rounded shadow">
+          🌐 <span id="current-lang">FR</span>
+        </button>
+        <ul id="lang-menu" class="hidden absolute left-0 mt-2 bg-white border rounded shadow w-40">
+          <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="fr">🇫🇷 Français</li>
+          <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="en">🇬🇧 English</li>
+          <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="ar">🇸🇦 العربية</li>
+        </ul>
+      </div>
+      <div class="flex gap-3 mt-4">
+        <a href="{{ .Site.Params.twitter }}" target="_blank">Twitter</a>
+        <a href="{{ .Site.Params.facebook }}" target="_blank">Facebook</a>
+        <a href="{{ .Site.Params.linkedin }}" target="_blank">LinkedIn</a>
+        <a href="{{ .Site.Params.instagram }}" target="_blank">Instagram</a>
+      </div>
+    </div>
   </div>
+
+  <div class="text-center mt-8 text-sm">
+    &copy; {{ now.Format "2006" }} High-Tech. Tous droits réservés.
+  </div>
+
+  <script>
+  // Gestion du menu langue
+  const langToggle = document.getElementById('lang-toggle');
+  const langMenu = document.getElementById('lang-menu');
+  const currentLang = document.getElementById('current-lang');
+
+  // Détection automatique de la langue
+  const userLang = navigator.language || navigator.userLanguage;
+  if(userLang.startsWith('ar')) currentLang.textContent = 'AR';
+  else if(userLang.startsWith('en')) currentLang.textContent = 'EN';
+  else currentLang.textContent = 'FR';
+
+  langToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    langMenu.classList.toggle('hidden');
+  });
+
+  document.addEventListener('click', () => {
+    if(!langMenu.classList.contains('hidden')) langMenu.classList.add('hidden');
+  });
+
+  // Changement manuel
+  langMenu.querySelectorAll('li').forEach(item => {
+    item.addEventListener('click', () => {
+      currentLang.textContent = item.dataset.lang.toUpperCase();
+      langMenu.classList.add('hidden');
+      // Ici, tu peux ajouter redirection si nécessaire, par exemple:
+      // window.location.href = '/' + item.dataset.lang + '/';
+    });
+  });
+  </script>
 </footer>
