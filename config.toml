@@ -9,13 +9,12 @@ theme = "hightech"
   description = "Nouveautés & Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d'achat complets."
   mainColor = "emerald-400"
   sliderInterval = 3000  # milliseconds
-<<<<<<< HEAD
+ HEAD
   # Auteur
   #  author = "Abdelkrim Bahloul"
 
   # Réseaux sociaux
-=======
->>>>>>> c4c7b899cb02244aae1eba4015fe724150a3cd16
+
   twitter = "https://twitter.com/tonprofil"
   facebook = "https://facebook.com/tonprofil"
   linkedin = "https://linkedin.com/in/tonprofil"
