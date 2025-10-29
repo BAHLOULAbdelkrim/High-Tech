@@ -34,17 +34,19 @@
         {{ end }}
       </ul>
 
-<h3 class="text-xl font-bold mb-2">Langue / Language</h3>
-      <div class="relative inline-block">
-        <button id="lang-toggle" class="flex items-center gap-2 px-3 py-2 bg-white border rounded shadow">
-          🌐 <span id="current-lang">FR</span>
-        </button>
-        <ul id="lang-menu" class="hidden absolute left-0 mt-2 bg-white border rounded shadow w-40">
-          <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="fr">🇫🇷 Français</li>
-          <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="en">🇬🇧 English</li>
-          <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="ar">🇸🇦 العربية</li>
-        </ul>
-      </div>
+      <div class="flex justify-end">
+  <div class="relative inline-block">
+    <button id="lang-toggle" class="flex items-center gap-2 px-3 py-2 bg-white border rounded shadow">
+      🌐 <span id="current-lang">FR</span>
+    </button>
+    <ul id="lang-menu" class="hidden absolute right-0 mt-2 bg-white border rounded shadow w-40">
+      <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="fr">🇫🇷 Français</li>
+      <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="en">🇬🇧 English</li>
+      <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="ar">🇸🇦 العربية</li>
+    </ul>
+  </div>
+</div>
+
 
       <!-- Mega menu container (shared) -->
       <div id="mega-container" class="hidden absolute left-0 right-0 top-full mt-2 bg-white shadow-lg border-t border-gray-200 z-40">
