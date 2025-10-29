@@ -1,24 +1,17 @@
 <header class="bg-white shadow relative z-50">
   <div class="container mx-auto px-4 py-4 flex items-center justify-between">
     <!-- Logo + Titre -->
-    <a href="/" class="flex items-center gap-2">
+    <a href="/" class="flex items-center gap-2 min-w-[200px]">
       <img src="{{ .Site.Params.logo | absURL }}" alt="High-Tech" class="w-12 h-12">
       <span class="text-2xl font-bold text-purple-900" style="font-family: 'Orbitron', sans-serif;">High-Tech</span>
     </a>
 
-    <!-- Bouton Burger -->
-    <button id="menu-toggle" class="md:hidden flex flex-col justify-between w-8 h-6 z-50 focus:outline-none" aria-label="Menu">
-      <span class="block w-full h-0.5 bg-violet-800 transition-transform duration-300"></span>
-      <span class="block w-full h-0.5 bg-violet-800 transition-opacity duration-300"></span>
-      <span class="block w-full h-0.5 bg-violet-800 transition-transform duration-300"></span>
-    </button>
-
     <!-- Navigation principale (desktop) -->
-    <nav id="main-nav" class="hidden md:block w-full">
+    <nav id="main-nav" class="hidden md:block w-full ml-32">
       <ul class="grid grid-cols-6 gap-2 justify-end w-full max-w-6xl mx-auto">
         {{ range first 6 .Site.Menus.main }}
         <li class="group relative">
-          <a href="{{ .URL }}" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+          <a href="#" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
             {{ .Name }}
           </a>
         </li>
@@ -27,81 +20,83 @@
       <ul class="grid grid-cols-6 gap-2 justify-end w-full max-w-6xl mx-auto mt-2">
         {{ range after 6 .Site.Menus.main }}
         <li class="group relative">
-          <a href="{{ .URL }}" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+          <a href="#" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
             {{ .Name }}
           </a>
         </li>
         {{ end }}
       </ul>
-<!-- <div class="flex justify-end">
-
-</div> -->
-
-
-       Mega menu container (shared) -->
-      <div id="mega-container" class="hidden absolute left-0 right-0 top-full mt-2 bg-white shadow-lg border-t border-gray-200 z-40">
-        <div class="container mx-auto px-6 py-6 grid grid-cols-3 gap-6 items-start">
-          <div id="mega-left" class="col-span-1">
-            <h3 id="mega-title" class="text-xl font-bold text-gray-800 mb-4">Titre</h3>
-            <ul id="mega-list" class="space-y-2"></ul>
-            <button id="filter-brands" class="mt-4 inline-block px-3 py-2 border rounded font-semibold">Trier par marque</button>
-            <div id="submenu-details" class="mt-4 bg-gray-50 p-3 rounded hidden">
-              <div id="submenu-name" class="font-semibold text-gray-700"></div>
-              <ul id="submenu-child-list" class="mt-2 list-disc list-inside text-sm text-gray-600"></ul>
-            </div>
-          </div>
-
-          <div id="mega-covers" class="col-span-2 grid grid-cols-3 gap-4">
-            <div class="cover-item rounded overflow-hidden shadow">
-              <img id="cover-0" src="{{ "images/placeholder-1.jpg" | relURL }}" alt="cover1" class="w-full h-40 object-cover">
-              <div class="p-2 text-sm font-semibold">Actualités - Nouveautés</div>
-            </div>
-            <div class="cover-item rounded overflow-hidden shadow">
-              <img id="cover-1" src="{{ "images/placeholder-2.jpg" | relURL }}" alt="cover2" class="w-full h-40 object-cover">
-              <div class="p-2 text-sm font-semibold">Tests - Comparatifs</div>
-            </div>
-            <div class="cover-item rounded overflow-hidden shadow">
-              <img id="cover-2" src="{{ "images/placeholder-3.jpg" | relURL }}" alt="cover3" class="w-full h-40 object-cover">
-              <div class="p-2 text-sm font-semibold">Guides d'achat</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </nav>
   </div>
 
-  <!-- Menu mobile -->
-  <nav id="mobile-nav" class="absolute top-full left-0 w-full transform -translate-y-0 opacity-0 transition-all duration-300 ease-out flex-col space-y-2 bg-white border-t border-gray-200 px-4 py-3 md:hidden pointer-events-none shadow-lg">
+<!-- Bouton Burger (visible sur mobile seulement) -->
+<button id="menu-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 border rounded">
+  <span class="w-6 h-0.5 bg-gray-800 mb-1"></span>
+  <span class="w-6 h-0.5 bg-gray-800 mb-1"></span>
+  <span class="w-6 h-0.5 bg-gray-800"></span>
+</button>
+
+<!-- Menu mobile (caché par défaut) -->
+<nav id="mobile-nav" class="fixed top-16 left-0 w-full bg-white shadow-lg transform -translate-y-full transition-transform duration-300 opacity-0 pointer-events-none md:hidden z-50">
+  <ul class="flex flex-col space-y-2 p-4">
     {{ range .Site.Menus.main }}
-    <a href="{{ .URL }}" class="block text-center px-3 py-2 text-[18px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-all duration-300">
+    <li>
+      <a href="#" data-id="{{ .Identifier }}" class="block text-lg font-semibold text-violet-800 hover:text-emerald-700">
+        {{ .Name }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</nav>
+
+  
+  <!-- Bouton Burger -->
+  <!--  <button id="menu-toggle" class="md:hidden flex flex-col justify-between w-8 h-6 z-50 focus:outline-none" aria-label="Menu">
+      <span class="block w-full h-0.5 bg-violet-800 transition-transform duration-300"></span>
+      <span class="block w-full h-0.5 bg-violet-800 transition-opacity duration-300"></span>
+      <span class="block w-full h-0.5 bg-violet-800 transition-transform duration-300"></span>
+    </button>    -->
+
+  <!-- Menu mobile -->
+  <!-- <nav id="mobile-nav" class="absolute top-full left-0 w-full transform -translate-y-0 opacity-0 transition-all duration-300 ease-out flex-col space-y-2 bg-white border-t border-gray-200 px-4 py-3 md:hidden pointer-events-none shadow-lg">
+    {{ range .Site.Menus.main }}
+    <a href="#" data-id="{{ .Identifier }}" class="block text-center px-3 py-2 text-[18px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-all duration-300">
       {{ .Name }}
     </a>
     {{ end }}
   </nav>
-</header>
+</header>    -->
 
-<!-- Barre de recherche -->
-<div class="container mx-auto px-4 py-4">
-  <div class="max-w-4xl mx-auto">
-    <form id="search-form" class="flex items-center gap-2" action="{{ "/search/" | relURL }}" method="get">
-      <input id="search-input" name="q" type="search" placeholder="Rechercher par mot-clé..." class="flex-1 px-4 py-2 border rounded focus:outline-none" />
-      <button type="submit" class="px-4 py-2 rounded border font-semibold">Rechercher</button>
+<div class="container mx-auto px-4 py-4 flex items-center justify-between">
+  
+  <!-- Gauche : vide ou logo -->
+  <div class="flex-1"></div>
 
-      <!-- Sélecteur de langue déplacé ici -->
-      <div class="relative inline-block">
-        <button id="lang-toggle" class="flex items-center gap-2 px-3 py-2 bg-white border rounded shadow ml-2">
-          🌐 <span id="current-lang">FR</span>
-        </button>
-        <ul id="lang-menu" class="hidden absolute right-0 mt-2 bg-white border rounded shadow w-40">
-          <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="fr">🇫🇷 Français</li>
-          <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="en">🇬🇧 English</li>
-          <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="ar">🇸🇦 العربية</li>
-        </ul>
-      </div>
+  <!-- Centre : barre de recherche -->
+  <form id="search-form" class="flex-1 max-w-xl flex items-center gap-2 mx-auto" action="{{ "/search/" | relURL }}" method="get">
+    <input id="search-input" name="q" type="search" placeholder="Rechercher par mot-clé..."
+           class="flex-1 px-4 py-2 border rounded focus:outline-none" />
+    <button type="submit" class="px-4 py-2 rounded border font-semibold bg-emerald-100 hover:bg-violet-400 text-black"> 
+      Rechercher
+    </button>
+  </form>
 
-    </form>
+  <!-- Droite : sélecteur de langue -->
+  <div class="ml-4 relative z-50 flex-1 flex justify-end">
+    <button id="lang-toggle" class="flex items-center gap-2 px-3 py-2 bg-white border rounded shadow">
+      🌐 <span id="current-lang">FR</span>
+    </button>
+    <ul id="lang-menu" class="hidden absolute right-0 mt-2 bg-white border rounded shadow w-40">
+      <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="fr">FR - Français</li>
+      <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="en">EN - English</li>
+      <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="ar">AR - العربية</li>
+    </ul>
   </div>
+
 </div>
 
-<script src="{{ "assets/js/menu.js" | relURL }}"></script>
+
+<!-- Scripts -->
+<script src="/js/menu.js"></script>
+<script src="/js/subMenus.js"></script>
+

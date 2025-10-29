@@ -16,11 +16,11 @@
     </div>
   </div>
 
-  <!-- Latest posts -->
-  <section>
+  <!-- Zone centrale pour derniers articles / sous-menus -->
+  <section id="main-content">
     <h2 class="text-xl font-bold mb-4">Derniers articles</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {{ range first 9 (where .Site.RegularPages "Type" "in" (slice "smartphones" "tablettes" "pcs-portables" "ordinateurs" "ecrans" "disques-externes" "cameras" "accessoires" "televisions")) }}
+      {{ range first 9 (where .Site.RegularPages "Type" "in" (slice "smartphones" "tablettes" "ordinateurs" "photos-videos" "wearables" "televisions" "gaming" "domotique" "audio" "objets-connectes" "impression" "peripheriques" )) }}
         <article class="bg-white rounded shadow overflow-hidden">
           {{ with .Params.thumbnail }}
             <img src="{{ . }}" alt="{{ $.Title }}" class="w-full h-40 object-cover">
@@ -36,6 +36,7 @@
     </div>
   </section>
 
+  <!-- Slider JS -->
   <script>
     (function(){
       const interval = {{ default 5000 .Site.Params.sliderInterval }};
