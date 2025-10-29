@@ -1,22 +1,28 @@
-baseURL = 'https://baby-welcome.pages.dev/'
+baseURL = 'https://high-tech.pages.dev/'
 languageCode = 'fr-fr'
-title = 'Baby-Welcome — Nouvelles Technologies, Tests et Comparatifs'
+title = 'High-Tech — Nouvelles Technologies, Tests et Comparatifs'
 theme = "hightech"
 [pagination]
   pagerSize = 10
 
 [params]
-  description = "Découvrez les dernières nouveautés high-tech : smartphones, ordinateurs, tablettes, caméras et plus encore. Tests, actualités et comparatifs complets."
+  description = "Nouveautés & Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d'achat complets."
   mainColor = "emerald-400"
   sliderInterval = 3000  # milliseconds
+<<<<<<< HEAD
   # Auteur
   #  author = "Abdelkrim Bahloul"
 
   # Réseaux sociaux
+=======
+>>>>>>> c4c7b899cb02244aae1eba4015fe724150a3cd16
   twitter = "https://twitter.com/tonprofil"
   facebook = "https://facebook.com/tonprofil"
   linkedin = "https://linkedin.com/in/tonprofil"
   instagram = "https://instagram.com/tonprofil"
+  languages = ["fr","en","ar"]
+  logo = "images/Logo_2.png"
+
 
 [menu]
   [[menu.main]]
@@ -30,42 +36,52 @@ theme = "hightech"
     url = "/tablettes/"
     weight = 2
   [[menu.main]]
-    identifier = "pc-portables"
-    name = "PCs portables"
-    url = "/pcs-portables/"
-    weight = 3
-  [[menu.main]]
     identifier = "ordinateurs"
     name = "Ordinateurs"
     url = "/ordinateurs/"
+    weight = 3
+  [[menu.main]]
+    identifier = "appareils-photo"
+    name = "Appareils photo & Caméras"
+    url = "/appareils-photo/"
     weight = 4
   [[menu.main]]
-    identifier = "ecrans"
-    name = "Écrans"
-    url = "/ecrans/"
+    identifier = "wearables"
+    name = "Wearables"
+    url = "/wearables/"
     weight = 5
   [[menu.main]]
-    identifier = "disques"
-    name = "Disques Externes"
-    url = "/disques-externes/"
+    identifier = "tv-audio"
+    name = "TV & Audio"
+    url = "/tv-audio/"
     weight = 6
   [[menu.main]]
-    identifier = "cameras"
-    name = "Caméras"
-    url = "/cameras/"
+    identifier = "gaming"
+    name = "Gaming"
+    url = "/gaming/"
     weight = 7
   [[menu.main]]
-    identifier = "montres"
-    name = "Montres"
-    url = "/montres/"
+    identifier = "domotique"
+    name = "Domotique"
+    url = "/domotique/"
     weight = 8
   [[menu.main]]
-    identifier = "televisions"
-    name = "Téléviseurs"
-    url = "/televisions/"
+    identifier = "casques"
+    name = "Casques & Écouteurs"
+    url = "/casques/"
     weight = 9
   [[menu.main]]
-    identifier = "accessoires"
-    name = "Accessoires"
-    url = "/accessoires/"
+    identifier = "objets-connectes"
+    name = "Objets connectés & Drones"
+    url = "/objets-connectes/"
     weight = 10
+  [[menu.main]]
+    identifier = "impression"
+    name = "Impression & Consommables"
+    url = "/impression/"
+    weight = 11
+  [[menu.main]]
+    identifier = "accessoires"
+    name = "Accessoires & Périphériques"
+    url = "/accessoires/"
+    weight = 12
