@@ -15,7 +15,7 @@
 
     <!-- Navigation principale (desktop) -->
     <nav id="main-nav" class="hidden md:block w-full">
-      <ul class="grid grid-cols-6 gap-2 justify-center w-full max-w-6xl mx-auto">
+      <ul class="grid grid-cols-6 gap-2 justify-end w-full max-w-6xl mx-auto">
         {{ range first 6 .Site.Menus.main }}
         <li class="group relative">
           <a href="{{ .URL }}" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
@@ -24,7 +24,7 @@
         </li>
         {{ end }}
       </ul>
-      <ul class="grid grid-cols-6 gap-2 justify-center w-full max-w-6xl mx-auto mt-2">
+      <ul class="grid grid-cols-6 gap-2 justify-end w-full max-w-6xl mx-auto mt-2">
         {{ range after 6 .Site.Menus.main }}
         <li class="group relative">
           <a href="{{ .URL }}" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
