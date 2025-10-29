@@ -35,7 +35,7 @@ theme = "hightech"
     weight = 3
   [[menu.main]]
     identifier = "appareils-photo"
-    name = "Appareils photo & Caméras"
+    name = "Photos & Vidéos"
     url = "/appareils-photo/"
     weight = 4
   [[menu.main]]
@@ -45,7 +45,7 @@ theme = "hightech"
     weight = 5
   [[menu.main]]
     identifier = "tv-audio"
-    name = "TV & Audio"
+    name = "Télévisions"
     url = "/tv-audio/"
     weight = 6
   [[menu.main]]
@@ -60,21 +60,21 @@ theme = "hightech"
     weight = 8
   [[menu.main]]
     identifier = "casques"
-    name = "Casques & Écouteurs"
+    name = "Audio"
     url = "/casques/"
     weight = 9
   [[menu.main]]
     identifier = "objets-connectes"
-    name = "Objets connectés & Drones"
+    name = "Objets connectés"
     url = "/objets-connectes/"
     weight = 10
   [[menu.main]]
     identifier = "impression"
-    name = "Impression & Consommables"
+    name = "Impression"
     url = "/impression/"
     weight = 11
   [[menu.main]]
     identifier = "accessoires"
-    name = "Accessoires & Périphériques"
+    name = "Périphériques"
     url = "/accessoires/"
     weight = 12
