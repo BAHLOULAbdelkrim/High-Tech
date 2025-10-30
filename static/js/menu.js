@@ -77,3 +77,41 @@ document.querySelectorAll('.brand-filter input[type="checkbox"]').forEach(checkb
     });
   });
 });
+
+// ===== Menu langue (mobile) =====
+const langToggleMobile = document.getElementById('lang-toggle-mobile');
+const currentLangMobile = document.getElementById('current-lang-mobile');
+
+if (langToggleMobile) {
+  const langMenu = document.createElement('ul');
+  langMenu.className = 'absolute right-0 mt-2 bg-white border rounded shadow w-40';
+  langMenu.innerHTML = `
+    <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="fr">FR - Français</li>
+    <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="en">EN - English</li>
+    <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="ar">AR - العربية</li>
+  `;
+  langMenu.style.display = 'none';
+  langToggleMobile.parentElement.appendChild(langMenu);
+
+  // Ouvrir / fermer le menu au clic
+  langToggleMobile.addEventListener('click', (e) => {
+    e.stopPropagation();
+    langMenu.style.display = langMenu.style.display === 'none' ? 'block' : 'none';
+  });
+
+  // Fermer en cliquant ailleurs
+  document.addEventListener('click', () => {
+    langMenu.style.display = 'none';
+  });
+
+  // Changer de langue
+  langMenu.querySelectorAll('li').forEach(li => {
+    li.addEventListener('click', () => {
+      const newLang = li.dataset.lang.toUpperCase();
+      currentLangMobile.textContent = newLang;
+      langMenu.style.display = 'none';
+      // ici tu pourrais aussi rediriger vers la version traduite si besoin
+    });
+  });
+}
+

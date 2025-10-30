@@ -77,22 +77,33 @@
   </button>
 </div>   -->
 
+<!-- Style de la barre de recherche -->>
 <style>
-#menu-toggle.open .burger-line:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-#menu-toggle.open .burger-line:nth-child(2) {
-  opacity: 0;
-}
-#menu-toggle.open .burger-line:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
+/* Style des trois barres */
 #menu-toggle .burger-line {
   transition: all 0.3s ease;
   width: 100%;
   height: 3px;
   background-color: #4c1d95; /* violet-800 */
   border-radius: 2px;
+  transform-origin: center; /* ✅ rotation centrée */
+}
+
+/* Animation burger → croix */
+#menu-toggle.open .burger-line:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 7px; /* ajuste la position verticale */
+}
+
+#menu-toggle.open .burger-line:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle.open .burger-line:nth-child(3) {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -7px; /* ajuste symétriquement */
 }
 </style>
 
