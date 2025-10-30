@@ -30,11 +30,27 @@
   </div>
 
 <!-- Bouton Burger (visible sur mobile seulement) -->
-<button id="menu-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 border rounded">
+<!-- <button id="menu-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 border rounded">
   <span class="w-6 h-0.5 bg-gray-800 mb-1"></span>
   <span class="w-6 h-0.5 bg-gray-800 mb-1"></span>
   <span class="w-6 h-0.5 bg-gray-800"></span>
-</button>
+</button>  -->
+
+
+<!-- Bouton Burger aligné à droite -->
+<div class="ml-auto flex items-center">
+  <button
+    id="menu-toggle"
+    class="md:hidden flex flex-col justify-between w-8 h-6 z-50 focus:outline-none"
+    aria-label="Menu"
+  >
+    <span class="block w-full h-0.5 bg-violet-800 transition-transform duration-300"></span>
+    <span class="block w-full h-0.5 bg-violet-800 transition-opacity duration-300"></span>
+    <span class="block w-full h-0.5 bg-violet-800 transition-transform duration-300"></span>
+  </button>
+</div>
+
+
 
 <!-- Menu mobile (caché par défaut) -->
 <nav
@@ -55,25 +71,6 @@
     {{ end }}
   </ul>
 </nav>
-
-
-  
-  <!-- Bouton Burger -->
-  <!--  <button id="menu-toggle" class="md:hidden flex flex-col justify-between w-8 h-6 z-50 focus:outline-none" aria-label="Menu">
-      <span class="block w-full h-0.5 bg-violet-800 transition-transform duration-300"></span>
-      <span class="block w-full h-0.5 bg-violet-800 transition-opacity duration-300"></span>
-      <span class="block w-full h-0.5 bg-violet-800 transition-transform duration-300"></span>
-    </button>    -->
-
-  <!-- Menu mobile -->
-  <!-- <nav id="mobile-nav" class="absolute top-full left-0 w-full transform -translate-y-0 opacity-0 transition-all duration-300 ease-out flex-col space-y-2 bg-white border-t border-gray-200 px-4 py-3 md:hidden pointer-events-none shadow-lg">
-    {{ range .Site.Menus.main }}
-    <a href="#" data-id="{{ .Identifier }}" class="block text-center px-3 py-2 text-[18px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-all duration-300">
-      {{ .Name }}
-    </a>
-    {{ end }}
-  </nav>
-</header>    -->
 
 <div class="container mx-auto px-4 py-4 flex items-center justify-between">
   
