@@ -1,21 +1,15 @@
 {{ define "main" }}
   <!-- Slider -->
-  <div class="mb-6">
-    <div id="slider" class="relative overflow-hidden rounded-lg shadow">
-      {{ $slides := .Site.Params.slider }}
-      {{ if not $slides }}
-        <!-- fallback slides -->
-        <div class="slide"><img src="/images/slide1.jpg" alt="slide1" class="w-full h-64 object-cover"></div>
-        <div class="slide hidden"><img src="/images/slide2.jpg" alt="slide2" class="w-full h-64 object-cover"></div>
-        <div class="slide hidden"><img src="/images/slide3.jpg" alt="slide3" class="w-full h-64 object-cover"></div>
-        <div class="slide hidden"><img src="/images/slide4.jpg" alt="slide3" class="w-full h-64 object-cover"></div>
-      {{ else }}
-        {{ range $i, $s := $slides }}
-          <div class="slide {{ if ne $i 0 }}hidden{{ end }}"><img src="{{ $s }}" alt="slide{{ $i }}" class="w-full h-64 object-cover"></div>
-        {{ end }}
-      {{ end }}
+<div id="slider" class="relative overflow-hidden rounded-lg shadow">
+  {{ $slides := .Site.Params.slider }}
+  {{ $menus := .Site.Menus.main }}
+  
+  {{ range $i, $menu := $menus }}
+    <div class="slide {{ if ne $i 0 }}hidden{{ end }}" data-menu="{{ $menu.Identifier }}">
+      <img src="/images/{{ $menu.Identifier }}.png" alt="{{ $menu.Identifier }}" class="w-full h-64 object-cover">
     </div>
-  </div>
+  {{ end }}
+</div>
 
   <!-- Zone centrale pour derniers articles / sous-menus -->
   <section id="main-content">

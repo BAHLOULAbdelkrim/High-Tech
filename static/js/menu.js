@@ -125,40 +125,42 @@ if (langToggleMobile) {
 
 
 // ===== Slider spécifique par menu =====
-const slider = document.getElementById('slider');
+const slides = Array.from(document.querySelectorAll('#slider .slide'));
+let currentIndex = 0;
+let sliderInterval = null;
+const intervalTime = 3000; // ou {{ .Site.Params.sliderInterval }}
 
-// Définir l'image correspondante pour chaque menu
-const menuImages = {
-  smartphones: '/images/smartphones.png',
-  tablettes: '/images/tablettes.png',
-  ordinateurs: '/images/ordinateurs.png',
-  photos-videos: '/images/photosvideos.png',
-  wearables: '/images/wearables.png',
-  televisions: '/images/televisions.png',
-  gaming: '/images/gaming.png',
-  domotique: '/images/domotique.png',
-  audio: '/images/audio.png',
-  objets-connectes: '/images/objetsconnectes.png',
-  impression: '/images/impression.png',
-  peripheriques: '/images/peripheriques.png',
-};
+function showSlide(index) {
+  slides.forEach((slide, i) => slide.classList.toggle('hidden', i !== index));
+  currentIndex = index;
+}
 
-// Fonction pour afficher l'image correspondant au menu
+function startSlider() {
+  if (sliderInterval) clearInterval(sliderInterval);
+  sliderInterval = setInterval(() => {
+    let nextIndex = (currentIndex + 1) % slides.length;
+    showSlide(nextIndex);
+  }, intervalTime);
+}
+
+function stopSlider() {
+  if (sliderInterval) clearInterval(sliderInterval);
+}
+
+// démarrage automatique
+startSlider();
+
+// ===== Menu click pour slider =====
 document.querySelectorAll('.menu-item').forEach(menu => {
   menu.addEventListener('click', () => {
     const menuId = menu.dataset.id;
-    const imgSrc = menuImages[menuId];
-    if (!imgSrc) return;
-    if (typeof window.showSlideByMenuId === "function") {
-      window.showSlideByMenuId(menuId, imgSrc);
+
+    // trouver la slide correspondant au menu
+    const slideIndex = slides.findIndex(s => s.dataset.menu === menuId);
+    if (slideIndex !== -1) {
+      stopSlider();
+      showSlide(slideIndex);
     }
   });
 });
 
-// Lier chaque menu à son image
-document.querySelectorAll('.menu-item').forEach(menu => {
-  menu.addEventListener('click', () => {
-    const menuId = menu.dataset.id;
-    showSlideByMenu(menuId);
-  });
-});
