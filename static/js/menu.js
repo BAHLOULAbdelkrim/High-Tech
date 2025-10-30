@@ -4,12 +4,11 @@ const mobileNav = document.getElementById('mobile-nav');
 const bars = toggle ? toggle.querySelectorAll('span') : [];
 let isOpen = false;
 
-// 🟢 Ouvrir menu mobile (avec slide depuis la droite)
+// Ouvrir menu mobile
 function openMenu() {
   if (!mobileNav) return;
-  // remplacé la transition verticale (-translate-y-full) par une translation horizontale
-  mobileNav.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
-  mobileNav.classList.add('translate-x-0', 'opacity-100', 'pointer-events-auto');
+  mobileNav.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
+  mobileNav.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
 
   if (bars.length) {
     bars[0].classList.add('rotate-45', 'translate-y-1.5');
@@ -20,11 +19,11 @@ function openMenu() {
   isOpen = true;
 }
 
-// 🟢 Fermer menu mobile (slide vers la droite)
+// Fermer menu mobile
 function closeMenu() {
   if (!mobileNav) return;
-  mobileNav.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
-  mobileNav.classList.remove('translate-x-0', 'opacity-100', 'pointer-events-auto');
+  mobileNav.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+  mobileNav.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
 
   if (bars.length) {
     bars[0].classList.remove('rotate-45', 'translate-y-1.5');
@@ -62,13 +61,6 @@ document.addEventListener('click', (e) => {
 // --- Fermer si écran élargi ---
 window.addEventListener('resize', () => {
   if (window.innerWidth >= 768 && isOpen) closeMenu();
-});
-
-// 🟢 Fermer automatiquement le menu mobile quand on clique sur un lien
-document.querySelectorAll('#mobile-nav .menu-item').forEach(link => {
-  link.addEventListener('click', () => {
-    closeMenu();
-  });
 });
 
 // ===== Sidebar filtre marques =====
@@ -123,42 +115,3 @@ if (langToggleMobile) {
   });
 }
 
-
-// ===== Slider spécifique par menu =====
-const slider = document.getElementById('slider');
-
-// Définir l'image correspondante pour chaque menu
-const menuImages = {
-  smartphones: '/images/smartphones.png',
-  tablettes: '/images/tablettes.png',
-  ordinateurs: '/images/ordinateurs.png',
-  photos-videos: '/images/photosvideos.png',
-  wearables: '/images/wearables.png',
-  televisions: '/images/televisions.png',
-  gaming: '/images/gaming.png',
-  domotique: '/images/domotique.png',
-  audio: '/images/audio.png',
-  objets-connectes: '/images/objetsconnectes.png',
-  impression: '/images/impression.png',
-  peripheriques: '/images/peripheriques.png',
-};
-
-// Fonction pour afficher l'image correspondant au menu
-document.querySelectorAll('.menu-item').forEach(menu => {
-  menu.addEventListener('click', () => {
-    const menuId = menu.dataset.id;
-    const imgSrc = menuImages[menuId];
-    if (!imgSrc) return;
-    if (typeof window.showSlideByMenuId === "function") {
-      window.showSlideByMenuId(menuId, imgSrc);
-    }
-  });
-});
-
-// Lier chaque menu à son image
-document.querySelectorAll('.menu-item').forEach(menu => {
-  menu.addEventListener('click', () => {
-    const menuId = menu.dataset.id;
-    showSlideByMenu(menuId);
-  });
-});
