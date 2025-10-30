@@ -111,31 +111,31 @@ theme = "hightech"
 
       [[menu.main]]
       name = "Mirror-less"
-      parent = "photos-videos"
+      parent = "photosvideos"
       url = "/photosvideos/mirror-less/"
       weight = 2
 
       [[menu.main]]
       name = "Action-Cam"
-      parent = "photos-videos"
+      parent = "photosvideos"
       url = "/photosvideos/action-cam/"
       weight = 3
 
       [[menu.main]]
       name = "Objectifs"
-      parent = "photos-videos"
+      parent = "photosvideos"
       url = "/photosvideos/objectifs/"
       weight = 4
 
       [[menu.main]]
       name = "Surveillance"
-      parent = "photos-videos"
+      parent = "photosvideos"
       url = "/photosvideos/surveillance/"
       weight = 5
 
       [[menu.main]]
       name = "Web-Cam"
-      parent = "photos-videos"
+      parent = "photosvideos"
       url = "/photosvideos/web-cam/"
       weight = 6
  
