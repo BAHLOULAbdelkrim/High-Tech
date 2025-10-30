@@ -38,7 +38,7 @@
 
 
 <!-- Bouton Burger aligné à droite -->
-<div class="ml-auto flex right-0 items-center">
+<!-- <div class="ml-auto flex right-0 items-center">
   <button
     id="menu-toggle"
     class="md:hidden flex flex-col justify-between w-8 h-6 z-50 focus:outline-none"
@@ -48,8 +48,28 @@
     <span class="block w-full h-0.5 bg-violet-800 transition-opacity duration-300"></span>
     <span class="block w-full h-0.5 bg-violet-800 transition-transform duration-300"></span>
   </button>
-</div>
+</div>   -->
 
+
+<!-- Bouton burger / croix -->
+<button id="menu-toggle" class="flex flex-col justify-between w-8 h-6 focus:outline-none md:hidden relative z-50">
+  <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300"></span>
+  <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300"></span>
+  <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300"></span>
+</button>
+
+<style>
+  /* Animation burger → croix */
+  #menu-toggle.open .burger-line:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  #menu-toggle.open .burger-line:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle.open .burger-line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+</style>
 
 
 <!-- Menu mobile (caché par défaut) -->

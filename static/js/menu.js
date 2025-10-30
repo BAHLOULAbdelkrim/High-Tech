@@ -78,6 +78,33 @@ window.addEventListener('resize', () => {
 });
 
 
+
+const toggle = document.getElementById('menu-toggle');
+const mobileNav = document.getElementById('mobile-nav');
+let isOpen = false;
+
+function openMenu() {
+  mobileNav.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
+  mobileNav.classList.add('translate-y-0', 'opacity-100');
+  toggle.classList.add('open'); // <-- active l'animation croix
+  isOpen = true;
+}
+
+function closeMenu() {
+  mobileNav.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+  mobileNav.classList.remove('translate-y-0', 'opacity-100');
+  toggle.classList.remove('open'); // <-- repasse au burger
+  isOpen = false;
+}
+
+toggle.addEventListener('click', (e) => {
+  e.stopPropagation();
+  isOpen ? closeMenu() : openMenu();
+});
+
+
+
+
 // ===== Sidebar filtre marques =====
 // Si tes pages ont une .brand-filter avec des checkbox
 document.querySelectorAll('.brand-filter input[type="checkbox"]').forEach(checkbox => {
