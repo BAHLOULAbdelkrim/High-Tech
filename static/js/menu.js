@@ -7,8 +7,8 @@ let isOpen = false;
 // Ouvrir menu mobile
 function openMenu() {
   if (!mobileNav) return;
-  mobileNav.classList.remove('opacity-0', 'pointer-events-none', '-translate-y-0');
-  mobileNav.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+  mobileNav.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
+  mobileNav.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
 
   if (bars.length) {
     bars[0].classList.add('rotate-45', 'translate-y-1.5');
@@ -22,8 +22,8 @@ function openMenu() {
 // Fermer menu mobile
 function closeMenu() {
   if (!mobileNav) return;
-  mobileNav.classList.add('opacity-0', 'pointer-events-none', '-translate-y-0');
-  mobileNav.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+  mobileNav.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+  mobileNav.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
 
   if (bars.length) {
     bars[0].classList.remove('rotate-45', 'translate-y-1.5');
@@ -31,26 +31,6 @@ function closeMenu() {
     bars[2].classList.remove('-rotate-45', '-translate-y-1.5');
   }
 
-  isOpen = false;
-}
-
-
-// toggle
-const toggle = document.getElementById('menu-toggle');
-const mobileNav = document.getElementById('mobile-nav');
-let isOpen = false;
-
-function openMenu() {
-  mobileNav.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
-  mobileNav.classList.add('translate-y-0', 'opacity-100');
-  toggle.classList.add('open'); // active animation croix
-  isOpen = true;
-}
-
-function closeMenu() {
-  mobileNav.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
-  mobileNav.classList.remove('translate-y-0', 'opacity-100');
-  toggle.classList.remove('open'); // revient au burger
   isOpen = false;
 }
 
@@ -83,7 +63,6 @@ window.addEventListener('resize', () => {
 });
 
 // ===== Sidebar filtre marques =====
-// Si tes pages ont une .brand-filter avec des checkbox
 document.querySelectorAll('.brand-filter input[type="checkbox"]').forEach(checkbox => {
   checkbox.addEventListener('change', () => {
     const brand = checkbox.dataset.brand;
