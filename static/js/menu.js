@@ -30,7 +30,7 @@ function closeMenu() {
     bars[1].classList.remove('opacity-0');
     bars[2].classList.remove('-rotate-45', '-translate-y-1.5');
   }
-
+  toggle.classList.remove('open'); // ✅ Retire la croix quand on ferme
   isOpen = false;
 }
 
@@ -38,6 +38,7 @@ function closeMenu() {
 if (toggle) {
   toggle.addEventListener('click', (e) => {
     e.stopPropagation();
+    toggle.classList.toggle('open'); // ✅ Ajout pour animer la croix
     isOpen ? closeMenu() : openMenu();
   });
 }

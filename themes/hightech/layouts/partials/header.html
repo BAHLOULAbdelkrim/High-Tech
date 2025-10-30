@@ -27,7 +27,34 @@
         {{ end }}
       </ul>
     </nav>
+
+    <!-- Bouton burger / croix (mobile uniquement, à droite) -->
+    <button id="menu-toggle" class="md:hidden flex flex-col justify-between w-8 h-6 focus:outline-none relative z-50 ml-4">
+      <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300"></span>
+      <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300"></span>
+      <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300"></span>
+    </button>
   </div>
+
+  <!-- Section mobile : langue + recherche -->
+<div class="md:hidden flex flex-col items-center gap-2 px-4 py-2 bg-white shadow-sm">
+  <!-- Barre de langue (à droite du titre) -->
+  <div class="w-full flex justify-end">
+    <button id="lang-toggle-mobile" class="flex items-center gap-2 px-3 py-1 bg-white border rounded shadow">
+      🌐 <span id="current-lang-mobile">FR</span>
+    </button>
+  </div>
+
+  <!-- Barre de recherche -->
+  <form class="w-full flex items-center gap-2" action="{{ "/search/" | relURL }}" method="get">
+    <input name="q" type="search" placeholder="Rechercher..."
+           class="flex-1 px-3 py-2 border rounded focus:outline-none text-sm" />
+    <button type="submit" class="px-3 py-2 rounded border font-semibold bg-emerald-100 hover:bg-violet-400 text-black text-sm">
+      Rechercher
+    </button>
+  </form>
+</div>
+
 
 <!-- Bouton Burger (visible sur mobile seulement) -->
 <!-- <button id="menu-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 border rounded">
@@ -50,27 +77,24 @@
   </button>
 </div>   -->
 
-
-<!-- Bouton burger / croix -->
-<button id="menu-toggle" class="flex flex-col justify-between w-8 h-6 focus:outline-none md:hidden relative z-50">
-  <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300"></span>
-  <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300"></span>
-  <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300"></span>
-</button>
-
 <style>
-/* Animation burger ↔ croix */
 #menu-toggle.open .burger-line:nth-child(1) {
-  transform: rotate(45deg) translateY(8px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 #menu-toggle.open .burger-line:nth-child(2) {
   opacity: 0;
 }
 #menu-toggle.open .burger-line:nth-child(3) {
-  transform: rotate(-45deg) translateY(-8px);
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+#menu-toggle .burger-line {
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 3px;
+  background-color: #4c1d95; /* violet-800 */
+  border-radius: 2px;
 }
 </style>
-
 
 <!-- Menu mobile (caché par défaut) -->
 <nav
@@ -92,7 +116,7 @@
   </ul>
 </nav>
 
-<div class="container mx-auto px-4 py-4 flex items-center justify-between">
+<div class="container mx-auto px-4 py-4 items-center justify-between hidden md:flex">
   
   <!-- Gauche : vide ou logo -->
   <div class="flex-1"></div>
