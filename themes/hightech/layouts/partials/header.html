@@ -37,17 +37,25 @@
 </button>
 
 <!-- Menu mobile (caché par défaut) -->
-<nav id="mobile-nav" class="fixed top-16 left-0 w-full bg-white shadow-lg transform -translate-y-full transition-transform duration-300 opacity-0 pointer-events-none md:hidden z-50">
+<nav
+  id="mobile-nav"
+  class="fixed top-16 right-0 w-full bg-white shadow-lg transform -translate-y-full transition-transform duration-300 opacity-0 pointer-events-none md:hidden z-50"
+>
   <ul class="flex flex-col space-y-2 p-4">
     {{ range .Site.Menus.main }}
     <li>
-      <a href="#" data-id="{{ .Identifier }}" class="block text-lg font-semibold text-violet-800 hover:text-emerald-700">
+      <a
+        href="#"
+        data-id="{{ .Identifier }}"
+        class="menu-item block text-lg font-semibold text-violet-800 hover:text-emerald-700 transition-colors duration-300"
+      >
         {{ .Name }}
       </a>
     </li>
     {{ end }}
   </ul>
 </nav>
+
 
   
   <!-- Bouton Burger -->

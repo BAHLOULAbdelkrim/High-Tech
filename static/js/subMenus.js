@@ -1,7 +1,3 @@
-
-alert("subMenus.js chargé !");
-console.log(window.subMenus); // juste pour info si console disponible
-
 // --- Définition des sous-menus ---
 
 window.subMenus = {
