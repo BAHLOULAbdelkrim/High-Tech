@@ -51,8 +51,8 @@
       }, interval);
     })();
   </script>  -->
-  
-  <script>
+
+<script>
   // === Slider automatique ===
   const interval = {{ default 3000 .Site.Params.sliderInterval }};
   let i = 0;
@@ -60,7 +60,7 @@
   const slides = Array.from(document.querySelectorAll('#slider .slide'));
 
   // Fonction pour démarrer le slider
-  function startSlider() {
+  window.startSlider = function() {
     sliderInterval = setInterval(() => {
       slides[i].classList.add('hidden');
       i = (i + 1) % slides.length;
@@ -69,13 +69,15 @@
   }
 
   // Fonction pour arrêter le slider
-  function stopSlider() {
+  window.stopSlider = function() {
     clearInterval(sliderInterval);
   }
 
   // Démarrage automatique
-  if (slides.length > 0) startSlider();
+  if (slides.length > 0) window.startSlider();
 </script>
 
-  
+
+
+
 {{ end }}
