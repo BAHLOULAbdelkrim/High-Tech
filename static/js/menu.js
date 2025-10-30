@@ -122,3 +122,47 @@ if (langToggleMobile) {
     });
   });
 }
+
+
+// ===== Slider spécifique par menu =====
+const slider = document.getElementById('slider');
+
+// Définir l'image correspondante pour chaque menu
+const menuImages = {
+  smartphones: '/images/smartphones.png',
+  tablettes: '/images/tablettes.png',
+  ordinateurs: '/images/ordinateurs.png',
+  photosvideos: '/images/photosvideos.png',
+  wearables: '/images/wearables.png',
+  televisions: '/images/televisions.png',
+  gaming: '/images/gaming.png',
+  domotique: '/images/domotique.png',
+  audio: '/images/audio.png',
+  objetsconnectes: '/images/objetsconnectes.png',
+  impression: '/images/impression.png',
+  peripheriques: '/images/peripheriques.png',
+};
+
+// Fonction pour afficher l'image correspondant au menu
+function showSlideByMenu(menuId) {
+  if (!slider || !menuImages[menuId]) return;
+
+  // Supprimer toutes les slides existantes
+  slider.innerHTML = '';
+
+  // Créer une slide unique pour le menu
+  const slide = document.createElement('div');
+  slide.className = 'slide';
+  slide.innerHTML = `<img src="${menuImages[menuId]}" alt="${menuId}" class="w-full h-64 object-cover">`;
+
+  slider.appendChild(slide);
+}
+
+// Lier chaque menu à son image
+document.querySelectorAll('.menu-item').forEach(menu => {
+  menu.addEventListener('click', () => {
+    const menuId = menu.dataset.id;
+    showSlideByMenu(menuId);
+  });
+});
+
