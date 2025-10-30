@@ -144,22 +144,16 @@ const menuImages = {
 };
 
 // Fonction pour afficher l'image correspondant au menu
-function showSlideByMenu(menuId) {
-  if (!slider || !menuImages[menuId]) return;
-
-  // 🛑 Arrêter le slider automatique si il existe
-  if (typeof stopSlider === "function") stopSlider();
-
-  // Supprimer toutes les slides existantes
-  slider.innerHTML = '';
-
-  // Créer une slide unique pour le menu
-  const slide = document.createElement('div');
-  slide.className = 'slide';
-  slide.innerHTML = `<img src="${menuImages[menuId]}" alt="${menuId}" class="w-full h-64 object-cover">`;
-
-  slider.appendChild(slide);
-}
+document.querySelectorAll('.menu-item').forEach(menu => {
+  menu.addEventListener('click', () => {
+    const menuId = menu.dataset.id;
+    const imgSrc = menuImages[menuId];
+    if (!imgSrc) return;
+    if (typeof window.showSlideByMenuId === "function") {
+      window.showSlideByMenuId(menuId, imgSrc);
+    }
+  });
+});
 
 // Lier chaque menu à son image
 document.querySelectorAll('.menu-item').forEach(menu => {

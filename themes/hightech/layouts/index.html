@@ -38,45 +38,44 @@
   </section>
 
   <!-- Slider JS -->
-<!--  <script>
-    (function(){
-      const interval = {{ default 3000 .Site.Params.sliderInterval }};
-      let i = 0;
-      const slides = Array.from(document.querySelectorAll('#slider .slide'));
-      if (slides.length === 0) return;
-      setInterval(() => {
-        slides[i].classList.add('hidden');
-        i = (i + 1) % slides.length;
-        slides[i].classList.remove('hidden');
-      }, interval);
-    })();
-  </script>  -->
 
 <script>
-  // === Slider automatique ===
-  const interval = {{ default 3000 .Site.Params.sliderInterval }};
-  let i = 0;
+  const intervalTime = {{ default 3000 .Site.Params.sliderInterval }};
+  let currentIndex = 0;
   let sliderInterval;
-  const slides = Array.from(document.querySelectorAll('#slider .slide'));
+  const slider = document.getElementById('slider');
+  const defaultSlides = Array.from(slider.querySelectorAll('.slide'));
 
-  // Fonction pour démarrer le slider
-  window.startSlider = function() {
-    sliderInterval = setInterval(() => {
-      slides[i].classList.add('hidden');
-      i = (i + 1) % slides.length;
-      slides[i].classList.remove('hidden');
-    }, interval);
+  function showSlide(index) {
+    defaultSlides.forEach((slide, i) => {
+      slide.classList.toggle('hidden', i !== index);
+    });
+    currentIndex = index;
   }
 
-  // Fonction pour arrêter le slider
-  window.stopSlider = function() {
+  function startSlider() {
+    if (!defaultSlides.length) return;
+    sliderInterval = setInterval(() => {
+      const nextIndex = (currentIndex + 1) % defaultSlides.length;
+      showSlide(nextIndex);
+    }, intervalTime);
+  }
+
+  function stopSlider() {
     clearInterval(sliderInterval);
   }
 
   // Démarrage automatique
-  if (slides.length > 0) window.startSlider();
-</script>
+  startSlider();
 
+  // Expose pour menu.js
+  window.startSlider = startSlider;
+  window.stopSlider = stopSlider;
+  window.showSlideByMenuId = (menuId, imgSrc) => {
+    stopSlider();
+    slider.innerHTML = `<div class="slide"><img src="${imgSrc}" alt="${menuId}" class="w-full h-64 object-cover"></div>`;
+  };
+</script>
 
 
 
