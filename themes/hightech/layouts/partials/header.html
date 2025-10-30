@@ -55,7 +55,29 @@
   </form>
 </div>
 
-<!-- Style de la barre de recherche -->
+
+<!-- Bouton Burger (visible sur mobile seulement) -->
+<!-- <button id="menu-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 border rounded">
+  <span class="w-6 h-0.5 bg-gray-800 mb-1"></span>
+  <span class="w-6 h-0.5 bg-gray-800 mb-1"></span>
+  <span class="w-6 h-0.5 bg-gray-800"></span>
+</button>  -->
+
+
+<!-- Bouton Burger aligné à droite -->
+<!-- <div class="ml-auto flex right-0 items-center">
+  <button
+    id="menu-toggle"
+    class="md:hidden flex flex-col justify-between w-8 h-6 z-50 focus:outline-none"
+    aria-label="Menu"
+  >
+    <span class="block w-full h-0.5 bg-violet-800 transition-transform duration-300"></span>
+    <span class="block w-full h-0.5 bg-violet-800 transition-opacity duration-300"></span>
+    <span class="block w-full h-0.5 bg-violet-800 transition-transform duration-300"></span>
+  </button>
+</div>   -->
+
+<!-- Style de la barre de recherche -->>
 <style>
 /* Style des trois barres */
 #menu-toggle .burger-line {
@@ -88,7 +110,7 @@
 <!-- Menu mobile (caché par défaut) -->
 <nav
   id="mobile-nav"
-  class="fixed top-16 right-0 w-full bg-emerald-50 shadow-lg transform translate-x-full transition-all duration-500 ease-in-out opacity-0 pointer-events-none md:hidden z-50"
+  class="fixed top-16 right-0 w-full bg-white shadow-lg transform -translate-y-full transition-transform duration-300 opacity-0 pointer-events-none md:hidden z-50"
 >
   <ul class="flex flex-col space-y-2 p-4">
     {{ range .Site.Menus.main }}
@@ -96,7 +118,7 @@
       <a
         href="#"
         data-id="{{ .Identifier }}"
-        class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300"
+        class="menu-item block text-lg font-semibold text-violet-800 hover:text-emerald-700 transition-colors duration-300"
       >
         {{ .Name }}
       </a>
@@ -104,7 +126,6 @@
     {{ end }}
   </ul>
 </nav>
-
 
 <div class="container mx-auto px-4 py-4 items-center justify-between hidden md:flex">
   
