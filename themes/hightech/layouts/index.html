@@ -38,7 +38,7 @@
   </section>
 
   <!-- Slider JS -->
-  <script>
+<!--  <script>
     (function(){
       const interval = {{ default 3000 .Site.Params.sliderInterval }};
       let i = 0;
@@ -50,5 +50,32 @@
         slides[i].classList.remove('hidden');
       }, interval);
     })();
-  </script>
+  </script>  -->
+  
+  <script>
+  // === Slider automatique ===
+  const interval = {{ default 3000 .Site.Params.sliderInterval }};
+  let i = 0;
+  let sliderInterval;
+  const slides = Array.from(document.querySelectorAll('#slider .slide'));
+
+  // Fonction pour démarrer le slider
+  function startSlider() {
+    sliderInterval = setInterval(() => {
+      slides[i].classList.add('hidden');
+      i = (i + 1) % slides.length;
+      slides[i].classList.remove('hidden');
+    }, interval);
+  }
+
+  // Fonction pour arrêter le slider
+  function stopSlider() {
+    clearInterval(sliderInterval);
+  }
+
+  // Démarrage automatique
+  if (slides.length > 0) startSlider();
+</script>
+
+  
 {{ end }}

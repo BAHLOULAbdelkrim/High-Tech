@@ -147,6 +147,9 @@ const menuImages = {
 function showSlideByMenu(menuId) {
   if (!slider || !menuImages[menuId]) return;
 
+  // 🛑 Arrêter le slider automatique si il existe
+  if (typeof stopSlider === "function") stopSlider();
+
   // Supprimer toutes les slides existantes
   slider.innerHTML = '';
 
@@ -165,4 +168,3 @@ document.querySelectorAll('.menu-item').forEach(menu => {
     showSlideByMenu(menuId);
   });
 });
-
