@@ -98,45 +98,45 @@ theme = "hightech"
       weight = 5
 
   [[menu.main]]
-    identifier = "photosvideos"
+    identifier = "photos-videos"
     name = "Photos & Vidéos"
-    url = "/photosvideos/"
+    url = "/photos-videos/"
     weight = 4
  
       [[menu.main]]
       name = "Reflex"
-      parent = "photosvideos"
-      url = "/photosvideos/reflex/"
+      parent = "photos-videos"
+      url = "/photos-videos/reflex/"
       weight = 1
 
       [[menu.main]]
       name = "Mirror-less"
-      parent = "photosvideos"
-      url = "/photosvideos/mirror-less/"
+      parent = "photos-videos"
+      url = "/photos-videos/mirror-less/"
       weight = 2
 
       [[menu.main]]
       name = "Action-Cam"
-      parent = "photosvideos"
-      url = "/photosvideos/action-cam/"
+      parent = "photos-videos"
+      url = "/photos-videos/action-cam/"
       weight = 3
 
       [[menu.main]]
       name = "Objectifs"
-      parent = "photosvideos"
-      url = "/photosvideos/objectifs/"
+      parent = "photos-videos"
+      url = "/photos-videos/objectifs/"
       weight = 4
 
       [[menu.main]]
       name = "Surveillance"
-      parent = "photosvideos"
-      url = "/photosvideos/surveillance/"
+      parent = "photos-videos"
+      url = "/photos-videos/surveillance/"
       weight = 5
 
       [[menu.main]]
       name = "Web-Cam"
-      parent = "photosvideos"
-      url = "/photosvideos/web-cam/"
+      parent = "photos-videos"
+      url = "/photos-videos/web-cam/"
       weight = 6
  
   [[menu.main]]
@@ -320,27 +320,27 @@ theme = "hightech"
       weight = 6
 
   [[menu.main]]
-    identifier = "objetsconnectes"
+    identifier = "objets-connectes"
     name = "Obj. connectés"
-    url = "/objetsconnectes/"
+    url = "/objets-connectes/"
     weight = 10
 
     [[menu.main]]
     name = "Drones"
-    parent = "objetsconnectes"
-    url = "/objetsconnectes/drones/"
+    parent = "objets-connectes"
+    url = "/objets-connectes/drones/"
     weight = 1
 
     [[menu.main]]
     name = "Caméras sportives"
-    parent = "objetsconnectes"
-    url = "/objetsconnectes/cameras-sportives/"
+    parent = "objets-connectes"
+    url = "/objets-connectes/cameras-sportives/"
     weight = 2
 
     [[menu.main]]
     name = "Gadgets"
-    parent = "objetsconnectes"
-    url = "/objetsconnectes/gadgets/"
+    parent = "objets-connectes"
+    url = "/objets-connectes/gadgets/"
     weight = 3
 
   [[menu.main]]
