@@ -36,9 +36,24 @@ function closeMenu() {
 
 // Toggle menu mobile au clic sur le burger
 if (toggle) {
-  toggle.addEventListener('click', (e) => {
+  const spans = toggle.querySelectorAll("span");
+
+  toggle.addEventListener("click", (e) => {
     e.stopPropagation();
     isOpen ? closeMenu() : openMenu();
+
+    // 🔁 Animation burger ↔ croix
+    toggle.classList.toggle("open");
+
+    if (toggle.classList.contains("open")) {
+      spans[0].style.transform = "rotate(45deg) translateY(8px)";
+      spans[1].style.opacity = "0";
+      spans[2].style.transform = "rotate(-45deg) translateY(-8px)";
+    } else {
+      spans[0].style.transform = "rotate(0) translateY(0)";
+      spans[1].style.opacity = "1";
+      spans[2].style.transform = "rotate(0) translateY(0)";
+    }
   });
 }
 
