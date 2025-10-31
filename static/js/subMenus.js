@@ -109,6 +109,18 @@ document.addEventListener("DOMContentLoaded", function() {
       e.preventDefault();
       const id = item.getAttribute("data-id");
 
+// Gestion du clic sur les sous-menus pour inversion couleurs
+const submenuLinks = document.querySelectorAll('.submenu a');
+
+submenuLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    // Retirer la classe active de tous les liens
+    submenuLinks.forEach(l => l.classList.remove('active'));
+    // Ajouter active au lien cliqué
+    link.classList.add('active');
+  });
+});
+
 console.log("Clique sur :", id);
 
       if (!id || !window.subMenus[id]) return;
@@ -116,17 +128,18 @@ console.log("Clique sur :", id);
       const subs = window.subMenus[id];
       let html = `<h2 class="text-xl font-bold mb-4">${item.textContent}</h2>`;
       html += `<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">`;
+      
       subs.forEach(sub => {
-        html += `
-          <article class="bg-white rounded shadow overflow-hidden">
-            <div class="p-4">
-              <h3 class="font-semibold text-lg">
-                <a href="${sub.url}" class="hover:underline">${sub.name}</a>
-              </h3>
-            </div>
-          </article>
-        `;
+      html += `
+        <article class="submenu">
+          <h3 class="submenu-title">
+            <a href="${sub.url}">${sub.name}</a>
+          </h3>
+         </article>
+       `;
       });
+
+      
       html += `</div>`;
 
       mainContent.innerHTML = html;
