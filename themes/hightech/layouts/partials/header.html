@@ -156,43 +156,6 @@
 </div>
 
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const mobileNav = document.getElementById("mobile-nav");
-    const menuToggle = document.getElementById("menu-toggle"); // ton bouton hamburger
-    const menuLinks = mobileNav.querySelectorAll(".menu-item");
-
-    // Fonction pour fermer le menu
-    function closeMenu() {
-      mobileNav.classList.add("-translate-y-full", "opacity-0", "pointer-events-none");
-      mobileNav.classList.remove("translate-y-0", "opacity-100");
-    }
-
-    // Fermer le menu quand on clique sur un lien
-    menuLinks.forEach(link => {
-      link.addEventListener("click", () => {
-        closeMenu();
-      });
-    });
-
-    // Si tu as déjà un bouton hamburger, tu peux laisser ton script existant
-    // Mais si tu veux que le bouton réouvre le menu :
-    if (menuToggle) {
-      menuToggle.addEventListener("click", () => {
-        const isOpen = !mobileNav.classList.contains("pointer-events-none");
-        if (isOpen) {
-          closeMenu();
-        } else {
-          mobileNav.classList.remove("-translate-y-full", "opacity-0", "pointer-events-none");
-          mobileNav.classList.add("translate-y-0", "opacity-100");
-        }
-      });
-    }
-  });
-</script>
-
-
-
 <!-- Scripts -->
 <script src="/js/menu.js"></script>
 <script src="/js/subMenus.js"></script>
