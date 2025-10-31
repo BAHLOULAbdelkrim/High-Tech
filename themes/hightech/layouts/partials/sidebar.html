@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileNav = document.querySelector('#mobile-nav ul');
   if (!mobileNav) return;
 
-  const extraLinks = `
+  const extraLinks1 = `
     <hr class="my-4 border-emerald-200">
     <ul class="flex flex-col space-y-2">
       <li>
@@ -39,11 +39,22 @@ document.addEventListener('DOMContentLoaded', () => {
           Actualités & Nouveautés
         </a>
       </li>
+    /ul>
+    `;
+  const extraLinks2 = `
+    <hr class="my-4 border-emerald-200">
+    <ul class="flex flex-col space-y-2">
       <li>
         <a href="/tests-comparatifs/" class="icon-link block text-center px-3 py-2 text-[18px] font-semibold text-emerald-700 bg-violet-100 rounded transition duration-300 hover:text-violet-800 hover:bg-emerald-100">
           Filtrer par :
         </a>
       </li>
+    </ul>
+    `;
+  const extraLinks3 = `
+    <hr class="my-4 border-emerald-200">
+    <ul class="flex flex-col space-y-2">
+
       <li>
         <a href="https://www.facebook.com/tonpage" target="_blank"
            class="icon-link flex items-center justify-center gap-2 px-3 py-2 text-[18px] font-semibold text-emerald-700 bg-violet-100 rounded transition duration-300 hover:text-violet-800 hover:bg-emerald-100">
@@ -52,10 +63,10 @@ document.addEventListener('DOMContentLoaded', () => {
         </a>
       </li>
     </ul>
-  `;
-
+    `;
   // Ajout après les menus principaux
-  mobileNav.insertAdjacentHTML('beforeend', extraLinks);
+  mobileNav.insertAdjacentHTML('beforeend', extraLinks2);
+  mobileNav.insertAdjacentHTML('beforeend', extraLinks3);
 });
 </script>
 
