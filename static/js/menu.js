@@ -22,15 +22,25 @@ function openMenu() {
 // Fermer menu mobile
 function closeMenu() {
   if (!mobileNav) return;
-  mobileNav.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+
+  // Retire les classes "ouvertes"
   mobileNav.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
 
+  // Ajoute les classes de fermeture animée
+  mobileNav.classList.add('-translate-y-full', 'opacity-0');
+
+  // Désactive les clics **après l’animation** pour garder la fluidité
+  setTimeout(() => {
+    mobileNav.classList.add('pointer-events-none');
+  }, 300); // correspond à duration-300 en ms
+
+  // Burger redevient normal
   if (bars.length) {
     bars[0].classList.remove('rotate-45', 'translate-y-1.5');
     bars[1].classList.remove('opacity-0');
     bars[2].classList.remove('-rotate-45', '-translate-y-1.5');
   }
-  toggle.classList.remove('open'); // ✅ Retire la croix quand on ferme
+  toggle.classList.remove('open');
   isOpen = false;
 }
 
