@@ -66,40 +66,111 @@
   </nav>
 
   <!-- Styles -->
-  <style>
-    /* Burger animation */
-    #menu-toggle .burger-line { transition: all 0.3s ease; width: 100%; height: 3px; background-color: #4c1d95; border-radius: 2px; transform-origin: center; }
-    #menu-toggle.open .burger-line:nth-child(1) { transform: rotate(45deg); position: relative; top: 10px; }
-    #menu-toggle.open .burger-line:nth-child(2) { opacity: 0; }
-    #menu-toggle.open .burger-line:nth-child(3) { transform: rotate(-45deg); position: relative; top: -10px; }
+<style>
+  /* Burger animation */
+  #menu-toggle .burger-line {
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 3px;
+    background-color: #4c1d95;
+    border-radius: 2px;
+    transform-origin: center;
+  }
+  #menu-toggle.open .burger-line:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 10px;
+  }
+  #menu-toggle.open .burger-line:nth-child(2) { opacity: 0; }
+  #menu-toggle.open .burger-line:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -10px;
+  }
 
-    /* Menu mobile animation */
-    #mobile-nav { transition: transform 0.3s ease, opacity 0.3s ease; }
-    #mobile-nav.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+  /* Menu mobile animation */
+  #mobile-nav {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  #mobile-nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
 
-    /* Bloquer scroll page quand menu ouvert */
-    body.menu-open { overflow: hidden; }
+  /* Bloquer scroll page quand menu ouvert */
+  body.menu-open { overflow: hidden; }
 
-    /* Scroll interne menu mobile */
-    #mobile-nav ul { max-height: 100vh; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+  /* Scroll interne menu mobile */
+  #mobile-nav ul {
+    max-height: calc(100vh - 16px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 
-    /* Sous-menus */
-    .submenu a { display:block; font-size:1.25rem; font-weight:bold; padding:0.5rem 1rem; background:#f7afaf; color:#1e3a8a; border-radius:0.5rem; margin-bottom:0.5rem; text-decoration:none; transition:0.3s; }
-    .submenu a.active { background:#84a4fc; color:#ff0000; }
-    .submenu a:hover { background:#84a4fc; color:#ff0000; }
+  /* Sous-menus */
+  .submenu a {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background: #f7afaf;
+    color: #1e3a8a;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden; /* ✅ limite le reflet au lien seulement */
+  }
+  .submenu a.active { background: #84a4fc; color: #ff0000; }
+  .submenu a:hover { background: #84a4fc; color: #ff0000; }
 
-    .menu-main-title { font-size:2.5rem; font-weight:bold; color:#1e3a8a; margin-bottom:1rem; }
+  .menu-main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+  }
 
-    /* Brillance menus */
-    .menu-item { position:relative; overflow:hidden; }
-    .menu-item::before { content:""; position:absolute; top:0; left:-75%; width:50%; height:100%; background:linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); transform:skewX(-20deg); }
-    .menu-item:hover::before { animation: shine 0.7s forwards; }
-    @keyframes shine { 0% { left:-75%; } 100% { left:125%; } }
+  /* Brillance menus principaux */
+  .menu-item {
+    position: relative;
+    overflow: hidden;
+  }
+  .menu-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+    transform: skewX(-20deg);
+    overflow: hidden; /* ✅ limite le reflet */
+  }
+  .menu-item:hover::before { animation: shine 0.7s forwards; }
+  @keyframes shine { 0% { left: -75%; } 100% { left: 125%; } }
 
-    .submenu a::before { content:""; position:absolute; top:0; left:-75%; width:50%; height:100%; background:linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); transform:skewX(-20deg); }
-    .submenu a:hover::before { animation: shine-submenu 0.7s forwards; }
-    @keyframes shine-submenu { 0% { left:-75%; } 100% { left:125%; } }
-  </style>
+  /* Brillance sous-menus */
+  .submenu a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+    transform: skewX(-20deg);
+    overflow: hidden; /* ✅ limite le reflet */
+  }
+  .submenu a:hover::before { animation: shine-submenu 0.7s forwards; }
+  @keyframes shine-submenu { 0% { left: -75%; } 100% { left: 125%; } }
+</style>
+
 
   <script src="/js/menu.js"></script>
   <script src="/js/subMenus.js"></script>
