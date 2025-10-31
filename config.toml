@@ -27,7 +27,8 @@ theme = "hightech"
       name = "Android"
       parent = "smartphones"
       url = "/smartphones/android/"
-      weight = 1
+      weight = 1 
+#     image = "/images/android_logo.png"
     [[menu.main]]
       name = "iPhone"
       parent = "smartphones"
