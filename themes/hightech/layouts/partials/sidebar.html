@@ -1,63 +1,127 @@
-<aside class="w-128 hidden lg:block">
-  <div class="bg-white border rounded p-4 sticky top-6">
-    <ul class="space-y-2">
+<header class="bg-white shadow relative z-50">
+  <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Logo + Titre -->
+    <a href="/" class="flex items-center gap-2 min-w-[200px]">
+      <img src="{{ .Site.Params.logo | absURL }}" alt="High-Tech" class="w-12 h-12">
+      <span class="text-2xl font-bold text-purple-900" style="font-family: 'Orbitron', sans-serif;">High-Tech</span>
+    </a>
+
+    <!-- Navigation principale (desktop) -->
+    <nav id="main-nav" class="hidden md:block w-full ml-32">
+      <ul class="grid grid-cols-6 gap-2 justify-end w-full max-w-6xl mx-auto">
+        {{ range first 6 .Site.Menus.main }}
+        <li class="group relative">
+          <a href="#" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+            {{ .Name }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+      <ul class="grid grid-cols-6 gap-2 justify-end w-full max-w-6xl mx-auto mt-2">
+        {{ range after 6 .Site.Menus.main }}
+        <li class="group relative">
+          <a href="#" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+            {{ .Name }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+
+    <!-- Bouton burger -->
+    <button id="menu-toggle" class="md:hidden flex flex-col justify-between w-8 h-6 focus:outline-none relative z-50 ml-4">
+      <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300"></span>
+      <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300"></span>
+      <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300"></span>
+    </button>
+  </div>
+
+  <!-- Section mobile : langue + recherche -->
+  <div class="md:hidden flex flex-col items-center gap-2 px-4 py-2 bg-white shadow-sm">
+    <div class="w-full flex justify-end">
+      <button id="lang-toggle-mobile" class="flex items-center gap-2 px-3 py-1 bg-white border rounded shadow">
+        🌐 <span id="current-lang-mobile">FR</span>
+      </button>
+    </div>
+    <form class="w-full flex items-center gap-2" action="{{ "/search/" | relURL }}" method="get">
+      <input name="q" type="search" placeholder="Rechercher..." class="flex-1 px-3 py-2 border rounded focus:outline-none text-sm" />
+      <button type="submit" class="px-3 py-2 rounded border font-semibold bg-emerald-100 hover:bg-violet-400 text-black text-sm">Rechercher</button>
+    </form>
+  </div>
+
+  <!-- Menu mobile -->
+  <nav id="mobile-nav" class="fixed top-0 left-0 w-full h-full bg-white z-50 transform -translate-y-full opacity-0 pointer-events-none overflow-y-auto md:hidden">
+    <!-- Bouton fermer -->
+    <button id="mobile-nav-close" class="absolute top-4 right-4 w-8 h-8 flex flex-col justify-center items-center z-50">
+      <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300 rotate-45 translate-y-1"></span>
+      <span class="burger-line w-full h-1 bg-violet-800 rounded opacity-0"></span>
+      <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300 -rotate-45 -translate-y-1"></span>
+    </button>
+
+    <ul class="flex flex-col space-y-2 p-4 mt-20">
+      {{ range .Site.Menus.main }}
+      <li>
+        <a href="#" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+          {{ .Name }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+
+    <!-- 🔹 Ajout du contenu du menu latéral pour mobile -->
+    <hr class="my-4 border-emerald-200">
+    <ul class="flex flex-col space-y-2 px-4 pb-8">
       <li>
         <a href="/actualites-nouveautes/"
-           class="icon-link block text-center px-3 py-2 text-[20px] font-semibold text-emerald-700 bg-violet-100 rounded transition-colors duration-300 hover:text-violet-800 hover:bg-emerald-100">
+           class="icon-link block text-center px-3 py-2 text-[20px] font-semibold text-emerald-700 bg-violet-100 rounded transition duration-300 hover:text-violet-800 hover:bg-emerald-100">
           Actualités & Nouveautés
         </a>
       </li>
       <li>
         <a href="/tests-comparatifs/"
-           class="icon-link block text-center px-3 py-2 text-[20px] font-semibold text-emerald-700 bg-violet-100 rounded transition-colors duration-300 hover:text-violet-800 hover:bg-emerald-100">
+           class="icon-link block text-center px-3 py-2 text-[20px] font-semibold text-emerald-700 bg-violet-100 rounded transition duration-300 hover:text-violet-800 hover:bg-emerald-100">
           Filtrer par :
         </a>
       </li>
       <li>
         <a href="https://www.facebook.com/tonpage" target="_blank"
-           class="icon-link flex items-center justify-center gap-2 px-3 py-2 text-[20px] font-semibold text-emerald-700 bg-violet-100 rounded transition-colors duration-300 hover:text-violet-800 hover:bg-emerald-100">
+           class="icon-link flex items-center justify-center gap-2 px-3 py-2 text-[20px] font-semibold text-emerald-700 bg-violet-100 rounded transition duration-300 hover:text-violet-800 hover:bg-emerald-100">
           <img src="{{ "images/facebook.svg" | relURL }}" alt="Facebook" class="w-5 h-5">
           Facebook
         </a>
       </li>
     </ul>
-  </div>
-</aside>
+  </nav>
 
-<style>
-/* ---- Effet de brillance pour tous les liens du menu latéral ---- */
-.icon-link {
-  position: relative;
-  overflow: hidden;
-}
+  <!-- Styles -->
+  <style>
+    /* Animation burger */
+    #menu-toggle .burger-line { transition: all 0.3s ease; width: 100%; height: 3px; background-color: #4c1d95; border-radius: 2px; transform-origin: center; }
+    #menu-toggle.open .burger-line:nth-child(1) { transform: rotate(45deg); position: relative; top: 10px; }
+    #menu-toggle.open .burger-line:nth-child(2) { opacity: 0; }
+    #menu-toggle.open .burger-line:nth-child(3) { transform: rotate(-45deg); position: relative; top: -10px; }
 
-/* Reflet — identique à celui du header */
-.icon-link::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -75%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255,255,255,0) 0%,
-    rgba(255,255,255,0.5) 50%,
-    rgba(255,255,255,0) 100%
-  );
-  transform: skewX(-20deg);
-  overflow: hidden;
-}
+    /* Transition menu mobile */
+    #mobile-nav { transition: transform 0.3s ease, opacity 0.3s ease; transform: translateY(-100%); opacity: 0; pointer-events: none; }
+    #mobile-nav.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
 
-/* Animation */
-.icon-link:hover::before,
-.icon-link:active::before {
-  animation: shine-aside 0.7s forwards;
-}
+    body.menu-open { overflow: hidden; }
 
-/* Même animation que dans le header */
-@keyframes shine-aside {
-  0% { left: -75%; }
-  100% { left: 125%; }
-}
-</style>
+    /* Brillance */
+    .icon-link, .menu-item { position: relative; overflow: hidden; }
+    .icon-link::before, .menu-item::before {
+      content: "";
+      position: absolute;
+      top: 0; left: -75%;
+      width: 50%; height: 100%;
+      background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+      transform: skewX(-20deg);
+      overflow: hidden;
+    }
+    .icon-link:hover::before, .menu-item:hover::before { animation: shine 0.7s forwards; }
+    @keyframes shine { 0% { left: -75%; } 100% { left: 125%; } }
+  </style>
+
+  <script src="/js/menu.js"></script>
+  <script src="/js/subMenus.js"></script>
+</header>
