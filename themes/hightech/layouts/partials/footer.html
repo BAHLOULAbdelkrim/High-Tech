@@ -37,51 +37,47 @@
   </script>
 
   <!-- 🔽 Ajout du script de gestion des images de couverture -->
-  <script>
+<script>
 document.addEventListener('DOMContentLoaded', function() {
   const coverContainer = document.getElementById('cover-container');
   if (!coverContainer) return;
 
-  // On garde une copie du contenu original du slider
   const originalHTML = coverContainer.innerHTML;
 
-  // Cibler tous les liens de menu (desktop + mobile)
   const menuLinks = document.querySelectorAll('a[data-menu]');
-
-  // Conteneur d’image du menu actif
   const menuImageOverlay = document.createElement('div');
   menuImageOverlay.id = 'menu-image-overlay';
   menuImageOverlay.style.position = 'relative';
   menuImageOverlay.style.width = '100%';
-  menuImageOverlay.style.height = '16rem'; /* même hauteur que h-64 */
+  menuImageOverlay.style.height = '16rem';
   menuImageOverlay.style.overflow = 'hidden';
   menuImageOverlay.style.borderRadius = '0.5rem';
   menuImageOverlay.style.display = 'none';
   menuImageOverlay.style.animation = 'fadeIn 1s ease-in-out';
   coverContainer.parentNode.insertBefore(menuImageOverlay, coverContainer.nextSibling);
 
+  // ✅ Correction principale ici
   menuLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
+    link.addEventListener('mouseenter', function() {
+      // on utilise "mouseenter" au lieu de "click" pour ne pas bloquer les sous-menus
       const menuId = this.getAttribute('data-menu');
       const imagePath = `/images/${menuId}.png`;
 
-      // Affiche l’image du menu dans la zone dédiée
       menuImageOverlay.innerHTML = `
-        <img src="${imagePath}" alt="${menuId}" 
+        <img src="${imagePath}" alt="${menuId}"
              class="w-full h-64 object-cover rounded-lg shadow">
       `;
       menuImageOverlay.style.display = 'block';
       coverContainer.style.display = 'none';
+    });
 
-      // Fermer sidebar mobile si ouverte
-      const sidebar = document.querySelector('.sidebar, #sidebar, nav.sidebar');
-      if (sidebar && sidebar.classList.contains('open')) {
-        sidebar.classList.remove('open');
-      }
+    link.addEventListener('mouseleave', function() {
+      // Quand on quitte le menu, on remet l’image de fond originale
+      menuImageOverlay.style.display = 'none';
+      coverContainer.style.display = 'block';
     });
   });
 
-  // Si on clique sur le logo ou lien vers /
   const homeLinks = document.querySelectorAll('a[href="/"], a[href="#home"]');
   homeLinks.forEach(link => {
     link.addEventListener('click', function() {
@@ -91,7 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Animation CSS fadeIn
   const style = document.createElement('style');
   style.textContent = `
     @keyframes fadeIn {
@@ -102,6 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.head.appendChild(style);
 });
 </script>
+
 
 
 </footer>
