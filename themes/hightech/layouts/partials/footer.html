@@ -54,10 +54,16 @@
         const imagePath = `/images/${menuId}.png`;
 
         if (coverContainer) {
+//          coverContainer.innerHTML = `
+//            <img src="${imagePath}" alt="${menuId}"
+//                 style="width:100%;height:auto;object-fit:cover;animation:fadeIn 1s ease-in-out;">
+//          `;
           coverContainer.innerHTML = `
+          <div class="relative overflow-hidden rounded-lg shadow">
             <img src="${imagePath}" alt="${menuId}"
-                 style="width:100%;height:auto;object-fit:cover;animation:fadeIn 1s ease-in-out;">
-          `;
+                class="w-full h-64 object-cover rounded-lg shadow animate-fadeIn">
+          </div>
+        `;
         }
 
         // Si un menu mobile (sidebar) est ouvert, on le referme
