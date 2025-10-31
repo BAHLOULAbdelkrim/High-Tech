@@ -25,10 +25,36 @@
   </div>
 </aside>
 
-<!-- Mobile nav — injecte les liens supplémentaires -->
+<!-- Mobile nav — menu scrollable et liens injectés -->
+<nav id="mobile-nav" class="fixed top-0 left-0 w-full h-full bg-white z-50 transform -translate-y-full opacity-0 pointer-events-none md:hidden">
+  <!-- Bouton fermer -->
+  <button id="mobile-nav-close" class="absolute top-4 right-4 w-8 h-8 flex flex-col justify-center items-center z-50">
+    <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300 rotate-45 translate-y-1"></span>
+    <span class="burger-line w-full h-1 bg-violet-800 rounded opacity-0"></span>
+    <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300 -rotate-45 -translate-y-1"></span>
+  </button>
+
+  <!-- Conteneur scrollable -->
+  <div class="mt-20 h-full overflow-y-auto" style="-webkit-overflow-scrolling: touch; padding: 0 1rem;">
+    <ul id="mobile-menu-list" class="flex flex-col space-y-2">
+      <!-- 1️⃣ Liens avant les menus principaux injectés par JS -->
+      <!-- 2️⃣ Menus principaux générés par Hugo -->
+      {{ range .Site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+          {{ .Name }}
+        </a>
+      </li>
+      {{ end }}
+      <!-- 3️⃣ Lien Facebook à la fin injecté par JS -->
+    </ul>
+  </div>
+</nav>
+
+<!-- JS pour injecter les trois liens fixes -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const menu = document.querySelector('#mobile-nav ul');
+  const menu = document.getElementById('mobile-menu-list');
   if (!menu) return;
 
   // Liens à mettre avant les menus principaux
@@ -45,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </li>
     <hr class="my-2 border-emerald-200">
   `;
+  menu.insertAdjacentHTML('afterbegin', beforeLinks);
 
   // Lien Facebook à la fin
   const afterLinks = `
@@ -57,14 +84,12 @@ document.addEventListener('DOMContentLoaded', () => {
       </a>
     </li>
   `;
-
-  menu.insertAdjacentHTML('afterbegin', beforeLinks);
   menu.insertAdjacentHTML('beforeend', afterLinks);
 });
 </script>
 
+<!-- Styles pour brillance -->
 <style>
-/* ---- Effet de brillance ---- */
 .icon-link {
   position: relative;
   overflow: hidden;
