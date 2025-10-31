@@ -4,11 +4,11 @@ const mobileNav = document.getElementById('mobile-nav');
 const bars = toggle ? toggle.querySelectorAll('span') : [];
 let isOpen = false;
 
-// Ouvrir menu mobile
+// ouvrir menu mobile
 function openMenu() {
   if (!mobileNav) return;
-  mobileNav.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
-  mobileNav.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+
+  mobileNav.classList.add('open'); // ajoute la classe animée
 
   if (bars.length) {
     bars[0].classList.add('rotate-45', 'translate-y-1.5');
@@ -19,27 +19,24 @@ function openMenu() {
   isOpen = true;
 }
 
-// Fermer menu mobile
+// fermer menu mobile
 function closeMenu() {
   if (!mobileNav) return;
 
-  // Retire les classes "ouvertes"
-  mobileNav.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+  // retire l’animation ouverte
+  mobileNav.classList.remove('open');
 
-  // Ajoute les classes de fermeture animée
-  mobileNav.classList.add('-translate-y-full', 'opacity-0');
-
-  // Désactive les clics **après l’animation** pour garder la fluidité
+  // Après la transition, désactive les clics
   setTimeout(() => {
-    mobileNav.classList.add('pointer-events-none');
-  }, 1000); // correspond à duration-300 en ms
+    mobileNav.style.pointerEvents = 'none';
+  }, 500); // correspond à transition 0.5s
 
-  // Burger redevient normal
   if (bars.length) {
     bars[0].classList.remove('rotate-45', 'translate-y-1.5');
     bars[1].classList.remove('opacity-0');
     bars[2].classList.remove('-rotate-45', '-translate-y-1.5');
   }
+
   toggle.classList.remove('open');
   isOpen = false;
 }
