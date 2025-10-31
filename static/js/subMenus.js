@@ -99,78 +99,57 @@ window.subMenus = {
   ]
 };
 
-// --- Gestion du clic pour remplacer #main-content ---
+// --- Gestion du clic pour remplacer #main-content et afficher image/menu ---
 document.addEventListener("DOMContentLoaded", function() {
   const mainContent = document.getElementById("main-content");
   const menuItems = document.querySelectorAll(".menu-item, .sidebar-link"); // liens du haut et de gauche
+  const overlay = document.getElementById('menu-image-overlay');
+  const coverContainer = document.getElementById('cover-container');
+  const slider = document.getElementById('slider');
 
   menuItems.forEach(item => {
-item.addEventListener("click", function(e) {
-  e.preventDefault();
-  const id = item.getAttribute("data-id");
-  if (!id || !window.subMenus[id]) return;
-
-  // 1️⃣ Afficher l'image du menu
-  const imgSrc = `/images/${id}.png`;
-  const slider = document.getElementById('slider');
-  slider.innerHTML = `<div class="slide"><img src="${imgSrc}" alt="${id}" class="w-full h-64 object-cover"></div>`;
-  // optionnel : stopSlider();
-
-  // 2️⃣ Afficher les sous-menus sous l'image
-  const mainContent = document.getElementById("main-content");
-  const subs = window.subMenus[id];
-  let html = `<h2 class="menu-main-title mb-4">${item.textContent}</h2>`;
-  html += `<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">`;
-  subs.forEach(sub => {
-    html += `
-      <article class="submenu">
-        <h3 class="submenu-title">
-          <a href="${sub.url}">${sub.name}</a>
-        </h3>
-      </article>
-    `;
-  });
-  html += `</div>`;
-  mainContent.innerHTML = html;
-
-  // 3️⃣ Assurer que mainContent est visible
-  mainContent.style.display = 'block';
-});
-
-
-// Gestion du clic sur les sous-menus pour inversion couleurs
-const submenuLinks = document.querySelectorAll('.submenu a');
-
-submenuLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
-    // Retirer la classe active de tous les liens
-    submenuLinks.forEach(l => l.classList.remove('active'));
-    // Ajouter active au lien cliqué
-    link.classList.add('active');
-  });
-});
-
-console.log("Clique sur :", id);
-
+    item.addEventListener("click", function(e) {
+      e.preventDefault();
+      const id = item.getAttribute("data-id");
       if (!id || !window.subMenus[id]) return;
 
+      // --- 1️⃣ Masquer overlay hover si actif ---
+      if (overlay) overlay.style.display = 'none';
+      if (coverContainer) coverContainer.style.display = 'block';
+
+      // --- 2️⃣ Remplacer le slider par l'image du menu ---
+      if (slider) {
+        slider.innerHTML = `<div class="slide">
+          <img src="/images/${id}.png" alt="${id}" class="w-full h-64 object-cover rounded-lg">
+        </div>`;
+      }
+
+      // --- 3️⃣ Construire et afficher les sous-menus ---
       const subs = window.subMenus[id];
       let html = `<h2 class="menu-main-title mb-4">${item.textContent}</h2>`;
       html += `<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">`;
-      
       subs.forEach(sub => {
-      html += `
-        <article class="submenu">
-          <h3 class="submenu-title">
-            <a href="${sub.url}">${sub.name}</a>
-          </h3>
-         </article>
-       `;
+        html += `
+          <article class="submenu">
+            <h3 class="submenu-title">
+              <a href="${sub.url}">${sub.name}</a>
+            </h3>
+          </article>
+        `;
       });
-
       html += `</div>`;
 
       mainContent.innerHTML = html;
+      mainContent.style.display = 'block';
+
+      // --- 4️⃣ Gestion des couleurs actives sur sous-menus ---
+      const submenuLinks = mainContent.querySelectorAll('.submenu a');
+      submenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          submenuLinks.forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+        });
+      });
     });
   });
 });
