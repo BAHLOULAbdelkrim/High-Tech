@@ -1,51 +1,57 @@
 {{/* layouts/partials/cover.html */}}
+
 <div id="cover-container" class="relative overflow-hidden rounded-lg shadow mb-6">
-  {{ $menuID := .Scratch.Get "activeMenu" }}
-
-  {{ if not $menuID }}
-    <!-- 🎞️ Slider page d'accueil -->
-    <div id="slider" class="relative">
-      {{ $slides := .Site.Params.slider }}
-      {{ if not $slides }}
-        <div class="slide"><img src="/images/slide1.jpg" alt="slide1" class="w-full h-64 object-cover"></div>
-        <div class="slide hidden"><img src="/images/slide2.jpg" alt="slide2" class="w-full h-64 object-cover"></div>
-        <div class="slide hidden"><img src="/images/slide3.jpg" alt="slide3" class="w-full h-64 object-cover"></div>
-        <div class="slide hidden"><img src="/images/slide4.jpg" alt="slide4" class="w-full h-64 object-cover"></div>
-      {{ else }}
-        {{ range $i, $s := $slides }}
-          <div class="slide {{ if ne $i 0 }}hidden{{ end }}">
-            <img src="{{ $s }}" alt="slide{{ $i }}" class="w-full h-64 object-cover">
-          </div>
-        {{ end }}
+  <!-- Slider par défaut -->
+  <div id="slider" class="relative">
+    {{ $slides := .Site.Params.slider }}
+    {{ if not $slides }}
+      <div class="slide"><img src="/images/slide1.jpg" alt="slide1" class="w-full h-64 object-cover"></div>
+      <div class="slide hidden"><img src="/images/slide2.jpg" alt="slide2" class="w-full h-64 object-cover"></div>
+      <div class="slide hidden"><img src="/images/slide3.jpg" alt="slide3" class="w-full h-64 object-cover"></div>
+      <div class="slide hidden"><img src="/images/slide4.jpg" alt="slide4" class="w-full h-64 object-cover"></div>
+    {{ else }}
+      {{ range $i, $s := $slides }}
+        <div class="slide {{ if ne $i 0 }}hidden{{ end }}">
+          <img src="{{ $s }}" alt="slide{{ $i }}" class="w-full h-64 object-cover">
+        </div>
       {{ end }}
-    </div>
-
-    <script>
-      const intervalTime = {{ default 3000 .Site.Params.sliderInterval }};
-      let currentIndex = 0;
-      const slider = document.getElementById('slider');
-      const slides = slider ? slider.querySelectorAll('.slide') : [];
-
-      function showSlide(index) {
-        slides.forEach((slide, i) => slide.classList.toggle('hidden', i !== index));
-        currentIndex = index;
-      }
-
-      function startSlider() {
-        if (!slides.length) return;
-        setInterval(() => {
-          const nextIndex = (currentIndex + 1) % slides.length;
-          showSlide(nextIndex);
-        }, intervalTime);
-      }
-
-      startSlider();
-    </script>
-
-  {{ else }}
-    <!-- 🖼️ Image du menu actif -->
-    <div id="menu-image-container">
-      <img src="/images/{{ $menuID }}.png" alt="{{ $menuID }}" class="w-full h-64 object-cover">
-    </div>
-  {{ end }}
+    {{ end }}
+  </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const intervalTime = {{ default 3000 .Site.Params.sliderInterval }};
+  let currentIndex = 0;
+  const slider = document.getElementById('slider');
+  const slides = slider ? slider.querySelectorAll('.slide') : [];
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => slide.classList.toggle('hidden', i !== index));
+    currentIndex = index;
+  }
+
+  function startSlider() {
+    if (!slides.length) return;
+    window.sliderInterval = setInterval(() => {
+      const nextIndex = (currentIndex + 1) % slides.length;
+      showSlide(nextIndex);
+    }, intervalTime);
+  }
+
+  startSlider();
+
+  window.showSlideByMenuId = function(menuId, imgSrc) {
+    clearInterval(window.sliderInterval); // stop slider
+    slider.innerHTML = `<div class="slide"><img src="${imgSrc}" alt="${menuId}" class="w-full h-64 object-cover rounded-lg"></div>`;
+  };
+
+  window.resetSlider = function() {
+    slider.innerHTML = '';
+    {{ range $i, $s := $slides }}
+      slider.innerHTML += `<div class="slide {{ if ne $i 0 }}hidden{{ end }}"><img src="{{ $s }}" alt="slide{{ $i }}" class="w-full h-64 object-cover"></div>`;
+    {{ end }}
+    startSlider();
+  };
+});
+</script>
