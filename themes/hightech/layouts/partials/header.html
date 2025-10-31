@@ -118,32 +118,37 @@
   pointer-events: auto;
 }
 
-/* ===== Sous-menus ===== */
-
-/* Titre du sous-menu */
-.submenu-title {
-  font-size: 1.5rem; /* plus grand */
+/* Nom du menu (au-dessus des sous-menus) */
+.menu-main-title {
+  font-size: 2.5rem; /* plus grand que les sous-menus */
   font-weight: bold;
-  margin-bottom: 0.5rem;
   color: #1e3a8a; /* bleu marine */
+  margin-bottom: 1rem;
 }
 
 /* Liens des sous-menus */
 .submenu a {
   display: block;
+  font-size: 1.25rem; /* plus petit que le titre du menu */
   padding: 0.5rem 1rem;
-  background-color: #fca5a5; /* rouge clair */
-  color: #1e3a8a; /* bleu marine */
-  border-radius: 0.5rem; /* coins arrondis */
+  background-color: #f16363; /* rouge très léger */
+  color: #1e3a8a;
+  border-radius: 0.5rem;
   margin-bottom: 0.5rem;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
-/* Sous-menu actif / clic : inversion des couleurs */
+/* Inversion des couleurs au clic */
 .submenu a.active {
-  background-color: #1e3a8a; /* bleu marine */
-  color: #fca5a5; /* rouge clair */
+  background-color: #1e3a8a;
+  color: #f16363;
+}
+
+/* Inversion des couleurs au survol */
+.submenu a:hover {
+  background-color: #1e3a8a;
+  color: #f16363;
 }
 
 </style>

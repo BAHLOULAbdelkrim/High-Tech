@@ -126,7 +126,7 @@ console.log("Clique sur :", id);
       if (!id || !window.subMenus[id]) return;
 
       const subs = window.subMenus[id];
-      let html = `<h2 class="text-xl font-bold mb-4">${item.textContent}</h2>`;
+      let html = `<h2 class="menu-main-title mb-4">${item.textContent}</h2>`;
       html += `<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">`;
       
       subs.forEach(sub => {
@@ -139,7 +139,6 @@ console.log("Clique sur :", id);
        `;
       });
 
-      
       html += `</div>`;
 
       mainContent.innerHTML = html;
