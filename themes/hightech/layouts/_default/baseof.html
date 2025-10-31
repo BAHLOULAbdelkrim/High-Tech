@@ -2,25 +2,16 @@
 <html lang="fr">
 {{ partial "head.html" . }}
 <body class="min-h-screen text-black bg-gradient-to-br from-violet-300 via-white to-emerald-300">
-
-  {{ partial "header.html" . }}
-
-  <div class="container mx-auto px-4 py-6">
-
-    <!-- 1️⃣ Image / Slider dynamique -->
-    {{ partial "cover.html" . }}
-
-    <!-- 2️⃣ Contenu principal avec sidebar -->
-    <div class="flex gap-6">
-      {{ partial "sidebar.html" . }}
-      <main class="flex-1">
-        {{ block "main" . }}{{ end }}
-      </main>
+<!-- <body class="min-h-screen bg-gray-50 text-gray-800"> -->
+    {{ partial "header.html" . }}
+    <div class="container mx-auto px-4 py-6">
+      <div class="flex gap-6">
+        {{ partial "sidebar.html" . }}
+        <main class="flex-1">
+          {{ block "main" . }}{{ end }}
+        </main>
+      </div>
     </div>
-
-  </div>
-
-  {{ partial "footer.html" . }}
-
-</body>
+    {{ partial "footer.html" . }}
+  </body>
 </html>

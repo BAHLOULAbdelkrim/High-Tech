@@ -8,7 +8,7 @@ theme = "hightech"
 [params]
   description = "Nouveautés & Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d'achat complets."
   mainColor = "emerald-400"
-  sliderInterval = 2000  # milliseconds
+  sliderInterval = 3000  # milliseconds
   twitter = "https://twitter.com/tonprofil"
   facebook = "https://facebook.com/tonprofil"
   linkedin = "https://linkedin.com/in/tonprofil"

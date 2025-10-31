@@ -1,7 +1,7 @@
 <header class="bg-white shadow relative z-50">
   <div class="container mx-auto px-4 py-4 flex items-center justify-between">
     <!-- Logo + Titre -->
-    <a href="/" id="logo-link" class="flex items-center gap-2 min-w-[200px]">
+    <a href="/" class="flex items-center gap-2 min-w-[200px]">
       <img src="{{ .Site.Params.logo | absURL }}" alt="High-Tech" class="w-12 h-12">
       <span class="text-2xl font-bold text-purple-900" style="font-family: 'Orbitron', sans-serif;">High-Tech</span>
     </a>
@@ -11,7 +11,7 @@
       <ul class="grid grid-cols-6 gap-2 justify-end w-full max-w-6xl mx-auto">
         {{ range first 6 .Site.Menus.main }}
         <li class="group relative">
-          <a href="#" data-menu="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+          <a href="#" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
             {{ .Name }}
           </a>
         </li>
@@ -20,7 +20,7 @@
       <ul class="grid grid-cols-6 gap-2 justify-end w-full max-w-6xl mx-auto mt-2">
         {{ range after 6 .Site.Menus.main }}
         <li class="group relative">
-          <a href="#" data-menu="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+          <a href="#" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
             {{ .Name }}
           </a>
         </li>
@@ -28,7 +28,7 @@
       </ul>
     </nav>
 
-    <!-- Bouton burger / croix (mobile uniquement) -->
+    <!-- Bouton burger / croix (mobile uniquement, à droite) -->
     <button id="menu-toggle" class="md:hidden flex flex-col justify-between w-8 h-6 focus:outline-none relative z-50 ml-4">
       <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300"></span>
       <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300"></span>
@@ -37,66 +37,174 @@
   </div>
 
   <!-- Section mobile : langue + recherche -->
-  <div class="md:hidden flex flex-col items-center gap-2 px-4 py-2 bg-white shadow-sm">
-    <!-- Barre de langue (mobile) -->
-    <div class="w-full flex justify-end">
-      <button id="lang-toggle-mobile" class="flex items-center gap-2 px-3 py-1 bg-white border rounded shadow">
-        🌐 <span id="current-lang-mobile">FR</span>
-      </button>
-    </div>
-
-    <!-- Barre de recherche -->
-    <form class="w-full flex items-center gap-2" action="{{ "/search/" | relURL }}" method="get">
-      <input name="q" type="search" placeholder="Rechercher..."
-             class="flex-1 px-3 py-2 border rounded focus:outline-none text-sm" />
-      <button type="submit" class="px-3 py-2 rounded border font-semibold bg-emerald-100 hover:bg-violet-400 text-black text-sm">
-        Rechercher
-      </button>
-    </form>
+<div class="md:hidden flex flex-col items-center gap-2 px-4 py-2 bg-white shadow-sm">
+  <!-- Barre de langue (à droite du titre) -->
+  <div class="w-full flex justify-end">
+    <button id="lang-toggle-mobile" class="flex items-center gap-2 px-3 py-1 bg-white border rounded shadow">
+      🌐 <span id="current-lang-mobile">FR</span>
+    </button>
   </div>
 
-</header>
+  <!-- Barre de recherche -->
+  <form class="w-full flex items-center gap-2" action="{{ "/search/" | relURL }}" method="get">
+    <input name="q" type="search" placeholder="Rechercher..."
+           class="flex-1 px-3 py-2 border rounded focus:outline-none text-sm" />
+    <button type="submit" class="px-3 py-2 rounded border font-semibold bg-emerald-100 hover:bg-violet-400 text-black text-sm">
+      Rechercher
+    </button>
+  </form>
+</div>
 
-<!-- 🔽 Script pour menu actif + retour page principale -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const menuItems = document.querySelectorAll('.menu-item');
-  const logoLink = document.getElementById('logo-link');
+<!-- Bouton Burger (visible sur mobile seulement) -->
+<!-- <button id="menu-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 border rounded">
+  <span class="w-6 h-0.5 bg-gray-800 mb-1"></span>
+  <span class="w-6 h-0.5 bg-gray-800 mb-1"></span>
+  <span class="w-6 h-0.5 bg-gray-800"></span>
+</button>  -->
 
-  menuItems.forEach(item => {
-    item.addEventListener('click', function(e) {
-      e.preventDefault();
 
-      // Supprimer la classe active sur tous les menus
-      menuItems.forEach(m => m.classList.remove('active'));
-      // Ajouter la classe active sur le menu cliqué
-      item.classList.add('active');
+<!-- Bouton Burger aligné à droite -->
+<!-- <div class="ml-auto flex right-0 items-center">
+  <button
+    id="menu-toggle"
+    class="md:hidden flex flex-col justify-between w-8 h-6 z-50 focus:outline-none"
+    aria-label="Menu"
+  >
+    <span class="block w-full h-0.5 bg-violet-800 transition-transform duration-300"></span>
+    <span class="block w-full h-0.5 bg-violet-800 transition-opacity duration-300"></span>
+    <span class="block w-full h-0.5 bg-violet-800 transition-transform duration-300"></span>
+  </button>
+</div>   -->
 
-      // Stocker le menu actif dans une variable globale pour cover.html
-      window.activeMenu = item.getAttribute('data-menu');
+<!-- Style de la barre de recherche -->
+<style>
+/* Style des trois barres */
+#menu-toggle .burger-line {
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 3px;
+  background-color: #4c1d95; /* violet-800 */
+  border-radius: 2px;
+  transform-origin: center; /* ✅ rotation centrée */
+}
 
-      // Déclencher un événement custom pour cover.html et main.js
-      const event = new CustomEvent('menuChanged', { detail: { menuId: window.activeMenu } });
-      document.dispatchEvent(event);
-    });
-  });
+/* Animation burger → croix */
+#menu-toggle.open .burger-line:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 10px; /* ajuste la position verticale */
+}
 
-  // Retour page principale si clic sur logo
-  if (logoLink) {
-    logoLink.addEventListener('click', function(e) {
-      e.preventDefault();
+#menu-toggle.open .burger-line:nth-child(2) {
+  opacity: 0;
+}
 
-      // Retirer menu actif
-      menuItems.forEach(m => m.classList.remove('active'));
-      window.activeMenu = null;
+#menu-toggle.open .burger-line:nth-child(3) {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -10px; /* ajuste symétriquement */
+}
 
-      // Événement pour cover.html / main.js pour réafficher slider + articles
-      const event = new CustomEvent('menuChanged', { detail: { menuId: null } });
-      document.dispatchEvent(event);
+#mobile-nav {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
 
-      // Redirection vers la page d'accueil
-      window.location.href = '/';
-    });
-  }
-});
-</script>
+#mobile-nav.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Nom du menu (au-dessus des sous-menus) */
+.menu-main-title {
+  font-size: 2.5rem; /* plus grand que les sous-menus */
+  font-weight: bold;
+  color: #1e3a8a; /* bleu marine */
+  margin-bottom: 1rem;
+}
+
+/* Liens des sous-menus */
+.submenu a {
+  display: block;
+  font-size: 1.25rem; /* plus petit que le titre du menu */
+  font-weight: bold;   
+  padding: 0.5rem 1rem;
+  background-color: #f7afaf; /* rouge très léger */
+  color: #1e3a8a;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Inversion des couleurs au clic */
+.submenu a.active {
+  background-color: #84a4fc;
+  color: #ff0000;
+}
+
+/* Inversion des couleurs au survol */
+.submenu a:hover {
+  background-color: #84a4fc;
+  color: #ff0000;
+}
+
+</style>
+
+<!-- Menu mobile (caché par défaut) -->
+<!-- Navigation mobile -->
+<nav
+  id="mobile-nav"
+  class="fixed top-16 right-0 w-full bg-white shadow-lg transform -translate-y-full opacity-0 pointer-events-none transition-transform transition-opacity duration-300 md:hidden z-50"
+>
+  <ul class="flex flex-col space-y-2 p-4">
+    {{ range .Site.Menus.main }}
+    <li>
+      <a
+        href="#"
+        data-id="{{ .Identifier }}"
+        class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300"
+      >
+        {{ .Name }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</nav>
+
+<div class="container mx-auto px-4 py-4 items-center justify-between hidden md:flex">
+  
+  <!-- Gauche : vide ou logo -->
+  <div class="flex-1"></div>
+
+  <!-- Centre : barre de recherche -->
+  <form id="search-form" class="flex-1 max-w-xl flex items-center gap-2 mx-auto" action="{{ "/search/" | relURL }}" method="get">
+    <input id="search-input" name="q" type="search" placeholder="Rechercher par mot-clé..."
+           class="flex-1 px-4 py-2 border rounded focus:outline-none" />
+    <button type="submit" class="px-4 py-2 rounded border font-semibold bg-emerald-100 hover:bg-violet-400 text-black"> 
+      Rechercher
+    </button>
+  </form>
+
+  <!-- Droite : sélecteur de langue -->
+  <div class="ml-4 relative z-50 flex-1 flex justify-end">
+    <button id="lang-toggle" class="flex items-center gap-2 px-3 py-2 bg-white border rounded shadow">
+      🌐 <span id="current-lang">FR</span>
+    </button>
+    <ul id="lang-menu" class="hidden absolute right-0 mt-2 bg-white border rounded shadow w-40">
+      <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="fr">FR - Français</li>
+      <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="en">EN - English</li>
+      <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="ar">AR - العربية</li>
+    </ul>
+  </div>
+
+</div>
+
+
+<!-- Scripts -->
+<script src="/js/menu.js"></script>
+<script src="/js/subMenus.js"></script>
+
