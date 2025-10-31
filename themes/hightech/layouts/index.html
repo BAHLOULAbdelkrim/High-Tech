@@ -1,21 +1,25 @@
 {{ define "main" }}
   <!-- Slider -->
-  <div class="mb-6">
-    <div id="slider" class="relative overflow-hidden rounded-lg shadow">
-      {{ $slides := .Site.Params.slider }}
-      {{ if not $slides }}
-        <!-- fallback slides -->
-        <div class="slide"><img src="/images/slide1.jpg" alt="slide1" class="w-full h-64 object-cover"></div>
-        <div class="slide hidden"><img src="/images/slide2.jpg" alt="slide2" class="w-full h-64 object-cover"></div>
-        <div class="slide hidden"><img src="/images/slide3.jpg" alt="slide3" class="w-full h-64 object-cover"></div>
-        <div class="slide hidden"><img src="/images/slide4.jpg" alt="slide3" class="w-full h-64 object-cover"></div>
-      {{ else }}
-        {{ range $i, $s := $slides }}
-          <div class="slide {{ if ne $i 0 }}hidden{{ end }}"><img src="{{ $s }}" alt="slide{{ $i }}" class="w-full h-64 object-cover"></div>
-        {{ end }}
-      {{ end }}
+    <div class="mb-6">
+      <div id="cover-container" class="relative overflow-hidden rounded-lg shadow">
+        <div id="slider">
+          {{ $slides := .Site.Params.slider }}
+          {{ if not $slides }}
+            <!-- fallback slides -->
+            <div class="slide"><img src="/images/slide1.jpg" alt="slide1" class="w-full h-64 object-cover"></div>
+            <div class="slide hidden"><img src="/images/slide2.jpg" alt="slide2" class="w-full h-64 object-cover"></div>
+            <div class="slide hidden"><img src="/images/slide3.jpg" alt="slide3" class="w-full h-64 object-cover"></div>
+            <div class="slide hidden"><img src="/images/slide4.jpg" alt="slide4" class="w-full h-64 object-cover"></div>
+          {{ else }}
+            {{ range $i, $s := $slides }}
+              <div class="slide {{ if ne $i 0 }}hidden{{ end }}">
+                <img src="{{ $s }}" alt="slide{{ $i }}" class="w-full h-64 object-cover">
+              </div>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
     </div>
-  </div>
 
   <!-- Zone centrale pour derniers articles / sous-menus -->
   <section id="main-content">

@@ -35,4 +35,59 @@
     });
   });
   </script>
+
+  <!-- 🔽 Ajout du script de gestion des images de couverture -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const coverContainer = document.getElementById('cover-container');
+    if (!coverContainer) return; // sécurité
+
+    // On garde une copie du contenu original du slider (les images de couverture)
+    const originalHTML = coverContainer.innerHTML;
+
+    // On cible tous les liens de menu (desktop + mobile)
+    const menuLinks = document.querySelectorAll('a[data-menu]');
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        const menuId = this.getAttribute('data-menu');
+        const imagePath = `/images/${menuId}.png`;
+
+        if (coverContainer) {
+          coverContainer.innerHTML = `
+            <img src="${imagePath}" alt="${menuId}"
+                 style="width:100%;height:auto;object-fit:cover;animation:fadeIn 1s ease-in-out;">
+          `;
+        }
+
+        // Si un menu mobile (sidebar) est ouvert, on le referme
+        const sidebar = document.querySelector('.sidebar, #sidebar, nav.sidebar');
+        if (sidebar && sidebar.classList.contains('open')) {
+          sidebar.classList.remove('open');
+        }
+      });
+    });
+
+    // Si on clique sur le logo ou un lien vers la racine -> on remet les images d’origine
+    const homeLinks = document.querySelectorAll('a[href="/"], a[href="#home"]');
+    homeLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        if (coverContainer) {
+          coverContainer.innerHTML = originalHTML;
+        }
+      });
+    });
+
+    // Petite animation fade-in
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+    `;
+    document.head.appendChild(style);
+  });
+  </script>
+
 </footer>
