@@ -38,62 +38,70 @@
 
   <!-- 🔽 Ajout du script de gestion des images de couverture -->
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const coverContainer = document.getElementById('cover-container');
-    if (!coverContainer) return; // sécurité
+document.addEventListener('DOMContentLoaded', function() {
+  const coverContainer = document.getElementById('cover-container');
+  if (!coverContainer) return;
 
-    // On garde une copie du contenu original du slider (les images de couverture)
-    const originalHTML = coverContainer.innerHTML;
+  // On garde une copie du contenu original du slider
+  const originalHTML = coverContainer.innerHTML;
 
-    // On cible tous les liens de menu (desktop + mobile)
-    const menuLinks = document.querySelectorAll('a[data-menu]');
+  // Cibler tous les liens de menu (desktop + mobile)
+  const menuLinks = document.querySelectorAll('a[data-menu]');
 
-    menuLinks.forEach(link => {
-      link.addEventListener('click', function(e) {
-        const menuId = this.getAttribute('data-menu');
-        const imagePath = `/images/${menuId}.png`;
+  // Conteneur d’image du menu actif
+  const menuImageOverlay = document.createElement('div');
+  menuImageOverlay.id = 'menu-image-overlay';
+  menuImageOverlay.style.position = 'relative';
+  menuImageOverlay.style.width = '100%';
+  menuImageOverlay.style.height = '16rem'; /* même hauteur que h-64 */
+  menuImageOverlay.style.overflow = 'hidden';
+  menuImageOverlay.style.borderRadius = '0.5rem';
+  menuImageOverlay.style.display = 'none';
+  menuImageOverlay.style.animation = 'fadeIn 1s ease-in-out';
+  coverContainer.parentNode.insertBefore(menuImageOverlay, coverContainer.nextSibling);
 
-        if (coverContainer) {
-//          coverContainer.innerHTML = `
-//            <img src="${imagePath}" alt="${menuId}"
-//                 style="width:100%;height:auto;object-fit:cover;animation:fadeIn 1s ease-in-out;">
-//          `;
-          coverContainer.innerHTML = `
-          <div class="relative overflow-hidden rounded-lg shadow">
-            <img src="${imagePath}" alt="${menuId}"
-                class="w-full h-64 object-cover rounded-lg shadow animate-fadeIn">
-          </div>
-        `;
-        }
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      const menuId = this.getAttribute('data-menu');
+      const imagePath = `/images/${menuId}.png`;
 
-        // Si un menu mobile (sidebar) est ouvert, on le referme
-        const sidebar = document.querySelector('.sidebar, #sidebar, nav.sidebar');
-        if (sidebar && sidebar.classList.contains('open')) {
-          sidebar.classList.remove('open');
-        }
-      });
-    });
+      // Affiche l’image du menu dans la zone dédiée
+      menuImageOverlay.innerHTML = `
+        <img src="${imagePath}" alt="${menuId}" 
+             class="w-full h-64 object-cover rounded-lg shadow">
+      `;
+      menuImageOverlay.style.display = 'block';
+      coverContainer.style.display = 'none';
 
-    // Si on clique sur le logo ou un lien vers la racine -> on remet les images d’origine
-    const homeLinks = document.querySelectorAll('a[href="/"], a[href="#home"]');
-    homeLinks.forEach(link => {
-      link.addEventListener('click', function() {
-        if (coverContainer) {
-          coverContainer.innerHTML = originalHTML;
-        }
-      });
-    });
-
-    // Petite animation fade-in
-    const style = document.createElement('style');
-    style.textContent = `
-      @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
+      // Fermer sidebar mobile si ouverte
+      const sidebar = document.querySelector('.sidebar, #sidebar, nav.sidebar');
+      if (sidebar && sidebar.classList.contains('open')) {
+        sidebar.classList.remove('open');
       }
-    `;
-    document.head.appendChild(style);
+    });
   });
-  </script>
+
+  // Si on clique sur le logo ou lien vers /
+  const homeLinks = document.querySelectorAll('a[href="/"], a[href="#home"]');
+  homeLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      coverContainer.style.display = 'block';
+      menuImageOverlay.style.display = 'none';
+      coverContainer.innerHTML = originalHTML;
+    });
+  });
+
+  // Animation CSS fadeIn
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  `;
+  document.head.appendChild(style);
+});
+</script>
+
 
 </footer>
