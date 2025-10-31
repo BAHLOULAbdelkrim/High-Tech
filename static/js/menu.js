@@ -4,53 +4,53 @@ const mobileNav = document.getElementById('mobile-nav');
 const bars = toggle ? toggle.querySelectorAll('span') : [];
 let isOpen = false;
 
+// Conteneur pour sous-menus mobile
+let mobileSubmenuContainer = document.getElementById('mobile-submenu-container');
+if (!mobileSubmenuContainer) {
+  mobileSubmenuContainer = document.createElement('div');
+  mobileSubmenuContainer.id = 'mobile-submenu-container';
+  mobileNav.parentNode.insertBefore(mobileSubmenuContainer, mobileNav.nextSibling);
+}
+
 // ouvrir menu mobile
 function openMenu() {
   if (!mobileNav) return;
-
-  mobileNav.classList.add('open'); // ajoute la classe animée
-
+  mobileNav.classList.add('open');
   if (bars.length) {
     bars[0].classList.add('rotate-45', 'translate-y-1.5');
     bars[1].classList.add('opacity-0');
     bars[2].classList.add('-rotate-45', '-translate-y-1.5');
   }
-
   isOpen = true;
 }
 
 // fermer menu mobile
 function closeMenu() {
   if (!mobileNav) return;
-
-  // retire l’animation ouverte
   mobileNav.classList.remove('open');
-
-  // Après la transition, désactive les clics
-  setTimeout(() => {
-    mobileNav.style.pointerEvents = 'none';
-  }, 500); // correspond à transition 0.5s
-
+  setTimeout(() => { mobileNav.style.pointerEvents = 'none'; }, 500);
   if (bars.length) {
     bars[0].classList.remove('rotate-45', 'translate-y-1.5');
     bars[1].classList.remove('opacity-0');
     bars[2].classList.remove('-rotate-45', '-translate-y-1.5');
   }
-
   toggle.classList.remove('open');
   isOpen = false;
+
+  // Masquer le conteneur des sous-menus
+  if (mobileSubmenuContainer) mobileSubmenuContainer.innerHTML = '';
 }
 
 // --- Toggle au clic sur le burger ---
 if (toggle) {
   toggle.addEventListener('click', (e) => {
     e.stopPropagation();
-    toggle.classList.toggle('open'); // ✅ Ajout pour animer la croix
+    toggle.classList.toggle('open');
     isOpen ? closeMenu() : openMenu();
   });
 }
 
-// --- Fermer au scroll vers le bas ---
+// --- Fermer au scroll ---
 let lastScroll = 0;
 window.addEventListener('scroll', () => {
   const currentScroll = window.pageYOffset;
@@ -76,7 +76,6 @@ document.querySelectorAll('.brand-filter input[type="checkbox"]').forEach(checkb
     const brand = checkbox.dataset.brand;
     const checked = checkbox.checked;
     const products = document.querySelectorAll('.product-item');
-
     products.forEach(p => {
       if (p.dataset.brand === brand) {
         p.style.display = checked ? 'block' : 'none';
@@ -100,38 +99,44 @@ if (langToggleMobile) {
   langMenu.style.display = 'none';
   langToggleMobile.parentElement.appendChild(langMenu);
 
-  // Ouvrir / fermer le menu au clic
   langToggleMobile.addEventListener('click', (e) => {
     e.stopPropagation();
     langMenu.style.display = langMenu.style.display === 'none' ? 'block' : 'none';
   });
 
-  // Fermer en cliquant ailleurs
-  document.addEventListener('click', () => {
-    langMenu.style.display = 'none';
-  });
+  document.addEventListener('click', () => { langMenu.style.display = 'none'; });
 
-  // Changer de langue
   langMenu.querySelectorAll('li').forEach(li => {
     li.addEventListener('click', () => {
       const newLang = li.dataset.lang.toUpperCase();
       currentLangMobile.textContent = newLang;
       langMenu.style.display = 'none';
-      // ici tu pourrais aussi rediriger vers la version traduite si besoin
     });
   });
 }
 
-
-
-// --- Fermer le menu quand on clique sur un lien du menu mobile ---
+// --- Gestion des sous-menus mobile ---
 const mobileMenuLinks = document.querySelectorAll('#mobile-nav .menu-item');
 
 mobileMenuLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    if (isOpen) {
-      closeMenu();
-      toggle.classList.remove('open'); // s'assure que le burger redevient normal
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const menuId = link.dataset.id;
+    if (!mobileSubmenuContainer) return;
+
+    // 1️⃣ Masquer tous les sous-menus existants
+    mobileSubmenuContainer.innerHTML = '';
+
+    // 2️⃣ Afficher le sous-menu correspondant
+    const submenu = document.querySelector(`#submenu-${menuId}`);
+    if (submenu) {
+      const clone = submenu.cloneNode(true);
+      clone.style.display = 'block';
+      mobileSubmenuContainer.appendChild(clone);
     }
+
+    // 3️⃣ Fermer le menu principal
+    closeMenu();
+    toggle.classList.remove('open');
   });
 });
