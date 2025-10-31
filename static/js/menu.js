@@ -143,23 +143,63 @@ mobileMenuLinks.forEach(link => {
 });
 
 
-// Exemple pour les menus mobiles
+// Fonction pour afficher le sous-menu dans mainContent
+function showSubMenu(id, name) {
+  const mainContent = document.getElementById("main-content");
+  if (!id || !window.subMenus[id] || !mainContent) return;
+
+  const subs = window.subMenus[id];
+  let html = `<h2 class="menu-main-title mb-4">${name}</h2>`;
+  html += `<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">`;
+
+  subs.forEach(sub => {
+    html += `
+      <article class="submenu">
+        <h3 class="submenu-title">
+          <a href="${sub.url}">${sub.name}</a>
+        </h3>
+      </article>
+    `;
+  });
+
+  html += `</div>`;
+  mainContent.innerHTML = html;
+
+  // Gestion des liens actifs
+  const submenuLinks = mainContent.querySelectorAll('.submenu a');
+  submenuLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      submenuLinks.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
+}
+
+// Clic sur menu mobile
 const mobileMenuItems = document.querySelectorAll('#mobile-nav .menu-item');
 
 mobileMenuItems.forEach(item => {
   item.addEventListener('click', (e) => {
-    e.preventDefault(); // empêche le href="#"
-    
-    // Fermer tous les sous-menus
-    document.querySelectorAll('.submenu').forEach(sub => sub.style.display = 'none');
-    
-    // Afficher le sous-menu du menu actuel si il existe
-    const id = item.dataset.id;
-    const submenu = document.getElementById(`submenu-${id}`);
-    if(submenu) submenu.style.display = 'block';
+    e.preventDefault();
 
-    // Optionnel : fermer le menu complet si tu veux
-    closeMenu();
+    const id = item.dataset.id;
+    const name = item.textContent;
+
+    // Fermer le menu burger
+    if (isOpen) closeMenu();
+
+    // Afficher le sous-menu correspondant
+    showSubMenu(id, name);
   });
 });
 
+// Clic sur menu desktop
+const desktopMenuItems = document.querySelectorAll('.menu-item');
+desktopMenuItems.forEach(item => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault();
+    const id = item.dataset.id;
+    const name = item.textContent;
+    showSubMenu(id, name);
+  });
+});
