@@ -76,7 +76,7 @@
   </button>
 </div>   -->
 
-<!-- Style de la barre de recherche -->>
+<!-- Style de la barre de recherche -->
 <style>
 /* Style des trois barres */
 #menu-toggle .burger-line {
@@ -107,6 +107,7 @@
 </style>
 
 <!-- Menu mobile (caché par défaut) -->
+<!-- Navigation mobile -->
 <nav
   id="mobile-nav"
   class="fixed top-16 right-0 w-full bg-white shadow-lg transform -translate-y-full transition-transform duration-300 opacity-0 pointer-events-none md:hidden z-50"
@@ -117,7 +118,7 @@
       <a
         href="#"
         data-id="{{ .Identifier }}"
-        class="menu-item block text-lg font-semibold text-violet-800 hover:text-emerald-700 transition-colors duration-300"
+        class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300"
       >
         {{ .Name }}
       </a>
