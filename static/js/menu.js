@@ -51,12 +51,12 @@ if (toggle) {
 }
 
 // --- Fermer au scroll vers le bas ---
-let lastScroll = 0;
-window.addEventListener('scroll', () => {
-  const currentScroll = window.pageYOffset;
-  if (isOpen && currentScroll > lastScroll) closeMenu();
-  lastScroll = currentScroll;
-});
+// let lastScroll = 0;
+// window.addEventListener('scroll', () => {
+//   const currentScroll = window.pageYOffset;
+//   if (isOpen && currentScroll > lastScroll) closeMenu();
+//   lastScroll = currentScroll;
+// });
 
 // --- Fermer si clic en dehors ---
 document.addEventListener('click', (e) => {
@@ -121,8 +121,6 @@ if (langToggleMobile) {
     });
   });
 }
-
-
 
 // --- Fermer le menu quand on clique sur un lien du menu mobile ---
 const mobileMenuLinks = document.querySelectorAll('#mobile-nav .menu-item');
