@@ -141,3 +141,25 @@ mobileMenuLinks.forEach(link => {
     }
   });
 });
+
+
+// Exemple pour les menus mobiles
+const mobileMenuItems = document.querySelectorAll('#mobile-nav .menu-item');
+
+mobileMenuItems.forEach(item => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault(); // empêche le href="#"
+    
+    // Fermer tous les sous-menus
+    document.querySelectorAll('.submenu').forEach(sub => sub.style.display = 'none');
+    
+    // Afficher le sous-menu du menu actuel si il existe
+    const id = item.dataset.id;
+    const submenu = document.getElementById(`submenu-${id}`);
+    if(submenu) submenu.style.display = 'block';
+
+    // Optionnel : fermer le menu complet si tu veux
+    closeMenu();
+  });
+});
+
