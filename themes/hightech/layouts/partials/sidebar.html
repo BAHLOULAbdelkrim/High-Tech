@@ -64,7 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
       </li>
     </ul>
     `;
-  // Ajout après les menus principaux
+  // Insérer dans les menus principaux :
+  mobileNav.insertAdjacentHTML('afterbegin', extraLinks1);
   mobileNav.insertAdjacentHTML('beforeend', extraLinks2);
   mobileNav.insertAdjacentHTML('beforeend', extraLinks3);
 });
