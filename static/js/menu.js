@@ -115,3 +115,16 @@ if (langToggleMobile) {
   });
 }
 
+
+
+// --- Fermer le menu quand on clique sur un lien du menu mobile ---
+const mobileMenuLinks = document.querySelectorAll('#mobile-nav .menu-item');
+
+mobileMenuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    if (isOpen) {
+      closeMenu();
+      toggle.classList.remove('open'); // s'assure que le burger redevient normal
+    }
+  });
+});
