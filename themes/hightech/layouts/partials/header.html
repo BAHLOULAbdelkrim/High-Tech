@@ -152,6 +152,73 @@
   color: #ff0000;
 }
 
+/* Brillance */
+
+.menu-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.5) 50%,
+    rgba(255,255,255,0) 100%
+  );
+  transform: skewX(-20deg);
+}
+
+.menu-item:hover::before {
+  animation: shine 0.7s forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+/* Brillance pour les sous-menus */
+.submenu a {
+  position: relative;
+  overflow: hidden;
+}
+
+.submenu a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+}
+
+.submenu a:hover::before {
+  animation: shine-submenu 0.7s forwards;
+}
+
+@keyframes shine-submenu {
+  0% { left: -75%; }
+  100% { left: 125%; }
+}
+
 </style>
 
 <!-- Menu mobile (caché par défaut) -->
