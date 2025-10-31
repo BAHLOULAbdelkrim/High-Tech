@@ -32,7 +32,7 @@ function closeMenu() {
   // Désactive les clics **après l’animation** pour garder la fluidité
   setTimeout(() => {
     mobileNav.classList.add('pointer-events-none');
-  }, 300); // correspond à duration-300 en ms
+  }, 1000); // correspond à duration-300 en ms
 
   // Burger redevient normal
   if (bars.length) {
