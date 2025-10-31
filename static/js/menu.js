@@ -3,43 +3,43 @@ const toggle = document.getElementById('menu-toggle');
 const mobileNav = document.getElementById('mobile-nav');
 let isOpen = false;
 
+// Ouvrir menu mobile
 function openMenu() {
+  if (!mobileNav) return;
   mobileNav.classList.add('open');
-  document.body.classList.add('menu-open');
+  document.body.classList.add('menu-open'); // bloque scroll arrière-plan
+  toggle.classList.add('open');
   isOpen = true;
 }
 
+// Fermer menu mobile
 function closeMenu() {
+  if (!mobileNav) return;
   mobileNav.classList.remove('open');
   document.body.classList.remove('menu-open');
+  toggle.classList.remove('open');
   isOpen = false;
 }
 
-toggle.addEventListener('click', e => {
-  e.stopPropagation();
-  isOpen ? closeMenu() : openMenu();
-});
+// Toggle burger
+if (toggle) {
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    isOpen ? closeMenu() : openMenu();
+  });
+}
 
-// Fermer menu si clic en dehors
-document.addEventListener('click', e => {
-  if (isOpen && !mobileNav.contains(e.target) && !toggle.contains(e.target)) {
+// Fermer si clic en dehors
+document.addEventListener('click', (e) => {
+  if (isOpen && mobileNav && !mobileNav.contains(e.target) && !toggle.contains(e.target)) {
     closeMenu();
   }
 });
 
-// Clic sur menu mobile pour afficher le sous-menu
-const mobileMenuItems = document.querySelectorAll('#mobile-nav .menu-item');
-mobileMenuItems.forEach(item => {
-  item.addEventListener('click', e => {
-    e.preventDefault();
-    const id = item.dataset.id;
-    const name = item.textContent;
-
-    showSubMenu(id, name);
-    closeMenu(); // on ferme le burger mais mainContent est déjà mis à jour
-  });
+// Fermer si écran élargi
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 768 && isOpen) closeMenu();
 });
-
 
 // ===== Sidebar filtre marques =====
 document.querySelectorAll('.brand-filter input[type="checkbox"]').forEach(checkbox => {
@@ -56,57 +56,39 @@ document.querySelectorAll('.brand-filter input[type="checkbox"]').forEach(checkb
   });
 });
 
-// ===== Menu langue (mobile) =====
+// ===== Menu langue mobile =====
 const langToggleMobile = document.getElementById('lang-toggle-mobile');
 const currentLangMobile = document.getElementById('current-lang-mobile');
 
 if (langToggleMobile) {
   const langMenu = document.createElement('ul');
   langMenu.className = 'absolute right-0 mt-2 bg-white border rounded shadow w-40';
+  langMenu.style.display = 'none';
   langMenu.innerHTML = `
     <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="fr">FR - Français</li>
     <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="en">EN - English</li>
     <li class="px-4 py-2 hover:bg-emerald-100 cursor-pointer" data-lang="ar">AR - العربية</li>
   `;
-  langMenu.style.display = 'none';
   langToggleMobile.parentElement.appendChild(langMenu);
 
-  // Ouvrir / fermer le menu au clic
   langToggleMobile.addEventListener('click', (e) => {
     e.stopPropagation();
     langMenu.style.display = langMenu.style.display === 'none' ? 'block' : 'none';
   });
 
-  // Fermer en cliquant ailleurs
   document.addEventListener('click', () => {
     langMenu.style.display = 'none';
   });
 
-  // Changer de langue
   langMenu.querySelectorAll('li').forEach(li => {
     li.addEventListener('click', () => {
-      const newLang = li.dataset.lang.toUpperCase();
-      currentLangMobile.textContent = newLang;
+      currentLangMobile.textContent = li.dataset.lang.toUpperCase();
       langMenu.style.display = 'none';
-      // ici tu pourrais aussi rediriger vers la version traduite si besoin
     });
   });
 }
 
-// --- Fermer le menu quand on clique sur un lien du menu mobile ---
-const mobileMenuLinks = document.querySelectorAll('#mobile-nav .menu-item');
-
-mobileMenuLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    if (isOpen) {
-      closeMenu();
-      toggle.classList.remove('open'); // s'assure que le burger redevient normal
-    }
-  });
-});
-
-
-// Fonction pour afficher le sous-menu dans mainContent
+// ===== Sous-menus =====
 function showSubMenu(id, name) {
   const mainContent = document.getElementById("main-content");
   if (!id || !window.subMenus[id] || !mainContent) return;
@@ -124,41 +106,32 @@ function showSubMenu(id, name) {
       </article>
     `;
   });
-
   html += `</div>`;
   mainContent.innerHTML = html;
 
-  // Gestion des liens actifs
+  // Liens actifs
   const submenuLinks = mainContent.querySelectorAll('.submenu a');
   submenuLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
+    link.addEventListener('click', () => {
       submenuLinks.forEach(l => l.classList.remove('active'));
       link.classList.add('active');
     });
   });
 }
 
-// Clic sur menu mobile
-const mobileMenuItems = document.querySelectorAll('#mobile-nav .menu-item');
-
-mobileMenuItems.forEach(item => {
+// Clic menu mobile
+document.querySelectorAll('#mobile-nav .menu-item').forEach(item => {
   item.addEventListener('click', (e) => {
     e.preventDefault();
-
     const id = item.dataset.id;
     const name = item.textContent;
-
-    // Fermer le menu burger
-    if (isOpen) closeMenu();
-
-    // Afficher le sous-menu correspondant
+    closeMenu();
     showSubMenu(id, name);
   });
 });
 
-// Clic sur menu desktop
-const desktopMenuItems = document.querySelectorAll('.menu-item');
-desktopMenuItems.forEach(item => {
+// Clic menu desktop
+document.querySelectorAll('#main-nav .menu-item').forEach(item => {
   item.addEventListener('click', (e) => {
     e.preventDefault();
     const id = item.dataset.id;
