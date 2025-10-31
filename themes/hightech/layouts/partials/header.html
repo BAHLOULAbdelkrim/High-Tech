@@ -54,6 +54,13 @@
 
   <!-- Menu mobile (plein écran, scrollable, croix toujours visible) -->
   <nav id="mobile-nav" class="fixed top-0 left-0 w-full h-full bg-white z-50 transform -translate-y-full opacity-0 pointer-events-none overflow-y-auto md:hidden">
+    <!-- Bouton fermer menu mobile -->
+    <button id="mobile-nav-close" class="absolute top-4 right-4 w-8 h-8 flex flex-col justify-center items-center z-50">
+      <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300 rotate-45 translate-y-1.5"></span>
+      <span class="burger-line w-full h-1 bg-violet-800 rounded opacity-0"></span>
+      <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300 -rotate-45 -translate-y-1.5"></span>
+    </button>
+
     <ul class="flex flex-col space-y-2 p-4 mt-20">
       {{ range .Site.Menus.main }}
       <li>
@@ -66,112 +73,41 @@
   </nav>
 
   <!-- Styles -->
-<style>
-  /* Burger animation */
-  #menu-toggle .burger-line {
-    transition: all 0.3s ease;
-    width: 100%;
-    height: 3px;
-    background-color: #4c1d95;
-    border-radius: 2px;
-    transform-origin: center;
-  }
-  #menu-toggle.open .burger-line:nth-child(1) {
-    transform: rotate(45deg);
-    position: relative;
-    top: 10px;
-  }
-  #menu-toggle.open .burger-line:nth-child(2) { opacity: 0; }
-  #menu-toggle.open .burger-line:nth-child(3) {
-    transform: rotate(-45deg);
-    position: relative;
-    top: -10px;
-  }
+  <style>
+    /* Burger animation */
+    #menu-toggle .burger-line { transition: all 0.3s ease; width: 100%; height: 3px; background-color: #4c1d95; border-radius: 2px; transform-origin: center; }
+    #menu-toggle.open .burger-line:nth-child(1) { transform: rotate(45deg); position: relative; top: 10px; }
+    #menu-toggle.open .burger-line:nth-child(2) { opacity: 0; }
+    #menu-toggle.open .burger-line:nth-child(3) { transform: rotate(-45deg); position: relative; top: -10px; }
 
-  /* Menu mobile animation */
-  #mobile-nav {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    transform: translateY(-100%);
-    opacity: 0;
-    pointer-events: none;
-  }
-  #mobile-nav.open {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
+    /* Menu mobile animation */
+    #mobile-nav { transition: transform 0.3s ease, opacity 0.3s ease; transform: translateY(-100%); opacity: 0; pointer-events: none; }
+    #mobile-nav.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
 
-  /* Bloquer scroll page quand menu ouvert */
-  body.menu-open { overflow: hidden; }
+    /* Bloquer scroll page quand menu ouvert */
+    body.menu-open { overflow: hidden; }
 
-  /* Scroll interne menu mobile */
-  #mobile-nav ul {
-    max-height: calc(100vh - 16px);
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-  }
+    /* Scroll interne menu mobile */
+    #mobile-nav ul { max-height: calc(100vh - 16px); overflow-y: auto; -webkit-overflow-scrolling: touch; }
 
-  /* Sous-menus */
-  .submenu a {
-    display: block;
-    font-size: 1.25rem;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    background: #f7afaf;
-    color: #1e3a8a;
-    border-radius: 0.5rem;
-    margin-bottom: 0.5rem;
-    text-decoration: none;
-    transition: 0.3s;
-    position: relative;
-    overflow: hidden; /* ✅ limite le reflet au lien seulement */
-  }
-  .submenu a.active { background: #84a4fc; color: #ff0000; }
-  .submenu a:hover { background: #84a4fc; color: #ff0000; }
+    /* Sous-menus */
+    .submenu a { display: block; font-size: 1.25rem; font-weight: bold; padding: 0.5rem 1rem; background: #f7afaf; color: #1e3a8a; border-radius: 0.5rem; margin-bottom: 0.5rem; text-decoration: none; transition: 0.3s; position: relative; overflow: hidden; }
+    .submenu a.active { background: #84a4fc; color: #ff0000; }
+    .submenu a:hover { background: #84a4fc; color: #ff0000; }
 
-  .menu-main-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #1e3a8a;
-    margin-bottom: 1rem;
-  }
+    .menu-main-title { font-size: 2.5rem; font-weight: bold; color: #1e3a8a; margin-bottom: 1rem; }
 
-  /* Brillance menus principaux */
-  .menu-item {
-    position: relative;
-    overflow: hidden;
-  }
-  .menu-item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -75%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
-    transform: skewX(-20deg);
-    overflow: hidden; /* ✅ limite le reflet */
-  }
-  .menu-item:hover::before { animation: shine 0.7s forwards; }
-  @keyframes shine { 0% { left: -75%; } 100% { left: 125%; } }
+    /* Brillance menus principaux */
+    .menu-item { position: relative; overflow: hidden; }
+    .menu-item::before { content: ""; position: absolute; top: 0; left: -75%; width: 50%; height: 100%; background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); transform: skewX(-20deg); overflow: hidden; }
+    .menu-item:hover::before { animation: shine 0.7s forwards; }
+    @keyframes shine { 0% { left: -75%; } 100% { left: 125%; } }
 
-  /* Brillance sous-menus */
-  .submenu a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -75%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
-    transform: skewX(-20deg);
-    overflow: hidden; /* ✅ limite le reflet */
-  }
-  .submenu a:hover::before { animation: shine-submenu 0.7s forwards; }
-  @keyframes shine-submenu { 0% { left: -75%; } 100% { left: 125%; } }
-
-</style>
-
+    /* Brillance sous-menus */
+    .submenu a::before { content: ""; position: absolute; top: 0; left: -75%; width: 50%; height: 100%; background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); transform: skewX(-20deg); overflow: hidden; }
+    .submenu a:hover::before { animation: shine-submenu 0.7s forwards; }
+    @keyframes shine-submenu { 0% { left: -75%; } 100% { left: 125%; } }
+  </style>
 
   <script src="/js/menu.js"></script>
   <script src="/js/subMenus.js"></script>
