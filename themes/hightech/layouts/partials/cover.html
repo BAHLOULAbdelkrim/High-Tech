@@ -1,10 +1,9 @@
 {{/* layouts/partials/cover.html */}}
-
-{{ $menuID := .Scratch.Get "activeMenu" }}
 <div id="cover-container" class="relative overflow-hidden rounded-lg shadow mb-6">
+  {{ $menuID := .Scratch.Get "activeMenu" }}
 
   {{ if not $menuID }}
-    <!-- 🎞️ Diaporama par défaut (page d'accueil) -->
+    <!-- 🎞️ Slider page d'accueil -->
     <div id="slider" class="relative">
       {{ $slides := .Site.Params.slider }}
       {{ if not $slides }}
@@ -22,7 +21,6 @@
     </div>
 
     <script>
-      // --- Slider JS ---
       const intervalTime = {{ default 3000 .Site.Params.sliderInterval }};
       let currentIndex = 0;
       const slider = document.getElementById('slider');
@@ -45,8 +43,9 @@
     </script>
 
   {{ else }}
-    <!-- 🖼️ Image statique du menu actif -->
-    <img src="/images/{{ $menuID }}.png" alt="{{ $menuID }}" class="w-full h-64 object-cover">
+    <!-- 🖼️ Image du menu actif -->
+    <div id="menu-image-container">
+      <img src="/images/{{ $menuID }}.png" alt="{{ $menuID }}" class="w-full h-64 object-cover">
+    </div>
   {{ end }}
-
 </div>
