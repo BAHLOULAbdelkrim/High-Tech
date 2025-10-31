@@ -105,9 +105,38 @@ document.addEventListener("DOMContentLoaded", function() {
   const menuItems = document.querySelectorAll(".menu-item, .sidebar-link"); // liens du haut et de gauche
 
   menuItems.forEach(item => {
-    item.addEventListener("click", function(e) {
-      e.preventDefault();
-      const id = item.getAttribute("data-id");
+item.addEventListener("click", function(e) {
+  e.preventDefault();
+  const id = item.getAttribute("data-id");
+  if (!id || !window.subMenus[id]) return;
+
+  // 1️⃣ Afficher l'image du menu
+  const imgSrc = `/images/${id}.png`;
+  const slider = document.getElementById('slider');
+  slider.innerHTML = `<div class="slide"><img src="${imgSrc}" alt="${id}" class="w-full h-64 object-cover"></div>`;
+  // optionnel : stopSlider();
+
+  // 2️⃣ Afficher les sous-menus sous l'image
+  const mainContent = document.getElementById("main-content");
+  const subs = window.subMenus[id];
+  let html = `<h2 class="menu-main-title mb-4">${item.textContent}</h2>`;
+  html += `<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">`;
+  subs.forEach(sub => {
+    html += `
+      <article class="submenu">
+        <h3 class="submenu-title">
+          <a href="${sub.url}">${sub.name}</a>
+        </h3>
+      </article>
+    `;
+  });
+  html += `</div>`;
+  mainContent.innerHTML = html;
+
+  // 3️⃣ Assurer que mainContent est visible
+  mainContent.style.display = 'block';
+});
+
 
 // Gestion du clic sur les sous-menus pour inversion couleurs
 const submenuLinks = document.querySelectorAll('.submenu a');

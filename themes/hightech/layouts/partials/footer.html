@@ -57,81 +57,46 @@ document.addEventListener('DOMContentLoaded', function() {
   coverContainer.parentNode.insertBefore(menuImageOverlay, coverContainer.nextSibling);
 
   // ✅ Correction principale ici
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const coverContainer = document.getElementById('cover-container');
-  if (!coverContainer) return;
-
-  const originalHTML = coverContainer.innerHTML;
-  const menuLinks = document.querySelectorAll('a[data-id]');
-  const homeLinks = document.querySelectorAll('a[href="/"], a[href="#home"]');
-  let activeMenu = null;
-
-  // ✅ Fonction : afficher l’image du menu
-  function showMenuImage(menuId) {
-    const imagePath = `/images/${menuId}.png`;
-    coverContainer.innerHTML = `
-      <img src="${imagePath}" alt="${menuId}"
-           class="w-full h-64 object-cover rounded-lg shadow transition-opacity duration-700 ease-in-out">
-    `;
-  }
-
-  // ✅ Fonction : restaurer le slider original
-  function restoreOriginalSlider() {
-    coverContainer.innerHTML = originalHTML;
-    activeMenu = null;
-    document.querySelectorAll('.menu-item.active-menu').forEach(el => el.classList.remove('active-menu'));
-  }
-
-  // ✅ Gestion du clic sur les menus principaux
   menuLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault(); // On garde le clic sans rechargement
-      const menuId = this.dataset.id;
+    link.addEventListener('mouseenter', function() {
+      // on utilise "mouseenter" au lieu de "click" pour ne pas bloquer les sous-menus
+      const menuId = this.getAttribute('data-menu');
+      const imagePath = `/images/${menuId}.png`;
 
-      // Si on reclique sur le même menu => on ferme ses sous-menus
-      if (activeMenu === menuId) {
-        this.classList.remove('active-menu');
-        activeMenu = null;
-        restoreOriginalSlider();
-        return;
-      }
+      menuImageOverlay.innerHTML = `
+        <img src="${imagePath}" alt="${menuId}"
+             class="w-full h-64 object-cover rounded-lg shadow">
+      `;
+      menuImageOverlay.style.display = 'block';
+      coverContainer.style.display = 'none';
+    });
 
-      // Sinon on active ce menu
-      document.querySelectorAll('.menu-item.active-menu').forEach(el => el.classList.remove('active-menu'));
-      this.classList.add('active-menu');
-      activeMenu = menuId;
-      showMenuImage(menuId);
-
-      // ✅ Nouveau : affichage du sous-menu correspondant
-      const parentLi = this.closest('li');
-      const submenus = document.querySelectorAll('#main-nav li ul');
-      submenus.forEach(ul => ul.classList.add('hidden')); // cache tous les sous-menus
-      if (parentLi) {
-        const submenu = parentLi.querySelector('ul');
-        if (submenu) submenu.classList.remove('hidden');
-      }
+    link.addEventListener('mouseleave', function() {
+      // Quand on quitte le menu, on remet l’image de fond originale
+      menuImageOverlay.style.display = 'none';
+      coverContainer.style.display = 'block';
     });
   });
 
-  // ✅ Clic sur “Accueil” → restaurer le slider
+  const homeLinks = document.querySelectorAll('a[href="/"], a[href="#home"]');
   homeLinks.forEach(link => {
     link.addEventListener('click', function() {
-      restoreOriginalSlider();
-      document.querySelectorAll('#main-nav li ul').forEach(ul => ul.classList.add('hidden'));
+      coverContainer.style.display = 'block';
+      menuImageOverlay.style.display = 'none';
+      coverContainer.innerHTML = originalHTML;
     });
   });
 
-  // ✅ Restaurer le slider quand on revient à la racine via navigation
-  window.addEventListener('popstate', () => {
-    if (window.location.pathname === '/' || window.location.pathname === '') {
-      restoreOriginalSlider();
-      document.querySelectorAll('#main-nav li ul').forEach(ul => ul.classList.add('hidden'));
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
-  });
+  `;
+  document.head.appendChild(style);
 });
 </script>
-
 
 
 
