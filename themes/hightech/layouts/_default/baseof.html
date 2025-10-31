@@ -13,33 +13,5 @@
       </div>
     </div>
     {{ partial "footer.html" . }}
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const mobileNav = document.getElementById("mobile-nav");
-    const menuToggle = document.getElementById("menu-toggle"); // ton bouton hamburger
-    const menuLinks = mobileNav.querySelectorAll(".menu-item");
-
-    function closeMenu() {
-      mobileNav.classList.add("-translate-y-full", "opacity-0", "pointer-events-none");
-      mobileNav.classList.remove("translate-y-0", "opacity-100");
-    }
-
-    menuLinks.forEach(link => {
-      link.addEventListener("click", closeMenu);
-    });
-
-    if (menuToggle) {
-      menuToggle.addEventListener("click", () => {
-        const isOpen = !mobileNav.classList.contains("pointer-events-none");
-        if (isOpen) {
-          closeMenu();
-        } else {
-          mobileNav.classList.remove("-translate-y-full", "opacity-0", "pointer-events-none");
-          mobileNav.classList.add("translate-y-0", "opacity-100");
-        }
-      });
-    }
-  });
-</script>
   </body>
 </html>
