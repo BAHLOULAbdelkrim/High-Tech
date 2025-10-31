@@ -144,3 +144,12 @@ document.querySelectorAll('#main-nav .menu-item').forEach(item => {
     showSubMenu(id, name);
   });
 });
+
+const mobileClose = document.getElementById('mobile-nav-close');
+if (mobileClose) {
+  mobileClose.addEventListener('click', (e) => {
+    e.stopPropagation();
+    closeMenu();
+  });
+}
+
