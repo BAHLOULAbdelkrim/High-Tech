@@ -130,6 +130,15 @@ document.querySelectorAll('#mobile-nav .menu-item').forEach(item => {
   });
 });
 
+// --- Toggle au clic sur le burger ---
+if (toggle) {
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggle.classList.toggle('open'); // ✅ Ajout pour animer la croix
+    isOpen ? closeMenu() : openMenu();
+  });
+}
+
 // Clic menu desktop
 document.querySelectorAll('#main-nav .menu-item').forEach(item => {
   item.addEventListener('click', (e) => {
