@@ -1,82 +1,45 @@
 // ===== Menu mobile =====
 const toggle = document.getElementById('menu-toggle');
 const mobileNav = document.getElementById('mobile-nav');
-const bars = toggle ? toggle.querySelectorAll('span') : [];
 let isOpen = false;
 
-// ouvrir menu mobile
 function openMenu() {
-  if (!mobileNav) return;
-
-  mobileNav.classList.add('open'); // ajoute la classe animée
-
-  if (bars.length) {
-    bars[0].classList.add('rotate-45', 'translate-y-1.5');
-    bars[1].classList.add('opacity-0');
-    bars[2].classList.add('-rotate-45', '-translate-y-1.5');
-  }
-
+  mobileNav.classList.add('open');
+  document.body.classList.add('menu-open');
   isOpen = true;
 }
 
-// fermer menu mobile
 function closeMenu() {
-  if (!mobileNav) return;
-
-  // retire l’animation ouverte
   mobileNav.classList.remove('open');
-
-  // Après la transition, désactive les clics
-  setTimeout(() => {
-    mobileNav.style.pointerEvents = 'none';
-  }, 500); // correspond à transition 0.5s
-
-  if (bars.length) {
-    bars[0].classList.remove('rotate-45', 'translate-y-1.5');
-    bars[1].classList.remove('opacity-0');
-    bars[2].classList.remove('-rotate-45', '-translate-y-1.5');
-  }
-
-  toggle.classList.remove('open');
+  document.body.classList.remove('menu-open');
   isOpen = false;
 }
 
-// --- Toggle au clic sur le burger ---
-if (toggle) {
-  toggle.addEventListener('click', (e) => {
-    e.stopPropagation();
-    toggle.classList.toggle('open'); // ✅ Ajout pour animer la croix
-    isOpen ? closeMenu() : openMenu();
-  });
-}
-
-// --- Fermer au scroll vers le bas ---
-// let lastScroll = 0;
-// window.addEventListener('scroll', () => {
-//   const currentScroll = window.pageYOffset;
-//   if (isOpen && currentScroll > lastScroll) closeMenu();
-//   lastScroll = currentScroll;
-// });
-
-window.addEventListener('scroll', () => {
-  if (window.innerWidth >= 768) { // uniquement desktop
-    const currentScroll = window.pageYOffset;
-    if (isOpen && currentScroll > lastScroll) closeMenu();
-    lastScroll = currentScroll;
-  }
+toggle.addEventListener('click', e => {
+  e.stopPropagation();
+  isOpen ? closeMenu() : openMenu();
 });
 
-// --- Fermer si clic en dehors ---
-document.addEventListener('click', (e) => {
-  if (isOpen && mobileNav && !mobileNav.contains(e.target) && !toggle.contains(e.target)) {
+// Fermer menu si clic en dehors
+document.addEventListener('click', e => {
+  if (isOpen && !mobileNav.contains(e.target) && !toggle.contains(e.target)) {
     closeMenu();
   }
 });
 
-// --- Fermer si écran élargi ---
-window.addEventListener('resize', () => {
-  if (window.innerWidth >= 768 && isOpen) closeMenu();
+// Clic sur menu mobile pour afficher le sous-menu
+const mobileMenuItems = document.querySelectorAll('#mobile-nav .menu-item');
+mobileMenuItems.forEach(item => {
+  item.addEventListener('click', e => {
+    e.preventDefault();
+    const id = item.dataset.id;
+    const name = item.textContent;
+
+    showSubMenu(id, name);
+    closeMenu(); // on ferme le burger mais mainContent est déjà mis à jour
+  });
 });
+
 
 // ===== Sidebar filtre marques =====
 document.querySelectorAll('.brand-filter input[type="checkbox"]').forEach(checkbox => {

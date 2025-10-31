@@ -85,14 +85,25 @@
 }
 
 #mobile-nav {
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* plein écran */
+  background-color: white;
+  z-index: 1000;
   transform: translateY(-100%);
   opacity: 0;
   pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 
-  /* ✅ Ajout pour résoudre le scroll mobile */
-  max-height: calc(100vh - 16px); /* limite la hauteur à la fenêtre */
-  overflow-y: auto; /* scroll interne uniquement */
+  max-height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* scroll fluide iOS */
+}
+
+body.menu-open {
+  overflow: hidden; /* bloque le scroll du body quand menu ouvert */
 }
 
 #mobile-nav.open {
