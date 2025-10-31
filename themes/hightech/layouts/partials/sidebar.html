@@ -28,47 +28,40 @@
 <!-- Même contenu injecté dans le menu mobile -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const mobileNav = document.querySelector('#mobile-nav ul');
-  if (!mobileNav) return;
+  const mobileNavList = document.getElementById('mobile-menu-list');
+  if (!mobileNavList) return;
 
-  const extraLinks1 = `
+  const linksBefore = `
+    <li>
+      <a href="/actualites-nouveautes/" class="icon-link block text-center px-3 py-2 text-[18px] font-semibold text-emerald-700 bg-violet-100 rounded transition duration-300 hover:text-violet-800 hover:bg-emerald-100">
+        Actualités & Nouveautés
+      </a>
+    </li>
+    <li>
+      <a href="/tests-comparatifs/" class="icon-link block text-center px-3 py-2 text-[18px] font-semibold text-emerald-700 bg-violet-100 rounded transition duration-300 hover:text-violet-800 hover:bg-emerald-100">
+        Filtrer par :
+      </a>
+    </li>
     <hr class="my-4 border-emerald-200">
-    <ul class="flex flex-col space-y-2">
-      <li>
-        <a href="/actualites-nouveautes/" class="icon-link block text-center px-3 py-2 text-[18px] font-semibold text-emerald-700 bg-violet-100 rounded transition duration-300 hover:text-violet-800 hover:bg-emerald-100">
-          Actualités & Nouveautés
-        </a>
-      </li>
-    /ul>
-    `;
-  const extraLinks2 = `
-    <hr class="my-4 border-emerald-200">
-    <ul class="flex flex-col space-y-2">
-      <li>
-        <a href="/tests-comparatifs/" class="icon-link block text-center px-3 py-2 text-[18px] font-semibold text-emerald-700 bg-violet-100 rounded transition duration-300 hover:text-violet-800 hover:bg-emerald-100">
-          Filtrer par :
-        </a>
-      </li>
-    </ul>
-    `;
-  const extraLinks3 = `
-    <hr class="my-4 border-emerald-200">
-    <ul class="flex flex-col space-y-2">
+  `;
 
-      <li>
-        <a href="https://www.facebook.com/tonpage" target="_blank"
-           class="icon-link flex items-center justify-center gap-2 px-3 py-2 text-[18px] font-semibold text-emerald-700 bg-violet-100 rounded transition duration-300 hover:text-violet-800 hover:bg-emerald-100">
-          <img src="{{ "images/facebook.svg" | relURL }}" alt="Facebook" class="w-5 h-5">
-          Facebook
-        </a>
-      </li>
-    </ul>
-    `;
-  // Insérer dans les menus principaux :
-  mobileNav.insertAdjacentHTML('afterbegin', extraLinks1);
-  mobileNav.insertAdjacentHTML('beforeend', extraLinks2);
-  mobileNav.insertAdjacentHTML('beforeend', extraLinks3);
+  const linkFacebook = `
+    <hr class="my-4 border-emerald-200">
+    <li>
+      <a href="https://www.facebook.com/tonpage" target="_blank"
+         class="icon-link flex items-center justify-center gap-2 px-3 py-2 text-[18px] font-semibold text-emerald-700 bg-violet-100 rounded transition duration-300 hover:text-violet-800 hover:bg-emerald-100">
+        <img src="{{ "images/facebook.svg" | relURL }}" alt="Facebook" class="w-5 h-5">
+        Facebook
+      </a>
+    </li>
+  `;
+
+  // Ajout au début
+  mobileNavList.insertAdjacentHTML('afterbegin', linksBefore);
+  // Ajout à la fin
+  mobileNavList.insertAdjacentHTML('beforeend', linkFacebook);
 });
+
 </script>
 
 <style>
