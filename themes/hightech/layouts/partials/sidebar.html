@@ -25,13 +25,36 @@
   </div>
 </aside>
 
-<!-- Mobile nav — injecte les liens supplémentaires -->
+<!-- Mobile nav -->
+<nav id="mobile-nav" class="fixed top-0 left-0 w-full h-full bg-white z-50 transform -translate-y-full opacity-0 pointer-events-none md:hidden overflow-hidden">
+  <!-- Bouton fermer -->
+  <button id="mobile-nav-close" class="absolute top-4 right-4 w-8 h-8 flex flex-col justify-center items-center z-50">
+    <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300 rotate-45 translate-y-1"></span>
+    <span class="burger-line w-full h-1 bg-violet-800 rounded opacity-0"></span>
+    <span class="burger-line w-full h-1 bg-violet-800 rounded transition-all duration-300 -rotate-45 -translate-y-1"></span>
+  </button>
+
+  <!-- Conteneur scrollable -->
+  <div class="pt-20 pb-4 h-full overflow-y-auto overscroll-contain px-4">
+    <ul id="mobile-menu-list" class="flex flex-col space-y-2">
+      <!-- Menus principaux injectés via JS -->
+      {{ range .Site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}" data-id="{{ .Identifier }}"
+           class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+          {{ .Name }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</nav>
+
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const menu = document.querySelector('#mobile-nav ul');
+  const menu = document.getElementById('mobile-menu-list');
   if (!menu) return;
 
-  // Liens à mettre avant les menus principaux
   const beforeLinks = `
     <li>
       <a href="/actualites-nouveautes/" class="icon-link block text-center px-3 py-2 text-[18px] font-semibold text-emerald-700 bg-violet-100 rounded transition duration-300 hover:text-violet-800 hover:bg-emerald-100">
@@ -46,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
     <hr class="my-2 border-emerald-200">
   `;
 
-  // Lien Facebook à la fin
   const afterLinks = `
     <hr class="my-2 border-emerald-200">
     <li>
@@ -62,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
   menu.insertAdjacentHTML('beforeend', afterLinks);
 });
 </script>
+
 
 <style>
 /* ---- Effet de brillance ---- */
