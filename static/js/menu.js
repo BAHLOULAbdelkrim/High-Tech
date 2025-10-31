@@ -25,7 +25,12 @@ function closeMenu() {
 if (toggle) {
   toggle.addEventListener('click', (e) => {
     e.stopPropagation();
-    isOpen ? closeMenu() : openMenu();
+
+    if (!isOpen) {
+      openMenu(); // ouvre le menu et ajoute la classe 'open' au burger
+    } else {
+      closeMenu(); // ferme le menu et retire la classe 'open'
+    }
   });
 }
 
