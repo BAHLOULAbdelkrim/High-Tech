@@ -2,18 +2,21 @@
   <div class="bg-white border rounded p-4 sticky top-6">
     <ul class="space-y-2">
       <li>
-        <a href="/actualites-nouveautes/" class="block text-center px-3 py-2 text-[20px] font-semibold text-emerald-700 bg-violet-100 rounded transition-colors duration-300 hover:text-violet-800 hover:bg-emerald-100">
+        <a href="/actualites-nouveautes/"
+           class="icon-link block text-center px-3 py-2 text-[20px] font-semibold text-emerald-700 bg-violet-100 rounded transition-colors duration-300 hover:text-violet-800 hover:bg-emerald-100">
           Actualités & Nouveautés
         </a>
       </li>
       <li>
-        <a href="/tests-comparatifs/" class="block text-center px-3 py-2 text-[20px] font-semibold text-emerald-700 bg-violet-100 rounded transition-colors duration-300 hover:text-violet-800 hover:bg-emerald-100">
+        <a href="/tests-comparatifs/"
+           class="icon-link block text-center px-3 py-2 text-[20px] font-semibold text-emerald-700 bg-violet-100 rounded transition-colors duration-300 hover:text-violet-800 hover:bg-emerald-100">
           Filtrer par :
         </a>
       </li>
       <li>
-        <a href="https://www.facebook.com/tonpage" target="_blank" class="flex items-center justify-center gap-2 px-3 py-2 text-[20px] font-semibold text-emerald-700 bg-violet-100 rounded transition-colors duration-300 hover:text-violet-800 hover:bg-emerald-100">
-          <img src="{{ "images/facebook.svg" | relURL }}" alt="Facebook" class="icon w-5 h-5">
+        <a href="https://www.facebook.com/tonpage" target="_blank"
+           class="icon-link flex items-center justify-center gap-2 px-3 py-2 text-[20px] font-semibold text-emerald-700 bg-violet-100 rounded transition-colors duration-300 hover:text-violet-800 hover:bg-emerald-100">
+          <img src="{{ "images/facebook.svg" | relURL }}" alt="Facebook" class="w-5 h-5">
           Facebook
         </a>
       </li>
@@ -22,49 +25,39 @@
 </aside>
 
 <style>
-/* --- Effet de brillance sur les icônes --- */
-.icon {
+/* ---- Effet de brillance pour tous les liens du menu latéral ---- */
+.icon-link {
   position: relative;
-  display: inline-block;
-  transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
-/* Reflet lumineux */
-.icon::after {
+/* Reflet — identique à celui du header */
+.icon-link::before {
   content: "";
   position: absolute;
   top: 0;
   left: -75%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(120deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0.2) 100%);
-  transform: skewX(-25deg);
-  opacity: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.5) 50%,
+    rgba(255,255,255,0) 100%
+  );
+  transform: skewX(-20deg);
+  overflow: hidden;
 }
 
-/* Animation de brillance au survol (desktop) et toucher (mobile) */
-.icon:hover::after,
-.icon:active::after {
-  animation: shine 1s ease-in-out;
-  opacity: 1;
+/* Animation */
+.icon-link:hover::before,
+.icon-link:active::before {
+  animation: shine-aside 0.7s forwards;
 }
 
-/* Petit zoom au survol/toucher */
-.icon:hover,
-.icon:active {
-  transform: scale(1.1);
-}
-
-/* Défilement de la brillance */
-@keyframes shine {
-  0% {
-    left: -75%;
-  }
-  50% {
-    left: 125%;
-  }
-  100% {
-    left: 125%;
-  }
+/* Même animation que dans le header */
+@keyframes shine-aside {
+  0% { left: -75%; }
+  100% { left: 125%; }
 }
 </style>
