@@ -14,9 +14,6 @@
           <a href="#" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
             {{ .Name }}
           </a>
-          <!--    {{ if .Params.image }}
-                <img src="{{ .Params.image }}" alt="{{ .Name }}" class="menu-img">
-              {{ end }}  -->
         </li>
         {{ end }}
       </ul>
@@ -26,9 +23,6 @@
           <a href="#" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
             {{ .Name }}
           </a>
-       <!--       {{ if .Params.image }}
-                <img src="{{ .Params.image }}" alt="{{ .Name }}" class="menu-img">
-              {{ end }}   -->
         </li>
         {{ end }}
       </ul>
@@ -114,6 +108,7 @@
     @keyframes shine-submenu { 0% { left: -75%; } 100% { left: 125%; } }
   </style>
 
-  <script src="/js/menu.js"></script>
+  <!-- Scripts -->
   <script src="/js/subMenus.js"></script>
+  <script src="/js/menu.js"></script>
 </header>

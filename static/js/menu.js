@@ -3,16 +3,14 @@ const toggle = document.getElementById('menu-toggle');
 const mobileNav = document.getElementById('mobile-nav');
 let isOpen = false;
 
-// Ouvrir menu mobile
 function openMenu() {
   if (!mobileNav) return;
   mobileNav.classList.add('open');
-  document.body.classList.add('menu-open'); // bloque scroll arrière-plan
+  document.body.classList.add('menu-open');
   toggle.classList.add('open');
   isOpen = true;
 }
 
-// Fermer menu mobile
 function closeMenu() {
   if (!mobileNav) return;
   mobileNav.classList.remove('open');
@@ -21,44 +19,21 @@ function closeMenu() {
   isOpen = false;
 }
 
-// Toggle burger
 if (toggle) {
   toggle.addEventListener('click', (e) => {
     e.stopPropagation();
-
-    if (!isOpen) {
-      openMenu(); // ouvre le menu et ajoute la classe 'open' au burger
-    } else {
-      closeMenu(); // ferme le menu et retire la classe 'open'
-    }
+    isOpen ? closeMenu() : openMenu();
   });
 }
 
-// Fermer si clic en dehors
 document.addEventListener('click', (e) => {
   if (isOpen && mobileNav && !mobileNav.contains(e.target) && !toggle.contains(e.target)) {
     closeMenu();
   }
 });
 
-// Fermer si écran élargi
 window.addEventListener('resize', () => {
   if (window.innerWidth >= 768 && isOpen) closeMenu();
-});
-
-// ===== Sidebar filtre marques =====
-document.querySelectorAll('.brand-filter input[type="checkbox"]').forEach(checkbox => {
-  checkbox.addEventListener('change', () => {
-    const brand = checkbox.dataset.brand;
-    const checked = checkbox.checked;
-    const products = document.querySelectorAll('.product-item');
-
-    products.forEach(p => {
-      if (p.dataset.brand === brand) {
-        p.style.display = checked ? 'block' : 'none';
-      }
-    });
-  });
 });
 
 // ===== Menu langue mobile =====
@@ -81,9 +56,7 @@ if (langToggleMobile) {
     langMenu.style.display = langMenu.style.display === 'none' ? 'block' : 'none';
   });
 
-  document.addEventListener('click', () => {
-    langMenu.style.display = 'none';
-  });
+  document.addEventListener('click', () => { langMenu.style.display = 'none'; });
 
   langMenu.querySelectorAll('li').forEach(li => {
     li.addEventListener('click', () => {
@@ -93,7 +66,7 @@ if (langToggleMobile) {
   });
 }
 
-// ===== Sous-menus =====
+// ===== Gestion sous-menus =====
 function showSubMenu(id, name) {
   const mainContent = document.getElementById("main-content");
   if (!id || !window.subMenus[id] || !mainContent) return;
@@ -114,7 +87,7 @@ function showSubMenu(id, name) {
   html += `</div>`;
   mainContent.innerHTML = html;
 
-  // Liens actifs
+  // Ajout des listeners aux sous-menus injectés
   const submenuLinks = mainContent.querySelectorAll('.submenu a');
   submenuLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -124,7 +97,7 @@ function showSubMenu(id, name) {
   });
 }
 
-// Clic menu mobile
+// ===== Clic menu mobile =====
 document.querySelectorAll('#mobile-nav .menu-item').forEach(item => {
   item.addEventListener('click', (e) => {
     e.preventDefault();
@@ -135,7 +108,7 @@ document.querySelectorAll('#mobile-nav .menu-item').forEach(item => {
   });
 });
 
-// Clic menu desktop
+// ===== Clic menu desktop =====
 document.querySelectorAll('#main-nav .menu-item').forEach(item => {
   item.addEventListener('click', (e) => {
     e.preventDefault();
@@ -145,6 +118,7 @@ document.querySelectorAll('#main-nav .menu-item').forEach(item => {
   });
 });
 
+// ===== Fermer menu mobile avec la croix =====
 const mobileClose = document.getElementById('mobile-nav-close');
 if (mobileClose) {
   mobileClose.addEventListener('click', (e) => {
@@ -152,4 +126,3 @@ if (mobileClose) {
     closeMenu();
   });
 }
-
