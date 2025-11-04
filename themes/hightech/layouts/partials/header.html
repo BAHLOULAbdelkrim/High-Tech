@@ -1,7 +1,7 @@
 <header class="bg-white shadow relative z-50">
   <div class="container mx-auto px-4 py-4 flex items-center justify-between">
     <!-- Logo + Titre -->
-    <a href="/" class="flex items-center gap-2 min-w-[200px]">
+    <a href="{{ "/" | relURL }}" class="flex items-center gap-2 min-w-[200px]">
       <img src="{{ .Site.Params.logo | absURL }}" alt="High-Tech" class="w-12 h-12">
       <span class="text-2xl font-bold text-purple-900" style="font-family: 'Orbitron', sans-serif;">High-Tech</span>
     </a>
@@ -11,7 +11,7 @@
       <ul class="grid grid-cols-6 gap-2 justify-end w-full max-w-6xl mx-auto">
         {{ range first 6 .Site.Menus.main }}
         <li class="group relative">
-          <a href="#" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+          <a href="{{ .URL | relURL }}" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
             {{ .Name }}
           </a>
         </li>
@@ -20,7 +20,7 @@
       <ul class="grid grid-cols-6 gap-2 justify-end w-full max-w-6xl mx-auto mt-2">
         {{ range after 6 .Site.Menus.main }}
         <li class="group relative">
-          <a href="#" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+          <a href="{{ .URL | relURL }}" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
             {{ .Name }}
           </a>
         </li>
@@ -62,7 +62,7 @@
     <ul class="flex flex-col space-y-2 p-4 mt-20">
       {{ range .Site.Menus.main }}
       <li>
-        <a href="#" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
+        <a href="{{ .URL | relURL }}" data-id="{{ .Identifier }}" class="menu-item block text-center px-3 py-2 text-[20px] font-semibold text-violet-800 bg-emerald-100 hover:text-emerald-700 hover:bg-violet-100 rounded transition-colors duration-300">
           {{ .Name }}
         </a>
       </li>
@@ -70,30 +70,10 @@
     </ul>
   </nav>
 
-  <style>
-    /* Burger animation */
-    #menu-toggle .burger-line { transition: all 0.3s ease; width: 100%; height: 3px; background-color: #4c1d95; border-radius: 2px; transform-origin: center; }
-    #menu-toggle.open .burger-line:nth-child(1) { transform: rotate(45deg); position: relative; top: 10px; }
-    #menu-toggle.open .burger-line:nth-child(2) { opacity: 0; }
-    #menu-toggle.open .burger-line:nth-child(3) { transform: rotate(-45deg); position: relative; top: -10px; }
+  <!-- Styles séparés pour éviter erreur Hugo -->
+  <link rel="stylesheet" href="/css/header.css">
 
-    /* Menu mobile animation */
-    #mobile-nav { transition: transform 0.3s ease, opacity 0.3s ease; transform: translateY(-100%); opacity: 0; pointer-events: none; }
-    #mobile-nav.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
-
-    /* Bloquer scroll page quand menu ouvert */
-    body.menu-open { overflow: hidden; }
-
-    /* Scroll interne menu mobile */
-    #mobile-nav ul { max-height: calc(100vh - 16px); overflow-y: auto; -webkit-overflow-scrolling: touch; }
-
-    /* Sous-menus */
-    .submenu a { display: block; font-size: 1.25rem; font-weight: bold; padding: 0.5rem 1rem; background: #f7afaf; color: #1e3a8a; border-radius: 0.5rem; margin-bottom: 0.5rem; text-decoration: none; transition: 0.3s; position: relative; overflow: hidden; }
-    .submenu a.active { background: #84a4fc; color: #ff0000; }
-    .submenu a:hover { background: #84a4fc; color: #ff0000; }
-
-    .menu-main-title { font-size: 2.5rem; font-weight: bold; color: #1e3a8a; margin-bottom: 1rem; }
-
-    /* Brillance menus principaux */
-    .menu-item { position: relative; overflow: hidden; }
-    .menu-item::before { content: ""; position: absolute;
+  <!-- Scripts séparés -->
+  <script src="/js/menu.js"></script>
+  <script src="/js/subMenus.js"></script>
+</header>
