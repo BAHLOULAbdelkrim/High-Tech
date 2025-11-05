@@ -1,21 +1,25 @@
-baseURL = "https://high-tech.pages.dev/"
-title = "High-Tech — Nouvelles Technologies, Tests et Comparatifs"
-languageCode = "fr"
-theme = "high-tech-theme"
 
-[pagination]
-  pagerSize = 9
-
-[markup.goldmark.renderer]
-  unsafe = true
+baseURL = 'https://high-tech.pages.dev/'
+languageCode = 'fr-FR'
+title = 'High-Tech — Nouvelles Technologies, Tests et Comparatifs'
+theme = 'high-tech-theme'
+DefaultContentLanguage = 'fr'
 
 [params]
+  mainColor = 'emerald-400'
+  favicon = 'favicon.png'
   description = "Nouveautés & Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d'achat complets."
-  mainColor = "emerald-400"
-  logo = "images/logo.png"
-  mainViolet = "#7c3aed"
-  menuBg = "#bbf7d0"
-  menuText = "#7c3aed"
-  submenuBg = "#fde68a" # light red-ish placeholder for submenu background (user wanted light red)
-  submenuText = "#0ea5e9" # blue text for submenu
-  slidesInterval = 3000
+
+[pagination]
+  pagerSize = 10
+
+[languages]
+  [languages.fr]
+    languageName = 'Français'
+    weight = 1
+  [languages.en]
+    languageName = 'English'
+    weight = 2
+  [languages.ar]
+    languageName = 'العربية'
+    weight = 3

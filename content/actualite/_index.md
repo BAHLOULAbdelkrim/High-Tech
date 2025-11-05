@@ -1,4 +1,0 @@
----
-title: "Actualite"
----
-Page actualite.

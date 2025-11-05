@@ -1,5 +1,4 @@
 ---
 title: "Domotique"
-menu_image: "/images/menu_domotique.jpg"
+image: "images/domotique.png"
 ---
-Page principale de la section domotique.

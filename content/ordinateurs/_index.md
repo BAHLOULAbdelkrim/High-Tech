@@ -1,5 +1,4 @@
 ---
 title: "Ordinateurs"
-menu_image: "/images/menu_ordinateurs.jpg"
+image: "images/ordinateurs.png"
 ---
-Page principale de la section ordinateurs.

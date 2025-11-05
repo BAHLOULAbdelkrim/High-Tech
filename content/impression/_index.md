@@ -1,5 +1,4 @@
 ---
 title: "Impression"
-menu_image: "/images/menu_impression.jpg"
+image: "images/impression.png"
 ---
-Page principale de la section impression.

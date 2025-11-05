@@ -1,5 +1,4 @@
 ---
 title: "Objets Connectes"
-menu_image: "/images/menu_objets-connectes.jpg"
+image: "images/objets-connectes.png"
 ---
-Page principale de la section objets-connectes.
