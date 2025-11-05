@@ -1,4 +1,5 @@
 ---
 title: "Smartphones"
-description: "Articles sur Smartphones"
+menu_image: "/images/menu_smartphones.jpg"
 ---
+Page principale de la section smartphones.

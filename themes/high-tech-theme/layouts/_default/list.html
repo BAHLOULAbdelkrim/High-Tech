@@ -1,0 +1,33 @@
+{{ define "main" }}
+  <div class="container section-list">
+    <aside class="left-column">
+      {{ partial "leftmenus.html" . }}
+    </aside>
+    <section class="content-column">
+      <h1>{{ .Title }}</h1>
+      <div class="submenus">
+        <ul>
+          {{ range .Sections }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <div class="articles-grid">
+        {{ range .Pages }}
+          <article class="card">
+            <a href="{{ .RelPermalink }}">
+              <img src="{{ .Params.image }}" alt="{{ .Title }}">
+              <h2>{{ .Title }}</h2>
+              <p>{{ .Summary }}</p>
+            </a>
+          </article>
+        {{ end }}
+      </div>
+
+      {{ if .Paginator }}
+        {{ template "_internal/pagination.html" . }}
+      {{ end }}
+    </section>
+  </div>
+{{ end }}

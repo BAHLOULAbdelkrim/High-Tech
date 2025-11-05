@@ -1,0 +1,71 @@
+<header class="site-header">
+  <div class="header-left">
+    <img src="{{ .Site.Params.logo }}" alt="logo" class="logo">
+    <div class="sitename">
+      <span class="orbitron">High-Tech</span>
+    </div>
+  </div>
+
+  <nav class="top-menus" aria-label="Top navigation">
+    {{/* 12 menus hardcoded as requested */}}
+    <ul class="menu-grid">
+      {{/* First row */}}
+      {{ range $i, $m := slice "smartphones" "tablettes" "ordinateurs" "cameras" "wearables" "home-cinema" }}
+        <li class="menu-item"><a href="{{ printf "/%s/" $m | relURL }}" data-menu="{{ $m }}">{{ humanize $m }}</a></li>
+      {{ end }}
+      {{/* Second row */}}
+      {{ range $i, $m := slice "gaming" "domotique" "audio" "objets-connectes" "impression" "accessoires" }}
+        <li class="menu-item"><a href="{{ printf "/%s/" $m | relURL }}" data-menu="{{ $m }}">{{ humanize $m }}</a></li>
+      {{ end }}
+    </ul>
+
+    <div class="menu-bottom">
+      <div class="search">
+        <form action="{{ "search" | relURL }}" method="get">
+          <input name="q" placeholder="Rechercher..." aria-label="Rechercher">
+        </form>
+      </div>
+      <div class="langs">
+        <select aria-label="Langue">
+          <option>FR</option>
+          <option>EN</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <button class="mobile-burger" aria-label="Ouvrir le menu">☰</button>
+  {{ partial "mobilemenu.html" . }}
+</header>
+
+<section class="hero">
+  {{ if .IsHome }}
+    <div class="slideshow" id="slideshow">
+      <img src="{{ "images/slide1.jpg" | relURL }}" class="slide visible">
+      <img src="{{ "images/slide2.jpg" | relURL }}" class="slide">
+      <img src="{{ "images/slide3.jpg" | relURL }}" class="slide">
+      <img src="{{ "images/slide4.jpg" | relURL }}" class="slide">
+    </div>
+  {{ else }}
+    {{ $menuImg := .Params.menu_image }}
+    {{ if not $menuImg }}
+      {{/* Try section params */}}
+      {{ $sec := .Section }}
+      {{ with site.GetPage (printf "/%s/_index.md" $sec) }}
+        {{ $menuImg = .Params.menu_image }}
+      {{ end }}
+    {{ end }}
+    {{ if $menuImg }}
+      <div class="hero-static">
+        <img src="{{ $menuImg | relURL }}" alt="menu image">
+      </div>
+    {{ else }}
+      <div class="slideshow" id="slideshow">
+        <img src="{{ "images/slide1.jpg" | relURL }}" class="slide visible">
+        <img src="{{ "images/slide2.jpg" | relURL }}" class="slide">
+        <img src="{{ "images/slide3.jpg" | relURL }}" class="slide">
+        <img src="{{ "images/slide4.jpg" | relURL }}" class="slide">
+      </div>
+    {{ end }}
+  {{ end }}
+</section>

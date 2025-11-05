@@ -1,4 +1,5 @@
 ---
-title: "Caméras"
-description: "Articles sur Caméras"
+title: "Cameras"
+menu_image: "/images/menu_cameras.jpg"
 ---
+Page principale de la section cameras.

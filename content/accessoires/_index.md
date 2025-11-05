@@ -1,4 +1,5 @@
 ---
 title: "Accessoires"
-description: "Articles sur Accessoires"
+menu_image: "/images/menu_accessoires.jpg"
 ---
+Page principale de la section accessoires.

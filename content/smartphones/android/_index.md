@@ -1,5 +1,4 @@
 ---
 title: "Android"
-description: "Tous les smartphones Android"
-draft: false
 ---
+Page du sous-menu Android dans smartphones.
