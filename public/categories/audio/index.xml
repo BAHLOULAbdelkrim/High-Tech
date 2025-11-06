@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Audio on High-Tech — Nouvelles Technologies, Tests et Comparatifs</title>
+    <link>http://localhost:1313/categories/audio/</link>
+    <description>Recent content in Audio on High-Tech — Nouvelles Technologies, Tests et Comparatifs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 09 Jan 2025 12:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/audio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Audio — Filaires Test 17</title>
+      <link>http://localhost:1313/audio/audio-17/</link>
+      <pubDate>Thu, 09 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/audio/audio-17/</guid>
+      <description>&lt;p&gt;Contenu aléatoire pour l&amp;rsquo;article 17. Voici un texte d&amp;rsquo;exemple. Ce texte servira de démo pour la mise en page de l&amp;rsquo;article.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Audio — sans fil Test 18</title>
+      <link>http://localhost:1313/audio/audio-18/</link>
+      <pubDate>Wed, 01 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/audio/audio-18/</guid>
+      <description>&lt;p&gt;Contenu aléatoire pour l&amp;rsquo;article 18. Voici un texte d&amp;rsquo;exemple. Ce texte servira de démo pour la mise en page de l&amp;rsquo;article.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

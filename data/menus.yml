@@ -1,0 +1,92 @@
+- image: smartphones.png
+  name: Smartphones
+  subs:
+  - Android
+  - iPhone
+  - pliables
+- image: tablettes.png
+  name: Tablettes
+  subs:
+  - Android
+  - iPad
+  - Windows
+- image: ordinateurs.png
+  name: Ordinateurs
+  subs:
+  - Portables
+  - PC de bureau
+  - Min PC
+  - ultrabooks
+  - gaming
+- image: photos-videos.png
+  name: Photos & Vidéos
+  subs:
+  - Reflex
+  - mirrorless
+  - action cam
+  - objectifs
+  - caméras de surveillance
+  - projecteurs
+  - WebCam
+- image: wearables.png
+  name: Wearables
+  subs:
+  - Smartwatches
+  - bracelets fitness
+  - bracelets & montres & lunettes connectées
+  - lunettes réalité virtuelle
+- image: televisions.png
+  name: Home Cinema
+  subs:
+  - Smart TV
+  - OLED
+  - QLED
+  - projecteurs
+- image: gaming.png
+  name: Gaming
+  subs:
+  - Consoles
+  - accessoires
+  - jeux vidéo
+- image: domotique.png
+  name: Domotique
+  subs:
+  - Assistants vocaux
+  - lampes
+  - thermostats
+  - Mesure battement cardiaque
+  - mesure température
+  - mesure hypertension
+  - mesure glycémie
+- image: audio.png
+  name: Audio
+  subs:
+  - Filaires
+  - sans fil
+  - true wireless
+  - haut-parleurs
+  - microphones
+  - amplis
+- image: objets-connectes.png
+  name: Obj. connectés
+  subs:
+  - Drones
+  - caméras sportives
+  - gadgets
+- image: impression.png
+  name: Impression
+  subs:
+  - Imprimantes
+  - Imprimantes 3D
+  - photocopieuses
+  - scanners
+  - consommables
+- image: peripheriques.png
+  name: Périphériques
+  subs:
+  - Écrans
+  - souris
+  - claviers
+  - Stockage
+  - Énergie & Charge
+  - Protections
