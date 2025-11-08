@@ -373,3 +373,10 @@ body{
     display: block;
   }
 }
+
+/* Supprimer les bullets (puces noires) */
+.mobile-menu ul {
+  list-style: none;   /* supprime les bullets */
+  padding: 0;         /* supprime le padding par défaut */
+  margin: 0;          /* supprime la marge par défaut */
+}
