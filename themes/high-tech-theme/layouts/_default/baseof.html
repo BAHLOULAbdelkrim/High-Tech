@@ -16,5 +16,16 @@
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer.html" . }}
+<!-- Retour à la page principale via la touche clavier Backspace -->
+<script>
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Backspace' && !event.target.matches('input, textarea')) {
+      event.preventDefault();
+      if (window.location.pathname !== '/') {
+        window.location.href = '/';
+      }
+    }
+  });
+</script>
 </body>
 </html>
