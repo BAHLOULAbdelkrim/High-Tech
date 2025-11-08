@@ -329,31 +329,18 @@ body{
   transition: opacity 0.2s;
 }
 
-/* Menu mobile : caché sur desktop et visible sur mobile */
-.mobile-menu {
-  display: none;           /* caché sur Desktop */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  z-index: 9999;
-  overflow-y: auto;
-  padding: 16px;
+.mobile-burger {
+  display: none;
+  background: transparent;
+  border: 0;
+  font-size: 1.6rem;
+  position: absolute;
+  right: 12px;
+  top: 12px;
 }
 
-/* Affichage uniquement sur mobile (<900px) */
+/* Responsive : sur mobile, on masque les pubs */
 @media (max-width: 900px) {
-  .mobile-menu {
-    display: block;
-  }
-
-  .mobile-burger {
-    display: block;
-  }
-
-  /* Suppression des pubs et réorganisation du contenu */
   .container {
     grid-template-columns: 1fr;
   }
@@ -366,46 +353,66 @@ body{
   }
 }
 
-/* Liste du menu : plus de puces et retrait */
+/* Mobile menu : caché par défaut sur Desktop */
+.mobile-menu {
+  display: none;           /* caché sur Desktop */
+  position: fixed;         /* flottant au-dessus du contenu */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;        /* fond blanc ou autre selon ton thème */
+  z-index: 9999;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+/* Affiche le menu uniquement sur écrans ≤ 900px */
+@media (max-width: 900px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+
+/* Supprimer les bullets (puces noires) et marges/paddings */
 .mobile-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  list-style: none;   
+  padding: 0;         
+  margin: 0;          
 }
 
-/* Items : alignement icône + texte */
+/* Items du menu mobile : alignement icône + texte */
 .mobile-menu li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
+  display: flex;           
+  align-items: center;     
+  margin-bottom: 10px;     /* espace entre chaque item */
 }
 
-/* Liens du menu */
+/* Liens du menu mobile */
 .mobile-menu li a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: var(--violet);
+  color: var(--violet);    /* texte violet */
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1rem;         /* taille lisible */
 }
 
-/* Icônes */
+/* Taille et alignement des icônes */
 .mobile-menu li a .icon-small {
-  width: 28px;
-  height: 28px;
-  margin-right: 10px;
-  flex-shrink: 0;
+  width: 24px;             /* icône proportionnelle */
+  height: 24px;
+  margin-right: 8px;       /* espace entre icône et texte */
+  flex-shrink: 0;          /* empêche l'icône de se réduire */
 }
 
 /* Bouton fermer */
 .mobile-menu .close-mobile {
-  position: absolute;
-  top: 16px;
-  right: 16px;
   font-size: 1.6rem;
   background: transparent;
   border: none;
+  position: absolute;
+  top: 16px;
+  right: 16px;
   cursor: pointer;
 }
-
