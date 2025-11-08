@@ -1,22 +1,44 @@
-// Simple slideshow & mobile burger script
-document.addEventListener('DOMContentLoaded', function(){
-  const slides = document.querySelectorAll('.slideshow .slide');
-  let idx = 0;
-  const interval = 3000;
-  if(slides.length){
-    setInterval(()=>{
-      slides[idx].classList.remove('visible');
-      idx = (idx+1)%slides.length;
-      slides[idx].classList.add('visible');
-    }, interval);
-  }
+// Mobile menu toggle
+const toggle = document.getElementById('menu-toggle');
+const mobileNav = document.getElementById('mobile-nav');
+const closeBtn = document.getElementById('mobile-nav-close');
 
-  // mobile menu
-  const burger = document.querySelector('.mobile-burger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const closeBtn = mobileMenu && mobileMenu.querySelector('.close-mobile');
-  if(burger && mobileMenu){
-    burger.addEventListener('click', ()=> { mobileMenu.style.display='block'; mobileMenu.setAttribute('aria-hidden','false'); });
-    closeBtn && closeBtn.addEventListener('click', ()=> { mobileMenu.style.display='none'; mobileMenu.setAttribute('aria-hidden','true'); });
+function openMenu() {
+  mobileNav.classList.add('open');
+  document.body.classList.add('menu-open');
+  toggle.classList.add('open');
+}
+
+function closeMenu() {
+  mobileNav.classList.remove('open');
+  document.body.classList.remove('menu-open');
+  toggle.classList.remove('open');
+}
+
+if (toggle) {
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    mobileNav.classList.contains('open') ? closeMenu() : openMenu();
+  });
+}
+
+if (closeBtn) {
+  closeBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    closeMenu();
+  });
+}
+
+// Clic en dehors ferme le menu
+document.addEventListener('click', (e) => {
+  if (mobileNav.classList.contains('open') &&
+      !mobileNav.contains(e.target) &&
+      !toggle.contains(e.target)) {
+    closeMenu();
   }
+});
+
+// Fermer si écran élargi
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 900 && mobileNav.classList.contains('open')) closeMenu();
 });
