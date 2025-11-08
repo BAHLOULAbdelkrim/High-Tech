@@ -11,17 +11,16 @@
   --menu-padding: 8px 12px;
 }
 
-html {
-  background: #ff0000;
-}
-
-
 /* Police générale du site */
 body{
   font-family: Inter, sans-serif;
   margin:0;
   color: var(--main-emerald);
   background:#fff;
+}
+
+html {
+  background: #ff0000; /* couleur gris clair */
 }
 
 /* Nom du site en Orbitron */
