@@ -330,12 +330,10 @@ body{
 }
 
 
-
 /* ============================
-   MOBILE / MENU MOBILE (remplacer l'ancienne section mobile)
+   MOBILE / MENU MOBILE (version corrigée)
    ============================ */
 
-/* Burger - caché sur desktop, visible sur mobile via media query */
 .mobile-burger {
   display: none;
   background: transparent;
@@ -348,10 +346,31 @@ body{
   z-index: 1002;
 }
 
-/* Menu mobile : positionné au-dessus, mais caché par défaut (transform + opacity) */
+.mobile-burger .burger-line {
+  display: block;
+  width: 26px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: var(--violet);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animation croix */
+.mobile-burger.open .burger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.mobile-burger.open .burger-line:nth-child(2) {
+  opacity: 0;
+}
+.mobile-burger.open .burger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Menu mobile caché par défaut */
 .mobile-menu {
   position: fixed;
-  inset: 0;                    /* top:0; right:0; bottom:0; left:0 */
+  inset: 0;
   background: #fff;
   z-index: 1001;
   overflow-y: auto;
@@ -359,122 +378,92 @@ body{
   display: flex;
   flex-direction: column;
   align-items: stretch;
-
-  /* Hidden by default (does not occupy layout; no visible close button) */
-  transform: translateY(-8vh) scale(0.995);
+  transform: translateY(-8vh);
   opacity: 0;
   pointer-events: none;
   transition: transform 0.28s ease, opacity 0.28s ease;
 }
 
-/* When open, menu overlays and is interactive */
 .mobile-menu.open {
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
 }
 
-/* Close button: hidden unless menu is open (prevents visible cross at start) */
+/* Bouton fermer (caché par défaut) */
 .close-mobile {
   display: none;
   position: absolute;
   top: 14px;
   right: 14px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   background: transparent;
   border: none;
   cursor: pointer;
   z-index: 1003;
 }
-
-/* Show close button only when menu is open */
 .mobile-menu.open .close-mobile {
   display: block;
 }
 
-/* Remove bullets and reset list spacing */
+/* Liste menu mobile */
 .mobile-menu ul {
   list-style: none;
-  margin: 0;
+  margin: 60px 0 0 0;
   padding: 0;
-  margin-top: 48px; /* leave space for close button */
 }
-
-/* Each item stretches full width and uses flex layout */
 .mobile-menu li {
-  width: 100%;
   margin-bottom: 12px;
 }
-
-/* Link is full width; text centered or left per preference */
 .mobile-menu li a {
   display: flex;
   align-items: center;
-  gap: 12px;
-  width: 100%;
+  gap: 10px;
   padding: 12px 14px;
-  box-sizing: border-box;
-  text-decoration: none;
-  color: var(--violet);
   background: var(--menu-bg);
+  color: var(--violet);
   border-radius: 8px;
+  text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
-  line-height: 1.2;
-  word-break: normal;       /* allow wrapping, not cutting */
-  white-space: normal;      /* allow text to wrap */
+  transition: background 0.25s, color 0.25s;
 }
-
-/* Icon sizing: fixed but non-intrusive; prevents truncation */
-.mobile-menu li a .icon-small,
-.mobile-menu li a img.icon-small {
-  width: 28px;
-  height: 28px;
-  min-width: 28px;  /* ensure icon box doesn't shrink */
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-/* Hover / focus effects */
-.mobile-menu li a:hover,
-.mobile-menu li a:focus {
+.mobile-menu li a:hover {
   background: var(--menu-hover-bg);
   color: var(--menu-hover-text);
 }
 
-/* Ensure the mobile menu takes full width and menu items are readable */
-@media (max-width: 900px) {
+/* Icônes */
+.mobile-menu li a .icon-small,
+.mobile-menu li a img.icon-small {
+  width: 22px !important;
+  height: 22px !important;
+  max-width: 22px !important;
+  max-height: 22px !important;
+  flex-shrink: 0;
+  object-fit: contain;
+}
 
-  /* show burger */
+/* Responsive */
+@media (max-width: 900px) {
   .mobile-burger {
     display: block;
   }
-
-  /* Force single-column layout for page container on mobile */
+  .top-menus,
+  .left-ad,
+  .right-ad,
+  .left-column {
+    display: none !important;
+  }
   .container {
     grid-template-columns: 1fr !important;
   }
-
-  .left-ad,
-  .right-ad,
-  .left-column,
-  .top-menus {
-    display: none !important; /* hide desktop-only blocks on mobile */
-  }
-
   .content-column {
     grid-column: 1 !important;
   }
 }
 
-/* Accessibility: avoid background-scroll when menu open (optional)
-   We'll toggle body.menu-open via JS to block scroll */
+/* Empêche le scroll du fond quand le menu est ouvert */
 body.menu-open {
   overflow: hidden;
 }
-
-
-
-
-
-

@@ -1,45 +1,42 @@
-// ===== Mobile menu toggle (remplacer l'ancien bloc) =====
 document.addEventListener('DOMContentLoaded', function() {
   const burger = document.querySelector('#menu-toggle') || document.querySelector('.mobile-burger');
   const mobileMenu = document.getElementById('mobileMenu') || document.getElementById('mobile-nav');
-  const closeBtn = document.getElementById('mobileMenuClose') || document.querySelector('.close-mobile');
+  const closeBtn = mobileMenu ? mobileMenu.querySelector('.close-mobile') : null;
 
   if (!burger || !mobileMenu) return;
 
-  function openMenu() {
+  const openMenu = () => {
     mobileMenu.classList.add('open');
-    mobileMenu.setAttribute('aria-hidden', 'false');
-    document.body.classList.add('menu-open'); // block background scroll
-    // animate burger if you use class 'open' on burger
     burger.classList.add('open');
-  }
+    document.body.classList.add('menu-open');
+  };
 
-  function closeMenu() {
+  const closeMenu = () => {
     mobileMenu.classList.remove('open');
-    mobileMenu.setAttribute('aria-hidden', 'true');
-    document.body.classList.remove('menu-open');
     burger.classList.remove('open');
-  }
+    document.body.classList.remove('menu-open');
+  };
 
-  burger.addEventListener('click', function(e) {
+  burger.addEventListener('click', e => {
     e.stopPropagation();
-    if (mobileMenu.classList.contains('open')) closeMenu(); else openMenu();
+    if (mobileMenu.classList.contains('open')) closeMenu();
+    else openMenu();
   });
 
   if (closeBtn) {
-    closeBtn.addEventListener('click', function(e) {
+    closeBtn.addEventListener('click', e => {
       e.stopPropagation();
       closeMenu();
     });
   }
 
-  // close when clicking outside the menu content: if menu is open and click target is the overlay
-  mobileMenu.addEventListener('click', function(e) {
-    if (e.target === mobileMenu) { closeMenu(); }
+  // Ferme au clic hors du menu
+  mobileMenu.addEventListener('click', e => {
+    if (e.target === mobileMenu) closeMenu();
   });
 
-  // close on resize when desktop breakpoint crossed
-  window.addEventListener('resize', function() {
+  // Ferme au resize si on dépasse le breakpoint
+  window.addEventListener('resize', () => {
     if (window.innerWidth > 900 && mobileMenu.classList.contains('open')) closeMenu();
   });
 });
