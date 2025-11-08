@@ -5,12 +5,12 @@ title = 'High-Tech — Nouvelles Technologies, Tests et Comparatifs'
 theme = 'high-tech-theme'
 DefaultContentLanguage = 'fr'
 
-[pagination]
-  pagerSize = 10
-
 [params]
   mainColor = 'emerald-400'
   favicon = 'favicon.png'
+
+[pagination]
+  pagerSize = 10
 
 [languages]
   [languages.fr]
