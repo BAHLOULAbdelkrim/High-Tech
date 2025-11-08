@@ -19,10 +19,6 @@ body{
   background:#fff;
 }
 
-html {
-  background: #ff0000; /* couleur gris clair */
-}
-
 /* Nom du site en Orbitron */
 .orbitron{
   font-family:'Orbitron',sans-serif;
@@ -348,3 +344,8 @@ html {
   transition: opacity 0.2s;
 }
 
+
+
+html {
+  background: #ff0000; /* couleur gris clair */
+}
