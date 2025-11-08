@@ -11,6 +11,11 @@
   --menu-padding: 8px 12px;
 }
 
+html {
+  background: #504040;
+}
+
+
 /* Police générale du site */
 body{
   font-family: Inter, sans-serif;
