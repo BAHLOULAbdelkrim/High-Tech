@@ -16,10 +16,11 @@ body{font-family:Inter, sans-serif;margin:0;color:#111;background:#fff}
 .logo{width:56px;height:56px;object-fit:contain}
 .top-menus{flex:1}
 .menu-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;list-style:none;padding:0;margin:0}
-.menu-item a{display:block;background:var(--menu-bg);color:var(--violet);padding:var(--menu-padding);text-align:center;border-radius:6px;text-decoration:none;font-weight:600;transition:all .25s}
-.menu-item a:hover{background:var(--violet);color:var(--menu-bg);position:relative;overflow:hidden}
-.menu-item a:hover::after{content:'';position:absolute;inset:0;background:var(--shine);opacity:.6;transform:skewX(-20deg);animation:shine 1s linear}
-@keyframes shine{from{transform:translateX(-120%) skewX(-20deg)}to{transform:translateX(120%) skewX(-20deg)}}
+    /* Brillance menus principaux */
+    .menu-item { position: relative; overflow: hidden; }
+    .menu-item::before { content: ""; position: absolute; top: 0; left: -75%; width: 50%; height: 100%; background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); transform: skewX(-20deg); overflow: hidden; }
+    .menu-item:hover::before { animation: shine 0.7s forwards; }
+    @keyframes shine { 0% { left: -75%; } 100% { left: 125%; } }
 
 .menu-bottom{display:flex;justify-content:space-between;margin-top:8px;align-items:center}
 .search input{padding:8px;border-radius:6px;border:1px solid #ddd;width:100%;max-width:480px}
