@@ -36,7 +36,7 @@ body{
 }
 /* Conteneur interne centré (nouveau) */
 .header-container {
-  max-width: 1400px;      /* largeur maximale du site */
+  max-width: 1200px;      /* largeur maximale du site */
   margin: 0 auto;         /* centre le bloc horizontalement */
   padding: 12px 16px;     /* espace interne */
   display: flex;
@@ -175,7 +175,7 @@ body{
   display: grid;
   grid-template-columns: 160px 1fr 160px; /* pub gauche / contenu / pub droite */
   gap: 20px;
-  max-width: 1400px; /* largeur totale max du site */
+  max-width: 1200px; /* largeur totale max du site */
   margin: 20px auto;
   padding: 0 16px;
 }

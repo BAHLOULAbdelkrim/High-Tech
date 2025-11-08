@@ -29,11 +29,46 @@ body{
 }
 
 /* Header et structure existants */
-.site-header{display:flex;align-items:flex-start;gap:16px;padding:12px 16px;border-bottom:1px solid #eee;position:relative}
-.header-left{display:flex;align-items:center}
-.logo{width:56px;height:56px;object-fit:contain}
-.top-menus{flex:1}
-.menu-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;list-style:none;padding:0;margin:0}
+.site-header {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+/* Conteneur interne centré (nouveau) */
+.header-container {
+  max-width: 1200px;      /* largeur maximale du site */
+  margin: 0 auto;         /* centre le bloc horizontalement */
+  padding: 12px 16px;     /* espace interne */
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+}
+/* Bloc gauche du header */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+/* Logo */
+.logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+/* Menus du haut */
+.top-menus {
+  flex: 1;
+}
+/* Grille des menus du haut */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 
 /* Menu principal avec brillance */
 .menu-item a {
@@ -133,9 +168,54 @@ body{
 .slideshow img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s}
 .slideshow img.visible{opacity:1}
 .hero-static img{width:100%;height:300px;object-fit:cover;border-radius:8px}
-.container{max-width:1100px;margin:20px auto;padding:0 12px;display:grid;grid-template-columns:240px 1fr;gap:16px}
 .left-column{grid-column:1}
 .content-column{grid-column:2}
+
+.container {
+  display: grid;
+  grid-template-columns: 160px 1fr 160px; /* pub gauche / contenu / pub droite */
+  gap: 20px;
+  max-width: 1200px; /* largeur totale max du site */
+  margin: 20px auto;
+  padding: 0 16px;
+}
+/* Colonne principale (contenu actuel) */
+.content-column {
+  grid-column: 2; /* elle occupe la colonne centrale */
+}
+/* Colonne de gauche (pub gauche) */
+.left-ad {
+  grid-column: 1;
+}
+/* Colonne de droite (pub droite) */
+.right-ad {
+  grid-column: 3;
+}
+
+/* Style de base pour les emplacements de pub (tu peux personnaliser après) */
+.ad-slot img {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+}
+/* Optionnel : espacement entre pub et menu gauche */
+.ad-left {
+  margin-bottom: 20px;
+}
+
+/* Responsive : sur mobile, on masque les pubs */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .left-ad,
+  .right-ad {
+    display: none;
+  }
+  .content-column {
+    grid-column: 1;
+  }
+}
 
 /*
 .side-links ul{list-style:none;padding:0;margin:0}
@@ -189,14 +269,29 @@ body{
   margin: 0;          /* supprime la marge par défaut */
 }
 
-.latest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{border-radius:8px;overflow:hidden;border:1px solid #eee;background:#fff}
-.card img{width:100%;height:160px;object-fit:cover}
-.card
+.latest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
 
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  background: #fff;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* ✅ Correction : règle bien fermée et appliquée */
 .icon-small {
-  width: 2px;
-  height: 2px;
+  width: 20px !important;
+  height: 20px !important;
   vertical-align: middle;
   margin-right: 6px;
 }
