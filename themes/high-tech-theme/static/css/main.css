@@ -1,5 +1,5 @@
 :root{
-  --main-emerald: #34d399ff;      /* texte général du site (emerald-400) */
+/*  --main-emerald: #34d399ff; */     /* texte général du site (emerald-400) */
   --violet: #6b21a8ff;            /* texte des menus (violet-800) */
   --menu-bg: #d1fae5ff;           /* fond des menus (emerald-100) */
   --menu-hover-bg: #ede9feff;     /* fond des menus au hover (violet-100) */

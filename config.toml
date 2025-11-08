@@ -11,7 +11,7 @@ theme = "high-tech-theme"
   logo = "images/logo.png"
   
   # Couleurs mises à jour selon demandes
-  mainColor = "#34d399ff"      # emerald-400 pour le texte général du site
+#  mainColor = "#34d399ff"      # emerald-400 pour le texte général du site
   mainViolet = "#6b21a8ff"     # violet-800 pour le texte des menus
   menuBg = "#d1fae5ff"         # emerald-100 pour le fond des menus
   menuText = "#6b21a8ff"       # violet-800 pour le texte des menus
