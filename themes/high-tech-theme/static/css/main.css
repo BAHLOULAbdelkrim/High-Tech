@@ -1,8 +1,8 @@
 :root{
-  --main-emerald: #56ff91ff;
-  --violet: #5d00fdff;
-  --menu-bg: #56ff91ff;
-  --submenu-bg: #f84444ff;
+  --main-emerald: #34d399ff;
+  --violet: #ede9feff;
+  --menu-bg: #047857ff;
+  --submenu-bg: #f7afaf;
   --submenu-text: #1900ffff;
   --menu-padding: 8px 12px;
   --shine: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.35) 50%, rgba(255,255,255,0) 100%);

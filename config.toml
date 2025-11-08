@@ -9,10 +9,10 @@ theme = "high-tech-theme"
 [params]
   description = "Nouveautés & Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d'achat complets."
   logo = "images/logo.png"
-  mainColor = "#56ff91ff"
-  mainViolet = "#5d00fdff"
-  menuBg = "#56ff91ff"
-  menuText = "#5d00ffff"
-  submenuBg = "#f84444ff" # light red-ish placeholder for submenu background (user wanted light red)
+  mainColor = "#047857ff"
+  mainViolet = "#ede9feff"
+  menuBg = "#047857ff"
+  menuText = "#ede9feff"
+  submenuBg = "#f7afaf" # light red-ish placeholder for submenu background (user wanted light red)
   submenuText = "#1900ffff" # blue text for submenu
   slidesInterval = 3000
