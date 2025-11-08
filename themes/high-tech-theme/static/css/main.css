@@ -36,11 +36,6 @@ body{
 .menu-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;list-style:none;padding:0;margin:0}
 
 /* Menu principal avec brillance */
-.menu-item {
-  position: relative;
-  overflow: hidden;
-}
-
 .menu-item a {
   display: block;
   background: var(--menu-bg);
@@ -51,16 +46,11 @@ body{
   text-decoration: none;
   font-weight: 600;
   transition: all .25s;
+  position: relative;       /* nécessaire pour le ::before */
+  overflow: hidden;         /* nécessaire pour le ::before */
 }
 
-.menu-item a:hover {
-  background: var(--menu-hover-bg);
-  color: var(--menu-hover-text);
-  position: relative;
-  overflow: hidden;
-}
-
-.menu-item::before {
+.menu-item a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -69,16 +59,20 @@ body{
   height: 100%;
   background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
   transform: skewX(-20deg);
-  overflow: hidden;
 }
 
-.menu-item:hover::before {
+.menu-item a:hover::before {
   animation: shine 0.7s forwards;
 }
 
 @keyframes shine {
   0% { left: -75%; }
   100% { left: 125%; }
+}
+
+.menu-item a:hover {
+  background: var(--menu-hover-bg);
+  color: var(--menu-hover-text);
 }
 
 /* Sous-menus avec brillance */
