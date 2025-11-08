@@ -162,7 +162,7 @@ body{
 .menu-bottom{display:flex;justify-content:space-between;margin-top:8px;align-items:center}
 .search input{padding:8px;border-radius:6px;border:1px solid #ddd;width:100%;max-width:480px}
 .langs select{padding:8px;border-radius:6px;border:1px solid #ddd}
-.mobile-burger{display:none;background:transparent;border:0;font-size:1.6rem;position:absolute;right:12px;top:12px}
+.mobile-burger{display: none !important;background:transparent;border:0;font-size:1.6rem;position:absolute;right:12px;top:12px}
 
 .hero {
   margin-top: 12px;
