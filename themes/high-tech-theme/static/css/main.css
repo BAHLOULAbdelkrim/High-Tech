@@ -1,5 +1,7 @@
-:root{
-/*  --main-emerald: #34d399ff; */     /* texte général du site (emerald-400) */
+/* ========================
+   Variables globales
+   ======================== */
+:root {
   --violet: #6b21a8ff;            /* texte des menus (violet-800) */
   --menu-bg: #d1fae5ff;           /* fond des menus (emerald-100) */
   --menu-hover-bg: #ede9feff;     /* fond des menus au hover (violet-100) */
@@ -11,353 +13,23 @@
   --menu-padding: 8px 12px;
 }
 
-/* Police générale du site */
-body{
-  font-family: Inter, sans-serif;
-  margin:0;
-  color: var(--main-emerald);
-  background:#fff;
-}
-
-/* Nom du site en Orbitron */
-.orbitron{
-  font-family:'Orbitron',sans-serif;
-  color:var(--violet);
-  font-weight:700;
-  font-size:1.4rem;
-  margin-left:8px;
-}
-
-/* Header et structure existants */
-.site-header {
-  width: 100%;
-  border-bottom: 1px solid #eee;
-  background-color: #fff;
-}
-/* Conteneur interne centré (nouveau) */
-.header-container {
-  max-width: 1200px;      /* largeur maximale du site */
-  margin: 0 auto;         /* centre le bloc horizontalement */
-  padding: 12px 16px;     /* espace interne */
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  position: relative;
-}
-/* Bloc gauche du header */
-.header-left {
-  display: flex;
-  align-items: center;
-}
-/* Logo */
-.logo {
-  width: 56px;
-  height: 56px;
-  object-fit: contain;
-}
-/* Menus du haut */
-.top-menus {
-  flex: 1;
-}
-/* Grille des menus du haut */
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 6px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-/* Menu principal avec brillance */
-.menu-item a {
-  display: block;
-  background: var(--menu-bg);
-  color: var(--violet);
-  padding: var(--menu-padding);
-  text-align: center;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all .25s;
-  position: relative;       /* nécessaire pour le ::before */
-  overflow: hidden;         /* nécessaire pour le ::before */
-}
-
-.menu-item a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -75%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
-  transform: skewX(-20deg);
-}
-
-.menu-item a:hover::before {
-  animation: shine 0.7s forwards;
-}
-
-@keyframes shine {
-  0% { left: -75%; }
-  100% { left: 125%; }
-}
-
-.menu-item a:hover {
-  background: var(--menu-hover-bg);
-  color: var(--menu-hover-text);
-}
-
-/* Sous-menus avec brillance */
-.submenus ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 8px;
-}
-
-.submenus li a {
-  position: relative;
-  display: block;
-  padding: 10px;
-  background: var(--submenu-bg);
-  color: var(--submenu-text);
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  overflow: hidden;
-}
-
-.submenus li a:hover {
-  background: var(--submenu-hover-bg);
-  color: var(--submenu-hover-text);
-}
-
-.submenus li a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -75%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
-  transform: skewX(-20deg);
-  overflow: hidden;
-}
-
-.submenus li a:hover::before {
-  animation: shine-submenu 0.7s forwards;
-}
-
-@keyframes shine-submenu {
-  0% { left: -75%; }
-  100% { left: 125%; }
-}
-
-/* Partie restante inchangée */
-.menu-bottom{display:flex;justify-content:space-between;margin-top:8px;align-items:center}
-.search input{padding:8px;border-radius:6px;border:1px solid #ddd;width:100%;max-width:480px}
-.langs select{padding:8px;border-radius:6px;border:1px solid #ddd}
-.mobile-burger{display:none;background:transparent;border:0;font-size:1.6rem;position:absolute;right:12px;top:12px}
-
-.hero {
-  margin-top: 12px;
-  max-width: 1200px;   /* limite la largeur */
-  margin-left: auto;   /* centre horizontalement */
-  margin-right: auto;
-}
-.slideshow {
-  position: relative;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 8px;
-  max-width: 1200px;   /* même largeur que le reste du site */
-  margin: 0 auto;      /* centre horizontalement */
-}
-.slideshow img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 0.6s;
-}
-.slideshow img.visible {
-  opacity: 1;
-}
-.hero-static img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-  max-width: 1200px;   /* même contrainte de largeur */
-  margin: 0 auto;      /* centré */
-}
-.left-column {
-  grid-column: 1;
-}
-.content-column {
-  grid-column: 2;
-}
-
-
-.container {
-  display: grid;
-  grid-template-columns: 160px 1fr 160px; /* pub gauche / contenu / pub droite */
-  gap: 20px;
-  max-width: 1200px; /* largeur totale max du site */
-  margin: 20px auto;
-  padding: 0 16px;
-}
-/* Colonne principale (contenu actuel) */
-.content-column {
-  grid-column: 2; /* elle occupe la colonne centrale */
-}
-/* Colonne de gauche (pub gauche) */
-.left-ad {
-  grid-column: 1;
-}
-/* Colonne de droite (pub droite) */
-.right-ad {
-  grid-column: 3;
-}
-
-/* Style de base pour les emplacements de pub (tu peux personnaliser après) */
-.ad-slot img {
-  width: 100%;
-  border-radius: 6px;
-  display: block;
-}
-/* Optionnel : espacement entre pub et menu gauche */
-.ad-left {
-  margin-bottom: 20px;
-}
-
-/* Responsive : sur mobile, on masque les pubs */
-@media (max-width: 900px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
-  .left-ad,
-  .right-ad {
-    display: none;
-  }
-  .content-column {
-    grid-column: 1;
-  }
-}
-
-/*
-.side-links ul{list-style:none;padding:0;margin:0}
-.side-links li{background:var(--violet);color:var(--main-emerald);padding:10px;margin-bottom:8px;border-radius:6px;text-align:left}
-.side-links li a{color:var(--main-emerald);text-decoration:none;font-weight:600;display:block}
-.side-links li a:hover{background:var(--main-emerald);color:var(--violet);position:relative;overflow:hidden}
-.side-links li a:hover::after{content:'';position:absolute;inset:0;background:var(--shine);opacity:.6;transform:skewX(-20deg);animation:shine 1s linear}
-*/
-
-/* Menu latéral avec même style que les menus du haut */
-.side-links .menu-item a {
-  display: block;
-  background: var(--menu-bg);
-  color: var(--violet);
-  padding: var(--menu-padding);
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 6px;
-  position: relative;   /* nécessaire pour ::before */
-  overflow: hidden;     /* nécessaire pour ::before */
-  transition: all .25s;
-}
-
-.side-links .menu-item {
-  margin-bottom: 10px;   /* espace vertical entre chaque menu */
-}
-
-.side-links .menu-item a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -75%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
-  transform: skewX(-20deg);
-}
-
-.side-links .menu-item a:hover::before {
-  animation: shine 0.7s forwards;
-}
-
-.side-links .menu-item a:hover {
-  background: var(--menu-hover-bg);
-  color: var(--menu-hover-text);
-}
-
-.side-links ul {
-  list-style: none;   /* enlève les puces */
-  padding: 0;         /* supprime le retrait gauche par défaut */
-  margin: 0;          /* supprime la marge par défaut */
-}
-
-.latest-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-
-.card {
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid #eee;
-  background: #fff;
-}
-
-.card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-}
-
-/* ✅ Correction : règle bien fermée et appliquée */
-.icon-small {
-  width: 20px !important;
-  height: 20px !important;
-  vertical-align: middle;
-  margin-right: 6px;
-}
-
-/* Lien vers la page d'accueil dans le header */
-.home-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: inherit; /* garde la couleur du texte existante */
-}
-.home-link:hover .orbitron {
-  opacity: 0.8;
-  transition: opacity 0.2s;
-}
-
-/* Mobile menu : caché par défaut sur Desktop */
+/* ========================
+   Menu mobile (général)
+   ======================== */
 .mobile-menu {
-  display: none;           /* caché sur Desktop */
-  position: fixed;         /* flottant au-dessus du contenu */
+  display: none;            /* masqué par défaut sur Desktop */
+  position: fixed;          /* flottant au-dessus du contenu */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff;        /* fond blanc ou autre selon ton thème */
+  background: #fff;         /* fond du menu mobile */
   z-index: 9999;
   overflow-y: auto;
   padding: 16px;
 }
-/* Bouton fermer */
+
+/* Bouton fermer le menu mobile */
 .mobile-menu .close-mobile {
   font-size: 1.6rem;
   background: transparent;
@@ -367,9 +39,94 @@ body{
   right: 16px;
   cursor: pointer;
 }
-/* Affiche le menu uniquement sur écrans ≤ 900px */
+
+/* Liste de liens dans le menu mobile */
+.mobile-menu ul {
+  list-style: none;  /* supprime les bullets */
+  padding: 0;
+  margin: 60px 0 0 0; /* laisse un espace en haut pour le bouton fermer */
+}
+
+/* Chaque item du menu mobile */
+.mobile-menu ul li {
+  margin-bottom: 12px;  /* espace entre les items */
+}
+
+/* Liens du menu mobile */
+.mobile-menu ul li a {
+  display: flex;
+  align-items: center;
+  padding: var(--menu-padding);
+  background: var(--menu-bg);
+  color: var(--violet);
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;      /* nécessaire pour brillance */
+  transition: all 0.25s;
+}
+
+/* Brillance pour les liens mobile */
+.mobile-menu ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-20deg);
+}
+
+.mobile-menu ul li a:hover::before {
+  animation: shine 0.7s forwards;
+}
+
+/* Changement de couleurs au hover pour mobile */
+.mobile-menu ul li a:hover {
+  background: var(--menu-hover-bg);
+  color: var(--menu-hover-text);
+}
+
+/* Petites icônes dans le menu mobile */
+.mobile-menu ul li img {
+  width: 20px;           /* largeur standard pour icônes */
+  height: 20px;          /* hauteur standard pour icônes */
+  margin-right: 8px;     /* espace entre icône et texte */
+  vertical-align: middle;
+}
+
+/* ========================
+   Bouton burger
+   ======================== */
+.mobile-burger {
+  display: none;          /* caché sur desktop */
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+}
+
+/* ========================
+   Media queries pour Mobile
+   ======================== */
 @media (max-width: 900px) {
+  .mobile-burger {
+    display: block;       /* affiche le burger sur mobile */
+  }
+
   .mobile-menu {
-    display: block;
+    display: block;       /* menu masqué par JS par défaut */
+    transform: translateX(-100%);  /* hors écran à gauche */
+    transition: transform 0.3s ease;
+  }
+
+  /* Classe ajoutée via JS pour afficher le menu */
+  .mobile-menu.active {
+    transform: translateX(0);       /* menu visible */
   }
 }

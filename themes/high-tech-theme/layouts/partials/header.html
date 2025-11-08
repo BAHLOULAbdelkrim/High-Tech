@@ -46,9 +46,28 @@
       </div>
     </nav>
 </div>
-    <button class="mobile-burger" aria-label="Ouvrir le menu">☰</button>
-    {{ partial "mobilemenu.html" . }}
-  </div>
+
+<div class="mobile-menu hidden" id="mobileMenu" aria-hidden="true">
+  <button class="close-mobile" aria-label="Fermer le menu">✕</button>
+  <ul>
+    {{ range $m := slice "smartphones" "tablettes" "ordinateurs" "cameras" "wearables" "home-cinema" "gaming" "domotique" "audio" "obj-connectes" "impression" "peripheriques" }}
+      <li class="menu-item">
+        <a href="{{ printf "/%s/" $m | relURL }}">{{ humanize $m }}</a>
+      </li>
+    {{ end }}
+
+    <li class="sep"></li>
+
+    <li class="menu-item"><a href="/actualite/">Nouveautés</a></li>
+    <li class="menu-item"><a href="/comparatifs/">Trier par</a></li>
+    <li class="menu-item"><a href="https://facebook.com" target="_blank">Facebook</a></li>
+  </ul>
+</div>
+
+<div class="mobile-menu-wrapper">
+  <button class="mobile-burger" aria-label="Ouvrir le menu">☰</button>
+  {{ partial "mobilemenu.html" . }}
+</div>
 </header>
 
 <section class="hero">
