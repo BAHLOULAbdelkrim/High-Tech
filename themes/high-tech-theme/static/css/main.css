@@ -162,7 +162,7 @@ body{
 .menu-bottom{display:flex;justify-content:space-between;margin-top:8px;align-items:center}
 .search input{padding:8px;border-radius:6px;border:1px solid #ddd;width:100%;max-width:480px}
 .langs select{padding:8px;border-radius:6px;border:1px solid #ddd}
-.mobile-burger{display: none !important;background:transparent;border:0;font-size:1.6rem;position:absolute;right:12px;top:12px}
+.mobile-burger{display:none;background:transparent;border:0;font-size:1.6rem;position:absolute;right:12px;top:12px}
 
 .hero {
   margin-top: 12px;
@@ -342,4 +342,34 @@ body{
 .home-link:hover .orbitron {
   opacity: 0.8;
   transition: opacity 0.2s;
+}
+
+/* Mobile menu : caché par défaut sur Desktop */
+.mobile-menu {
+  display: none;           /* caché sur Desktop */
+  position: fixed;         /* flottant au-dessus du contenu */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;        /* fond blanc ou autre selon ton thème */
+  z-index: 9999;
+  overflow-y: auto;
+  padding: 16px;
+}
+/* Bouton fermer */
+.mobile-menu .close-mobile {
+  font-size: 1.6rem;
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+/* Affiche le menu uniquement sur écrans ≤ 900px */
+@media (max-width: 900px) {
+  .mobile-menu {
+    display: block;
+  }
 }
