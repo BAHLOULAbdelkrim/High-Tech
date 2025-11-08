@@ -1,5 +1,4 @@
 ---
-title: "Périphériques"
-image: "images/peripheriques.png"
+title: "Peripheriques"
+image: "images/periphériques.png"
 ---
-Contenu de la page de la section Périphériques.

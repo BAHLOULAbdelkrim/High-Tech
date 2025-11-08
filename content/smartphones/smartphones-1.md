@@ -1,10 +1,13 @@
 ---
-title: "Smartphones — Android Test 1"
-date: 2025-01-02T12:00:00+01:00
-draft: false
+title: "Smartphones — Guide d'achat"
+date: "2025-10-13T19:51:45"
 image: "images/image_art.jpg"
-categories: ["Smartphones","Android"]
-menu_parent: "Smartphones"
+summary: "Exemple d'article généré automatiquement pour démonstration."
+specs:
+  screen: "--"
+  battery: "--"
+  weight: "--"
+test: "Test fictif généré."
 ---
 
-Contenu aléatoire pour l'article 1. Voici un texte d'exemple. Ce texte servira de démo pour la mise en page de l'article.
+Contenu d'exemple pour **Smartphones — Guide d'achat**. Ceci est du texte aléatoire pour remplir l'article.

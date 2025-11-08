@@ -1,10 +1,13 @@
 ---
-title: "Smartphones — iPhone Test 2"
-date: 2025-01-03T12:00:00+01:00
-draft: false
+title: "Smartphones — Notre avis"
+date: "2025-09-07T19:51:45"
 image: "images/image_art.jpg"
-categories: ["Smartphones","iPhone"]
-menu_parent: "Smartphones"
+summary: "Exemple d'article généré automatiquement pour démonstration."
+specs:
+  screen: "--"
+  battery: "--"
+  weight: "--"
+test: "Test fictif généré."
 ---
 
-Contenu aléatoire pour l'article 2. Voici un texte d'exemple. Ce texte servira de démo pour la mise en page de l'article.
+Contenu d'exemple pour **Smartphones — Notre avis**. Ceci est du texte aléatoire pour remplir l'article.

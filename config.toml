@@ -1,25 +1,26 @@
 
-baseURL = "https://high-tech.pages.dev/"
-languageCode = "fr"
-title = "High-Tech — Nouvelles Technologies, Tests et Comparatifs"
-#theme = ""
+baseURL = 'https://high-tech.pages.dev/'
+languageCode = 'fr-FR'
+title = 'High-Tech — Nouvelles Technologies, Tests et Comparatifs'
+theme = 'high-tech-theme'
+DefaultContentLanguage = 'fr'
 [pagination]
   pagerSize = 10
-defaultContentLanguage = "fr"
+
 [params]
-  description = "Nouveautés & Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d'achat complets."
-  mainColor = "#f7afaf"
-  logo = "images/Logo_2.png"
-  favicon = "favicon.png"
-[params.pagination]
+  mainColor = 'emerald-400'
+  favicon = 'favicon.png'
+
+[pagination]
   pagerSize = 10
+
 [languages]
   [languages.fr]
-    languageName = "Français"
+    languageName = 'Français'
     weight = 1
   [languages.en]
-    languageName = "English"
+    languageName = 'English'
     weight = 2
   [languages.ar]
-    languageName = "العربية"
+    languageName = 'العربية'
     weight = 3

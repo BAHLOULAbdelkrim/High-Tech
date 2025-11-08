@@ -1,21 +1,14 @@
 
 {{ define "main" }}
+<section style="padding:12px;">
   <h1>{{ .Title }}</h1>
-  <div class="cover">
-    <img id="cover-img" src="{{ with .Params.image }}{{ . | relURL }}{{ else }}{{ "/images/slide1.jpg" }}{{ end }}" alt="cover">
+  <div class="posts-grid">
+    {{ range .Pages }}
+    <article class="post">
+      <img src="{{ .Params.image | default "images/image_art.jpg" | relURL }}" alt="{{ .Title }}">
+      <div class="meta"><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Summary }}</p></div>
+    </article>
+    {{ end }}
   </div>
-  <div style="margin-top:16px;">
-    <div id="submenus"></div>
-    <div class="grid">
-      {{ range .Pages }}
-      <article class="card">
-        <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
-        <div class="meta">
-          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-          <p>{{ .Summary }}</p>
-        </div>
-      </article>
-      {{ end }}
-    </div>
-  </div>
+</section>
 {{ end }}
