@@ -1,4 +1,5 @@
 ---
 title: "Audio"
-image: "images/audio.png"
+menu_image: "/images/menu_audio.jpg"
 ---
+Page principale de la section audio.

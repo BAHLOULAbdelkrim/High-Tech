@@ -1,4 +1,5 @@
 ---
 title: "Tablettes"
-image: "images/tablettes.png"
+menu_image: "/images/menu_tablettes.jpg"
 ---
+Page principale de la section tablettes.

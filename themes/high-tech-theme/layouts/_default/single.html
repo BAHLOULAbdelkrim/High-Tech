@@ -1,36 +1,14 @@
-
 {{ define "main" }}
-<article style="padding:16px; background:#fff; border-radius:8px;">
-  <h1>{{ .Title }}</h1>
-  <div class="tabs">
-    <div class="tab active" data-tab="presentation">Présentation général</div>
-    <div class="tab" data-tab="fiche">Fiche technique</div>
-    <div class="tab" data-tab="image">Image</div>
-    <div class="tab" data-tab="test">Test</div>
+  <div class="container article">
+    <aside class="left-column">
+      {{ partial "leftmenus.html" . }}
+    </aside>
+    <article class="content-column">
+      <h1>{{ .Title }}</h1>
+      <img class="article-image" src="{{ .Params.image }}" alt="{{ .Title }}">
+      <div class="article-body">
+        {{ .Content }}
+      </div>
+    </article>
   </div>
-
-  <div id="tab-content" style="margin-top:12px;">
-    <div class="tabpane" id="presentation"> {{ .Content }} </div>
-    <div class="tabpane" id="fiche" style="display:none;">
-      <table style="width:100%; border-collapse:collapse; animation:fadeIn 0.6s ease;">
-        <tr><th style="text-align:left; padding:8px; background:#f3f4f6;">Spéc</th><th style="text-align:left; padding:8px; background:#f3f4f6;">Valeur</th></tr>
-        <tr><td style="padding:8px;">Poids</td><td style="padding:8px;">{{ with .Params.specs.weight }}{{ . }}{{ else }}--{{ end }}</td></tr>
-        <tr><td style="padding:8px;">Ecran</td><td style="padding:8px;">{{ with .Params.specs.screen }}{{ . }}{{ else }}--{{ end }}</td></tr>
-        <tr><td style="padding:8px;">Batterie</td><td style="padding:8px;">{{ with .Params.specs.battery }}{{ . }}{{ else }}--{{ end }}</td></tr>
-      </table>
-    </div>
-    <div class="tabpane" id="image" style="display:none;"><img src="{{ .Params.image | default "images/image_art.jpg" | relURL }}" style="max-width:100%; border-radius:6px;"></div>
-    <div class="tabpane" id="test" style="display:none;">{{ with .Params.test }}<p>{{ . }}</p>{{ else }}<p>Test à venir...</p>{{ end }}</div>
-  </div>
-</article>
-
-<script>
-  document.querySelectorAll('.tab').forEach(t=> t.addEventListener('click', ()=>{
-    document.querySelectorAll('.tab').forEach(x=> x.classList.remove('active'));
-    t.classList.add('active');
-    const sel = t.dataset.tab;
-    document.querySelectorAll('.tabpane').forEach(p=> p.style.display = 'none');
-    document.getElementById(sel).style.display = 'block';
-  }));
-</script>
 {{ end }}

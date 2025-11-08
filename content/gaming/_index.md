@@ -1,4 +1,5 @@
 ---
 title: "Gaming"
-image: "images/gaming.png"
+menu_image: "/images/menu_gaming.jpg"
 ---
+Page principale de la section gaming.
