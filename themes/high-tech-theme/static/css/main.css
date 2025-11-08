@@ -179,6 +179,11 @@ body{
   color: var(--menu-hover-text);
 }
 
+.side-links ul {
+  list-style: none;   /* enlève les puces */
+  padding: 0;         /* supprime le retrait gauche par défaut */
+  margin: 0;          /* supprime la marge par défaut */
+}
 
 .latest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .card{border-radius:8px;overflow:hidden;border:1px solid #eee;background:#fff}
