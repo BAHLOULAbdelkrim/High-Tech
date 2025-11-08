@@ -1,11 +1,10 @@
 <header class="site-header">
-  <div class="header-container">
-    <div class="header-left">
-      <img src="{{ .Site.Params.logo | relURL }}" alt="Logo" class="logo">
-      <div class="sitename">
-        <span class="orbitron">High-Tech</span>
-      </div>
-    </div>
+<div class="header-left">
+  <a href="{{ "/" | relURL }}" class="home-link">
+    <img src="{{ .Site.Params.logo | relURL }}" alt="Logo" class="logo">
+    <span class="orbitron">High-Tech</span>
+  </a>
+</div>
 
     <nav class="top-menus" aria-label="Top navigation">
       {{/* 12 menus hardcoded as requested */}}
