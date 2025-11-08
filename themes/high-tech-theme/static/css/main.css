@@ -29,11 +29,46 @@ body{
 }
 
 /* Header et structure existants */
-.site-header{display:flex;align-items:flex-start;gap:16px;padding:12px 16px;border-bottom:1px solid #eee;position:relative}
-.header-left{display:flex;align-items:center}
-.logo{width:56px;height:56px;object-fit:contain}
-.top-menus{flex:1}
-.menu-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;list-style:none;padding:0;margin:0}
+.site-header {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+/* Conteneur interne centré (nouveau) */
+.header-container {
+  max-width: 1400px;      /* largeur maximale du site */
+  margin: 0 auto;         /* centre le bloc horizontalement */
+  padding: 12px 16px;     /* espace interne */
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+}
+/* Bloc gauche du header */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+/* Logo */
+.logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+/* Menus du haut */
+.top-menus {
+  flex: 1;
+}
+/* Grille des menus du haut */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 
 /* Menu principal avec brillance */
 .menu-item a {
