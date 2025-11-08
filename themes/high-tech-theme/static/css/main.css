@@ -413,3 +413,16 @@ body{
     display: flex;
   }
 }
+
+/* Grille articles responsive */
+@media (max-width: 900px) {
+  .latest-grid {
+    grid-template-columns: 1fr; /* 1 colonne */
+  }
+
+  /* Limiter le nombre d’articles affichés à 3 */
+  .latest-grid article:nth-child(n+4) {
+    display: none;
+  }
+}
+
