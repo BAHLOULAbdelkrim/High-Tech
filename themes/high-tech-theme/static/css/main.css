@@ -426,3 +426,15 @@ body{
   }
 }
 
+@media (max-width: 900px) {
+  /* Masquer le menu desktop */
+  .top-menus,
+  .left-column { 
+    display: none !important; 
+  }
+
+  /* Afficher seulement le burger */
+  .mobile-burger {
+    display: flex !important;
+  }
+}
