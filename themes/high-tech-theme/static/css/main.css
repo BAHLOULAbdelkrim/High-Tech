@@ -1,11 +1,14 @@
 :root{
-  --main-emerald: #34d399ff;
-  --violet: #ede9feff;
-  --menu-bg: #047857ff;
-  --submenu-bg: #f7afaf;
-  --submenu-text: #1900ffff;
+  --main-emerald: #34d399ff;      /* texte général du site (emerald-400) */
+  --violet: #6b21a8ff;            /* texte des menus (violet-800) */
+  --menu-bg: #d1fae5ff;           /* fond des menus (emerald-100) */
+  --menu-hover-bg: #ede9feff;     /* fond des menus au hover (violet-100) */
+  --menu-hover-text: #047857ff;   /* texte des menus au hover (emerald-700) */
+  --submenu-bg: #f7afaf;          /* fond des sous-menus */
+  --submenu-text: #1e3a8aff;      /* texte des sous-menus */
+  --submenu-hover-bg: #84a4fc;    /* fond des sous-menus au hover */
+  --submenu-hover-text: #ff0000;  /* texte des sous-menus au hover */
   --menu-padding: 8px 12px;
-  --shine: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.35) 50%, rgba(255,255,255,0) 100%);
 }
 
 *{box-sizing:border-box}
@@ -15,12 +18,51 @@ body{font-family:Inter, sans-serif;margin:0;color:#111;background:#fff}
 .header-left{display:flex;align-items:center}
 .logo{width:56px;height:56px;object-fit:contain}
 .top-menus{flex:1}
-.menu-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;list-style:none;padding:0;margin:0}
-    /* Brillance menus principaux */
-    .menu-item { position: relative; overflow: hidden; }
-    .menu-item::before { content: ""; position: absolute; top: 0; left: -75%; width: 50%; height: 100%; background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); transform: skewX(-20deg); overflow: hidden; }
-    .menu-item:hover::before { animation: shine 0.7s forwards; }
-    @keyframes shine { 0% { left: -75%; } 100% { left: 125%; } }
+
+.menu-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-item a {
+  display: block;
+  background: var(--menu-bg);
+  color: var(--violet);
+  padding: var(--menu-padding);
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all .25s;
+}
+
+.menu-item a:hover {
+  background: var(--menu-hover-bg);
+  color: var(--menu-hover-text);
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-20deg);
+  overflow: hidden;
+}
+
+.menu-item:hover::before {
+  animation: shine 0.7s forwards;
+}
+
+@keyframes shine {
+  0% { left: -75%; }
+  100% { left: 125%; }
+}
 
 .menu-bottom{display:flex;justify-content:space-between;margin-top:8px;align-items:center}
 .search input{padding:8px;border-radius:6px;border:1px solid #ddd;width:100%;max-width:480px}
@@ -50,10 +92,52 @@ body{font-family:Inter, sans-serif;margin:0;color:#111;background:#fff}
 .card h3{margin:8px;padding:0 12px}
 .card p{padding:0 12px 12px 12px;color:#555;font-size:0.95rem}
 
-.submenus ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.submenus li a{display:block;padding:10px;background:var(--submenu-bg);color:var(--submenu-text);border-radius:6px;text-decoration:none;font-weight:600}
-.submenus li a:hover{background:var(--submenu-text);color:var(--submenu-bg);position:relative;overflow:hidden}
-.submenus li a:hover::after{content:'';position:absolute;inset:0;background:var(--shine);opacity:.6;transform:skewX(-20deg);animation:shine 1s linear}
+.submenus ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.submenus li a {
+  position: relative;
+  display: block;
+  padding: 10px;
+  background: var(--submenu-bg);
+  color: var(--submenu-text);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.submenus li a:hover {
+  background: var(--submenu-hover-bg);
+  color: var(--submenu-hover-text);
+}
+
+.submenus li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-20deg);
+  overflow: hidden;
+}
+
+.submenus li a:hover::before {
+  animation: shine-submenu 0.7s forwards;
+}
+
+@keyframes shine-submenu {
+  0% { left: -75%; }
+  100% { left: 125%; }
+}
 
 .article-image{width:100%;max-height:420px;object-fit:cover;border-radius:8px;margin-bottom:12px}
 
