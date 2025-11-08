@@ -159,6 +159,10 @@ body{
   transition: all .25s;
 }
 
+.side-links .menu-item {
+  margin-bottom: 10px;   /* espace vertical entre chaque menu */
+}
+
 .side-links .menu-item a::before {
   content: "";
   position: absolute;
