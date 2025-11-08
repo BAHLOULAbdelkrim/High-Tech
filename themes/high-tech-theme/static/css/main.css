@@ -1,9 +1,9 @@
 :root{
-  --main-emerald: #34D399;
-  --violet: #7c3aed;
-  --menu-bg: #bbf7d0;
-  --submenu-bg: #fee2e2;
-  --submenu-text: #0ea5e9;
+  --main-emerald: #56ff91ff;
+  --violet: #5d00fdff;
+  --menu-bg: #56ff91ff;
+  --submenu-bg: #f84444ff;
+  --submenu-text: #1900ffff;
   --menu-padding: 8px 12px;
   --shine: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.35) 50%, rgba(255,255,255,0) 100%);
 }
