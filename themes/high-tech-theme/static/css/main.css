@@ -11,12 +11,6 @@
   --menu-padding: 8px 12px;
 }
 
-
-html, body {
-  height: 100%;       /* obligatoire pour que le fond couvre tout l'écran */
-}
-
-
 /* Police générale du site */
 body{
   font-family: Inter, sans-serif;
@@ -24,12 +18,6 @@ body{
   color: var(--main-emerald);
   background:#fff;
 }
-
-
-html {
-  background: #ff0000; /* couleur gris clair */
-}
-
 
 /* Nom du site en Orbitron */
 .orbitron{
