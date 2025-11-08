@@ -1,7 +1,7 @@
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
   <button class="close-mobile">✕</button>
   <ul>
-    {{ range $m := slice "smartphones" "tablettes" "ordinateurs" "cameras" "wearables" "home-cinema" "gaming" "domotique" "audio" "obj-connectes" "impression" "peripheriques" }}
+    {{ range $m := slice "smartphones" "tablettes" "ordinateurs" "caméras" "wearables" "home-cinema" "gaming" "domotique" "audio" "obj-connectes" "impression" "peripheriques" }}
       <li><a href="{{ printf "/%s/" $m | relURL }}">{{ humanize $m }}</a></li>
     {{ end }}
     <li class="sep"></li>
