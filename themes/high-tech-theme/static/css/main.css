@@ -334,7 +334,7 @@ body{
 
 /* Menu mobile : taille des icônes */
 .mobile-menu .icon-small {
-  width: 20px;
+  width: 100px;
   height: 20px;
   vertical-align: middle;  /* pour aligner avec le texte */
   margin-right: 6px;       /* espace entre icône et texte */
