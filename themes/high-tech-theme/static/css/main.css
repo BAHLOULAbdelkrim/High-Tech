@@ -2,7 +2,7 @@
   --main-emerald: #34d399ff;      /* texte général du site (emerald-400) */
   --violet: #6b21a8ff;            /* texte des menus (violet-800) */
   --menu-bg: #d1fae5ff;           /* fond des menus (emerald-100) */
-  --menu-hover-bg: #ede9feff;     /* fond des menus au hover (violet-100) */
+  --menu-hover-bg: rgb(91, 61, 226);     /* fond des menus au hover (violet-100) */
   --menu-hover-text: #047857ff;   /* texte des menus au hover (emerald-700) */
   --submenu-bg: #f7afaf;          /* fond des sous-menus */
   --submenu-text: #1e3a8aff;      /* texte des sous-menus */
