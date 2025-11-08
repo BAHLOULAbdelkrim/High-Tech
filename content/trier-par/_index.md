@@ -1,4 +1,4 @@
 ---
-title: "Comparatifs"
+title: "Trier par"
 ---
 Page comparatifs.

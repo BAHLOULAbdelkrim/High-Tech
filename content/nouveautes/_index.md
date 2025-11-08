@@ -1,4 +1,4 @@
 ---
-title: "Actualite"
+title: "Nouveautés"
 ---
 Page actualite.
