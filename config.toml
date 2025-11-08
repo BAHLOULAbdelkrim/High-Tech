@@ -8,8 +8,8 @@ theme = "high-tech-theme"
 
 [params]
   description = "Nouveautés & Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d'achat complets."
-  mainColor = "emerald-400"
   logo = "images/logo.png"
+  mainColor = "#56ff91ff"
   mainViolet = "#5d00fdff"
   menuBg = "#56ff91ff"
   menuText = "#5d00ffff"
