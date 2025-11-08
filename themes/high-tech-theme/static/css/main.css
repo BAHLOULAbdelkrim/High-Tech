@@ -407,6 +407,18 @@ body{
   color: var(--menu-hover-text);
 }
 
+.mobile-menu li a .icon-small {
+  width: 24px;    /* icône proportionnelle */
+  height: 24px;
+  margin-right: 8px;
+  flex-shrink: 0; /* empêche l’icône de rétrécir */
+}
+
+/* Si tu n’as pas d’icônes pour certains menus, pas de problème */
+.mobile-menu li a img.icon-small {
+  display: inline-block;
+}
+
 /* Afficher burger et menu seulement sur mobile */
 @media (max-width: 900px) {
   .mobile-burger {
