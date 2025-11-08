@@ -9,15 +9,17 @@ theme = "high-tech-theme"
 [params]
   description = "Nouveautés & Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d'achat complets."
   logo = "images/logo.png"
-  mainColor = "#34d399ff"    # emerald-400 pour le texte général du site
-  mainViolet = "#6b21a8ff"   # violet-800 pour le texte des menus
-  menuBg = "#d1fae5ff"       # emerald-100 pour le fond des menus
-  menuText = "#6b21a8ff"     # violet-800 pour le texte des menus
-  submenuBg = "#f7afaf"      # fond des sous-menus
-  submenuText = "#1e3a8aff"  # texte des sous-menus
-  menuHoverBg = "rgb(91, 61, 226)"  # violet-100 pour le fond des menus au hover
-  menuHoverText = "#047857ff" # emerald-700 pour le texte des menus au hover
-  submenuHoverBg = "#84a4fc"  # fond des sous-menus au hover
-  submenuHoverText = "#ff0000" # texte des sous-menus au hover
-  menuPadding = "8px 12px"
+  
+  # Couleurs mises à jour selon demandes
+  mainColor = "#34d399ff"      # emerald-400 pour le texte général du site
+  mainViolet = "#6b21a8ff"     # violet-800 pour le texte des menus
+  menuBg = "#d1fae5ff"         # emerald-100 pour le fond des menus
+  menuText = "#6b21a8ff"       # violet-800 pour le texte des menus
+  menuHoverBg = "#ede9feff"    # violet-100 pour le fond des menus au hover
+  menuHoverText = "#047857ff"  # emerald-700 pour le texte des menus au hover
+  submenuBg = "#f7afaf"         # fond des sous-menus
+  submenuText = "#1e3a8aff"     # texte des sous-menus
+  submenuHoverBg = "#84a4fc"    # fond des sous-menus au hover
+  submenuHoverText = "#ff0000"  # texte des sous-menus au hover
   slidesInterval = 3000
+
