@@ -590,6 +590,20 @@ body.menu-open {
   overflow: hidden;
 }
 
+/* Styles de l’icône de recherche */
+.icon-search {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  color: #ede9feff;
+  stroke: currentColor;
+  transition: color 0.2s ease;
+}
+
+/* Effet hover */
+.search-button:hover .icon-search {
+  color: #6b21a8ff;
+}
 
 
 
