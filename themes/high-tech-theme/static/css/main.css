@@ -499,13 +499,13 @@ body.menu-open {
   display: flex;
   align-items: center;
   flex: 1;
-  max-width: 800px;
+  max-width: 1200px;
   gap: 8px;
 }
 
 .search-input {
   flex: 1;
-  width: 1000;
+  width: 100%;
   padding: 10px 14px;
   border: 1px solid #ccc;
   border-radius: 6px;
