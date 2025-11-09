@@ -372,13 +372,13 @@ body{
 
 /* Animation croix */
 .mobile-burger.open .burger-line:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
+  transform: rotate(45deg) translate(5.5px, 5.5px);
 }
 .mobile-burger.open .burger-line:nth-child(2) {
   opacity: 0;
 }
 .mobile-burger.open .burger-line:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(5.5px, -5.5px);
 }
 
 /* Menu mobile caché par défaut */
