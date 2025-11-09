@@ -479,7 +479,7 @@ body{
 /* Barre de recherche */
 .search-input {
   flex: 1;
-  max-width: 800px; /* 🔧 tu peux ajuster ici la largeur */
+  max-width: 600px; /* 🔧 tu peux ajuster ici la largeur */
   padding: 10px 14px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -708,3 +708,4 @@ body.menu-open {
     font-size: 0.9rem;
   }
 }
+ 
