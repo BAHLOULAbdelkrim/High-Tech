@@ -585,8 +585,12 @@ body.menu-open {
   color: rgb(68, 0, 124);
 }
 
-/* Responsive */
+/* ==========================
+   MOBILE / RESPONSIVE (max-width: 768px)
+   ========================== */
 @media (max-width: 768px) {
+
+  /* Menu burger et masquage des éléments Desktop */
   .mobile-burger {
     display: block;
   }
@@ -603,63 +607,33 @@ body.menu-open {
     grid-column: 1 !important;
   }
 
+  /* Barre recherche + langue sur une seule ligne */
   .search-lang-container {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
-  }
-  .search-wrapper {
-    width: 100%;
-    position: relative;
-  }
-  .search-input {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 38px; /* garde de la place pour l’icône */
-  }
-  .search-button {
-    width: 100%;
-    justify-content: center;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  .lang-selector {
-    align-self: flex-end;
-  }
-}
-
-
-/* ==========================
-   Mobile : barre recherche + loupe + langue
-   ========================== */
-@media (max-width: 768px) {
-  /* Container barre recherche + langue sur une ligne */
-  .search-lang-container {
-    flex-direction: row !important;
+    flex-direction: row !important;   /* tout sur une ligne */
     align-items: center;
     justify-content: space-between;
     gap: 8px;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;                /* pas de retour à la ligne */
     padding: 0 10px;
   }
 
   /* Wrapper barre recherche */
   .search-wrapper {
-    position: relative;
-    flex: 1;  /* prend tout l’espace disponible */
+    position: relative;               /* nécessaire pour placer la loupe à droite */
+    flex: 1;                          /* prend tout l’espace disponible */
   }
 
   /* Input barre recherche */
   .search-input {
     width: 100%;
-    padding: 8px 40px 8px 12px; /* espace pour la loupe à droite */
+    padding: 8px 40px 8px 12px;       /* espace pour la loupe à droite */
     font-size: 0.9rem;
     border-radius: 8px;
     border: 1px solid #ccc;
+    min-width: 0;                      /* éviter débordement flex */
   }
 
-  /* Bouton loupe dans la barre */
+  /* Bouton loupe à l’intérieur de la barre */
   .search-button {
     position: absolute;
     right: 4px;
@@ -693,7 +667,7 @@ body.menu-open {
 
   /* Sélecteur de langue */
   .lang-selector {
-    flex-shrink: 0;
+    flex-shrink: 0;                   /* ne se réduit pas */
     display: flex;
     align-items: center;
     gap: 4px;
@@ -708,4 +682,3 @@ body.menu-open {
     font-size: 0.9rem;
   }
 }
- 
