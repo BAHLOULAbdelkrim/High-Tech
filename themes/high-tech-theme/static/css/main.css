@@ -679,3 +679,21 @@ body.menu-open {
 .lang-menu-mobile li:hover {
   background: #f0f0f0;
 }
+
+
+@media (max-width: 768px) {
+  .mobile-menu-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-form {
+    flex: 1;
+    margin-right: 8px;
+  }
+
+  .lang-select-mobile {
+    flex-shrink: 0;
+  }
+}
