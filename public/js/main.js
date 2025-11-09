@@ -1,103 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const burger = document.querySelector('#menu-toggle') || document.querySelector('.mobile-burger');
-  const mobileMenu = document.getElementById('mobileMenu') || document.getElementById('mobile-nav');
-  const closeBtn = mobileMenu ? mobileMenu.querySelector('.close-mobile') : null;
-
-  if (!burger || !mobileMenu) return;
-
-  const openMenu = () => {
-    mobileMenu.classList.add('open');
-    burger.classList.add('open');
-    document.body.classList.add('menu-open');
-  };
-
-  const closeMenu = () => {
-    mobileMenu.classList.remove('open');
-    burger.classList.remove('open');
-    document.body.classList.remove('menu-open');
-  };
-
-  burger.addEventListener('click', e => {
-    e.stopPropagation();
-    if (mobileMenu.classList.contains('open')) closeMenu();
-    else openMenu();
-  });
-
-  if (closeBtn) {
-    closeBtn.addEventListener('click', e => {
-      e.stopPropagation();
-      closeMenu();
-    });
+// Simple slideshow & mobile burger script
+document.addEventListener('DOMContentLoaded', function(){
+  const slides = document.querySelectorAll('.slideshow .slide');
+  let idx = 0;
+  const interval = 3000;
+  if(slides.length){
+    setInterval(()=>{
+      slides[idx].classList.remove('visible');
+      idx = (idx+1)%slides.length;
+      slides[idx].classList.add('visible');
+    }, interval);
   }
 
-  // Ferme au clic hors du menu
-  mobileMenu.addEventListener('click', e => {
-    if (e.target === mobileMenu) closeMenu();
-  });
-
-  // Ferme au resize si on dépasse le breakpoint
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 900 && mobileMenu.classList.contains('open')) closeMenu();
-  });
+  // mobile menu
+  const burger = document.querySelector('.mobile-burger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeBtn = mobileMenu && mobileMenu.querySelector('.close-mobile');
+  if(burger && mobileMenu){
+    burger.addEventListener('click', ()=> { mobileMenu.style.display='block'; mobileMenu.setAttribute('aria-hidden','false'); });
+    closeBtn && closeBtn.addEventListener('click', ()=> { mobileMenu.style.display='none'; mobileMenu.setAttribute('aria-hidden','true'); });
+  }
 });
-
-
-// ===== Slideshow automatique =====
-document.addEventListener('DOMContentLoaded', function() {
-  const slides = document.querySelectorAll('#slideshow .slide');
-  if (!slides.length) return; // sécurité
-
-  let current = 0;
-  setInterval(() => {
-    slides[current].classList.remove('visible');
-    current = (current + 1) % slides.length;
-    slides[current].classList.add('visible');
-  }, 2500); // 2.5 secondes par image
-});
-
-
-// ===== Sélecteur de langue =====
-const langToggle = document.getElementById('lang-toggle');
-const langMenu = document.getElementById('lang-menu');
-const currentLang = document.getElementById('current-lang');
-
-if (langToggle && langMenu) {
-  langToggle.addEventListener('click', (e) => {
-    e.stopPropagation();
-    langMenu.style.display = langMenu.style.display === 'block' ? 'none' : 'block';
-  });
-
-  document.addEventListener('click', () => {
-    langMenu.style.display = 'none';
-  });
-
-  langMenu.querySelectorAll('li').forEach(li => {
-    li.addEventListener('click', () => {
-      currentLang.textContent = li.dataset.lang.toUpperCase();
-      langMenu.style.display = 'none';
-    });
-  });
-}
-
-// ===== Sélecteur de langue mobile =====
-const langToggleMobile = document.getElementById('lang-toggle-mobile');
-const langMenuMobile = document.getElementById('lang-menu-mobile');
-const currentLangMobile = document.getElementById('current-lang-mobile');
-
-if (langToggleMobile && langMenuMobile) {
-  langToggleMobile.addEventListener('click', (e) => {
-    e.stopPropagation();
-    langMenuMobile.style.display = langMenuMobile.style.display === 'block' ? 'none' : 'block';
-  });
-
-  document.addEventListener('click', () => {
-    langMenuMobile.style.display = 'none';
-  });
-
-  langMenuMobile.querySelectorAll('li').forEach(li => {
-    li.addEventListener('click', () => {
-      currentLangMobile.textContent = li.dataset.lang.toUpperCase();
-      langMenuMobile.style.display = 'none';
-    });
-  });
-}
