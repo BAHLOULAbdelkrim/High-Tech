@@ -1,15 +1,14 @@
 <header class="site-header">
-  <div class="header-container">
-    <!-- Bloc gauche : logo + nom -->
-    <div class="header-left">
-      <a href="{{ "/" | relURL }}" class="home-link">
-        <img src="{{ .Site.Params.logo | relURL }}" alt="Logo" class="logo">
-        <span class="orbitron">High-Tech</span>
-      </a>
-    </div>
-
-    <!-- Menus Desktop -->
+<div class="header-container">
+  <div class="header-left">
+    <a href="{{ "/" | relURL }}" class="home-link">
+      <img src="{{ .Site.Params.logo | relURL }}" alt="Logo" class="logo">
+      <span class="orbitron">High-Tech</span>
+    </a>
+  </div>
+  
     <nav class="top-menus" aria-label="Top navigation">
+      {{/* 12 menus hardcoded as requested */}}
       <ul class="menu-grid">
         {{/* First row */}}
         {{ range $i, $m := slice "smartphones" "tablettes" "ordinateurs" "cameras" "wearables" "home-cinema" }}
@@ -31,59 +30,63 @@
           </li>
         {{ end }}
       </ul>
+
+      <div class="menu-bottom">
+        <div class="search-bar">
+          <form action="{{ "search" | relURL }}" method="get" class="search-form">
+            <input type="search" name="q" placeholder="Rechercher..." aria-label="Rechercher" class="search-input">
+            <button type="submit" class="search-button">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <span class="search-text">Rechercher</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="lang-select">
+          <button id="lang-toggle" class="lang-btn" aria-label="Changer de langue">
+            🌐 <span id="current-lang">FR</span>
+          </button>
+          <ul id="lang-menu" class="lang-menu" aria-label="Sélecteur de langue">
+            <li data-lang="fr">FR - Français</li>
+            <li data-lang="en">EN - English</li>
+            <li data-lang="ar">AR - العربية</li>
+          </ul>
+        </div>
+      </div>
+
     </nav>
-  </div>
+</div>
 
-  <!-- Barre recherche + langue mobile (affichée uniquement sur mobile) -->
-  <div class="mobile-only">
-    <form action="{{ "search" | relURL }}" method="get" class="search-form">
-      <input type="search" name="q" placeholder="Rechercher..." aria-label="Rechercher" class="search-input">
-      <button type="submit" class="search-button">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="11" cy="11" r="8" />
-          <line x1="21" y1="21" x2="16.65" y2="16.65" />
-        </svg>
-        <span class="search-text">Rechercher</span>
-      </button>
-    </form>
+<!-- Burger mobile -->
+<button id="menu-toggle" class="mobile-burger">
+  <span class="burger-line"></span>
+  <span class="burger-line"></span>
+  <span class="burger-line"></span>
+</button>
 
-    <div class="lang-select">
-      <button id="lang-toggle-mobile" class="lang-btn" aria-label="Changer de langue">
-        🌐 <span id="current-lang-mobile">FR</span>
-      </button>
-      <ul id="lang-menu-mobile" class="lang-menu">
-        <li data-lang="fr">FR - Français</li>
-        <li data-lang="en">EN - English</li>
-        <li data-lang="ar">AR - العربية</li>
-      </ul>
-    </div>
-  </div>
+<!-- Menu mobile plein écran -->
+<nav id="mobile-nav" class="mobile-menu" aria-hidden="true">
+  <!-- Bouton fermer -->
+  <button id="mobile-nav-close" class="close-mobile">  </button>
 
-  <!-- Burger mobile -->
-  <button id="menu-toggle" class="mobile-burger">
-    <span class="burger-line"></span>
-    <span class="burger-line"></span>
-    <span class="burger-line"></span>
-  </button>
+  <ul>
+    {{ range $m := slice "smartphones" "tablettes" "ordinateurs" "cameras" "wearables" "home-cinema" "gaming" "domotique" "audio" "obj-connectes" "impression" "peripheriques" }}
+      <li class="menu-item" data-id="{{ $m }}">
+        <a href="{{ printf "/%s/" $m | relURL }}">{{ humanize $m }}</a>
+      </li>
+    {{ end }}
 
-  <!-- Menu mobile plein écran -->
-  <nav id="mobile-nav" class="mobile-menu" aria-hidden="true">
-    <button id="mobile-nav-close" class="close-mobile"></button>
+    <li class="sep"></li>
 
-    <ul>
-      {{ range $m := slice "smartphones" "tablettes" "ordinateurs" "cameras" "wearables" "home-cinema" "gaming" "domotique" "audio" "obj-connectes" "impression" "peripheriques" }}
-        <li class="menu-item" data-id="{{ $m }}">
-          <a href="{{ printf "/%s/" $m | relURL }}">{{ humanize $m }}</a>
-        </li>
-      {{ end }}
+    <li class="menu-item"><a href="/actualite/">Nouveautés</a></li>
+    <li class="menu-item"><a href="/comparatifs/">Trier par</a></li>
+    <li class="menu-item"><a href="https://facebook.com" target="_blank">Facebook</a></li>
+  </ul>
+</nav>
 
-      <li class="sep"></li>
-
-      <li class="menu-item"><a href="/actualite/">Nouveautés</a></li>
-      <li class="menu-item"><a href="/comparatifs/">Trier par</a></li>
-      <li class="menu-item"><a href="https://facebook.com" target="_blank">Facebook</a></li>
-    </ul>
-  </nav>
 </header>
 
 <section class="hero">
@@ -97,6 +100,7 @@
   {{ else }}
     {{ $menuImg := .Params.menu_image }}
     {{ if not $menuImg }}
+      {{/* Try section params */}}
       {{ $sec := .Section }}
       {{ with site.GetPage (printf "/%s/_index.md" $sec) }}
         {{ $menuImg = .Params.menu_image }}
