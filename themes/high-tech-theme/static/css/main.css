@@ -565,6 +565,25 @@ body{
   display: block;
 }
 
+/* Empêche le scroll du fond quand le menu est ouvert */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Styles de l’icône de recherche */
+.icon-search {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  color: rgb(179, 103, 241);
+  stroke: currentColor;
+  transition: color 0.2s ease;
+}
+
+/* Effet hover */
+.search-button:hover .icon-search {
+  color: rgb(68, 0, 124);
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -610,23 +629,82 @@ body{
   }
 }
 
-/* Empêche le scroll du fond quand le menu est ouvert */
-body.menu-open {
-  overflow: hidden;
-}
 
-/* Styles de l’icône de recherche */
-.icon-search {
-  width: 20px;
-  height: 20px;
-  margin-right: 6px;
-  color: rgb(179, 103, 241);
-  stroke: currentColor;
-  transition: color 0.2s ease;
-}
+/* ==========================
+   Mobile : barre recherche + loupe + langue
+   ========================== */
+@media (max-width: 768px) {
+  /* Container barre recherche + langue sur une ligne */
+  .search-lang-container {
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: nowrap;
+    padding: 0 10px;
+  }
 
-/* Effet hover */
-.search-button:hover .icon-search {
-  color: rgb(68, 0, 124);
-}
+  /* Wrapper barre recherche */
+  .search-wrapper {
+    position: relative;
+    flex: 1;  /* prend tout l’espace disponible */
+  }
 
+  /* Input barre recherche */
+  .search-input {
+    width: 100%;
+    padding: 8px 40px 8px 12px; /* espace pour la loupe à droite */
+    font-size: 0.9rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+
+  /* Bouton loupe dans la barre */
+  .search-button {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Masquer le texte "Rechercher" sur Mobile */
+  .search-button span {
+    display: none;
+  }
+
+  /* Icône loupe */
+  .icon-search {
+    width: 22px;
+    height: 22px;
+    color: #ede9feff;
+    transition: color 0.2s ease;
+  }
+
+  .search-button:hover .icon-search {
+    color: #6b21a8ff;
+  }
+
+  /* Sélecteur de langue */
+  .lang-selector {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .lang-current {
+    padding: 5px 8px;
+    font-size: 0.9rem;
+  }
+
+  .lang-dropdown {
+    font-size: 0.9rem;
+  }
+}
