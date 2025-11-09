@@ -467,3 +467,11 @@ body{
 body.menu-open {
   overflow: hidden;
 }
+
+
+
+
+.footer-text {
+  text-align: center;
+  margin: 0;
+}
