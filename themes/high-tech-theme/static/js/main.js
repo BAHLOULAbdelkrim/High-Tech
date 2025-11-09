@@ -54,3 +54,18 @@ document.addEventListener('DOMContentLoaded', function() {
   }, 2500); // 2.5 secondes par image
 });
 
+// ===== Gestion du menu de langue =====
+document.addEventListener('DOMContentLoaded', function() {
+  const langSelector = document.querySelector('.lang-selector');
+  if (!langSelector) return;
+
+  const btn = langSelector.querySelector('.lang-current');
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    langSelector.classList.toggle('open');
+  });
+
+  document.addEventListener('click', () => {
+    langSelector.classList.remove('open');
+  });
+});

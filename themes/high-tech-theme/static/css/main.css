@@ -455,6 +455,117 @@ body{
   object-fit: contain;
 }
 
+
+/* ==========================
+   BARRE RECHERCHE + LANGUE
+   ========================== */
+
+.search-lang-bar {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+}
+
+.search-lang-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+/* Barre de recherche */
+.search-input {
+  flex: 1;
+  max-width: 400px; /* 🔧 tu peux ajuster ici la largeur */
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Bouton Rechercher */
+.search-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.search-button .search-icon {
+  width: 22px;
+  height: 22px;
+  color: #ede9feff;
+  transition: color 0.2s ease;
+}
+
+.search-button:hover .search-icon {
+  color: #6b21a8ff;
+}
+
+/* Sélecteur de langue */
+.lang-selector {
+  position: relative;
+}
+
+.lang-current {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px 10px;
+  cursor: pointer;
+  color: #333;
+}
+
+.lang-icon {
+  width: 18px;
+  height: 18px;
+  color: #6b21a8ff;
+}
+
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 110%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  z-index: 10;
+}
+
+.lang-dropdown li a {
+  display: block;
+  padding: 8px 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+.lang-dropdown li a:hover {
+  background: var(--menu-hover-bg);
+  color: var(--menu-hover-text);
+}
+
+/* Affichage du menu au clic */
+.lang-selector.open .lang-dropdown {
+  display: block;
+}
+
+
 /* Responsive */
 @media (max-width: 900px) {
   .mobile-burger {

@@ -12,15 +12,20 @@
 </head>
 <body class="{{ if .IsHome }}home{{ else }}not-home{{ end }}" data-section="{{ .Section }}">
   
-  {{ partial "header.html" . }}
-  
-  <!-- 🔹 Ajout du menu mobile pour la barre recherche + langue -->
-  {{ partial "mobilemenu.html" . }}
+{{ partial "header.html" . }}
 
-  <main class="site-main">
-    {{ block "main" . }}{{ end }}
-  </main>
+<!-- 🔹 Nouvelle barre recherche + langue -->
+{{ partial "search-lang.html" . }}
+
+<!-- 🔹 Menu mobile -->
+{{ partial "mobilemenu.html" . }}
+
+<main class="site-main">
+  {{ block "main" . }}{{ end }}
+</main>
+
   {{ partial "footer.html" . }}
+
 <!-- Retour à la page principale via la touche clavier Backspace -->
 <script>
   document.addEventListener('keydown', function(event) {
