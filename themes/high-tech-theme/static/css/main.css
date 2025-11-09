@@ -595,12 +595,15 @@ body.menu-open {
   width: 20px;
   height: 20px;
   margin-right: 6px;
-  color: #6b21a8ff;
+  color: rgb(109, 45, 161);
   stroke: currentColor;
   transition: color 0.2s ease;
 }
 
-
+/* Effet hover */
+.search-button:hover .icon-search {
+  color: rgb(76, 0, 138);
+}
 
 
 
