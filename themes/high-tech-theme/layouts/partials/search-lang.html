@@ -18,13 +18,15 @@
 
     <!-- Sélecteur de langue -->
     <div class="lang-selector">
-      <button id="lang-toggle" class="lang-current" aria-label="Changer de langue">
-        🌐 <span id="current-lang">FR</span>
+      <button class="lang-current">
+        <svg xmlns="http://www.w3.org/2000/svg" class="lang-icon" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm7.931 9h-3.174a15.917 15.917 0 00-1.263-5.246A8.022 8.022 0 0119.931 11zM12 4a13.91 13.91 0 011.838 6H10.16A13.91 13.91 0 0112 4zM4.069 13h3.174a15.917 15.917 0 001.263 5.246A8.022 8.022 0 014.069 13zM4.069 11a8.022 8.022 0 013.437-5.246A15.917 15.917 0 007.243 11H4.069zm7.931 9a13.91 13.91 0 01-1.838-6h3.678A13.91 13.91 0 0112 20zm1.84-8h3.678A13.91 13.91 0 0112 20a13.91 13.91 0 011.84-6zM12 22C6.486 22 2 17.514 2 12h2a8 8 0 0016 0h2c0 5.514-4.486 10-10 10z"/>
+        </svg>
+        <span>FR</span>
       </button>
-      <ul id="lang-menu" class="lang-dropdown" aria-label="Sélecteur de langue">
-            <li data-lang="fr">Français</li>
-            <li data-lang="en">English</li>
-            <li data-lang="ar">العربية</li>
+      <ul class="lang-dropdown">
+        <li><a href="/en/">EN</a></li>
+        <li><a href="/ar/">AR</a></li>
       </ul>
     </div>
   </div>
