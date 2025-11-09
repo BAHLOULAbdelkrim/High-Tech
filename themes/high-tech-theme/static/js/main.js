@@ -40,3 +40,17 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.innerWidth > 900 && mobileMenu.classList.contains('open')) closeMenu();
   });
 });
+
+
+// ===== Slideshow automatique =====
+document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('#slideshow .slide');
+  if (!slides.length) return; // sécurité
+
+  let current = 0;
+  setInterval(() => {
+    slides[current].classList.remove('visible');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('visible');
+  }, 5000); // 5 secondes par image
+});
