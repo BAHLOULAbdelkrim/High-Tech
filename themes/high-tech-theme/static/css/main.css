@@ -699,19 +699,14 @@ body.menu-open {
 }
 
 
-/* Barre recherche + langue directement visible sur mobile */
-.mobile-visible {
-  display: none; /* par défaut desktop */
-}
-
 /* Par défaut, on cache sur desktop */
 .mobile-only {
   display: none;
 }
 
-/* Sur mobile (par ex. <900px), on affiche */
+/* Sur mobile (<900px), on affiche la barre entre logo et slideshow */
 @media (max-width: 900px) {
-  .mobile-visible {
+  .mobile-only {
     display: flex;
     flex-direction: column; /* ou row si tu veux côte à côte */
     align-items: stretch;
@@ -719,12 +714,12 @@ body.menu-open {
     margin: 12px 16px;
   }
 
-  .mobile-visible .search-form {
+  .mobile-only .search-form {
     flex: 1;
     margin-right: 0;
   }
 
-  .mobile-visible .lang-select {
+  .mobile-only .lang-select {
     align-self: flex-end;
   }
 }
