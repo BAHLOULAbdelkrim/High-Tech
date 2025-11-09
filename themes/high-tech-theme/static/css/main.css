@@ -627,84 +627,88 @@ body.menu-open {
   justify-content: center;
 }
 
-/* Masquer le texte "Rechercher" sur Mobile */
 @media (max-width: 768px) {
-  .search-button span.search-text {
-    display: none;
+  /* Burger visible */
+  .mobile-burger {
+    display: block;
   }
-}
 
-/* Icône loupe */
-.icon-search {
-  width: 22px;
-  height: 22px;
-  color: #6b21a8ff;
-  transition: color 0.2s ease;
-}
+  /* Masquer les menus Desktop */
+  .top-menus,
+  .left-ad,
+  .right-ad,
+  .left-column {
+    display: none !important;
+  }
 
-.search-button:hover .icon-search {
-  color: #047857ff;
-}
+  /* Mise en page container */
+  .container {
+    grid-template-columns: 1fr !important;
+  }
+  .content-column {
+    grid-column: 1 !important;
+  }
 
-/* Sélecteur de langue */
-.lang-selector {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  flex-shrink: 0;
-}
-
-.lang-current {
-  padding: 6px 10px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  background: transparent;
-  cursor: pointer;
-  font-size: 0.95rem;
-}
-
-/* Dropdown langue */
-.lang-dropdown {
-  display: none;
-  position: absolute;
-  top: 110%;
-  right: 0;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  list-style: none;
-  margin: 0;
-  padding: 4px 0;
-  z-index: 10;
-}
-
-.lang-selector.open .lang-dropdown {
-  display: block;
-}
-
-.lang-dropdown li a {
-  display: block;
-  padding: 8px 12px;
-  text-decoration: none;
-  color: #333;
-}
-
-.lang-dropdown li a:hover {
-  background: #ede9feff;
-  color: #6b21a8ff;
-}
-
-/* === Responsive Mobile === */
-@media (max-width: 768px) {
+  /* Barre recherche + langue sur une ligne */
   .search-lang-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     gap: 8px;
+    flex-wrap: nowrap;
     padding: 0 10px;
   }
-}
 
+  /* Barre de recherche */
+  .search-wrapper {
+    position: relative;
+    flex: 1;
+  }
+  .search-input {
+    width: 100%;
+    padding: 8px 40px 8px 12px; /* espace pour la loupe à droite */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+  }
+  .search-button {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-button span {
+    display: none; /* Masque le texte "Rechercher" sur mobile */
+  }
+  .icon-search {
+    width: 22px;
+    height: 22px;
+    color: #ede9feff;
+    transition: color 0.2s ease;
+  }
+  .search-button:hover .icon-search {
+    color: #6b21a8ff;
+  }
 
-@media (max-width: 768px) {
-  .mobile-burger {
-    display: block; /* rend le burger visible sur mobile */
+  /* Sélecteur de langue */
+  .lang-selector {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .lang-current {
+    padding: 5px 8px;
+    font-size: 0.9rem;
+  }
+  .lang-dropdown {
+    font-size: 0.9rem;
   }
 }
