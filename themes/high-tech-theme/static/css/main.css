@@ -704,6 +704,12 @@ body.menu-open {
   display: none; /* par défaut desktop */
 }
 
+/* Par défaut, on cache sur desktop */
+.mobile-only {
+  display: none;
+}
+
+/* Sur mobile (par ex. <900px), on affiche */
 @media (max-width: 900px) {
   .mobile-visible {
     display: flex;
