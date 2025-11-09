@@ -523,7 +523,7 @@ body.menu-open {
 .search-button {
   display: flex;
   align-items: center;
-  width: 1000px;
+  width: 800px;
   gap: 6px;
   background: none;
   border: none;
