@@ -600,10 +600,7 @@ body.menu-open {
   transition: color 0.2s ease;
 }
 
-/* Effet hover */
-.search-button:hover .icon-search {
-  color: #6b21a8ff;
-}
+
 
 
 
