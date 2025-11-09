@@ -52,5 +52,5 @@ document.addEventListener('DOMContentLoaded', function() {
     slides[current].classList.remove('visible');
     current = (current + 1) % slides.length;
     slides[current].classList.add('visible');
-  }, 5000); // 5 secondes par image
+  }, 2500); // 2.5 secondes par image
 });
