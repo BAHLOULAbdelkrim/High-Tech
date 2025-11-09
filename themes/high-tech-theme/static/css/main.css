@@ -586,54 +586,57 @@ body.menu-open {
 }
 
 /* ==========================
-   MOBILE / RESPONSIVE (max-width: 768px)
+   Mobile : Responsive général + barre recherche + loupe + langue
    ========================== */
 @media (max-width: 768px) {
 
-  /* Menu burger et masquage des éléments Desktop */
+  /* Menu mobile */
   .mobile-burger {
     display: block;
   }
+
   .top-menus,
   .left-ad,
   .right-ad,
   .left-column {
     display: none !important;
   }
+
   .container {
     grid-template-columns: 1fr !important;
   }
+
   .content-column {
     grid-column: 1 !important;
   }
 
-  /* Barre recherche + langue sur une seule ligne */
+  /* Barre recherche + langue container */
   .search-lang-container {
-    flex-direction: row !important;   /* tout sur une ligne */
+    flex-direction: row !important; /* tout sur une ligne */
     align-items: center;
     justify-content: space-between;
     gap: 8px;
-    flex-wrap: nowrap;                /* pas de retour à la ligne */
+    flex-wrap: nowrap;              /* empêche le retour à la ligne */
     padding: 0 10px;
   }
 
-  /* Wrapper barre recherche */
+  /* Barre de recherche wrapper */
   .search-wrapper {
-    position: relative;               /* nécessaire pour placer la loupe à droite */
-    flex: 1;                          /* prend tout l’espace disponible */
+    position: relative;
+    flex: 1;                 /* prend tout l’espace disponible */
   }
 
   /* Input barre recherche */
   .search-input {
     width: 100%;
-    padding: 8px 40px 8px 12px;       /* espace pour la loupe à droite */
+    padding: 8px 40px 8px 12px; /* espace pour la loupe à droite */
     font-size: 0.9rem;
     border-radius: 8px;
     border: 1px solid #ccc;
-    min-width: 0;                      /* éviter débordement flex */
+    max-width: 100%;
   }
 
-  /* Bouton loupe à l’intérieur de la barre */
+  /* Bouton loupe dans la barre */
   .search-button {
     position: absolute;
     right: 4px;
@@ -657,17 +660,22 @@ body.menu-open {
   .icon-search {
     width: 22px;
     height: 22px;
-    color: #ede9feff;
+    color: #6b21a8ff;
     transition: color 0.2s ease;
   }
 
   .search-button:hover .icon-search {
-    color: #6b21a8ff;
+    color: #047857ff;
+  }
+
+  /* Bouton Rechercher Desktop uniquement */
+  .btn-rechercher {
+    display: none;
   }
 
   /* Sélecteur de langue */
   .lang-selector {
-    flex-shrink: 0;                   /* ne se réduit pas */
+    flex-shrink: 0;                 /* reste à sa taille naturelle */
     display: flex;
     align-items: center;
     gap: 4px;
