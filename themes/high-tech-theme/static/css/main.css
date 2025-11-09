@@ -566,49 +566,7 @@ body{
 }
 
 
-/* Responsive */
-@media (max-width: 768px) {
-  .mobile-burger {
-    display: block;
-  }
-  .top-menus,
-  .left-ad,
-  .right-ad,
-  .left-column {
-    display: none !important;
-  }
-  .container {
-    grid-template-columns: 1fr !important;
-  }
-  .content-column {
-    grid-column: 1 !important;
-  }
 
-  .search-lang-container {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
-  }
-  .search-wrapper {
-    width: 100%;
-    position: relative;
-  }
-  .search-input {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 38px; /* garde de la place pour l’icône */
-  }
-  .search-button {
-    width: 100%;
-    justify-content: center;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  .lang-selector {
-    align-self: flex-end;
-  }
-}
 
 /* Empêche le scroll du fond quand le menu est ouvert */
 body.menu-open {
@@ -631,10 +589,27 @@ body.menu-open {
 }
 
 
-/* ==========================
-   Adaptation mobile : barre recherche + loupe + langue sur 1 ligne
-   ========================== */
 @media (max-width: 768px) {
+  /* Burger menu */
+  .mobile-burger {
+    display: block;
+  }
+
+  /* Masquer certains éléments desktop */
+  .top-menus,
+  .left-ad,
+  .right-ad,
+  .left-column {
+    display: none !important;
+  }
+  .container {
+    grid-template-columns: 1fr !important;
+  }
+  .content-column {
+    grid-column: 1 !important;
+  }
+
+  /* Barre de recherche + langue sur une seule ligne */
   .search-lang-container {
     flex-direction: row !important; /* tout sur 1 ligne */
     align-items: center;
@@ -644,42 +619,64 @@ body.menu-open {
     padding: 0 10px;
   }
 
+  /* Wrapper de la barre de recherche */
+  .search-wrapper {
+    position: relative;
+    flex: 1;                        /* prend tout l’espace disponible */
+  }
+
+  /* Barre de recherche */
   .search-input {
-    flex: 1;                        /* prend toute la place disponible */
-    min-width: 0;                   /* pour éviter le débordement */
-    padding: 8px 10px;
+    width: 100%;
+    min-width: 0;                   /* éviter débordement */
+    padding: 8px 40px 8px 12px;     /* espace pour la loupe à droite */
     font-size: 0.9rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
   }
 
+  /* Bouton loupe dans la barre */
   .search-button {
-    padding: 6px;
-    flex-shrink: 0;                 /* reste à sa taille naturelle */
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    flex-shrink: 0;
   }
 
-  /* Masque le texte "Rechercher" sur mobile */
+  /* Masquer texte Rechercher */
   .search-button span {
     display: none;
   }
 
+  /* Icône loupe */
   .icon-search {
     width: 22px;
     height: 22px;
+    color: #ede9feff;
+    transition: color 0.2s ease;
+  }
+  .search-button:hover .icon-search {
+    color: #6b21a8ff;
   }
 
+  /* Sélecteur de langue */
   .lang-selector {
     flex-shrink: 0;                 /* reste à sa taille naturelle */
     display: flex;
     align-items: center;
     gap: 4px;
   }
-
-  .lang-selector button {
+  .lang-selector button,
+  .lang-current {
     padding: 5px 8px;
     font-size: 0.9rem;
   }
-
   .lang-dropdown {
     font-size: 0.9rem;
   }
 }
-
