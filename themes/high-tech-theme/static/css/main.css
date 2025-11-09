@@ -49,6 +49,19 @@ body{
   display: flex;
   align-items: center;
 }
+
+/* Conteneur interne centré (nouveau) */
+.footer-container {
+  max-width: 1200px;      /* largeur maximale du site */
+  margin: 0 auto;         /* centre le bloc horizontalement */
+  padding: 12px 16px;     /* espace interne */
+  display: flex;
+  align-items: center;    /* ✅ centre verticalement */
+  justify-content: center; /* ✅ centre horizontalement */
+  gap: 16px;
+  position: relative;
+}
+
 /* Logo */
 .logo {
   width: 56px;
@@ -471,7 +484,3 @@ body.menu-open {
 
 
 
-.footer-text {
-  text-align: center;
-  margin: 0;
-}
