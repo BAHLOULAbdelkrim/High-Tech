@@ -505,11 +505,20 @@ body.menu-open {
 
 .search-input {
   flex: 1;
-  padding: 8px 12px;
+  width: 100%;
+  min-width: 350px;        /* largeur minimale confortable */
+  padding: 10px 14px;      /* bon équilibre entre hauteur et espace interne */
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 15px;
+  font-size: 16px;
+  transition: all 0.2s ease;
 }
+
+.search-input:focus {
+  border-color: #999;       /* bord plus foncé quand on écrit dedans */
+  outline: none;
+}
+
 
 .search-button {
   display: flex;
@@ -614,12 +623,6 @@ body.menu-open {
 
   .search-form {
     width: 100%;
-  }
-
-  .search-input {
-    flex: 1;
-    font-size: 16px;
-    padding: 10px;
   }
 
   .search-button {
