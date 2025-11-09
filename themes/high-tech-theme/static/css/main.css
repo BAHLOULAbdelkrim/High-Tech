@@ -173,8 +173,6 @@ body{
 
 /* Partie restante inchangée */
 .menu-bottom{display:flex;justify-content:space-between;margin-top:8px;align-items:center}
-.search input{padding:8px;border-radius:6px;border:1px solid #ddd;width:100%;max-width:480px}
-.langs select{padding:8px;border-radius:6px;border:1px solid #ddd}
 
 .hero {
   margin-top: 12px;
@@ -371,13 +369,13 @@ body{
 
 /* Animation croix */
 .mobile-burger.open .burger-line:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5.5px, 5.5px);
 }
 .mobile-burger.open .burger-line:nth-child(2) {
   opacity: 0;
 }
 .mobile-burger.open .burger-line:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(5.5px, -5.5px);
 }
 
 /* Menu mobile caché par défaut */
