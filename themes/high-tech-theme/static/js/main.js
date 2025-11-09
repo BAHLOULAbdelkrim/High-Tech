@@ -54,3 +54,27 @@ document.addEventListener('DOMContentLoaded', function() {
     slides[current].classList.add('visible');
   }, 2500); // 2.5 secondes par image
 });
+
+
+// ===== Sélecteur de langue =====
+const langToggle = document.getElementById('lang-toggle');
+const langMenu = document.getElementById('lang-menu');
+const currentLang = document.getElementById('current-lang');
+
+if (langToggle && langMenu) {
+  langToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    langMenu.style.display = langMenu.style.display === 'block' ? 'none' : 'block';
+  });
+
+  document.addEventListener('click', () => {
+    langMenu.style.display = 'none';
+  });
+
+  langMenu.querySelectorAll('li').forEach(li => {
+    li.addEventListener('click', () => {
+      currentLang.textContent = li.dataset.lang.toUpperCase();
+      langMenu.style.display = 'none';
+    });
+  });
+}

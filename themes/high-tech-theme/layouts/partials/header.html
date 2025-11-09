@@ -31,21 +31,32 @@
         {{ end }}
       </ul>
 
-  <!-- Section mobile : langue + recherche -->
-  <div class="md:hidden flex flex-col items-center gap-2 px-4 py-2 bg-white shadow-sm">
-    <div class="w-full flex justify-end">
-      <button id="lang-toggle-mobile" class="flex items-center gap-2 px-3 py-1 bg-white border rounded shadow">
-        🌐 <span id="current-lang-mobile">FR</span>
-      </button>
-    </div>
-    <form class="w-full flex items-center gap-2" action="{{ "/search/" | relURL }}" method="get">
-      <input name="q" type="search" placeholder="Rechercher..."
-             class="flex-1 px-3 py-2 border rounded focus:outline-none text-sm" />
-      <button type="submit" class="px-3 py-2 rounded border font-semibold bg-emerald-100 hover:bg-violet-400 text-black text-sm">
-        Rechercher
-      </button>
-    </form>
-  </div>
+      <div class="menu-bottom">
+        <div class="search-bar">
+          <form action="{{ "search" | relURL }}" method="get" class="search-form">
+            <input type="search" name="q" placeholder="Rechercher..." aria-label="Rechercher" class="search-input">
+            <button type="submit" class="search-button">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <span class="search-text">Rechercher</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="lang-select">
+          <button id="lang-toggle" class="lang-btn" aria-label="Changer de langue">
+            🌐 <span id="current-lang">FR</span>
+          </button>
+          <ul id="lang-menu" class="lang-menu" aria-label="Sélecteur de langue">
+            <li data-lang="fr">FR - Français</li>
+            <li data-lang="en">EN - English</li>
+            <li data-lang="ar">AR - العربية</li>
+          </ul>
+        </div>
+      </div>
+
     </nav>
 </div>
 
