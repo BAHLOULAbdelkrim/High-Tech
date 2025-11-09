@@ -506,7 +506,7 @@ body.menu-open {
 .search-input {
   flex: 1;
   width: 100%;
-  min-width: 350px;        /* largeur minimale confortable */
+  min-width: 1000px;        /* largeur minimale confortable */
   padding: 10px 14px;      /* bon équilibre entre hauteur et espace interne */
   border: 1px solid #ccc;
   border-radius: 6px;
