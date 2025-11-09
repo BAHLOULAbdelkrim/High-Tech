@@ -499,7 +499,7 @@ body.menu-open {
   display: flex;
   align-items: center;
   flex: 1;
-  max-width: 800px;
+  max-width: 100px;
   gap: 8px;
 }
 
