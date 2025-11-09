@@ -1,22 +1,42 @@
-// Simple slideshow & mobile burger script
-document.addEventListener('DOMContentLoaded', function(){
-  const slides = document.querySelectorAll('.slideshow .slide');
-  let idx = 0;
-  const interval = 3000;
-  if(slides.length){
-    setInterval(()=>{
-      slides[idx].classList.remove('visible');
-      idx = (idx+1)%slides.length;
-      slides[idx].classList.add('visible');
-    }, interval);
+document.addEventListener('DOMContentLoaded', function() {
+  const burger = document.querySelector('#menu-toggle') || document.querySelector('.mobile-burger');
+  const mobileMenu = document.getElementById('mobileMenu') || document.getElementById('mobile-nav');
+  const closeBtn = mobileMenu ? mobileMenu.querySelector('.close-mobile') : null;
+
+  if (!burger || !mobileMenu) return;
+
+  const openMenu = () => {
+    mobileMenu.classList.add('open');
+    burger.classList.add('open');
+    document.body.classList.add('menu-open');
+  };
+
+  const closeMenu = () => {
+    mobileMenu.classList.remove('open');
+    burger.classList.remove('open');
+    document.body.classList.remove('menu-open');
+  };
+
+  burger.addEventListener('click', e => {
+    e.stopPropagation();
+    if (mobileMenu.classList.contains('open')) closeMenu();
+    else openMenu();
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      closeMenu();
+    });
   }
 
-  // mobile menu
-  const burger = document.querySelector('.mobile-burger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const closeBtn = mobileMenu && mobileMenu.querySelector('.close-mobile');
-  if(burger && mobileMenu){
-    burger.addEventListener('click', ()=> { mobileMenu.style.display='block'; mobileMenu.setAttribute('aria-hidden','false'); });
-    closeBtn && closeBtn.addEventListener('click', ()=> { mobileMenu.style.display='none'; mobileMenu.setAttribute('aria-hidden','true'); });
-  }
+  // Ferme au clic hors du menu
+  mobileMenu.addEventListener('click', e => {
+    if (e.target === mobileMenu) closeMenu();
+  });
+
+  // Ferme au resize si on dépasse le breakpoint
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900 && mobileMenu.classList.contains('open')) closeMenu();
+  });
 });

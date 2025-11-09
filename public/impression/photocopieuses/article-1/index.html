@@ -11,14 +11,15 @@
   <script defer src="/js/main.js"></script>
 </head>
 <body class="not-home" data-section="impression">
+  
   <header class="site-header">
-  <div class="header-container">
-    <div class="header-left">
+<div class="header-container">
+  <div class="header-left">
+    <a href="/" class="home-link">
       <img src="/images/logo.png" alt="Logo" class="logo">
-      <div class="sitename">
-        <span class="orbitron">High-Tech</span>
-      </div>
-    </div>
+      <span class="orbitron">High-Tech</span>
+    </a>
+  </div>
 
     <nav class="top-menus" aria-label="Top navigation">
       
@@ -128,44 +129,79 @@
         </div>
       </div>
     </nav>
-
-    <button class="mobile-burger" aria-label="Ouvrir le menu">☰</button>
-    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-  <button class="close-mobile">✕</button>
-  <ul>
-    
-      <li><a href="/smartphones/">Smartphones</a></li>
-    
-      <li><a href="/tablettes/">Tablettes</a></li>
-    
-      <li><a href="/ordinateurs/">Ordinateurs</a></li>
-    
-      <li><a href="/cameras/">Cameras</a></li>
-    
-      <li><a href="/wearables/">Wearables</a></li>
-    
-      <li><a href="/home-cinema/">Home cinema</a></li>
-    
-      <li><a href="/gaming/">Gaming</a></li>
-    
-      <li><a href="/domotique/">Domotique</a></li>
-    
-      <li><a href="/audio/">Audio</a></li>
-    
-      <li><a href="/obj-connectes/">Obj connectes</a></li>
-    
-      <li><a href="/impression/">Impression</a></li>
-    
-      <li><a href="/peripheriques/">Peripheriques</a></li>
-    
-    <li class="sep"></li>
-    <li><a href="/actualite/">Nouveautés</a></li>
-    <li><a href="/comparatifs/">Trier par</a></li>
-    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-  </ul>
 </div>
 
-  </div>
+
+<button id="menu-toggle" class="mobile-burger">
+  <span class="burger-line"></span>
+  <span class="burger-line"></span>
+  <span class="burger-line"></span>
+</button>
+
+
+<nav id="mobile-nav" class="mobile-menu" aria-hidden="true">
+  
+  <button id="mobile-nav-close" class="close-mobile">  </button>
+
+  <ul>
+    
+      <li class="menu-item" data-id="smartphones">
+        <a href="/smartphones/">Smartphones</a>
+      </li>
+    
+      <li class="menu-item" data-id="tablettes">
+        <a href="/tablettes/">Tablettes</a>
+      </li>
+    
+      <li class="menu-item" data-id="ordinateurs">
+        <a href="/ordinateurs/">Ordinateurs</a>
+      </li>
+    
+      <li class="menu-item" data-id="cameras">
+        <a href="/cameras/">Cameras</a>
+      </li>
+    
+      <li class="menu-item" data-id="wearables">
+        <a href="/wearables/">Wearables</a>
+      </li>
+    
+      <li class="menu-item" data-id="home-cinema">
+        <a href="/home-cinema/">Home cinema</a>
+      </li>
+    
+      <li class="menu-item" data-id="gaming">
+        <a href="/gaming/">Gaming</a>
+      </li>
+    
+      <li class="menu-item" data-id="domotique">
+        <a href="/domotique/">Domotique</a>
+      </li>
+    
+      <li class="menu-item" data-id="audio">
+        <a href="/audio/">Audio</a>
+      </li>
+    
+      <li class="menu-item" data-id="obj-connectes">
+        <a href="/obj-connectes/">Obj connectes</a>
+      </li>
+    
+      <li class="menu-item" data-id="impression">
+        <a href="/impression/">Impression</a>
+      </li>
+    
+      <li class="menu-item" data-id="peripheriques">
+        <a href="/peripheriques/">Peripheriques</a>
+      </li>
+    
+
+    <li class="sep"></li>
+
+    <li class="menu-item"><a href="/actualite/">Nouveautés</a></li>
+    <li class="menu-item"><a href="/comparatifs/">Trier par</a></li>
+    <li class="menu-item"><a href="https://facebook.com" target="_blank">Facebook</a></li>
+  </ul>
+</nav>
+
 </header>
 
 <section class="hero">
@@ -185,6 +221,77 @@
     
   
 </section>
+
+  
+  
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <button class="close-mobile" aria-label="Fermer le menu"> </button>
+  <ul>
+    
+    
+      <li class="menu-item">
+        <a href="/smartphones/"  class="icon-small">Smartphones</a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="/tablettes/"  class="icon-small">Tablettes</a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="/ordinateurs/"  class="icon-small">Ordinateurs</a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="/cameras/"  class="icon-small">Cameras</a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="/wearables/"  class="icon-small">Wearables</a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="/home-cinema/"  class="icon-small">Home cinema</a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="/gaming/"  class="icon-small">Gaming</a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="/domotique/"  class="icon-small">Domotique</a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="/audio/"  class="icon-small">Audio</a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="/obj-connectes/"  class="icon-small">Obj connectes</a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="/impression/"  class="icon-small">Impression</a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="/peripheriques/"  class="icon-small">Peripheriques</a>
+      </li>
+    
+
+    <li class="sep"></li>
+
+    
+    <li class="menu-item"><a href="/actualite/" class="icon-small">Nouveautés</a></li>
+    <li class="menu-item"><a href="/comparatifs/" class="icon-small">Trier par</a></li>
+    <li>
+      <a href="https://facebook.com" target="_blank">
+        <img src="/images/facebook.svg" alt="Facebook" class="icon-small">
+        Facebook
+      </a>
+    </li>
+  </ul>
+</div>
+
 
   <main class="site-main">
     
@@ -238,10 +345,21 @@
 
   </main>
   <footer class="site-footer">
-  <div class="container">
+  <div class="container" style="text-align: center;">
     <p>© 2025 High-Tech — Tous droits réservés.</p>
   </div>
 </footer>
 
+
+<script>
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Backspace' && !event.target.matches('input, textarea')) {
+      event.preventDefault();
+      if (window.location.pathname !== '/') {
+        window.location.href = '/';
+      }
+    }
+  });
+</script>
 </body>
 </html>
