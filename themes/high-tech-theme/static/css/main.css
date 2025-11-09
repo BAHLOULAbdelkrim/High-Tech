@@ -712,3 +712,28 @@ body.menu-open {
     font-size: 0.9rem;
   }
 }
+
+/* Version mobile */
+@media (max-width: 768px) {
+  .latest-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 16px;
+  }
+
+  /* Cache tous les articles sauf les 3 premiers */
+  .latest-grid .card:nth-child(n+4) {
+    display: none;
+  }
+
+  /* Les cartes visibles prennent toute la largeur */
+  .latest-grid .card {
+    width: 100%;
+  }
+
+  /* Ajuste éventuellement la hauteur des images */
+  .latest-grid .card img {
+    height: 200px; /* tu peux adapter selon ton design */
+  }
+}
+
