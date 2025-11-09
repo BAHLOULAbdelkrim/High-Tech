@@ -523,6 +523,7 @@ body.menu-open {
 .search-button {
   display: flex;
   align-items: center;
+  width: 500px;
   gap: 6px;
   background: none;
   border: none;
@@ -537,7 +538,7 @@ body.menu-open {
 }
 
 .icon-search {
-  width: 180px;
+  width: 18px;
   height: 18px;
   stroke: #666;
 }
