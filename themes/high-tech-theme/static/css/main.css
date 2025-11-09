@@ -639,3 +639,43 @@ body.menu-open {
     right: 0;
   }
 }
+
+
+/* Barre recherche + langue mobile */
+.mobile-menu-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.lang-select-mobile {
+  align-self: flex-end;
+  position: relative;
+}
+
+.lang-menu-mobile {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  z-index: 1000;
+}
+
+.lang-menu-mobile li {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.lang-menu-mobile li:hover {
+  background: #f0f0f0;
+}

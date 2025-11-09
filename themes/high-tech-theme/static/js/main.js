@@ -78,3 +78,26 @@ if (langToggle && langMenu) {
     });
   });
 }
+
+// ===== Sélecteur de langue mobile =====
+const langToggleMobile = document.getElementById('lang-toggle-mobile');
+const langMenuMobile = document.getElementById('lang-menu-mobile');
+const currentLangMobile = document.getElementById('current-lang-mobile');
+
+if (langToggleMobile && langMenuMobile) {
+  langToggleMobile.addEventListener('click', (e) => {
+    e.stopPropagation();
+    langMenuMobile.style.display = langMenuMobile.style.display === 'block' ? 'none' : 'block';
+  });
+
+  document.addEventListener('click', () => {
+    langMenuMobile.style.display = 'none';
+  });
+
+  langMenuMobile.querySelectorAll('li').forEach(li => {
+    li.addEventListener('click', () => {
+      currentLangMobile.textContent = li.dataset.lang.toUpperCase();
+      langMenuMobile.style.display = 'none';
+    });
+  });
+}
