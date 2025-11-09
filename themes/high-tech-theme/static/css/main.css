@@ -585,127 +585,119 @@ body.menu-open {
   color: rgb(68, 0, 124);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .mobile-burger {
-    display: block;
-  }
-  .top-menus,
-  .left-ad,
-  .right-ad,
-  .left-column {
-    display: none !important;
-  }
-  .container {
-    grid-template-columns: 1fr !important;
-  }
-  .content-column {
-    grid-column: 1 !important;
-  }
-
-  .search-lang-container {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
-  }
-  .search-wrapper {
-    width: 100%;
-    position: relative;
-  }
-  .search-input {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 38px; /* garde de la place pour l’icône */
-  }
-  .search-button {
-    width: 100%;
-    justify-content: center;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  .lang-selector {
-    align-self: flex-end;
-  }
+/* Container barre recherche + langue */
+.search-lang-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 16px;
 }
 
+/* Formulaire barre de recherche */
+.search-form {
+  position: relative;
+  flex: 1; /* prend tout l'espace disponible */
+  display: flex;
+  align-items: center;
+}
 
-/* ==========================
-   Mobile : barre recherche + loupe + langue
-   ========================== */
+/* Input barre de recherche */
+.search-input {
+  width: 100%;
+  padding: 8px 40px 8px 12px; /* espace pour la loupe */
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Bouton loupe */
+.search-button {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Masquer le texte "Rechercher" sur Mobile */
 @media (max-width: 768px) {
-  /* Container barre recherche + langue sur une ligne */
-  .search-lang-container {
-    flex-direction: row !important;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    flex-wrap: nowrap;
-    padding: 0 10px;
-  }
-
-  /* Wrapper barre recherche */
-  .search-wrapper {
-    position: relative;
-    flex: 1;  /* prend tout l’espace disponible */
-  }
-
-  /* Input barre recherche */
-  .search-input {
-    width: 100%;
-    padding: 8px 40px 8px 12px; /* espace pour la loupe à droite */
-    font-size: 0.9rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-  }
-
-  /* Bouton loupe dans la barre */
-  .search-button {
-    position: absolute;
-    right: 4px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* Masquer le texte "Rechercher" sur Mobile */
-  .search-button span {
+  .search-button span.search-text {
     display: none;
   }
+}
 
-  /* Icône loupe */
-  .icon-search {
-    width: 22px;
-    height: 22px;
-    color: #ede9feff;
-    transition: color 0.2s ease;
-  }
+/* Icône loupe */
+.icon-search {
+  width: 22px;
+  height: 22px;
+  color: #6b21a8ff;
+  transition: color 0.2s ease;
+}
 
-  .search-button:hover .icon-search {
-    color: #6b21a8ff;
-  }
+.search-button:hover .icon-search {
+  color: #047857ff;
+}
 
-  /* Sélecteur de langue */
-  .lang-selector {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
+/* Sélecteur de langue */
+.lang-selector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
 
-  .lang-current {
-    padding: 5px 8px;
-    font-size: 0.9rem;
-  }
+.lang-current {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
 
-  .lang-dropdown {
-    font-size: 0.9rem;
+/* Dropdown langue */
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  z-index: 10;
+}
+
+.lang-selector.open .lang-dropdown {
+  display: block;
+}
+
+.lang-dropdown li a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+}
+
+.lang-dropdown li a:hover {
+  background: #ede9feff;
+  color: #6b21a8ff;
+}
+
+/* === Responsive Mobile === */
+@media (max-width: 768px) {
+  .search-lang-container {
+    gap: 8px;
+    padding: 0 10px;
   }
 }
- 
