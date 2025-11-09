@@ -499,7 +499,7 @@ body.menu-open {
   display: flex;
   align-items: center;
   flex: 1;
-  max-width: 100px;
+  max-width: 800px;
   gap: 8px;
 }
 
@@ -509,7 +509,6 @@ body.menu-open {
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 15px;
-  max-width: 1600px;
 }
 
 .search-button {
@@ -519,7 +518,7 @@ body.menu-open {
   background: none;
   border: none;
   cursor: pointer;
-  color: #f5acac;
+  color: #555;
   font-weight: 600;
 }
 
@@ -595,5 +594,45 @@ body.menu-open {
 
   .lang-select {
     align-self: flex-end;
+  }
+}
+
+
+/* === Correction mobile pour la barre de recherche + langue === */
+@media (max-width: 768px) {
+  .menu-bottom {
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 10px 12px;
+    background: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    gap: 10px;
+  }
+
+  .search-form {
+    width: 100%;
+  }
+
+  .search-input {
+    flex: 1;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .search-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .lang-select {
+    align-self: flex-end;
+  }
+
+  .lang-menu {
+    top: 100%;
+    right: 0;
   }
 }
