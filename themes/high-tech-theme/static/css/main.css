@@ -479,7 +479,7 @@ body{
 /* Barre de recherche */
 .search-input {
   flex: 1;
-  max-width: 500px; /* 🔧 tu peux ajuster ici la largeur */
+  max-width: 800px; /* 🔧 tu peux ajuster ici la largeur */
   padding: 10px 14px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -585,45 +585,69 @@ body.menu-open {
   color: rgb(68, 0, 124);
 }
 
-/* ==========================
-   Mobile : Responsive général + barre recherche + loupe + langue
-   ========================== */
+/* Responsive */
 @media (max-width: 768px) {
-
-  /* Menu mobile */
   .mobile-burger {
     display: block;
   }
-
   .top-menus,
   .left-ad,
   .right-ad,
   .left-column {
     display: none !important;
   }
-
   .container {
     grid-template-columns: 1fr !important;
   }
-
   .content-column {
     grid-column: 1 !important;
   }
 
-  /* Barre recherche + langue container */
   .search-lang-container {
-    flex-direction: row !important; /* tout sur une ligne */
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .search-wrapper {
+    width: 100%;
+    position: relative;
+  }
+  .search-input {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 38px; /* garde de la place pour l’icône */
+  }
+  .search-button {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  .lang-selector {
+    align-self: flex-end;
+  }
+}
+
+
+/* ==========================
+   Mobile : barre recherche + loupe + langue
+   ========================== */
+@media (max-width: 768px) {
+  /* Container barre recherche + langue sur une ligne */
+  .search-lang-container {
+    flex-direction: row !important;
     align-items: center;
     justify-content: space-between;
     gap: 8px;
-    flex-wrap: nowrap;              /* empêche le retour à la ligne */
+    flex-wrap: nowrap;
     padding: 0 10px;
   }
 
-  /* Barre de recherche wrapper */
+  /* Wrapper barre recherche */
   .search-wrapper {
     position: relative;
-    flex: 1;                 /* prend tout l’espace disponible */
+    flex: 1;  /* prend tout l’espace disponible */
   }
 
   /* Input barre recherche */
@@ -633,7 +657,6 @@ body.menu-open {
     font-size: 0.9rem;
     border-radius: 8px;
     border: 1px solid #ccc;
-    max-width: 100%;
   }
 
   /* Bouton loupe dans la barre */
@@ -660,22 +683,17 @@ body.menu-open {
   .icon-search {
     width: 22px;
     height: 22px;
-    color: #6b21a8ff;
+    color: #ede9feff;
     transition: color 0.2s ease;
   }
 
   .search-button:hover .icon-search {
-    color: #047857ff;
-  }
-
-  /* Bouton Rechercher Desktop uniquement */
-  .btn-rechercher {
-    display: none;
+    color: #6b21a8ff;
   }
 
   /* Sélecteur de langue */
   .lang-selector {
-    flex-shrink: 0;                 /* reste à sa taille naturelle */
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -690,3 +708,4 @@ body.menu-open {
     font-size: 0.9rem;
   }
 }
+ 
