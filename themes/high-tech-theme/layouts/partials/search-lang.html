@@ -1,26 +1,29 @@
 <section class="search-lang-bar">
   <div class="search-lang-container">
     
-    <!-- Barre de recherche -->
-    <input
-      type="text"
-      class="search-input"
-      placeholder="Rechercher un produit, une catégorie..."
-    />
 
-    <!-- Bouton Rechercher -->
-    <button class="search-button">
-      <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M21.707 20.293l-4.387-4.387A7.947 7.947 0 0016 9a8 8 0 10-8 8 7.947 7.947 0 006.906-3.68l4.387 4.387a1 1 0 001.414-1.414zM4 9a5 5 0 1110 0A5 5 0 014 9z"/>
+
+
+    <!-- Bloc recherche -->
+    <div class="search-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M21.71 20.29l-3.388-3.388A8.962 8.962 0 0019 11a9 9 0 10-9 9 8.962 8.962 0 005.902-1.678L19.29 21.7a1 1 0 001.42-1.41zM5 11a6 6 0 1112 0 6 6 0 01-12 0z"/>
       </svg>
-      <span>Rechercher</span>
-    </button>
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Rechercher un produit, une catégorie..."
+      />
+      <button class="search-button">Rechercher</button>
+    </div>    
+
+
 
     <!-- Sélecteur de langue -->
     <div class="lang-selector">
       <button class="lang-current">
-        <svg xmlns="http://www.w3.org/2000/svg" class="lang-icon" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm7.931 9h-3.174a15.917 15.917 0 00-1.263-5.246A8.022 8.022 0 0119.931 11zM12 4a13.91 13.91 0 011.838 6H10.16A13.91 13.91 0 0112 4zM4.069 13h3.174a15.917 15.917 0 001.263 5.246A8.022 8.022 0 014.069 13zM4.069 11a8.022 8.022 0 013.437-5.246A15.917 15.917 0 007.243 11H4.069zm7.931 9a13.91 13.91 0 01-1.838-6h3.678A13.91 13.91 0 0112 20zm1.84-8h3.678A13.91 13.91 0 0112 20a13.91 13.91 0 011.84-6zM12 22C6.486 22 2 17.514 2 12h2a8 8 0 0016 0h2c0 5.514-4.486 10-10 10z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" class="lang-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm7.75 9h-3.17a16.98 16.98 0 00-.91-4.33A8.03 8.03 0 0119.75 11zM8.33 4.67A14.95 14.95 0 009.25 11H4.25a7.96 7.96 0 014.08-6.33zM4.25 13h5a14.95 14.95 0 00-.92 6.33A7.96 7.96 0 014.25 13zm7.75 6.33A12.94 12.94 0 0011.09 13h1.82A12.94 12.94 0 0012 19.33zM13.91 11h-3.82a14.94 14.94 0 00-.83-6.33A8.01 8.01 0 0112 4c.64 0 1.27.07 1.87.19A14.94 14.94 0 0013.91 11zm.84 2a14.94 14.94 0 00.83 6.33A8.01 8.01 0 0112 20a8.01 8.01 0 01-3.08-.67A14.94 14.94 0 0010.09 13h4.66zm.92-2A14.95 14.95 0 0015.75 4.67 7.96 7.96 0 0119.75 11h-4.84z"/>
         </svg>
         <span>FR</span>
       </button>
@@ -31,3 +34,6 @@
     </div>
   </div>
 </section>
+
+
+
