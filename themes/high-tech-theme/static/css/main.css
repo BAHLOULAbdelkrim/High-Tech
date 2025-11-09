@@ -506,13 +506,13 @@ body.menu-open {
 .search-input {
   flex: 1;
   width: 100%;
-  min-width: 700px;        /* largeur minimale confortable */
-  padding: 10px 14px;      /* bon équilibre entre hauteur et espace interne */
+  padding: 10px 14px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 16px;
-  transition: all 0.2s ease;
+  min-width: 0; /* nécessaire pour mobile */
 }
+
 
 .search-input:focus {
   border-color: #999;       /* bord plus foncé quand on écrit dedans */
