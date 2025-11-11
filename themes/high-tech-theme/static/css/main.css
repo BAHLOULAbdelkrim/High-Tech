@@ -36,7 +36,7 @@ body{
 }
 /* Conteneur interne centré (nouveau) */
 .header-container {
-  max-width: 1000px;      /* largeur maximale du site */
+  max-width: 1200px;      /* largeur maximale du site */
   margin: 0 auto;         /* centre le bloc horizontalement */
   padding: 12px 16px;     /* espace interne */
   display: flex;
@@ -52,7 +52,7 @@ body{
 
 /* Conteneur interne centré (nouveau) */
 .footer-container {
-  max-width: 1000px;      /* largeur maximale du site */
+  max-width: 1200px;      /* largeur maximale du site */
   margin: 0 auto;         /* centre le bloc horizontalement */
   padding: 12px 16px;     /* espace interne */
   display: flex;
@@ -176,18 +176,16 @@ body{
 
 .hero {
   margin-top: 12px;
-  max-width: 1000px;   /* limite la largeur */
+  max-width: 1200px;   /* limite la largeur */
   margin-left: auto;   /* centre horizontalement */
   margin-right: auto;
 }
 .slideshow {
   position: relative;
-/*  height: 300px;   */
-  height: 423px;
+  height: 300px;
   overflow: hidden;
   border-radius: 8px;
-/*  max-width: 1000px;    */   /* même largeur que le reste du site */
-  max-width: 800px;
+  max-width: 1200px;   /* même largeur que le reste du site */
   margin: 0 auto;      /* centre horizontalement */
 }
 .slideshow img {
@@ -208,7 +206,7 @@ body{
   object-fit: cover;
   border-radius: 8px;
   display: block;
-  max-width: 1000px;   /* même contrainte de largeur */
+  max-width: 1200px;   /* même contrainte de largeur */
   margin: 0 auto;      /* centré */
 }
 .left-column {
@@ -223,7 +221,7 @@ body{
   display: grid;
   grid-template-columns: 160px 1fr 160px; /* pub gauche / contenu / pub droite */
   gap: 20px;
-  max-width: 1000px; /* largeur totale max du site */
+  max-width: 1200px; /* largeur totale max du site */
   margin: 20px auto;
   padding: 0 16px;
 }
@@ -469,7 +467,7 @@ body{
 }
 
 .search-lang-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
   display: flex;
@@ -481,7 +479,7 @@ body{
 /* Barre de recherche */
 .search-input {
   flex: 1;
-  max-width: 1000px; /* 🔧 tu peux ajuster ici la largeur */
+  max-width: 1200px; /* 🔧 tu peux ajuster ici la largeur */
   padding: 10px 14px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -593,7 +591,7 @@ body.menu-open {
   align-items: center;
   justify-content: flex-end;
   gap: 12px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 8px 16px;
 }
