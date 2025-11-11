@@ -12,7 +12,7 @@
 </head>
 <body class="not-home" data-section="impression">
   
-  <header class="site-header">
+<header class="site-header">
 <div class="header-container">
   <div class="header-left">
     <a href="/" class="home-link">
@@ -114,20 +114,6 @@
           </li>
         
       </ul>
-
-      <div class="menu-bottom">
-        <div class="search">
-          <form action="/search" method="get">
-            <input name="q" placeholder="Rechercher..." aria-label="Rechercher">
-          </form>
-        </div>
-        <div class="langs">
-          <select aria-label="Langue">
-            <option>FR</option>
-            <option>EN</option>
-          </select>
-        </div>
-      </div>
     </nav>
 </div>
 
@@ -201,7 +187,6 @@
     <li class="menu-item"><a href="https://facebook.com" target="_blank">Facebook</a></li>
   </ul>
 </nav>
-
 </header>
 
 <section class="hero">
@@ -216,68 +201,106 @@
   
 </section>
 
-  
-  
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-  <button class="close-mobile" aria-label="Fermer le menu"> </button>
+
+
+<section class="search-lang-bar">
+  <div class="search-lang-container">
+
+    
+    <form action="/search" method="get" class="search-form">
+      <input
+        type="search"
+        name="q"
+        placeholder="Rechercher un produit, une catégorie..."
+        aria-label="Rechercher"
+        class="search-input"
+      />
+      <button type="submit" class="search-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+        <span class="search-text">Rechercher</span>
+      </button>
+    </form>
+
+    
+    <div class="lang-selector">
+      <button class="lang-current">
+        🌐 <span>FR</span>
+      </button>
+      <ul class="lang-dropdown">
+        <li><a href="/en/">EN</a></li>
+        <li><a href="/ar/">AR</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <button class="close-mobile" aria-label="Fermer le menu"></button>
   <ul>
     
     
       <li class="menu-item">
-        <a href="/smartphones/"  class="icon-small">Smartphones</a>
+        <a href="/smartphones/">Smartphones</a>
       </li>
     
       <li class="menu-item">
-        <a href="/tablettes/"  class="icon-small">Tablettes</a>
+        <a href="/tablettes/">Tablettes</a>
       </li>
     
       <li class="menu-item">
-        <a href="/ordinateurs/"  class="icon-small">Ordinateurs</a>
+        <a href="/ordinateurs/">Ordinateurs</a>
       </li>
     
       <li class="menu-item">
-        <a href="/cameras/"  class="icon-small">Cameras</a>
+        <a href="/cameras/">Cameras</a>
       </li>
     
       <li class="menu-item">
-        <a href="/wearables/"  class="icon-small">Wearables</a>
+        <a href="/wearables/">Wearables</a>
       </li>
     
       <li class="menu-item">
-        <a href="/home-cinema/"  class="icon-small">Home cinema</a>
+        <a href="/home-cinema/">Home cinema</a>
       </li>
     
       <li class="menu-item">
-        <a href="/gaming/"  class="icon-small">Gaming</a>
+        <a href="/gaming/">Gaming</a>
       </li>
     
       <li class="menu-item">
-        <a href="/domotique/"  class="icon-small">Domotique</a>
+        <a href="/domotique/">Domotique</a>
       </li>
     
       <li class="menu-item">
-        <a href="/audio/"  class="icon-small">Audio</a>
+        <a href="/audio/">Audio</a>
       </li>
     
       <li class="menu-item">
-        <a href="/obj-connectes/"  class="icon-small">Obj connectes</a>
+        <a href="/obj-connectes/">Obj connectes</a>
       </li>
     
       <li class="menu-item">
-        <a href="/impression/"  class="icon-small">Impression</a>
+        <a href="/impression/">Impression</a>
       </li>
     
       <li class="menu-item">
-        <a href="/peripheriques/"  class="icon-small">Peripheriques</a>
+        <a href="/peripheriques/">Peripheriques</a>
       </li>
     
 
     <li class="sep"></li>
 
     
-    <li class="menu-item"><a href="/actualite/" class="icon-small">Nouveautés</a></li>
-    <li class="menu-item"><a href="/comparatifs/" class="icon-small">Trier par</a></li>
-    <li>
+    <li class="menu-item"><a href="/actualite/">Nouveautés</a></li>
+    <li class="menu-item"><a href="/comparatifs/">Trier par</a></li>
+
+    <li class="menu-item">
       <a href="https://facebook.com" target="_blank">
         <img src="/images/facebook.svg" alt="Facebook" class="icon-small">
         Facebook
@@ -287,8 +310,8 @@
 </div>
 
 
-  <main class="site-main">
-    
+<main class="site-main">
+  
   <div class="container section-list">
     <aside class="left-column">
       <div class="side-links">
@@ -373,9 +396,10 @@
     </section>
   </div>
 
-  </main>
+</main>
+
   <footer class="site-footer">
-  <div class="container" style="text-align: center;">
+  <div class="footer-container">
     <p>© 2025 High-Tech — Tous droits réservés.</p>
   </div>
 </footer>

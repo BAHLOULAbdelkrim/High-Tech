@@ -49,6 +49,19 @@ body{
   display: flex;
   align-items: center;
 }
+
+/* Conteneur interne centré (nouveau) */
+.footer-container {
+  max-width: 1200px;      /* largeur maximale du site */
+  margin: 0 auto;         /* centre le bloc horizontalement */
+  padding: 12px 16px;     /* espace interne */
+  display: flex;
+  align-items: center;    /* ✅ centre verticalement */
+  justify-content: center; /* ✅ centre horizontalement */
+  gap: 16px;
+  position: relative;
+}
+
 /* Logo */
 .logo {
   width: 56px;
@@ -160,8 +173,6 @@ body{
 
 /* Partie restante inchangée */
 .menu-bottom{display:flex;justify-content:space-between;margin-top:8px;align-items:center}
-.search input{padding:8px;border-radius:6px;border:1px solid #ddd;width:100%;max-width:480px}
-.langs select{padding:8px;border-radius:6px;border:1px solid #ddd}
 
 .hero {
   margin-top: 12px;
@@ -358,13 +369,13 @@ body{
 
 /* Animation croix */
 .mobile-burger.open .burger-line:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5.5px, 5.5px);
 }
 .mobile-burger.open .burger-line:nth-child(2) {
   opacity: 0;
 }
 .mobile-burger.open .burger-line:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(5.5px, -5.5px);
 }
 
 /* Menu mobile caché par défaut */
@@ -444,26 +455,285 @@ body{
   object-fit: contain;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .mobile-burger {
-    display: block;
-  }
-  .top-menus,
-  .left-ad,
-  .right-ad,
-  .left-column {
-    display: none !important;
-  }
-  .container {
-    grid-template-columns: 1fr !important;
-  }
-  .content-column {
-    grid-column: 1 !important;
-  }
+
+/* ==========================
+   BARRE RECHERCHE + LANGUE
+   ========================== */
+
+.search-lang-bar {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+}
+
+.search-lang-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+/* Barre de recherche */
+.search-input {
+  flex: 1;
+  max-width: 1200px; /* 🔧 tu peux ajuster ici la largeur */
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Bouton Rechercher */
+.search-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.search-button .search-icon {
+  width: 22px;
+  height: 22px;
+  color: #ede9feff;
+  transition: color 0.2s ease;
+}
+
+.search-button:hover .search-icon {
+  color: #6b21a8ff;
+}
+
+/* Sélecteur de langue */
+.lang-selector {
+  position: relative;
+}
+
+.lang-current {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px 10px;
+  cursor: pointer;
+  color: #333;
+}
+
+.lang-icon {
+  width: 18px;
+  height: 18px;
+  color: #6b21a8ff;
+}
+
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 110%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  z-index: 10;
+}
+
+.lang-dropdown li a {
+  display: block;
+  padding: 8px 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+.lang-dropdown li a:hover {
+  background: var(--menu-hover-bg);
+  color: var(--menu-hover-text);
+}
+
+/* Affichage du menu au clic */
+.lang-selector.open .lang-dropdown {
+  display: block;
 }
 
 /* Empêche le scroll du fond quand le menu est ouvert */
 body.menu-open {
   overflow: hidden;
 }
+
+/* Styles de l’icône de recherche */
+.icon-search {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  color: rgb(179, 103, 241);
+  stroke: currentColor;
+  transition: color 0.2s ease;
+}
+
+/* Effet hover */
+.search-button:hover .icon-search {
+  color: rgb(68, 0, 124);
+}
+
+/* Container barre recherche + langue */
+.search-lang-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 16px;
+}
+
+/* Formulaire barre de recherche */
+.search-form {
+  position: relative;
+  flex: 1; /* prend tout l'espace disponible */
+  display: flex;
+  align-items: center;
+}
+
+/* Input barre de recherche */
+.search-input {
+  width: 100%;
+  padding: 8px 40px 8px 12px; /* espace pour la loupe */
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Bouton loupe */
+.search-button {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  /* Burger visible */
+  .mobile-burger {
+    display: block;
+  }
+
+  /* Masquer les menus Desktop */
+  .top-menus,
+  .left-ad,
+  .right-ad,
+  .left-column {
+    display: none !important;
+  }
+
+  /* Mise en page container */
+  .container {
+    grid-template-columns: 1fr !important;
+  }
+  .content-column {
+    grid-column: 1 !important;
+  }
+
+  /* Barre recherche + langue sur une ligne */
+  .search-lang-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: nowrap;
+    padding: 0 10px;
+  }
+
+  /* Barre de recherche */
+  .search-wrapper {
+    position: relative;
+    flex: 1;
+  }
+  .search-input {
+    width: 100%;
+    padding: 8px 40px 8px 12px; /* espace pour la loupe à droite */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+  }
+  .search-button {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-button span {
+    display: none; /* Masque le texte "Rechercher" sur mobile */
+  }
+  .icon-search {
+    width: 22px;
+    height: 22px;
+    color: #ede9feff;
+    transition: color 0.2s ease;
+  }
+  .search-button:hover .icon-search {
+    color: #6b21a8ff;
+  }
+
+  /* Sélecteur de langue */
+  .lang-selector {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .lang-current {
+    padding: 5px 8px;
+    font-size: 0.9rem;
+  }
+  .lang-dropdown {
+    font-size: 0.9rem;
+  }
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+  .latest-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 16px;
+  }
+
+  /* Cache tous les articles sauf les 3 premiers */
+  .latest-grid .card:nth-child(n+4) {
+    display: none;
+  }
+
+  /* Les cartes visibles prennent toute la largeur */
+  .latest-grid .card {
+    width: 100%;
+  }
+
+  /* Ajuste éventuellement la hauteur des images */
+  .latest-grid .card img {
+    height: 200px; /* tu peux adapter selon ton design */
+  }
+}
+
