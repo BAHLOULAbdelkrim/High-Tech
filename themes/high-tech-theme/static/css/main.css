@@ -183,10 +183,11 @@ body{
 .slideshow {
   position: relative;
 /*  height: 300px;   */
-  height: 635px;
+  height: 423px;
   overflow: hidden;
   border-radius: 8px;
-  max-width: 1200px;   /* même largeur que le reste du site */
+/*  max-width: 1200px;    */   /* même largeur que le reste du site */
+  max-width: 800px;
   margin: 0 auto;      /* centre horizontalement */
 }
 .slideshow img {
