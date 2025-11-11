@@ -64,10 +64,10 @@
 <section class="hero">
   {{ if .IsHome }}
     <div class="slideshow" id="slideshow">
-      <img src="{{ "images/slide1.png" | relURL }}" class="slide visible">
-      <img src="{{ "images/slide2.png" | relURL }}" class="slide">
-      <img src="{{ "images/slide3.png" | relURL }}" class="slide">
-      <img src="{{ "images/slide4.png" | relURL }}" class="slide">
+      <img src="{{ "images/slide1.webp" | relURL }}" class="slide visible">
+      <img src="{{ "images/slide2.webp" | relURL }}" class="slide">
+      <img src="{{ "images/slide3.webp" | relURL }}" class="slide">
+      <img src="{{ "images/slide4.webp" | relURL }}" class="slide">
     </div>
   {{ else }}
     {{ $menuImg := .Params.menu_image }}
@@ -84,10 +84,10 @@
       </div>
     {{ else }}
       <div class="slideshow" id="slideshow">
-        <img src="{{ "images/slide1.png" | relURL }}" class="slide visible">
-        <img src="{{ "images/slide2.png" | relURL }}" class="slide">
-        <img src="{{ "images/slide3.png" | relURL }}" class="slide">
-        <img src="{{ "images/slide4.png" | relURL }}" class="slide">
+        <img src="{{ "images/slide1.webp" | relURL }}" class="slide visible">
+        <img src="{{ "images/slide2.webp" | relURL }}" class="slide">
+        <img src="{{ "images/slide3.webp" | relURL }}" class="slide">
+        <img src="{{ "images/slide4.webp" | relURL }}" class="slide">
       </div>
     {{ end }}
   {{ end }}
