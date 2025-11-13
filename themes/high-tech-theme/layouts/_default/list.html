@@ -26,17 +26,33 @@
       </div>   -->
 
 <div class="articles-grid">
+
+  <!-- 1️⃣ Sous-menus -->
   {{ range .Sections }}
     <article class="card">
       <a href="{{ .RelPermalink }}">
         <h2>{{ .Title }}</h2>
         <p>{{ .Summary }}</p>
         {{ with .Params.menu_image }}
-          <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+          <img src="{{ . | relURL }}" alt="{{ .Title }}">
         {{ end }}
       </a>
     </article>
   {{ end }}
+
+  <!-- 2️⃣ Articles -->
+  {{ range .Pages }}
+    <article class="card">
+      <a href="{{ .RelPermalink }}">
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Summary }}</p>
+        {{ with .Params.image }}
+          <img src="{{ . | relURL }}" alt="{{ .Title }}">
+        {{ end }}
+      </a>
+    </article>
+  {{ end }}
+
 </div>
 
       {{ if .Paginator }}
