@@ -166,6 +166,10 @@ body{
   animation: shine-submenu 0.7s forwards;
 }
 
+.submenus {
+  margin-bottom: 2rem; /* espace de 32px entre la liste et la zone centrale */
+}
+
 @keyframes shine-submenu {
   0% { left: -75%; }
   100% { left: 125%; }
