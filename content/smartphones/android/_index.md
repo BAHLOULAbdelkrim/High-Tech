@@ -1,5 +1,5 @@
 ---
 title: "Android"
-menu_image: "/images/menu_android.webp"
+menu_image: "/images/sous_menu_android.webp"
 ---
 Page du sous-menu Android dans smartphones.

@@ -3,12 +3,21 @@
     <aside class="left-column">
       {{ partial "leftmenus.html" . }}
     </aside>
+
     <section class="content-column">
       <h1>{{ .Title }}</h1>
+
       <div class="submenus">
         <ul>
           {{ range .Sections }}
-            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            <li>
+              <a href="{{ .RelPermalink }}">
+                {{ with .Params.menu_image }}
+                  <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="submenu-image">
+                {{ end }}
+                {{ .Title }}
+              </a>
+            </li>
           {{ end }}
         </ul>
       </div>
@@ -17,7 +26,9 @@
         {{ range .Pages }}
           <article class="card">
             <a href="{{ .RelPermalink }}">
-              <img src="{{ .Params.image }}" alt="{{ .Title }}">
+              {{ with .Params.image }}
+                <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+              {{ end }}
               <h2>{{ .Title }}</h2>
               <p>{{ .Summary }}</p>
             </a>
