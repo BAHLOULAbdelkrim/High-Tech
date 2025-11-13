@@ -14,7 +14,13 @@
     <article class="content-column">
       <h1>{{ .Title }}</h1>
 
-      {{ with .Params.image }}
+      {{/* Choisir l'image : image principale ou menu_image du sous-menu */}}
+      {{ $img := .Params.image }}
+      {{ if not $img }}
+        {{ $img = .Params.menu_image }}
+      {{ end }}
+
+      {{ with $img }}
         <img class="article-image" src="{{ . | relURL }}" alt="{{ $.Title }}">
       {{ end }}
 
