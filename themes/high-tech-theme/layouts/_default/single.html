@@ -18,7 +18,10 @@
     <!-- Colonne centrale : contenu principal -->
     <article class="content-column">
       <h1>{{ .Title }}</h1>
-      <img class="article-image" src="{{ .Params.image }}" alt="{{ .Title }}">
+    <!--  <img class="article-image" src="{{ .Params.image }}" alt="{{ .Title }}">   -->
+      {{ with .Params.image }}
+      <img class="article-image" src="{{ . | relURL }}" alt="{{ $.Title }}">
+      {{ end }}
       <div class="article-body">
         {{ .Content }}
       </div>
