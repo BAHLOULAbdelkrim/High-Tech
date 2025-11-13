@@ -25,20 +25,19 @@
         {{ end }}
       </div>   -->
 
-      <div class="articles-grid">
-        {{ range .Sections }}
-          <article class="card">
-            <a href="{{ .RelPermalink }}">
-              {{ with .Params.menu_image }}
-                <img src="{{ . | relURL }}" alt="{{ .Title }}">
-              {{ end }}
-              <h2>{{ .Title }}</h2>
-              <p>{{ .Summary }}</p>
-            </a>
-          </article>
+<div class="articles-grid">
+  {{ range .Sections }}
+    <article class="card">
+      <a href="{{ .RelPermalink }}">
+        {{ with .Params.menu_image }}
+          <img src="{{ . | relURL }}" alt="{{ $.Title }}">
         {{ end }}
-      </div>
-
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Summary }}</p>
+      </a>
+    </article>
+  {{ end }}
+</div>
 
       {{ if .Paginator }}
         {{ template "_internal/pagination.html" . }}
