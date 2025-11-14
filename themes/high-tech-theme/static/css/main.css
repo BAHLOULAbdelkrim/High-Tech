@@ -741,13 +741,28 @@ body.menu-open {
   }
 }
 
-/* Image en arrière-plan de chaque article */
-.post-content {
-/*.single .post-content {  */
+/* Ajoute un logo en arrière-plan dans les articles */
+.container.article {
+  position: relative;
+  overflow: hidden;
+}
+
+.container.article::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background-image: url("/images/logo-bg.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
-  background-size: 200px; /* ajuste la taille */
-  opacity: 0.1; /* rend le logo discret */
+  background-size: 250px; /* ajuste la taille du logo */
+  opacity: 0.06; /* transparence discrète */
+  pointer-events: none; /* ne bloque pas le texte */
+  z-index: 0;
 }
+
+/* Le contenu reste au-dessus du logo */
+.container.article * {
+  position: relative;
+  z-index: 1;
+}
+
