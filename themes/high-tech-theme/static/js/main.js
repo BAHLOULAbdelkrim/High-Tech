@@ -69,3 +69,16 @@ document.addEventListener('DOMContentLoaded', function() {
     langSelector.classList.remove('open');
   });
 });
+
+document.addEventListener('keydown', function(e) {
+  // 8 = code Backspace
+  if(e.key === "Backspace") {
+    // Vérifie que le focus n'est pas sur un input ou textarea
+    const tag = document.activeElement.tagName.toLowerCase();
+    if(tag !== 'input' && tag !== 'textarea') {
+      e.preventDefault();         // empêche le comportement par défaut
+      window.history.back();      // retourne à la page précédente
+    }
+  }
+});
+
