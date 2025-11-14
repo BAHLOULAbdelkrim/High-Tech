@@ -16,12 +16,7 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 	Redmi Note 8 (2021)
  - **Dates de sortie :** 
 
-| Variante            | Date de sortie |
-|---------------------|----------------|
-| Redmi Note 8        | 29 août 2019   |
-| Redmi Note 8 Pro    | 29 août 2019   |
-| Redmi Note 8T       | 6 novembre 2019|
-| Redmi Note 8 (2021) | 24 mai 2021    |
+
 
 
 <table style="border-collapse: collapse; width: 100%; border: 2px solid black;">
