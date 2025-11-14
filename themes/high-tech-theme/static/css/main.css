@@ -754,8 +754,8 @@ body.menu-open {
   background-image: url("/images/logo-bg.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 250px; /* ajuste la taille du logo */
-  opacity: 0.06; /* transparence discrète */
+  background-size: 800px; /* ajuste la taille du logo */
+  opacity: 0.1; /* transparence discrète */
   pointer-events: none; /* ne bloque pas le texte */
   z-index: 0;
 }
