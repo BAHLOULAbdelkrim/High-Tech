@@ -6,11 +6,53 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 ---
 <p>Contenu d'exemple généré automatiquement pour l'article 1 du sous-menu Android. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at.</p>
 
-# 
-## Informations générales
+# Série Redmi Note 8
+## Aperçu général
  - **Marque :** Xiaomi
  - **Variantes :** 
- - **Date de sortie :** 
+	> Redmi Note 8 (2019)
+	Redmi Note 8 Pro
+	Redmi Note 8T
+	Redmi Note 8 (2021)
+ - **Dates de sortie :** 
+
+| Variante            | Date de sortie |
+|---------------------|----------------|
+| Redmi Note 8        | 29 août 2019   |
+| Redmi Note 8 Pro    | 29 août 2019   |
+| Redmi Note 8T       | 6 novembre 2019|
+| Redmi Note 8 (2021) | 24 mai 2021    |
+
+
+<table style="border-collapse: collapse; width: 100%; border: 2px solid black;">
+  <thead>
+    <tr style="background-color: #ddd; font-weight: bold; border-bottom: 3px double black;">
+      <th style="border: 1px solid black; padding: 8px;">Variante</th>
+      <th style="border: 1px solid black; padding: 8px;">Date de sortie</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;">Redmi Note 8</td>
+      <td style="border: 1px solid black; padding: 8px;">29 août 2019</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;">Redmi Note 8 Pro</td>
+      <td style="border: 1px solid black; padding: 8px;">29 août 2019</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;">Redmi Note 8T</td>
+      <td style="border: 1px solid black; padding: 8px;">6 novembre 2019</td>
+    </tr>
+    <tr style="border-top: 3px double black;">
+      <td style="border: 1px solid black; padding: 8px;">Redmi Note 8 (2021)</td>
+      <td style="border: 1px solid black; padding: 8px;">24 mai 2021</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
  - **Couleurs :** 
 	>  ![](https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_white.jpg) Perle blanche
 	 ![](https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_green1.jpg) Forêt verte 
@@ -30,8 +72,11 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 |**AliExpress**          |1000 $|1000 $|1000 $ | 1000 $ | 1000 $ |
 |**Cdiscount**          |1000 $|1000 $|1000 $ | 1000 $ | 1000 $ |
 |**Rakuten**          |1000 $|1000 $|1000 $ | 1000 $ | 1000 $ |
+### Evolution du prix : 
 ## Images : 
+## Vue 3D : 
 ## Caractéristiques : 
+ - **Système d'exploitation :** 
  - **Caméra arrière :** Quad-caméra 64 MP + 8 MP + 2 MP + 2 MP
  - **Caméra frontale :** 20 MP
  - **Processeur :** MTK Helio G90T
@@ -74,7 +119,43 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 	Moteur de vibration
 	Capteur d'empreintes digitales
 	Blaster IR
-## Avis & Note : 
+## Note & Avis : 
 ## Liens externes : 
 ## Voir aussi : 
 
+
+# Redmi Note 8 Pro : test complet, fiche technique et avis
+
+## Introduction
+Courte présentation, contexte de sortie, pourquoi il a marqué son époque.
+
+## Date de sortie et disponibilité
+Dates exactes (monde, Europe, France).
+
+## Les variantes de la gamme
+Note 8 / Note 8 Pro / Note 8T / Note 8 (2021) avec un tableau comparatif rapide.
+
+## Design et couleurs disponibles
+Photos officielles, dimensions, matériaux.
+
+## Écran, processeur et performances
+Type d’écran, SoC (Helio G90T), benchmarks, fluidité.
+
+## Appareils photo
+Capteurs, qualité photo/vidéo, exemples ou comparaisons.
+
+## Batterie et autonomie
+Capacité, recharge rapide, tests.
+
+## Logiciel
+Version MIUI/Android à la sortie, mises à jour encore disponibles ?
+
+## Prix chez les vendeurs principaux
+Tableau avec Amazon, Fnac, Darty, AliExpress, etc. (prix au lancement + prix actuels).
+
+## Avis & notes
+- Notes de sites (Les Numériques, FrAndroid, GSM Arena, etc.)
+- Avis utilisateurs (résumé : points forts / points faibles).
+
+## Verdict
+Résumé objectif : pour qui ce téléphone est encore intéressant ?
