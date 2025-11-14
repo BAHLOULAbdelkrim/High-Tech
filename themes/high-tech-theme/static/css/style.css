@@ -7,7 +7,7 @@ article {
     font-family: 'Helvetica', Inter, sans-serif;
     line-height: 1.6;
     font-size: 16px;
-    color: #333;
+    color: #000000;
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
@@ -33,7 +33,7 @@ article img:hover {
 
 /* Encadrés d'information / notes */
 .info-box {
-    border-left: 4px solid #007acc;
+    border-left: 4px solid #d1fae5ff;
     background-color: #f0f8ff;
     padding: 12px 16px;
     margin: 1em 0;
@@ -59,7 +59,7 @@ table, th, td {
 
 /* En-tête */
 thead tr {
-    background-color: #007acc;
+    background-color: #d1fae5ff;
     color: #fff;
     font-weight: bold;
 }

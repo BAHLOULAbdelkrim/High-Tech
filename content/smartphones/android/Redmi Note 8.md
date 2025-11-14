@@ -41,12 +41,17 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 	Rakuten : 
 	SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
 
+<div class="fade-in">
+
 |                |Note 8 |Note 8 Pro |Note 8  |Note 8 Pro |Note 8 |
 |----------------|-------------------------------|-----------------------------|----------------|-------------------------------|-----------------------------|
 |**Amazon**|1000 $|1000 $|1000 $ | 1000 $ | 1000 $ |
 |**AliExpress**          |1000 $|1000 $|1000 $ | 1000 $ | 1000 $ |
 |**Cdiscount**          |1000 $|1000 $|1000 $ | 1000 $ | 1000 $ |
 |**Rakuten**          |1000 $|1000 $|1000 $ | 1000 $ | 1000 $ |
+
+</div>
+
 ### Evolution du prix : 
 ## Images : 
 ## Vue 3D : 
