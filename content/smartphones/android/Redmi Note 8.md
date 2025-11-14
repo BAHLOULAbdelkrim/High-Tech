@@ -16,36 +16,16 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 	Redmi Note 8 (2021)
  - **Dates de sortie :** 
 
+<div class="fade-in">
 
+| Variante            | Date de sortie |
+|---------------------|----------------|
+| Redmi Note 8        | 29 août 2019   |
+| Redmi Note 8 Pro    | 29 août 2019   |
+| Redmi Note 8T       | 6 novembre 2019|
+| Redmi Note 8 (2021) | 24 mai 2021    |
 
-
-<table style="border-collapse: collapse; width: 100%; border: 2px solid black;">
-  <thead>
-    <tr style="background-color: #ddd; font-weight: bold; border-bottom: 3px double black;">
-      <th style="border: 1px solid black; padding: 8px;">Variante</th>
-      <th style="border: 1px solid black; padding: 8px;">Date de sortie</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border: 1px solid black; padding: 8px;">Redmi Note 8</td>
-      <td style="border: 1px solid black; padding: 8px;">29 août 2019</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid black; padding: 8px;">Redmi Note 8 Pro</td>
-      <td style="border: 1px solid black; padding: 8px;">29 août 2019</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid black; padding: 8px;">Redmi Note 8T</td>
-      <td style="border: 1px solid black; padding: 8px;">6 novembre 2019</td>
-    </tr>
-    <tr style="border-top: 3px double black;">
-      <td style="border: 1px solid black; padding: 8px;">Redmi Note 8 (2021)</td>
-      <td style="border: 1px solid black; padding: 8px;">24 mai 2021</td>
-    </tr>
-  </tbody>
-</table>
-
+</div>
 
 
  - **Couleurs :** 

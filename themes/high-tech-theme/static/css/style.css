@@ -1,0 +1,105 @@
+/* ============================
+   Style général des articles
+   ============================ */
+
+/* Corps de l'article */
+article {
+    font-family: 'Helvetica', Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Titres */
+article h1, article h2, article h3 {
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Images responsives avec effet survol */
+article img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+article img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Encadrés d'information / notes */
+.info-box {
+    border-left: 4px solid #007acc;
+    background-color: #f0f8ff;
+    padding: 12px 16px;
+    margin: 1em 0;
+    border-radius: 4px;
+}
+
+/* ============================
+   Tableaux stylés et animés
+   ============================ */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Bordure globale */
+table, th, td {
+    border: 1px solid #777;
+}
+
+/* En-tête */
+thead tr {
+    background-color: #007acc;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Lignes paires / impaires pour alternance de couleur */
+tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+/* Survol de ligne */
+tbody tr:hover {
+    background-color: #ffe599;
+    transition: background-color 0.3s ease;
+}
+
+/* Cellules */
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Bordures épaisses en haut et bas */
+thead tr {
+    border-bottom: 3px double #000;
+}
+tfoot tr {
+    border-top: 3px double #000;
+}
+
+/* ============================
+   Animations de fade-in pour sections
+   ============================ */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
