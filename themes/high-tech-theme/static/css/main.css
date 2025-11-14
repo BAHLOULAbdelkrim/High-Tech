@@ -742,8 +742,8 @@ body.menu-open {
 }
 
 /* Image en arrière-plan de chaque article */
-/* .post-content {  */
-.single .post-content {
+.post-content {
+/*.single .post-content {  */
   background-image: url("/images/logo-bg.png");
   background-repeat: no-repeat;
   background-position: center;
