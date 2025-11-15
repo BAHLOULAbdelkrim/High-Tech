@@ -1,7 +1,7 @@
 ---
 title: "Série Redmi Note 8"
 date: 2025-01-11T12:00:00+01:00
-image: "/images/Redmi_Note_8.webp"
+image: <img src="/images/Redmi_Note_8.webp" class="img-medium" alt="Description">
 summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 ---
 <p>Contenu d'exemple généré automatiquement pour l'article 1 du sous-menu Android. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at.</p>
@@ -25,8 +25,6 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 | Redmi Note 8 (2021) | 24 mai 2021    |
 
 </div>
-
-<img src="/images/Redmi_Note_8.webp" class="img-medium" alt="Description">
 
  - **Couleurs :** 
 	>  ![](https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_white.jpg) Perle blanche
