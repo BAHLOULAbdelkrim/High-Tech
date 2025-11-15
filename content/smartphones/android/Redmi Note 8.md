@@ -1,7 +1,7 @@
 ---
 title: "Série Redmi Note 8"
 date: 2025-01-11T12:00:00+01:00
-image: "/images/Redmi_Note_8.webp"
+# image: "/images/Redmi_Note_8.webp"
 summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 ---
 <p>Contenu d'exemple généré automatiquement pour l'article 1 du sous-menu Android. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at.</p>
