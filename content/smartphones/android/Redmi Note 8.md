@@ -1,7 +1,8 @@
 ---
 title: "Série Redmi Note 8"
-date: 2025-01-11T12:00:00+01:00
+date: 2025-12-12
 image: "/images/Redmi_Note_8.webp"
+description: "Résumé SEO de l’article en une phrase."   # Devrait être courte, percutante et résumer le contenu. 
 summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 ---
 <p>Contenu d'exemple généré automatiquement pour l'article 1 du sous-menu Android. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at.</p>
