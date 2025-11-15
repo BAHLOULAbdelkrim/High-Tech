@@ -60,13 +60,13 @@ article img:hover {
 /* Régler les couleurs des titres des sections et sous-sections  */
 /* H1, H2, H3 */
 article h1 {
-    color: #0400ff; /* bleu principal */
+    color: rgb(92, 25, 146);
 }
 article h2 {
-    color: #ff6600; /* orange */
+    color: #ff6600;
 }
 article h3 {
-    color: #009933; /* vert */
+    color: #009933;
 }
 
 /* Changer la taille d’une image */

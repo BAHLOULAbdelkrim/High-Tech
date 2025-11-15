@@ -16,7 +16,11 @@ Exemple de tag : Si tu veux consulter le 9 : <a href="https://high-tech.pages.de
 
 <div class="fade-in">
 
+# Aperçu général
+
 ## Aperçu général
+
+### Evolution du prix : 
  - **Marque :** Xiaomi
  - **Variantes :** 
 	> Redmi Note 8 (2019)
