@@ -8,7 +8,8 @@
 
       <h2>Derniers articles</h2>
       <div class="latest-grid">
-        {{ range first 9 .Site.RegularPages.ByDate.Reverse }}
+<!--        {{ range first 9 .Site.RegularPages.ByDate.Reverse }}       -->
+        {{ range first 9 (where .Site.RegularPages "Type" "articles" | sort "Date" "desc") }}
           <article class="card">
             <a href="{{ .RelPermalink }}">
               <img src="{{ .Params.image }}" alt="{{ .Title }}">
