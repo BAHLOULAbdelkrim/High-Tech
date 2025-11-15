@@ -11,6 +11,14 @@
     border-radius: 12px; /* optionnel, style moderne */
 }
 
+/* Centrer les images */
+article img, 
+.article-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Corps de l'article */
 article {
     font-family: 'Helvetica', Inter, sans-serif;
@@ -66,12 +74,9 @@ article h3 {
 .img-medium { width: 400px; }
 .img-large  { width: 700px; }
 
-/* Centrer les images */
-article img, 
-.article-image {
+/* centrage */
+.img-center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Titre de l'image (sous l'image) */
