@@ -101,24 +101,6 @@ tfoot tr {
     border-top: 3px double #000;
 }
 
-/* Régler les couleurs des cases du tableau */
-
-/* Fond des cellules */
-table th {
-    background-color: #007acc; /* en-tête */
-    color: #fff; /* texte en blanc */
-}
-
-table td {
-    background-color: #f7f7f7; /* lignes normales */
-    color: #333;
-}
-
-/* Ligne survolée */
-table tbody tr:hover td {
-    background-color: #ffe599;
-}
-
 /* Couleur par colonne : */
 /* 
 table td:nth-child(1) {
