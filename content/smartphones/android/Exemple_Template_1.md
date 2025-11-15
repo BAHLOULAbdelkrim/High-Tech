@@ -3,7 +3,7 @@ title: "TITRE DE L’ARTICLE"
 description: "Résumé SEO de l’article en une phrase."
 image: "/images/Redmi_Note_8.webp"   # Image principale (changée automatiquement dans single.html)
 date: 2025-01-01
-draft: false
+# draft: false
 ---
 
 <!-- ========================= -->

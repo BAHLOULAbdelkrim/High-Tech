@@ -6,6 +6,8 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 ---
 <p>Contenu d'exemple généré automatiquement pour l'article 1 du sous-menu Android. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at.</p>
 
+<div class="fade-in">
+
 ## Aperçu général
  - **Marque :** Xiaomi
  - **Variantes :** 
@@ -14,6 +16,8 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 	Redmi Note 8T
 	Redmi Note 8 (2021)
  - **Dates de sortie :** 
+
+</div>
 
 <div class="fade-in">
 
@@ -26,12 +30,16 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 
 </div>
 
+<div class="fade-in">
 
 <figure class="img-center img-medium">
     <img src="/images/Redmi_Note_8.webp" alt="Redmi Note 8">
     <figcaption>Le Redmi Note 8 — version globale</figcaption>
 </figure>
 
+</div>
+
+<div class="fade-in">
 
  - **Couleurs :** 
 	>  ![](https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_white.jpg) Perle blanche
@@ -46,6 +54,8 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 	Rakuten : 
 	SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
 
+</div>
+
 <div class="fade-in">
 
 |                |Note 8 |Note 8 Pro |Note 8  |Note 8 Pro |Note 8 |
@@ -54,6 +64,10 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 |**AliExpress**          |1000 $|1000 $|1000 $ | 1000 $ | 1000 $ |
 |**Cdiscount**          |1000 $|1000 $|1000 $ | 1000 $ | 1000 $ |
 |**Rakuten**          |1000 $|1000 $|1000 $ | 1000 $ | 1000 $ |
+
+</div>
+
+<div class="fade-in">
 
 </div>
 <div class="img-row img-center img-large">
@@ -67,6 +81,9 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
   </figure>
 </div>
 
+</div>
+
+<div class="fade-in">
 
 ### Evolution du prix : 
 ## Images : 
@@ -119,6 +136,7 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 ## Liens externes : 
 ## Voir aussi : 
 
+</div>
 
 # Redmi Note 8 Pro : test complet, fiche technique et avis
 
