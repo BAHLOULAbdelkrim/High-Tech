@@ -74,11 +74,6 @@ article h3 {
 .img-medium { width: 400px; }
 .img-large  { width: 700px; }
 
-/* centrage */
-.img-center {
-    display: block;
-}
-
 /* Titre de l'image (sous l'image) */
 .img-figure {
     text-align: center;
