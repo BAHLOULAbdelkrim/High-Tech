@@ -10,9 +10,30 @@
     <atom:link href="http://localhost:1313/categories/smartphones/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Série Redmi Note 8</title>
-      <link>http://localhost:1313/smartphones/android/redmi-note-8/</link>
+      <link>http://localhost:1313/smartphones/apple/redmi-note-8/</link>
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/smartphones/android/redmi-note-8/</guid>
+      <guid>http://localhost:1313/smartphones/apple/redmi-note-8/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 8.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 8</title>
+      <link>http://localhost:1313/smartphones/motorola/redmi-note-8/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/smartphones/motorola/redmi-note-8/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 8.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 8</title>
+      <link>http://localhost:1313/smartphones/samsung/redmi-note-8/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/smartphones/samsung/redmi-note-8/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 8.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 8</title>
+      <link>http://localhost:1313/smartphones/vivo/redmi-note-8/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/smartphones/vivo/redmi-note-8/</guid>
       <description>Découvrez les variantes de série Xiaomi-Redmi Note 8.</description>
     </item>
   </channel>

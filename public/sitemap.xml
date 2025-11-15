@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/smartphones/apple/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/samsung/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/xiaomi/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/oppo/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/vivo/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/huawei/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/realme/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/oneplus/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/tecno/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/infinix/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/motorola/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/google/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/gaming/accessoires/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
@@ -161,10 +197,10 @@
     <loc>http://localhost:1313/tablettes/ipad/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/iphone/</loc>
+    <loc>http://localhost:1313/smartphones/google/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/iphone/article-2/</loc>
+    <loc>http://localhost:1313/smartphones/xiaomi/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/gaming/jeux-video/</loc>
@@ -266,10 +302,22 @@
     <loc>http://localhost:1313/impression/photocopieuses/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/pliables/</loc>
+    <loc>http://localhost:1313/smartphones/huawei/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/pliables/article-2/</loc>
+    <loc>http://localhost:1313/smartphones/infinix/article-2/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/oneplus/article-2/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/oppo/article-2/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/realme/article-2/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/tecno/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ordinateurs/portables/</loc>
@@ -458,7 +506,10 @@
     <loc>http://localhost:1313/tablettes/ipad/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/iphone/article-1/</loc>
+    <loc>http://localhost:1313/smartphones/google/article-1/</loc>
+    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/xiaomi/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/gaming/jeux-video/article-1/</loc>
@@ -506,7 +557,22 @@
     <loc>http://localhost:1313/impression/photocopieuses/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/pliables/article-1/</loc>
+    <loc>http://localhost:1313/smartphones/huawei/article-1/</loc>
+    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/infinix/article-1/</loc>
+    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/oneplus/article-1/</loc>
+    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/oppo/article-1/</loc>
+    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/realme/article-1/</loc>
+    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/tecno/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ordinateurs/portables/article-1/</loc>
@@ -563,19 +629,31 @@
     <loc>http://localhost:1313/tablettes/windows/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/android/</loc>
-    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/android/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/nouveaut%C3%A9s/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/redmi/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/android/redmi-note-8/</loc>
+    <loc>http://localhost:1313/tags/samsung/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/apple/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/motorola/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/samsung/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/vivo/redmi-note-8/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/smartphone/</loc>
@@ -584,13 +662,34 @@
     <loc>http://localhost:1313/categories/smartphones/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/smartphones/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/android/exemple_template_1/</loc>
+    <loc>http://localhost:1313/smartphones/apple/exemple_template_1/</loc>
     <lastmod>2025-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/android/redmi-note-9/</loc>
+    <loc>http://localhost:1313/smartphones/motorola/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/samsung/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/vivo/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/apple/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/motorola/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/samsung/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/vivo/redmi-note-9/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/nouveautes/</loc>

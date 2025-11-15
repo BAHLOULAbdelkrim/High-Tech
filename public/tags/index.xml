@@ -16,6 +16,13 @@
       <description></description>
     </item>
     <item>
+      <title>Nouveautés</title>
+      <link>http://localhost:1313/tags/nouveaut%C3%A9s/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/nouveaut%C3%A9s/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Redmi</title>
       <link>http://localhost:1313/tags/redmi/</link>
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
@@ -23,10 +30,24 @@
       <description></description>
     </item>
     <item>
+      <title>Samsung</title>
+      <link>http://localhost:1313/tags/samsung/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/samsung/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Smartphone</title>
       <link>http://localhost:1313/tags/smartphone/</link>
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/smartphone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smartphones</title>
+      <link>http://localhost:1313/tags/smartphones/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/smartphones/</guid>
       <description></description>
     </item>
   </channel>

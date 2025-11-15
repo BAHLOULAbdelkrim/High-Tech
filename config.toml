@@ -1,4 +1,3 @@
-
 # -------------------------------------------------------------
 # CONFIGURATION PRINCIPALE DU SITE HUGO
 # -------------------------------------------------------------
@@ -49,6 +48,36 @@ theme = "high-tech-theme"
   # Logo affiché dans le header
   logo = "images/logo.png"
 
+  # -----------------------------------------------------------
+  # PALETTE DE COULEURS DU THÈME
+  # -----------------------------------------------------------
+  # Les couleurs sont utilisées pour les menus, sous-menus,
+  # hover, et différents éléments de l’interface.
+  # -----------------------------------------------------------
+
+  # Couleur principale MAINTENUE (tu n’utilises plus mainColor)
+  # mainColor = "#34d399ff"
+
+  # Menu principal
+  mainViolet       = "#6b21a8ff"    # Violet utilisé dans la typographie
+  menuBg           = "#d1fae5ff"    # Fond du menu (vert clair)
+  menuText         = "#6b21a8ff"    # Texte du menu (violet)
+  
+  # Hover du menu principal
+  menuHoverBg      = "#ede9feff"    # Fond au survol (violet très clair)
+  menuHoverText    = "#047857ff"    # Texte au survol (vert foncé)
+
+  # Sous-menus
+  submenuBg        = "#f7afaf"      # Fond du sous-menu
+  submenuText      = "#1e3a8aff"    # Texte du sous-menu
+  
+  # Hover du sous-menu
+  submenuHoverBg   = "#84a4fc"      # Fond au survol
+  submenuHoverText = "#ff0000"      # Texte au survol (rouge)
+
+  # Intervalle entre slides (carrousel)
+  slidesInterval = 3000
+
 # -------------------------------------------------------------
 # TAXONOMIES (SEO interne)
 # -------------------------------------------------------------
@@ -65,51 +94,3 @@ theme = "high-tech-theme"
 # Génère des URLs propres du type : https://site.com/mon-article/
 [permalinks]
   posts = "/:slug/"
-
-  # -----------------------------------------------------------
-  # PALETTE DE COULEURS DU THÈME
-  # -----------------------------------------------------------
-  # Les couleurs sont utilisées pour les menus, sous-menus,
-  # hover, et différents éléments de l’interface.
-  # -----------------------------------------------------------
-
-  # Couleur principale MAINTENUE (tu n’utilises plus mainColor)
-  # mainColor = "#34d399ff"
-
-  # Menu principal
-  # mainViolet       = "#6b21a8ff"    # Violet utilisé dans la typographie
-  # menuBg           = "#d1fae5ff"    # Fond du menu (vert clair)
-  # menuText         = "#6b21a8ff"    # Texte du menu (violet)
-  
-  # Hover du menu principal
-  # menuHoverBg      = "#ede9feff"    # Fond au survol (violet très clair)
-  # menuHoverText    = "#047857ff"    # Texte au survol (vert foncé)
-
-  # Sous-menus
-  # submenuBg        = "#f7afaf"      # Fond du sous-menu
-  # submenuText      = "#1e3a8aff"    # Texte du sous-menu
-  
-  # Hover du sous-menu
-  # submenuHoverBg   = "#84a4fc"      # Fond au survol
-  # submenuHoverText = "#ff0000"      # Texte au survol (rouge)
-
-
-
-  # Menu principal
-  menuBg           = "#EDE9FE"    # Fond du menu (violet-100)
-  menuText         = "#5B21B6"    # Texte du menu (violet-800)
-  # Hover du menu principal
-  menuHoverBg      = "#DDD6FE"    # Fond au survol (violet-200)
-  menuHoverText    = "#047857"    # Texte au survol (emerald-700)
-
-  # Sous-menus
-  submenuBg        = "#F5F3FF"    # Fond du sous-menu (violet-50)
-  submenuText      = "#5B21B6"    # Texte du sous-menu (violet-800)
-  # Hover du sous-menu
-  submenuHoverBg   = "#DDD6FE"    # Fond au survol (violet-200)
-  submenuHoverText = "#065F46"    # Texte au survol (emerald-800)
-
-
-
-  # Intervalle entre slides (carrousel)
-  slidesInterval = 3000
