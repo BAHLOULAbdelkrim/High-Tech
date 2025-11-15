@@ -40,6 +40,18 @@ article img:hover {
     border-radius: 4px;
 }
 
+/* Régler les couleurs des titres des sections et sous-sections  */
+/* H1, H2, H3 */
+article h1 {
+    color: #007acc; /* bleu principal */
+}
+article h2 {
+    color: #ff6600; /* orange */
+}
+article h3 {
+    color: #009933; /* vert */
+}
+
 /* ============================
    Tableaux stylés et animés
    ============================ */
@@ -88,6 +100,33 @@ thead tr {
 tfoot tr {
     border-top: 3px double #000;
 }
+
+/* Régler les couleurs des cases du tableau */
+
+/* Fond des cellules */
+table th {
+    background-color: #007acc; /* en-tête */
+    color: #fff; /* texte en blanc */
+}
+
+table td {
+    background-color: #f7f7f7; /* lignes normales */
+    color: #333;
+}
+
+/* Ligne survolée */
+table tbody tr:hover td {
+    background-color: #ffe599;
+}
+
+/* Couleur par colonne : */
+/* 
+table td:nth-child(1) {
+    background-color: #e0f7fa;
+}
+table td:nth-child(2) {
+    background-color: #fff3e0;
+}    */
 
 /* ============================
    Animations de fade-in pour sections
