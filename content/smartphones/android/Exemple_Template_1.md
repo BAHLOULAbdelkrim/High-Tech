@@ -10,8 +10,6 @@ draft: false  # Indique si l’article est un brouillon ou publié. "true" Hugo 
 <!-- 🔹 SOMMAIRE AUTOMATIQUE -->
 <!-- ========================= -->
 
----
-
 <!-- ========================= -->
 <!-- 🔹 INTRODUCTION (fade-in) -->
 <!-- ========================= -->
@@ -24,8 +22,6 @@ L’introduction présente le sujet, donne le contexte et met en valeur l’int�
 Tu peux inclure des liens internes, images, mises en avant, etc.
 
 </div>
-
----
 
 <!-- ========================= -->
 <!-- 🔹 SECTION 1 -->
@@ -46,8 +42,6 @@ Texte explicatif…
 
 </div>
 
----
-
 <!-- ========================= -->
 <!-- 🔹 SECTION 2 : TABLEAU ANIMÉ -->
 <!-- ========================= -->
@@ -67,8 +61,6 @@ Voici un tableau complet des caractéristiques principales.
 | Écran                | 6.6" IPS LCD |
 
 </div>
-
----
 
 <!-- ========================= -->
 <!-- 🔹 SECTION 3 : IMAGES CÔTE À CÔTE -->
@@ -91,8 +83,6 @@ Voici un tableau complet des caractéristiques principales.
 </div>
 
 </div>
-
----
 
 <!-- ========================= -->
 <!-- 🔹 SECTION 4 : encadré info -->
@@ -119,8 +109,6 @@ Voici un tableau complet des caractéristiques principales.
 
 </div>
 
----
-
 <!-- ========================= -->
 <!-- 🔹 SECTION 5 : conclusion -->
 <!-- ========================= -->
@@ -132,8 +120,6 @@ Voici un tableau complet des caractéristiques principales.
 Résumé final du produit, verdict, recommandations, alternatives possibles, etc.
 
 </div>
-
----
 
 <!-- ========================= -->
 <!-- 🔹 BLOC CTA (optionnel) -->
