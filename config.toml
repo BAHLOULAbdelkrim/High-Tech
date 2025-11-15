@@ -1,30 +1,115 @@
+
+# -------------------------------------------------------------
+# CONFIGURATION PRINCIPALE DU SITE HUGO
+# -------------------------------------------------------------
+# Ce fichier définit :
+# - les informations globales du site
+# - la pagination
+# - la configuration du moteur Markdown
+# - les paramètres personnalisés utilisés par ton thème
+# -------------------------------------------------------------
+
+# URL de base du site (obligatoire pour Cloudflare Pages)
 baseURL = "https://high-tech.pages.dev/"
+
+# Titre global du site (utilisé dans <title> et SEO)
 title = "High-Tech — Nouvelles Technologies, Tests et Comparatifs"
+
+# Langue principale
 languageCode = "fr"
+
+# Thème Hugo utilisé
 theme = "high-tech-theme"
 
-[pagination]        
+# -------------------------------------------------------------
+# PAGINATION
+# -------------------------------------------------------------
+# Nombre d’articles par page lors de l'affichage des listes
+[pagination]
   pagerSize = 10
 
+# -------------------------------------------------------------
+# CONFIGURATION MARKDOWN (Goldmark)
+# -------------------------------------------------------------
+# "unsafe = true" permet l’injection de HTML dans le Markdown
+# (utile pour intégrer des iframes, styles personnalisés, etc.)
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
+# -------------------------------------------------------------
+# PARAMÈTRES PERSONNALISÉS DU THÈME
+# -------------------------------------------------------------
 [params]
-  description = "Nouveautés & Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d'achat complets."
-  logo = "images/logo.png"
-  
-  # Couleurs mises à jour selon demandes
-#  mainColor = "#34d399ff"      # emerald-400 pour le texte général du site
-  mainViolet = "#6b21a8ff"     # violet-800 pour le texte des menus
-  menuBg = "#d1fae5ff"         # emerald-100 pour le fond des menus
-  menuText = "#6b21a8ff"       # violet-800 pour le texte des menus
-  menuHoverBg = "#ede9feff"    # violet-100 pour le fond des menus au hover
-  menuHoverText = "#047857ff"  # emerald-700 pour le texte des menus au hover
-  submenuBg = "#f7afaf"         # fond des sous-menus
-  submenuText = "#1e3a8aff"     # texte des sous-menus
-  submenuHoverBg = "#84a4fc"    # fond des sous-menus au hover
-  submenuHoverText = "#ff0000"  # texte des sous-menus au hover
-  slidesInterval = 3000
 
+  # Description du site (utilisée pour les meta-description SEO)
+  description = "Nouveautés & Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d'achat complets."
+
+  # Logo affiché dans le header
+  logo = "images/logo.png"
+
+# -------------------------------------------------------------
+# TAXONOMIES (SEO interne)
+# -------------------------------------------------------------
+# Permet à Hugo de générer automatiquement :
+# - /categories/<nom>/
+# - /tags/<nom>/
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# -------------------------------------------------------------
+# CONFIG PERMALIENS (URLs propres + canoniques SEO)
+# -------------------------------------------------------------
+# Génère des URLs propres du type : https://site.com/mon-article/
+[permalinks]
+  posts = "/:slug/"
+
+  # -----------------------------------------------------------
+  # PALETTE DE COULEURS DU THÈME
+  # -----------------------------------------------------------
+  # Les couleurs sont utilisées pour les menus, sous-menus,
+  # hover, et différents éléments de l’interface.
+  # -----------------------------------------------------------
+
+  # Couleur principale MAINTENUE (tu n’utilises plus mainColor)
+  # mainColor = "#34d399ff"
+
+  # Menu principal
+  # mainViolet       = "#6b21a8ff"    # Violet utilisé dans la typographie
+  # menuBg           = "#d1fae5ff"    # Fond du menu (vert clair)
+  # menuText         = "#6b21a8ff"    # Texte du menu (violet)
+  
+  # Hover du menu principal
+  # menuHoverBg      = "#ede9feff"    # Fond au survol (violet très clair)
+  # menuHoverText    = "#047857ff"    # Texte au survol (vert foncé)
+
+  # Sous-menus
+  # submenuBg        = "#f7afaf"      # Fond du sous-menu
+  # submenuText      = "#1e3a8aff"    # Texte du sous-menu
+  
+  # Hover du sous-menu
+  # submenuHoverBg   = "#84a4fc"      # Fond au survol
+  # submenuHoverText = "#ff0000"      # Texte au survol (rouge)
+
+
+
+  # Menu principal
+  menuBg           = "#EDE9FE"    # Fond du menu (violet-100)
+  menuText         = "#5B21B6"    # Texte du menu (violet-800)
+  # Hover du menu principal
+  menuHoverBg      = "#DDD6FE"    # Fond au survol (violet-200)
+  menuHoverText    = "#047857"    # Texte au survol (emerald-700)
+
+  # Sous-menus
+  submenuBg        = "#F5F3FF"    # Fond du sous-menu (violet-50)
+  submenuText      = "#5B21B6"    # Texte du sous-menu (violet-800)
+  # Hover du sous-menu
+  submenuHoverBg   = "#DDD6FE"    # Fond au survol (violet-200)
+  submenuHoverText = "#065F46"    # Texte au survol (emerald-800)
+
+
+
+  # Intervalle entre slides (carrousel)
+  slidesInterval = 3000
