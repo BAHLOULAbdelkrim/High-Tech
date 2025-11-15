@@ -102,7 +102,7 @@ article h3 {
 
 .img-row img {
     width: 100%;
-    max-width: 300px; /* limite pour éviter d'être trop grand */
+    max-width: 700px; /* limite pour éviter d'être trop grand */
     border-radius: 8px;
 }
 

@@ -56,7 +56,7 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 |**Rakuten**          |1000 $|1000 $|1000 $ | 1000 $ | 1000 $ |
 
 </div>
-<div class="img-row img-center img-medium">
+<div class="img-row img-center img-large">
   <figure>
     <img src="/images/Redmi_Note_8.webp">
     <figcaption>Vue avant</figcaption>
