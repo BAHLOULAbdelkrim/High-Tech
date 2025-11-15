@@ -1,24 +1,31 @@
 {{ define "main" }}
-  <div class="container home-content">
-    <aside class="left-column">
-      {{ partial "leftmenus.html" . }}
-    </aside>
+<div class="container home-content">
 
-    <section class="content-column">
+  <!-- Colonne gauche -->
+  <aside class="left-column">
+    {{ partial "leftmenus.html" . }}
+  </aside>
 
-      <h2>Derniers articles</h2>
-      <div class="latest-grid">
-<!--        {{ range first 9 .Site.RegularPages.ByDate.Reverse }}       -->
-        {{ range first 9 (where .Site.RegularPages "Type" "articles" | sort "Date" "desc") }}
-          <article class="card">
-            <a href="{{ .RelPermalink }}">
-              <img src="{{ .Params.image }}" alt="{{ .Title }}">
-              <h3>{{ .Title }}</h3>
-              <p>{{ .Summary }}</p>
-            </a>
-          </article>
-        {{ end }}
-      </div>
-    </section>
-  </div>
+  <!-- Colonne centrale : derniers articles -->
+  <section class="content-column">
+
+    <h2>Derniers articles</h2>
+    <div class="latest-grid">
+      {{ $articles := where .Site.RegularPages "Type" "articles" | sort "Date" "desc" }}
+      {{ range first 9 $articles }}
+        <article class="card">
+          <a href="{{ .RelPermalink }}">
+            {{ with .Params.image }}
+              <img src="{{ . }}" alt="{{ $.Title }}">
+            {{ end }}
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Summary }}</p>
+          </a>
+        </article>
+      {{ end }}
+    </div>
+
+  </section>
+
+</div>
 {{ end }}
