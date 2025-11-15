@@ -16,7 +16,7 @@ article {
 /* Titres */
 article h1, article h2, article h3 {
     font-weight: bold;
-    margin-top: 0.5em;
+    margin-top: 0.0em;
     margin-bottom: 0.5em;
 }
 
@@ -105,6 +105,7 @@ article img,
     border-left: 4px solid #007acc;
     padding: 10px 16px;
     background-color: #f0f8ff;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
