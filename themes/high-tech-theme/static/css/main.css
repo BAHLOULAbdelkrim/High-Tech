@@ -751,7 +751,7 @@ body.menu-open {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/images/logo-bg.png");
+  background-image: url("/images/logo-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 800px; /* ajuste la taille du logo */
