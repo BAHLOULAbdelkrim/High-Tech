@@ -26,6 +26,14 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 
 </div>
 
+
+<figure class="img-center img-medium">
+    <img src="/images/Redmi_Note_8.webp" alt="Redmi Note 8">
+    <figcaption>Le Redmi Note 8 — version globale</figcaption>
+</figure>
+
+
+
  - **Couleurs :** 
 	>  ![](https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_white.jpg) Perle blanche
 	 ![](https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_green1.jpg) Forêt verte 
