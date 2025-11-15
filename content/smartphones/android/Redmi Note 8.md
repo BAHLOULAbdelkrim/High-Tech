@@ -1,6 +1,6 @@
 ---
 title: "Série Redmi Note 8"
-date: 2025-01-01    # année-mois-jour
+date: 2025-01-03    # année-mois-jour. Pour ajouter l'heure : 2025-01-03T00:00:00+01:00 ===> 00:00:00 heure locale (+1 UTC)
 image: "/images/Redmi_Note_8.webp"
 # image_caption: "Redmi Note 8 version globale"        # Pour afficher la légende de l’image principale.
 description: "Résumé SEO de l’article en une phrase."   # Résumé SEO de l’article en une phrase, qui devrait être courte, percutante et résumer le contenu. 
