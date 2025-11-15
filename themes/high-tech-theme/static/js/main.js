@@ -86,15 +86,40 @@ document.addEventListener('keydown', function(e) {
 // Animation fade-in des sections
 // ============================
 
+// document.addEventListener("DOMContentLoaded", function() {
+//     const faders = document.querySelectorAll(".fade-in");
+
+//     const appearOptions = {
+//         threshold: 0.1,
+//         rootMargin: "0px 0px -50px 0px"
+//     };
+
+//     const appearOnScroll = new IntersectionObserver(function(entries, observer){
+//         entries.forEach(entry => {
+//             if (!entry.isIntersecting) return;
+//             entry.target.classList.add("visible");
+//             observer.unobserve(entry.target);
+//         });
+//     }, appearOptions);
+
+//     faders.forEach(fader => {
+//         appearOnScroll.observe(fader);
+//     });
+// });
+
+// ============================
+// SLIDE + FADE + BLUR ON SCROLL
+// ============================
+
 document.addEventListener("DOMContentLoaded", function() {
     const faders = document.querySelectorAll(".fade-in");
 
     const appearOptions = {
-        threshold: 0.1,
+        threshold: 0.15,
         rootMargin: "0px 0px -50px 0px"
     };
 
-    const appearOnScroll = new IntersectionObserver(function(entries, observer){
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
         entries.forEach(entry => {
             if (!entry.isIntersecting) return;
             entry.target.classList.add("visible");
@@ -102,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }, appearOptions);
 
-    faders.forEach(fader => {
-        appearOnScroll.observe(fader);
+    faders.forEach(el => {
+        appearOnScroll.observe(el);
     });
 });
