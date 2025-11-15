@@ -16,7 +16,7 @@ article {
 /* Titres */
 article h1, article h2, article h3 {
     font-weight: bold;
-    margin-top: 1.5em;
+    margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
@@ -50,6 +50,51 @@ article h2 {
 }
 article h3 {
     color: #009933; /* vert */
+}
+
+/* Changer la taille d’une image */
+.img-small  { width: 200px; }
+.img-medium { width: 400px; }
+.img-large  { width: 700px; }
+
+/* Centrer les images */
+article img, 
+.article-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Titre de l'image (sous l'image) */
+.img-figure {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.img-figure figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 6px;
+    font-style: italic;
+}
+
+/* Mettre deux images (ou plus) côte à côte + légendes */
+.img-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.img-row figure {
+    flex: 1;
+    text-align: center;
+}
+
+.img-row img {
+    width: 100%;
+    max-width: 300px; /* limite pour éviter d'être trop grand */
+    border-radius: 8px;
 }
 
 /* ============================
