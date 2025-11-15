@@ -1,16 +1,18 @@
 {{ define "main" }}
 <div class="container home-content">
 
+  <!-- Colonne gauche -->
   <aside class="left-column">
     {{ partial "leftmenus.html" . }}
   </aside>
 
+  <!-- Colonne centrale : derniers articles -->
   <section class="content-column">
 
     <h2>Derniers articles</h2>
     <div class="latest-grid">
-      {{ $articles := where (where .Site.RegularPages "Type" "articles") ".Date" "ne" nil | sort "Date" "desc" }}
-      {{ range first 9 $articles }}
+      {{ $articles := first 9 (where .Site.RegularPages "Type" "articles").ByDate.Reverse }}
+      {{ range $articles }}
         <article class="card">
           <a href="{{ .RelPermalink }}">
             {{ with .Params.image }}
