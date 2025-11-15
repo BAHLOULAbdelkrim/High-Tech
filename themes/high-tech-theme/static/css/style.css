@@ -231,3 +231,17 @@ table td:nth-child(2) {
     transform: translateY(0);
     filter: blur(0px);
 }
+
+/* Taguer un mot dans l’article (couleur + souligné + lien vers un autre article) */
+
+.tag-link {
+    color: #1E90FF;       /* bleu */
+    text-decoration: underline; /* souligné */
+    font-weight: 600;     /* optionnel : gras */
+    transition: color 0.3s;
+}
+
+.tag-link:hover {
+    color: #104E8B;       /* couleur au survol */
+}
+

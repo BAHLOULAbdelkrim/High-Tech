@@ -12,6 +12,8 @@ slug: "redmi-note-8"     # Pour personnaliser l’URL de l’article.
 ---
 <p>Contenu d'exemple généré automatiquement pour l'article 1 du sous-menu Android. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at.</p>
 
+Exemple de tag : le <a href="\content\smartphones\android\Redmi Note 8" class="tag-link">Redmi Note 8</a> est ........
+
 <div class="fade-in">
 
 ## Aperçu général
