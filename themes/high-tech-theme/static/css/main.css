@@ -766,3 +766,20 @@ body.menu-open {
   z-index: 1;
 }
 
+
+
+
+
+.left-column a,       /* menu gauche */
+.right-column a,      /* menu droit */
+.submenus a {         /* sous-menus */
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.left-column a:hover,
+.right-column a:hover,
+.submenus a:hover {
+    text-decoration: underline;
+    color: #1E90FF;
+}
