@@ -19,6 +19,10 @@
     <article class="content-column">
       <h1>{{ .Title }}</h1>
       <img class="article-image" src="{{ .Params.image }}" alt="{{ .Title }}">
+      <aside class="toc">
+          <h2>Sommaire</h2>
+          {{ .TableOfContents }}
+      </aside>
       <div class="article-body">
         {{ .Content }}
       </div>

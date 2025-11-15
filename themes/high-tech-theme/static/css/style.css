@@ -53,6 +53,36 @@ article h3 {
 }
 
 /* ============================
+   Styliser le sommaire
+   ============================ */
+
+.toc {
+    border-left: 4px solid #007acc;
+    padding: 10px 16px;
+    background-color: #f0f8ff;
+    margin-bottom: 20px;
+}
+
+.toc h2 {
+    margin-top: 0;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.toc li a {
+    text-decoration: none;
+    color: #007acc;
+    transition: color 0.2s ease;
+}
+
+.toc li a:hover {
+    color: #ff6600;
+}
+
+/* ============================
    Tableaux stylés et animés
    ============================ */
 
