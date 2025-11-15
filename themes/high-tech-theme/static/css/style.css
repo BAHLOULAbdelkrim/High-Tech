@@ -2,6 +2,15 @@
    Style général des articles
    ============================ */
 
+/* Image principale en haut de l'article */
+.article-image {
+    display: block;
+    margin: 0 auto; /* centre l’image */
+    max-width: 70%; /* ajuste la taille */
+    height: auto;
+    border-radius: 12px; /* optionnel, style moderne */
+}
+
 /* Corps de l'article */
 article {
     font-family: 'Helvetica', Inter, sans-serif;
