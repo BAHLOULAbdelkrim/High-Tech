@@ -1,6 +1,6 @@
 ---
 title: "Série Redmi Note 9"
-date: 2025-01-11T12:00:00+01:00
+date: 2025-01-03    # année-mois-jour
 image: "/images/Redmi_Note_8.webp"
 summary: "Découvrez les variantes de série Xiaomi-Redmi Note 9."
 ---
