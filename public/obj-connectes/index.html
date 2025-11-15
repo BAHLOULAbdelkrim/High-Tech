@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script defer src="/js/main.js"></script>
 </head>
 <body class="not-home" data-section="obj-connectes">
@@ -195,7 +196,7 @@
     
     
       <div class="hero-static">
-        <img src="/images/menu_obj-connectes.jpg" alt="menu image">
+        <img src="/images/menu_obj-connectes.webp" alt="menu image">
       </div>
     
   
@@ -342,33 +343,38 @@
         </ul>
       </div>
 
-      <div class="articles-grid">
+
+
+<div class="articles-grid">
+  
+  
+    <article class="card">
+      <a href="/obj-connectes/cameras-sportives/">
+        <h2>Caméras sportives</h2>
+        <p><p>Page du sous-menu Caméras sportives dans objets-connectes.</p></p>
         
-          <article class="card">
-            <a href="/obj-connectes/cameras-sportives/">
-              <img src="" alt="Caméras sportives">
-              <h2>Caméras sportives</h2>
-              <p><p>Page du sous-menu Caméras sportives dans objets-connectes.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/obj-connectes/drones/">
+        <h2>Drones</h2>
+        <p><p>Page du sous-menu Drones dans objets-connectes.</p></p>
         
-          <article class="card">
-            <a href="/obj-connectes/drones/">
-              <img src="" alt="Drones">
-              <h2>Drones</h2>
-              <p><p>Page du sous-menu Drones dans objets-connectes.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/obj-connectes/gadgets/">
+        <h2>Gadgets</h2>
+        <p><p>Page du sous-menu Gadgets dans objets-connectes.</p></p>
         
-          <article class="card">
-            <a href="/obj-connectes/gadgets/">
-              <img src="" alt="Gadgets">
-              <h2>Gadgets</h2>
-              <p><p>Page du sous-menu Gadgets dans objets-connectes.</p></p>
-            </a>
-          </article>
-        
-      </div>
+      </a>
+    </article>
+  
+  
+  
+</div>
 
       
         
@@ -385,15 +391,6 @@
 </footer>
 
 
-<script>
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Backspace' && !event.target.matches('input, textarea')) {
-      event.preventDefault();
-      if (window.location.pathname !== '/') {
-        window.location.href = '/';
-      }
-    }
-  });
-</script>
+
 </body>
 </html>

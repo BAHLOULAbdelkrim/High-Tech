@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script defer src="/js/main.js"></script>
 </head>
 <body class="not-home" data-section="domotique">
@@ -201,7 +202,7 @@
     
     
       <div class="hero-static">
-        <img src="/images/menu_domotique.jpg" alt="menu image">
+        <img src="/images/menu_domotique.webp" alt="menu image">
       </div>
     
   
@@ -350,8 +351,12 @@
     <article class="content-column">
       <h1>Mesure glycémie — Article exemple 1</h1>
       <img class="article-image" src="/images/image_art.jpg" alt="Mesure glycémie — Article exemple 1">
+      <aside class="toc">
+          <h2>Sommaire</h2>
+          <nav id="TableOfContents"></nav>
+      </aside>
       <div class="article-body">
-        <!-- raw HTML omitted -->
+        <p>Contenu d'exemple généré automatiquement pour l'article 1 du sous-menu Mesure glycémie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at.</p>
 
       </div>
     </article>
@@ -375,15 +380,6 @@
 </footer>
 
 
-<script>
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Backspace' && !event.target.matches('input, textarea')) {
-      event.preventDefault();
-      if (window.location.pathname !== '/') {
-        window.location.href = '/';
-      }
-    }
-  });
-</script>
+
 </body>
 </html>

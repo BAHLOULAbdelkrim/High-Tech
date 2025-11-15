@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script defer src="/js/main.js"></script>
 </head>
 <body class="not-home" data-section="nouveautes">
@@ -201,10 +202,10 @@
     
     
       <div class="slideshow" id="slideshow">
-        <img src="/images/slide1.jpg" class="slide visible">
-        <img src="/images/slide2.jpg" class="slide">
-        <img src="/images/slide3.jpg" class="slide">
-        <img src="/images/slide4.jpg" class="slide">
+        <img src="/images/slide1.webp" class="slide visible">
+        <img src="/images/slide2.webp" class="slide">
+        <img src="/images/slide3.webp" class="slide">
+        <img src="/images/slide4.webp" class="slide">
       </div>
     
   
@@ -345,9 +346,14 @@
         </ul>
       </div>
 
-      <div class="articles-grid">
-        
-      </div>
+
+
+<div class="articles-grid">
+  
+  
+  
+  
+</div>
 
       
         
@@ -364,15 +370,6 @@
 </footer>
 
 
-<script>
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Backspace' && !event.target.matches('input, textarea')) {
-      event.preventDefault();
-      if (window.location.pathname !== '/') {
-        window.location.href = '/';
-      }
-    }
-  });
-</script>
+
 </body>
 </html>

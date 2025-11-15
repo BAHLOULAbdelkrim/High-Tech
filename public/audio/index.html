@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script defer src="/js/main.js"></script>
 </head>
 <body class="not-home" data-section="audio">
@@ -195,7 +196,7 @@
     
     
       <div class="hero-static">
-        <img src="/images/menu_audio.jpg" alt="menu image">
+        <img src="/images/menu_audio.webp" alt="menu image">
       </div>
     
   
@@ -335,6 +336,10 @@
           
             <li><a href="/audio/amplis/">Amplis</a></li>
           
+            <li><a href="/audio/casques/">Casques</a></li>
+          
+            <li><a href="/audio/casques-anti-bruit/">Casques Anti-Bruit</a></li>
+          
             <li><a href="/audio/filaires/">Filaires</a></li>
           
             <li><a href="/audio/haut-parleurs/">Haut-parleurs</a></li>
@@ -348,57 +353,78 @@
         </ul>
       </div>
 
-      <div class="articles-grid">
+
+
+<div class="articles-grid">
+  
+  
+    <article class="card">
+      <a href="/audio/amplis/">
+        <h2>Amplis</h2>
+        <p><p>Page du sous-menu Amplis dans audio.</p></p>
         
-          <article class="card">
-            <a href="/audio/amplis/">
-              <img src="" alt="Amplis">
-              <h2>Amplis</h2>
-              <p><p>Page du sous-menu Amplis dans audio.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/audio/casques/">
+        <h2>Casques</h2>
+        <p><p>Page du sous-menu Casques dans audio.</p></p>
         
-          <article class="card">
-            <a href="/audio/filaires/">
-              <img src="" alt="Filaires">
-              <h2>Filaires</h2>
-              <p><p>Page du sous-menu Filaires dans audio.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/audio/casques-anti-bruit/">
+        <h2>Casques Anti-Bruit</h2>
+        <p><p>Page du sous-menu Casques dans audio.</p></p>
         
-          <article class="card">
-            <a href="/audio/haut-parleurs/">
-              <img src="" alt="Haut-parleurs">
-              <h2>Haut-parleurs</h2>
-              <p><p>Page du sous-menu Haut-parleurs dans audio.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/audio/filaires/">
+        <h2>Filaires</h2>
+        <p><p>Page du sous-menu Filaires dans audio.</p></p>
         
-          <article class="card">
-            <a href="/audio/microphones/">
-              <img src="" alt="Microphones">
-              <h2>Microphones</h2>
-              <p><p>Page du sous-menu Microphones dans audio.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/audio/haut-parleurs/">
+        <h2>Haut-parleurs</h2>
+        <p><p>Page du sous-menu Haut-parleurs dans audio.</p></p>
         
-          <article class="card">
-            <a href="/audio/sans-fil/">
-              <img src="" alt="Sans fil">
-              <h2>Sans fil</h2>
-              <p><p>Page du sous-menu Sans fil dans audio.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/audio/microphones/">
+        <h2>Microphones</h2>
+        <p><p>Page du sous-menu Microphones dans audio.</p></p>
         
-          <article class="card">
-            <a href="/audio/true-wireless/">
-              <img src="" alt="True wireless">
-              <h2>True wireless</h2>
-              <p><p>Page du sous-menu True wireless dans audio.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/audio/sans-fil/">
+        <h2>Sans fil</h2>
+        <p><p>Page du sous-menu Sans fil dans audio.</p></p>
         
-      </div>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/audio/true-wireless/">
+        <h2>True wireless</h2>
+        <p><p>Page du sous-menu True wireless dans audio.</p></p>
+        
+      </a>
+    </article>
+  
+  
+  
+</div>
 
       
         
@@ -415,15 +441,6 @@
 </footer>
 
 
-<script>
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Backspace' && !event.target.matches('input, textarea')) {
-      event.preventDefault();
-      if (window.location.pathname !== '/') {
-        window.location.href = '/';
-      }
-    }
-  });
-</script>
+
 </body>
 </html>

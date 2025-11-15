@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script defer src="/js/main.js"></script>
 </head>
 <body class="not-home" data-section="peripheriques">
@@ -195,7 +196,7 @@
     
     
       <div class="hero-static">
-        <img src="/images/menu_peripheriques.jpg" alt="menu image">
+        <img src="/images/menu_peripheriques.webp" alt="menu image">
       </div>
     
   
@@ -344,41 +345,46 @@
         </ul>
       </div>
 
-      <div class="articles-grid">
+
+
+<div class="articles-grid">
+  
+  
+    <article class="card">
+      <a href="/peripheriques/energie-and-charge/">
+        <h2>Énergie &amp; Charge</h2>
+        <p><p>Page du sous-menu Énergie &amp; Charge dans accessoires.</p></p>
         
-          <article class="card">
-            <a href="/peripheriques/energie-and-charge/">
-              <img src="" alt="Énergie &amp; Charge">
-              <h2>Énergie &amp; Charge</h2>
-              <p><p>Page du sous-menu Énergie &amp; Charge dans accessoires.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/peripheriques/peripheriques/">
+        <h2>Périphériques</h2>
+        <p><p>Page du sous-menu Périphériques dans accessoires.</p></p>
         
-          <article class="card">
-            <a href="/peripheriques/peripheriques/">
-              <img src="" alt="Périphériques">
-              <h2>Périphériques</h2>
-              <p><p>Page du sous-menu Périphériques dans accessoires.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/peripheriques/protections/">
+        <h2>Protections</h2>
+        <p><p>Page du sous-menu Protections dans accessoires.</p></p>
         
-          <article class="card">
-            <a href="/peripheriques/protections/">
-              <img src="" alt="Protections">
-              <h2>Protections</h2>
-              <p><p>Page du sous-menu Protections dans accessoires.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/peripheriques/stockage/">
+        <h2>Stockage</h2>
+        <p><p>Page du sous-menu Stockage dans accessoires.</p></p>
         
-          <article class="card">
-            <a href="/peripheriques/stockage/">
-              <img src="" alt="Stockage">
-              <h2>Stockage</h2>
-              <p><p>Page du sous-menu Stockage dans accessoires.</p></p>
-            </a>
-          </article>
-        
-      </div>
+      </a>
+    </article>
+  
+  
+  
+</div>
 
       
         
@@ -395,15 +401,6 @@
 </footer>
 
 
-<script>
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Backspace' && !event.target.matches('input, textarea')) {
-      event.preventDefault();
-      if (window.location.pathname !== '/') {
-        window.location.href = '/';
-      }
-    }
-  });
-</script>
+
 </body>
 </html>

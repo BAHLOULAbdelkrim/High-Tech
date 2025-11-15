@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script defer src="/js/main.js"></script>
 </head>
 <body class="not-home" data-section="smartphones">
@@ -193,15 +194,9 @@
   
     
     
-      
-      
-      
-        
-      
-    
     
       <div class="hero-static">
-        <img src="/images/menu_smartphones.jpg" alt="menu image">
+        <img src="/images/menu_smartphones.webp" alt="menu image">
       </div>
     
   
@@ -342,25 +337,34 @@
         </ul>
       </div>
 
-      <div class="articles-grid">
+
+
+<div class="articles-grid">
+  
+  
+  
+  
+    <article class="card">
+      <a href="/smartphones/iphone/article-2/">
+        <h2>iPhone — Article exemple 2</h2>
+        <p>Exemple de résumé pour iPhone article 2.</p>
         
-          <article class="card">
-            <a href="/smartphones/iphone/article-2/">
-              <img src="/images/image_art.jpg" alt="iPhone — Article exemple 2">
-              <h2>iPhone — Article exemple 2</h2>
-              <p>Exemple de résumé pour iPhone article 2.</p>
-            </a>
-          </article>
+          <img src="/images/image_art.jpg" alt="iPhone">
         
-          <article class="card">
-            <a href="/smartphones/iphone/article-1/">
-              <img src="/images/image_art.jpg" alt="iPhone — Article exemple 1">
-              <h2>iPhone — Article exemple 1</h2>
-              <p>Exemple de résumé pour iPhone article 1.</p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/smartphones/iphone/article-1/">
+        <h2>iPhone — Article exemple 1</h2>
+        <p>Exemple de résumé pour iPhone article 1.</p>
         
-      </div>
+          <img src="/images/image_art.jpg" alt="iPhone">
+        
+      </a>
+    </article>
+  
+</div>
 
       
         
@@ -377,15 +381,6 @@
 </footer>
 
 
-<script>
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Backspace' && !event.target.matches('input, textarea')) {
-      event.preventDefault();
-      if (window.location.pathname !== '/') {
-        window.location.href = '/';
-      }
-    }
-  });
-</script>
+
 </body>
 </html>

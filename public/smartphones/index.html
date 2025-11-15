@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script defer src="/js/main.js"></script>
 </head>
 <body class="not-home" data-section="smartphones">
@@ -195,7 +196,7 @@
     
     
       <div class="hero-static">
-        <img src="/images/menu_smartphones.jpg" alt="menu image">
+        <img src="/images/menu_smartphones.webp" alt="menu image">
       </div>
     
   
@@ -333,42 +334,53 @@
       <div class="submenus">
         <ul>
           
-            <li><a href="/smartphones/android/">Android</a></li>
-          
             <li><a href="/smartphones/iphone/">iPhone</a></li>
           
             <li><a href="/smartphones/pliables/">Pliables</a></li>
           
+            <li><a href="/smartphones/android/">Android</a></li>
+          
         </ul>
       </div>
 
-      <div class="articles-grid">
+
+
+<div class="articles-grid">
+  
+  
+    <article class="card">
+      <a href="/smartphones/iphone/">
+        <h2>iPhone</h2>
+        <p><p>Page du sous-menu iPhone dans smartphones.</p></p>
         
-          <article class="card">
-            <a href="/smartphones/android/">
-              <img src="" alt="Android">
-              <h2>Android</h2>
-              <p><p>Page du sous-menu Android dans smartphones.</p></p>
-            </a>
-          </article>
+          <img src="/images/menu_smartphones.webp" alt="Smartphones">
         
-          <article class="card">
-            <a href="/smartphones/iphone/">
-              <img src="" alt="iPhone">
-              <h2>iPhone</h2>
-              <p><p>Page du sous-menu iPhone dans smartphones.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/smartphones/pliables/">
+        <h2>Pliables</h2>
+        <p><p>Page du sous-menu Pliables dans smartphones.</p></p>
         
-          <article class="card">
-            <a href="/smartphones/pliables/">
-              <img src="" alt="Pliables">
-              <h2>Pliables</h2>
-              <p><p>Page du sous-menu Pliables dans smartphones.</p></p>
-            </a>
-          </article>
+          <img src="/images/menu_smartphones.webp" alt="Smartphones">
         
-      </div>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/smartphones/android/">
+        <h2>Android</h2>
+        <p><p>Page du sous-menu Android dans smartphones.</p></p>
+        
+          <img src="/images/menu_smartphones.webp" alt="Smartphones">
+        
+      </a>
+    </article>
+  
+  
+  
+</div>
 
       
         
@@ -385,15 +397,6 @@
 </footer>
 
 
-<script>
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Backspace' && !event.target.matches('input, textarea')) {
-      event.preventDefault();
-      if (window.location.pathname !== '/') {
-        window.location.href = '/';
-      }
-    }
-  });
-</script>
+
 </body>
 </html>

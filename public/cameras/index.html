@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script defer src="/js/main.js"></script>
 </head>
 <body class="not-home" data-section="cameras">
@@ -195,7 +196,7 @@
     
     
       <div class="hero-static">
-        <img src="/images/menu_cameras.jpg" alt="menu image">
+        <img src="/images/menu_cameras.webp" alt="menu image">
       </div>
     
   
@@ -345,70 +346,85 @@
           
             <li><a href="/cameras/reflex/">Reflex</a></li>
           
+            <li><a href="/cameras/supports/">Supports</a></li>
+          
             <li><a href="/cameras/webcam/">WebCam</a></li>
           
         </ul>
       </div>
 
-      <div class="articles-grid">
+
+
+<div class="articles-grid">
+  
+  
+    <article class="card">
+      <a href="/cameras/action-cam/">
+        <h2>Action Cam</h2>
+        <p><p>Page du sous-menu Action Cam dans cameras.</p></p>
         
-          <article class="card">
-            <a href="/cameras/action-cam/">
-              <img src="" alt="Action Cam">
-              <h2>Action Cam</h2>
-              <p><p>Page du sous-menu Action Cam dans cameras.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/cameras/cameras-de-surveillance/">
+        <h2>Caméras de surveillance</h2>
+        <p><p>Page du sous-menu Caméras de surveillance dans cameras.</p></p>
         
-          <article class="card">
-            <a href="/cameras/cameras-de-surveillance/">
-              <img src="" alt="Caméras de surveillance">
-              <h2>Caméras de surveillance</h2>
-              <p><p>Page du sous-menu Caméras de surveillance dans cameras.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/cameras/mirrorless/">
+        <h2>Mirrorless</h2>
+        <p><p>Page du sous-menu Mirrorless dans cameras.</p></p>
         
-          <article class="card">
-            <a href="/cameras/mirrorless/">
-              <img src="" alt="Mirrorless">
-              <h2>Mirrorless</h2>
-              <p><p>Page du sous-menu Mirrorless dans cameras.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/cameras/objectifs/">
+        <h2>Objectifs</h2>
+        <p><p>Page du sous-menu Objectifs dans cameras.</p></p>
         
-          <article class="card">
-            <a href="/cameras/objectifs/">
-              <img src="" alt="Objectifs">
-              <h2>Objectifs</h2>
-              <p><p>Page du sous-menu Objectifs dans cameras.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/cameras/projecteurs/">
+        <h2>Projecteurs</h2>
+        <p><p>Page du sous-menu Projecteurs dans cameras.</p></p>
         
-          <article class="card">
-            <a href="/cameras/projecteurs/">
-              <img src="" alt="Projecteurs">
-              <h2>Projecteurs</h2>
-              <p><p>Page du sous-menu Projecteurs dans cameras.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/cameras/reflex/">
+        <h2>Reflex</h2>
+        <p><p>Page du sous-menu Reflex dans cameras.</p></p>
         
-          <article class="card">
-            <a href="/cameras/reflex/">
-              <img src="" alt="Reflex">
-              <h2>Reflex</h2>
-              <p><p>Page du sous-menu Reflex dans cameras.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/cameras/supports/">
+        <h2>Supports</h2>
+        <p><p>Page du sous-menu WebCam dans cameras.</p></p>
         
-          <article class="card">
-            <a href="/cameras/webcam/">
-              <img src="" alt="WebCam">
-              <h2>WebCam</h2>
-              <p><p>Page du sous-menu WebCam dans cameras.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/cameras/webcam/">
+        <h2>WebCam</h2>
+        <p><p>Page du sous-menu WebCam dans cameras.</p></p>
         
-      </div>
+      </a>
+    </article>
+  
+  
+  
+</div>
 
       
         
@@ -425,15 +441,6 @@
 </footer>
 
 
-<script>
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Backspace' && !event.target.matches('input, textarea')) {
-      event.preventDefault();
-      if (window.location.pathname !== '/') {
-        window.location.href = '/';
-      }
-    }
-  });
-</script>
+
 </body>
 </html>

@@ -69,3 +69,65 @@ document.addEventListener('DOMContentLoaded', function() {
     langSelector.classList.remove('open');
   });
 });
+
+document.addEventListener('keydown', function(e) {
+  // 8 = code Backspace
+  if(e.key === "Backspace") {
+    // Vérifie que le focus n'est pas sur un input ou textarea
+    const tag = document.activeElement.tagName.toLowerCase();
+    if(tag !== 'input' && tag !== 'textarea') {
+      e.preventDefault();         // empêche le comportement par défaut
+      window.history.back();      // retourne à la page précédente
+    }
+  }
+});
+
+// ============================
+// Animation fade-in des sections
+// ============================
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     const faders = document.querySelectorAll(".fade-in");
+
+//     const appearOptions = {
+//         threshold: 0.1,
+//         rootMargin: "0px 0px -50px 0px"
+//     };
+
+//     const appearOnScroll = new IntersectionObserver(function(entries, observer){
+//         entries.forEach(entry => {
+//             if (!entry.isIntersecting) return;
+//             entry.target.classList.add("visible");
+//             observer.unobserve(entry.target);
+//         });
+//     }, appearOptions);
+
+//     faders.forEach(fader => {
+//         appearOnScroll.observe(fader);
+//     });
+// });
+
+// ============================
+// SLIDE + FADE + BLUR ON SCROLL
+// ============================
+
+document.addEventListener("DOMContentLoaded", function() {
+    const faders = document.querySelectorAll(".fade-in");
+
+    const appearOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+        });
+    }, appearOptions);
+
+    faders.forEach(el => {
+        appearOnScroll.observe(el);
+    });
+});

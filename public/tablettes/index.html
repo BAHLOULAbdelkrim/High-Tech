@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script defer src="/js/main.js"></script>
 </head>
 <body class="not-home" data-section="tablettes">
@@ -195,7 +196,7 @@
     
     
       <div class="hero-static">
-        <img src="/images/menu_tablettes.jpg" alt="menu image">
+        <img src="/images/menu_tablettes.webp" alt="menu image">
       </div>
     
   
@@ -342,33 +343,38 @@
         </ul>
       </div>
 
-      <div class="articles-grid">
+
+
+<div class="articles-grid">
+  
+  
+    <article class="card">
+      <a href="/tablettes/android/">
+        <h2>Android</h2>
+        <p><p>Page du sous-menu Android dans tablettes.</p></p>
         
-          <article class="card">
-            <a href="/tablettes/android/">
-              <img src="" alt="Android">
-              <h2>Android</h2>
-              <p><p>Page du sous-menu Android dans tablettes.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/tablettes/ipad/">
+        <h2>iPad</h2>
+        <p><p>Page du sous-menu iPad dans tablettes.</p></p>
         
-          <article class="card">
-            <a href="/tablettes/ipad/">
-              <img src="" alt="iPad">
-              <h2>iPad</h2>
-              <p><p>Page du sous-menu iPad dans tablettes.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/tablettes/windows/">
+        <h2>Windows</h2>
+        <p><p>Page du sous-menu Windows dans tablettes.</p></p>
         
-          <article class="card">
-            <a href="/tablettes/windows/">
-              <img src="" alt="Windows">
-              <h2>Windows</h2>
-              <p><p>Page du sous-menu Windows dans tablettes.</p></p>
-            </a>
-          </article>
-        
-      </div>
+      </a>
+    </article>
+  
+  
+  
+</div>
 
       
         
@@ -385,15 +391,6 @@
 </footer>
 
 
-<script>
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Backspace' && !event.target.matches('input, textarea')) {
-      event.preventDefault();
-      if (window.location.pathname !== '/') {
-        window.location.href = '/';
-      }
-    }
-  });
-</script>
+
 </body>
 </html>

@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script defer src="/js/main.js"></script>
 </head>
 <body class="not-home" data-section="home-cinema">
@@ -201,7 +202,7 @@
     
     
       <div class="hero-static">
-        <img src="/images/menu_home-cinema.jpg" alt="menu image">
+        <img src="/images/menu_home-cinema.webp" alt="menu image">
       </div>
     
   
@@ -342,25 +343,34 @@
         </ul>
       </div>
 
-      <div class="articles-grid">
+
+
+<div class="articles-grid">
+  
+  
+  
+  
+    <article class="card">
+      <a href="/home-cinema/oled/article-2/">
+        <h2>OLED — Article exemple 2</h2>
+        <p>Exemple de résumé pour OLED article 2.</p>
         
-          <article class="card">
-            <a href="/home-cinema/oled/article-2/">
-              <img src="/images/image_art.jpg" alt="OLED — Article exemple 2">
-              <h2>OLED — Article exemple 2</h2>
-              <p>Exemple de résumé pour OLED article 2.</p>
-            </a>
-          </article>
+          <img src="/images/image_art.jpg" alt="OLED">
         
-          <article class="card">
-            <a href="/home-cinema/oled/article-1/">
-              <img src="/images/image_art.jpg" alt="OLED — Article exemple 1">
-              <h2>OLED — Article exemple 1</h2>
-              <p>Exemple de résumé pour OLED article 1.</p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/home-cinema/oled/article-1/">
+        <h2>OLED — Article exemple 1</h2>
+        <p>Exemple de résumé pour OLED article 1.</p>
         
-      </div>
+          <img src="/images/image_art.jpg" alt="OLED">
+        
+      </a>
+    </article>
+  
+</div>
 
       
         
@@ -377,15 +387,6 @@
 </footer>
 
 
-<script>
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Backspace' && !event.target.matches('input, textarea')) {
-      event.preventDefault();
-      if (window.location.pathname !== '/') {
-        window.location.href = '/';
-      }
-    }
-  });
-</script>
+
 </body>
 </html>

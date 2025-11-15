@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script defer src="/js/main.js"></script>
 </head>
 <body class="not-home" data-section="smartphones">
@@ -193,15 +194,9 @@
   
     
     
-      
-      
-      
-        
-      
-    
     
       <div class="hero-static">
-        <img src="/images/menu_smartphones.jpg" alt="menu image">
+        <img src="/images/menu_smartphones.webp" alt="menu image">
       </div>
     
   
@@ -342,25 +337,72 @@
         </ul>
       </div>
 
-      <div class="articles-grid">
+
+
+<div class="articles-grid">
+  
+  
+  
+  
+    <article class="card">
+      <a href="/smartphones/android/redmi-note-8/">
+        <h2>Série Redmi Note 8</h2>
+        <p>Découvrez les variantes de série Xiaomi-Redmi Note 8.</p>
         
-          <article class="card">
-            <a href="/smartphones/android/article-2/">
-              <img src="/images/image_art.jpg" alt="Android — Article exemple 2">
-              <h2>Android — Article exemple 2</h2>
-              <p>Exemple de résumé pour Android article 2.</p>
-            </a>
-          </article>
+          <img src="/images/Redmi_Note_8.webp" alt="Android">
         
-          <article class="card">
-            <a href="/smartphones/android/article-1/">
-              <img src="/images/image_art.jpg" alt="Android — Article exemple 1">
-              <h2>Android — Article exemple 1</h2>
-              <p>Exemple de résumé pour Android article 1.</p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/smartphones/android/exemple_template_1/">
+        <h2>TITRE DE L’ARTICLE</h2>
+        <p><!-- ========================= -->
+<!-- 🔹 SOMMAIRE AUTOMATIQUE -->
+<!-- ========================= -->
+<!-- ========================= -->
+<!-- 🔹 INTRODUCTION (fade-in) -->
+<!-- ========================= -->
+<div class="fade-in">
+<h1 id="introduction">Introduction</h1>
+<p>L’introduction présente le sujet, donne le contexte et met en valeur l’intérêt de l’article.<br>
+Tu peux inclure des liens internes, images, mises en avant, etc.</p>
+</div>
+<!-- ========================= -->
+<!-- 🔹 SECTION 1 -->
+<!-- ========================= -->
+<div class="fade-in">
+<h2 id="1-présentation-générale-du-produit">1. Présentation générale du produit</h2>
+<p>Texte explicatif…</p>
+<h3 id="exemple-dimage-centrée-avec-légende">Exemple d’image centrée avec légende</h3>
+<figure class="img-figure">
+  <img src="/images/Redmi_Note_8.webp" alt="Désignation">
+  <figcaption>Désignation de l’image (ex : Vue avant du téléphone)</figcaption>
+</figure>
+</div>
+<!-- ========================= -->
+<!-- 🔹 SECTION 2 : TABLEAU ANIMÉ -->
+<!-- ========================= -->
+<div class="fade-in">
+<h2 id="2-spécifications-techniques">2. Spécifications techniques</h2>
+<p>Voici un tableau complet des caractéristiques principales.</p></p>
         
-      </div>
+          <img src="/images/Redmi_Note_8.webp" alt="Android">
+        
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/smartphones/android/redmi-note-9/">
+        <h2>Série Redmi Note 9</h2>
+        <p>Découvrez les variantes de série Xiaomi-Redmi Note 9.</p>
+        
+          <img src="/images/Redmi_Note_8.webp" alt="Android">
+        
+      </a>
+    </article>
+  
+</div>
 
       
         
@@ -377,15 +419,6 @@
 </footer>
 
 
-<script>
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Backspace' && !event.target.matches('input, textarea')) {
-      event.preventDefault();
-      if (window.location.pathname !== '/') {
-        window.location.href = '/';
-      }
-    }
-  });
-</script>
+
 </body>
 </html>

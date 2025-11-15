@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script defer src="/js/main.js"></script>
 </head>
 <body class="not-home" data-section="ordinateurs">
@@ -195,7 +196,7 @@
     
     
       <div class="hero-static">
-        <img src="/images/menu_ordinateurs.jpg" alt="menu image">
+        <img src="/images/menu_ordinateurs.webp" alt="menu image">
       </div>
     
   
@@ -346,49 +347,54 @@
         </ul>
       </div>
 
-      <div class="articles-grid">
+
+
+<div class="articles-grid">
+  
+  
+    <article class="card">
+      <a href="/ordinateurs/gaming/">
+        <h2>Gaming</h2>
+        <p><p>Page du sous-menu Gaming dans ordinateurs.</p></p>
         
-          <article class="card">
-            <a href="/ordinateurs/gaming/">
-              <img src="" alt="Gaming">
-              <h2>Gaming</h2>
-              <p><p>Page du sous-menu Gaming dans ordinateurs.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/ordinateurs/min-pc/">
+        <h2>Min PC</h2>
+        <p><p>Page du sous-menu Min PC dans ordinateurs.</p></p>
         
-          <article class="card">
-            <a href="/ordinateurs/min-pc/">
-              <img src="" alt="Min PC">
-              <h2>Min PC</h2>
-              <p><p>Page du sous-menu Min PC dans ordinateurs.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/ordinateurs/pc-de-bureau/">
+        <h2>PC de bureau</h2>
+        <p><p>Page du sous-menu PC de bureau dans ordinateurs.</p></p>
         
-          <article class="card">
-            <a href="/ordinateurs/pc-de-bureau/">
-              <img src="" alt="PC de bureau">
-              <h2>PC de bureau</h2>
-              <p><p>Page du sous-menu PC de bureau dans ordinateurs.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/ordinateurs/portables/">
+        <h2>Portables</h2>
+        <p><p>Page du sous-menu Portables dans ordinateurs.</p></p>
         
-          <article class="card">
-            <a href="/ordinateurs/portables/">
-              <img src="" alt="Portables">
-              <h2>Portables</h2>
-              <p><p>Page du sous-menu Portables dans ordinateurs.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/ordinateurs/ultrabooks/">
+        <h2>Ultrabooks</h2>
+        <p><p>Page du sous-menu Ultrabooks dans ordinateurs.</p></p>
         
-          <article class="card">
-            <a href="/ordinateurs/ultrabooks/">
-              <img src="" alt="Ultrabooks">
-              <h2>Ultrabooks</h2>
-              <p><p>Page du sous-menu Ultrabooks dans ordinateurs.</p></p>
-            </a>
-          </article>
-        
-      </div>
+      </a>
+    </article>
+  
+  
+  
+</div>
 
       
         
@@ -405,15 +411,6 @@
 </footer>
 
 
-<script>
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Backspace' && !event.target.matches('input, textarea')) {
-      event.preventDefault();
-      if (window.location.pathname !== '/') {
-        window.location.href = '/';
-      }
-    }
-  });
-</script>
+
 </body>
 </html>

@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script defer src="/js/main.js"></script>
 </head>
 <body class="not-home" data-section="impression">
@@ -195,7 +196,7 @@
     
     
       <div class="hero-static">
-        <img src="/images/menu_impression.jpg" alt="menu image">
+        <img src="/images/menu_impression.webp" alt="menu image">
       </div>
     
   
@@ -343,52 +344,67 @@
           
             <li><a href="/impression/scanners/">Scanners</a></li>
           
+            <li><a href="/impression/traceurs/">Traceurs</a></li>
+          
         </ul>
       </div>
 
-      <div class="articles-grid">
+
+
+<div class="articles-grid">
+  
+  
+    <article class="card">
+      <a href="/impression/consommables/">
+        <h2>Consommables</h2>
+        <p><p>Page du sous-menu Consommables dans impression.</p></p>
         
-          <article class="card">
-            <a href="/impression/consommables/">
-              <img src="" alt="Consommables">
-              <h2>Consommables</h2>
-              <p><p>Page du sous-menu Consommables dans impression.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/impression/imprimantes/">
+        <h2>Imprimantes</h2>
+        <p><p>Page du sous-menu Imprimantes dans impression.</p></p>
         
-          <article class="card">
-            <a href="/impression/imprimantes/">
-              <img src="" alt="Imprimantes">
-              <h2>Imprimantes</h2>
-              <p><p>Page du sous-menu Imprimantes dans impression.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/impression/imprimantes-3d/">
+        <h2>Imprimantes 3D</h2>
+        <p><p>Page du sous-menu Imprimantes 3D dans impression.</p></p>
         
-          <article class="card">
-            <a href="/impression/imprimantes-3d/">
-              <img src="" alt="Imprimantes 3D">
-              <h2>Imprimantes 3D</h2>
-              <p><p>Page du sous-menu Imprimantes 3D dans impression.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/impression/photocopieuses/">
+        <h2>Photocopieuses</h2>
+        <p><p>Page du sous-menu Photocopieuses dans impression.</p></p>
         
-          <article class="card">
-            <a href="/impression/photocopieuses/">
-              <img src="" alt="Photocopieuses">
-              <h2>Photocopieuses</h2>
-              <p><p>Page du sous-menu Photocopieuses dans impression.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/impression/scanners/">
+        <h2>Scanners</h2>
+        <p><p>Page du sous-menu Scanners dans impression.</p></p>
         
-          <article class="card">
-            <a href="/impression/scanners/">
-              <img src="" alt="Scanners">
-              <h2>Scanners</h2>
-              <p><p>Page du sous-menu Scanners dans impression.</p></p>
-            </a>
-          </article>
+      </a>
+    </article>
+  
+    <article class="card">
+      <a href="/impression/traceurs/">
+        <h2>Traceurs</h2>
+        <p><p>Page du sous-menu Traceurs dans impression.</p></p>
         
-      </div>
+      </a>
+    </article>
+  
+  
+  
+</div>
 
       
         
@@ -405,15 +421,6 @@
 </footer>
 
 
-<script>
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Backspace' && !event.target.matches('input, textarea')) {
-      event.preventDefault();
-      if (window.location.pathname !== '/') {
-        window.location.href = '/';
-      }
-    }
-  });
-</script>
+
 </body>
 </html>
