@@ -180,7 +180,8 @@ th, td {
 
 /* Bordures épaisses en haut et bas */
 thead tr {
-    border-bottom: 3px double #000;
+/*    border-bottom: 3px double #000;   */
+    border-bottom: none;
 }
 tfoot tr {
     border-top: 3px double #000;
