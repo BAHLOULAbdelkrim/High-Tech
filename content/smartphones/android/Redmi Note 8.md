@@ -1,9 +1,14 @@
 ---
 title: "Série Redmi Note 8"
-date: 2025-12-12
+date: 2025-01-01    # année-mois-jour
 image: "/images/Redmi_Note_8.webp"
-description: "Résumé SEO de l’article en une phrase."   # Devrait être courte, percutante et résumer le contenu. 
+# image_caption: "Redmi Note 8 version globale"        # Pour afficher la légende de l’image principale.
+description: "Résumé SEO de l’article en une phrase."   # Résumé SEO de l’article en une phrase, qui devrait être courte, percutante et résumer le contenu. 
 summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
+tags: ["smartphone", "Redmi", "Android"]    # Pour catégoriser par mot-clé. Utile pour filtres et SEO.
+categories: ["Smartphones"]
+keywords: ["Redmi Note 8", "test", "smartphone"]     # Pour SEO avancé (balise meta keywords, facultatif).
+slug: "redmi-note-8"     # Pour personnaliser l’URL de l’article.
 ---
 <p>Contenu d'exemple généré automatiquement pour l'article 1 du sous-menu Android. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at.</p>
 
