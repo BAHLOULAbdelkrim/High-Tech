@@ -67,10 +67,7 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
 
 </div>
 
-<div class="fade-in">
-
-</div>
-<div class="img-row img-center img-large">
+<div class="fade-in img-row img-center img-large">
   <figure>
     <img src="/images/Redmi_Note_8.webp">
     <figcaption>Vue avant</figcaption>
@@ -81,7 +78,6 @@ summary: "Découvrez les variantes de série Xiaomi-Redmi Note 8."
   </figure>
 </div>
 
-</div>
 
 <div class="fade-in">
 
