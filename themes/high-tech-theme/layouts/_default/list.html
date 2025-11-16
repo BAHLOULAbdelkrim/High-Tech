@@ -6,53 +6,46 @@
     <section class="content-column">
       <h1>{{ .Title }}</h1>
 
-      <!-- ✔️ AJOUT : afficher l’image de la section (menus + sous-menus) -->
-<!-- Remplace l'ancien bloc d'affichage d'image par celui-ci -->
-{{/* ---------------- Cover image (header) ---------------- */}}
-{{ $coverImg := "" }}
+      {{/* ---------------- Cover image (zone supérieure qui remplace le slider) ---------------- */}}
+      {{ $coverImg := "" }}
+      {{ if .IsSection }}
+        {{/* 1) Si on est dans un sous-menu, tenter l'image du parent (image puis menu_image) */}}
+        {{ with .Parent }}
+          {{ with .Params.image }}{{ $coverImg = . }}{{ end }}
+          {{ if not $coverImg }}
+            {{ with .Params.menu_image }}{{ $coverImg = . }}{{ end }}
+          {{ end }}
+        {{ end }}
 
-{{ if .IsSection }}
-  <!-- 1) Si on est dans un sous-menu, tenter l'image du parent -->
-  {{ with .Parent }}
-    {{ with .Params.image }}{{ $coverImg = . }}{{ end }}
-    {{ if not $coverImg }}
-      {{ with .Params.menu_image }}{{ $coverImg = . }}{{ end }}
-    {{ end }}
-  {{ end }}
+        {{/* 2) Si pas d'image de parent, fallback sur image/menu_image de la section courante */}}
+        {{ if not $coverImg }}
+          {{ with .Params.image }}{{ $coverImg = . }}{{ end }}
+          {{ if not $coverImg }}
+            {{ with .Params.menu_image }}{{ $coverImg = . }}{{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
 
-  <!-- 2) Si pas d'image de parent, fallback sur image/menu_image de la section courante -->
-  {{ if not $coverImg }}
-    {{ with .Params.image }}{{ $coverImg = . }}{{ end }}
-    {{ if not $coverImg }}
-      {{ with .Params.menu_image }}{{ $coverImg = . }}{{ end }}
-    {{ end }}
-  {{ end }}
+      {{ if $coverImg }}
+        <div class="section-cover-wrapper">
+          <img class="section-cover" src="{{ $coverImg | relURL }}" alt="{{ if .Parent }}{{ .Parent.Title }}{{ else }}{{ .Title }}{{ end }}">
+        </div>
+      {{ end }}
 
-  <!-- 3) Affiche si on a quelque chose -->
-  {{ if $coverImg }}
-    <img class="section-cover" src="{{ $coverImg | relURL }}" alt="{{ if .Parent }}{{ .Parent.Title }}{{ else }}{{ .Title }}{{ end }}">
-  {{ end }}
-{{ end }}
+      {{/* ---------------- Image au début de la page du sous-menu (affichée DANS la page) ---------------- */}}
+      {{ if and .IsSection .Parent }}
+        {{ $startImg := "" }}
+        {{ with .Params.image }}{{ $startImg = . }}{{ end }}
+        {{ if not $startImg }}
+          {{ with .Params.menu_image }}{{ $startImg = . }}{{ end }}
+        {{ end }}
 
-<!-- ---------------- Image au début de la page du sous-menu ---------------- -->
-<!-- Affiche l'image SPECIFIQUE au sous-menu (current section) uniquement si c'est un sous-menu -->
-{{ if and .IsSection .Parent }}
-  {{ $startImg := "" }}
-  {{ with .Params.image }}{{ $startImg = . }}{{ end }}
-  {{ if not $startImg }}
-    {{ with .Params.menu_image }}{{ $startImg = . }}{{ end }}
-  {{ end }}
-
-  {{ if $startImg }}
-    <div class="section-start-image">
-      <img src="{{ $startImg | relURL }}" alt="{{ .Title }}">
-    </div>
-  {{ end }}
-{{ end }}
-
-      <!--  {{ if .Params.image }}
-        <img class="section-cover" src="{{ .Params.image }}" alt="{{ .Title }}">
-      {{ end }}   -->
+        {{ if $startImg }}
+          <div class="section-start-image">
+            <img src="{{ $startImg | relURL }}" alt="{{ .Title }}">
+          </div>
+        {{ end }}
+      {{ end }}
 
       <div class="submenus">
         <ul>
@@ -62,32 +55,32 @@
         </ul>
       </div>
 
-<div class="articles-grid">
-  <!-- 1️⃣ Affiche les sous-menus -->
-  {{ range .Sections }}
-    <article class="card">
-      <a href="{{ .RelPermalink }}">
-        <h2>{{ .Title }}</h2>
-        <p>{{ .Summary }}</p>
-        {{ with .Params.menu_image }}
-          <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+      <div class="articles-grid">
+        <!-- 1️⃣ Affiche les sous-menus -->
+        {{ range .Sections }}
+          <article class="card">
+            <a href="{{ .RelPermalink }}">
+              <h2>{{ .Title }}</h2>
+              <p>{{ .Summary }}</p>
+              {{ with .Params.menu_image }}
+                <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+              {{ end }}
+            </a>
+          </article>
         {{ end }}
-      </a>
-    </article>
-  {{ end }}
-  <!-- 2️⃣ Affiche uniquement les articles normaux (pas les _index.md des sous-menus) -->
-  {{ range where .Pages "Kind" "in" (slice "page") }}
-    <article class="card">
-      <a href="{{ .RelPermalink }}">
-        <h2>{{ .Title }}</h2>
-        <p>{{ .Summary }}</p>
-        {{ with .Params.image }}
-          <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+        <!-- 2️⃣ Affiche uniquement les articles normaux (pas les _index.md des sous-menus) -->
+        {{ range where .Pages "Kind" "in" (slice "page") }}
+          <article class="card">
+            <a href="{{ .RelPermalink }}">
+              <h2>{{ .Title }}</h2>
+              <p>{{ .Summary }}</p>
+              {{ with .Params.image }}
+                <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+              {{ end }}
+            </a>
+          </article>
         {{ end }}
-      </a>
-    </article>
-  {{ end }}
-</div>
+      </div>
 
       {{ if .Paginator }}
         {{ template "_internal/pagination.html" . }}
