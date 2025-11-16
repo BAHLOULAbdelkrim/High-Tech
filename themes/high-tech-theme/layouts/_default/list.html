@@ -3,50 +3,59 @@
     <aside class="left-column">
       {{ partial "leftmenus.html" . }}
     </aside>
+
     <section class="content-column">
       <h1>{{ .Title }}</h1>
 
-      {{/* ---------------- Cover image (zone supérieure qui remplace le slider) ---------------- */}}
+      {{/* ------------------------------------------------------
+           1) IMAGE DE COVER = toujours l’image du menu parent
+         ------------------------------------------------------- */}}
+
       {{ $coverImg := "" }}
-      {{ if .IsSection }}
-        {{/* 1) Si on est dans un sous-menu, tenter l'image du parent (image puis menu_image) */}}
-        {{ with .Parent }}
-          {{ with .Params.image }}{{ $coverImg = . }}{{ end }}
-          {{ if not $coverImg }}
-            {{ with .Params.menu_image }}{{ $coverImg = . }}{{ end }}
-          {{ end }}
+
+      {{ if .Parent }}
+
+        {{/* Cas : sous-menu → cover = image du parent */}}
+        {{ with .Parent.Params.image }}{{ $coverImg = . }}{{ end }}
+        {{ if not $coverImg }}
+          {{ with .Parent.Params.menu_image }}{{ $coverImg = . }}{{ end }}
         {{ end }}
 
-        {{/* 2) Si pas d'image de parent, fallback sur image/menu_image de la section courante */}}
+      {{ else }}
+
+        {{/* Cas : menu principal → cover = son image */}}
+        {{ with .Params.image }}{{ $coverImg = . }}{{ end }}
         {{ if not $coverImg }}
-          {{ with .Params.image }}{{ $coverImg = . }}{{ end }}
-          {{ if not $coverImg }}
-            {{ with .Params.menu_image }}{{ $coverImg = . }}{{ end }}
-          {{ end }}
+          {{ with .Params.menu_image }}{{ $coverImg = . }}{{ end }}
         {{ end }}
+
       {{ end }}
 
       {{ if $coverImg }}
-        <div class="section-cover-wrapper">
-          <img class="section-cover" src="{{ $coverImg | relURL }}" alt="{{ if .Parent }}{{ .Parent.Title }}{{ else }}{{ .Title }}{{ end }}">
-        </div>
+        <img class="section-cover" src="{{ $coverImg | relURL }}" alt="{{ .Title }}">
       {{ end }}
 
-      {{/* ---------------- Image au début de la page du sous-menu (affichée DANS la page) ---------------- */}}
+
+      {{/* ------------------------------------------------------
+           2) IMAGE DU SOUS-MENU = uniquement en page sous-menu
+         ------------------------------------------------------- */}}
+
       {{ if and .IsSection .Parent }}
-        {{ $startImg := "" }}
-        {{ with .Params.image }}{{ $startImg = . }}{{ end }}
-        {{ if not $startImg }}
-          {{ with .Params.menu_image }}{{ $startImg = . }}{{ end }}
+        {{ $submenuImg := "" }}
+        {{ with .Params.image }}{{ $submenuImg = . }}{{ end }}
+        {{ if not $submenuImg }}
+          {{ with .Params.menu_image }}{{ $submenuImg = . }}{{ end }}
         {{ end }}
 
-        {{ if $startImg }}
-          <div class="section-start-image">
-            <img src="{{ $startImg | relURL }}" alt="{{ .Title }}">
-          </div>
+        {{ if $submenuImg }}
+          <img class="submenu-top-image" src="{{ $submenuImg | relURL }}" alt="{{ .Title }}">
         {{ end }}
       {{ end }}
 
+
+      {{/* ------------------------------------------------------
+           Sous-menus listés sous forme de liens
+         ------------------------------------------------------- */}}
       <div class="submenus">
         <ul>
           {{ range .Sections }}
@@ -55,8 +64,13 @@
         </ul>
       </div>
 
+
+      {{/* ------------------------------------------------------
+           CARTES : sous-menus + articles
+         ------------------------------------------------------- */}}
       <div class="articles-grid">
-        <!-- 1️⃣ Affiche les sous-menus -->
+
+        {{/* ---- 1 : cartes des sous-menus ---- */}}
         {{ range .Sections }}
           <article class="card">
             <a href="{{ .RelPermalink }}">
@@ -68,7 +82,8 @@
             </a>
           </article>
         {{ end }}
-        <!-- 2️⃣ Affiche uniquement les articles normaux (pas les _index.md des sous-menus) -->
+
+        {{/* ---- 2 : cartes des articles normaux ---- */}}
         {{ range where .Pages "Kind" "in" (slice "page") }}
           <article class="card">
             <a href="{{ .RelPermalink }}">
@@ -80,6 +95,7 @@
             </a>
           </article>
         {{ end }}
+
       </div>
 
       {{ if .Paginator }}
