@@ -13,7 +13,7 @@
       <!-- Image du sous-menu uniquement sur les pages de sous-menu -->
       {{ if and .IsSection .Parent }}
         {{ with .Params.image }}
-          <img class="submenu-top-image" src="{{ . | relURL }}" alt="{{ .Title }}">
+          <img class="submenu-top-image" src="{{ . | relURL }}" alt="{{ $.Title }}">
         {{ end }}
       {{ end }}
 
