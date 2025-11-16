@@ -288,3 +288,64 @@ article a:hover,
     border-radius: 8px;
   }
 }
+
+/* Images des miniatures de sous-menus (dans list.html) */
+
+/* Miniatures des sous-menus — Mobile optimisé */
+.submenus img,
+.articles-grid .card img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Desktop */
+@media (min-width: 768px) {
+    .submenus img:hover,
+    .articles-grid .card img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+}
+
+/* Image des pages de sous-menus (ta section-cover) */
+
+.section-cover {
+    display: block;
+    max-width: 900px;
+    width: 100%;
+    margin: 20px auto 35px auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Desktop seulement */
+@media (min-width: 768px) {
+    .section-cover:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
+}
+
+/* Version mobile : coins plus petits, marge réduite */
+@media (max-width: 767px) {
+    .section-cover {
+        border-radius: 8px;
+        margin: 15px auto 25px auto;
+    }
+}
+
+/* Images dans les articles (pages Single), version mobile uniquement */ 
+
+/* Images des articles — version mobile */
+@media (max-width: 767px) {
+    .article-body img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
