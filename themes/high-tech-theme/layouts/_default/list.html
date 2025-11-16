@@ -7,55 +7,18 @@
     <section class="content-column">
       <h1>{{ .Title }}</h1>
 
-      {{/* ------------------------------------------------------
-           1) IMAGE DE COVER = toujours l’image du menu parent
-         ------------------------------------------------------- */}}
+      <!-- 🎯 Cover = toujours l’image du menu parent -->
+      {{ partial "cover.html" . }}
 
-      {{ $coverImg := "" }}
-
-      {{ if .Parent }}
-
-        {{/* Cas : sous-menu → cover = image du parent */}}
-        {{ with .Parent.Params.image }}{{ $coverImg = . }}{{ end }}
-        {{ if not $coverImg }}
-          {{ with .Parent.Params.menu_image }}{{ $coverImg = . }}{{ end }}
-        {{ end }}
-
-      {{ else }}
-
-        {{/* Cas : menu principal → cover = son image */}}
-        {{ with .Params.image }}{{ $coverImg = . }}{{ end }}
-        {{ if not $coverImg }}
-          {{ with .Params.menu_image }}{{ $coverImg = . }}{{ end }}
-        {{ end }}
-
-      {{ end }}
-
-      {{ if $coverImg }}
-        <img class="section-cover" src="{{ $coverImg | relURL }}" alt="{{ .Title }}">
-      {{ end }}
-
-
-      {{/* ------------------------------------------------------
-           2) IMAGE DU SOUS-MENU = uniquement en page sous-menu
-         ------------------------------------------------------- */}}
-
+      <!-- 🎯 Image du sous-menu (uniquement dans un sous-menu) -->
       {{ if and .IsSection .Parent }}
-        {{ $submenuImg := "" }}
-        {{ with .Params.image }}{{ $submenuImg = . }}{{ end }}
-        {{ if not $submenuImg }}
-          {{ with .Params.menu_image }}{{ $submenuImg = . }}{{ end }}
-        {{ end }}
-
-        {{ if $submenuImg }}
-          <img class="submenu-top-image" src="{{ $submenuImg | relURL }}" alt="{{ .Title }}">
+        {{ if ne .Parent.Title .Title }}
+          {{ with .Params.image }}
+            <img class="submenu-image" src="{{ . }}" alt="{{ $.Title }}">
+          {{ end }}
         {{ end }}
       {{ end }}
 
-
-      {{/* ------------------------------------------------------
-           Sous-menus listés sous forme de liens
-         ------------------------------------------------------- */}}
       <div class="submenus">
         <ul>
           {{ range .Sections }}
@@ -64,13 +27,9 @@
         </ul>
       </div>
 
-
-      {{/* ------------------------------------------------------
-           CARTES : sous-menus + articles
-         ------------------------------------------------------- */}}
       <div class="articles-grid">
 
-        {{/* ---- 1 : cartes des sous-menus ---- */}}
+        <!-- 1️⃣ Affiche les sous-menus -->
         {{ range .Sections }}
           <article class="card">
             <a href="{{ .RelPermalink }}">
@@ -83,7 +42,7 @@
           </article>
         {{ end }}
 
-        {{/* ---- 2 : cartes des articles normaux ---- */}}
+        <!-- 2️⃣ Affiche uniquement les articles normaux -->
         {{ range where .Pages "Kind" "in" (slice "page") }}
           <article class="card">
             <a href="{{ .RelPermalink }}">

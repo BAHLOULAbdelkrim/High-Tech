@@ -1,0 +1,12 @@
+{{/* Trouve l’image de couverture du menu parent */}}
+{{ $parent := . }}
+{{ if .IsPage }}
+  {{ $parent = .Parent }}
+{{ end }}
+{{ if $parent.Parent }}
+  {{ $parent = $parent.Parent }}
+{{ end }}
+
+{{ if $parent.Params.image }}
+  <img class="cover-image" src="{{ $parent.Params.image }}" alt="{{ $parent.Title }}">
+{{ end }}

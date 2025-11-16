@@ -4,6 +4,7 @@
     <!-- Colonne gauche : pub + menus -->
     <aside class="left-ad">
       <div class="ad-slot ad-left"></div>
+
       <div class="left-column">
         {{ partial "leftmenus.html" . }}
       </div>
@@ -11,10 +12,14 @@
 
     <!-- Colonne centrale : contenu principal -->
     <article class="content-column">
+
       <h1>{{ .Title }}</h1>
 
-      {{/* ❌ SUPPRIMÉ : plus d'image de l’article ici  */}}
-      {{/* Cela évite tous les doublons */}}
+      <!-- 🎯 Cover = image du menu parent -->
+      {{ partial "cover.html" . }}
+
+      <!-- ❌ On supprime l'affichage automatique d'image -->
+      <!-- (Si l’auteur veut une image, il la met dans le Markdown) -->
 
       <aside class="toc">
         <h2>Sommaire</h2>
