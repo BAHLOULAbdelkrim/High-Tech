@@ -7,17 +7,49 @@
       <h1>{{ .Title }}</h1>
 
       <!-- ✔️ AJOUT : afficher l’image de la section (menus + sous-menus) -->
-       <!-- Zone des images de couverture -->
-      {{ if .IsSection }}
-        {{ $img := .Params.image }}          <!-- image de la section actuelle -->
-        {{ if .Parent }}                     <!-- si c'est un sous-menu -->
-          {{ $img = .Parent.Params.image }}  <!-- remplacer par l'image du menu parent -->
-        {{ end }}
+<!-- Remplace l'ancien bloc d'affichage d'image par celui-ci -->
+{{/* ---------------- Cover image (header) ---------------- */}}
+{{ $coverImg := "" }}
 
-        {{ if $img }}
-          <img class="section-cover" src="{{ $img }}" alt="{{ .Title }}">
-        {{ end }}
-      {{ end }}
+{{ if .IsSection }}
+  <!-- 1) Si on est dans un sous-menu, tenter l'image du parent -->
+  {{ with .Parent }}
+    {{ with .Params.image }}{{ $coverImg = . }}{{ end }}
+    {{ if not $coverImg }}
+      {{ with .Params.menu_image }}{{ $coverImg = . }}{{ end }}
+    {{ end }}
+  {{ end }}
+
+  <!-- 2) Si pas d'image de parent, fallback sur image/menu_image de la section courante -->
+  {{ if not $coverImg }}
+    {{ with .Params.image }}{{ $coverImg = . }}{{ end }}
+    {{ if not $coverImg }}
+      {{ with .Params.menu_image }}{{ $coverImg = . }}{{ end }}
+    {{ end }}
+  {{ end }}
+
+  <!-- 3) Affiche si on a quelque chose -->
+  {{ if $coverImg }}
+    <img class="section-cover" src="{{ $coverImg | relURL }}" alt="{{ if .Parent }}{{ .Parent.Title }}{{ else }}{{ .Title }}{{ end }}">
+  {{ end }}
+{{ end }}
+
+<!-- ---------------- Image au début de la page du sous-menu ---------------- -->
+<!-- Affiche l'image SPECIFIQUE au sous-menu (current section) uniquement si c'est un sous-menu -->
+{{ if and .IsSection .Parent }}
+  {{ $startImg := "" }}
+  {{ with .Params.image }}{{ $startImg = . }}{{ end }}
+  {{ if not $startImg }}
+    {{ with .Params.menu_image }}{{ $startImg = . }}{{ end }}
+  {{ end }}
+
+  {{ if $startImg }}
+    <div class="section-start-image">
+      <img src="{{ $startImg | relURL }}" alt="{{ .Title }}">
+    </div>
+  {{ end }}
+{{ end }}
+
       <!--  {{ if .Params.image }}
         <img class="section-cover" src="{{ .Params.image }}" alt="{{ .Title }}">
       {{ end }}   -->
