@@ -1,7 +1,7 @@
 ---
 title: "Tecno"
-menu_image: "/images/tecno.webp"
-image: "/images/tecno.webp"
+menu_image: "/images/smartphones_tecno.webp"
+image: "/images/smartphones_tecno.webp"
 weight: 9
 ---
 Page du sous-menu Pliables dans smartphones.

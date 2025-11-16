@@ -1,7 +1,7 @@
 ---
 title: "Vivo"
-menu_image: "/images/vivo.webp"
-image: "/images/vivo.webp"
+menu_image: "/images/smartphones_vivo.webp"
+image: "/images/smartphones_vivo.webp"
 weight: 5
 ---
 Page du sous-menu Android dans smartphones.

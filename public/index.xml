@@ -30,13 +30,6 @@
       <description>Exemple de résumé pour Amplis article 2.</description>
     </item>
     <item>
-      <title>Android — Article exemple 2</title>
-      <link>http://localhost:1313/tablettes/android/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/tablettes/android/article-2/</guid>
-      <description>Exemple de résumé pour Android article 2.</description>
-    </item>
-    <item>
       <title>Assistants vocaux — Article exemple 2</title>
       <link>http://localhost:1313/domotique/assistants-vocaux/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
@@ -161,13 +154,6 @@
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/impression/imprimantes-3d/article-2/</guid>
       <description>Exemple de résumé pour Imprimantes 3D article 2.</description>
-    </item>
-    <item>
-      <title>iPad — Article exemple 2</title>
-      <link>http://localhost:1313/tablettes/ipad/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/tablettes/ipad/article-2/</guid>
-      <description>Exemple de résumé pour iPad article 2.</description>
     </item>
     <item>
       <title>iPhone — Article exemple 2</title>
@@ -450,13 +436,6 @@
       <description>Exemple de résumé pour WebCam article 2.</description>
     </item>
     <item>
-      <title>Windows — Article exemple 2</title>
-      <link>http://localhost:1313/tablettes/windows/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/tablettes/windows/article-2/</guid>
-      <description>Exemple de résumé pour Windows article 2.</description>
-    </item>
-    <item>
       <title>Accessoires — Article exemple 1</title>
       <link>http://localhost:1313/gaming/accessoires/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
@@ -476,13 +455,6 @@
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/audio/amplis/article-1/</guid>
       <description>Exemple de résumé pour Amplis article 1.</description>
-    </item>
-    <item>
-      <title>Android — Article exemple 1</title>
-      <link>http://localhost:1313/tablettes/android/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/tablettes/android/article-1/</guid>
-      <description>Exemple de résumé pour Android article 1.</description>
     </item>
     <item>
       <title>Assistants vocaux — Article exemple 1</title>
@@ -609,13 +581,6 @@
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/impression/imprimantes-3d/article-1/</guid>
       <description>Exemple de résumé pour Imprimantes 3D article 1.</description>
-    </item>
-    <item>
-      <title>iPad — Article exemple 1</title>
-      <link>http://localhost:1313/tablettes/ipad/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/tablettes/ipad/article-1/</guid>
-      <description>Exemple de résumé pour iPad article 1.</description>
     </item>
     <item>
       <title>iPhone — Article exemple 1</title>
@@ -896,13 +861,6 @@
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/cameras/webcam/article-1/</guid>
       <description>Exemple de résumé pour WebCam article 1.</description>
-    </item>
-    <item>
-      <title>Windows — Article exemple 1</title>
-      <link>http://localhost:1313/tablettes/windows/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/tablettes/windows/article-1/</guid>
-      <description>Exemple de résumé pour Windows article 1.</description>
     </item>
     <item>
       <title>Série Redmi Note 8</title>
