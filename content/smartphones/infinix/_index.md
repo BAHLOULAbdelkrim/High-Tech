@@ -1,6 +1,7 @@
 ---
 title: "Infinix"
-menu_image: "/images/menu_smartphones.webp"
+menu_image: "/images/infinix.webp"
+image: "/images/infinix.webp"
 weight: 10
 ---
 Page du sous-menu Pliables dans smartphones.
