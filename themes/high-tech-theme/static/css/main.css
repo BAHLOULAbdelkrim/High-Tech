@@ -275,7 +275,10 @@ body{
 
 /* Menu latéral avec même style que les menus du haut */
 .side-links .menu-item a {
-  display: block;
+  display: flex;         /* mettre icône et texte sur la même ligne */
+  align-items: center;   /* centrer verticalement */
+  gap: 8px;              /* espace entre icône et texte */
+  white-space: nowrap;   /* empêcher le texte de passer à la ligne */
   background: var(--menu-bg);
   color: var(--violet);
   padding: var(--menu-padding);
