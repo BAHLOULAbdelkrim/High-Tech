@@ -15,11 +15,10 @@
 
       <h1>{{ .Title }}</h1>
 
-      <!-- 🎯 Cover = image du menu parent -->
+      <!-- Cover = image du menu parent -->
       {{ partial "cover.html" . }}
 
-      <!-- ❌ On supprime l'affichage automatique d'image -->
-      <!-- (Si l’auteur veut une image, il la met dans le Markdown) -->
+      <!-- On ne met PAS l'image de l'article pour éviter les doublons -->
 
       <aside class="toc">
         <h2>Sommaire</h2>

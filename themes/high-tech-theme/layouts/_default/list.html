@@ -7,15 +7,13 @@
     <section class="content-column">
       <h1>{{ .Title }}</h1>
 
-      <!-- 🎯 Cover = toujours l’image du menu parent -->
+      <!-- Cover = image du menu parent -->
       {{ partial "cover.html" . }}
 
-      <!-- 🎯 Image du sous-menu (uniquement dans un sous-menu) -->
+      <!-- Image du sous-menu uniquement sur les pages de sous-menu -->
       {{ if and .IsSection .Parent }}
-        {{ if ne .Parent.Title .Title }}
-          {{ with .Params.image }}
-            <img class="submenu-image" src="{{ . }}" alt="{{ $.Title }}">
-          {{ end }}
+        {{ with .Params.image }}
+          <img class="submenu-top-image" src="{{ . | relURL }}" alt="{{ .Title }}">
         {{ end }}
       {{ end }}
 
