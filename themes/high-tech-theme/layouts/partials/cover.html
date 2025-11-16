@@ -1,12 +1,26 @@
-{{/* Trouve l’image de couverture du menu parent */}}
-{{ $parent := . }}
+{{/* 
+  Partial : cover.html
+  But : afficher l’image du menu parent dans la zone couverture
+*/}}
+
+{{ $current := . }}
+
+{{/* Si c’est un article ou un sous-menu, on remonte jusqu’au menu parent */}}
 {{ if .IsPage }}
-  {{ $parent = .Parent }}
-{{ end }}
-{{ if $parent.Parent }}
-  {{ $parent = $parent.Parent }}
+  {{ $current = .Parent }}
+{{ else if .IsSection }}
+  {{ with .Parent }}
+    {{ $current = .Parent | default . }}
+  {{ end }}
 {{ end }}
 
-{{ if $parent.Params.image }}
-  <img class="cover-image" src="{{ $parent.Params.image }}" alt="{{ $parent.Title }}">
+{{/* On affiche l’image du menu parent (image ou menu_image) */}}
+{{ $cover := "" }}
+{{ with $current.Params.image }}{{ $cover = . }}{{ end }}
+{{ if not $cover }}
+  {{ with $current.Params.menu_image }}{{ $cover = . }}{{ end }}
+{{ end }}
+
+{{ if $cover }}
+  <img class="cover-image" src="{{ $cover | relURL }}" alt="{{ $current.Title }}">
 {{ end }}
