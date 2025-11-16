@@ -62,6 +62,19 @@ body{
   position: relative;
 }
 
+
+
+
+/* Limite propre de la zone centrale */
+.site-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+
+
 /* Logo */
 .logo {
   width: 56px;
@@ -81,20 +94,6 @@ body{
   padding: 0;
   margin: 0;
 }
-
-
-
-
-/* Limite propre de la zone centrale */
-.site-main {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-
-
-
 
 /* Menu principal avec brillance */
 .menu-item a {
@@ -782,3 +781,24 @@ body.menu-open {
 
 
 
+/* 🔧 Réactivation de la grille pour la home avec 3 colonnes */
+.container.home-content {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1200px) 160px; /* menu gauche + contenu + pub droite */
+  gap: 20px;
+  max-width: 1600px;  /* largeur totale incluant les colonnes gauche et droite */
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.container.home-content .left-column {
+  width: 160px;
+}
+
+.container.home-content .content-column {
+  width: 100%;
+}
+
+.container.home-content .right-column {
+  width: 160px;
+}
