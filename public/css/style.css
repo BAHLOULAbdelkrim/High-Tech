@@ -248,7 +248,6 @@ table td:nth-child(2) {
 
 
 
-
 /* Supprimer le soulignement de tous les liens dans les cartes, articles et sous-menus */
 article a,
 .articles-grid a,
@@ -268,4 +267,16 @@ article a:hover,
 .right-column a:hover {
     text-decoration: underline; /* souligné au survol */
     color: #0011ff;             /* optionnel : changer la couleur */
+}
+
+
+/* Style des images des sous-menus : */
+.section-cover {
+  display: block;
+  max-width: 900px;
+  width: 100%;
+  margin: 20px auto 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  object-fit: cover;
 }
