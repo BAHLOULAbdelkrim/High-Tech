@@ -63,6 +63,41 @@
 
 <section class="hero">
   {{ if .IsHome }}
+
+    <!-- ➤ Slideshow si page d'accueil -->
+    <div class="slideshow" id="slideshow">
+      <img src="{{ "images/slide1.webp" | relURL }}" class="slide visible">
+      <img src="{{ "images/slide2.webp" | relURL }}" class="slide">
+      <img src="{{ "images/slide3.webp" | relURL }}" class="slide">
+      <img src="{{ "images/slide4.webp" | relURL }}" class="slide">
+    </div>
+
+  {{ else }}
+
+    <!-- ➤ Toujours récupérer l'image du MENU parent -->
+    {{ $menu := site.GetPage (printf "/%s/_index.md" .Section) }}
+    {{ $menuImg := $menu.Params.menu_image }}
+
+    {{ if $menuImg }}
+      <div class="hero-static">
+        <img src="{{ $menuImg | relURL }}" alt="menu image">
+      </div>
+    {{ else }}
+      <!-- fallback slideshow -->
+      <div class="slideshow" id="slideshow">
+        <img src="{{ "images/slide1.webp" | relURL }}" class="slide visible">
+        <img src="{{ "images/slide2.webp" | relURL }}" class="slide">
+        <img src="{{ "images/slide3.webp" | relURL }}" class="slide">
+        <img src="{{ "images/slide4.webp" | relURL }}" class="slide">
+      </div>
+    {{ end }}
+
+  {{ end }}
+</section>
+
+<!--
+<section class="hero">
+  {{ if .IsHome }}
     <div class="slideshow" id="slideshow">
       <img src="{{ "images/slide1.webp" | relURL }}" class="slide visible">
       <img src="{{ "images/slide2.webp" | relURL }}" class="slide">
@@ -92,3 +127,4 @@
     {{ end }}
   {{ end }}
 </section>
+-->
