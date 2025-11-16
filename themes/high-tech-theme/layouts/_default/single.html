@@ -3,8 +3,13 @@
 
     <!-- Colonne gauche : pub + menus -->
     <aside class="left-ad">
-      <div class="ad-slot ad-left"></div>
+      <!-- Zone de pub gauche -->
+      <div class="ad-slot ad-left">
+        <!-- Tu pourras mettre ici une image, une bannière, ou un code pub -->
+        <!-- Exemple : <img src="{{ "images/pub-left.jpg" | relURL }}" alt="Publicité gauche"> -->
+      </div>
 
+      <!-- Menus latéraux existants -->
       <div class="left-column">
         {{ partial "leftmenus.html" . }}
       </div>
@@ -12,19 +17,12 @@
 
     <!-- Colonne centrale : contenu principal -->
     <article class="content-column">
-
       <h1>{{ .Title }}</h1>
-
-      <!-- Cover = image du menu parent -->
-      {{ partial "cover.html" . }}
-
-      <!-- On ne met PAS l'image de l'article pour éviter les doublons -->
-
+      <img class="article-image" src="{{ .Params.image }}" alt="{{ .Title }}">
       <aside class="toc">
-        <h2>Sommaire</h2>
-        {{ .TableOfContents }}
+          <h2>Sommaire</h2>
+          {{ .TableOfContents }}
       </aside>
-
       <div class="article-body">
         {{ .Content }}
       </div>
@@ -32,8 +30,12 @@
 
     <!-- Colonne droite : pub -->
     <aside class="right-ad">
-      <div class="ad-slot ad-right"></div>
+      <div class="ad-slot ad-right">
+        <!-- Tu pourras mettre ici une image ou un script pub -->
+        <!-- Exemple : <img src="{{ "images/pub-right.jpg" | relURL }}" alt="Publicité droite"> -->
+      </div>
     </aside>
 
   </div>
 {{ end }}
+
