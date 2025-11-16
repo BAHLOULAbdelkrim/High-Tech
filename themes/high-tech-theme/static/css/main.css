@@ -83,6 +83,19 @@ body{
 }
 
 
+
+
+/* Limite propre de la zone centrale */
+.site-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+
+
+
 /* Menu principal avec brillance */
 .menu-item a {
   display: block;
