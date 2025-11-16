@@ -280,3 +280,11 @@ article a:hover,
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
   object-fit: cover;
 }
+
+
+@media (max-width: 600px) {
+  .section-cover {
+    margin: 15px auto 25px auto;
+    border-radius: 8px;
+  }
+}
