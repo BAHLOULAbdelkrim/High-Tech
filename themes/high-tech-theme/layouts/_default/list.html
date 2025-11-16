@@ -7,9 +7,20 @@
       <h1>{{ .Title }}</h1>
 
       <!-- ✔️ AJOUT : afficher l’image de la section (menus + sous-menus) -->
-      {{ if .Params.image }}
-        <img class="section-cover" src="{{ .Params.image }}" alt="{{ .Title }}">
+       <!-- Zone des images de couverture -->
+      {{ if .IsSection }}
+        {{ $img := .Params.image }}          <!-- image de la section actuelle -->
+        {{ if .Parent }}                     <!-- si c'est un sous-menu -->
+          {{ $img = .Parent.Params.image }}  <!-- remplacer par l'image du menu parent -->
+        {{ end }}
+
+        {{ if $img }}
+          <img class="section-cover" src="{{ $img }}" alt="{{ .Title }}">
+        {{ end }}
       {{ end }}
+      <!--  {{ if .Params.image }}
+        <img class="section-cover" src="{{ .Params.image }}" alt="{{ .Title }}">
+      {{ end }}   -->
 
       <div class="submenus">
         <ul>
