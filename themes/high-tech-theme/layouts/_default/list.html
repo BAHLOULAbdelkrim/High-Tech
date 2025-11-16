@@ -5,6 +5,12 @@
     </aside>
     <section class="content-column">
       <h1>{{ .Title }}</h1>
+
+      <!-- ✔️ AJOUT : afficher l’image de la section (menus + sous-menus) -->
+      {{ if .Params.image }}
+        <img class="section-cover" src="{{ .Params.image }}" alt="{{ .Title }}">
+      {{ end }}
+
       <div class="submenus">
         <ul>
           {{ range .Sections }}
