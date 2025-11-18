@@ -5,11 +5,17 @@
     <loc>http://localhost:1313/tablettes/apple/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/pc-portables/apple/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/smartphones/apple/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tablettes/samsung/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/dell/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/smartphones/samsung/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
@@ -20,14 +26,23 @@
     <loc>http://localhost:1313/tablettes/xiaomi/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/pc-portables/hp/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tablettes/lenovo/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/smartphones/oppo-oneplus/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/pc-portables/lenovo/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tablettes/huawei/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/asus/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/smartphones/vivo/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
@@ -38,11 +53,17 @@
     <loc>http://localhost:1313/tablettes/microsoft/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/pc-portables/acer/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tablettes/honor/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/smartphones/realme/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/msi/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/smartphones/honor/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
@@ -50,17 +71,41 @@
     <loc>http://localhost:1313/tablettes/oneplus/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/pc-portables/razer/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/smartphones/tecno/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/pc-portables/huawei-honor/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/smartphones/infinix/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/samsung/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/microsoft/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/smartphones/motorola/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/smartphones/google/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/lg-gram/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/framework/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/gigabyte/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/toshiba/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/gaming/accessoires/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
@@ -206,13 +251,7 @@
     <loc>http://localhost:1313/ordinateurs/gaming/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/gaming/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/ordinateurs/gaming/article-2/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/pc-portables/gaming/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/audio/haut-parleurs/</loc>
@@ -296,13 +335,7 @@
     <loc>http://localhost:1313/ordinateurs/min-pc/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/min-pc/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/ordinateurs/min-pc/article-2/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/pc-portables/min-pc/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cameras/mirrorless/</loc>
@@ -332,16 +365,7 @@
     <loc>http://localhost:1313/ordinateurs/pc-de-bureau/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/pc-de-bureau/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/ordinateurs/pc-de-bureau/article-2/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/pc-portables/pc-de-bureau/article-2/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/pc-portables/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/peripheriques/</loc>
@@ -380,13 +404,7 @@
     <loc>http://localhost:1313/ordinateurs/portables/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/portables/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/ordinateurs/portables/article-2/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/pc-portables/portables/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cameras/projecteurs/</loc>
@@ -482,13 +500,7 @@
     <loc>http://localhost:1313/ordinateurs/ultrabooks/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/ultrabooks/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/ordinateurs/ultrabooks/article-2/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/pc-portables/ultrabooks/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cameras/webcam/</loc>
@@ -575,9 +587,6 @@
     <loc>http://localhost:1313/ordinateurs/gaming/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/gaming/article-1/</loc>
-    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/audio/haut-parleurs/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
@@ -620,9 +629,6 @@
     <loc>http://localhost:1313/ordinateurs/min-pc/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/min-pc/article-1/</loc>
-    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/cameras/mirrorless/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
@@ -633,9 +639,6 @@
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ordinateurs/pc-de-bureau/article-1/</loc>
-    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/pc-portables/pc-de-bureau/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/peripheriques/peripheriques/article-1/</loc>
@@ -663,9 +666,6 @@
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ordinateurs/portables/article-1/</loc>
-    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/pc-portables/portables/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cameras/projecteurs/article-1/</loc>
@@ -713,9 +713,6 @@
     <loc>http://localhost:1313/ordinateurs/ultrabooks/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/ultrabooks/article-1/</loc>
-    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/cameras/webcam/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
@@ -728,10 +725,58 @@
     <loc>http://localhost:1313/tags/nouveaut%C3%A9s/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/pc-portables/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/redmi/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/samsung/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/acer/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/apple/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/asus/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/dell/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/framework/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/gigabyte/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/hp/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/huawei-honor/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/lenovo/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/lg-gram/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/microsoft/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/msi/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/razer/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/samsung/redmi-note-8/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/toshiba/redmi-note-8/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/smartphones/apple/redmi-note-8/</loc>
@@ -758,6 +803,51 @@
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/pc-portables/acer/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/apple/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/asus/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/dell/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/framework/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/gigabyte/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/hp/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/huawei-honor/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/lenovo/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/lg-gram/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/microsoft/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/msi/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/razer/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/samsung/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/toshiba/exemple_template_1/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/smartphones/apple/exemple_template_1/</loc>
     <lastmod>2025-01-02T00:00:00+00:00</lastmod>
   </url><url>
@@ -769,6 +859,51 @@
   </url><url>
     <loc>http://localhost:1313/smartphones/vivo/exemple_template_1/</loc>
     <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/acer/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/apple/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/asus/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/dell/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/framework/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/gigabyte/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/hp/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/huawei-honor/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/lenovo/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/lg-gram/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/microsoft/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/msi/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/razer/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/samsung/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pc-portables/toshiba/redmi-note-9/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/smartphones/apple/redmi-note-9/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
