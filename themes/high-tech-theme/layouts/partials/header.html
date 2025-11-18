@@ -11,7 +11,7 @@
       {{/* 12 menus hardcoded as requested */}}
       <ul class="menu-grid">
         {{/* First row */}}
-        {{ range $i, $m := slice "smartphones" "tablettes" "ordinateurs" "cameras" "wearables" "home-cinema" }}
+        {{ range $i, $m := slice "smartphones" "tablettes" "pc-portables" "ordinateurs" "cameras" "home-cinema" }}
           {{ $page := site.GetPage (printf "/%s/_index.md" $m) }}
           <li class="menu-item">
             <a href="{{ printf "/%s/" $m | relURL }}" data-menu="{{ $m }}">
