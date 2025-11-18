@@ -46,7 +46,7 @@ theme = "high-tech-theme"
   description = "Nouveautés & Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d'achat complets."
 
   # Logo affiché dans le header
-  logo = "images/logo.png"
+  logo = "images/logo-bg.webp"
 
   # -----------------------------------------------------------
   # PALETTE DE COULEURS DU THÈME
