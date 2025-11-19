@@ -184,13 +184,6 @@
       <description>Exemple de résumé pour Gadgets article 2.</description>
     </item>
     <item>
-      <title>Gaming — Article exemple 2</title>
-      <link>http://localhost:1313/ordinateurs/gaming/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/ordinateurs/gaming/article-2/</guid>
-      <description>Exemple de résumé pour Gaming article 2.</description>
-    </item>
-    <item>
       <title>Haut-parleurs — Article exemple 2</title>
       <link>http://localhost:1313/audio/haut-parleurs/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
@@ -282,13 +275,6 @@
       <description>Exemple de résumé pour Microphones article 2.</description>
     </item>
     <item>
-      <title>Min PC — Article exemple 2</title>
-      <link>http://localhost:1313/ordinateurs/min-pc/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/ordinateurs/min-pc/article-2/</guid>
-      <description>Exemple de résumé pour Min PC article 2.</description>
-    </item>
-    <item>
       <title>Mirrorless — Article exemple 2</title>
       <link>http://localhost:1313/cameras/mirrorless/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
@@ -308,13 +294,6 @@
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/home-cinema/oled/article-2/</guid>
       <description>Exemple de résumé pour OLED article 2.</description>
-    </item>
-    <item>
-      <title>PC de bureau — Article exemple 2</title>
-      <link>http://localhost:1313/ordinateurs/pc-de-bureau/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/ordinateurs/pc-de-bureau/article-2/</guid>
-      <description>Exemple de résumé pour PC de bureau article 2.</description>
     </item>
     <item>
       <title>Périphériques — Article exemple 2</title>
@@ -371,13 +350,6 @@
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/smartphones/tecno/article-2/</guid>
       <description>Exemple de résumé pour Pliables article 2.</description>
-    </item>
-    <item>
-      <title>Portables — Article exemple 2</title>
-      <link>http://localhost:1313/ordinateurs/portables/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/ordinateurs/portables/article-2/</guid>
-      <description>Exemple de résumé pour Portables article 2.</description>
     </item>
     <item>
       <title>Projecteurs — Article exemple 2</title>
@@ -476,13 +448,6 @@
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/audio/true-wireless/article-2/</guid>
       <description>Exemple de résumé pour True wireless article 2.</description>
-    </item>
-    <item>
-      <title>Ultrabooks — Article exemple 2</title>
-      <link>http://localhost:1313/ordinateurs/ultrabooks/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/ordinateurs/ultrabooks/article-2/</guid>
-      <description>Exemple de résumé pour Ultrabooks article 2.</description>
     </item>
     <item>
       <title>WebCam — Article exemple 2</title>
@@ -667,13 +632,6 @@
       <description>Exemple de résumé pour Gadgets article 1.</description>
     </item>
     <item>
-      <title>Gaming — Article exemple 1</title>
-      <link>http://localhost:1313/ordinateurs/gaming/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/ordinateurs/gaming/article-1/</guid>
-      <description>Exemple de résumé pour Gaming article 1.</description>
-    </item>
-    <item>
       <title>Haut-parleurs — Article exemple 1</title>
       <link>http://localhost:1313/audio/haut-parleurs/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
@@ -765,13 +723,6 @@
       <description>Exemple de résumé pour Microphones article 1.</description>
     </item>
     <item>
-      <title>Min PC — Article exemple 1</title>
-      <link>http://localhost:1313/ordinateurs/min-pc/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/ordinateurs/min-pc/article-1/</guid>
-      <description>Exemple de résumé pour Min PC article 1.</description>
-    </item>
-    <item>
       <title>Mirrorless — Article exemple 1</title>
       <link>http://localhost:1313/cameras/mirrorless/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
@@ -791,13 +742,6 @@
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/home-cinema/oled/article-1/</guid>
       <description>Exemple de résumé pour OLED article 1.</description>
-    </item>
-    <item>
-      <title>PC de bureau — Article exemple 1</title>
-      <link>http://localhost:1313/ordinateurs/pc-de-bureau/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/ordinateurs/pc-de-bureau/article-1/</guid>
-      <description>Exemple de résumé pour PC de bureau article 1.</description>
     </item>
     <item>
       <title>Périphériques — Article exemple 1</title>
@@ -854,13 +798,6 @@
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/smartphones/tecno/article-1/</guid>
       <description>Exemple de résumé pour Pliables article 1.</description>
-    </item>
-    <item>
-      <title>Portables — Article exemple 1</title>
-      <link>http://localhost:1313/ordinateurs/portables/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/ordinateurs/portables/article-1/</guid>
-      <description>Exemple de résumé pour Portables article 1.</description>
     </item>
     <item>
       <title>Projecteurs — Article exemple 1</title>
@@ -961,18 +898,95 @@
       <description>Exemple de résumé pour True wireless article 1.</description>
     </item>
     <item>
-      <title>Ultrabooks — Article exemple 1</title>
-      <link>http://localhost:1313/ordinateurs/ultrabooks/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/ordinateurs/ultrabooks/article-1/</guid>
-      <description>Exemple de résumé pour Ultrabooks article 1.</description>
-    </item>
-    <item>
       <title>WebCam — Article exemple 1</title>
       <link>http://localhost:1313/cameras/webcam/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/cameras/webcam/article-1/</guid>
       <description>Exemple de résumé pour WebCam article 1.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 8</title>
+      <link>http://localhost:1313/ordinateurs/acer/redmi-note-8/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/acer/redmi-note-8/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 8.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 8</title>
+      <link>http://localhost:1313/ordinateurs/apple/redmi-note-8/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/apple/redmi-note-8/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 8.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 8</title>
+      <link>http://localhost:1313/ordinateurs/asus/redmi-note-8/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/asus/redmi-note-8/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 8.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 8</title>
+      <link>http://localhost:1313/ordinateurs/corsair/redmi-note-8/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/corsair/redmi-note-8/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 8.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 8</title>
+      <link>http://localhost:1313/ordinateurs/cyberpower/redmi-note-8/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/cyberpower/redmi-note-8/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 8.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 8</title>
+      <link>http://localhost:1313/ordinateurs/dell/redmi-note-8/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/dell/redmi-note-8/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 8.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 8</title>
+      <link>http://localhost:1313/ordinateurs/hp/redmi-note-8/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/hp/redmi-note-8/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 8.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 8</title>
+      <link>http://localhost:1313/ordinateurs/ibuypower/redmi-note-8/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/ibuypower/redmi-note-8/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 8.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 8</title>
+      <link>http://localhost:1313/ordinateurs/lenovo/redmi-note-8/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/lenovo/redmi-note-8/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 8.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 8</title>
+      <link>http://localhost:1313/ordinateurs/microsoft/redmi-note-8/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/microsoft/redmi-note-8/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 8.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 8</title>
+      <link>http://localhost:1313/ordinateurs/msi/redmi-note-8/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/msi/redmi-note-8/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 8.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 8</title>
+      <link>http://localhost:1313/ordinateurs/nzxt/redmi-note-8/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/nzxt/redmi-note-8/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 8.</description>
     </item>
     <item>
       <title>Série Redmi Note 8</title>
@@ -1109,6 +1123,90 @@
     </item>
     <item>
       <title>TITRE DE L’ARTICLE</title>
+      <link>http://localhost:1313/ordinateurs/acer/exemple_template_1/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/acer/exemple_template_1/</guid>
+      <description>&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SOMMAIRE AUTOMATIQUE --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 INTRODUCTION (fade-in) --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;L’introduction présente le sujet, donne le contexte et met en valeur l’intérêt de l’article.&lt;br&gt;&#xA;Tu peux inclure des liens internes, images, mises en avant, etc.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 1 --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;1-présentation-générale-du-produit&#34;&gt;1. Présentation générale du produit&lt;/h2&gt;&#xA;&lt;p&gt;Texte explicatif…&lt;/p&gt;&#xA;&lt;h3 id=&#34;exemple-dimage-centrée-avec-légende&#34;&gt;Exemple d’image centrée avec légende&lt;/h3&gt;&#xA;&lt;figure class=&#34;img-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/Redmi_Note_8.webp&#34; alt=&#34;Désignation&#34;&gt;&#xA;  &lt;figcaption&gt;Désignation de l’image (ex : Vue avant du téléphone)&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 2 : TABLEAU ANIMÉ --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;2-spécifications-techniques&#34;&gt;2. Spécifications techniques&lt;/h2&gt;&#xA;&lt;p&gt;Voici un tableau complet des caractéristiques principales.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TITRE DE L’ARTICLE</title>
+      <link>http://localhost:1313/ordinateurs/apple/exemple_template_1/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/apple/exemple_template_1/</guid>
+      <description>&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SOMMAIRE AUTOMATIQUE --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 INTRODUCTION (fade-in) --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;L’introduction présente le sujet, donne le contexte et met en valeur l’intérêt de l’article.&lt;br&gt;&#xA;Tu peux inclure des liens internes, images, mises en avant, etc.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 1 --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;1-présentation-générale-du-produit&#34;&gt;1. Présentation générale du produit&lt;/h2&gt;&#xA;&lt;p&gt;Texte explicatif…&lt;/p&gt;&#xA;&lt;h3 id=&#34;exemple-dimage-centrée-avec-légende&#34;&gt;Exemple d’image centrée avec légende&lt;/h3&gt;&#xA;&lt;figure class=&#34;img-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/Redmi_Note_8.webp&#34; alt=&#34;Désignation&#34;&gt;&#xA;  &lt;figcaption&gt;Désignation de l’image (ex : Vue avant du téléphone)&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 2 : TABLEAU ANIMÉ --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;2-spécifications-techniques&#34;&gt;2. Spécifications techniques&lt;/h2&gt;&#xA;&lt;p&gt;Voici un tableau complet des caractéristiques principales.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TITRE DE L’ARTICLE</title>
+      <link>http://localhost:1313/ordinateurs/asus/exemple_template_1/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/asus/exemple_template_1/</guid>
+      <description>&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SOMMAIRE AUTOMATIQUE --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 INTRODUCTION (fade-in) --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;L’introduction présente le sujet, donne le contexte et met en valeur l’intérêt de l’article.&lt;br&gt;&#xA;Tu peux inclure des liens internes, images, mises en avant, etc.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 1 --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;1-présentation-générale-du-produit&#34;&gt;1. Présentation générale du produit&lt;/h2&gt;&#xA;&lt;p&gt;Texte explicatif…&lt;/p&gt;&#xA;&lt;h3 id=&#34;exemple-dimage-centrée-avec-légende&#34;&gt;Exemple d’image centrée avec légende&lt;/h3&gt;&#xA;&lt;figure class=&#34;img-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/Redmi_Note_8.webp&#34; alt=&#34;Désignation&#34;&gt;&#xA;  &lt;figcaption&gt;Désignation de l’image (ex : Vue avant du téléphone)&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 2 : TABLEAU ANIMÉ --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;2-spécifications-techniques&#34;&gt;2. Spécifications techniques&lt;/h2&gt;&#xA;&lt;p&gt;Voici un tableau complet des caractéristiques principales.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TITRE DE L’ARTICLE</title>
+      <link>http://localhost:1313/ordinateurs/corsair/exemple_template_1/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/corsair/exemple_template_1/</guid>
+      <description>&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SOMMAIRE AUTOMATIQUE --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 INTRODUCTION (fade-in) --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;L’introduction présente le sujet, donne le contexte et met en valeur l’intérêt de l’article.&lt;br&gt;&#xA;Tu peux inclure des liens internes, images, mises en avant, etc.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 1 --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;1-présentation-générale-du-produit&#34;&gt;1. Présentation générale du produit&lt;/h2&gt;&#xA;&lt;p&gt;Texte explicatif…&lt;/p&gt;&#xA;&lt;h3 id=&#34;exemple-dimage-centrée-avec-légende&#34;&gt;Exemple d’image centrée avec légende&lt;/h3&gt;&#xA;&lt;figure class=&#34;img-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/Redmi_Note_8.webp&#34; alt=&#34;Désignation&#34;&gt;&#xA;  &lt;figcaption&gt;Désignation de l’image (ex : Vue avant du téléphone)&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 2 : TABLEAU ANIMÉ --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;2-spécifications-techniques&#34;&gt;2. Spécifications techniques&lt;/h2&gt;&#xA;&lt;p&gt;Voici un tableau complet des caractéristiques principales.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TITRE DE L’ARTICLE</title>
+      <link>http://localhost:1313/ordinateurs/cyberpower/exemple_template_1/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/cyberpower/exemple_template_1/</guid>
+      <description>&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SOMMAIRE AUTOMATIQUE --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 INTRODUCTION (fade-in) --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;L’introduction présente le sujet, donne le contexte et met en valeur l’intérêt de l’article.&lt;br&gt;&#xA;Tu peux inclure des liens internes, images, mises en avant, etc.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 1 --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;1-présentation-générale-du-produit&#34;&gt;1. Présentation générale du produit&lt;/h2&gt;&#xA;&lt;p&gt;Texte explicatif…&lt;/p&gt;&#xA;&lt;h3 id=&#34;exemple-dimage-centrée-avec-légende&#34;&gt;Exemple d’image centrée avec légende&lt;/h3&gt;&#xA;&lt;figure class=&#34;img-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/Redmi_Note_8.webp&#34; alt=&#34;Désignation&#34;&gt;&#xA;  &lt;figcaption&gt;Désignation de l’image (ex : Vue avant du téléphone)&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 2 : TABLEAU ANIMÉ --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;2-spécifications-techniques&#34;&gt;2. Spécifications techniques&lt;/h2&gt;&#xA;&lt;p&gt;Voici un tableau complet des caractéristiques principales.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TITRE DE L’ARTICLE</title>
+      <link>http://localhost:1313/ordinateurs/dell/exemple_template_1/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/dell/exemple_template_1/</guid>
+      <description>&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SOMMAIRE AUTOMATIQUE --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 INTRODUCTION (fade-in) --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;L’introduction présente le sujet, donne le contexte et met en valeur l’intérêt de l’article.&lt;br&gt;&#xA;Tu peux inclure des liens internes, images, mises en avant, etc.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 1 --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;1-présentation-générale-du-produit&#34;&gt;1. Présentation générale du produit&lt;/h2&gt;&#xA;&lt;p&gt;Texte explicatif…&lt;/p&gt;&#xA;&lt;h3 id=&#34;exemple-dimage-centrée-avec-légende&#34;&gt;Exemple d’image centrée avec légende&lt;/h3&gt;&#xA;&lt;figure class=&#34;img-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/Redmi_Note_8.webp&#34; alt=&#34;Désignation&#34;&gt;&#xA;  &lt;figcaption&gt;Désignation de l’image (ex : Vue avant du téléphone)&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 2 : TABLEAU ANIMÉ --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;2-spécifications-techniques&#34;&gt;2. Spécifications techniques&lt;/h2&gt;&#xA;&lt;p&gt;Voici un tableau complet des caractéristiques principales.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TITRE DE L’ARTICLE</title>
+      <link>http://localhost:1313/ordinateurs/hp/exemple_template_1/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/hp/exemple_template_1/</guid>
+      <description>&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SOMMAIRE AUTOMATIQUE --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 INTRODUCTION (fade-in) --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;L’introduction présente le sujet, donne le contexte et met en valeur l’intérêt de l’article.&lt;br&gt;&#xA;Tu peux inclure des liens internes, images, mises en avant, etc.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 1 --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;1-présentation-générale-du-produit&#34;&gt;1. Présentation générale du produit&lt;/h2&gt;&#xA;&lt;p&gt;Texte explicatif…&lt;/p&gt;&#xA;&lt;h3 id=&#34;exemple-dimage-centrée-avec-légende&#34;&gt;Exemple d’image centrée avec légende&lt;/h3&gt;&#xA;&lt;figure class=&#34;img-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/Redmi_Note_8.webp&#34; alt=&#34;Désignation&#34;&gt;&#xA;  &lt;figcaption&gt;Désignation de l’image (ex : Vue avant du téléphone)&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 2 : TABLEAU ANIMÉ --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;2-spécifications-techniques&#34;&gt;2. Spécifications techniques&lt;/h2&gt;&#xA;&lt;p&gt;Voici un tableau complet des caractéristiques principales.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TITRE DE L’ARTICLE</title>
+      <link>http://localhost:1313/ordinateurs/ibuypower/exemple_template_1/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/ibuypower/exemple_template_1/</guid>
+      <description>&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SOMMAIRE AUTOMATIQUE --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 INTRODUCTION (fade-in) --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;L’introduction présente le sujet, donne le contexte et met en valeur l’intérêt de l’article.&lt;br&gt;&#xA;Tu peux inclure des liens internes, images, mises en avant, etc.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 1 --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;1-présentation-générale-du-produit&#34;&gt;1. Présentation générale du produit&lt;/h2&gt;&#xA;&lt;p&gt;Texte explicatif…&lt;/p&gt;&#xA;&lt;h3 id=&#34;exemple-dimage-centrée-avec-légende&#34;&gt;Exemple d’image centrée avec légende&lt;/h3&gt;&#xA;&lt;figure class=&#34;img-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/Redmi_Note_8.webp&#34; alt=&#34;Désignation&#34;&gt;&#xA;  &lt;figcaption&gt;Désignation de l’image (ex : Vue avant du téléphone)&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 2 : TABLEAU ANIMÉ --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;2-spécifications-techniques&#34;&gt;2. Spécifications techniques&lt;/h2&gt;&#xA;&lt;p&gt;Voici un tableau complet des caractéristiques principales.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TITRE DE L’ARTICLE</title>
+      <link>http://localhost:1313/ordinateurs/lenovo/exemple_template_1/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/lenovo/exemple_template_1/</guid>
+      <description>&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SOMMAIRE AUTOMATIQUE --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 INTRODUCTION (fade-in) --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;L’introduction présente le sujet, donne le contexte et met en valeur l’intérêt de l’article.&lt;br&gt;&#xA;Tu peux inclure des liens internes, images, mises en avant, etc.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 1 --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;1-présentation-générale-du-produit&#34;&gt;1. Présentation générale du produit&lt;/h2&gt;&#xA;&lt;p&gt;Texte explicatif…&lt;/p&gt;&#xA;&lt;h3 id=&#34;exemple-dimage-centrée-avec-légende&#34;&gt;Exemple d’image centrée avec légende&lt;/h3&gt;&#xA;&lt;figure class=&#34;img-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/Redmi_Note_8.webp&#34; alt=&#34;Désignation&#34;&gt;&#xA;  &lt;figcaption&gt;Désignation de l’image (ex : Vue avant du téléphone)&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 2 : TABLEAU ANIMÉ --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;2-spécifications-techniques&#34;&gt;2. Spécifications techniques&lt;/h2&gt;&#xA;&lt;p&gt;Voici un tableau complet des caractéristiques principales.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TITRE DE L’ARTICLE</title>
+      <link>http://localhost:1313/ordinateurs/microsoft/exemple_template_1/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/microsoft/exemple_template_1/</guid>
+      <description>&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SOMMAIRE AUTOMATIQUE --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 INTRODUCTION (fade-in) --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;L’introduction présente le sujet, donne le contexte et met en valeur l’intérêt de l’article.&lt;br&gt;&#xA;Tu peux inclure des liens internes, images, mises en avant, etc.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 1 --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;1-présentation-générale-du-produit&#34;&gt;1. Présentation générale du produit&lt;/h2&gt;&#xA;&lt;p&gt;Texte explicatif…&lt;/p&gt;&#xA;&lt;h3 id=&#34;exemple-dimage-centrée-avec-légende&#34;&gt;Exemple d’image centrée avec légende&lt;/h3&gt;&#xA;&lt;figure class=&#34;img-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/Redmi_Note_8.webp&#34; alt=&#34;Désignation&#34;&gt;&#xA;  &lt;figcaption&gt;Désignation de l’image (ex : Vue avant du téléphone)&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 2 : TABLEAU ANIMÉ --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;2-spécifications-techniques&#34;&gt;2. Spécifications techniques&lt;/h2&gt;&#xA;&lt;p&gt;Voici un tableau complet des caractéristiques principales.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TITRE DE L’ARTICLE</title>
+      <link>http://localhost:1313/ordinateurs/msi/exemple_template_1/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/msi/exemple_template_1/</guid>
+      <description>&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SOMMAIRE AUTOMATIQUE --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 INTRODUCTION (fade-in) --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;L’introduction présente le sujet, donne le contexte et met en valeur l’intérêt de l’article.&lt;br&gt;&#xA;Tu peux inclure des liens internes, images, mises en avant, etc.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 1 --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;1-présentation-générale-du-produit&#34;&gt;1. Présentation générale du produit&lt;/h2&gt;&#xA;&lt;p&gt;Texte explicatif…&lt;/p&gt;&#xA;&lt;h3 id=&#34;exemple-dimage-centrée-avec-légende&#34;&gt;Exemple d’image centrée avec légende&lt;/h3&gt;&#xA;&lt;figure class=&#34;img-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/Redmi_Note_8.webp&#34; alt=&#34;Désignation&#34;&gt;&#xA;  &lt;figcaption&gt;Désignation de l’image (ex : Vue avant du téléphone)&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 2 : TABLEAU ANIMÉ --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;2-spécifications-techniques&#34;&gt;2. Spécifications techniques&lt;/h2&gt;&#xA;&lt;p&gt;Voici un tableau complet des caractéristiques principales.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TITRE DE L’ARTICLE</title>
+      <link>http://localhost:1313/ordinateurs/nzxt/exemple_template_1/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/nzxt/exemple_template_1/</guid>
+      <description>&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SOMMAIRE AUTOMATIQUE --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 INTRODUCTION (fade-in) --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;L’introduction présente le sujet, donne le contexte et met en valeur l’intérêt de l’article.&lt;br&gt;&#xA;Tu peux inclure des liens internes, images, mises en avant, etc.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 1 --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;1-présentation-générale-du-produit&#34;&gt;1. Présentation générale du produit&lt;/h2&gt;&#xA;&lt;p&gt;Texte explicatif…&lt;/p&gt;&#xA;&lt;h3 id=&#34;exemple-dimage-centrée-avec-légende&#34;&gt;Exemple d’image centrée avec légende&lt;/h3&gt;&#xA;&lt;figure class=&#34;img-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/Redmi_Note_8.webp&#34; alt=&#34;Désignation&#34;&gt;&#xA;  &lt;figcaption&gt;Désignation de l’image (ex : Vue avant du téléphone)&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 2 : TABLEAU ANIMÉ --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;2-spécifications-techniques&#34;&gt;2. Spécifications techniques&lt;/h2&gt;&#xA;&lt;p&gt;Voici un tableau complet des caractéristiques principales.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TITRE DE L’ARTICLE</title>
       <link>http://localhost:1313/pc-portables/acer/exemple_template_1/</link>
       <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pc-portables/acer/exemple_template_1/</guid>
@@ -1239,6 +1337,90 @@
       <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/smartphones/vivo/exemple_template_1/</guid>
       <description>&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SOMMAIRE AUTOMATIQUE --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 INTRODUCTION (fade-in) --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;L’introduction présente le sujet, donne le contexte et met en valeur l’intérêt de l’article.&lt;br&gt;&#xA;Tu peux inclure des liens internes, images, mises en avant, etc.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 1 --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;1-présentation-générale-du-produit&#34;&gt;1. Présentation générale du produit&lt;/h2&gt;&#xA;&lt;p&gt;Texte explicatif…&lt;/p&gt;&#xA;&lt;h3 id=&#34;exemple-dimage-centrée-avec-légende&#34;&gt;Exemple d’image centrée avec légende&lt;/h3&gt;&#xA;&lt;figure class=&#34;img-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/Redmi_Note_8.webp&#34; alt=&#34;Désignation&#34;&gt;&#xA;  &lt;figcaption&gt;Désignation de l’image (ex : Vue avant du téléphone)&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;!-- 🔹 SECTION 2 : TABLEAU ANIMÉ --&gt;&#xA;&lt;!-- ========================= --&gt;&#xA;&lt;div class=&#34;fade-in&#34;&gt;&#xA;&lt;h2 id=&#34;2-spécifications-techniques&#34;&gt;2. Spécifications techniques&lt;/h2&gt;&#xA;&lt;p&gt;Voici un tableau complet des caractéristiques principales.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 9</title>
+      <link>http://localhost:1313/ordinateurs/acer/redmi-note-9/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/acer/redmi-note-9/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 9.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 9</title>
+      <link>http://localhost:1313/ordinateurs/apple/redmi-note-9/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/apple/redmi-note-9/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 9.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 9</title>
+      <link>http://localhost:1313/ordinateurs/asus/redmi-note-9/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/asus/redmi-note-9/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 9.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 9</title>
+      <link>http://localhost:1313/ordinateurs/corsair/redmi-note-9/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/corsair/redmi-note-9/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 9.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 9</title>
+      <link>http://localhost:1313/ordinateurs/cyberpower/redmi-note-9/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/cyberpower/redmi-note-9/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 9.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 9</title>
+      <link>http://localhost:1313/ordinateurs/dell/redmi-note-9/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/dell/redmi-note-9/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 9.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 9</title>
+      <link>http://localhost:1313/ordinateurs/hp/redmi-note-9/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/hp/redmi-note-9/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 9.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 9</title>
+      <link>http://localhost:1313/ordinateurs/ibuypower/redmi-note-9/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/ibuypower/redmi-note-9/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 9.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 9</title>
+      <link>http://localhost:1313/ordinateurs/lenovo/redmi-note-9/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/lenovo/redmi-note-9/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 9.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 9</title>
+      <link>http://localhost:1313/ordinateurs/microsoft/redmi-note-9/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/microsoft/redmi-note-9/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 9.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 9</title>
+      <link>http://localhost:1313/ordinateurs/msi/redmi-note-9/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/msi/redmi-note-9/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 9.</description>
+    </item>
+    <item>
+      <title>Série Redmi Note 9</title>
+      <link>http://localhost:1313/ordinateurs/nzxt/redmi-note-9/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ordinateurs/nzxt/redmi-note-9/</guid>
+      <description>Découvrez les variantes de série Xiaomi-Redmi Note 9.</description>
     </item>
     <item>
       <title>Série Redmi Note 9</title>
