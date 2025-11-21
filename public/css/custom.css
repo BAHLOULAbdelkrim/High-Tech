@@ -236,6 +236,12 @@
     border-radius: 12px;
     overflow: hidden;
     background-color: #eaeafa; /* couleur du corps */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beamer-box:hover {
+    transform: scale(1.03); /* agrandissement léger */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* ombre portée */
 }
 
 .beamer-title {
