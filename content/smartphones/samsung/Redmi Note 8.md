@@ -10,9 +10,9 @@ categories: ["Smartphones"]
 keywords: ["Redmi Note 8", "test", "smartphone"]     # Pour SEO avancé (balise meta keywords, facultatif).
 slug: "redmi-note-8"     # Pour personnaliser l’URL de l’article.
 ---
-<p>Contenu d'exemple généré automatiquement pour l'article 1 du sous-menu Android. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at.</p>
+<!-- <p>Contenu d'exemple généré automatiquement pour l'article 1 du sous-menu Android. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at.</p> -->
 
-Exemple de tag : Si tu veux consulter le 9 : <a href="https://high-tech.pages.dev/smartphones/android/redmi-note-9/" class="tag-link">Redmi Note 9</a> est ........
+Exemple de tag : Si tu veux consulter le : <a href="https://high-tech.pages.dev/smartphones/android/redmi-note-9/" class="tag-link">Redmi Note 9</a> est ........
 
 <div class="fade-in">
 
@@ -29,7 +29,143 @@ Exemple de tag : Si tu veux consulter le 9 : <a href="https://high-tech.pages.de
 	Redmi Note 8 (2021)
  - **Dates de sortie :** 
 
+
+
+{{< beamersbox title="Introduction" >}}
+
+- Module **Signaux et Systèmes**
+- Partie **Signaux** : initiation au traitement du signal
+- Discipline qui étudie filtrage, échantillonnage, compression, etc.
+
+{{< /beamersbox >}}
+
+
+
+{{< beamertable title="Exercise (plane robot)" >}}
+
+<table class="beamer-table">
+  <thead>
+    <tr class="top-border bold">
+      <th>Joint i</th>
+      <th>α_i</th>
+      <th>d_i</th>
+      <th>r_i</th>
+      <th>θ_i</th>
+    </tr>
+    <tr class="mid-border double">
+      <th>1</th>
+      <th>^z₀,z₁ / x₀ = 0</th>
+      <th>O₀,z₁ / x₀ = 0</th>
+      <th>x₀,O₁ / z₁ = 0</th>
+      <th>x₀,x₁ / z₁ = θ₁(t)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="mid-border single">
+      <td>2</td>
+      <td>^z₁,z₂ / x₁ = 0</td>
+      <td>O₁,z₂ / x₁ = l₁</td>
+      <td>x₁,O₂ / z₂ = 0</td>
+      <td>x₁,x₂ / z₂ = θ₂(t)</td>
+    </tr>
+    <tr class="bottom-border bold">
+      <td>3</td>
+      <td>^z₂,z₃ / x₂ = 0</td>
+      <td>O₂,z₃ / x₂ = l₂</td>
+      <td>x₂,O₃ / z₃ = 0</td>
+      <td>x₂,x₃ / z₃ = θ₃(t)</td>
+    </tr>
+  </tbody>
+</table>
+
+{{< /beamertable >}}
+
+{{< beamertable title="Exercise (plane robot)" >}}
+
+<table class="beamer-table">
+  <thead>
+    <tr class="top-border bold">
+      <th class="vline">Joint i</th>
+      <th class="vline">α_i</th>
+      <th class="vline">d_i</th>
+      <th class="vline">r_i</th>
+      <th>θ_i</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="mid-border single">
+      <td class="vline">1</td>
+      <td class="vline">^z₀,z₁ / x₀ = 0</td>
+      <td class="vline">O₀,z₁ / x₀ = 0</td>
+      <td class="vline">x₀,O₁ / z₁ = 0</td>
+      <td>θ₁(t)</td>
+    </tr>
+    <tr class="mid-border double">
+      <td class="vline">2</td>
+      <td class="vline">^z₁,z₂ / x₁ = 0</td>
+      <td class="vline">O₁,z₂ / x₁ = l₁</td>
+      <td class="vline">x₁,O₂ / z₂ = 0</td>
+      <td>θ₂(t)</td>
+    </tr>
+    <tr class="bottom-border bold">
+      <td class="vline">3</td>
+      <td class="vline">^z₂,z₃ / x₂ = 0</td>
+      <td class="vline">O₂,z₃ / x₂ = l₂</td>
+      <td class="vline">x₂,O₃ / z₃ = 0</td>
+      <td>θ₃(t)</td>
+    </tr>
+  </tbody>
+</table>
+
+
+{{< /beamertable >}}
+
+{{< beamertable title="Exercise (plane robot)" >}}
+
+<table class="beamer-table-segmented">
+  <thead>
+    <tr class="top-border bold">
+      <th>Joint i</th>
+      <th class="vline-segment">α_i</th>
+      <th class="vline-segment">d_i</th>
+      <th class="vline-segment">r_i</th>
+      <th>θ_i</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="mid-border single">
+      <td>1</td>
+      <td class="vline-segment">^z₀,z₁ / x₀ = 0</td>
+      <td class="vline-segment">O₀,z₁ / x₀ = 0</td>
+      <td class="vline-segment">x₀,O₁ / z₁ = 0</td>
+      <td>θ₁(t)</td>
+    </tr>
+    <tr class="mid-border double">
+      <td>2</td>
+      <td class="vline-segment">^z₁,z₂ / x₁ = 0</td>
+      <td class="vline-segment">O₁,z₂ / x₁ = l₁</td>
+      <td class="vline-segment">x₁,O₂ / z₂ = 0</td>
+      <td>θ₂(t)</td>
+    </tr>
+    <tr class="bottom-border bold">
+      <td>3</td>
+      <td class="vline-segment">^z₂,z₃ / x₂ = 0</td>
+      <td class="vline-segment">O₂,z₃ / x₂ = l₂</td>
+      <td class="vline-segment">x₂,O₃ / z₃ = 0</td>
+      <td>θ₃(t)</td>
+    </tr>
+  </tbody>
+</table>
+
+
+{{< /beamertable >}}
+
 </div>
+
+<div class="fade-in info-box">
+  📌 Astuce : Vous pouvez centrer une image en utilisant `margin: 0 auto;`.
+</div>
+
 
 <div class="fade-in">
 
@@ -45,9 +181,10 @@ Exemple de tag : Si tu veux consulter le 9 : <a href="https://high-tech.pages.de
 <div class="fade-in">
 
 <figure class="img-center img-medium">
-    <img src="/images/Redmi_Note_8.webp" alt="Redmi Note 8">
-    <figcaption>Le Redmi Note 8 — version globale</figcaption>
+	<img src="/images/Redmi_Note_8.webp" alt="Redmi Note 8">
+	<figcaption>Le Redmi Note 8 — version globale</figcaption>
 </figure>
+
 
 </div>
 
@@ -146,6 +283,7 @@ Exemple de tag : Si tu veux consulter le 9 : <a href="https://high-tech.pages.de
 
 </div>
 
+<!--
 # Redmi Note 8 Pro : test complet, fiche technique et avis
 
 ## Introduction
@@ -181,3 +319,4 @@ Tableau avec Amazon, Fnac, Darty, AliExpress, etc. (prix au lancement + prix act
 
 ## Verdict
 Résumé objectif : pour qui ce téléphone est encore intéressant ?
+-->

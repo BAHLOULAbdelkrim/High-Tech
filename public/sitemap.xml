@@ -92,7 +92,7 @@
     <loc>http://localhost:1313/tablettes/oneplus/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ordinateurs/cyberpower/</loc>
+    <loc>http://localhost:1313/ordinateurs/corsair/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pc-portables/razer/</loc>
@@ -100,6 +100,9 @@
   </url><url>
     <loc>http://localhost:1313/smartphones/tecno/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ordinateurs/cyberpower/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pc-portables/huawei-honor/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
@@ -113,31 +116,28 @@
     <loc>http://localhost:1313/pc-portables/samsung/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ordinateurs/microsoft/</loc>
-    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/pc-portables/microsoft/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/smartphones/motorola/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/ordinateurs/nzxt/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/smartphones/google/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ordinateurs/corsair/</loc>
+    <loc>http://localhost:1313/pc-portables/lg-gram/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/lg-gram/</loc>
+    <loc>http://localhost:1313/ordinateurs/microsoft/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pc-portables/framework/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pc-portables/gigabyte/</loc>
-    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ordinateurs/nzxt/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pc-portables/toshiba/</loc>
