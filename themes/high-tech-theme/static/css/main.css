@@ -551,6 +551,7 @@ body{
 .lang-icon {
   width: 18px;
   height: 18px;
+  gap: 6px;
   color: #6b21a8ff;
 }
 
@@ -559,6 +560,7 @@ body{
   position: absolute;
   right: 0;
   top: 110%;
+  gap: 6px;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -572,6 +574,7 @@ body{
 .lang-dropdown li a {
   display: inline-flex;
   padding: 8px 14px;
+  gap: 6px;
   color: #000000;
   text-decoration: none;
   gap: 6px; /* espace entre le drapeau et le texte */
@@ -585,7 +588,7 @@ body{
 
 /* Affichage du menu au clic */
 .lang-selector.open .lang-dropdown {
-  display: block;
+  display: inline-flex;
 }
 
 /* Empêche le scroll du fond quand le menu est ouvert */
