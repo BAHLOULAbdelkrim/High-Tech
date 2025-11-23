@@ -297,36 +297,46 @@
     </form>
 
     
-    <div class="lang-selector">
-      <button class="lang-current">
-        <img src="/images/flags/fr.png" alt="FR" width="20" height="14">
-        <span>     
-          Français
-        </span>
-      </button>
-      <ul class="lang-dropdown">
-        <li>
-          <a href="/fr/">
-            <img src="/images/flags/fr.png" alt="FR" width="20" height="14">
-            Français
-          </a>
-        </li>
-        <li>
-          <a href="/en/">
-            <img src="/images/flags/us.png" alt="EN" width="20" height="14"> 
-            English
-          </a>
-        </li>
-        <li>
-          <a href="/ar/">
-            <img src="/images/flags/ar.png" alt="AR" width="20" height="14">
-            العربية
-          </a>
-        </li>
-      </ul>
-    </div>
+<div class="lang-selector">
+  <button class="lang-current">
+    <img src="/images/flags/fr.png" alt="FR" width="20" height="14">
+    <span>Français</span>
+  </button>
+  <ul class="lang-dropdown">
+    <li><a href="/en/"><img src="/images/flags/us.png" alt="EN" width="20" height="14">English</a></li>
+    <li><a href="/ar/"><img src="/images/flags/ar.png" alt="AR" width="20" height="14">العربية</a></li>
+  </ul>
+</div>
+
 
   </div>
+
+<style>
+.lang-selector { position: relative; }
+.lang-current { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+.lang-dropdown { display: none; flex-direction: column; position: absolute; top: 110%; right: 0; background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 4px 0; list-style: none; z-index: 10; }
+.lang-dropdown li a { display: flex; align-items: center; gap: 6px; padding: 8px 14px; text-decoration: none; color: #000; }
+.lang-dropdown li a:hover { background: var(--menu-hover-bg); color: var(--menu-hover-text); }
+.lang-selector.open .lang-dropdown { display: flex; }
+</style>
+
+<script>
+const langSelector = document.querySelector('.lang-selector');
+const btn = langSelector.querySelector('.lang-current');
+btn.addEventListener('click', () => langSelector.classList.toggle('open'));
+
+const langLinks = document.querySelectorAll('.lang-dropdown a');
+langLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const currentPath = window.location.pathname;
+    const newLang = this.getAttribute('href').replace(/\//g,'');
+    const newPath = currentPath.replace(/^\/(fr|en|ar)/, '/' + newLang);
+    window.location.href = newPath;
+  });
+});
+</script>
+
 </section>
 
 

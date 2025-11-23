@@ -560,7 +560,8 @@ body{
   position: absolute;
   right: 0;
   top: 110%;
-  gap: 6px;
+  flex-direction: column;   /* ajouter */
+  display: flex;            /* remplacer display: none par display: flex; et masquer via JS */
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -587,8 +588,11 @@ body{
 }
 
 /* Affichage du menu au clic */
+.lang-selector .lang-dropdown {
+  display: none; /* caché par défaut */
+}
 .lang-selector.open .lang-dropdown {
-  display: inline-flex;
+  display: flex; /* affiché en colonne */
 }
 
 /* Empêche le scroll du fond quand le menu est ouvert */
