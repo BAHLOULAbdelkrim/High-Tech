@@ -15,7 +15,9 @@ baseURL = "https://high-tech.pages.dev/"
 title = "High-Tech — Nouvelles Technologies, Tests et Comparatifs"
 
 # Langue principale
-languageCode = "fr"
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = true
+
 
 # Thème Hugo utilisé
 theme = "high-tech-theme"

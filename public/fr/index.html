@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="fr">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
+	<meta name="generator" content="Hugo 0.151.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   
-  <title>Accueil - High-Tech — Nouvelles Technologies, Tests et Comparatifs</title>
+  <title>High-Tech — Nouvelles Technologies, Tests et Comparatifs - High-Tech — Nouvelles Technologies, Tests et Comparatifs</title>
   
   
   <meta name="description" content="Nouveautés &amp; Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d&#39;achat complets.">
@@ -31,7 +32,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   
-  <title>Accueil — High-Tech — Nouvelles Technologies, Tests et Comparatifs</title>
+  <title>High-Tech — Nouvelles Technologies, Tests et Comparatifs — High-Tech — Nouvelles Technologies, Tests et Comparatifs</title>
 
   
   <meta name="description" content="Nouveautés &amp; Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d&#39;achat complets.">
@@ -40,7 +41,7 @@
   <link rel="canonical" href="http://localhost:1313/fr/">
 
   
-  <meta property="og:title" content="Accueil — High-Tech — Nouvelles Technologies, Tests et Comparatifs">
+  <meta property="og:title" content="High-Tech — Nouvelles Technologies, Tests et Comparatifs — High-Tech — Nouvelles Technologies, Tests et Comparatifs">
   <meta property="og:description" content="Nouveautés &amp; Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d&#39;achat complets.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://localhost:1313/fr/">
@@ -49,7 +50,7 @@
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Accueil — High-Tech — Nouvelles Technologies, Tests et Comparatifs">
+  <meta name="twitter:title" content="High-Tech — Nouvelles Technologies, Tests et Comparatifs — High-Tech — Nouvelles Technologies, Tests et Comparatifs">
   <meta name="twitter:description" content="Nouveautés &amp; Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d&#39;achat complets.">
   
 
@@ -73,7 +74,7 @@
 </head>
 
 
-<body class="not-home" data-section="fr">
+<body class="home" data-section="">
 
   
   <header class="site-header">
@@ -257,18 +258,12 @@
   
 
     
-    
-    
-
-    
-      
-      <div class="slideshow" id="slideshow">
-        <img src="/images/slide1.webp" class="slide visible">
-        <img src="/images/slide2.webp" class="slide">
-        <img src="/images/slide3.webp" class="slide">
-        <img src="/images/slide4.webp" class="slide">
-      </div>
-    
+    <div class="slideshow" id="slideshow">
+      <img src="/images/slide1.webp" class="slide visible">
+      <img src="/images/slide2.webp" class="slide">
+      <img src="/images/slide3.webp" class="slide">
+      <img src="/images/slide4.webp" class="slide">
+    </div>
 
   
 </section>
@@ -297,46 +292,30 @@
     </form>
 
     
-<div class="lang-selector">
-  <button class="lang-current">
-    <img src="/images/flags/fr.png" alt="FR" width="20" height="14">
-    <span>Français</span>
-  </button>
-  <ul class="lang-dropdown">
-    <li><a href="/en/"><img src="/images/flags/us.png" alt="EN" width="20" height="14">English</a></li>
-    <li><a href="/ar/"><img src="/images/flags/ar.png" alt="AR" width="20" height="14">العربية</a></li>
-  </ul>
-</div>
-
+    <div class="lang-selector">
+      <button class="lang-current">
+        <img src="/images/flags/fr.png" alt="FR" width="20" height="14">
+        <span>     
+          Français
+        </span>
+      </button>
+      <ul class="lang-dropdown">
+        <li>
+          <a href="/en/">
+            <img src="/images/flags/us.png" alt="EN" width="20" height="14"> 
+            English
+          </a>
+        </li>
+        <li>
+          <a href="/ar/">
+            <img src="/images/flags/ar.png" alt="AR" width="20" height="14">
+            العربية
+          </a>
+        </li>
+      </ul>
+    </div>
 
   </div>
-
-<style>
-.lang-selector { position: relative; }
-.lang-current { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
-.lang-dropdown { display: none; flex-direction: column; position: absolute; top: 110%; right: 0; background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 4px 0; list-style: none; z-index: 10; }
-.lang-dropdown li a { display: flex; align-items: center; gap: 6px; padding: 8px 14px; text-decoration: none; color: #000; }
-.lang-dropdown li a:hover { background: var(--menu-hover-bg); color: var(--menu-hover-text); }
-.lang-selector.open .lang-dropdown { display: flex; }
-</style>
-
-<script>
-const langSelector = document.querySelector('.lang-selector');
-const btn = langSelector.querySelector('.lang-current');
-btn.addEventListener('click', () => langSelector.classList.toggle('open'));
-
-const langLinks = document.querySelectorAll('.lang-dropdown a');
-langLinks.forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    const currentPath = window.location.pathname;
-    const newLang = this.getAttribute('href').replace(/\//g,'');
-    const newPath = currentPath.replace(/^\/(fr|en|ar)/, '/' + newLang);
-    window.location.href = newPath;
-  });
-});
-</script>
-
 </section>
 
 
@@ -414,7 +393,7 @@ langLinks.forEach(link => {
   
   <main class="site-main">
     
-  <div class="container section-list">
+  <div class="container home-content">
     <aside class="left-column">
       <div class="side-links">
   <ul>
@@ -430,192 +409,85 @@ langLinks.forEach(link => {
 </div>
 
     </aside>
+
     <section class="content-column">
-      <h1>Accueil</h1>
 
-      
-      
-
-      <div class="submenus">
-        <ul>
-          
-            <li><a href="/fr/audio/">Audio</a></li>
-          
-            <li><a href="/fr/cameras/">Caméras</a></li>
-          
-            <li><a href="/fr/domotique/">Domotique</a></li>
-          
-            <li><a href="/fr/gaming/">Gaming</a></li>
-          
-            <li><a href="/fr/home-cinema/">Home Cinéma</a></li>
-          
-            <li><a href="/fr/impression/">Impression</a></li>
-          
-            <li><a href="/fr/obj-connectes/">Obj. Connectés</a></li>
-          
-            <li><a href="/fr/peripheriques/">Périphériques</a></li>
-          
-            <li><a href="/fr/smartphones/">Smartphones</a></li>
-          
-            <li><a href="/fr/tablettes/">Tablettes</a></li>
-          
-            <li><a href="/fr/ordinateurs/">Ordinateurs</a></li>
-          
-            <li><a href="/fr/pc-portables/">PC Portables</a></li>
-          
-            <li><a href="/fr/nouveautes/">Nouveautés</a></li>
-          
-            <li><a href="/fr/trier-par/">Trier par</a></li>
-          
-        </ul>
+      <h2>Derniers articles</h2>
+      <div class="latest-grid">
+        
+          <article class="card">
+            <a href="/fr/fr/cameras/webcam/article-2/">
+              <img src="/images/image_art.jpg" alt="WebCam — Article exemple 2">
+              <h3>WebCam — Article exemple 2</h3>
+              <p>Exemple de résumé pour WebCam article 2.</p>
+            </a>
+          </article>
+        
+          <article class="card">
+            <a href="/fr/en/cameras/webcam/article-2/">
+              <img src="/images/image_art.jpg" alt="WebCam — Article exemple 2">
+              <h3>WebCam — Article exemple 2</h3>
+              <p>Exemple de résumé pour WebCam article 2.</p>
+            </a>
+          </article>
+        
+          <article class="card">
+            <a href="/fr/ar/cameras/webcam/article-2/">
+              <img src="/images/image_art.jpg" alt="WebCam — Article exemple 2">
+              <h3>WebCam — Article exemple 2</h3>
+              <p>Exemple de résumé pour WebCam article 2.</p>
+            </a>
+          </article>
+        
+          <article class="card">
+            <a href="/fr/fr/audio/true-wireless/article-2/">
+              <img src="/images/image_art.jpg" alt="True wireless — Article exemple 2">
+              <h3>True wireless — Article exemple 2</h3>
+              <p>Exemple de résumé pour True wireless article 2.</p>
+            </a>
+          </article>
+        
+          <article class="card">
+            <a href="/fr/en/audio/true-wireless/article-2/">
+              <img src="/images/image_art.jpg" alt="True wireless — Article exemple 2">
+              <h3>True wireless — Article exemple 2</h3>
+              <p>Exemple de résumé pour True wireless article 2.</p>
+            </a>
+          </article>
+        
+          <article class="card">
+            <a href="/fr/ar/audio/true-wireless/article-2/">
+              <img src="/images/image_art.jpg" alt="True wireless — Article exemple 2">
+              <h3>True wireless — Article exemple 2</h3>
+              <p>Exemple de résumé pour True wireless article 2.</p>
+            </a>
+          </article>
+        
+          <article class="card">
+            <a href="/fr/fr/impression/traceurs/article-2/">
+              <img src="/images/image_art.jpg" alt="Traceurs — Article exemple 2">
+              <h3>Traceurs — Article exemple 2</h3>
+              <p>Exemple de résumé pour Traceurs article 2.</p>
+            </a>
+          </article>
+        
+          <article class="card">
+            <a href="/fr/en/impression/traceurs/article-2/">
+              <img src="/images/image_art.jpg" alt="Traceurs — Article exemple 2">
+              <h3>Traceurs — Article exemple 2</h3>
+              <p>Exemple de résumé pour Traceurs article 2.</p>
+            </a>
+          </article>
+        
+          <article class="card">
+            <a href="/fr/ar/impression/traceurs/article-2/">
+              <img src="/images/image_art.jpg" alt="Traceurs — Article exemple 2">
+              <h3>Traceurs — Article exemple 2</h3>
+              <p>Exemple de résumé pour Traceurs article 2.</p>
+            </a>
+          </article>
+        
       </div>
-
-<div class="articles-grid">
-  
-  
-    <article class="card">
-      <a href="/fr/audio/">
-        <h2>Audio</h2>
-        <p><p>Page principale de la section audio.</p></p>
-        
-          <img src="/images/menu_audio.webp" alt="Accueil">
-        
-      </a>
-    </article>
-  
-    <article class="card">
-      <a href="/fr/cameras/">
-        <h2>Caméras</h2>
-        <p><p>Page principale de la section cameras.</p></p>
-        
-          <img src="/images/menu_cameras.webp" alt="Accueil">
-        
-      </a>
-    </article>
-  
-    <article class="card">
-      <a href="/fr/domotique/">
-        <h2>Domotique</h2>
-        <p><p>Page principale de la section domotique.</p></p>
-        
-          <img src="/images/menu_domotique.webp" alt="Accueil">
-        
-      </a>
-    </article>
-  
-    <article class="card">
-      <a href="/fr/gaming/">
-        <h2>Gaming</h2>
-        <p><p>Page principale de la section gaming.</p></p>
-        
-          <img src="/images/menu_gaming.webp" alt="Accueil">
-        
-      </a>
-    </article>
-  
-    <article class="card">
-      <a href="/fr/home-cinema/">
-        <h2>Home Cinéma</h2>
-        <p><p>Page principale de la section home-cinema.</p></p>
-        
-          <img src="/images/menu_home-cinema.webp" alt="Accueil">
-        
-      </a>
-    </article>
-  
-    <article class="card">
-      <a href="/fr/impression/">
-        <h2>Impression</h2>
-        <p><p>Page principale de la section impression.</p></p>
-        
-          <img src="/images/menu_impression.webp" alt="Accueil">
-        
-      </a>
-    </article>
-  
-    <article class="card">
-      <a href="/fr/obj-connectes/">
-        <h2>Obj. Connectés</h2>
-        <p><p>Page principale de la section objets-connectes.</p></p>
-        
-          <img src="/images/menu_obj-connectes.webp" alt="Accueil">
-        
-      </a>
-    </article>
-  
-    <article class="card">
-      <a href="/fr/peripheriques/">
-        <h2>Périphériques</h2>
-        <p><p>Page principale de la section accessoires.</p></p>
-        
-          <img src="/images/menu_peripheriques.webp" alt="Accueil">
-        
-      </a>
-    </article>
-  
-    <article class="card">
-      <a href="/fr/smartphones/">
-        <h2>Smartphones</h2>
-        <p><p>Page principale de la section smartphones.</p></p>
-        
-          <img src="/images/menu_smartphones.webp" alt="Accueil">
-        
-      </a>
-    </article>
-  
-    <article class="card">
-      <a href="/fr/tablettes/">
-        <h2>Tablettes</h2>
-        <p><p>Page principale de la section tablettes.</p></p>
-        
-          <img src="/images/menu_tablettes.webp" alt="Accueil">
-        
-      </a>
-    </article>
-  
-    <article class="card">
-      <a href="/fr/ordinateurs/">
-        <h2>Ordinateurs</h2>
-        <p><p>Page principale de la section ordinateurs.</p></p>
-        
-          <img src="/images/menu_ordinateurs.webp" alt="Accueil">
-        
-      </a>
-    </article>
-  
-    <article class="card">
-      <a href="/fr/pc-portables/">
-        <h2>PC Portables</h2>
-        <p><p>Page principale de la section ordinateurs.</p></p>
-        
-          <img src="/images/menu_pc-portables.webp" alt="Accueil">
-        
-      </a>
-    </article>
-  
-    <article class="card">
-      <a href="/fr/nouveautes/">
-        <h2>Nouveautés</h2>
-        <p><p>Page actualite.</p></p>
-        
-      </a>
-    </article>
-  
-    <article class="card">
-      <a href="/fr/trier-par/">
-        <h2>Trier par</h2>
-        <p><p>Page comparatifs.</p></p>
-        
-      </a>
-    </article>
-  
-  
-  
-</div>
-
-      
-        
-      
     </section>
   </div>
 
