@@ -27,7 +27,6 @@ body{
   font-weight:900;
   font-size:1.4rem;
   margin-left:8px;
-
 }
 
 /* Header et structure existants */
@@ -500,7 +499,7 @@ body{
 /* Barre de recherche */
 .search-input {
   flex: 1;
-  max-width: 1200px; /* 🔧 tu peux ajuster ici la largeur */
+  max-width: 1500px; /* 🔧 tu peux ajuster ici la largeur */
   padding: 10px 14px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -520,14 +519,14 @@ body{
   transition: color 0.2s ease;
 }
 
-.search-button .search-icon {
+.search-button .icon-search {
   width: 22px;
   height: 22px;
   color: #ede9feff;
   transition: color 0.2s ease;
 }
 
-.search-button:hover .search-icon {
+.search-button:hover .icon-search {
   color: #6b21a8ff;
 }
 
@@ -537,7 +536,7 @@ body{
 }
 
 .lang-current {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 6px;
   background: transparent;
@@ -545,7 +544,8 @@ body{
   border-radius: 6px;
   padding: 8px 10px;
   cursor: pointer;
-  color: #333;
+  color: #000000;
+  width: 115px;
 }
 
 .lang-icon {
@@ -570,15 +570,17 @@ body{
 }
 
 .lang-dropdown li a {
-  display: block;
+  display: inline-flex;
   padding: 8px 14px;
-  color: #333;
+  color: #000000;
   text-decoration: none;
+  gap: 6px; /* espace entre le drapeau et le texte */
 }
 
 .lang-dropdown li a:hover {
   background: var(--menu-hover-bg);
   color: var(--menu-hover-text);
+  gap: 6px; /* espace entre le drapeau et le texte */
 }
 
 /* Affichage du menu au clic */
@@ -612,7 +614,7 @@ body.menu-open {
   align-items: center;
   justify-content: flex-end;
   gap: 12px;
-  max-width: 1200px;
+  max-width: 1235px;
   margin: 0 auto;
   padding: 8px 16px;
 }

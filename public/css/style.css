@@ -3,7 +3,7 @@
    ============================ */
 
 article {
-    font-family: 'Helvetica', Inter, sans-serif;
+    font-family: Inter, sans-serif;
     line-height: 1.6;
     font-size: 18px;
     color: #000;
@@ -29,6 +29,7 @@ article h1, article h2, article h3 {
     font-weight: bold;
     margin-top: 0.0em;
     margin-bottom: 0.5em;
+/*    font-style: italic;  */
 }
 
 article h1 {
