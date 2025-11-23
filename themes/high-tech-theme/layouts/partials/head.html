@@ -22,9 +22,17 @@
      /* small helpers */
      .main-color { --tw-bg-opacity:1; background-color: theme(colors.emerald.400); }
      </style>
-</head>
+  
+     <!-- Sélection de la langue du site -->
+     <script>
+          const lang = navigator.language || navigator.userLanguage;
+          if (!window.location.pathname.match(/^\/(fr|en|ar)\//)) {
+          if (lang.startsWith("fr")) window.location.href = "/fr/";
+          else if (lang.startsWith("ar")) window.location.href = "/ar/";
+          else window.location.href = "/en/";
+          }
+     </script>
 
-<head>
   <!-- ---------------------------------------------------------
        MÉTA-DONNÉES DE BASE + TITRE
        --------------------------------------------------------- -->

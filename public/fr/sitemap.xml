@@ -151,6 +151,21 @@
   </url><url>
     <loc>http://localhost:1313/fr/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/"
+                />
   </url><url>
     <loc>http://localhost:1313/fr/cameras/action-cam/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
@@ -709,6 +724,21 @@
   </url><url>
     <loc>http://localhost:1313/fr/categories/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/categories/"
+                />
   </url><url>
     <loc>http://localhost:1313/fr/tags/nouveaut%C3%A9s/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
@@ -829,6 +859,21 @@
   </url><url>
     <loc>http://localhost:1313/fr/tags/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/"
+                />
   </url><url>
     <loc>http://localhost:1313/fr/ordinateurs/acer/exemple_template_1/</loc>
     <lastmod>2025-01-02T00:00:00+00:00</lastmod>
