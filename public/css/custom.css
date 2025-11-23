@@ -1,0 +1,275 @@
+
+/* Pour les box */
+
+.beamer-box {
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    margin: 1.5rem 0;
+    overflow: hidden;
+    border: 1px solid #0011ff; /* bleu sombre */
+    font-family: inherit;        /* hérite de la police du site */
+}
+
+.beamer-title {
+    background-color: #0011ff;   /* couleur CambridgeUS (bleu foncé) */
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+}
+
+.beamer-body {
+    background-color: #eaeafa; /* bleu clair comme dans texte=darkred!10 */
+    padding: 0rem 1.2rem;     /* haut/droite/bas/gauche */
+    font-size: 1rem;
+    color: #000;
+}
+
+.beamer-body ul {
+    margin-top: 0.5rem;
+}
+
+
+/* Pour les tableaux */
+
+.beamer-box {
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    margin: 1.5rem 0;
+    overflow: hidden;
+    border: 1px solid #0011ff; /* bleu foncé */
+}
+
+.beamer-title {
+    background-color: #0011ff;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+}
+
+.beamer-body {
+    background-color: #eaeafa;
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    color: #000;
+}
+
+.beamer-body table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.beamer-body th, .beamer-body td {
+    border: 1px solid #0011ff;
+    padding: 0.5rem 0.75rem;
+}
+
+.beamer-body th {
+    background-color: #d0e1f5; /* un bleu clair pour l'entête */
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.beamer-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+/* Lignes horizontales */
+.beamer-table tr.top-border th,
+.beamer-table tr.bottom-border td {
+    border-top: 3px solid #0011ff; /* bordure supérieure ou inférieure en gras */
+    border-bottom: 3px solid #0011ff;
+}
+
+.beamer-table tr.mid-border.single th,
+.beamer-table tr.mid-border.single td {
+    border-bottom: 1px solid #0011ff; /* ligne simple */
+}
+
+.beamer-table tr.mid-border.double th,
+.beamer-table tr.mid-border.double td {
+    border-bottom: 3px double #0011ff; /* ligne double */
+}
+
+/* Bordures verticales */
+.beamer-table th, .beamer-table td {
+    border-left: 0px;  /* par défaut on supprime la gauche */
+    border-right: 0px; /* par défaut on supprime la droite */
+    padding: 0.5rem;
+}
+
+/* Facultatif : ajouter verticales sur certaines colonnes */
+.beamer-table td.has-left-border {
+    border-left: 2px solid #0011ff;
+}
+.beamer-table td.has-right-border {
+    border-right: 2px solid #0011ff;
+}
+
+
+
+
+/* CSS pour les lignes verticlaes */ 
+.beamer-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+/* Lignes horizontales */
+.beamer-table tr.top-border th,
+.beamer-table tr.bottom-border td {
+    border-top: 3px solid #0011ff; 
+    border-bottom: 3px solid #0011ff;
+}
+
+.beamer-table tr.mid-border.single th,
+.beamer-table tr.mid-border.single td {
+    border-bottom: 1px solid #0011ff;
+}
+
+.beamer-table tr.mid-border.double th,
+.beamer-table tr.mid-border.double td {
+    border-bottom: 3px double #0011ff;
+}
+
+/* Lignes verticales */
+.beamer-table td.vline,
+.beamer-table th.vline {
+    border-right: 1px solid #0011ff;
+}
+
+/* Optionnel : mettre la dernière colonne avec une ligne verticale */
+.beamer-table td:last-child {
+    border-right: 0;
+}
+
+
+
+
+/* CSS pour les segments verticaux */
+
+.beamer-table-segmented {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+/* Lignes horizontales */
+.beamer-table-segmented tr.top-border th {
+    border-top: 3px solid #0011ff;
+}
+.beamer-table-segmented tr.bottom-border td {
+    border-bottom: 3px solid #0011ff;
+}
+.beamer-table-segmented tr.mid-border.single th,
+.beamer-table-segmented tr.mid-border.single td {
+    border-bottom: 1px solid #0011ff;
+}
+.beamer-table-segmented tr.mid-border.double th,
+.beamer-table-segmented tr.mid-border.double td {
+    border-bottom: 3px double #0011ff;
+}
+
+/* Segment vertical uniquement via pseudo-élément */
+.vline-segment {
+    position: relative;
+}
+
+/* Segment vertical */
+.vline-segment::after {
+    content: '';
+    position: absolute;
+    top: 4px;       /* commence juste après la ligne horizontale supérieure */
+    bottom: 4px;    /* finit juste avant la ligne horizontale inférieure */
+    right: 0;
+    width: 1px;
+    background-color: #0011ff;
+}
+
+/* On supprime toutes les bordures verticales classiques */
+.beamer-table-segmented th,
+.beamer-table-segmented td {
+    border-left: 0;
+    border-right: 0;
+    padding: 0.5rem;
+}
+
+
+
+.beamer-box {
+    border: none;           /* supprime le contour global */
+    box-shadow: none;       /* supprime l’ombre si nécessaire */
+    border-radius: 12px;    /* on garde l’arrondi si tu veux */
+    overflow: hidden;
+}
+
+.beamer-title {
+    border: none;           /* supprime le trait sous le titre */
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+}
+
+
+
+.beamer-box {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #eaeafa; /* couleur du corps */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beamer-box:hover {
+    transform: scale(1.03); /* agrandissement léger */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* ombre portée */
+}
+
+.beamer-title {
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #0011ff; /* couleur principale de l’entête */
+    position: relative;
+    font-size: 1.5rem;
+}
+
+/* Transition douce au bas de l’en-tête */
+.beamer-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;          /* commence exactement à la limite du titre */
+    height: 8px;         /* zone de transition */
+    background: linear-gradient(to bottom, #0011ff 0%, #eaeafa 100%);
+    pointer-events: none; /* pour ne pas gêner la sélection du texte */
+}
+
+
+.beamer-body {
+    padding-top: 0.3rem;  /* diminue pour remonter le texte */
+    padding-right: 1.2rem;
+    padding-bottom: 1rem;
+    padding-left: 1.2rem;
+    font-size: 1.5rem;
+}

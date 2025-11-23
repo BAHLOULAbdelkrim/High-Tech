@@ -7,32 +7,24 @@
   
   <!-- Description SEO -->
   <meta name="description" content="{{ .Site.Params.description }}">
-  <link rel="icon" type="image/png" href="{{ "favicon_HT.png" | absURL }}">
+  <link rel="icon" type="image/png" href="{{ "favicon_2.png" | absURL }}">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
- <!--    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">   -->
- <!--    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">   -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
      <!-- Styles personnalisés -->
      <style>
      body { font-family: 'Inter', sans-serif; }
      /* small helpers */
      .main-color { --tw-bg-opacity:1; background-color: theme(colors.emerald.400); }
      </style>
-  
-     <!-- Sélection de la langue du site -->
-     <script>
-          const lang = navigator.language || navigator.userLanguage;
-          if (!window.location.pathname.match(/^\/(fr|en|ar)\//)) {
-          if (lang.startsWith("fr")) window.location.href = "/fr/";
-          else if (lang.startsWith("ar")) window.location.href = "/ar/";
-          else window.location.href = "/en/";
-          }
-     </script>
+</head>
 
+<head>
   <!-- ---------------------------------------------------------
        MÉTA-DONNÉES DE BASE + TITRE
        --------------------------------------------------------- -->
