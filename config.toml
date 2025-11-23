@@ -18,7 +18,6 @@ title = "High-Tech — Nouvelles Technologies, Tests et Comparatifs"
 defaultContentLanguage = "fr"
 defaultContentLanguageInSubdir = true
 
-
 # Thème Hugo utilisé
 theme = "high-tech-theme"
 
@@ -43,6 +42,8 @@ theme = "high-tech-theme"
 # PARAMÈTRES PERSONNALISÉS DU THÈME
 # -------------------------------------------------------------
 [params]
+
+  showAllLanguages = true 
 
   # Description du site (utilisée pour les meta-description SEO)
   description = "Nouveautés & Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d'achat complets."

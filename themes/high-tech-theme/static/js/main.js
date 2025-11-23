@@ -131,3 +131,6 @@ document.addEventListener("DOMContentLoaded", function() {
         appearOnScroll.observe(el);
     });
 });
+
+
+// Sélecteur de langue : 
