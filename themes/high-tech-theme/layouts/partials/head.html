@@ -7,8 +7,7 @@
   
   <!-- Description SEO -->
   <meta name="description" content="{{ .Site.Params.description }}">
-<!--   <link rel="icon" type="image/png" href="{{ "favicon_HT.png" | absURL }}">    -->
-  <link rel="icon" type="image/png" href="/favicon_HT.png">
+  <link rel="icon" type="image/png" href="{{ "favicon_2.png" | absURL }}">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -23,16 +22,9 @@
      /* small helpers */
      .main-color { --tw-bg-opacity:1; background-color: theme(colors.emerald.400); }
      </style>
-  
+
      <!-- Sélection de la langue du site -->
-     <script>
-          const lang = navigator.language || navigator.userLanguage;
-          if (!window.location.pathname.match(/^\/(fr|en|ar)\//)) {
-          if (lang.startsWith("fr")) window.location.href = "/fr/";
-          else if (lang.startsWith("ar")) window.location.href = "/ar/";
-          else window.location.href = "/en/";
-          }
-     </script>
+
 
   <!-- ---------------------------------------------------------
        MÉTA-DONNÉES DE BASE + TITRE
@@ -92,8 +84,17 @@
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
   <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
 
-  <!-- ---------------------------------------------------------
-       JAVASCRIPT DU SITE
-       --------------------------------------------------------- -->
-  <script defer src="{{ "js/main.js" | relURL }}"></script>
+<!-- Javascript pour la détection de la lnague du navigateur pour afficher la bonne version du site -->
+
+  <script>
+    const lang = navigator.language || navigator.userLanguage;
+    const path = window.location.pathname;
+
+    if (path === "/") {
+      if (lang.startsWith("ar")) window.location.href = "/ar/";
+      else if (lang.startsWith("fr")) window.location.href = "/fr/";
+      else window.location.href = "/en/";
+    }
+  </script>
+  
 </head>

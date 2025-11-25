@@ -15,25 +15,8 @@ baseURL = "https://high-tech.pages.dev/"
 title = "High-Tech — Nouvelles Technologies, Tests et Comparatifs"
 
 # Langue principale
-languageCode = "fr"
-
 defaultContentLanguage = "fr"
 defaultContentLanguageInSubdir = true
-
-[languages]
-
-[languages.fr]
-  languageName = "Français"
-  weight = 1
-
-[languages.en]
-  languageName = "English"
-  weight = 2
-
-[languages.ar]
-  languageName = "العربية"
-  weight = 3
-
 
 # Thème Hugo utilisé
 theme = "high-tech-theme"
@@ -59,6 +42,8 @@ theme = "high-tech-theme"
 # PARAMÈTRES PERSONNALISÉS DU THÈME
 # -------------------------------------------------------------
 [params]
+
+  showAllLanguages = true 
 
   # Description du site (utilisée pour les meta-description SEO)
   description = "Nouveautés & Tendances High-Tech : smartphones, ordinateurs, tablettes, caméras et objets connectés. Tests, actualités, comparatifs et guides d'achat complets."
