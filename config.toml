@@ -1,27 +1,19 @@
-baseURL = "https://blabla/"
-title = "blabla"
-theme = "simple"
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
-enableRobotsTXT = true
+
+baseURL = "https://blabla.pages.dev/"
+languageCode = "fr"
+defaultContentLanguage = "fr"
+title = "BlaBla Site"
+theme = "blabla-theme"
+
 [languages]
-  [languages.en]
-    languageName = "English"
-    weight = 1
   [languages.fr]
     languageName = "Français"
+    weight = 1
+  [languages.en]
+    languageName = "English"
     weight = 2
   [languages.ar]
     languageName = "العربية"
     weight = 3
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/posts/"
-    weight = 2
+    languageDirection = "rtl"
+
