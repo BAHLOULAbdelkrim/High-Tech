@@ -1,18 +1,19 @@
 :root{
-  --max-width: 900px;
-  --accent: #2b7cff;
+  --maxw:1000px;
+  --accent:#0a66c2;
 }
-body{ font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; padding:0; color:#222;}
-.container{ max-width:var(--max-width); margin:2rem auto; padding:0 1rem;}
-.site-header{ display:flex; align-items:center; justify-content:space-between; padding:0.5rem 1rem; background:#f7f7f7; border-bottom:1px solid #eee;}
-.brand a{ font-weight:700; text-decoration:none; color:inherit;}
-.main-nav a{ margin-right:1rem; text-decoration:none; color:inherit;}
-.lang-selector{ position:relative; }
-.lang-button{ background:transparent; border:1px solid #ddd; border-radius:6px; padding:6px 8px; cursor:pointer; display:flex; align-items:center; gap:8px;}
-.lang-list{ position:absolute; right:0; top:calc(100% + 6px); list-style:none; margin:0; padding:6px; border:1px solid #ddd; background:#fff; border-radius:6px; box-shadow:0 6px 20px rgba(0,0,0,0.06);}
-.lang-list li{ padding:6px 10px; cursor:pointer; white-space:nowrap;}
-.lang-list li[aria-hidden="true"]{ display:none; }
-.lang-list li:hover{ background:#f0f0f0; }
-.hero{ padding:2rem 0; border-bottom:1px solid #eee;}
-.site-footer{ text-align:center; padding:1rem 0; color:#666; font-size:0.9rem; margin-top:3rem;}
-[dir="rtl"] .main-nav a{ margin-left:1rem; margin-right:0; }
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;padding:0;background:#f9f9f9;color:#111}
+.container{max-width:var(--maxw);margin:1rem auto;padding:1rem}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:0.5rem 1rem;background:#fff;border-bottom:1px solid #eee}
+.brand a{text-decoration:none;font-weight:700;color:var(--accent)}
+.main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.main-nav a{text-decoration:none;color:#333}
+.lang-selector{position:relative}
+.lang-button{background:#fff;border:1px solid #ddd;padding:0.3rem 0.6rem;border-radius:6px;cursor:pointer;display:flex;align-items:center;gap:0.5rem}
+.lang-list{position:absolute;right:0;top:calc(100% + 6px);background:#fff;border:1px solid #ddd;border-radius:6px;list-style:none;padding:0.2rem;margin:0;display:none;min-width:90px}
+.lang-list.open{display:block}
+.lang-item{padding:0.4rem 0.6rem;cursor:pointer}
+.lang-item:hover{background:#f0f0f0}
+.hero{background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #eee}
+.posts{margin-top:1rem}
+.site-footer{text-align:center;padding:1rem;margin-top:1rem;color:#666}

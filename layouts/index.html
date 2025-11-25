@@ -1,13 +1,13 @@
 {{ define "main" }}
   <section class="hero">
-    <h1>Welcome to blabla</h1>
-    <p>This homepage content stays the same across FR / EN / AR.</p>
+    <h1>Bienvenue sur blabla</h1>
+    <p>Cette page d'accueil reste la même quelle que soit la langue — la langue change l'URL mais pas le contenu.</p>
   </section>
 
-  <section class="posts-preview">
-    <h2>Latest posts</h2>
+  <section class="posts">
+    <h2>Articles</h2>
     <ul>
-      {{ range first 5 .Site.RegularPages }}
+      {{ range where .Site.RegularPages "Section" "posts" }}
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
       {{ end }}
     </ul>

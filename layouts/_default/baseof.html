@@ -1,19 +1,17 @@
-<!doctype html>
-<html lang="{{ .Lang }}" {{ if eq .Lang "ar" }}dir="rtl"{{ end }}>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>{{ .Title }}</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="/js/lang.js" defer></script>
-  </head>
-  <body>
-    {{ partial "header.html" . }}
-    <main class="container">
-      {{ block "main" . }}{{ end }}
-    </main>
-    <footer class="site-footer">
-      <p>© {{ now.Format "2006" }} blabla</p>
-    </footer>
-  </body>
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ .Site.Title }} - {{ .Title }}</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  {{ partial "header.html" . }}
+  <main class="container">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  <script src="/js/lang.js"></script>
+</body>
 </html>

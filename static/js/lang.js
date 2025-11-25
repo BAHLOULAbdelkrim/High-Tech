@@ -1,110 +1,97 @@
-// lang.js - handles auto-redirect based on navigator language and provides language-selector behavior.
-//
-// Behavior:
-// - If path doesn't start with /en/ /fr/ /ar/, redirect to detected language prefix: ar -> /ar/, fr -> /fr/, else -> /en/.
-// - Language selector shows current language and hides other languages; clicking toggles the dropdown.
-// - Selecting a language replaces the first path segment with the chosen language and navigates there.
-// - For Arabic, sets document.documentElement.dir="rtl".
-
+// Language handling script
 (function(){
-  const supported = ['en','fr','ar'];
-  const langNames = { en: 'English', fr: 'Français', ar: 'العربية' };
-
-  function detectPreferred() {
-    const nl = navigator.languages && navigator.languages[0] || navigator.language || navigator.userLanguage || 'en';
-    const code = nl.slice(0,2).toLowerCase();
-    if (code === 'ar') return 'ar';
-    if (code === 'fr') return 'fr';
+  const supported = ['fr','en','ar'];
+  function detectFromNavigator(){
+    const nav = (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage || 'en';
+    // map Arabic and French
+    const tag = nav.toLowerCase();
+    if(tag.startsWith('ar')) return 'ar';
+    if(tag.startsWith('fr')) return 'fr';
     return 'en';
   }
 
-  function pathnameLang(pathname) {
-    const parts = pathname.split('/').filter(Boolean);
-    if (parts.length === 0) return null;
-    const first = parts[0].toLowerCase();
-    return supported.includes(first) ? first : null;
+  function currentLangFromPath(){
+    const m = location.pathname.split('/').filter(Boolean);
+    if(m.length>0 && supported.includes(m[0])) return m[0];
+    return null;
   }
 
-  // Redirect if no language in URL
-  const currentPath = window.location.pathname;
-  const currentLangInPath = pathnameLang(currentPath);
-  if (!currentLangInPath) {
-    const preferred = detectPreferred();
-    // preserve path and hash/query if any, but prefix with lang
-    const suffix = currentPath === '/' ? '/' : currentPath.replace(/^\//,'/');
-    const newPath = '/' + preferred + (suffix === '/' ? '/' : suffix);
-    window.location.replace(newPath);
-    return;
+  function setDocumentDir(lang){
+    if(lang === 'ar') document.documentElement.setAttribute('dir','rtl');
+    else document.documentElement.setAttribute('dir','ltr');
   }
 
-  // If we are here, page path already contains a language prefix.
-  const pageLang = currentLangInPath;
-  // set html lang and dir
-  document.documentElement.lang = pageLang === 'ar' ? 'ar' : (pageLang === 'fr' ? 'fr' : 'en');
-  document.documentElement.dir = pageLang === 'ar' ? 'rtl' : 'ltr';
+  function ensureLangPath(){
+    const cur = currentLangFromPath();
+    if(cur) {
+      setCurrentUI(cur);
+      setDocumentDir(cur);
+      return;
+    }
+    // no lang in URL -> use navigator
+    const prefer = detectFromNavigator();
+    // redirect to /<lang>/
+    const newPath = '/' + prefer + '/';
+    // preserve query/hash
+    const q = location.search + location.hash;
+    location.replace(newPath + q);
+  }
 
-  // Language selector UI
+  function setCurrentUI(lang){
+    const btn = document.getElementById('lang-button');
+    const curEl = document.getElementById('lang-current');
+    const list = document.getElementById('lang-list');
+    if(!btn || !curEl || !list) return;
+    curEl.textContent = lang.toUpperCase();
+    // hide others in list by showing only those not current as options
+    Array.from(list.children).forEach(li=>{
+      if(li.dataset.lang === lang) li.style.display='none';
+      else li.style.display='';
+    });
+    // set aria
+    btn.setAttribute('aria-expanded','false');
+    list.setAttribute('aria-hidden','true');
+  }
+
   document.addEventListener('DOMContentLoaded', function(){
+    // initial redirect if needed
+    ensureLangPath();
+
     const btn = document.getElementById('lang-button');
     const list = document.getElementById('lang-list');
-    const currentSpan = document.getElementById('lang-current');
+    if(btn && list){
+      btn.addEventListener('click', function(e){
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        if(!expanded) list.classList.add('open'), list.setAttribute('aria-hidden','false');
+        else list.classList.remove('open'), list.setAttribute('aria-hidden','true');
+      });
 
-    if (!btn || !list || !currentSpan) return;
+      // click outside to close
+      document.addEventListener('click', function(ev){
+        if(!btn.contains(ev.target) && !list.contains(ev.target)){
+          list.classList.remove('open');
+          btn.setAttribute('aria-expanded','false');
+          list.setAttribute('aria-hidden','true');
+        }
+      });
 
-    // Populate list items
-    list.innerHTML = '';
-    supported.forEach(l => {
-      const li = document.createElement('li');
-      li.setAttribute('data-lang', l);
-      li.textContent = langNames[l];
-      if (l === pageLang) {
-        // current language shown on button, hide from list
-        li.setAttribute('aria-hidden','true');
-      } else {
-        li.setAttribute('aria-hidden','false');
-      }
-      list.appendChild(li);
-    });
-
-    // Show current on button
-    currentSpan.textContent = langNames[pageLang];
-
-    // Toggle dropdown
-    btn.addEventListener('click', function(e){
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      btn.setAttribute('aria-expanded', String(!expanded));
-      if (expanded) {
-        list.hidden = true;
-      } else {
-        list.hidden = false;
-      }
-    });
-
-    // Click outside closes
-    document.addEventListener('click', function(e){
-      if (!btn.contains(e.target) && !list.contains(e.target)) {
-        list.hidden = true;
-        btn.setAttribute('aria-expanded','false');
-      }
-    });
-
-    // Language switcher logic
-    list.addEventListener('click', function(e){
-      const li = e.target.closest('li');
-      if (!li) return;
-      const targetLang = li.getAttribute('data-lang');
-      if (!targetLang || targetLang === pageLang) return;
-
-      // Build new path: replace first segment with targetLang
-      const parts = window.location.pathname.split('/').filter(Boolean);
-      if (parts.length === 0) {
-        // go to /targetLang/
-        window.location.href = '/' + targetLang + '/';
-        return;
-      }
-      parts[0] = targetLang;
-      const newPath = '/' + parts.join('/') + (window.location.pathname.endsWith('/') ? '/' : '');
-      window.location.href = newPath;
-    });
+      // selection
+      Array.from(list.children).forEach(li=>{
+        li.addEventListener('click', function(){
+          const targetLang = li.dataset.lang;
+          // replace first path segment or go to root + lang
+          const pathParts = location.pathname.split('/').filter(Boolean);
+          // Build new path starting with language
+          let newPath = '/' + targetLang + '/';
+          // If we are on a page under a language, and there are other segments, try to preserve the rest of the path after the lang
+          if(pathParts.length > 1 && supported.includes(pathParts[0])){
+            const rest = pathParts.slice(1).join('/');
+            newPath = '/' + targetLang + '/' + rest + (location.pathname.endsWith('/') ? '/' : '');
+          }
+          location.href = newPath + location.search + location.hash;
+        });
+      });
+    }
   });
 })();

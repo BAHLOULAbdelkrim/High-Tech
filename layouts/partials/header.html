@@ -1,22 +1,26 @@
 <header class="site-header">
   <div class="brand">
-    <a href="/{{ .Site.Language.Lang }}/">blabla</a>
+    <a href="/{{ .Site.Language.Lang }}/">{{ .Site.Title }}</a>
   </div>
-
   <nav class="main-nav">
-    <a href="/{{ .Site.Language.Lang }}/">Home</a>
-    <a href="/{{ .Site.Language.Lang }}/posts/">Posts</a>
+    {{ $currentLang := .Site.Language.Lang }}
+    <ul>
+      {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
   </nav>
-
   <!-- Language selector -->
-  <div id="lang-selector" class="lang-selector" aria-haspopup="true">
+  <div id="lang-selector" class="lang-selector" aria-haspopup="listbox">
     <button id="lang-button" class="lang-button" aria-expanded="false" aria-controls="lang-list">
       <span id="lang-icon" class="lang-icon">🌐</span>
-      <span id="lang-current" class="lang-current">{{ .Site.Language.LanguageName }}</span>
+      <span id="lang-current" class="lang-current">{{ upper .Site.Language.Lang }}</span>
       <span class="caret">▾</span>
     </button>
-    <ul id="lang-list" class="lang-list" hidden>
-      <!-- JS will populate language items -->
+    <ul id="lang-list" class="lang-list" role="listbox" aria-hidden="true">
+      <li data-lang="en" class="lang-item">EN</li>
+      <li data-lang="fr" class="lang-item">FR</li>
+      <li data-lang="ar" class="lang-item">AR</li>
     </ul>
   </div>
 </header>
