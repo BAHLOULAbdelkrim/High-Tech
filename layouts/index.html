@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ .Site.Title }}</title>
+  <meta name="robots" content="noindex,follow">
+  <script>
+    (function() {
+      try {
+        var lang = (navigator.language || navigator.userLanguage || 'fr').toLowerCase();
+        // définir priorité : arabe -> ar, français -> fr, sinon en
+        var target = '/fr/';
+        if (lang.indexOf('ar') === 0) target = '/ar/';
+        else if (lang.indexOf('fr') === 0) target = '/fr/';
+        else target = '/en/';
+        // protège contre boucle si déjà dans un sous-dossier (rare ici)
+        if (location.pathname === '/' || location.pathname === '' || /index\.html$/.test(location.pathname)) {
+          // redirection en JS (remplace l'entrée historique)
+          location.replace(target);
+        }
+      } catch (e) {
+        // en cas d'erreur, rediriger vers la langue par défaut
+        location.replace('/fr/');
+      }
+    })();
+  </script>
+  <noscript>
+    <!-- utilisateur sans JS : meta refresh vers FR (ou autre choix) -->
+    <meta http-equiv="refresh" content="0;url=/fr/">
+  </noscript>
+</head>
+<body>
+  <p>Redirection… Si vous n'êtes pas redirigé, <a href="/fr/">cliquez ici</a>.</p>
+</body>
+</html>

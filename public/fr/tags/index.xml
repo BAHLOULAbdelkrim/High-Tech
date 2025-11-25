@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on High-Tech — Nouvelles Technologies, Tests et Comparatifs</title>
+    <link>http://localhost:1313/fr/tags/</link>
+    <description>Recent content in Tags on High-Tech — Nouvelles Technologies, Tests et Comparatifs</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 03 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/fr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android</title>
+      <link>http://localhost:1313/fr/tags/android/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/android/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nouveautés</title>
+      <link>http://localhost:1313/fr/tags/nouveaut%C3%A9s/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/nouveaut%C3%A9s/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Redmi</title>
+      <link>http://localhost:1313/fr/tags/redmi/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/redmi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Samsung</title>
+      <link>http://localhost:1313/fr/tags/samsung/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/samsung/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smartphone</title>
+      <link>http://localhost:1313/fr/tags/smartphone/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/smartphone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smartphones</title>
+      <link>http://localhost:1313/fr/tags/smartphones/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/smartphones/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
