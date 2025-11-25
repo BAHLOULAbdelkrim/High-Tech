@@ -1,0 +1,18 @@
+:root{
+  --max-width: 900px;
+  --accent: #2b7cff;
+}
+body{ font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; padding:0; color:#222;}
+.container{ max-width:var(--max-width); margin:2rem auto; padding:0 1rem;}
+.site-header{ display:flex; align-items:center; justify-content:space-between; padding:0.5rem 1rem; background:#f7f7f7; border-bottom:1px solid #eee;}
+.brand a{ font-weight:700; text-decoration:none; color:inherit;}
+.main-nav a{ margin-right:1rem; text-decoration:none; color:inherit;}
+.lang-selector{ position:relative; }
+.lang-button{ background:transparent; border:1px solid #ddd; border-radius:6px; padding:6px 8px; cursor:pointer; display:flex; align-items:center; gap:8px;}
+.lang-list{ position:absolute; right:0; top:calc(100% + 6px); list-style:none; margin:0; padding:6px; border:1px solid #ddd; background:#fff; border-radius:6px; box-shadow:0 6px 20px rgba(0,0,0,0.06);}
+.lang-list li{ padding:6px 10px; cursor:pointer; white-space:nowrap;}
+.lang-list li[aria-hidden="true"]{ display:none; }
+.lang-list li:hover{ background:#f0f0f0; }
+.hero{ padding:2rem 0; border-bottom:1px solid #eee;}
+.site-footer{ text-align:center; padding:1rem 0; color:#666; font-size:0.9rem; margin-top:3rem;}
+[dir="rtl"] .main-nav a{ margin-left:1rem; margin-right:0; }

@@ -1,0 +1,22 @@
+<header class="site-header">
+  <div class="brand">
+    <a href="/{{ .Site.Language.Lang }}/">blabla</a>
+  </div>
+
+  <nav class="main-nav">
+    <a href="/{{ .Site.Language.Lang }}/">Home</a>
+    <a href="/{{ .Site.Language.Lang }}/posts/">Posts</a>
+  </nav>
+
+  <!-- Language selector -->
+  <div id="lang-selector" class="lang-selector" aria-haspopup="true">
+    <button id="lang-button" class="lang-button" aria-expanded="false" aria-controls="lang-list">
+      <span id="lang-icon" class="lang-icon">🌐</span>
+      <span id="lang-current" class="lang-current">{{ .Site.Language.LanguageName }}</span>
+      <span class="caret">▾</span>
+    </button>
+    <ul id="lang-list" class="lang-list" hidden>
+      <!-- JS will populate language items -->
+    </ul>
+  </div>
+</header>

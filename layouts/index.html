@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <section class="hero">
+    <h1>Welcome to blabla</h1>
+    <p>This homepage content stays the same across FR / EN / AR.</p>
+  </section>
+
+  <section class="posts-preview">
+    <h2>Latest posts</h2>
+    <ul>
+      {{ range first 5 .Site.RegularPages }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}
