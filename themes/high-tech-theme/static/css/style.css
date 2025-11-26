@@ -390,28 +390,53 @@ article a:hover,
   }
 }
 
+
+/* ==============================
+   MOBILE (portrait + paysage)
+   ============================== */
 @media (max-width: 900px) {
-  .content-column article,
-  .content-column article img,
-  .content-column .article-image {
-      width: 100% !important;
-      max-width: 100% !important;
-      height: auto !important;
-      border-radius: 8px !important;
+
+  /* ===== Images dans les articles ===== */
+  article img,
+  .article-image,
+  .img-row img {
+    width: 100% !important;       /* force la largeur complète */
+    max-width: 100% !important;   /* empêche qu’elles dépassent le container */
+    height: auto !important;
+    border-radius: 8px !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
-  .content-column article {
-      padding: 12px 10px !important;
-      font-size: 16px !important;
-      line-height: 1.5 !important;
-  }
-
-  .content-column article h1 { font-size: 1.6rem !important; }
-  .content-column article h2 { font-size: 1.3rem !important; }
-  .content-column article h3 { font-size: 1.1rem !important; }
-
+  /* Images côte à côte → empilement vertical */
   .img-row {
-      flex-direction: column !important;
-      gap: 12px !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  figure img {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* ===== Beamer-box ===== */
+  .beamer-box {
+    width: 100% !important;
+    padding: 0.5rem 0.8rem !important;
+    margin: 1rem 0 !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;   /* désactive l'ombre pour mobile */
+    transform: none !important;    /* désactive l'effet hover */
+  }
+
+  .beamer-title {
+    font-size: 1.2rem !important;
+    padding: 0.5rem 0.8rem !important;
+  }
+
+  .beamer-body {
+    font-size: 14px !important;
+    padding: 0.6rem 0.8rem !important;
   }
 }
