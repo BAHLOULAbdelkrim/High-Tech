@@ -1,4 +1,26 @@
 <head>
+
+<script>
+/*
+  Fix temporaire : si l'URL contient explicitement /fr/ ou /en/ ou /ar/,
+  on sauvegarde ce choix dans localStorage *avant* que d'autres scripts ne tournent.
+  Ainsi les scripts de redirection qui lisent preferredLang respecteront l'URL explicite.
+*/
+(function(){
+  try {
+    var m = location.pathname.toLowerCase().match(/^\/(fr|en|ar)(\/|$)/);
+    if (m && m[1]) {
+      localStorage.setItem('preferredLang', m[1]); // 'fr'|'en'|'ar'
+      // optionnel : log pour debug
+      console && console.log('[lang-lock] preferredLang set to', m[1]);
+    }
+  } catch (e) {
+    console && console.warn('[lang-lock] error', e);
+  }
+})();
+</script>
+
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
