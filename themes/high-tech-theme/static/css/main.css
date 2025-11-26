@@ -792,6 +792,9 @@ body.menu-open {
   z-index: 1;
 }
 
+
+
+
 /* 🔧 Réactivation de la grille pour la home avec 3 colonnes */
 .container.home-content {
   display: grid;

@@ -85,16 +85,73 @@
   <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
 
 <!-- Javascript pour la détection de la lnague du navigateur pour afficher la bonne version du site -->
-<!-- 
-  <script>
-    const lang = navigator.language || navigator.userLanguage;
-    const path = window.location.pathname;
 
-    if (path === "/") {
-      if (lang.startsWith("ar")) window.location.href = "/ar/";
-      else if (lang.startsWith("fr")) window.location.href = "/fr/";
-      else window.location.href = "/en/";
+<script>
+/*
+  Lang-redirect pour site statique Hugo (fonctionne côté client, indépendant de Cloudflare).
+  Règles :
+   - Si l'URL commence déjà par /fr/ ou /en/ ou /ar/ -> ne rien faire (respecter l'URL explicite).
+   - Si l'utilisateur a enregistré un choix (localStorage 'preferredLang') -> respecter.
+   - Sinon, détecter la langue du navigateur :
+       * si commence par "ar" -> /ar/
+       * else if commence par "fr" -> /fr/
+       * else -> /en/
+   - Ne rediriger que quand on est sur la racine ("/" ou "/index.html").
+   - Préserve querystring et hash.
+*/
+
+(function() {
+  try {
+    const supported = ['fr','en','ar'];
+    const path = window.location.pathname || '/';
+    const normPath = path.toLowerCase();
+
+    // Si l'URL commence par une langue supportée (/fr/ /en/ /ar/ ou /fr /en /ar sans slash final)
+    const langPrefixMatch = normPath.match(/^\/(fr|en|ar)(\/|$)/);
+    if (langPrefixMatch) {
+      // URL explicite : on respecte la langue dans l'URL — pas de redirection.
+      return;
     }
-  </script>
-                -->
+
+    // On ne redirige que si on est sur la racine ("/" ou "/index.html")
+    if (!(normPath === '/' || normPath === '/index.html')) {
+      return;
+    }
+
+    // 1) vérifier si l'utilisateur a un choix enregistré (par ex. via le sélecteur de langue)
+    const persisted = localStorage.getItem('preferredLang');
+    if (persisted && supported.includes(persisted)) {
+      const dest = '/' + persisted + '/';
+      if (window.location.pathname !== dest) {
+        window.location.replace( dest + window.location.search + window.location.hash );
+      }
+      return;
+    }
+
+    // 2) détecter la langue du navigateur (utilise navigator.languages si disponible)
+    const navs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || navigator.userLanguage || ''];
+    const pickLang = (() => {
+      for (let l of navs) {
+        if (!l) continue;
+        l = l.toLowerCase();
+        if (l.startsWith('ar')) return 'ar';
+        if (l.startsWith('fr')) return 'fr';
+      }
+      return 'en';
+    })();
+
+    const destination = '/' + pickLang + '/';
+    // si déjà sur la destination => nothing
+    if (window.location.pathname !== destination) {
+      // use replace() to avoid polluting history
+      window.location.replace( destination + window.location.search + window.location.hash );
+    }
+  } catch (e) {
+    // en cas d'erreur on ne fait rien (évite blocage total)
+    console.error('lang redirect error', e);
+  }
+})();
+</script>
+
+  
 </head>
