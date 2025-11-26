@@ -26,9 +26,7 @@
       
      .main-color { --tw-bg-opacity:1; background-color: theme(colors.emerald.400); }
      </style>
-</head>
 
-<head>
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -294,15 +292,7 @@
     </form>
 
     
-    <div class="lang-selector">
-      <button class="lang-current">
-        🌐 <span>FR</span>
-      </button>
-      <ul class="lang-dropdown">
-        <li><a href="/en/">EN</a></li>
-        <li><a href="/ar/">AR</a></li>
-      </ul>
-    </div>
+
 
   </div>
 </section>
@@ -382,103 +372,33 @@
   
   <main class="site-main">
     
-  <div class="container home-content">
-    <aside class="left-column">
-      <div class="side-links">
+<script>
+  (function() {
+    
+    const path = window.location.pathname;
+    if (/^\/(fr|en|ar)\/?/.test(path)) return;
+
+    
+    const lang = (navigator.language || navigator.userLanguage || "en").substring(0,2);
+
+    let target = "/en/"; 
+
+    if (lang === "fr") target = "/fr/";
+    if (lang === "ar") target = "/ar/";
+
+    window.location.replace(target);
+  })();
+</script>
+
+<noscript>
+  
+  <p>Please choose your language:</p>
   <ul>
-    <li class="menu-item"><a href="/nouveautes/">Nouveautés</a></li>
-    <li class="menu-item"><a href="/trier-par/">Trier par</a></li>
-    <li class="menu-item">
-      <a href="https://facebook.com" target="_blank">
-       <img src="/images/facebook.svg" alt="Facebook" class="icon-small">
-       Facebook
-      </a>
-    </li>
+    <li><a href="/fr/">Français</a></li>
+    <li><a href="/en/">English</a></li>
+    <li><a href="/ar/">العربية</a></li>
   </ul>
-</div>
-
-    </aside>
-
-    <section class="content-column">
-
-      <h2>Derniers articles</h2>
-      <div class="latest-grid">
-        
-          <article class="card">
-            <a href="/cameras/webcam/article-2/">
-              <img src="/images/image_art.jpg" alt="WebCam — Article exemple 2">
-              <h3>WebCam — Article exemple 2</h3>
-              <p>Exemple de résumé pour WebCam article 2.</p>
-            </a>
-          </article>
-        
-          <article class="card">
-            <a href="/audio/true-wireless/article-2/">
-              <img src="/images/image_art.jpg" alt="True wireless — Article exemple 2">
-              <h3>True wireless — Article exemple 2</h3>
-              <p>Exemple de résumé pour True wireless article 2.</p>
-            </a>
-          </article>
-        
-          <article class="card">
-            <a href="/impression/traceurs/article-2/">
-              <img src="/images/image_art.jpg" alt="Traceurs — Article exemple 2">
-              <h3>Traceurs — Article exemple 2</h3>
-              <p>Exemple de résumé pour Traceurs article 2.</p>
-            </a>
-          </article>
-        
-          <article class="card">
-            <a href="/domotique/thermostats/article-2/">
-              <img src="/images/image_art.jpg" alt="Thermostats — Article exemple 2">
-              <h3>Thermostats — Article exemple 2</h3>
-              <p>Exemple de résumé pour Thermostats article 2.</p>
-            </a>
-          </article>
-        
-          <article class="card">
-            <a href="/cameras/supports/article-2/">
-              <img src="/images/image_art.jpg" alt="Supports — Article exemple 2">
-              <h3>Supports — Article exemple 2</h3>
-              <p>Exemple de résumé pour Supports article 2.</p>
-            </a>
-          </article>
-        
-          <article class="card">
-            <a href="/peripheriques/stockage/article-2/">
-              <img src="/images/image_art.jpg" alt="Stockage — Article exemple 2">
-              <h3>Stockage — Article exemple 2</h3>
-              <p>Exemple de résumé pour Stockage article 2.</p>
-            </a>
-          </article>
-        
-          <article class="card">
-            <a href="/obj-connectes/smartwatches/article-2/">
-              <img src="/images/image_art.jpg" alt="Smartwatches — Article exemple 2">
-              <h3>Smartwatches — Article exemple 2</h3>
-              <p>Exemple de résumé pour Smartwatches article 2.</p>
-            </a>
-          </article>
-        
-          <article class="card">
-            <a href="/home-cinema/smart-tv/article-2/">
-              <img src="/images/image_art.jpg" alt="Smart TV — Article exemple 2">
-              <h3>Smart TV — Article exemple 2</h3>
-              <p>Exemple de résumé pour Smart TV article 2.</p>
-            </a>
-          </article>
-        
-          <article class="card">
-            <a href="/impression/scanners/article-2/">
-              <img src="/images/image_art.jpg" alt="Scanners — Article exemple 2">
-              <h3>Scanners — Article exemple 2</h3>
-              <p>Exemple de résumé pour Scanners article 2.</p>
-            </a>
-          </article>
-        
-      </div>
-    </section>
-  </div>
+</noscript>
 
   </main>
 
