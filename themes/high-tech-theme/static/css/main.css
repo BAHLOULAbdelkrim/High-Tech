@@ -648,7 +648,7 @@ body.menu-open {
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   /* Burger visible */
   .mobile-burger {
     display: block;
@@ -735,7 +735,7 @@ body.menu-open {
 }
 
 /* Version mobile */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .latest-grid {
     display: grid;
     grid-template-columns: 1fr; /* une seule colonne */
