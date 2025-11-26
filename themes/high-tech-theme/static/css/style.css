@@ -392,16 +392,28 @@ article a:hover,
 
 
 /* ==============================
-   MOBILE (portrait + paysage)
+   VERSION MOBILE — Portrait + Paysage
    ============================== */
 @media (max-width: 900px) {
 
-  /* ===== Images dans les articles ===== */
+  /* ===== Articles ===== */
+  article {
+    padding: 12px 10px !important;
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+  }
+
+  article h1 { font-size: 1.6rem !important; }
+  article h2 { font-size: 1.3rem !important; }
+  article h3 { font-size: 1.1rem !important; }
+
+  /* ===== Images ===== */
   article img,
   .article-image,
-  .img-row img {
-    width: 100% !important;       /* force la largeur complète */
-    max-width: 100% !important;   /* empêche qu’elles dépassent le container */
+  .img-row img,
+  figure img {
+    width: 100% !important;
+    max-width: 100% !important;
     height: auto !important;
     border-radius: 8px !important;
     display: block !important;
@@ -409,25 +421,29 @@ article a:hover,
     margin-right: auto !important;
   }
 
-  /* Images côte à côte → empilement vertical */
   .img-row {
     flex-direction: column !important;
     gap: 12px !important;
   }
 
-  figure img {
-    width: 100% !important;
-    max-width: 100% !important;
+  figure figcaption {
+    font-size: 12px !important;
+  }
+
+  /* ===== Info-box ===== */
+  .info-box {
+    padding: 8px 10px !important;
+    font-size: 14px !important;
   }
 
   /* ===== Beamer-box ===== */
   .beamer-box {
     width: 100% !important;
     padding: 0.5rem 0.8rem !important;
-    margin: 1rem 0 !important;
+    margin: 0.8rem 0 !important;
     border-radius: 8px !important;
-    box-shadow: none !important;   /* désactive l'ombre pour mobile */
-    transform: none !important;    /* désactive l'effet hover */
+    box-shadow: none !important;
+    transform: none !important;
   }
 
   .beamer-title {
@@ -439,4 +455,63 @@ article a:hover,
     font-size: 14px !important;
     padding: 0.6rem 0.8rem !important;
   }
+
+  /* ===== Sommaire (TOC) ===== */
+  .toc {
+    padding: 8px 10px !important;
+    font-size: 14px !important;
+  }
+
+  .toc li a {
+    font-size: 14px !important;
+  }
+
+  /* ===== Tableaux ===== */
+  table, th, td {
+    font-size: 12px !important;
+    padding: 6px 8px !important;
+    overflow-x: auto;
+    display: block;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  thead, tfoot { display: none !important; } /* masquer header/footer pour mobile */
+
+  tbody tr {
+    display: block !important;
+    margin-bottom: 12px !important;
+    border-bottom: 2px solid #ddd !important;
+  }
+
+  tbody tr td {
+    display: block !important;
+    text-align: right !important;
+    border: none !important;
+    position: relative !important;
+    padding-left: 50% !important;
+  }
+
+  tbody tr td::before {
+    content: attr(data-label); /* tu peux ajouter data-label dans tes td pour mobile */
+    position: absolute;
+    left: 10px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  /* ===== Désactiver hover et effets Desktop ===== */
+  .beamer-box:hover,
+  article img:hover,
+  .section-cover:hover,
+  .submenus img:hover,
+  .articles-grid .card img:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
 }
+
