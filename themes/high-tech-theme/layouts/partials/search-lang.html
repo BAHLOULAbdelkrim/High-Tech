@@ -20,13 +20,11 @@
     </form>
 
     <!-- Sélecteur de langue -->
-    <div class="lang-selector">
-      <!-- Langue actuelle -->
+<!--    <div class="lang-selector">
       <button class="lang-current">
-        🌐 <span>{{ .Site.Language.Lang | upper }}</span>
+        <span>{{ .Site.Language.Lang | upper }}</span>
       </button>
 
-      <!-- Liste des autres langues -->
       <ul class="lang-dropdown">
         {{ range .Site.Languages }}
           {{ if ne .Lang $.Site.Language.Lang }}
@@ -34,7 +32,7 @@
           {{ end }}
         {{ end }}
       </ul>
-    </div>
+    </div>    -->
 
   </div>
 </section>

@@ -86,22 +86,4 @@
        --------------------------------------------------------- -->
   <script defer src="{{ "js/main.js" | relURL }}"></script>
 
-<!-- JS pour rediriger les visiteurs vers la bonne langue selon celle de leur navigateur -->
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const langs = ['fr', 'en', 'ar'];
-    const defaultLang = 'en';
-    const pathParts = window.location.pathname.split('/').filter(Boolean);
-
-    // Si l'URL ne contient pas déjà une langue
-    if (!langs.includes(pathParts[0])) {
-      const browserLang = (navigator.language || navigator.userLanguage).substring(0,2);
-      const lang = langs.includes(browserLang) ? browserLang : defaultLang;
-      window.location.replace(`/${lang}/`);
-    }
-  });
-</script>
-
-
 </head>
