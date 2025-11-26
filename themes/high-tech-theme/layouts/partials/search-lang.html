@@ -21,14 +21,28 @@
 
     <!-- Sélecteur de langue -->
     <div class="lang-selector">
+      <!-- Langue actuelle -->
       <button class="lang-current">
-        🌐 <span>FR</span>
+        🌐 <span>{{ .Site.Language.Lang | upper }}</span>
       </button>
+
+      <!-- Liste des autres langues -->
       <ul class="lang-dropdown">
-        <li><a href="/en/">EN</a></li>
-        <li><a href="/ar/">AR</a></li>
+        {{ range .Site.Languages }}
+          {{ if ne .Lang $.Site.Language.Lang }}
+            <li><a href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a></li>
+          {{ end }}
+        {{ end }}
       </ul>
     </div>
 
   </div>
 </section>
+
+
+
+
+
+
+
+
