@@ -18,6 +18,27 @@ title = "High-Tech — Nouvelles Technologies, Tests et Comparatifs"
 defaultContentLanguage = "fr"
 defaultContentLanguageInSubdir = true
 
+[languages]
+
+  [languages.fr]
+    languageName = "Français"
+    weight = 1
+    contentDir = "content/fr"
+    languageCode = "fr"
+
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    contentDir = "content/en"
+    languageCode = "en"
+
+  [languages.ar]
+    languageName = "العربية"
+    weight = 3
+    contentDir = "content/ar"
+    languageCode = "ar"
+    direction = "rtl"
+
 # Thème Hugo utilisé
 theme = "high-tech-theme"
 
