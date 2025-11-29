@@ -403,40 +403,5 @@ article a:hover,
     font-size: 14px !important;
   }
 
-  /* ===== Beamer-box ===== */
-  .beamer-box {
-    width: 100% !important;
-    padding: 0.5rem 0.8rem !important;
-    margin: 0.8rem 0 !important;
-    border-radius: 8px !important;
-  }
-
-  /* Box hover pour mobile */
-  .beamer-box:hover,
-  .beamer-box.hover {
-    transform: scale(1.03);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-  }
-
-  .beamer-title {
-    font-size: 1.2rem !important;
-    padding: 0.5rem 0.8rem !important;
-  }
-
-  .beamer-body {
-    font-size: 14px !important;
-    padding: 0.6rem 0.8rem !important;
-  }
-
-  /* ===== Désactiver hover et effets Desktop ===== */
-/*   .beamer-box:hover,
-  article img:hover,
-  .section-cover:hover,
-  .submenus img:hover,
-  .articles-grid .card img:hover {
-    transform: none !important;
-    box-shadow: none !important;
-  }      */
-
 }
 
