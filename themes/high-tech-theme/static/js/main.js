@@ -106,3 +106,11 @@ document.addEventListener("DOMContentLoaded", function() {
         appearOnScroll.observe(el);
     });
 });
+
+  /* Box hover pour mobile */
+document.querySelectorAll('.beamer-box').forEach(box => {
+  box.addEventListener('touchstart', () => box.classList.add('hover'));
+  box.addEventListener('touchend', () => box.classList.remove('hover'));
+});
+
+

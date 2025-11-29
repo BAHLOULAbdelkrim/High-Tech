@@ -134,13 +134,6 @@ figure figcaption {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media (max-width: 600px) {
-  .section-cover {
-    margin: 15px auto 25px auto;
-    border-radius: 8px;
-  }
-}
-
 /* Images miniatures des sous-menus — Mobile optimisé */
 .submenus img,
 .articles-grid .card img {
@@ -149,41 +142,6 @@ figure figcaption {
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover Desktop */
-@media (min-width: 900px) {
-    .submenus img:hover,
-    .articles-grid .card img:hover {
-        transform: scale(1.03);
-        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-    }
-}
-
-/* Hover Desktop seulement */
-@media (min-width: 900px) {
-    .section-cover:hover {
-        transform: scale(1.03);
-        box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-    }
-}
-
-/* Version mobile : coins plus petits, marge réduite */
-@media (max-width: 900px) {
-    .section-cover {
-        border-radius: 8px;
-        margin: 15px auto 25px auto;
-    }
-}
-
-/* Images des articles — version mobile */
-@media (max-width: 900px) {
-    .article-body img {
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
 }
 
 /* ============================
@@ -325,89 +283,51 @@ article a:hover,
     margin-bottom: 12px;
 }
 
+/* ============================
+   Version MOBILE
+   ============================ */
+
 @media (max-width: 900px) {
-
-  /* Article général */
-  article {
-    padding: 12px 10px; /* réduit l'espace */
-    font-size: 16px;    /* texte plus petit sur mobile */
-    line-height: 1.5;
-  }
-
-  /* Titres */
-  article h1 { font-size: 1.6rem; }
-  article h2 { font-size: 1.3rem; }
-  article h3 { font-size: 1.1rem; }
-
-  /* Images */
-  article img,
-  .article-image,
-  .img-row img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
+/* Coins plus petits, marge réduite */
+  .section-cover {
+    margin: 15px auto 25px auto;
     border-radius: 8px;
   }
 
-  .img-row {
-    flex-direction: column; /* empile les images au lieu de les mettre côte à côte */
-    gap: 12px;
-  }
+/* Hover Desktop */
+    .submenus img:hover,
+    .articles-grid .card img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
 
-  figure figcaption {
-    font-size: 12px; /* légendes plus petites */
-  }
+/* Hover Desktop seulement */
+    .section-cover:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
 
-  /* Sommaire */
-  .toc {
-    padding: 8px 10px;
-    font-size: 14px;
-  }
-
-  .toc li a {
-    font-size: 14px;
-  }
-
-  /* Tableaux */
-  table, th, td {
-    font-size: 14px;
-  }
-
-  .beamer-body {
-    padding: 0.8rem 1rem;
-    font-size: 14px;
-  }
-
-  .beamer-title {
-    font-size: 1.2rem;
-    padding: 0.6rem 0.8rem;
-  }
-
-  /* Box hover désactivé pour mobile */
-  .beamer-box:hover {
-    transform: none;
-    box-shadow: none;
-  }
-}
-
-
-/* ==============================
-   VERSION MOBILE — Portrait + Paysage
-   ============================== */
-@media (max-width: 900px) {
-
-  /* ===== Articles ===== */
+  /* Article général */
   article {
-    padding: 12px 10px !important;
-    font-size: 16px !important;
-    line-height: 1.4 !important;
+    padding: 12px 10px !important; /* réduit l'espace */
+    font-size: 16px !important;    /* texte plus petit sur mobile */
+    line-height: 1.5 !important;
   }
 
+  /* Titres */
   article h1 { font-size: 1.6rem !important; }
   article h2 { font-size: 1.3rem !important; }
   article h3 { font-size: 1.1rem !important; }
 
-  /* ===== Images ===== */
+/* Images des articles — version mobile */
+  .article-body img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+  /* Images */
   article img,
   .article-image,
   .img-row img,
@@ -422,41 +342,15 @@ article a:hover,
   }
 
   .img-row {
-    flex-direction: column !important;
+    flex-direction: column !important; /* empile les images au lieu de les mettre côte à côte */
     gap: 12px !important;
   }
 
   figure figcaption {
-    font-size: 12px !important;
+    font-size: 12px !important; /* légendes plus petites */
   }
 
-  /* ===== Info-box ===== */
-  .info-box {
-    padding: 8px 10px !important;
-    font-size: 14px !important;
-  }
-
-  /* ===== Beamer-box ===== */
-  .beamer-box {
-    width: 100% !important;
-    padding: 0.5rem 0.8rem !important;
-    margin: 0.8rem 0 !important;
-    border-radius: 8px !important;
-    box-shadow: none !important;
-    transform: none !important;
-  }
-
-  .beamer-title {
-    font-size: 1.2rem !important;
-    padding: 0.5rem 0.8rem !important;
-  }
-
-  .beamer-body {
-    font-size: 14px !important;
-    padding: 0.6rem 0.8rem !important;
-  }
-
-  /* ===== Sommaire (TOC) ===== */
+  /* Sommaire */
   .toc {
     padding: 8px 10px !important;
     font-size: 14px !important;
@@ -503,15 +397,46 @@ article a:hover,
     text-align: left;
   }
 
-  /* ===== Désactiver hover et effets Desktop ===== */
+  /* ===== Info-box ===== */
+  .info-box {
+    padding: 8px 10px !important;
+    font-size: 14px !important;
+  }
+
+  /* ===== Beamer-box ===== */
+  .beamer-box {
+    width: 100% !important;
+    padding: 0.5rem 0.8rem !important;
+    margin: 0.8rem 0 !important;
+    border-radius: 8px !important;
+  }
+
+  /* Box hover pour mobile */
   .beamer-box:hover,
+  .beamer-box.hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  }
+
+  .beamer-title {
+    font-size: 1.2rem !important;
+    padding: 0.5rem 0.8rem !important;
+  }
+
+  .beamer-body {
+    font-size: 14px !important;
+    padding: 0.6rem 0.8rem !important;
+  }
+
+  /* ===== Désactiver hover et effets Desktop ===== */
+/*   .beamer-box:hover,
   article img:hover,
   .section-cover:hover,
   .submenus img:hover,
   .articles-grid .card img:hover {
     transform: none !important;
     box-shadow: none !important;
-  }
+  }      */
 
 }
 
