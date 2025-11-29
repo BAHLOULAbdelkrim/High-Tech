@@ -138,7 +138,7 @@ body{
   animation: shine 0.7s forwards;
 }
 
-@keyframes shine-submenu {
+@keyframes shine {
   0% { left: -75%; }
   100% { left: 125%; }
 }
@@ -251,11 +251,14 @@ body{
   text-decoration: none;
   font-weight: 600;
   overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease;
 }
 
 .submenus li a:hover {
   background: var(--submenu-hover-bg);
   color: var(--submenu-hover-text);
+  transform: scale(1.05); /* <-- effet zoom */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25); /* optionnel, ajoute de la profondeur */
 }
 
 .submenus li a::before {
@@ -272,6 +275,11 @@ body{
 
 .submenus li a:hover::before {
   animation: shine-submenu 0.7s forwards;
+}
+
+@keyframes shine-submenu {
+  0% { left: -75%; }
+  100% { left: 125%; }
 }
 
 .submenus {
@@ -357,11 +365,6 @@ body{
 
 .side-links .menu-item a:hover::before {
   animation: shine 0.7s forwards;
-}
-
-@keyframes shine {
-  0% { left: -75%; }
-  100% { left: 125%; }
 }
 
 .side-links .menu-item a:hover {
