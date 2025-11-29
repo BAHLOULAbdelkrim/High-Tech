@@ -132,7 +132,36 @@ figure figcaption {
   object-fit: cover;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* nécessaire pour le pseudo-élément */
+  overflow: hidden;   /* pour que le shine ne déborde pas */
 }
+
+
+
+.section-cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-20deg);
+  z-index: 2;
+}
+
+.section-cover:hover::before {
+  animation: shine-image 0.7s forwards;
+}
+
+@keyframes shine-image {
+  0% { left: -75%; }
+  100% { left: 125%; }
+}
+
+
+
+
 
 /* Images miniatures des sous-menus — Mobile optimisé */
 .submenus img,

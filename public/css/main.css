@@ -254,12 +254,32 @@ body{
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease;
 }
 
+/* Avant c'était comme ça : */
+/*   .submenus li a {
+  position: relative;
+  display: block;
+  padding: 10px;
+  background: var(--submenu-bg);
+  color: var(--submenu-text);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  overflow: hidden;
+}   */
+
 .submenus li a:hover {
   background: var(--submenu-hover-bg);
   color: var(--submenu-hover-text);
   transform: scale(1.05); /* <-- effet zoom */
   box-shadow: 0 4px 15px rgba(0,0,0,0.25); /* optionnel, ajoute de la profondeur */
 }
+
+/* Avant c'était comme ça : */
+/*
+.submenus li a:hover {
+  background: var(--submenu-hover-bg);
+  color: var(--submenu-hover-text);
+}    */
 
 .submenus li a::before {
   content: "";
@@ -277,13 +297,13 @@ body{
   animation: shine-submenu 0.7s forwards;
 }
 
+.submenus {
+  margin-bottom: 2rem; /* espace de 32px entre la liste et la zone centrale */
+}
+
 @keyframes shine-submenu {
   0% { left: -75%; }
   100% { left: 125%; }
-}
-
-.submenus {
-  margin-bottom: 2rem; /* espace de 32px entre la liste et la zone centrale */
 }
 
 /*-------------------------------------------*/
