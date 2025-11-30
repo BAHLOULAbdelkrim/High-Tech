@@ -136,8 +136,6 @@ figure figcaption {
   overflow: hidden;   /* pour que le shine ne déborde pas */
 }
 
-
-
 .section-cover::before {
   content: "";
   position: absolute;
@@ -159,9 +157,10 @@ figure figcaption {
   100% { left: 125%; }
 }
 
-
-
-
+.section-cover:hover {
+  transform: scale(1.05); /* zoom */
+  box-shadow: 0 6px 25px rgba(0,0,0,0.25); /* profondeur */
+}
 
 /* Images miniatures des sous-menus — Mobile optimisé */
 .submenus img,

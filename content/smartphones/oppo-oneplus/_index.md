@@ -1,5 +1,5 @@
 ---
-title: "OPPO & OnePlus"
+title: "OPPO/One+"
 menu_image: "/images/smartphones_oppo_oneplus.webp"
 image: "/images/smartphones_oppo_oneplus.webp"
 weight: 4
