@@ -444,6 +444,13 @@
     </item>
     <item>
       <title>WebCam — Article exemple 2</title>
+      <link>http://localhost:1313/cameras/surveillance/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/cameras/surveillance/article-2/</guid>
+      <description>Exemple de résumé pour WebCam article 2.</description>
+    </item>
+    <item>
+      <title>WebCam — Article exemple 2</title>
       <link>http://localhost:1313/cameras/webcam/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/cameras/webcam/article-2/</guid>
@@ -882,6 +889,13 @@
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/audio/true-wireless/article-1/</guid>
       <description>Exemple de résumé pour True wireless article 1.</description>
+    </item>
+    <item>
+      <title>WebCam — Article exemple 1</title>
+      <link>http://localhost:1313/cameras/surveillance/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/cameras/surveillance/article-1/</guid>
+      <description>Exemple de résumé pour WebCam article 1.</description>
     </item>
     <item>
       <title>WebCam — Article exemple 1</title>

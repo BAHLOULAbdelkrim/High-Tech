@@ -206,9 +206,6 @@
     <loc>http://localhost:1313/obj-connectes/bracelets-fitness/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/cameras/surveillance/article-2/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/cameras-accessoires/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
@@ -506,6 +503,9 @@
     <loc>http://localhost:1313/cameras/webcam/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/cameras/surveillance/article-2/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/cameras/webcam/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
@@ -549,9 +549,6 @@
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/obj-connectes/bracelets-fitness/article-1/</loc>
-    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/cameras/surveillance/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/obj-connectes/cameras-sportives/article-1/</loc>
@@ -696,6 +693,9 @@
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/audio/true-wireless/article-1/</loc>
+    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/cameras/surveillance/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cameras/webcam/article-1/</loc>
