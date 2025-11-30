@@ -87,31 +87,10 @@
     </item>
     <item>
       <title>Assistants vocaux — Article exemple 2</title>
-      <link>http://localhost:1313/domotique/assistants-vocaux/article-2/</link>
+      <link>http://localhost:1313/domotique/eclairage/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/domotique/assistants-vocaux/article-2/</guid>
+      <guid>http://localhost:1313/domotique/eclairage/article-2/</guid>
       <description>Exemple de résumé pour Assistants vocaux article 2.</description>
-    </item>
-    <item>
-      <title>Bracelets &amp; montres &amp; lunettes connectées — Article exemple 2</title>
-      <link>http://localhost:1313/obj-connectes/bracelets-and-montres-and-lunettes-connectees/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/obj-connectes/bracelets-and-montres-and-lunettes-connectees/article-2/</guid>
-      <description>Exemple de résumé pour Bracelets &amp;amp; montres &amp;amp; lunettes connectées article 2.</description>
-    </item>
-    <item>
-      <title>Bracelets fitness — Article exemple 2</title>
-      <link>http://localhost:1313/obj-connectes/bracelets-fitness/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/obj-connectes/bracelets-fitness/article-2/</guid>
-      <description>Exemple de résumé pour Bracelets fitness article 2.</description>
-    </item>
-    <item>
-      <title>Caméras sportives — Article exemple 2</title>
-      <link>http://localhost:1313/obj-connectes/cameras-sportives/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/obj-connectes/cameras-sportives/article-2/</guid>
-      <description>Exemple de résumé pour Caméras sportives article 2.</description>
     </item>
     <item>
       <title>Casques — Article exemple 2</title>
@@ -122,9 +101,9 @@
     </item>
     <item>
       <title>Casques Anti-Bruit — Article exemple 2</title>
-      <link>http://localhost:1313/audio/casques-anti-bruit/article-2/</link>
+      <link>http://localhost:1313/audio/enceintes-son/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/audio/casques-anti-bruit/article-2/</guid>
+      <guid>http://localhost:1313/audio/enceintes-son/article-2/</guid>
       <description>Exemple de résumé pour Casques Anti-Bruit article 2.</description>
     </item>
     <item>
@@ -163,13 +142,6 @@
       <description>Exemple de résumé pour Consommables article 2.</description>
     </item>
     <item>
-      <title>Drones — Article exemple 2</title>
-      <link>http://localhost:1313/obj-connectes/drones/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/obj-connectes/drones/article-2/</guid>
-      <description>Exemple de résumé pour Drones article 2.</description>
-    </item>
-    <item>
       <title>Énergie &amp; Charge — Article exemple 2</title>
       <link>http://localhost:1313/peripheriques/energie-and-charge/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
@@ -178,23 +150,16 @@
     </item>
     <item>
       <title>Filaires — Article exemple 2</title>
-      <link>http://localhost:1313/audio/filaires/article-2/</link>
+      <link>http://localhost:1313/audio/micros-voix/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/audio/filaires/article-2/</guid>
+      <guid>http://localhost:1313/audio/micros-voix/article-2/</guid>
       <description>Exemple de résumé pour Filaires article 2.</description>
     </item>
     <item>
-      <title>Gadgets — Article exemple 2</title>
-      <link>http://localhost:1313/obj-connectes/gadgets/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/obj-connectes/gadgets/article-2/</guid>
-      <description>Exemple de résumé pour Gadgets article 2.</description>
-    </item>
-    <item>
       <title>Haut-parleurs — Article exemple 2</title>
-      <link>http://localhost:1313/audio/haut-parleurs/article-2/</link>
+      <link>http://localhost:1313/audio/ecouteurs/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/audio/haut-parleurs/article-2/</guid>
+      <guid>http://localhost:1313/audio/ecouteurs/article-2/</guid>
       <description>Exemple de résumé pour Haut-parleurs article 2.</description>
     </item>
     <item>
@@ -234,58 +199,44 @@
     </item>
     <item>
       <title>Lampes — Article exemple 2</title>
-      <link>http://localhost:1313/domotique/lampes/article-2/</link>
+      <link>http://localhost:1313/domotique/securite/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/domotique/lampes/article-2/</guid>
+      <guid>http://localhost:1313/domotique/securite/article-2/</guid>
       <description>Exemple de résumé pour Lampes article 2.</description>
     </item>
     <item>
-      <title>Lunettes réalité virtuelle — Article exemple 2</title>
-      <link>http://localhost:1313/obj-connectes/casques-realite-virtuelle/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/obj-connectes/casques-realite-virtuelle/article-2/</guid>
-      <description>Exemple de résumé pour Lunettes réalité virtuelle article 2.</description>
-    </item>
-    <item>
-      <title>Lunettes réalité virtuelle — Article exemple 2</title>
-      <link>http://localhost:1313/obj-connectes/lunettes-realite-virtuelle/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/obj-connectes/lunettes-realite-virtuelle/article-2/</guid>
-      <description>Exemple de résumé pour Lunettes réalité virtuelle article 2.</description>
-    </item>
-    <item>
       <title>Mesure battement cardiaque — Article exemple 2</title>
-      <link>http://localhost:1313/domotique/mesure-battement-cardiaque/article-2/</link>
+      <link>http://localhost:1313/domotique/maison/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/domotique/mesure-battement-cardiaque/article-2/</guid>
+      <guid>http://localhost:1313/domotique/maison/article-2/</guid>
       <description>Exemple de résumé pour Mesure battement cardiaque article 2.</description>
     </item>
     <item>
       <title>Mesure glycémie — Article exemple 2</title>
-      <link>http://localhost:1313/domotique/mesure-glycemie/article-2/</link>
+      <link>http://localhost:1313/domotique/energie/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/domotique/mesure-glycemie/article-2/</guid>
+      <guid>http://localhost:1313/domotique/energie/article-2/</guid>
       <description>Exemple de résumé pour Mesure glycémie article 2.</description>
     </item>
     <item>
       <title>Mesure hypertension — Article exemple 2</title>
-      <link>http://localhost:1313/domotique/mesure-hypertension/article-2/</link>
+      <link>http://localhost:1313/domotique/sante/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/domotique/mesure-hypertension/article-2/</guid>
+      <guid>http://localhost:1313/domotique/sante/article-2/</guid>
       <description>Exemple de résumé pour Mesure hypertension article 2.</description>
     </item>
     <item>
       <title>Mesure température — Article exemple 2</title>
-      <link>http://localhost:1313/domotique/mesure-temperature/article-2/</link>
+      <link>http://localhost:1313/domotique/nettoyage/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/domotique/mesure-temperature/article-2/</guid>
+      <guid>http://localhost:1313/domotique/nettoyage/article-2/</guid>
       <description>Exemple de résumé pour Mesure température article 2.</description>
     </item>
     <item>
       <title>Microphones — Article exemple 2</title>
-      <link>http://localhost:1313/audio/microphones/article-2/</link>
+      <link>http://localhost:1313/audio/accessoires/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/audio/microphones/article-2/</guid>
+      <guid>http://localhost:1313/audio/accessoires/article-2/</guid>
       <description>Exemple de résumé pour Microphones article 2.</description>
     </item>
     <item>
@@ -401,13 +352,6 @@
       <description>Exemple de résumé pour Reflex article 2.</description>
     </item>
     <item>
-      <title>Sans fil — Article exemple 2</title>
-      <link>http://localhost:1313/audio/sans-fil/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/audio/sans-fil/article-2/</guid>
-      <description>Exemple de résumé pour Sans fil article 2.</description>
-    </item>
-    <item>
       <title>Scanners — Article exemple 2</title>
       <link>http://localhost:1313/impression/scanners/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
@@ -457,13 +401,6 @@
       <description>Exemple de résumé pour Smart TV article 2.</description>
     </item>
     <item>
-      <title>Smartwatches — Article exemple 2</title>
-      <link>http://localhost:1313/obj-connectes/smartwatches/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/obj-connectes/smartwatches/article-2/</guid>
-      <description>Exemple de résumé pour Smartwatches article 2.</description>
-    </item>
-    <item>
       <title>Stockage — Article exemple 2</title>
       <link>http://localhost:1313/peripheriques/stockage/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
@@ -479,9 +416,9 @@
     </item>
     <item>
       <title>Thermostats — Article exemple 2</title>
-      <link>http://localhost:1313/domotique/thermostats/article-2/</link>
+      <link>http://localhost:1313/domotique/jardin/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/domotique/thermostats/article-2/</guid>
+      <guid>http://localhost:1313/domotique/jardin/article-2/</guid>
       <description>Exemple de résumé pour Thermostats article 2.</description>
     </item>
     <item>
@@ -490,13 +427,6 @@
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/impression/traceurs/article-2/</guid>
       <description>Exemple de résumé pour Traceurs article 2.</description>
-    </item>
-    <item>
-      <title>True wireless — Article exemple 2</title>
-      <link>http://localhost:1313/audio/true-wireless/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/audio/true-wireless/article-2/</guid>
-      <description>Exemple de résumé pour True wireless article 2.</description>
     </item>
     <item>
       <title>WebCam — Article exemple 2</title>
@@ -619,31 +549,10 @@
     </item>
     <item>
       <title>Assistants vocaux — Article exemple 1</title>
-      <link>http://localhost:1313/domotique/assistants-vocaux/article-1/</link>
+      <link>http://localhost:1313/domotique/eclairage/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/domotique/assistants-vocaux/article-1/</guid>
+      <guid>http://localhost:1313/domotique/eclairage/article-1/</guid>
       <description>Exemple de résumé pour Assistants vocaux article 1.</description>
-    </item>
-    <item>
-      <title>Bracelets &amp; montres &amp; lunettes connectées — Article exemple 1</title>
-      <link>http://localhost:1313/obj-connectes/bracelets-and-montres-and-lunettes-connectees/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/obj-connectes/bracelets-and-montres-and-lunettes-connectees/article-1/</guid>
-      <description>Exemple de résumé pour Bracelets &amp;amp; montres &amp;amp; lunettes connectées article 1.</description>
-    </item>
-    <item>
-      <title>Bracelets fitness — Article exemple 1</title>
-      <link>http://localhost:1313/obj-connectes/bracelets-fitness/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/obj-connectes/bracelets-fitness/article-1/</guid>
-      <description>Exemple de résumé pour Bracelets fitness article 1.</description>
-    </item>
-    <item>
-      <title>Caméras sportives — Article exemple 1</title>
-      <link>http://localhost:1313/obj-connectes/cameras-sportives/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/obj-connectes/cameras-sportives/article-1/</guid>
-      <description>Exemple de résumé pour Caméras sportives article 1.</description>
     </item>
     <item>
       <title>Casques — Article exemple 1</title>
@@ -654,9 +563,9 @@
     </item>
     <item>
       <title>Casques Anti-Bruit — Article exemple 1</title>
-      <link>http://localhost:1313/audio/casques-anti-bruit/article-1/</link>
+      <link>http://localhost:1313/audio/enceintes-son/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/audio/casques-anti-bruit/article-1/</guid>
+      <guid>http://localhost:1313/audio/enceintes-son/article-1/</guid>
       <description>Exemple de résumé pour Casques Anti-Bruit article 1.</description>
     </item>
     <item>
@@ -695,13 +604,6 @@
       <description>Exemple de résumé pour Consommables article 1.</description>
     </item>
     <item>
-      <title>Drones — Article exemple 1</title>
-      <link>http://localhost:1313/obj-connectes/drones/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/obj-connectes/drones/article-1/</guid>
-      <description>Exemple de résumé pour Drones article 1.</description>
-    </item>
-    <item>
       <title>Énergie &amp; Charge — Article exemple 1</title>
       <link>http://localhost:1313/peripheriques/energie-and-charge/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
@@ -710,23 +612,16 @@
     </item>
     <item>
       <title>Filaires — Article exemple 1</title>
-      <link>http://localhost:1313/audio/filaires/article-1/</link>
+      <link>http://localhost:1313/audio/micros-voix/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/audio/filaires/article-1/</guid>
+      <guid>http://localhost:1313/audio/micros-voix/article-1/</guid>
       <description>Exemple de résumé pour Filaires article 1.</description>
     </item>
     <item>
-      <title>Gadgets — Article exemple 1</title>
-      <link>http://localhost:1313/obj-connectes/gadgets/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/obj-connectes/gadgets/article-1/</guid>
-      <description>Exemple de résumé pour Gadgets article 1.</description>
-    </item>
-    <item>
       <title>Haut-parleurs — Article exemple 1</title>
-      <link>http://localhost:1313/audio/haut-parleurs/article-1/</link>
+      <link>http://localhost:1313/audio/ecouteurs/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/audio/haut-parleurs/article-1/</guid>
+      <guid>http://localhost:1313/audio/ecouteurs/article-1/</guid>
       <description>Exemple de résumé pour Haut-parleurs article 1.</description>
     </item>
     <item>
@@ -766,58 +661,44 @@
     </item>
     <item>
       <title>Lampes — Article exemple 1</title>
-      <link>http://localhost:1313/domotique/lampes/article-1/</link>
+      <link>http://localhost:1313/domotique/securite/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/domotique/lampes/article-1/</guid>
+      <guid>http://localhost:1313/domotique/securite/article-1/</guid>
       <description>Exemple de résumé pour Lampes article 1.</description>
     </item>
     <item>
-      <title>Lunettes réalité virtuelle — Article exemple 1</title>
-      <link>http://localhost:1313/obj-connectes/casques-realite-virtuelle/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/obj-connectes/casques-realite-virtuelle/article-1/</guid>
-      <description>Exemple de résumé pour Lunettes réalité virtuelle article 1.</description>
-    </item>
-    <item>
-      <title>Lunettes réalité virtuelle — Article exemple 1</title>
-      <link>http://localhost:1313/obj-connectes/lunettes-realite-virtuelle/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/obj-connectes/lunettes-realite-virtuelle/article-1/</guid>
-      <description>Exemple de résumé pour Lunettes réalité virtuelle article 1.</description>
-    </item>
-    <item>
       <title>Mesure battement cardiaque — Article exemple 1</title>
-      <link>http://localhost:1313/domotique/mesure-battement-cardiaque/article-1/</link>
+      <link>http://localhost:1313/domotique/maison/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/domotique/mesure-battement-cardiaque/article-1/</guid>
+      <guid>http://localhost:1313/domotique/maison/article-1/</guid>
       <description>Exemple de résumé pour Mesure battement cardiaque article 1.</description>
     </item>
     <item>
       <title>Mesure glycémie — Article exemple 1</title>
-      <link>http://localhost:1313/domotique/mesure-glycemie/article-1/</link>
+      <link>http://localhost:1313/domotique/energie/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/domotique/mesure-glycemie/article-1/</guid>
+      <guid>http://localhost:1313/domotique/energie/article-1/</guid>
       <description>Exemple de résumé pour Mesure glycémie article 1.</description>
     </item>
     <item>
       <title>Mesure hypertension — Article exemple 1</title>
-      <link>http://localhost:1313/domotique/mesure-hypertension/article-1/</link>
+      <link>http://localhost:1313/domotique/sante/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/domotique/mesure-hypertension/article-1/</guid>
+      <guid>http://localhost:1313/domotique/sante/article-1/</guid>
       <description>Exemple de résumé pour Mesure hypertension article 1.</description>
     </item>
     <item>
       <title>Mesure température — Article exemple 1</title>
-      <link>http://localhost:1313/domotique/mesure-temperature/article-1/</link>
+      <link>http://localhost:1313/domotique/nettoyage/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/domotique/mesure-temperature/article-1/</guid>
+      <guid>http://localhost:1313/domotique/nettoyage/article-1/</guid>
       <description>Exemple de résumé pour Mesure température article 1.</description>
     </item>
     <item>
       <title>Microphones — Article exemple 1</title>
-      <link>http://localhost:1313/audio/microphones/article-1/</link>
+      <link>http://localhost:1313/audio/accessoires/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/audio/microphones/article-1/</guid>
+      <guid>http://localhost:1313/audio/accessoires/article-1/</guid>
       <description>Exemple de résumé pour Microphones article 1.</description>
     </item>
     <item>
@@ -933,13 +814,6 @@
       <description>Exemple de résumé pour Reflex article 1.</description>
     </item>
     <item>
-      <title>Sans fil — Article exemple 1</title>
-      <link>http://localhost:1313/audio/sans-fil/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/audio/sans-fil/article-1/</guid>
-      <description>Exemple de résumé pour Sans fil article 1.</description>
-    </item>
-    <item>
       <title>Scanners — Article exemple 1</title>
       <link>http://localhost:1313/impression/scanners/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
@@ -989,13 +863,6 @@
       <description>Exemple de résumé pour Smart TV article 1.</description>
     </item>
     <item>
-      <title>Smartwatches — Article exemple 1</title>
-      <link>http://localhost:1313/obj-connectes/smartwatches/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/obj-connectes/smartwatches/article-1/</guid>
-      <description>Exemple de résumé pour Smartwatches article 1.</description>
-    </item>
-    <item>
       <title>Stockage — Article exemple 1</title>
       <link>http://localhost:1313/peripheriques/stockage/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
@@ -1011,9 +878,9 @@
     </item>
     <item>
       <title>Thermostats — Article exemple 1</title>
-      <link>http://localhost:1313/domotique/thermostats/article-1/</link>
+      <link>http://localhost:1313/domotique/jardin/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/domotique/thermostats/article-1/</guid>
+      <guid>http://localhost:1313/domotique/jardin/article-1/</guid>
       <description>Exemple de résumé pour Thermostats article 1.</description>
     </item>
     <item>
@@ -1022,13 +889,6 @@
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/impression/traceurs/article-1/</guid>
       <description>Exemple de résumé pour Traceurs article 1.</description>
-    </item>
-    <item>
-      <title>True wireless — Article exemple 1</title>
-      <link>http://localhost:1313/audio/true-wireless/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/audio/true-wireless/article-1/</guid>
-      <description>Exemple de résumé pour True wireless article 1.</description>
     </item>
     <item>
       <title>WebCam — Article exemple 1</title>
