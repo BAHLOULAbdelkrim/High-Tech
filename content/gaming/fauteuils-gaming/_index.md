@@ -1,5 +1,5 @@
 ---
-title: "Fauteuils gaming"
+title: "Fauteuils Gaming"
 url: "/fauteuils-gaming/"
 weight: 4
 ---
