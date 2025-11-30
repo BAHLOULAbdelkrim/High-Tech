@@ -17,9 +17,9 @@
     </item>
     <item>
       <title>Action Cam — Article exemple 2</title>
-      <link>http://localhost:1313/cameras/action-cam/article-2/</link>
+      <link>http://localhost:1313/photo-video/action-cam/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/cameras/action-cam/article-2/</guid>
+      <guid>http://localhost:1313/photo-video/action-cam/article-2/</guid>
       <description>Exemple de résumé pour Action Cam article 2.</description>
     </item>
     <item>
@@ -129,16 +129,30 @@
     </item>
     <item>
       <title>Chaises gaming — Article exemple 2</title>
-      <link>http://localhost:1313/gaming/chaise-gaming/article-2/</link>
+      <link>http://localhost:1313/gaming/fauteuils-gaming/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/gaming/chaise-gaming/article-2/</guid>
+      <guid>http://localhost:1313/gaming/fauteuils-gaming/article-2/</guid>
       <description>Exemple de résumé pour Chaises gaming article 2.</description>
+    </item>
+    <item>
+      <title>Consoles — Article exemple 2</title>
+      <link>http://localhost:1313/gaming/cartes-abonnements/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/gaming/cartes-abonnements/article-2/</guid>
+      <description>Exemple de résumé pour Consoles article 2.</description>
     </item>
     <item>
       <title>Consoles — Article exemple 2</title>
       <link>http://localhost:1313/gaming/consoles/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/gaming/consoles/article-2/</guid>
+      <description>Exemple de résumé pour Consoles article 2.</description>
+    </item>
+    <item>
+      <title>Consoles — Article exemple 2</title>
+      <link>http://localhost:1313/gaming/guides-gaming/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/gaming/guides-gaming/article-2/</guid>
       <description>Exemple de résumé pour Consoles article 2.</description>
     </item>
     <item>
@@ -227,6 +241,13 @@
     </item>
     <item>
       <title>Lunettes réalité virtuelle — Article exemple 2</title>
+      <link>http://localhost:1313/obj-connectes/casques-realite-virtuelle/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/obj-connectes/casques-realite-virtuelle/article-2/</guid>
+      <description>Exemple de résumé pour Lunettes réalité virtuelle article 2.</description>
+    </item>
+    <item>
+      <title>Lunettes réalité virtuelle — Article exemple 2</title>
       <link>http://localhost:1313/obj-connectes/lunettes-realite-virtuelle/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/obj-connectes/lunettes-realite-virtuelle/article-2/</guid>
@@ -269,23 +290,23 @@
     </item>
     <item>
       <title>Mirrorless — Article exemple 2</title>
-      <link>http://localhost:1313/cameras/mirrorless/article-2/</link>
+      <link>http://localhost:1313/photo-video/hybride/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/cameras/mirrorless/article-2/</guid>
+      <guid>http://localhost:1313/photo-video/hybride/article-2/</guid>
       <description>Exemple de résumé pour Mirrorless article 2.</description>
     </item>
     <item>
       <title>Objectifs — Article exemple 2</title>
-      <link>http://localhost:1313/cameras/objectifs/article-2/</link>
+      <link>http://localhost:1313/photo-video/objectifs/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/cameras/objectifs/article-2/</guid>
+      <guid>http://localhost:1313/photo-video/objectifs/article-2/</guid>
       <description>Exemple de résumé pour Objectifs article 2.</description>
     </item>
     <item>
       <title>OLED — Article exemple 2</title>
-      <link>http://localhost:1313/home-cinema/oled/article-2/</link>
+      <link>http://localhost:1313/tv-cinema/oled/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/home-cinema/oled/article-2/</guid>
+      <guid>http://localhost:1313/tv-cinema/oled/article-2/</guid>
       <description>Exemple de résumé pour OLED article 2.</description>
     </item>
     <item>
@@ -346,16 +367,16 @@
     </item>
     <item>
       <title>Projecteurs — Article exemple 2</title>
-      <link>http://localhost:1313/cameras/projecteurs/article-2/</link>
+      <link>http://localhost:1313/photo-video/cam-360/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/cameras/projecteurs/article-2/</guid>
+      <guid>http://localhost:1313/photo-video/cam-360/article-2/</guid>
       <description>Exemple de résumé pour Projecteurs article 2.</description>
     </item>
     <item>
       <title>Projecteurs — Article exemple 2</title>
-      <link>http://localhost:1313/home-cinema/projecteurs/article-2/</link>
+      <link>http://localhost:1313/tv-cinema/projecteurs/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/home-cinema/projecteurs/article-2/</guid>
+      <guid>http://localhost:1313/tv-cinema/projecteurs/article-2/</guid>
       <description>Exemple de résumé pour Projecteurs article 2.</description>
     </item>
     <item>
@@ -367,16 +388,16 @@
     </item>
     <item>
       <title>QLED — Article exemple 2</title>
-      <link>http://localhost:1313/home-cinema/qled/article-2/</link>
+      <link>http://localhost:1313/tv-cinema/qled/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/home-cinema/qled/article-2/</guid>
+      <guid>http://localhost:1313/tv-cinema/qled/article-2/</guid>
       <description>Exemple de résumé pour QLED article 2.</description>
     </item>
     <item>
       <title>Reflex — Article exemple 2</title>
-      <link>http://localhost:1313/cameras/reflex/article-2/</link>
+      <link>http://localhost:1313/photo-video/reflex/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/cameras/reflex/article-2/</guid>
+      <guid>http://localhost:1313/photo-video/reflex/article-2/</guid>
       <description>Exemple de résumé pour Reflex article 2.</description>
     </item>
     <item>
@@ -395,9 +416,44 @@
     </item>
     <item>
       <title>Smart TV — Article exemple 2</title>
-      <link>http://localhost:1313/home-cinema/smart-tv/article-2/</link>
+      <link>http://localhost:1313/tv-cinema/accessoires-tv/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/home-cinema/smart-tv/article-2/</guid>
+      <guid>http://localhost:1313/tv-cinema/accessoires-tv/article-2/</guid>
+      <description>Exemple de résumé pour Smart TV article 2.</description>
+    </item>
+    <item>
+      <title>Smart TV — Article exemple 2</title>
+      <link>http://localhost:1313/tv-cinema/audio-tv/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tv-cinema/audio-tv/article-2/</guid>
+      <description>Exemple de résumé pour Smart TV article 2.</description>
+    </item>
+    <item>
+      <title>Smart TV — Article exemple 2</title>
+      <link>http://localhost:1313/tv-cinema/gaming-hdr/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tv-cinema/gaming-hdr/article-2/</guid>
+      <description>Exemple de résumé pour Smart TV article 2.</description>
+    </item>
+    <item>
+      <title>Smart TV — Article exemple 2</title>
+      <link>http://localhost:1313/tv-cinema/miniled/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tv-cinema/miniled/article-2/</guid>
+      <description>Exemple de résumé pour Smart TV article 2.</description>
+    </item>
+    <item>
+      <title>Smart TV — Article exemple 2</title>
+      <link>http://localhost:1313/tv-cinema/smart-tv/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tv-cinema/smart-tv/article-2/</guid>
+      <description>Exemple de résumé pour Smart TV article 2.</description>
+    </item>
+    <item>
+      <title>Smart TV — Article exemple 2</title>
+      <link>http://localhost:1313/tv-cinema/streaming-box-tv/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tv-cinema/streaming-box-tv/article-2/</guid>
       <description>Exemple de résumé pour Smart TV article 2.</description>
     </item>
     <item>
@@ -416,9 +472,9 @@
     </item>
     <item>
       <title>Supports — Article exemple 2</title>
-      <link>http://localhost:1313/cameras/supports/article-2/</link>
+      <link>http://localhost:1313/photo-video/supports/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/cameras/supports/article-2/</guid>
+      <guid>http://localhost:1313/photo-video/supports/article-2/</guid>
       <description>Exemple de résumé pour Supports article 2.</description>
     </item>
     <item>
@@ -444,16 +500,44 @@
     </item>
     <item>
       <title>WebCam — Article exemple 2</title>
-      <link>http://localhost:1313/cameras/surveillance/article-2/</link>
+      <link>http://localhost:1313/photo-video/cam%C3%A9scope/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/cameras/surveillance/article-2/</guid>
+      <guid>http://localhost:1313/photo-video/cam%C3%A9scope/article-2/</guid>
       <description>Exemple de résumé pour WebCam article 2.</description>
     </item>
     <item>
       <title>WebCam — Article exemple 2</title>
-      <link>http://localhost:1313/cameras/webcam/article-2/</link>
+      <link>http://localhost:1313/photo-video/instantan%C3%A9e/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/cameras/webcam/article-2/</guid>
+      <guid>http://localhost:1313/photo-video/instantan%C3%A9e/article-2/</guid>
+      <description>Exemple de résumé pour WebCam article 2.</description>
+    </item>
+    <item>
+      <title>WebCam — Article exemple 2</title>
+      <link>http://localhost:1313/photo-video/stabilisation/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/photo-video/stabilisation/article-2/</guid>
+      <description>Exemple de résumé pour WebCam article 2.</description>
+    </item>
+    <item>
+      <title>WebCam — Article exemple 2</title>
+      <link>http://localhost:1313/photo-video/surveillance/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/photo-video/surveillance/article-2/</guid>
+      <description>Exemple de résumé pour WebCam article 2.</description>
+    </item>
+    <item>
+      <title>WebCam — Article exemple 2</title>
+      <link>http://localhost:1313/photo-video/vlogging/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/photo-video/vlogging/article-2/</guid>
+      <description>Exemple de résumé pour WebCam article 2.</description>
+    </item>
+    <item>
+      <title>WebCam — Article exemple 2</title>
+      <link>http://localhost:1313/photo-video/webcam/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/photo-video/webcam/article-2/</guid>
       <description>Exemple de résumé pour WebCam article 2.</description>
     </item>
     <item>
@@ -465,9 +549,9 @@
     </item>
     <item>
       <title>Action Cam — Article exemple 1</title>
-      <link>http://localhost:1313/cameras/action-cam/article-1/</link>
+      <link>http://localhost:1313/photo-video/action-cam/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/cameras/action-cam/article-1/</guid>
+      <guid>http://localhost:1313/photo-video/action-cam/article-1/</guid>
       <description>Exemple de résumé pour Action Cam article 1.</description>
     </item>
     <item>
@@ -577,16 +661,30 @@
     </item>
     <item>
       <title>Chaises gaming — Article exemple 1</title>
-      <link>http://localhost:1313/gaming/chaise-gaming/article-1/</link>
+      <link>http://localhost:1313/gaming/fauteuils-gaming/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/gaming/chaise-gaming/article-1/</guid>
+      <guid>http://localhost:1313/gaming/fauteuils-gaming/article-1/</guid>
       <description>Exemple de résumé pour Chaises gaming article 1.</description>
+    </item>
+    <item>
+      <title>Consoles — Article exemple 1</title>
+      <link>http://localhost:1313/gaming/cartes-abonnements/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/gaming/cartes-abonnements/article-1/</guid>
+      <description>Exemple de résumé pour Consoles article 1.</description>
     </item>
     <item>
       <title>Consoles — Article exemple 1</title>
       <link>http://localhost:1313/gaming/consoles/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/gaming/consoles/article-1/</guid>
+      <description>Exemple de résumé pour Consoles article 1.</description>
+    </item>
+    <item>
+      <title>Consoles — Article exemple 1</title>
+      <link>http://localhost:1313/gaming/guides-gaming/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/gaming/guides-gaming/article-1/</guid>
       <description>Exemple de résumé pour Consoles article 1.</description>
     </item>
     <item>
@@ -675,6 +773,13 @@
     </item>
     <item>
       <title>Lunettes réalité virtuelle — Article exemple 1</title>
+      <link>http://localhost:1313/obj-connectes/casques-realite-virtuelle/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/obj-connectes/casques-realite-virtuelle/article-1/</guid>
+      <description>Exemple de résumé pour Lunettes réalité virtuelle article 1.</description>
+    </item>
+    <item>
+      <title>Lunettes réalité virtuelle — Article exemple 1</title>
       <link>http://localhost:1313/obj-connectes/lunettes-realite-virtuelle/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/obj-connectes/lunettes-realite-virtuelle/article-1/</guid>
@@ -717,23 +822,23 @@
     </item>
     <item>
       <title>Mirrorless — Article exemple 1</title>
-      <link>http://localhost:1313/cameras/mirrorless/article-1/</link>
+      <link>http://localhost:1313/photo-video/hybride/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/cameras/mirrorless/article-1/</guid>
+      <guid>http://localhost:1313/photo-video/hybride/article-1/</guid>
       <description>Exemple de résumé pour Mirrorless article 1.</description>
     </item>
     <item>
       <title>Objectifs — Article exemple 1</title>
-      <link>http://localhost:1313/cameras/objectifs/article-1/</link>
+      <link>http://localhost:1313/photo-video/objectifs/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/cameras/objectifs/article-1/</guid>
+      <guid>http://localhost:1313/photo-video/objectifs/article-1/</guid>
       <description>Exemple de résumé pour Objectifs article 1.</description>
     </item>
     <item>
       <title>OLED — Article exemple 1</title>
-      <link>http://localhost:1313/home-cinema/oled/article-1/</link>
+      <link>http://localhost:1313/tv-cinema/oled/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/home-cinema/oled/article-1/</guid>
+      <guid>http://localhost:1313/tv-cinema/oled/article-1/</guid>
       <description>Exemple de résumé pour OLED article 1.</description>
     </item>
     <item>
@@ -794,16 +899,16 @@
     </item>
     <item>
       <title>Projecteurs — Article exemple 1</title>
-      <link>http://localhost:1313/cameras/projecteurs/article-1/</link>
+      <link>http://localhost:1313/photo-video/cam-360/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/cameras/projecteurs/article-1/</guid>
+      <guid>http://localhost:1313/photo-video/cam-360/article-1/</guid>
       <description>Exemple de résumé pour Projecteurs article 1.</description>
     </item>
     <item>
       <title>Projecteurs — Article exemple 1</title>
-      <link>http://localhost:1313/home-cinema/projecteurs/article-1/</link>
+      <link>http://localhost:1313/tv-cinema/projecteurs/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/home-cinema/projecteurs/article-1/</guid>
+      <guid>http://localhost:1313/tv-cinema/projecteurs/article-1/</guid>
       <description>Exemple de résumé pour Projecteurs article 1.</description>
     </item>
     <item>
@@ -815,16 +920,16 @@
     </item>
     <item>
       <title>QLED — Article exemple 1</title>
-      <link>http://localhost:1313/home-cinema/qled/article-1/</link>
+      <link>http://localhost:1313/tv-cinema/qled/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/home-cinema/qled/article-1/</guid>
+      <guid>http://localhost:1313/tv-cinema/qled/article-1/</guid>
       <description>Exemple de résumé pour QLED article 1.</description>
     </item>
     <item>
       <title>Reflex — Article exemple 1</title>
-      <link>http://localhost:1313/cameras/reflex/article-1/</link>
+      <link>http://localhost:1313/photo-video/reflex/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/cameras/reflex/article-1/</guid>
+      <guid>http://localhost:1313/photo-video/reflex/article-1/</guid>
       <description>Exemple de résumé pour Reflex article 1.</description>
     </item>
     <item>
@@ -843,9 +948,44 @@
     </item>
     <item>
       <title>Smart TV — Article exemple 1</title>
-      <link>http://localhost:1313/home-cinema/smart-tv/article-1/</link>
+      <link>http://localhost:1313/tv-cinema/accessoires-tv/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/home-cinema/smart-tv/article-1/</guid>
+      <guid>http://localhost:1313/tv-cinema/accessoires-tv/article-1/</guid>
+      <description>Exemple de résumé pour Smart TV article 1.</description>
+    </item>
+    <item>
+      <title>Smart TV — Article exemple 1</title>
+      <link>http://localhost:1313/tv-cinema/audio-tv/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tv-cinema/audio-tv/article-1/</guid>
+      <description>Exemple de résumé pour Smart TV article 1.</description>
+    </item>
+    <item>
+      <title>Smart TV — Article exemple 1</title>
+      <link>http://localhost:1313/tv-cinema/gaming-hdr/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tv-cinema/gaming-hdr/article-1/</guid>
+      <description>Exemple de résumé pour Smart TV article 1.</description>
+    </item>
+    <item>
+      <title>Smart TV — Article exemple 1</title>
+      <link>http://localhost:1313/tv-cinema/miniled/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tv-cinema/miniled/article-1/</guid>
+      <description>Exemple de résumé pour Smart TV article 1.</description>
+    </item>
+    <item>
+      <title>Smart TV — Article exemple 1</title>
+      <link>http://localhost:1313/tv-cinema/smart-tv/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tv-cinema/smart-tv/article-1/</guid>
+      <description>Exemple de résumé pour Smart TV article 1.</description>
+    </item>
+    <item>
+      <title>Smart TV — Article exemple 1</title>
+      <link>http://localhost:1313/tv-cinema/streaming-box-tv/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tv-cinema/streaming-box-tv/article-1/</guid>
       <description>Exemple de résumé pour Smart TV article 1.</description>
     </item>
     <item>
@@ -864,9 +1004,9 @@
     </item>
     <item>
       <title>Supports — Article exemple 1</title>
-      <link>http://localhost:1313/cameras/supports/article-1/</link>
+      <link>http://localhost:1313/photo-video/supports/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/cameras/supports/article-1/</guid>
+      <guid>http://localhost:1313/photo-video/supports/article-1/</guid>
       <description>Exemple de résumé pour Supports article 1.</description>
     </item>
     <item>
@@ -892,16 +1032,44 @@
     </item>
     <item>
       <title>WebCam — Article exemple 1</title>
-      <link>http://localhost:1313/cameras/surveillance/article-1/</link>
+      <link>http://localhost:1313/photo-video/cam%C3%A9scope/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/cameras/surveillance/article-1/</guid>
+      <guid>http://localhost:1313/photo-video/cam%C3%A9scope/article-1/</guid>
       <description>Exemple de résumé pour WebCam article 1.</description>
     </item>
     <item>
       <title>WebCam — Article exemple 1</title>
-      <link>http://localhost:1313/cameras/webcam/article-1/</link>
+      <link>http://localhost:1313/photo-video/instantan%C3%A9e/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/cameras/webcam/article-1/</guid>
+      <guid>http://localhost:1313/photo-video/instantan%C3%A9e/article-1/</guid>
+      <description>Exemple de résumé pour WebCam article 1.</description>
+    </item>
+    <item>
+      <title>WebCam — Article exemple 1</title>
+      <link>http://localhost:1313/photo-video/stabilisation/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/photo-video/stabilisation/article-1/</guid>
+      <description>Exemple de résumé pour WebCam article 1.</description>
+    </item>
+    <item>
+      <title>WebCam — Article exemple 1</title>
+      <link>http://localhost:1313/photo-video/surveillance/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/photo-video/surveillance/article-1/</guid>
+      <description>Exemple de résumé pour WebCam article 1.</description>
+    </item>
+    <item>
+      <title>WebCam — Article exemple 1</title>
+      <link>http://localhost:1313/photo-video/vlogging/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/photo-video/vlogging/article-1/</guid>
+      <description>Exemple de résumé pour WebCam article 1.</description>
+    </item>
+    <item>
+      <title>WebCam — Article exemple 1</title>
+      <link>http://localhost:1313/photo-video/webcam/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/photo-video/webcam/article-1/</guid>
       <description>Exemple de résumé pour WebCam article 1.</description>
     </item>
     <item>

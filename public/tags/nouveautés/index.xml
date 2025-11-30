@@ -6,7 +6,7 @@
     <description>Recent content in Nouveautés on High-Tech — Nouvelles Technologies, Tests et Comparatifs</description>
     <generator>Hugo</generator>
     <language>fr</language>
-    <lastBuildDate>Fri, 03 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jan 2025 12:00:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/nouveaut%C3%A9s/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apple</title>
@@ -126,6 +126,13 @@
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pc-portables/razer/</guid>
       <description>&lt;p&gt;Page dédiée aux smartphones Samsung : modèles, nouveautés et comparatifs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Surveillance</title>
+      <link>http://localhost:1313/surveillance/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/surveillance/</guid>
+      <description>&lt;p&gt;Page du sous-menu WebCam dans cameras.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CyberPowerPC</title>
