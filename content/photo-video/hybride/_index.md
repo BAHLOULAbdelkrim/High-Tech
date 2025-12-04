@@ -1,5 +1,7 @@
 ---
 title: "Hybride "
+menu_image: "/images/photo-video_hybride.webp"    # pour l’affichage du menu (miniature).
+image: "/images/photo-video_hybride.webp"           # pour la page elle-même ou les réseaux sociaux (image principale / OG).
 url: "/hybride/"
 weight: 2
 ---

@@ -1,5 +1,7 @@
 ---
-title: "Montres & Bracelets*"
+title: "Montres & Bracelets"
+menu_image: "/images/obj-connectes_montres-bracelets.webp"    # pour l’affichage du menu (miniature).
+image: "/images/obj-connectes_montres-bracelets.webp"           # pour la page elle-même ou les réseaux sociaux (image principale / OG).
 url: "/montres-bracelets/"
 weight: 1
 ---

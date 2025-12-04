@@ -1,5 +1,7 @@
 ---
 title: "Écouteurs"
+menu_image: "/images/audio_ecouteurs.webp"    # pour l’affichage du menu (miniature).
+image: "/images/audio_ecouteurs.webp"           # pour la page elle-même ou les réseaux sociaux (image principale / OG).
 url: "/ecouteurs/"
 weight: 2
 ---

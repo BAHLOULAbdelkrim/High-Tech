@@ -1,5 +1,7 @@
 ---
 title: "Jardin Connecté"
+menu_image: "/images/domotique_jardin.webp"    # pour l’affichage du menu (miniature).
+image: "/images/domotique_jardin.webp"           # pour la page elle-même ou les réseaux sociaux (image principale / OG).
 url: "/jardin-connecte/"
 weight: 7
 ---

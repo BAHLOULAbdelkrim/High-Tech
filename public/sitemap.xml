@@ -5,7 +5,7 @@
     <loc>http://localhost:1313/action-cam/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tablettes/apple/</loc>
+    <loc>http://localhost:1313/tablettes-apple/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/casques/</loc>
@@ -17,16 +17,25 @@
     <loc>http://localhost:1313/eclairage-connecte/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/energie/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/imprimantes/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/montres-bracelets/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/oled/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ordinateurs/apple/</loc>
+    <loc>http://localhost:1313/ordinateurs-apple/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/apple/</loc>
+    <loc>http://localhost:1313/pc-portables-apple/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/apple/</loc>
+    <loc>http://localhost:1313/smartphones-apple/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ecouteurs/</loc>
@@ -35,25 +44,34 @@
     <loc>http://localhost:1313/hybride/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/imprimantes-3d/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/jeux-videos/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/lunettes-realite-augmentee/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/protection/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/qled/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tablettes/samsung/</loc>
+    <loc>http://localhost:1313/tablettes-samsung/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/securite-connectee/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ordinateurs/dell/</loc>
+    <loc>http://localhost:1313/ordinateurs-dell/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/dell/</loc>
+    <loc>http://localhost:1313/pc-portables-dell/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/samsung/</loc>
+    <loc>http://localhost:1313/smartphones-samsung/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/accessoires-gaming/</loc>
@@ -65,25 +83,37 @@
     <loc>http://localhost:1313/maison-connectee/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/realite-virtuelle/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/reflex-dslr/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scanners-photocopieurs/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/smart-tv/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/xiaomi/</loc>
+    <loc>http://localhost:1313/stockage/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tablettes/xiaomi/</loc>
+    <loc>http://localhost:1313/smartphones-xiaomi/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ordinateurs/hp/</loc>
+    <loc>http://localhost:1313/tablettes-xiaomi/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ordinateurs-hp/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/hp/</loc>
+    <loc>http://localhost:1313/pc-portables-hp/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/360-cam/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/drones-air-tech/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/energie-connectee/</loc>
@@ -92,7 +122,7 @@
     <loc>http://localhost:1313/fauteuils-gaming/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tablettes/lenovo/</loc>
+    <loc>http://localhost:1313/tablettes-lenovo/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/microphones-voix/</loc>
@@ -101,13 +131,22 @@
     <loc>http://localhost:1313/miniled/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/oppo-oneplus/</loc>
+    <loc>http://localhost:1313/smartphones-oneplus/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ordinateurs/lenovo/</loc>
+    <loc>http://localhost:1313/smartphones-oppo/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/peripheriques-informatiques/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/traceurs-grand-format/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ordinateurs-lenovo/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/lenovo/</loc>
+    <loc>http://localhost:1313/pc-portables-lenovo/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/amplis-hi-fi/</loc>
@@ -116,10 +155,19 @@
     <loc>http://localhost:1313/cartes-abonnements/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tablettes/huawei/</loc>
+    <loc>http://localhost:1313/connectique/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/instantan%C3%A9es/</loc>
+    <loc>http://localhost:1313/consommables-pieces/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/gadgets-high-tech/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tablettes-huawei/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/instantan%C3%A9s/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/sante-connectee/</loc>
@@ -128,13 +176,13 @@
     <loc>http://localhost:1313/tv-gaming-hdr/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ordinateurs/asus/</loc>
+    <loc>http://localhost:1313/ordinateurs-asus/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/asus/</loc>
+    <loc>http://localhost:1313/pc-portables-asus/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/vivo/</loc>
+    <loc>http://localhost:1313/smartphones-vivo/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/accessoires-audio/</loc>
@@ -143,10 +191,10 @@
     <loc>http://localhost:1313/guides-gaming/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/huawei/</loc>
+    <loc>http://localhost:1313/smartphones-huawei/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tablettes/microsoft/</loc>
+    <loc>http://localhost:1313/tablettes-microsoft/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/nettoyage-intelligent/</loc>
@@ -158,16 +206,16 @@
     <loc>http://localhost:1313/vlogging/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ordinateurs/acer/</loc>
+    <loc>http://localhost:1313/ordinateurs-acer/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/acer/</loc>
+    <loc>http://localhost:1313/pc-portables-acer/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cam%C3%A9scopes/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tablettes/honor/</loc>
+    <loc>http://localhost:1313/tablettes-honor/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/jardin-connecte/</loc>
@@ -176,31 +224,31 @@
     <loc>http://localhost:1313/projecteurs/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/realme/</loc>
+    <loc>http://localhost:1313/smartphones-realme/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ordinateurs/msi/</loc>
+    <loc>http://localhost:1313/ordinateurs-msi/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/msi/</loc>
+    <loc>http://localhost:1313/pc-portables-msi/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/audio-tv/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/honor/</loc>
+    <loc>http://localhost:1313/smartphones-honor/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tablettes/oneplus/</loc>
+    <loc>http://localhost:1313/tablettes-oneplus/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/webcam/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ordinateurs/corsair/</loc>
+    <loc>http://localhost:1313/ordinateurs-corsair/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/razer/</loc>
+    <loc>http://localhost:1313/pc-portables-razer/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/accessoires-tv/</loc>
@@ -209,58 +257,58 @@
     <loc>http://localhost:1313/surveillance/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/tecno/</loc>
+    <loc>http://localhost:1313/smartphones-tecno/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ordinateurs/cyberpower/</loc>
+    <loc>http://localhost:1313/ordinateurs-cyberpowerpc/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/huawei-honor/</loc>
+    <loc>http://localhost:1313/pc-portables-huawei-honor/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/infinix/</loc>
+    <loc>http://localhost:1313/smartphones-infinix/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/objectifs/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ordinateurs/ibuypower/</loc>
+    <loc>http://localhost:1313/ordinateurs-ibuypower/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/samsung/</loc>
+    <loc>http://localhost:1313/pc-portables-samsung/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/stabilisation/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/microsoft/</loc>
+    <loc>http://localhost:1313/pc-portables-microsoft/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/motorola/</loc>
+    <loc>http://localhost:1313/smartphones-motorola/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ordinateurs/nzxt/</loc>
+    <loc>http://localhost:1313/ordinateurs-nzxt/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/google/</loc>
+    <loc>http://localhost:1313/smartphones-google/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/supports/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/lg-gram/</loc>
+    <loc>http://localhost:1313/pc-portables-lg-gram/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ordinateurs/microsoft/</loc>
+    <loc>http://localhost:1313/ordinateurs-microsoft/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/framework/</loc>
+    <loc>http://localhost:1313/pc-portables-framework/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/gigabyte/</loc>
+    <loc>http://localhost:1313/pc-portables-gigabyte/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pc-portables/toshiba/</loc>
+    <loc>http://localhost:1313/pc-portables-toshiba/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/gaming/accessoires/article-2/</loc>
@@ -305,31 +353,16 @@
     <loc>http://localhost:1313/audio/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/obj-connectes/bracelets-and-montres-and-lunettes-connectees/</loc>
+    <loc>http://localhost:1313/obj-connectes/montres-bracelets/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/obj-connectes/bracelets-and-montres-and-lunettes-connectees/article-2/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/obj-connectes/bracelets-fitness/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/obj-connectes/bracelets-fitness/article-2/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/obj-connectes/cameras-sportives/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/obj-connectes/cameras-sportives/article-2/</loc>
+    <loc>http://localhost:1313/obj-connectes/lunettes-ar/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/audio/casques/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/audio/enceintes-son/article-2/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/obj-connectes/casques-realite-virtuelle/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/gaming/fauteuils-gaming/article-2/</loc>
@@ -344,34 +377,22 @@
     <loc>http://localhost:1313/gaming/guides-gaming/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/impression/consommables/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/impression/consommables/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/domotique/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/obj-connectes/drones/</loc>
+    <loc>http://localhost:1313/obj-connectes/drones-air-tech/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/obj-connectes/drones/article-2/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/peripheriques/energie-and-charge/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/peripheriques/energie-and-charge/article-2/</loc>
+    <loc>http://localhost:1313/peripheriques/energie/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/audio/micros-voix/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/obj-connectes/gadgets/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/obj-connectes/gadgets/article-2/</loc>
+    <loc>http://localhost:1313/obj-connectes/gadgets-high-tech/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/gaming/</loc>
@@ -383,13 +404,7 @@
     <loc>http://localhost:1313/impression/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/impression/imprimantes/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/impression/imprimantes/article-2/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/impression/imprimantes-3d/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/impression/imprimantes-3d/article-2/</loc>
@@ -407,13 +422,7 @@
     <loc>http://localhost:1313/domotique/securite/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/obj-connectes/lunettes-realite-virtuelle/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/obj-connectes/casques-realite-virtuelle/article-2/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/obj-connectes/lunettes-realite-virtuelle/article-2/</loc>
+    <loc>http://localhost:1313/obj-connectes/realite-virtuelle/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/domotique/maison/article-2/</loc>
@@ -449,19 +458,10 @@
     <loc>http://localhost:1313/peripheriques/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/peripheriques/peripheriques/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/peripheriques/peripheriques/article-2/</loc>
+    <loc>http://localhost:1313/peripheriques/informatique/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/photo-video/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/impression/photocopieuses/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/impression/photocopieuses/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/smartphones/honor/article-2/</loc>
@@ -473,7 +473,10 @@
     <loc>http://localhost:1313/smartphones/infinix/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/oppo-oneplus/article-2/</loc>
+    <loc>http://localhost:1313/smartphones/oneplus/article-2/</loc>
+    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/oppo/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/smartphones/realme/article-2/</loc>
@@ -488,10 +491,7 @@
     <loc>http://localhost:1313/tv-cinema/projecteurs/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/peripheriques/protections/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/peripheriques/protections/article-2/</loc>
+    <loc>http://localhost:1313/peripheriques/protection/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tv-cinema/qled/article-2/</loc>
@@ -503,10 +503,7 @@
     <loc>http://localhost:1313/tags/samsung/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/impression/scanners/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/impression/scanners/article-2/</loc>
+    <loc>http://localhost:1313/impression/scanners-photocopieurs/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tv-cinema/accessoires-tv/article-2/</loc>
@@ -533,13 +530,7 @@
     <loc>http://localhost:1313/tags/smartphones/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/obj-connectes/smartwatches/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/obj-connectes/smartwatches/article-2/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/peripheriques/stockage/</loc>
+    <loc>http://localhost:1313/peripheriques/connectique/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/peripheriques/stockage/article-2/</loc>
@@ -557,19 +548,16 @@
     <loc>http://localhost:1313/domotique/jardin/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/impression/traceurs/</loc>
-    <lastmod>2025-01-12T12:00:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/impression/traceurs/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tv-cinema/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/photo-video/cam%C3%A9scope/article-2/</loc>
+    <loc>http://localhost:1313/photo-video/camescope/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/photo-video/instantan%C3%A9e/article-2/</loc>
+    <loc>http://localhost:1313/photo-video/instantane/article-2/</loc>
     <lastmod>2025-01-12T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/photo-video/stabilisation/article-2/</loc>
@@ -620,13 +608,10 @@
     <loc>http://localhost:1313/domotique/eclairage/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/obj-connectes/bracelets-and-montres-and-lunettes-connectees/article-1/</loc>
+    <loc>http://localhost:1313/obj-connectes/montres-bracelets/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/obj-connectes/bracelets-fitness/article-1/</loc>
-    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/obj-connectes/cameras-sportives/article-1/</loc>
+    <loc>http://localhost:1313/obj-connectes/lunettes-ar/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/audio/casques/article-1/</loc>
@@ -650,16 +635,16 @@
     <loc>http://localhost:1313/impression/consommables/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/obj-connectes/drones/article-1/</loc>
+    <loc>http://localhost:1313/obj-connectes/drones-air-tech/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/peripheriques/energie-and-charge/article-1/</loc>
+    <loc>http://localhost:1313/peripheriques/energie/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/audio/micros-voix/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/obj-connectes/gadgets/article-1/</loc>
+    <loc>http://localhost:1313/obj-connectes/gadgets-high-tech/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/audio/ecouteurs/article-1/</loc>
@@ -683,10 +668,7 @@
     <loc>http://localhost:1313/domotique/securite/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/obj-connectes/casques-realite-virtuelle/article-1/</loc>
-    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/obj-connectes/lunettes-realite-virtuelle/article-1/</loc>
+    <loc>http://localhost:1313/obj-connectes/realite-virtuelle/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/domotique/maison/article-1/</loc>
@@ -713,10 +695,7 @@
     <loc>http://localhost:1313/tv-cinema/oled/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/peripheriques/peripheriques/article-1/</loc>
-    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/impression/photocopieuses/article-1/</loc>
+    <loc>http://localhost:1313/peripheriques/informatique/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/smartphones/honor/article-1/</loc>
@@ -728,7 +707,10 @@
     <loc>http://localhost:1313/smartphones/infinix/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/smartphones/oppo-oneplus/article-1/</loc>
+    <loc>http://localhost:1313/smartphones/oneplus/article-1/</loc>
+    <lastmod>2025-01-11T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/smartphones/oppo/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/smartphones/realme/article-1/</loc>
@@ -743,7 +725,7 @@
     <loc>http://localhost:1313/tv-cinema/projecteurs/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/peripheriques/protections/article-1/</loc>
+    <loc>http://localhost:1313/peripheriques/protection/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tv-cinema/qled/article-1/</loc>
@@ -752,7 +734,7 @@
     <loc>http://localhost:1313/photo-video/reflex/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/impression/scanners/article-1/</loc>
+    <loc>http://localhost:1313/impression/scanners-photocopieurs/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tv-cinema/accessoires-tv/article-1/</loc>
@@ -773,7 +755,7 @@
     <loc>http://localhost:1313/tv-cinema/streaming-box-tv/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/obj-connectes/smartwatches/article-1/</loc>
+    <loc>http://localhost:1313/peripheriques/connectique/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/peripheriques/stockage/article-1/</loc>
@@ -788,10 +770,10 @@
     <loc>http://localhost:1313/impression/traceurs/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/photo-video/cam%C3%A9scope/article-1/</loc>
+    <loc>http://localhost:1313/photo-video/camescope/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/photo-video/instantan%C3%A9e/article-1/</loc>
+    <loc>http://localhost:1313/photo-video/instantane/article-1/</loc>
     <lastmod>2025-01-11T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/photo-video/stabilisation/article-1/</loc>

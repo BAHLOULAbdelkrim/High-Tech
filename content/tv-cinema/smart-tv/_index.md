@@ -1,5 +1,7 @@
 ---
 title: "Smart TV"
+menu_image: "/images/tv-cinema_smart-tv.webp"    # pour l’affichage du menu (miniature).
+image: "/images/tv-cinema_smart-tv.webp"           # pour la page elle-même ou les réseaux sociaux (image principale / OG).
 url: "/smart-tv/"
 weight: 3
 ---

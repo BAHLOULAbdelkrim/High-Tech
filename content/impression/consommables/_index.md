@@ -1,5 +1,7 @@
 ---
 title: "Consommables & Pièces"
+menu_image: "/images/impression_consommables.webp"    # pour l’affichage du menu (miniature).
+image: "/images/impression_consommables.webp"           # pour la page elle-même ou les réseaux sociaux (image principale / OG).
 url: "/consommables-pieces/"
 weight: 5
 ---

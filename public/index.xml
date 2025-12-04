@@ -93,6 +93,20 @@
       <description>Exemple de résumé pour Assistants vocaux article 2.</description>
     </item>
     <item>
+      <title>Bracelets fitness — Article exemple 2</title>
+      <link>http://localhost:1313/obj-connectes/montres-bracelets/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/obj-connectes/montres-bracelets/article-2/</guid>
+      <description>Exemple de résumé pour Bracelets fitness article 2.</description>
+    </item>
+    <item>
+      <title>Caméras sportives — Article exemple 2</title>
+      <link>http://localhost:1313/obj-connectes/lunettes-ar/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/obj-connectes/lunettes-ar/article-2/</guid>
+      <description>Exemple de résumé pour Caméras sportives article 2.</description>
+    </item>
+    <item>
       <title>Casques — Article exemple 2</title>
       <link>http://localhost:1313/audio/casques/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
@@ -142,10 +156,17 @@
       <description>Exemple de résumé pour Consommables article 2.</description>
     </item>
     <item>
-      <title>Énergie &amp; Charge — Article exemple 2</title>
-      <link>http://localhost:1313/peripheriques/energie-and-charge/article-2/</link>
+      <title>Drones — Article exemple 2</title>
+      <link>http://localhost:1313/obj-connectes/drones-air-tech/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/peripheriques/energie-and-charge/article-2/</guid>
+      <guid>http://localhost:1313/obj-connectes/drones-air-tech/article-2/</guid>
+      <description>Exemple de résumé pour Drones article 2.</description>
+    </item>
+    <item>
+      <title>Énergie &amp; Charge — Article exemple 2</title>
+      <link>http://localhost:1313/peripheriques/energie/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/peripheriques/energie/article-2/</guid>
       <description>Exemple de résumé pour Énergie &amp;amp; Charge article 2.</description>
     </item>
     <item>
@@ -154,6 +175,13 @@
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/audio/micros-voix/article-2/</guid>
       <description>Exemple de résumé pour Filaires article 2.</description>
+    </item>
+    <item>
+      <title>Gadgets — Article exemple 2</title>
+      <link>http://localhost:1313/obj-connectes/gadgets-high-tech/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/obj-connectes/gadgets-high-tech/article-2/</guid>
+      <description>Exemple de résumé pour Gadgets article 2.</description>
     </item>
     <item>
       <title>Haut-parleurs — Article exemple 2</title>
@@ -203,6 +231,13 @@
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/domotique/securite/article-2/</guid>
       <description>Exemple de résumé pour Lampes article 2.</description>
+    </item>
+    <item>
+      <title>Lunettes réalité virtuelle — Article exemple 2</title>
+      <link>http://localhost:1313/obj-connectes/realite-virtuelle/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/obj-connectes/realite-virtuelle/article-2/</guid>
+      <description>Exemple de résumé pour Lunettes réalité virtuelle article 2.</description>
     </item>
     <item>
       <title>Mesure battement cardiaque — Article exemple 2</title>
@@ -262,17 +297,10 @@
     </item>
     <item>
       <title>Périphériques — Article exemple 2</title>
-      <link>http://localhost:1313/peripheriques/peripheriques/article-2/</link>
+      <link>http://localhost:1313/peripheriques/informatique/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/peripheriques/peripheriques/article-2/</guid>
+      <guid>http://localhost:1313/peripheriques/informatique/article-2/</guid>
       <description>Exemple de résumé pour Périphériques article 2.</description>
-    </item>
-    <item>
-      <title>Photocopieuses — Article exemple 2</title>
-      <link>http://localhost:1313/impression/photocopieuses/article-2/</link>
-      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/impression/photocopieuses/article-2/</guid>
-      <description>Exemple de résumé pour Photocopieuses article 2.</description>
     </item>
     <item>
       <title>Pliables — Article exemple 2</title>
@@ -297,9 +325,16 @@
     </item>
     <item>
       <title>Pliables — Article exemple 2</title>
-      <link>http://localhost:1313/smartphones/oppo-oneplus/article-2/</link>
+      <link>http://localhost:1313/smartphones/oneplus/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/smartphones/oppo-oneplus/article-2/</guid>
+      <guid>http://localhost:1313/smartphones/oneplus/article-2/</guid>
+      <description>Exemple de résumé pour Pliables article 2.</description>
+    </item>
+    <item>
+      <title>Pliables — Article exemple 2</title>
+      <link>http://localhost:1313/smartphones/oppo/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/smartphones/oppo/article-2/</guid>
       <description>Exemple de résumé pour Pliables article 2.</description>
     </item>
     <item>
@@ -332,9 +367,9 @@
     </item>
     <item>
       <title>Protections — Article exemple 2</title>
-      <link>http://localhost:1313/peripheriques/protections/article-2/</link>
+      <link>http://localhost:1313/peripheriques/protection/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/peripheriques/protections/article-2/</guid>
+      <guid>http://localhost:1313/peripheriques/protection/article-2/</guid>
       <description>Exemple de résumé pour Protections article 2.</description>
     </item>
     <item>
@@ -353,9 +388,9 @@
     </item>
     <item>
       <title>Scanners — Article exemple 2</title>
-      <link>http://localhost:1313/impression/scanners/article-2/</link>
+      <link>http://localhost:1313/impression/scanners-photocopieurs/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/impression/scanners/article-2/</guid>
+      <guid>http://localhost:1313/impression/scanners-photocopieurs/article-2/</guid>
       <description>Exemple de résumé pour Scanners article 2.</description>
     </item>
     <item>
@@ -402,6 +437,13 @@
     </item>
     <item>
       <title>Stockage — Article exemple 2</title>
+      <link>http://localhost:1313/peripheriques/connectique/article-2/</link>
+      <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/peripheriques/connectique/article-2/</guid>
+      <description>Exemple de résumé pour Stockage article 2.</description>
+    </item>
+    <item>
+      <title>Stockage — Article exemple 2</title>
       <link>http://localhost:1313/peripheriques/stockage/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/peripheriques/stockage/article-2/</guid>
@@ -430,16 +472,16 @@
     </item>
     <item>
       <title>WebCam — Article exemple 2</title>
-      <link>http://localhost:1313/photo-video/cam%C3%A9scope/article-2/</link>
+      <link>http://localhost:1313/photo-video/camescope/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/photo-video/cam%C3%A9scope/article-2/</guid>
+      <guid>http://localhost:1313/photo-video/camescope/article-2/</guid>
       <description>Exemple de résumé pour WebCam article 2.</description>
     </item>
     <item>
       <title>WebCam — Article exemple 2</title>
-      <link>http://localhost:1313/photo-video/instantan%C3%A9e/article-2/</link>
+      <link>http://localhost:1313/photo-video/instantane/article-2/</link>
       <pubDate>Sun, 12 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/photo-video/instantan%C3%A9e/article-2/</guid>
+      <guid>http://localhost:1313/photo-video/instantane/article-2/</guid>
       <description>Exemple de résumé pour WebCam article 2.</description>
     </item>
     <item>
@@ -555,6 +597,20 @@
       <description>Exemple de résumé pour Assistants vocaux article 1.</description>
     </item>
     <item>
+      <title>Bracelets fitness — Article exemple 1</title>
+      <link>http://localhost:1313/obj-connectes/montres-bracelets/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/obj-connectes/montres-bracelets/article-1/</guid>
+      <description>Exemple de résumé pour Bracelets fitness article 1.</description>
+    </item>
+    <item>
+      <title>Caméras sportives — Article exemple 1</title>
+      <link>http://localhost:1313/obj-connectes/lunettes-ar/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/obj-connectes/lunettes-ar/article-1/</guid>
+      <description>Exemple de résumé pour Caméras sportives article 1.</description>
+    </item>
+    <item>
       <title>Casques — Article exemple 1</title>
       <link>http://localhost:1313/audio/casques/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
@@ -604,10 +660,17 @@
       <description>Exemple de résumé pour Consommables article 1.</description>
     </item>
     <item>
-      <title>Énergie &amp; Charge — Article exemple 1</title>
-      <link>http://localhost:1313/peripheriques/energie-and-charge/article-1/</link>
+      <title>Drones — Article exemple 1</title>
+      <link>http://localhost:1313/obj-connectes/drones-air-tech/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/peripheriques/energie-and-charge/article-1/</guid>
+      <guid>http://localhost:1313/obj-connectes/drones-air-tech/article-1/</guid>
+      <description>Exemple de résumé pour Drones article 1.</description>
+    </item>
+    <item>
+      <title>Énergie &amp; Charge — Article exemple 1</title>
+      <link>http://localhost:1313/peripheriques/energie/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/peripheriques/energie/article-1/</guid>
       <description>Exemple de résumé pour Énergie &amp;amp; Charge article 1.</description>
     </item>
     <item>
@@ -616,6 +679,13 @@
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/audio/micros-voix/article-1/</guid>
       <description>Exemple de résumé pour Filaires article 1.</description>
+    </item>
+    <item>
+      <title>Gadgets — Article exemple 1</title>
+      <link>http://localhost:1313/obj-connectes/gadgets-high-tech/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/obj-connectes/gadgets-high-tech/article-1/</guid>
+      <description>Exemple de résumé pour Gadgets article 1.</description>
     </item>
     <item>
       <title>Haut-parleurs — Article exemple 1</title>
@@ -665,6 +735,13 @@
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/domotique/securite/article-1/</guid>
       <description>Exemple de résumé pour Lampes article 1.</description>
+    </item>
+    <item>
+      <title>Lunettes réalité virtuelle — Article exemple 1</title>
+      <link>http://localhost:1313/obj-connectes/realite-virtuelle/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/obj-connectes/realite-virtuelle/article-1/</guid>
+      <description>Exemple de résumé pour Lunettes réalité virtuelle article 1.</description>
     </item>
     <item>
       <title>Mesure battement cardiaque — Article exemple 1</title>
@@ -724,17 +801,10 @@
     </item>
     <item>
       <title>Périphériques — Article exemple 1</title>
-      <link>http://localhost:1313/peripheriques/peripheriques/article-1/</link>
+      <link>http://localhost:1313/peripheriques/informatique/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/peripheriques/peripheriques/article-1/</guid>
+      <guid>http://localhost:1313/peripheriques/informatique/article-1/</guid>
       <description>Exemple de résumé pour Périphériques article 1.</description>
-    </item>
-    <item>
-      <title>Photocopieuses — Article exemple 1</title>
-      <link>http://localhost:1313/impression/photocopieuses/article-1/</link>
-      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/impression/photocopieuses/article-1/</guid>
-      <description>Exemple de résumé pour Photocopieuses article 1.</description>
     </item>
     <item>
       <title>Pliables — Article exemple 1</title>
@@ -759,9 +829,16 @@
     </item>
     <item>
       <title>Pliables — Article exemple 1</title>
-      <link>http://localhost:1313/smartphones/oppo-oneplus/article-1/</link>
+      <link>http://localhost:1313/smartphones/oneplus/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/smartphones/oppo-oneplus/article-1/</guid>
+      <guid>http://localhost:1313/smartphones/oneplus/article-1/</guid>
+      <description>Exemple de résumé pour Pliables article 1.</description>
+    </item>
+    <item>
+      <title>Pliables — Article exemple 1</title>
+      <link>http://localhost:1313/smartphones/oppo/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/smartphones/oppo/article-1/</guid>
       <description>Exemple de résumé pour Pliables article 1.</description>
     </item>
     <item>
@@ -794,9 +871,9 @@
     </item>
     <item>
       <title>Protections — Article exemple 1</title>
-      <link>http://localhost:1313/peripheriques/protections/article-1/</link>
+      <link>http://localhost:1313/peripheriques/protection/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/peripheriques/protections/article-1/</guid>
+      <guid>http://localhost:1313/peripheriques/protection/article-1/</guid>
       <description>Exemple de résumé pour Protections article 1.</description>
     </item>
     <item>
@@ -815,9 +892,9 @@
     </item>
     <item>
       <title>Scanners — Article exemple 1</title>
-      <link>http://localhost:1313/impression/scanners/article-1/</link>
+      <link>http://localhost:1313/impression/scanners-photocopieurs/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/impression/scanners/article-1/</guid>
+      <guid>http://localhost:1313/impression/scanners-photocopieurs/article-1/</guid>
       <description>Exemple de résumé pour Scanners article 1.</description>
     </item>
     <item>
@@ -864,6 +941,13 @@
     </item>
     <item>
       <title>Stockage — Article exemple 1</title>
+      <link>http://localhost:1313/peripheriques/connectique/article-1/</link>
+      <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/peripheriques/connectique/article-1/</guid>
+      <description>Exemple de résumé pour Stockage article 1.</description>
+    </item>
+    <item>
+      <title>Stockage — Article exemple 1</title>
       <link>http://localhost:1313/peripheriques/stockage/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/peripheriques/stockage/article-1/</guid>
@@ -892,16 +976,16 @@
     </item>
     <item>
       <title>WebCam — Article exemple 1</title>
-      <link>http://localhost:1313/photo-video/cam%C3%A9scope/article-1/</link>
+      <link>http://localhost:1313/photo-video/camescope/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/photo-video/cam%C3%A9scope/article-1/</guid>
+      <guid>http://localhost:1313/photo-video/camescope/article-1/</guid>
       <description>Exemple de résumé pour WebCam article 1.</description>
     </item>
     <item>
       <title>WebCam — Article exemple 1</title>
-      <link>http://localhost:1313/photo-video/instantan%C3%A9e/article-1/</link>
+      <link>http://localhost:1313/photo-video/instantane/article-1/</link>
       <pubDate>Sat, 11 Jan 2025 12:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/photo-video/instantan%C3%A9e/article-1/</guid>
+      <guid>http://localhost:1313/photo-video/instantane/article-1/</guid>
       <description>Exemple de résumé pour WebCam article 1.</description>
     </item>
     <item>

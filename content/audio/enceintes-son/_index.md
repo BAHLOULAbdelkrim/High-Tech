@@ -1,5 +1,7 @@
 ---
 title: "Enceintes & Son"
+menu_image: "/images/audio_enceintes-son.webp"    # pour l’affichage du menu (miniature).
+image: "/images/audio_enceintes-son.webp"           # pour la page elle-même ou les réseaux sociaux (image principale / OG).
 url: "/enceintes-son/"
 weight: 3
 ---

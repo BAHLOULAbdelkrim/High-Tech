@@ -1,5 +1,7 @@
 ---
 title: "Streaming / Box TV"
+menu_image: "/images/tv-cinema_streaming-box-tv.webp"    # pour l’affichage du menu (miniature).
+image: "/images/tv-cinema_streaming-box-tv.webp"           # pour la page elle-même ou les réseaux sociaux (image principale / OG).
 url: "/streaming-box-tv/"
 weight: 6
 ---
