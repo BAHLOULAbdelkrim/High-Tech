@@ -11,11 +11,23 @@ categories: ["Smartphones"]
 keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "guide Redmi Note"]     # Pour SEO avancé (balise meta keywords, facultatif).
 ---
 
+<div class="fade-in info-box">
+  📌 Astuce : Vous pouvez centrer une image en utilisant `margin: 0 auto;`.
+</div>
+
 <div class="fade-in">
 
 ## Aperçu général
 
+<div class="fade-in info-box">
+  📌 Astuce : Vous pouvez centrer une image en utilisant `margin: 0 auto;`.
+</div>
+
 ### Sous-section (ne s'affiche pas dans le sommaire)
+
+<div class="fade-in info-box">
+  📌 Astuce : Vous pouvez centrer une image en utilisant `margin: 0 auto;`.
+</div>
 
  - **Marque :** Xiaomi
 
@@ -52,7 +64,7 @@ Années de sortie :
 
 </div>
 
-<div class="fade-in">
+<div class="fade-in info-box">
 
 ## Spécifications techniques
 
@@ -208,10 +220,8 @@ Exemple de tag : Si tu veux consulter le : <a href="https://high-tech.pages.dev/
 
 </div>
 
-<div class="fade-in">
-
+<div class="fade-in info-box">
   📌 Astuce : Vous pouvez centrer une image en utilisant `margin: 0 auto;`.
-
 </div>
 
 <div class="fade-in">
