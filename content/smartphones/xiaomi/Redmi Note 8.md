@@ -5,7 +5,7 @@ slug: "redmi-note-8"     # Pour personnaliser l’URL de l’article.
 image: "/images/Redmi_Note_8.webp"
 # image_caption: "Redmi Note 8 version globale"        # Pour afficher la légende de l’image principale.
 description: "Guide complet des smartphones Xiaomi Redmi Note 8 : modèles, caractéristiques techniques, avis et meilleures options d'achat."   # Résumé SEO de l’article en une phrase, qui devrait être courte, percutante et résumer le contenu (doit faire 140–160 caractères). 
-summary: "Guide des variantes de Xiaomi Redmi Note 8."
+summary: "Guide des variantes de Xiaomi Redmi Note 8"
 tags: ["Redmi Note 8", "Redmi Note 8 Pro", "Xiaomi Redmi", "Smartphone Xiaomi", "Android"]    # Pour catégoriser par mot-clé. Utile pour filtres et SEO. Tags très précis.
 categories: ["Smartphones"]
 keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "guide Redmi Note"]     # Pour SEO avancé (balise meta keywords, facultatif).
