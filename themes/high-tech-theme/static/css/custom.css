@@ -229,8 +229,8 @@
   }    */
 
   /* Annule les tailles fixes .img-small/.img-medium/.img-large */
-  .img-small,
-  .img-medium,
+/*  .img-small,   */
+/*  .img-medium,  */
   .img-large {
       width: 100% !important;
       max-width: 100% !important;
@@ -241,9 +241,6 @@
       flex-direction: column !important;
       gap: 12px !important;
   }
-
-
-
 
   article img,
   article figure img,
