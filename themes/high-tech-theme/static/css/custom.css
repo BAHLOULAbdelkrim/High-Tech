@@ -9,19 +9,19 @@
     overflow: hidden;
     border: none;           /* supprime le contour global */
     font-family: inherit;        /* hérite de la police du site */
-    background-color: #eaeafa; /* couleur du corps */
+    background-color: rgb(248, 255, 251); /* couleur du corps */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .beamer-box:hover {
     transform: scale(1.03); /* agrandissement léger */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* ombre portée */
+    box-shadow: 0 8px 20px rgb(248, 255, 251); /* ombre portée */
 }
 
 .beamer-title {
     border: none;           /* supprime le trait sous le titre */
-    background-color: #0011ff;   /* couleur CambridgeUS (bleu foncé) */
-    color: white;
+    background-color: #d1fae5ff;   /* couleur CambridgeUS (bleu foncé) */
+    color: #6b21a8ff;
     font-weight: bold;
     padding: 0.75rem 1rem;
     font-size: 1.5rem;
@@ -36,12 +36,12 @@
     right: 0;
     bottom: 0;          /* commence exactement à la limite du titre */
     height: 8px;         /* zone de transition */
-    background: linear-gradient(to bottom, #0011ff 0%, #eaeafa 100%);
+    background: linear-gradient(to bottom, #d1fae5ff 0%, rgb(248, 255, 251) 100%);
     pointer-events: none; /* pour ne pas gêner la sélection du texte */
 }
 
 .beamer-body {
-    background-color: #eaeafa; /* bleu clair comme dans texte=darkred!10 */
+    background-color: rgb(248, 255, 251); /* bleu clair comme dans texte=darkred!10 */
     color: #000;
     padding-top: 0.3rem;  /* diminue pour remonter le texte */
     padding-right: 1.2rem;
@@ -71,46 +71,46 @@
 }
 
 .beamer-body th, .beamer-body td {
-    border: 1px solid #0011ff;
+    border: 1px solid rgb(0, 197, 26);
     padding: 0.5rem 0.75rem;
 }
 
 .beamer-body th {
-    background-color: #d0e1f5; /* un bleu clair pour l'entête */
+    background-color: #d1fae5ff; /* un bleu clair pour l'entête */
     font-weight: bold;
 }
 
 /* Lignes horizontales */
 .beamer-table tr.top-border th,
 .beamer-table tr.bottom-border td {
-    border-top: 3px solid #0011ff; /* bordure supérieure ou inférieure en gras */
-    border-bottom: 3px solid #0011ff;
+    border-top: 3px solid rgb(0, 197, 26); /* bordure supérieure ou inférieure en gras */
+    border-bottom: 3px solid rgb(0, 197, 26);
 }
 
 .beamer-table tr.mid-border.single th,
 .beamer-table tr.mid-border.single td {
-    border-bottom: 1px solid #0011ff; /* ligne simple */
+    border-bottom: 1px solid rgb(0, 197, 26); /* ligne simple */
 }
 
 .beamer-table tr.mid-border.double th,
 .beamer-table tr.mid-border.double td {
-    border-bottom: 3px double #0011ff; /* ligne double */
+    border-bottom: 3px double rgb(0, 197, 26); /* ligne double */
 }
 
 /* Lignes horizontales */
 .beamer-table-segmented tr.top-border th {
-    border-top: 3px solid #0011ff;
+    border-top: 3px solid rgb(0, 197, 26);
 }
 .beamer-table-segmented tr.bottom-border td {
-    border-bottom: 3px solid #0011ff;
+    border-bottom: 3px solid rgb(0, 197, 26);
 }
 .beamer-table-segmented tr.mid-border.single th,
 .beamer-table-segmented tr.mid-border.single td {
-    border-bottom: 1px solid #0011ff;
+    border-bottom: 1px solid rgb(0, 197, 26);
 }
 .beamer-table-segmented tr.mid-border.double th,
 .beamer-table-segmented tr.mid-border.double td {
-    border-bottom: 3px double #0011ff;
+    border-bottom: 3px double rgb(0, 197, 26);
 }
 
 /* Bordures verticales : Supprime toutes les bordures gauche et droite (border-left: 0, border-right: 0) */
@@ -124,15 +124,15 @@
 /* Lignes verticales : Ajoute une bordure droite bleue uniquement sur les cellules marquées .vline */
 .beamer-table td.vline,
 .beamer-table th.vline {
-    border-right: 1px solid #0011ff;
+    border-right: 1px solid rgb(0, 197, 26);
 }
 
 /* Facultatif : ajouter verticales sur certaines colonnes */
 .beamer-table td.has-left-border {
-    border-left: 2px solid #0011ff;
+    border-left: 1px solid rgb(0, 197, 26);
 }
 .beamer-table td.has-right-border {
-    border-right: 2px solid #0011ff;
+    border-right: 1px solid rgb(0, 197, 26);
 }
 
 /* Optionnel : mettre la dernière colonne avec une ligne verticale */
@@ -163,7 +163,7 @@
     bottom: 4px;    /* finit juste avant la ligne horizontale inférieure */
     right: 0;
     width: 1px;
-    background-color: #0011ff;
+    background-color: rgb(0, 197, 26);
 }
 
 /* On supprime toutes les bordures verticales classiques */

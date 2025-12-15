@@ -46,38 +46,39 @@ Couleurs :
 
  - **Couleurs :** 
 > 
-<div class="color-selector">
-  <label>
+<div class="color-swatches">
+
+  <label class="swatch">
     <input type="radio" name="color">
-    <img src="https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_white.jpg">
-    <span>Perle blanche</span>
+    <span class="color" style="--c:#f5f5f5"></span>
+    <span class="label">Perle blanche</span>
   </label>
 
-  <label>
+  <label class="swatch">
     <input type="radio" name="color">
-    <img src="https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_green1.jpg">
-    <span>Forêt verte</span>
+    <span class="color" style="--c:#2f6b4f"></span>
+    <span class="label">Forêt verte</span>
   </label>
 
-  <label>
+  <label class="swatch">
     <input type="radio" name="color">
-    <img src="https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_grey.jpg">
-    <span>Minéral Gris</span>
+    <span class="color" style="--c:#7a7a7a"></span>
+    <span class="label">Minéral gris</span>
   </label>
 
-  <label>
+  <label class="swatch">
     <input type="radio" name="color">
-    <img src="https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_blue.png">
-    <span>Bleu Océan</span>
+    <span class="color" style="--c:#1e4bb8"></span>
+    <span class="label">Bleu océan</span>
   </label>
 
-  <label>
+  <label class="swatch">
     <input type="radio" name="color">
-    <img src="https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_red.png">
-    <span>Orange Corail</span>
+    <span class="color" style="--c:#d44a3a"></span>
+    <span class="label">Orange corail</span>
   </label>
+
 </div>
-
 
 Années de sortie : 
 
@@ -89,6 +90,65 @@ Années de sortie :
 | Redmi Note 8 Pro    | 29 août 2019   |
 | Redmi Note 8T       | 6 novembre 2019|
 | Redmi Note 8 (2021) | 24 mai 2021    |
+
+</div>
+
+<div class="fade-in info-box">
+  📌 Astuce : Vous pouvez centrer une image en utilisant `margin: 0 auto;`.
+</div>
+
+<div class="fade-in">
+
+{{< beamersbox title="Introduction" >}}
+
+- Module **Signaux et Systèmes**
+- Partie **Signaux** : initiation au traitement du signal
+- Discipline qui étudie filtrage, échantillonnage, compression, etc.
+
+{{< /beamersbox >}}
+
+</div>
+
+<div class="fade-in">
+
+{{< beamertable title="Exercise (plane robot)" >}}
+
+<table class="beamer-table-segmented">
+  <thead>
+    <tr class="top-border bold">
+      <th class="vline-segment">Joint 1</th>
+      <th class="vline-segment">Joint 2</th>
+      <th class="vline-segment">Joint 3</th>
+      <th class="vline-segment">Joint 4</th>
+      <th>Joint 5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="mid-border single">
+      <td class="vline-segment">Joint 6</td>
+      <td class="vline-segment">Joint 7</td>
+      <td class="vline-segment">Joint 8</td>
+      <td class="vline-segment">Joint 9</td>
+      <td>Joint 10</td>
+    </tr>
+    <tr class="mid-border double">
+      <td class="vline-segment">Joint 11</td>
+      <td class="vline-segment">Joint 12</td>
+      <td class="vline-segment">Joint 13</td>
+      <td class="vline-segment">Joint 14</td>
+      <td>Joint 15</td>
+    </tr>
+    <tr class="bottom-border bold">
+      <td class="vline-segment">Joint 16</td>
+      <td class="vline-segment">Joint 17</td>
+      <td class="vline-segment">Joint 18</td>
+      <td class="vline-segment">Joint 19</td>
+      <td>Joint 20</td>
+    </tr>
+  </tbody>
+</table>
+
+{{< /beamertable >}}
 
 </div>
 
@@ -248,21 +308,7 @@ Exemple de tag : Si tu veux consulter le : <a href="https://high-tech.pages.dev/
 
 </div>
 
-<div class="fade-in info-box">
-  📌 Astuce : Vous pouvez centrer une image en utilisant `margin: 0 auto;`.
-</div>
 
-<div class="fade-in">
-
-{{< beamersbox title="Introduction" >}}
-
-- Module **Signaux et Systèmes**
-- Partie **Signaux** : initiation au traitement du signal
-- Discipline qui étudie filtrage, échantillonnage, compression, etc.
-
-{{< /beamersbox >}}
-
-</div>
 
 <div class="fade-in">
 
@@ -315,18 +361,18 @@ Exemple de tag : Si tu veux consulter le : <a href="https://high-tech.pages.dev/
   <thead>
     <tr class="top-border bold">
       <th class="vline">Joint i</th>
-      <th class="vline">α_i</th>
-      <th class="vline">d_i</th>
-      <th class="vline">r_i</th>
+      <th class="vline">aaaaa</th>
+      <th class="vline">aaaaa</th>
+      <th class="vline">aaaaa</th>
       <th>θ_i</th>
     </tr>
   </thead>
   <tbody>
     <tr class="mid-border single">
       <td class="vline">1</td>
-      <td class="vline">^z₀,z₁ / x₀ = 0</td>
-      <td class="vline">O₀,z₁ / x₀ = 0</td>
-      <td class="vline">x₀,O₁ / z₁ = 0</td>
+      <td class="vline">aaaaa</td>
+      <td class="vline">aaaaa</td>
+      <td class="vline">aaaaa</td>
       <td>θ₁(t)</td>
     </tr>
     <tr class="mid-border double">
@@ -349,45 +395,4 @@ Exemple de tag : Si tu veux consulter le : <a href="https://high-tech.pages.dev/
 {{< /beamertable >}}
 
 </div>
-
-<div class="fade-in">
-
-{{< beamertable title="Exercise (plane robot)" >}}
-
-<table class="beamer-table-segmented">
-  <thead>
-    <tr class="top-border bold">
-      <th>Joint i</th>
-      <th class="vline-segment">α_i</th>
-      <th class="vline-segment">d_i</th>
-      <th class="vline-segment">r_i</th>
-      <th>θ_i</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="mid-border single">
-      <td>1</td>
-      <td class="vline-segment">^z₀,z₁ / x₀ = 0</td>
-      <td class="vline-segment">O₀,z₁ / x₀ = 0</td>
-      <td class="vline-segment">x₀,O₁ / z₁ = 0</td>
-      <td>θ₁(t)</td>
-    </tr>
-    <tr class="mid-border double">
-      <td>2</td>
-      <td class="vline-segment">^z₁,z₂ / x₁ = 0</td>
-      <td class="vline-segment">O₁,z₂ / x₁ = l₁</td>
-      <td class="vline-segment">x₁,O₂ / z₂ = 0</td>
-      <td>θ₂(t)</td>
-    </tr>
-    <tr class="bottom-border bold">
-      <td>3</td>
-      <td class="vline-segment">^z₂,z₃ / x₂ = 0</td>
-      <td class="vline-segment">O₂,z₃ / x₂ = l₂</td>
-      <td class="vline-segment">x₂,O₃ / z₃ = 0</td>
-      <td>θ₃(t)</td>
-    </tr>
-  </tbody>
-</table>
-
-{{< /beamertable >}}
 
