@@ -45,11 +45,39 @@ Position dans le marché : entrée/milieu/haut de gamme
 Couleurs : 
 
  - **Couleurs :** 
-	>  ![](https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_white.jpg) Perle blanche
-	 ![](https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_green1.jpg) Forêt verte 
-	 ![](https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_grey.jpg) Minéral Gris 
-	 ![](https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_blue.png) Bleu Océan 
-	 ![](https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_red.png) Orange Corail
+> 
+<div class="color-selector">
+  <label>
+    <input type="radio" name="color">
+    <img src="https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_white.jpg">
+    <span>Perle blanche</span>
+  </label>
+
+  <label>
+    <input type="radio" name="color">
+    <img src="https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_green1.jpg">
+    <span>Forêt verte</span>
+  </label>
+
+  <label>
+    <input type="radio" name="color">
+    <img src="https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_grey.jpg">
+    <span>Minéral Gris</span>
+  </label>
+
+  <label>
+    <input type="radio" name="color">
+    <img src="https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_blue.png">
+    <span>Bleu Océan</span>
+  </label>
+
+  <label>
+    <input type="radio" name="color">
+    <img src="https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-8-pro/g7_specs_red.png">
+    <span>Orange Corail</span>
+  </label>
+</div>
+
 
 Années de sortie : 
 
