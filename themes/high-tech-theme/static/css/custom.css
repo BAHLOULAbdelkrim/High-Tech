@@ -210,99 +210,121 @@
 
 
 
-/* ============================
-   FIX MOBILE — INFO, BEAMER, TABLES, IMAGES
-   ============================ */
 
+
+
+/* ============================================================
+   PATCH MOBILE — Images + BeamerBox + BeamerTable (100% FLUID)
+   ============================================================ */
 @media (max-width: 900px) {
 
-  /* ---------- IMAGES RESPONSIVES ---------- */
-  img, figure img {
-    max-width: 100% !important;
-    height: auto !important;
-    display: block !important;
+  /* --- 1) Images parfaitement fluides (toutes) --- */
+  img,
+  figure img,
+  .article-image,
+  .img-row img {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto !important;
   }
 
-  /* Alignement centré si wrapper img-center */
-  .img-center img {
-    margin: 0 auto !important;
+  /* Annule les tailles fixes .img-small/.img-medium/.img-large */
+  .img-small,
+  .img-medium,
+  .img-large {
+      width: 100% !important;
+      max-width: 100% !important;
   }
 
-  /* ---------- INFO-BOX ---------- */
-  .info-box {
-    padding: 0.8rem 1rem !important;
-    font-size: 0.95rem !important;
-    line-height: 1.4 !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
+  /* Les lignes d’images passent toujours en colonne */
+  .img-row {
+      flex-direction: column !important;
+      gap: 12px !important;
   }
 
-  /* ---------- BEAMER BOX ---------- */
+
+  /* --- 2) Beamer Box responsive --- */
   .beamer-box {
-    width: 100% !important;
-    margin: 1rem 0 !important;
-    padding: 0 !important;
-    border-radius: 8px !important;
+      width: 100% !important;
+      border-radius: 8px !important;
+      margin: 1rem 0 !important;
+      box-shadow: none !important;   /* évite débordement */
+      padding: 0 !important;
   }
 
   .beamer-title {
-    font-size: 1.1rem !important;
-    padding: 0.7rem 1rem !important;
-    line-height: 1.2 !important;
-    text-align: left !important;
+      font-size: 1.1rem !important;
+      padding: 0.5rem 0.8rem !important;
+      white-space: normal !important;
+      text-align: center !important;
   }
 
   .beamer-body {
-    font-size: 0.95rem !important;
-    padding: 0.7rem 1rem !important;
-    line-height: 1.45 !important;
+      font-size: 14px !important;
+      padding: 0.8rem !important;
+      line-height: 1.45 !important;
+      overflow-x: auto !important;
   }
 
-  /* Forcer les <p> internes à s'adapter */
-  .beamer-body p {
-    margin: 0 0 0.6rem 0 !important;
-    padding: 0 !important;
-  }
 
-  /* ---------- BEAMER TABLES ---------- */
+  /* --- 3) Tables Beamer 100% responsives --- */
+
+  /* On applique la même logique que tes tables standards */
   .beamer-table,
-  .beamer-table-segmented {
-    width: 100% !important;
-    display: block !important;
-    overflow-x: auto !important;
-    border-spacing: 0 !important;
+  .beamer-table-segmented,
+  .beamer-body table {
+      display: block !important;
+      width: 100% !important;
+      overflow-x: auto !important;
+      font-size: 13px !important;
   }
 
+  .beamer-body th,
+  .beamer-body td {
+      padding: 6px 8px !important;
+      font-size: 13px !important;
+      white-space: nowrap !important;  /* évite la cassure verticale */
+  }
+
+  /* Masque l’en-tête comme pour tes tables classiques */
   .beamer-table thead,
-  .beamer-table-segmented thead,
-  .beamer-table tbody,
-  .beamer-table-segmented tbody {
-    display: block !important;
+  .beamer-table-segmented thead {
+      display: none !important;
   }
 
-  .beamer-table tr,
-  .beamer-table-segmented tr {
-    display: block !important;
-    border-bottom: 2px solid #ccc !important;
-    margin-bottom: 0.7rem !important;
+  /* Style mobile sur les lignes */
+  .beamer-table tbody tr,
+  .beamer-table-segmented tbody tr {
+      display: block !important;
+      margin-bottom: 10px !important;
+      border-bottom: 2px solid #ddd !important;
   }
 
-  .beamer-table th,
   .beamer-table td,
-  .beamer-table-segmented th,
   .beamer-table-segmented td {
-    display: block !important;
-    text-align: left !important;
-    padding: 0.4rem 0.6rem !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-    border: none !important;
-    position: relative !important;
+      display: block !important;
+      text-align: right !important;
+      padding-left: 50% !important;
+      position: relative !important;
+      border-left: none !important;
+      border-right: none !important;
   }
 
-  /* Supprimer les bordures verticales */
-  .vline::after,
+  /* On utilise data-label pour les Beamer tables aussi */
+  .beamer-table td::before,
+  .beamer-table-segmented td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      width: 45%;
+      text-align: left;
+      font-weight: bold;
+  }
+
+  /* Supprime toutes les bordures verticales sur mobile */
+  .vline,
+  .vline-segment,
   .vline-segment::after {
-    display: none !important;
+      display: none !important;
   }
 }
