@@ -200,3 +200,109 @@
     padding: 0.6rem 0.8rem !important;
   }
 }
+
+
+
+
+
+
+
+
+
+
+/* ============================
+   FIX MOBILE — INFO, BEAMER, TABLES, IMAGES
+   ============================ */
+
+@media (max-width: 900px) {
+
+  /* ---------- IMAGES RESPONSIVES ---------- */
+  img, figure img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  /* Alignement centré si wrapper img-center */
+  .img-center img {
+    margin: 0 auto !important;
+  }
+
+  /* ---------- INFO-BOX ---------- */
+  .info-box {
+    padding: 0.8rem 1rem !important;
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ---------- BEAMER BOX ---------- */
+  .beamer-box {
+    width: 100% !important;
+    margin: 1rem 0 !important;
+    padding: 0 !important;
+    border-radius: 8px !important;
+  }
+
+  .beamer-title {
+    font-size: 1.1rem !important;
+    padding: 0.7rem 1rem !important;
+    line-height: 1.2 !important;
+    text-align: left !important;
+  }
+
+  .beamer-body {
+    font-size: 0.95rem !important;
+    padding: 0.7rem 1rem !important;
+    line-height: 1.45 !important;
+  }
+
+  /* Forcer les <p> internes à s'adapter */
+  .beamer-body p {
+    margin: 0 0 0.6rem 0 !important;
+    padding: 0 !important;
+  }
+
+  /* ---------- BEAMER TABLES ---------- */
+  .beamer-table,
+  .beamer-table-segmented {
+    width: 100% !important;
+    display: block !important;
+    overflow-x: auto !important;
+    border-spacing: 0 !important;
+  }
+
+  .beamer-table thead,
+  .beamer-table-segmented thead,
+  .beamer-table tbody,
+  .beamer-table-segmented tbody {
+    display: block !important;
+  }
+
+  .beamer-table tr,
+  .beamer-table-segmented tr {
+    display: block !important;
+    border-bottom: 2px solid #ccc !important;
+    margin-bottom: 0.7rem !important;
+  }
+
+  .beamer-table th,
+  .beamer-table td,
+  .beamer-table-segmented th,
+  .beamer-table-segmented td {
+    display: block !important;
+    text-align: left !important;
+    padding: 0.4rem 0.6rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    position: relative !important;
+  }
+
+  /* Supprimer les bordures verticales */
+  .vline::after,
+  .vline-segment::after {
+    display: none !important;
+  }
+}
