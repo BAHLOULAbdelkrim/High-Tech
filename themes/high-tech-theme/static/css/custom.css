@@ -219,14 +219,14 @@
 @media (max-width: 900px) {
 
   /* --- 1) Images parfaitement fluides (toutes) --- */
-  img,
+/*  img,
   figure img,
   .article-image,
   .img-row img {
       width: 100% !important;
       max-width: 100% !important;
       height: auto !important;
-  }
+  }    */
 
   /* Annule les tailles fixes .img-small/.img-medium/.img-large */
   .img-small,
@@ -241,6 +241,31 @@
       flex-direction: column !important;
       gap: 12px !important;
   }
+
+
+
+
+  article img,
+  article figure img,
+  article .article-image,
+  article .img-row img {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto !important;
+  }
+
+  article .img-small,
+  article .img-medium,
+  article .img-large {
+      width: 100% !important;
+      max-width: 100% !important;
+  }
+
+  article .img-row {
+      flex-direction: column !important;
+  }
+
+
 
 
   /* --- 2) Beamer Box responsive --- */
