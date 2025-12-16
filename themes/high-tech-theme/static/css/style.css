@@ -560,7 +560,7 @@ article a:hover,
 @media (max-width: 900px) {
 
   /* Cache TOTALEMENT le tableau sur mobile */
-  .comparison-table {
+  .comparison .comparison-table {
     display: none !important;
   }
 
