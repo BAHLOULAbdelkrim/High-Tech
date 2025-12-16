@@ -138,36 +138,36 @@ Années de sortie :
 
 
   <!-- ===== MOBILE : ACCORDION ===== -->
-  <div class="comparison-accordion">
+  <!-- <div class="comparison-accordion"> -->
 
-    <details>
-      <summary>Variante 1</summary>
-      <ul>
-        <li><strong>Info A :</strong> Valeur 1-A</li>
-        <li><strong>Info B :</strong> Valeur 1-B</li>
-        <li><strong>Info C :</strong> Valeur 1-C</li>
-      </ul>
-    </details>
+<details open>
+  <summary>Variante 1</summary>
+    <ul>
+      <li><strong>Info A :</strong> Valeur 1-A</li>
+      <li><strong>Info B :</strong> Valeur 1-B</li>
+      <li><strong>Info C :</strong> Valeur 1-C</li>
+    </ul>
+</details>
 
-    <details>
-      <summary>Variante 2</summary>
-      <ul>
-        <li><strong>Info A :</strong> Valeur 2-A</li>
-        <li><strong>Info B :</strong> Valeur 2-B</li>
-        <li><strong>Info C :</strong> Valeur 2-C</li>
-      </ul>
-    </details>
+<details close>
+  <summary>Variante 2</summary>
+    <ul>
+      <li><strong>Info A :</strong> Valeur 2-A</li>
+      <li><strong>Info B :</strong> Valeur 2-B</li>
+      <li><strong>Info C :</strong> Valeur 2-C</li>
+    </ul>
+</details>
 
-    <details>
-      <summary>Variante 3</summary>
-      <ul>
-        <li><strong>Info A :</strong> Valeur 3-A</li>
-        <li><strong>Info B :</strong> Valeur 3-B</li>
-        <li><strong>Info C :</strong> Valeur 3-C</li>
-      </ul>
-    </details>
+<details>
+  <summary>Variante 3</summary>
+    <ul>
+      <li><strong>Info A :</strong> Valeur 3-A</li>
+      <li><strong>Info B :</strong> Valeur 3-B</li>
+      <li><strong>Info C :</strong> Valeur 3-C</li>
+    </ul>
+</details>
 
-  </div>
+  <!-- </div> -->
 
 
 <div class="fade-in info-box">
