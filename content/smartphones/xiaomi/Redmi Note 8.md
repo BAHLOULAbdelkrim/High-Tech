@@ -138,7 +138,7 @@ Années de sortie :
 
 
   <!-- ===== MOBILE : ACCORDION ===== -->
-  <!-- <div class="comparison-accordion"> -->
+<div class="comparison-accordion">
 
 <details open>
   <summary>Variante 1</summary>
@@ -167,7 +167,7 @@ Années de sortie :
     </ul>
 </details>
 
-  <!-- </div> -->
+</div>
 
 
 <div class="fade-in info-box">
