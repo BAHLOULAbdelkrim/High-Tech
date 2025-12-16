@@ -94,7 +94,6 @@ Années de sortie :
 </div>
 
 
-<div class="fade-in">
 <div class="comparison">
 
   <!-- ===== DESKTOP : TABLEAU ===== -->
@@ -129,6 +128,9 @@ Années de sortie :
     </tbody>
   </table>
 
+</div>
+
+
   <!-- ===== MOBILE : ACCORDION ===== -->
   <div class="comparison-accordion">
 
@@ -160,9 +162,6 @@ Années de sortie :
     </details>
 
   </div>
-</div>
-
-</div>
 
 
 <div class="fade-in info-box">
