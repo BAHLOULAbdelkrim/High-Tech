@@ -95,6 +95,8 @@ Années de sortie :
 
 <div class="fade-in">
 
+{{< beamersbox title="Introduction" >}}
+
 <div class="comparison">
 
   <!-- ===== DESKTOP : TABLEAU ===== -->
@@ -131,10 +133,7 @@ Années de sortie :
 
 </div>
 
-</div>
-
 <!-- ===== MOBILE : ACCORDION ===== -->
-<div class="fade-in">
 
 <div class="comparison-accordion">
 
@@ -166,6 +165,8 @@ Années de sortie :
 </details>
 
 </div>
+
+{{< /beamersbox >}}
 
 </div>
 
