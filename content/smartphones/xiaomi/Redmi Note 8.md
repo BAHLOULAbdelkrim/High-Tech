@@ -93,6 +93,78 @@ Années de sortie :
 
 </div>
 
+
+<div class="fade-in">
+<div class="comparison">
+
+  <!-- ===== DESKTOP : TABLEAU ===== -->
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Informations</th>
+        <th>Variante 1</th>
+        <th>Variante 2</th>
+        <th>Variante 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Info A</th>
+        <td>Valeur 1-A</td>
+        <td>Valeur 2-A</td>
+        <td>Valeur 3-A</td>
+      </tr>
+      <tr>
+        <th>Info B</th>
+        <td>Valeur 1-B</td>
+        <td>Valeur 2-B</td>
+        <td>Valeur 3-B</td>
+      </tr>
+      <tr>
+        <th>Info C</th>
+        <td>Valeur 1-C</td>
+        <td>Valeur 2-C</td>
+        <td>Valeur 3-C</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ===== MOBILE : ACCORDION ===== -->
+  <div class="comparison-accordion">
+
+    <details>
+      <summary>Variante 1</summary>
+      <ul>
+        <li><strong>Info A :</strong> Valeur 1-A</li>
+        <li><strong>Info B :</strong> Valeur 1-B</li>
+        <li><strong>Info C :</strong> Valeur 1-C</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Variante 2</summary>
+      <ul>
+        <li><strong>Info A :</strong> Valeur 2-A</li>
+        <li><strong>Info B :</strong> Valeur 2-B</li>
+        <li><strong>Info C :</strong> Valeur 2-C</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Variante 3</summary>
+      <ul>
+        <li><strong>Info A :</strong> Valeur 3-A</li>
+        <li><strong>Info B :</strong> Valeur 3-B</li>
+        <li><strong>Info C :</strong> Valeur 3-C</li>
+      </ul>
+    </details>
+
+  </div>
+</div>
+
+</div>
+
+
 <div class="fade-in info-box">
   📌 Astuce : Vous pouvez centrer une image en utilisant `margin: 0 auto;`.
 </div>

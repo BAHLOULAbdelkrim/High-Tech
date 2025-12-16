@@ -433,13 +433,6 @@ article a:hover,
 
 }
 
-
-
-
-
-
-
-
 /* ============================== 
    Couleurs pour les produits
    ============================== */
@@ -490,3 +483,84 @@ article a:hover,
 
 
 
+/* =====================================================
+   COMPARISON : TABLE (DESKTOP) + ACCORDION (MOBILE)
+   ===================================================== */
+
+.comparison {
+  margin: 2rem 0;
+}
+
+/* ===== TABLEAU DESKTOP ===== */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+}
+
+.comparison-table thead th {
+  background-color: #d1fae5ff;
+  font-weight: bold;
+}
+
+.comparison-table tbody th {
+  text-align: left;
+  background-color: #f7f7f7;
+}
+
+/* ===== ACCORDION MOBILE ===== */
+.comparison-accordion {
+  display: none;
+}
+
+.comparison-accordion details {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.comparison-accordion summary {
+  padding: 12px 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #d1fae5ff;
+  list-style: none;
+}
+
+.comparison-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.comparison-accordion ul {
+  list-style: none;
+  padding: 12px 14px;
+  margin: 0;
+}
+
+.comparison-accordion li {
+  padding: 6px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+.comparison-accordion li:last-child {
+  border-bottom: none;
+}
+
+/* ===== RESPONSIVE SWITCH ===== */
+@media (max-width: 900px) {
+  .comparison-table {
+    display: none;
+  }
+
+  .comparison-accordion {
+    display: block;
+  }
+}
