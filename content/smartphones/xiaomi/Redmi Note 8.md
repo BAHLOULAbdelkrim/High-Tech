@@ -93,6 +93,7 @@ Années de sortie :
 
 </div>
 
+<div class="fade-in">
 
 <div class="comparison">
 
@@ -130,17 +131,14 @@ Années de sortie :
 
 </div>
 
+</div>
 
-<details open>
-  <summary>TEST DETAILS</summary>
-  <p>Si tu vois ce texte repliable, details fonctionne.</p>
-</details>
+<!-- ===== MOBILE : ACCORDION ===== -->
+<div class="fade-in">
 
-
-  <!-- ===== MOBILE : ACCORDION ===== -->
 <div class="comparison-accordion">
 
-<details open>
+<details>
   <summary>Variante 1</summary>
     <ul>
       <li><strong>Info A :</strong> Valeur 1-A</li>
@@ -169,6 +167,7 @@ Années de sortie :
 
 </div>
 
+</div>
 
 <div class="fade-in info-box">
   📌 Astuce : Vous pouvez centrer une image en utilisant `margin: 0 auto;`.

@@ -530,6 +530,7 @@ article a:hover,
 .comparison-accordion summary {
   padding: 12px 14px;
   font-weight: bold;
+  color: rgb(92, 25, 146);
   cursor: pointer;
   background-color: #d1fae5ff;
   list-style: none;
