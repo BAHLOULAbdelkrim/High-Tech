@@ -131,6 +131,12 @@ Années de sortie :
 </div>
 
 
+<details open>
+  <summary>TEST DETAILS</summary>
+  <p>Si tu vois ce texte repliable, details fonctionne.</p>
+</details>
+
+
   <!-- ===== MOBILE : ACCORDION ===== -->
   <div class="comparison-accordion">
 

@@ -338,20 +338,3 @@
       display: none !important;
   }
 }
-
-
-
-@media (max-width: 900px) {
-
-  /* ===== DESKTOP TABLE HIDDEN ===== */
-  .comparison-table {
-    display: none !important;
-  }
-
-  /* ===== MOBILE ACCORDION ONLY ===== */
-  .comparison-accordion {
-    display: block !important;
-  }
-
-  /* AUCUNE règle globale sur table / td / th */
-}
