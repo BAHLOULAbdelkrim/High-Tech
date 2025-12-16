@@ -113,40 +113,44 @@ Années de sortie :
 
 {{< beamertable title="Exercise (plane robot)" >}}
 
-<table class="beamer-table-segmented">
-  <thead>
-    <tr class="top-border bold">
-      <th class="vline-segment">Joint 1</th>
-      <th class="vline-segment">Joint 2</th>
-      <th class="vline-segment">Joint 3</th>
-      <th class="vline-segment">Joint 4</th>
-      <th>Joint 5</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="mid-border single">
-      <td class="vline-segment">Joint 6</td>
-      <td class="vline-segment">Joint 7</td>
-      <td class="vline-segment">Joint 8</td>
-      <td class="vline-segment">Joint 9</td>
-      <td>Joint 10</td>
-    </tr>
-    <tr class="mid-border double">
-      <td class="vline-segment">Joint 11</td>
-      <td class="vline-segment">Joint 12</td>
-      <td class="vline-segment">Joint 13</td>
-      <td class="vline-segment">Joint 14</td>
-      <td>Joint 15</td>
-    </tr>
-    <tr class="bottom-border bold">
-      <td class="vline-segment">Joint 16</td>
-      <td class="vline-segment">Joint 17</td>
-      <td class="vline-segment">Joint 18</td>
-      <td class="vline-segment">Joint 19</td>
-      <td>Joint 20</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-scroll">
+
+  <table class="beamer-table-segmented">
+    <thead>
+      <tr class="top-border bold">
+        <th class="vline-segment">Joint 1</th>
+        <th class="vline-segment">Joint 2</th>
+        <th class="vline-segment">Joint 3</th>
+        <th class="vline-segment">Joint 4</th>
+        <th>Joint 5</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="mid-border single">
+        <td class="vline-segment">Joint 6</td>
+        <td class="vline-segment">Joint 7</td>
+        <td class="vline-segment">Joint 8</td>
+        <td class="vline-segment">Joint 9</td>
+        <td>Joint 10</td>
+      </tr>
+      <tr class="mid-border double">
+        <td class="vline-segment">Joint 11</td>
+        <td class="vline-segment">Joint 12</td>
+        <td class="vline-segment">Joint 13</td>
+        <td class="vline-segment">Joint 14</td>
+        <td>Joint 15</td>
+      </tr>
+      <tr class="bottom-border bold">
+        <td class="vline-segment">Joint 16</td>
+        <td class="vline-segment">Joint 17</td>
+        <td class="vline-segment">Joint 18</td>
+        <td class="vline-segment">Joint 19</td>
+        <td>Joint 20</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
 
 {{< /beamertable >}}
 
