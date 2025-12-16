@@ -133,7 +133,10 @@ Années de sortie :
 
 </div>
 
+</div>
+
 <!-- ===== MOBILE : ACCORDION ===== -->
+<div class="fade-in">
 
 <div class="comparison-accordion">
 
