@@ -115,7 +115,7 @@ Années de sortie :
 
 <div class="table-scroll">
 
-  <table class="beamer-table-segmented">
+  <table class="beamer-table">
     <thead>
       <tr class="top-border bold">
         <th class="vline-segment">Joint 1</th>
