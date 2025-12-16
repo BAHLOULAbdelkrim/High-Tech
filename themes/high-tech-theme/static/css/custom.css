@@ -174,62 +174,41 @@
     padding: 0.5rem;
 }
 
+
+
+
 @media (max-width: 900px) {
   /* ===== Beamer-box ===== */
   .beamer-box {
-    width: 100% !important;
     padding: 0.5rem 0.8rem !important;
     margin: 0.8rem 0 !important;
     border-radius: 8px !important;
+    box-shadow: none !important; /* garde l’ombre minimal */
   }
 
   /* Box hover pour mobile */
   .beamer-box:hover,
   .beamer-box.hover {
     transform: scale(1.03);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
   }
 
   .beamer-title {
     font-size: 1.2rem !important;
     padding: 0.5rem 0.8rem !important;
+    white-space: normal !important;
+    text-align: center !important;
   }
 
   .beamer-body {
     font-size: 14px !important;
     padding: 0.6rem 0.8rem !important;
+    line-height: 1.45 !important;
+    overflow-x: visible; /* important pour ne pas déformer les boxes */
   }
-}
-
-/* ============================================================
-   PATCH MOBILE — Images + BeamerBox + BeamerTable (100% FLUID)
-   ============================================================ */
-@media (max-width: 900px) {
 
   /* --- 1) Images parfaitement fluides (toutes) --- */
-/*  img,
-  figure img,
-  .article-image,
-  .img-row img {
-      width: 100% !important;
-      max-width: 100% !important;
-      height: auto !important;
-  }    */
-
-  /* Annule les tailles fixes .img-small/.img-medium/.img-large */
-/*  .img-small,   */
-/*  .img-medium,  */
-  .img-large {
-      width: 100% !important;
-      max-width: 100% !important;
-  }
-
-  /* Les lignes d’images passent toujours en colonne */
-  .img-row {
-      flex-direction: column !important;
-      gap: 12px !important;
-  }
-
+  .img-large,
   article img,
   article figure img,
   article .article-image,
@@ -239,66 +218,30 @@
       height: auto !important;
   }
 
-  article .img-small,
-  article .img-medium,
-  article .img-large {
-      width: 100% !important;
-      max-width: 100% !important;
-  }
-
-  article .img-row {
+  .img-row {
       flex-direction: column !important;
+      gap: 12px !important;
   }
 
-
-
-  /* --- 2) Beamer Box responsive --- */
-  .beamer-box {
-      width: 100% !important;
-      border-radius: 8px !important;
-      margin: 1rem 0 !important;
-      box-shadow: none !important;   /* évite débordement */
-      padding: 0 !important;
+  /* --- 2) Tables scrollables --- */
+  .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
   }
 
-  .beamer-title {
-      font-size: 1.1rem !important;
-      padding: 0.5rem 0.8rem !important;
-      white-space: normal !important;
-      text-align: center !important;
+  .table-scroll table,
+  .table-scroll .beamer-table,
+  .table-scroll .beamer-table-segmented {
+      width: 100%;
+      min-width: 600px; /* ajuste selon le nombre de colonnes */
+      border-collapse: collapse;
   }
 
-  .beamer-body {
-      font-size: 14px !important;
-      padding: 0.8rem !important;
-      line-height: 1.45 !important;
-      overflow-x: auto !important;
+  .table-scroll th,
+  .table-scroll td {
+      padding: 6px 8px;
+      font-size: 13px;
+      white-space: nowrap;
   }
-
-
-  /* --- 3) Tables Beamer 100% responsives --- */
-
-  /* On applique la même logique que tes tables standards */
-/* ===== Tables Beamer — Mobile (STRUCTURE CONSERVÉE) ===== */
-
-.beamer-body th,
-.beamer-body td {
-    padding: 6px 8px !important;
-    font-size: 13px !important;
-    white-space: nowrap !important;
 }
 
-/* Scroll horizontal UNIQUEMENT via conteneur */
-.table-scroll {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
-.table-scroll table,
-.table-scroll .beamer-table,
-.table-scroll .beamer-table-segmented {
-    width: 100%;
-    min-width: 600px;
-}
-
-}
