@@ -556,12 +556,16 @@ article a:hover,
 }
 
 /* ===== RESPONSIVE SWITCH ===== */
+/* Mobile */
 @media (max-width: 900px) {
-  .comparison-table {
-    display: none;
+
+  /* Cache TOTALEMENT le tableau sur mobile */
+  .comparison .comparison-table {
+    display: none !important;
   }
 
-  .comparison-accordion {
-    display: block;
+  /* Affiche uniquement l’accordion */
+  .comparison .comparison-accordion {
+    display: block !important;
   }
 }
