@@ -180,13 +180,13 @@
 @media (max-width: 900px) {
   /* ===== Beamer-box ===== */
   .beamer-box {
+    width: 100% !important;
     padding: 0.5rem 0.8rem !important;
     margin: 0.8rem 0 !important;
     border-radius: 8px !important;
-    box-shadow: none !important; /* garde l’ombre minimal */
+    box-shadow: none !important;
   }
 
-  /* Box hover pour mobile */
   .beamer-box:hover,
   .beamer-box.hover {
     transform: scale(1.03);
@@ -204,10 +204,10 @@
     font-size: 14px !important;
     padding: 0.6rem 0.8rem !important;
     line-height: 1.45 !important;
-    overflow-x: visible; /* important pour ne pas déformer les boxes */
+    overflow-x: visible;
   }
 
-  /* --- 1) Images parfaitement fluides (toutes) --- */
+  /* --- 1) Images fluides --- */
   .img-large,
   article img,
   article figure img,
