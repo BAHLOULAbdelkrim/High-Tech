@@ -560,12 +560,12 @@ article a:hover,
 @media (max-width: 900px) {
 
   /* Cache TOTALEMENT le tableau sur mobile */
-  .comparison .comparison-table {
+  .comparison-table {
     display: none !important;
   }
 
   /* Affiche uniquement l’accordion */
-  .comparison .comparison-accordion {
+  .comparison-accordion {
     display: block !important;
   }
 }
