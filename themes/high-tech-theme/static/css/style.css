@@ -555,6 +555,33 @@ article a:hover,
   border-bottom: none;
 }
 
+
+
+
+.comparison-accordion summary::before {
+  content: "▶";
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.comparison-accordion details[open] summary::before {
+  content: "▼";
+}
+
+.comparison-accordion summary::before {
+  content: "▶";
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.comparison-accordion details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+
+
+
+
 /* ===== RESPONSIVE SWITCH ===== */
 /* Mobile */
 @media (max-width: 900px) {
