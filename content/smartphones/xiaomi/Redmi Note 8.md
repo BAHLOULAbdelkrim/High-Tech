@@ -147,7 +147,7 @@ Années de sortie :
 </details>
 
 <details close>
-  <summary>Variante 2</summary>
+  <summary> Variante 2</summary>
     <ul>
       <li><strong>Info A :</strong> Valeur 2-A</li>
       <li><strong>Info B :</strong> Valeur 2-B</li>
@@ -156,7 +156,7 @@ Années de sortie :
 </details>
 
 <details>
-  <summary>Variante 3</summary>
+  <summary> Variante 3</summary>
     <ul>
       <li><strong>Info A :</strong> Valeur 3-A</li>
       <li><strong>Info B :</strong> Valeur 3-B</li>

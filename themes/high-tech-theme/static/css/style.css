@@ -556,19 +556,6 @@ article a:hover,
 }
 
 
-
-/* 
-.comparison-accordion summary::before {
-  content: "▶";
-  font-size: 14px;
-  transition: transform 0.2s ease;
-}
-
-.comparison-accordion details[open] summary::before {
-  content: "▼";
-}
-*/
-
 .comparison-accordion summary::before {
   content: "▶";
   display: inline-block;
