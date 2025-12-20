@@ -138,7 +138,7 @@ Années de sortie :
 <div class="comparison-accordion">
 
 <details>
-  <summary>Variante 1</summary>
+  <summary> Variante 1</summary>
     <ul>
       <li><strong>Info A :</strong> Valeur 1-A</li>
       <li><strong>Info B :</strong> Valeur 1-B</li>
