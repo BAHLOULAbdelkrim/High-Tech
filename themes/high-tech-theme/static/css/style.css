@@ -569,8 +569,8 @@ article a:hover,
 
 /* Logo de marque : taille fixe et responsive */
   .brand-logo-img {
-    height: 30px !important; /* réduit légèrement sur mobile */
-    max-width: 30px !important;
+    height: 60px !important; /* réduit légèrement sur mobile */
+    max-width: 60px !important;
   }
 
 /* ===== RESPONSIVE SWITCH ===== */
