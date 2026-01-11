@@ -437,7 +437,6 @@ article a:hover,
   border-bottom: none;
 }
 
-
 .comparison-accordion summary::before {
   content: "▶";
   display: inline-block;
@@ -570,8 +569,8 @@ article a:hover,
 
 /* Logo de marque : taille fixe et responsive */
   .brand-logo-img {
-    height: 80px; /* réduit légèrement sur mobile */
-    max-width: 120px;
+    height: 60px !important; /* réduit légèrement sur mobile */
+    max-width: 60px !important;
   }
 
 /* ===== RESPONSIVE SWITCH ===== */

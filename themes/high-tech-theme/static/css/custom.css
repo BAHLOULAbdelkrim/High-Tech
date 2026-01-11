@@ -355,3 +355,43 @@
 }
 
 
+/* ===============================
+   Logo en arrière-plan pour beamer-box
+   =============================== */
+
+.beamer-box {
+  position: relative;       /* contexte pour ::before */
+  overflow: hidden;         /* coins arrondis et rien qui déborde */
+}
+
+.beamer-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;                 /* top:0; right:0; bottom:0; left:0; */
+  background-image: url("/images/logo-bg.webp"); /* chemin vers ton logo */
+  background-repeat: no-repeat;
+  background-position: center center;            /* logo centré */
+  background-size: 120px;                        /* taille du logo sur desktop */
+  opacity: 0.1;                                  /* discrétion */
+  pointer-events: none;                          /* texte cliquable au-dessus */
+  z-index: 0;                                    /* derrière tout le contenu */
+  display: block;
+}
+
+/* Texte et contenu au-dessus du logo */
+.beamer-box > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===============================
+   Ajustements pour mobile
+   =============================== */
+@media (max-width: 900px) {
+  .beamer-box::before {
+    background-size: 80px; /* plus petit sur mobile */
+    background-position: center top; /* évite de couvrir le texte */
+    opacity: 0.05;       /* encore plus discret */
+  }
+}
+
