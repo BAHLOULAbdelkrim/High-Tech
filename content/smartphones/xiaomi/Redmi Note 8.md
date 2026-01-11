@@ -23,7 +23,9 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div style="text-align:center">
   <strong>Xiaomi</strong><br>
-  <img src="/images/logo_xiaomi.webp" style="max-width:150px; width:100%; height:auto;">
+  <figure>
+    <img src="/images/logo_xiaomi.webp" style="height:100px; width:auto;">
+  </figure>
 </div>
 
 
