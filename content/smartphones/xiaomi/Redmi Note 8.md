@@ -340,7 +340,37 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="comparison">
 
-### • **Marque :** 
+### • **Redmi Note 8 (2019) :** 
+
+&nbsp;&nbsp;&nbsp;• **Batterie :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Autonomie :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Chargeur :** ...........
+
+### • **Redmi Note 8 Pro :** 
+
+&nbsp;&nbsp;&nbsp;• **Batterie :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Autonomie :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Chargeur :** ...........
+
+### • **Redmi Note 8T :** 
+
+&nbsp;&nbsp;&nbsp;• **Batterie :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Autonomie :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Chargeur :** ...........
+
+### • **Redmi Note 8 (2021) :** 
+
+&nbsp;&nbsp;&nbsp;• **Batterie :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Autonomie :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Chargeur :** ...........
 
 </div> 
 
@@ -350,11 +380,33 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Port de connexion & Cartes SIM/Cartes SD" >}}
+{{< beamersbox title="Port de connexion & Cartes SIM/Carte SD" >}}
 
 <div class="comparison">
 
-### • **Marque :** 
+### • **Redmi Note 8 (2019) :** 
+
+&nbsp;&nbsp;&nbsp;• **Port de connexion :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Cartes SIM/Carte SD :** ...........
+
+### • **Redmi Note 8 Pro :** 
+
+&nbsp;&nbsp;&nbsp;• **Port de connexion :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Cartes SIM/Carte SD :** ...........
+
+### • **Redmi Note 8T :** 
+
+&nbsp;&nbsp;&nbsp;• **Port de connexion :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Cartes SIM/Carte SD :** ...........
+
+### • **Redmi Note 8 (2021) :** 
+
+&nbsp;&nbsp;&nbsp;• **Port de connexion :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Cartes SIM/Carte SD :** ...........
 
 </div> 
 
@@ -368,7 +420,37 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="comparison">
 
-### • **Marque :** 
+### • **Redmi Note 8 (2019) :** 
+
+&nbsp;&nbsp;&nbsp;• **Connectivité :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Réseaux :** ...........
+
+&nbsp;&nbsp;&nbsp;• **NFC :** ...........
+
+### • **Redmi Note 8 Pro :** 
+
+&nbsp;&nbsp;&nbsp;• **Connectivité :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Réseaux :** ...........
+
+&nbsp;&nbsp;&nbsp;• **NFC :** ...........
+
+### • **Redmi Note 8T :** 
+
+&nbsp;&nbsp;&nbsp;• **Connectivité :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Réseaux :** ...........
+
+&nbsp;&nbsp;&nbsp;• **NFC :** ...........
+
+### • **Redmi Note 8 (2021) :** 
+
+&nbsp;&nbsp;&nbsp;• **Connectivité :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Réseaux :** ...........
+
+&nbsp;&nbsp;&nbsp;• **NFC :** ...........
 
 </div> 
 
@@ -382,7 +464,29 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="comparison">
 
-### • **Marque :** 
+### • **Redmi Note 8 (2019) :** 
+
+&nbsp;&nbsp;&nbsp;• **Dimensions :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Poids :** ...........
+
+### • **Redmi Note 8 Pro :** 
+
+&nbsp;&nbsp;&nbsp;• **Dimensions :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Poids :** ...........
+
+### • **Redmi Note 8T :** 
+
+&nbsp;&nbsp;&nbsp;• **Dimensions :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Poids :** ...........
+
+### • **Redmi Note 8 (2021) :** 
+
+&nbsp;&nbsp;&nbsp;• **Dimensions :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Poids :** ...........
 
 </div> 
 
@@ -396,7 +500,95 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="comparison">
 
-### • **Marque :** 
+<div class="comparison">
+
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th> </th>
+        <th>Coté droit</th>
+        <th>Coté gauche</th>
+        <th>Coté haut</th>
+        <th>Coté bas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Redmi Note 8 (2019)</th>
+        <td>..........</td>
+        <td>..........</td>
+        <td>..........</td>
+        <td>..........</td>
+      </tr>
+      <tr>
+        <th>Redmi Note 8 Pro</th>
+        <td>..........</td>
+        <td>..........</td>
+        <td>..........</td>
+        <td>..........</td>
+      </tr>
+      <tr>
+        <th>Redmi Note 8T</th>
+        <td>..........</td>
+        <td>..........</td>
+        <td>..........</td>
+        <td>..........</td>
+      </tr>
+      <tr>
+        <th>Redmi Note 8 (2021)</th>
+        <td>..........</td>
+        <td>..........</td>
+        <td>..........</td>
+        <td>..........</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<div class="comparison-accordion">
+
+<details>
+  <summary> Redmi Note 8 (2019)</summary>
+    <ul>
+      <li><strong>Coté droit :</strong> ........</li>
+      <li><strong>Coté gauche :</strong> ........</li>
+      <li><strong>Coté haut :</strong> ........</li>
+      <li><strong>Coté bas :</strong> ........</li>
+    </ul>
+</details>
+
+<details>
+  <summary> Redmi Note 8 Pro</summary>
+    <ul>
+      <li><strong>Coté droit :</strong> ........</li>
+      <li><strong>Coté gauche :</strong> ........</li>
+      <li><strong>Coté haut :</strong> ........</li>
+      <li><strong>Coté bas :</strong> ........</li>
+    </ul>
+</details>
+
+<details>
+  <summary> Redmi Note 8T</summary>
+    <ul>
+      <li><strong>Coté droit :</strong> ........</li>
+      <li><strong>Coté gauche :</strong> ........</li>
+      <li><strong>Coté haut :</strong> ........</li>
+      <li><strong>Coté bas :</strong> ........</li>
+    </ul>
+</details>
+
+<details>
+  <summary> Redmi Note 8 (2021)</summary>
+    <ul>
+      <li><strong>Coté droit :</strong> ........</li>
+      <li><strong>Coté gauche :</strong> ........</li>
+      <li><strong>Coté haut :</strong> ........</li>
+      <li><strong>Coté bas :</strong> ........</li>
+    </ul>
+</details>
+
+</div>
 
 </div> 
 
@@ -410,7 +602,29 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="comparison">
 
-### • **Marque :** 
+### • **Redmi Note 8 (2019) :** 
+
+&nbsp;&nbsp;&nbsp;• **Navigation :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Emplacement :** ...........
+
+### • **Redmi Note 8 Pro :** 
+
+&nbsp;&nbsp;&nbsp;• **Navigation :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Emplacement :** ...........
+
+### • **Redmi Note 8T :** 
+
+&nbsp;&nbsp;&nbsp;• **Navigation :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Emplacement :** ...........
+
+### • **Redmi Note 8 (2021) :** 
+
+&nbsp;&nbsp;&nbsp;• **Navigation :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Emplacement :** ...........
 
 </div> 
 
@@ -420,31 +634,39 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Audio" >}}
+{{< beamersbox title="Audio & Capteurs" >}}
 
 <div class="comparison">
 
-### • **Marque :** 
+### • **Redmi Note 8 (2019) :** 
+
+&nbsp;&nbsp;&nbsp;• **Audio :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Capteurs :** ...........
+
+### • **Redmi Note 8 Pro :** 
+
+&nbsp;&nbsp;&nbsp;• **Audio :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Capteurs :** ...........
+
+### • **Redmi Note 8T :** 
+
+&nbsp;&nbsp;&nbsp;• **Audio :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Capteurs :** ...........
+
+### • **Redmi Note 8 (2021) :** 
+
+&nbsp;&nbsp;&nbsp;• **Audio :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Capteurs :** ...........
 
 </div> 
 
 {{< /beamersbox >}}
 
 </div> 
-
-<div class="fade-in">
-
-{{< beamersbox title="Capteurs" >}}
-
-<div class="comparison">
-
-### • **Marque :** 
-
-</div> 
-
-{{< /beamersbox >}}
-
-</div>
 
 ## Galerie de photos
 
@@ -538,6 +760,9 @@ Exemple de tag : Si tu veux consulter le : <a href="https://high-tech.pages.dev/
 
 
 
+
+<!-- 
+
 <div class="fade-in info-box">
   📌 Astuce : Vous pouvez centrer une image en utilisant `margin: 0 auto;`.
 
@@ -620,7 +845,6 @@ Années de sortie :
 
 <div class="comparison">
 
-  <!-- ===== DESKTOP : TABLEAU ===== -->
   <table class="comparison-table">
     <thead>
       <tr>
@@ -653,8 +877,6 @@ Années de sortie :
   </table>
 
 </div>
-
-<!-- ===== MOBILE : ACCORDION ===== -->
 
 <div class="comparison-accordion">
 
@@ -809,5 +1031,5 @@ Ne jamais copier les photos des sites e-commerce (Amazon, Fnac…)
 
 </div>
 
-
+-->
 
