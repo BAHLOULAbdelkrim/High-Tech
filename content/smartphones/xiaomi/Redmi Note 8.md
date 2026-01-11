@@ -15,18 +15,18 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Aperçu général" >}}
+{{< beamersbox title="Aperçu général" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
-### • **Marque :** 
+### • **Marque :**    
+
+Utliser ChatGPT, DeepSeek, Grok, Copilot, Gemini + le site de la marque pour chercher les infos
 
 <div class="brand-logo" style="text-align:center">
   <strong>Xiaomi</strong><br>
   <img src="/images/logo_xiaomi.webp" alt="Logo Xiaomi" class="brand-logo-img">
 </div>
-
-
 
 
 ### • **Variantes & Dates de sortie :**
@@ -195,7 +195,7 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Processeur & Système d'exploitation" >}}
+{{< beamersbox title="Processeur & Système d'exploitation" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
@@ -231,7 +231,7 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Caméras" >}}
+{{< beamersbox title="Caméras" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
@@ -267,7 +267,7 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Stockage & RAM" >}}
+{{< beamersbox title="Stockage & RAM" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
@@ -303,7 +303,7 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Écran & Résolution" >}}
+{{< beamersbox title="Écran & Résolution" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
@@ -339,7 +339,7 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Batterie, Autonomie & Chargeur" >}}
+{{< beamersbox title="Batterie, Autonomie & Chargeur" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
@@ -383,7 +383,7 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Port de connexion & Cartes SIM/Carte SD" >}}
+{{< beamersbox title="Port de connexion & Cartes SIM/Carte SD" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
@@ -419,7 +419,7 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Connectivité, Réseaux, NFC" >}}
+{{< beamersbox title="Connectivité, Réseaux, NFC" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
@@ -463,7 +463,7 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Dimensions & Poids" >}}
+{{< beamersbox title="Dimensions & Poids" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
@@ -499,7 +499,7 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Quatre cotés" >}}
+{{< beamersbox title="Les quatre cotés" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
@@ -601,7 +601,7 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Navigation & Emplacement" >}}
+{{< beamersbox title="Navigation & Emplacement" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
@@ -637,7 +637,7 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Audio & Capteurs" >}}
+{{< beamersbox title="Audio & Capteurs" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 

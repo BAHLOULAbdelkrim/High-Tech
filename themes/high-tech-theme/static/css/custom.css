@@ -41,7 +41,7 @@
 }
 
 .beamer-body {
-    background-color: rgb(248, 255, 251); /* bleu clair comme dans texte=darkred!10 */
+    background-color: transparent; /* IMPORTANT */ /* bleu clair comme dans texte=darkred!10 */
     color: #000;
     padding-top: 0.3rem;  /* diminue pour remonter le texte */
     padding-right: 1.2rem;
@@ -180,14 +180,41 @@
 }
 
 
+.beamer-box {
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(248, 255, 251); /* déplacé ici */
+}
+
+/* image de fond */
+.beamer-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--beamer-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: min(50%, 50%);
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* contenu */
+.beamer-title,
+.beamer-body {
+  position: relative;
+  z-index: 1;
+}
 
 
 
 
 
 
-
-
+/* ============================================================
+                        Version MOBILE
+   ============================================================ */
 
 @media (max-width: 900px) {
   /* ===== Beamer-box ===== */
@@ -214,12 +241,6 @@
     font-size: 14px !important;
     padding: 0.6rem 0.8rem !important;
   }
-}
-
-/* ============================================================
-   PATCH MOBILE — Images + BeamerBox + BeamerTable (100% FLUID)
-   ============================================================ */
-@media (max-width: 900px) {
 
   /* --- 1) Images parfaitement fluides (toutes) --- */
 /*  img,
@@ -264,9 +285,6 @@
   article .img-row {
       flex-direction: column !important;
   }
-
-
-
 
   /* --- 2) Beamer Box responsive --- */
   .beamer-box {
@@ -352,46 +370,11 @@
   .vline-segment::after {
       display: none !important;
   }
-}
 
-
-/* ===============================
-   Logo en arrière-plan pour beamer-box
-   =============================== */
-
-.beamer-box {
-  position: relative;       /* contexte pour ::before */
-  overflow: hidden;         /* coins arrondis et rien qui déborde */
-}
-
-.beamer-box::before {
-  content: "";
-  position: absolute;
-  inset: 0;                 /* top:0; right:0; bottom:0; left:0; */
-  background-image: url("/images/logo-bg.webp"); /* chemin vers ton logo */
-  background-repeat: no-repeat;
-  background-position: center center;            /* logo centré */
-  background-size: 120px;                        /* taille du logo sur desktop */
-  opacity: 0.1;                                  /* discrétion */
-  pointer-events: none;                          /* texte cliquable au-dessus */
-  z-index: 0;                                    /* derrière tout le contenu */
-  display: block;
-}
-
-/* Texte et contenu au-dessus du logo */
-.beamer-box > * {
-  position: relative;
-  z-index: 1;
-}
-
-/* ===============================
-   Ajustements pour mobile
-   =============================== */
-@media (max-width: 900px) {
+/* Image fond de la box */
   .beamer-box::before {
-    background-size: 80px; /* plus petit sur mobile */
-    background-position: center top; /* évite de couvrir le texte */
-    opacity: 0.05;       /* encore plus discret */
+    background-size: min(50%, 50%);
+    opacity: 0.1;
   }
 }
 
