@@ -190,12 +190,13 @@
 .beamer-box::before {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: 90px 10% 5% 10%;
   background-image: var(--beamer-bg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: min(60%, 60%);
-  opacity: 0.1;
+/*  background-size: min(60%, 60%);  */
+  background-size: contain;
+  opacity: 0.05;
   pointer-events: none;
   z-index: 0;
 }
@@ -373,7 +374,7 @@
 
 /* Image fond de la box */
   .beamer-box::before {
-    background-size: min(70%, 70%);
+    background-size: min(80%, 80%);
     opacity: 0.1;
   }
 }

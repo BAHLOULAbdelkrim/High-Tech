@@ -343,8 +343,8 @@ article a:hover,
 
 /* Le carré de couleur */
 .swatch .color {
-  width: 72px;
-  height: 72px;
+  width: clamp(36px, 10vw, 50px);
+  height: clamp(36px, 10vw, 50px);
   border-radius: 12px;
   background: var(--c);
   border: 2px solid #ddd;
