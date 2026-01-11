@@ -21,12 +21,11 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 ### • **Marque :** 
 
-<div style="text-align:center">
+<div class="brand-logo" style="text-align:center">
   <strong>Xiaomi</strong><br>
-  <figure>
-    <img src="/images/logo_xiaomi.webp" style="max-width:100px; width:100%; height:auto; display:inline-block;">
-  </figure>
+  <img src="/images/logo_xiaomi.webp" alt="Logo Xiaomi" class="brand-logo-img">
 </div>
+
 
 
 
