@@ -1,8 +1,8 @@
 ---
 title: "Série Redmi Note 8 – Guide, modèles et spécifications"
-date: 2025-12-06    # année-mois-jour. Pour ajouter l'heure : 2025-01-03T00:00:00+01:00 ===> 00:00:00 heure locale (+1 UTC)
+date: 2026-01-10    # année-mois-jour. Pour ajouter l'heure : 2025-01-03T00:00:00+01:00 ===> 00:00:00 heure locale (+1 UTC)
 slug: "redmi-note-8"     # Pour personnaliser l’URL de l’article.
-image: "/images/Redmi_Note_8.webp"
+image: "/images/redmi-note-8-1.webp"
 # image_caption: "Redmi Note 8 version globale"        # Pour afficher la légende de l’image principale.
 description: "Guide complet des smartphones Xiaomi Redmi Note 8 : modèles, caractéristiques techniques, avis et meilleures options d'achat."   # Résumé SEO de l’article en une phrase, qui devrait être courte, percutante et résumer le contenu (doit faire 140–160 caractères). 
 summary: "Guide des variantes de Xiaomi Redmi Note 8"
@@ -11,16 +11,537 @@ categories: ["Smartphones"]
 keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "guide Redmi Note"]     # Pour SEO avancé (balise meta keywords, facultatif).
 ---
 
-<div class="fade-in info-box">
-  📌 Astuce : Vous pouvez centrer une image en utilisant `margin: 0 auto;`.
+## Aperçu général
+
+<div class="fade-in">
+
+{{< beamersbox title="Aperçu général" >}}
+
+<div class="comparison">
+
+### • **Marque :** 
+
+<p style="text-align:center">
+  <span style="font-weight:bold">Xiaomi</span>
+  <img src="/images/logo_xiaomi.webp" alt="Logo Xiaomi" style="height:100px; width:auto; vertical-align:middle;">
+</p>
+
+### • **Variantes & Dates de sortie :**
+
+&nbsp;&nbsp;&nbsp;• **Redmi Note 8 (2019) :** 29 août 2019
+
+&nbsp;&nbsp;&nbsp;• **Redmi Note 8 Pro :** 29 août 2019
+
+&nbsp;&nbsp;&nbsp;• **Redmi Note 8T :** 6 novembre 2019
+
+&nbsp;&nbsp;&nbsp;• **Redmi Note 8 (2021) :** 24 mai 2021
+
+### • **Couleurs :**
+
+&nbsp;&nbsp;&nbsp;• **Redmi Note 8 (2019) :** 
+
+<div class="color-swatches">
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#f5f5f5"></span>
+    <span class="label">Perle blanche</span>
+  </label>
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#2f6b4f"></span>
+    <span class="label">Forêt verte</span>
+  </label>
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#7a7a7a"></span>
+    <span class="label">Minéral gris</span>
+  </label>
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#1e4bb8"></span>
+    <span class="label">Bleu océan</span>
+  </label>
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#d44a3a"></span>
+    <span class="label">Orange corail</span>
+  </label>
+
+</div> 
+
+&nbsp;&nbsp;&nbsp;• **Redmi Note 8 Pro :** 
+
+<div class="color-swatches">
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#f5f5f5"></span>
+    <span class="label">Perle blanche</span>
+  </label>
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#2f6b4f"></span>
+    <span class="label">Forêt verte</span>
+  </label>
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#7a7a7a"></span>
+    <span class="label">Minéral gris</span>
+  </label>
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#1e4bb8"></span>
+    <span class="label">Bleu océan</span>
+  </label>
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#d44a3a"></span>
+    <span class="label">Orange corail</span>
+  </label>
+
+</div> 
+
+&nbsp;&nbsp;&nbsp;• **Redmi Note 8T :** 
+
+<div class="color-swatches">
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#f5f5f5"></span>
+    <span class="label">Perle blanche</span>
+  </label>
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#2f6b4f"></span>
+    <span class="label">Forêt verte</span>
+  </label>
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#7a7a7a"></span>
+    <span class="label">Minéral gris</span>
+  </label>
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#1e4bb8"></span>
+    <span class="label">Bleu océan</span>
+  </label>
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#d44a3a"></span>
+    <span class="label">Orange corail</span>
+  </label>
+
+</div> 
+
+&nbsp;&nbsp;&nbsp;• **Redmi Note 8 (2021) :** 
+
+<div class="color-swatches">
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#f5f5f5"></span>
+    <span class="label">Perle blanche</span>
+  </label>
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#2f6b4f"></span>
+    <span class="label">Forêt verte</span>
+  </label>
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#7a7a7a"></span>
+    <span class="label">Minéral gris</span>
+  </label>
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#1e4bb8"></span>
+    <span class="label">Bleu océan</span>
+  </label>
+
+  <label class="swatch">
+    <input type="radio" name="color">
+    <span class="color" style="--c:#d44a3a"></span>
+    <span class="label">Orange corail</span>
+  </label>
+
+</div> 
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div>
+
+## Spécifications techniques
+
+<div class="fade-in">
+
+{{< beamersbox title="Processeur & Système d'exploitation" >}}
+
+<div class="comparison">
+
+### • **Redmi Note 8 (2019) :** 
+
+&nbsp;&nbsp;&nbsp;• **Processeur :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Système d'exploitation :** ...........
+
+### • **Redmi Note 8 Pro :** 
+
+&nbsp;&nbsp;&nbsp;• **Processeur :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Système d'exploitation :** ...........
+
+### • **Redmi Note 8T :** 
+
+&nbsp;&nbsp;&nbsp;• **Processeur :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Système d'exploitation :** ...........
+
+### • **Redmi Note 8 (2021) :** 
+
+&nbsp;&nbsp;&nbsp;• **Processeur :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Système d'exploitation :** ...........
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Caméras" >}}
+
+<div class="comparison">
+
+### • **Redmi Note 8 (2019) :** 
+
+&nbsp;&nbsp;&nbsp;• **Caméra arrière :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Caméra frontale :** ...........
+
+### • **Redmi Note 8 Pro :** 
+
+&nbsp;&nbsp;&nbsp;• **Caméra arrière :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Caméra frontale :** ...........
+
+### • **Redmi Note 8T :** 
+
+&nbsp;&nbsp;&nbsp;• **Caméra arrière :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Caméra frontale :** ...........
+
+### • **Redmi Note 8 (2021) :** 
+
+&nbsp;&nbsp;&nbsp;• **Caméra arrière :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Caméra frontale :** ...........
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Stockage & RAM" >}}
+
+<div class="comparison">
+
+### • **Redmi Note 8 (2019) :** 
+
+&nbsp;&nbsp;&nbsp;• **Stockage :** ...........
+
+&nbsp;&nbsp;&nbsp;• **RAM :** ...........
+
+### • **Redmi Note 8 Pro :** 
+
+&nbsp;&nbsp;&nbsp;• **Stockage :** ...........
+
+&nbsp;&nbsp;&nbsp;• **RAM :** ...........
+
+### • **Redmi Note 8T :** 
+
+&nbsp;&nbsp;&nbsp;• **Stockage :** ...........
+
+&nbsp;&nbsp;&nbsp;• **RAM :** ...........
+
+### • **Redmi Note 8 (2021) :** 
+
+&nbsp;&nbsp;&nbsp;• **Stockage :** ...........
+
+&nbsp;&nbsp;&nbsp;• **RAM :** ...........
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Écran & Résolution" >}}
+
+<div class="comparison">
+
+### • **Redmi Note 8 (2019) :** 
+
+&nbsp;&nbsp;&nbsp;• **Écran :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Résolution :** ...........
+
+### • **Redmi Note 8 Pro :** 
+
+&nbsp;&nbsp;&nbsp;• **Écran :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Résolution :** ...........
+
+### • **Redmi Note 8T :** 
+
+&nbsp;&nbsp;&nbsp;• **Écran :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Résolution :** ...........
+
+### • **Redmi Note 8 (2021) :** 
+
+&nbsp;&nbsp;&nbsp;• **Écran :** ...........
+
+&nbsp;&nbsp;&nbsp;• **Résolution :** ...........
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Batterie, Autonomie & Chargeur" >}}
+
+<div class="comparison">
+
+### • **Marque :** 
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Port de connexion & Cartes SIM/Cartes SD" >}}
+
+<div class="comparison">
+
+### • **Marque :** 
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Connectivité, Réseaux, NFC" >}}
+
+<div class="comparison">
+
+### • **Marque :** 
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Dimensions & Poids" >}}
+
+<div class="comparison">
+
+### • **Marque :** 
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Quatre cotés" >}}
+
+<div class="comparison">
+
+### • **Marque :** 
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Navigation & Emplacement" >}}
+
+<div class="comparison">
+
+### • **Marque :** 
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Audio" >}}
+
+<div class="comparison">
+
+### • **Marque :** 
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Capteurs" >}}
+
+<div class="comparison">
+
+### • **Marque :** 
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div>
+
+## Galerie de photos
+
+<div class="fade-in">
+
+<div class="img-row img-center img-large">
+
+<div style="display:flex; justify-content: space-between; align-items: flex-start; gap:10px; max-width:800px; margin:0 auto;">
+  <figure>
+    <img src="/images/redmi-note-8-1.webp" style="height:250px; width:auto;">
+    <figcaption>Vue arrière</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/redmi-note-8-2.webp" style="height:250px; width:auto;">
+    <figcaption>Vue avant</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/redmi-note-8-3.webp" style="height:250px; width:auto;">
+    <figcaption>Vue arrière</figcaption>
+  </figure>
+</div>
+
+</div>
+
+<div style="text-align:center; margin-top:5px;">
+  <small><i>Images : © Xiaomi – Utilisation éditoriale — Source : <a href="https://www.mi.com">mi.com</a></i></small>
+</div>
+
 </div>
 
 <div class="fade-in">
 
-## Aperçu général
+## Évaluation
+
+3 à 5 Points positifs
+
+3 Points négatifs max
+
+Éventuellement petite note globale (⭐/10 ou /5)
+
+Bref résumé des différences principales entre les variantes
+
+Conclusion pour qui est-ce fait
+
+Comparaison rapide (facultatif, avec d'autres articles, à voir ....)
+
+</div>
+
+<div class="fade-in">
+
+## Où acheter ? 
+
+Ajouter disponibilité selon régions (liens clairs et directs)
+
+Prix indicatifs
+
+Affiliation
+
+Lien vers le site officiel
+
+ - **Prix de vente :** 
+	> Amazon : 
+	AliExpress : 
+	Cdiscount : 
+	Rakuten : 
+
+</div>
+
+<div class="fade-in">
+
+## Voir aussi
+
+Articles sur la série suivante (ex : Redmi Note 9)
+
+Comparatifs entre séries
+
+Autres gammes Xiaomi
+
+Comparatifs, modèles similaires, autres gammes (ex : Redmi Note 8 vs Redmi Note 9)
+
+Exemple de tag : Si tu veux consulter le : <a href="https://high-tech.pages.dev/smartphones/android/redmi-note-9/" class="tag-link">Redmi Note 9</a> est ........
+
+</div>
+
+
+
+
+
+
+
+
+
 
 <div class="fade-in info-box">
   📌 Astuce : Vous pouvez centrer une image en utilisant `margin: 0 auto;`.
+
+  &nbsp;&nbsp;&nbsp;• <span style="color:#bca000">**Sous-élément 1**</span>  
 </div>
 
 ### Sous-section (ne s'affiche pas dans le sommaire)
@@ -186,49 +707,6 @@ Années de sortie :
 
 </div>
 
-<div class="fade-in">
-
-{{< beamertable title="Exercise (plane robot)" >}}
-
-<table class="beamer-table-segmented">
-  <thead>
-    <tr class="top-border bold">
-      <th class="vline-segment">Joint 1</th>
-      <th class="vline-segment">Joint 2</th>
-      <th class="vline-segment">Joint 3</th>
-      <th class="vline-segment">Joint 4</th>
-      <th>Joint 5</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="mid-border single">
-      <td class="vline-segment">Joint 6</td>
-      <td class="vline-segment">Joint 7</td>
-      <td class="vline-segment">Joint 8</td>
-      <td class="vline-segment">Joint 9</td>
-      <td>Joint 10</td>
-    </tr>
-    <tr class="mid-border double">
-      <td class="vline-segment">Joint 11</td>
-      <td class="vline-segment">Joint 12</td>
-      <td class="vline-segment">Joint 13</td>
-      <td class="vline-segment">Joint 14</td>
-      <td>Joint 15</td>
-    </tr>
-    <tr class="bottom-border bold">
-      <td class="vline-segment">Joint 16</td>
-      <td class="vline-segment">Joint 17</td>
-      <td class="vline-segment">Joint 18</td>
-      <td class="vline-segment">Joint 19</td>
-      <td>Joint 20</td>
-    </tr>
-  </tbody>
-</table>
-
-{{< /beamertable >}}
-
-</div>
-
 <div class="fade-in info-box">
 
 ## Spécifications techniques
@@ -331,145 +809,5 @@ Ne jamais copier les photos des sites e-commerce (Amazon, Fnac…)
 
 </div>
 
-<div class="fade-in">
 
-## Évaluation
-
-3 à 5 Points positifs
-
-3 Points négatifs max
-
-Éventuellement petite note globale (⭐/10 ou /5)
-
-Bref résumé des différences principales entre les variantes
-
-Conclusion pour qui est-ce fait
-
-Comparaison rapide (facultatif, avec d'autres articles, à voir ....)
-
-</div>
-
-<div class="fade-in">
-
-## Où acheter ? 
-
-Ajouter disponibilité selon régions (liens clairs et directs)
-
-Prix indicatifs
-
-Affiliation
-
-Lien vers le site officiel
-
- - **Prix de vente :** 
-	> Amazon : 
-	AliExpress : 
-	Cdiscount : 
-	Rakuten : 
-
-</div>
-
-<div class="fade-in">
-
-## Voir aussi
-
-Articles sur la série suivante (ex : Redmi Note 9)
-
-Comparatifs entre séries
-
-Autres gammes Xiaomi
-
-Comparatifs, modèles similaires, autres gammes (ex : Redmi Note 8 vs Redmi Note 9)
-
-Exemple de tag : Si tu veux consulter le : <a href="https://high-tech.pages.dev/smartphones/android/redmi-note-9/" class="tag-link">Redmi Note 9</a> est ........
-
-</div>
-
-
-
-<div class="fade-in">
-
-{{< beamertable title="Exercise (plane robot)" >}}
-
-<table class="beamer-table">
-  <thead>
-    <tr class="top-border bold">
-      <th>Joint i</th>
-      <th>α_i</th>
-      <th>d_i</th>
-      <th>r_i</th>
-      <th>θ_i</th>
-    </tr>
-    <tr class="mid-border double">
-      <th>1</th>
-      <th>^z₀,z₁ / x₀ = 0</th>
-      <th>O₀,z₁ / x₀ = 0</th>
-      <th>x₀,O₁ / z₁ = 0</th>
-      <th>x₀,x₁ / z₁ = θ₁(t)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="mid-border single">
-      <td>2</td>
-      <td>^z₁,z₂ / x₁ = 0</td>
-      <td>O₁,z₂ / x₁ = l₁</td>
-      <td>x₁,O₂ / z₂ = 0</td>
-      <td>x₁,x₂ / z₂ = θ₂(t)</td>
-    </tr>
-    <tr class="bottom-border bold">
-      <td>3</td>
-      <td>^z₂,z₃ / x₂ = 0</td>
-      <td>O₂,z₃ / x₂ = l₂</td>
-      <td>x₂,O₃ / z₃ = 0</td>
-      <td>x₂,x₃ / z₃ = θ₃(t)</td>
-    </tr>
-  </tbody>
-</table>
-
-{{< /beamertable >}}
-
-</div>
-
-<div class="fade-in">
-
-{{< beamertable title="Exercise (plane robot)" >}}
-
-<table class="beamer-table">
-  <thead>
-    <tr class="top-border bold">
-      <th class="vline">Joint i</th>
-      <th class="vline">aaaaa</th>
-      <th class="vline">aaaaa</th>
-      <th class="vline">aaaaa</th>
-      <th>θ_i</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="mid-border single">
-      <td class="vline">1</td>
-      <td class="vline">aaaaa</td>
-      <td class="vline">aaaaa</td>
-      <td class="vline">aaaaa</td>
-      <td>θ₁(t)</td>
-    </tr>
-    <tr class="mid-border double">
-      <td class="vline">2</td>
-      <td class="vline">^z₁,z₂ / x₁ = 0</td>
-      <td class="vline">O₁,z₂ / x₁ = l₁</td>
-      <td class="vline">x₁,O₂ / z₂ = 0</td>
-      <td>θ₂(t)</td>
-    </tr>
-    <tr class="bottom-border bold">
-      <td class="vline">3</td>
-      <td class="vline">^z₂,z₃ / x₂ = 0</td>
-      <td class="vline">O₂,z₃ / x₂ = l₂</td>
-      <td class="vline">x₂,O₃ / z₃ = 0</td>
-      <td>θ₃(t)</td>
-    </tr>
-  </tbody>
-</table>
-
-{{< /beamertable >}}
-
-</div>
 
