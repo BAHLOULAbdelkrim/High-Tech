@@ -21,18 +21,11 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 ### • **Marque :** 
 
-<p style="text-align:center">
-  <span style="font-weight:bold">Xiaomi</span>
+<div style="text-align:center">
+  <strong>Xiaomi</strong><br>
+  <img src="/images/logo_xiaomi.webp" style="height:100px;">
+</div>
 
-  <div class="img-row img-center img-large">
-  <div style="display:flex; justify-content: space-between; align-items: flex-start; gap:10px; max-width:800px; margin:0 auto;">
-    <figure>
-      <img src="/images/logo_xiaomi.webp" style="height:100px; width:auto; vertical-align:middle;">
-      <figcaption>Vue arrière</figcaption>
-    </figure>
-  </div>
-  </div>
-</p>
 
 ### • **Variantes & Dates de sortie :**
 

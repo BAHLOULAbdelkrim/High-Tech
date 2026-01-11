@@ -54,6 +54,11 @@
     margin-top: 0.5rem;
 }
 
+.beamer-body > :first-child {
+  margin-top: 0 !important;
+}
+
+
 /*============== Beamer Table ============*/
 
 .beamer-body table {
@@ -173,6 +178,16 @@
     border-right: 0;
     padding: 0.5rem;
 }
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 900px) {
   /* ===== Beamer-box ===== */
@@ -336,5 +351,49 @@
   .vline-segment,
   .vline-segment::after {
       display: none !important;
+  }
+}
+
+
+
+
+
+
+/* =====================================
+   Logo en arrière-plan pour BeamerBox
+   ===================================== */
+.beamer-box {
+  position: relative !important; /* nécessaire pour le pseudo-élément */
+  overflow: hidden !important;
+  z-index: 0; /* assure que le logo reste derrière */
+}
+
+.beamer-box::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/images/logo-bg.webp") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 420px !important; /* ajuste selon la taille du logo */
+  opacity: 0.06 !important;         /* discrétion du logo */
+  pointer-events: none !important;  /* ne bloque pas le texte */
+  z-index: 0 !important;
+}
+
+/* Contenu reste au-dessus du logo */
+.beamer-box > * {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Version mobile : logo plus petit et plus discret */
+@media (max-width: 900px) {
+  .beamer-box::before {
+    background-size: 260px !important;
+    opacity: 0.04 !important;
   }
 }
