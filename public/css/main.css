@@ -768,13 +768,15 @@ body.menu-open {
   .latest-grid .card img {
     height: 200px; /* tu peux adapter selon ton design */
   }
+  
+  /* Logo en arrière plan */
+  .container.article::before {
+    background-size: 280px;   /* taille adaptée mobile */
+    background-position: center top; /* évite le chevauchement du texte */
+    opacity: 0.05;           /* encore plus discret */
+  } 
+
 }
-
-
-
-
-
-
 
 
 
