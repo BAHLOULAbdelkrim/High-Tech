@@ -398,7 +398,7 @@ article a:hover,
 
 /* ===== ACCORDION MOBILE ===== */
 .comparison-accordion {
-  display: none;
+  display: block;
 }
 
 .comparison-accordion details {
@@ -583,5 +583,34 @@ article a:hover,
   /* Affiche uniquement l’accordion */
   .comparison-accordion {
     display: block !important;
+  }
+}
+
+/* Desktop : on respecte ton HTML actuel */
+.img-row > div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.img-row img {
+  height: 250px;
+  width: auto;
+}
+
+/* 📱 Mobile uniquement */
+@media (max-width: 900px) {
+  .img-row > div {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .img-row img {
+    height: auto !important;
+    width: 100% !important;
+    max-width: 350px;
   }
 }

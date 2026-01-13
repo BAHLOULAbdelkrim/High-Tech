@@ -21,13 +21,12 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 ### • **Marque :**    
 
-Utliser ChatGPT, DeepSeek, Grok, Copilot, Gemini + le site de la marque pour chercher les infos
+<!-- Utliser ChatGPT, DeepSeek, Grok, Copilot, Gemini + le site de la marque pour chercher les infos  -->
 
 <div class="brand-logo" style="text-align:center">
   <strong>Xiaomi</strong><br>
   <img src="/images/logo_xiaomi.webp" alt="Logo Xiaomi" class="brand-logo-img">
 </div>
-
 
 ### • **Variantes & Dates de sortie :**
 
@@ -501,8 +500,7 @@ Utliser ChatGPT, DeepSeek, Grok, Copilot, Gemini + le site de la marque pour che
 
 {{< beamersbox title="Les quatre cotés" bg="/images/logo-bg.webp" >}}
 
-<div class="comparison">
-
+<!--
 <div class="comparison">
 
   <table class="comparison-table">
@@ -545,9 +543,9 @@ Utliser ChatGPT, DeepSeek, Grok, Copilot, Gemini + le site de la marque pour che
         <td>..........</td>
       </tr>
     </tbody>
-  </table>
+  </table>      
 
-</div>
+</div>        -->
 
 <div class="comparison-accordion">
 
@@ -592,8 +590,6 @@ Utliser ChatGPT, DeepSeek, Grok, Copilot, Gemini + le site de la marque pour che
 </details>
 
 </div>
-
-</div> 
 
 {{< /beamersbox >}}
 
@@ -676,71 +672,273 @@ Utliser ChatGPT, DeepSeek, Grok, Copilot, Gemini + le site de la marque pour che
 <div class="fade-in">
 
 <div class="img-row img-center img-large">
-
-<div style="display:flex; justify-content: space-between; align-items: flex-start; gap:10px; max-width:800px; margin:0 auto;">
-  <figure>
-    <img src="/images/redmi-note-8-1.webp" style="height:250px; width:auto;">
-    <figcaption>Vue arrière</figcaption>
-  </figure>
-  <figure>
-    <img src="/images/redmi-note-8-2.webp" style="height:250px; width:auto;">
-    <figcaption>Vue avant</figcaption>
-  </figure>
-  <figure>
-    <img src="/images/redmi-note-8-3.webp" style="height:250px; width:auto;">
-    <figcaption>Vue arrière</figcaption>
-  </figure>
-</div>
-
+  <div class="img-row-inner">
+    <figure>
+      <img src="/images/redmi-note-8-1.webp">
+      <figcaption>Vue arrière</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/redmi-note-8-2.webp">
+      <figcaption>Vue avant</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/redmi-note-8-3.webp">
+      <figcaption>Vue arrière</figcaption>
+    </figure>
+  </div>
 </div>
 
 <div style="text-align:center; margin-top:5px;">
-  <small><i>Images : © Xiaomi – Utilisation éditoriale — Source : <a href="https://www.mi.com">mi.com</a></i></small>
+  <small><i>Images non modifiées, via <a href="https://commons.wikimedia.org/">Wikimedia Commons</a>,
+auteur inconnu,
+licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></i></small>
 </div>
 
 </div>
-
-<div class="fade-in">
 
 ## Évaluation
 
-3 à 5 Points positifs
+<div class="fade-in">
 
-3 Points négatifs max
+{{< beamersbox title="Redmi Note 8 (2019)" bg="/images/logo-bg.webp" >}}
 
-Éventuellement petite note globale (⭐/10 ou /5)
+<div class="comparison">
 
-Bref résumé des différences principales entre les variantes
+### • **Points positifs :** 
 
-Conclusion pour qui est-ce fait
+&nbsp;&nbsp;&nbsp;• ...........
 
-Comparaison rapide (facultatif, avec d'autres articles, à voir ....)
+&nbsp;&nbsp;&nbsp;• ...........
 
-</div>
+### • **Points négatifs :** 
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+### • **Note globale (⭐/10 ou /5) :** 
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+### • **Pour qui est-ce fait :** 
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
 
 <div class="fade-in">
+
+{{< beamersbox title="Redmi Note 8 Pro" bg="/images/logo-bg.webp" >}}
+
+<div class="comparison">
+
+### • **Points positifs :** 
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+### • **Points négatifs :** 
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+### • **Note globale (⭐/10 ou /5) :** 
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+### • **Pour qui est-ce fait :** 
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Redmi Note 8T" bg="/images/logo-bg.webp" >}}
+
+<div class="comparison">
+
+### • **Points positifs :** 
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+### • **Points négatifs :** 
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+### • **Note globale (⭐/10 ou /5) :** 
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+### • **Pour qui est-ce fait :** 
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Redmi Note 8 (2021)" bg="/images/logo-bg.webp" >}}
+
+<div class="comparison">
+
+### • **Points positifs :** 
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+### • **Points négatifs :** 
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+### • **Note globale (⭐/10 ou /5) :** 
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+### • **Pour qui est-ce fait :** 
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Différences entre les variantes" bg="/images/logo-bg.webp" >}}
+
+<div class="comparison">
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+&nbsp;&nbsp;&nbsp;• ...........
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
 
 ## Où acheter ? 
 
-Ajouter disponibilité selon régions (liens clairs et directs)
+<div class="fade-in">
 
-Prix indicatifs
+{{< beamersbox title="Redmi Note 8 (2019)" bg="/images/logo-bg.webp" >}}
 
-Affiliation
+<div class="comparison">
 
-Lien vers le site officiel
+### • **Amazon :** 
 
- - **Prix de vente :** 
-	> Amazon : 
-	AliExpress : 
-	Cdiscount : 
-	Rakuten : 
+### • **Cdiscount :** 
 
-</div>
+### • **AliExpress :** 
+
+### • **Darty :** 
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
 
 <div class="fade-in">
 
+{{< beamersbox title="Redmi Note 8 Pro" bg="/images/logo-bg.webp" >}}
+
+<div class="comparison">
+
+### • **Amazon :** 
+
+### • **Cdiscount :** 
+
+### • **AliExpress :** 
+
+### • **Darty :** 
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Redmi Note 8T" bg="/images/logo-bg.webp" >}}
+
+<div class="comparison">
+
+### • **Amazon :** 
+
+### • **Cdiscount :** 
+
+### • **AliExpress :** 
+
+### • **Darty :** 
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Redmi Note 8 (2021)" bg="/images/logo-bg.webp" >}}
+
+<div class="comparison">
+
+### • **Amazon :** 
+
+### • **Cdiscount :** 
+
+### • **AliExpress :** 
+
+### • **Darty :** 
+
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
 ## Voir aussi
+
+<div class="fade-in">
 
 Articles sur la série suivante (ex : Redmi Note 9)
 
