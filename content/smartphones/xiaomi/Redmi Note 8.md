@@ -5,7 +5,7 @@ slug: "redmi-note-8"     # Pour personnaliser l’URL de l’article.
 image: "/images/redmi-note-8-1.webp"
 # image_caption: "Redmi Note 8 version globale"        # Pour afficher la légende de l’image principale.
 description: "Guide complet des smartphones Xiaomi Redmi Note 8 : modèles, caractéristiques techniques, avis et meilleures options d'achat."   # Résumé SEO de l’article en une phrase, qui devrait être courte, percutante et résumer le contenu (doit faire 140–160 caractères). 
-summary: "Guide des variantes de Xiaomi Redmi Note 8"
+summary: "Guide des modèles de Xiaomi Redmi Note 8"
 tags: ["Redmi Note 8", "Redmi Note 8 Pro", "Xiaomi Redmi", "Smartphone Xiaomi", "Android"]    # Pour catégoriser par mot-clé. Utile pour filtres et SEO. Tags très précis.
 categories: ["Smartphones"]
 keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "guide Redmi Note"]     # Pour SEO avancé (balise meta keywords, facultatif).
@@ -28,7 +28,7 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
   <img src="/images/logo_xiaomi.webp" alt="Logo Xiaomi" class="brand-logo-img">
 </div>
 
-### • **Variantes & Dates de sortie :**
+### • **Modèles & Dates de sortie :**
 
 &nbsp;&nbsp;&nbsp;• **Redmi Note 8 (2019) :** 29 août 2019
 
@@ -46,32 +46,26 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
   <label class="swatch">
     <input type="radio" name="color">
-    <span class="color" style="--c:#f5f5f5"></span>
-    <span class="label">Perle blanche</span>
+    <span class="color" style="--c:#141414"></span>
+    <span class="label">Noir spatial</span>
   </label>
 
   <label class="swatch">
     <input type="radio" name="color">
-    <span class="color" style="--c:#2f6b4f"></span>
-    <span class="label">Forêt verte</span>
+    <span class="color" style="--c:#1E4F9B"></span>
+    <span class="label">Bleu Neptune</span>
   </label>
 
   <label class="swatch">
     <input type="radio" name="color">
-    <span class="color" style="--c:#7a7a7a"></span>
-    <span class="label">Minéral gris</span>
+    <span class="color" style="--c:#ECECEC"></span>
+    <span class="label">Blanc lunaire</span>
   </label>
 
   <label class="swatch">
     <input type="radio" name="color">
-    <span class="color" style="--c:#1e4bb8"></span>
-    <span class="label">Bleu océan</span>
-  </label>
-
-  <label class="swatch">
-    <input type="radio" name="color">
-    <span class="color" style="--c:#d44a3a"></span>
-    <span class="label">Orange corail</span>
+    <span class="color" style="--c:#6B3FA0"></span>
+    <span class="label">Violet cosmique/nébuleuse</span>
   </label>
 
 </div> 
@@ -83,19 +77,19 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
   <label class="swatch">
     <input type="radio" name="color">
     <span class="color" style="--c:#f5f5f5"></span>
-    <span class="label">Perle blanche</span>
+    <span class="label">Blanc perle</span>
   </label>
 
   <label class="swatch">
     <input type="radio" name="color">
     <span class="color" style="--c:#2f6b4f"></span>
-    <span class="label">Forêt verte</span>
+    <span class="label">Vert forêt</span>
   </label>
 
   <label class="swatch">
     <input type="radio" name="color">
     <span class="color" style="--c:#7a7a7a"></span>
-    <span class="label">Minéral gris</span>
+    <span class="label">Gris minéral</span>
   </label>
 
   <label class="swatch">
@@ -118,32 +112,20 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
   <label class="swatch">
     <input type="radio" name="color">
-    <span class="color" style="--c:#f5f5f5"></span>
-    <span class="label">Perle blanche</span>
+    <span class="color" style="--c:#D3D8DC"></span>
+    <span class="label">Gris ciel</span>
   </label>
 
   <label class="swatch">
     <input type="radio" name="color">
-    <span class="color" style="--c:#2f6b4f"></span>
-    <span class="label">Forêt verte</span>
+    <span class="color" style="--c:#1E4F9B"></span>
+    <span class="label">Bleu Neptune</span>
   </label>
 
   <label class="swatch">
     <input type="radio" name="color">
-    <span class="color" style="--c:#7a7a7a"></span>
-    <span class="label">Minéral gris</span>
-  </label>
-
-  <label class="swatch">
-    <input type="radio" name="color">
-    <span class="color" style="--c:#1e4bb8"></span>
-    <span class="label">Bleu océan</span>
-  </label>
-
-  <label class="swatch">
-    <input type="radio" name="color">
-    <span class="color" style="--c:#d44a3a"></span>
-    <span class="label">Orange corail</span>
+    <span class="color" style="--c:#ECECEC"></span>
+    <span class="label">Blanc lunaire</span>
   </label>
 
 </div> 
@@ -154,32 +136,20 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
   <label class="swatch">
     <input type="radio" name="color">
-    <span class="color" style="--c:#f5f5f5"></span>
-    <span class="label">Perle blanche</span>
+    <span class="color" style="--c:#1E4F9B"></span>
+    <span class="label">Bleu Neptune</span>
   </label>
 
   <label class="swatch">
     <input type="radio" name="color">
-    <span class="color" style="--c:#2f6b4f"></span>
-    <span class="label">Forêt verte</span>
+    <span class="color" style="--c:#ECECEC"></span>
+    <span class="label">Blanc lunaire</span>
   </label>
 
   <label class="swatch">
     <input type="radio" name="color">
-    <span class="color" style="--c:#7a7a7a"></span>
-    <span class="label">Minéral gris</span>
-  </label>
-
-  <label class="swatch">
-    <input type="radio" name="color">
-    <span class="color" style="--c:#1e4bb8"></span>
-    <span class="label">Bleu océan</span>
-  </label>
-
-  <label class="swatch">
-    <input type="radio" name="color">
-    <span class="color" style="--c:#d44a3a"></span>
-    <span class="label">Orange corail</span>
+    <span class="color" style="--c:#141414"></span>
+    <span class="label">Noir spatial</span>
   </label>
 
 </div> 
@@ -200,27 +170,35 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 ### • **Redmi Note 8 (2019) :** 
 
-&nbsp;&nbsp;&nbsp;• **Processeur :** ...........
+&nbsp;&nbsp;&nbsp;• **Processeur :** Qualcomm Snapdragon 665 Octa-core (4 x 2.0 GHz + 4 x 1.8 GHz)
 
-&nbsp;&nbsp;&nbsp;• **Système d'exploitation :** ...........
+&nbsp;&nbsp;&nbsp;• **Processeur graphique (GPU) :** Adreno 610
+
+&nbsp;&nbsp;&nbsp;• **Système d'exploitation :** MIUI 10 basé sur Android 9 (Pie)
 
 ### • **Redmi Note 8 Pro :** 
 
-&nbsp;&nbsp;&nbsp;• **Processeur :** ...........
+&nbsp;&nbsp;&nbsp;• **Processeur :** MediaTek Helio G90T Octa-core (2 x 2.05 GHz + 6 x 2.0 GHz)
 
-&nbsp;&nbsp;&nbsp;• **Système d'exploitation :** ...........
+&nbsp;&nbsp;&nbsp;• **Processeur graphique (GPU) :** Mali-G76 MC4
+
+&nbsp;&nbsp;&nbsp;• **Système d'exploitation :** MIUI 10 basé sur Android 9 (Pie)
 
 ### • **Redmi Note 8T :** 
 
-&nbsp;&nbsp;&nbsp;• **Processeur :** ...........
+&nbsp;&nbsp;&nbsp;• **Processeur :** Qualcomm Snapdragon 665 Octa-core (4 x 2.0 GHz + 4 x 1.8 GHz)
 
-&nbsp;&nbsp;&nbsp;• **Système d'exploitation :** ...........
+&nbsp;&nbsp;&nbsp;• **Processeur graphique (GPU) :** Adreno 610
+
+&nbsp;&nbsp;&nbsp;• **Système d'exploitation :** MIUI 10 basé sur Android 9 (Pie)
 
 ### • **Redmi Note 8 (2021) :** 
 
-&nbsp;&nbsp;&nbsp;• **Processeur :** ...........
+&nbsp;&nbsp;&nbsp;• **Processeur :** MediaTek Helio G85 Octa-core (4 x 2.0 GHz + 4 x 1.8 GHz)
 
-&nbsp;&nbsp;&nbsp;• **Système d'exploitation :** ...........
+&nbsp;&nbsp;&nbsp;• **Processeur graphique (GPU) :** Mali-G52 MP2
+
+&nbsp;&nbsp;&nbsp;• **Système d'exploitation :** MIUI 12.5 basé sur Android 11
 
 </div> 
 
@@ -230,33 +208,49 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Caméras" bg="/images/logo-bg.webp" >}}
+{{< beamersbox title="Caméras & Résolution vidéo" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
 ### • **Redmi Note 8 (2019) :** 
 
-&nbsp;&nbsp;&nbsp;• **Caméra arrière :** ...........
+&nbsp;&nbsp;&nbsp;• **Caméra arrière :** quadruple 48 MP + 8 MP + 2 MP + 2 MP
 
-&nbsp;&nbsp;&nbsp;• **Caméra frontale :** ...........
+&nbsp;&nbsp;&nbsp;• **Résolution vidéo :** 4K@30fps, 1080p@30/60/120fps
+
+&nbsp;&nbsp;&nbsp;• **Caméra frontale :** simple 13 MP
+
+&nbsp;&nbsp;&nbsp;• **Résolution vidéo :** 1080p@30fps
 
 ### • **Redmi Note 8 Pro :** 
 
-&nbsp;&nbsp;&nbsp;• **Caméra arrière :** ...........
+&nbsp;&nbsp;&nbsp;• **Caméra arrière :** quadruple 64 MP + 8 MP + 2 MP + 2 MP
 
-&nbsp;&nbsp;&nbsp;• **Caméra frontale :** ...........
+&nbsp;&nbsp;&nbsp;• **Résolution vidéo :** 4K@30fps, 1080p@30/60fps
+
+&nbsp;&nbsp;&nbsp;• **Caméra frontale :** simple 20 MP
+
+&nbsp;&nbsp;&nbsp;• **Résolution vidéo :** 1080p@30fps
 
 ### • **Redmi Note 8T :** 
 
-&nbsp;&nbsp;&nbsp;• **Caméra arrière :** ...........
+&nbsp;&nbsp;&nbsp;• **Caméra arrière :** quadruple 48 MP + 8 MP + 2 MP + 2 MP
 
-&nbsp;&nbsp;&nbsp;• **Caméra frontale :** ...........
+&nbsp;&nbsp;&nbsp;• **Résolution vidéo :** 4K@30fps, 1080p@30/60fps
+
+&nbsp;&nbsp;&nbsp;• **Caméra frontale :** simple 13 MP
+
+&nbsp;&nbsp;&nbsp;• **Résolution vidéo :** 1080p@30fps
 
 ### • **Redmi Note 8 (2021) :** 
 
-&nbsp;&nbsp;&nbsp;• **Caméra arrière :** ...........
+&nbsp;&nbsp;&nbsp;• **Caméra arrière :** quadruple 48 MP + 8 MP + 2 MP + 2 MP
 
-&nbsp;&nbsp;&nbsp;• **Caméra frontale :** ...........
+&nbsp;&nbsp;&nbsp;• **Résolution vidéo :** 1080p@30fps
+
+&nbsp;&nbsp;&nbsp;• **Caméra frontale :** simple 13 MP
+
+&nbsp;&nbsp;&nbsp;• **Résolution vidéo :** 1080p@30fps
 
 </div> 
 
@@ -272,27 +266,27 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 ### • **Redmi Note 8 (2019) :** 
 
-&nbsp;&nbsp;&nbsp;• **Stockage :** ...........
+&nbsp;&nbsp;&nbsp;• **RAM :** 3 Go, 4 Go, 6 Go
 
-&nbsp;&nbsp;&nbsp;• **RAM :** ...........
+&nbsp;&nbsp;&nbsp;• **Stockage :** 32 Go, 64 Go, 128 Go
 
 ### • **Redmi Note 8 Pro :** 
 
-&nbsp;&nbsp;&nbsp;• **Stockage :** ...........
+&nbsp;&nbsp;&nbsp;• **RAM :** 6 Go (Europe), 8 Go (Chine, Inde)
 
-&nbsp;&nbsp;&nbsp;• **RAM :** ...........
+&nbsp;&nbsp;&nbsp;• **Stockage :** 64 Go, 128 Go (Europe), 256 Go (Chine, Inde)
 
 ### • **Redmi Note 8T :** 
 
-&nbsp;&nbsp;&nbsp;• **Stockage :** ...........
+&nbsp;&nbsp;&nbsp;• **RAM :** 3 Go, 4 Go
 
-&nbsp;&nbsp;&nbsp;• **RAM :** ...........
+&nbsp;&nbsp;&nbsp;• **Stockage :** 32 Go, 64 Go, 128 Go
 
 ### • **Redmi Note 8 (2021) :** 
 
-&nbsp;&nbsp;&nbsp;• **Stockage :** ...........
+&nbsp;&nbsp;&nbsp;• **RAM :** 4 Go
 
-&nbsp;&nbsp;&nbsp;• **RAM :** ...........
+&nbsp;&nbsp;&nbsp;• **Stockage :** 64 Go, 128 Go
 
 </div> 
 
@@ -308,27 +302,35 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 ### • **Redmi Note 8 (2019) :** 
 
-&nbsp;&nbsp;&nbsp;• **Écran :** ...........
+&nbsp;&nbsp;&nbsp;• **Écran :** IPS LCD, 6.3"
 
-&nbsp;&nbsp;&nbsp;• **Résolution :** ...........
+&nbsp;&nbsp;&nbsp;• **Résolution :** 1080 x 2340 pixels (FHD+)
+
+&nbsp;&nbsp;&nbsp;• **Protection :** Corning Gorilla Glass 5
 
 ### • **Redmi Note 8 Pro :** 
 
-&nbsp;&nbsp;&nbsp;• **Écran :** ...........
+&nbsp;&nbsp;&nbsp;• **Écran :** IPS LCD, 6.53"
 
-&nbsp;&nbsp;&nbsp;• **Résolution :** ...........
+&nbsp;&nbsp;&nbsp;• **Résolution :** 1080 x 2340 pixels (FHD+)
+
+&nbsp;&nbsp;&nbsp;• **Protection :** Corning Gorilla Glass 5
 
 ### • **Redmi Note 8T :** 
 
-&nbsp;&nbsp;&nbsp;• **Écran :** ...........
+&nbsp;&nbsp;&nbsp;• **Écran :** IPS LCD, 6.3"
 
-&nbsp;&nbsp;&nbsp;• **Résolution :** ...........
+&nbsp;&nbsp;&nbsp;• **Résolution :** 1080 x 2340 pixels (FHD+)
+
+&nbsp;&nbsp;&nbsp;• **Protection :** Corning Gorilla Glass 5
 
 ### • **Redmi Note 8 (2021) :** 
 
-&nbsp;&nbsp;&nbsp;• **Écran :** ...........
+&nbsp;&nbsp;&nbsp;• **Écran :** IPS LCD, 6.3"
 
-&nbsp;&nbsp;&nbsp;• **Résolution :** ...........
+&nbsp;&nbsp;&nbsp;• **Résolution :** 1080 x 2340 pixels (FHD+)
+
+&nbsp;&nbsp;&nbsp;• **Protection :** Corning Gorilla Glass 5
 
 </div> 
 
@@ -338,41 +340,33 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Batterie, Autonomie & Chargeur" bg="/images/logo-bg.webp" >}}
+{{< beamersbox title="Batterie & Type de charge" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
 ### • **Redmi Note 8 (2019) :** 
 
-&nbsp;&nbsp;&nbsp;• **Batterie :** ...........
+&nbsp;&nbsp;&nbsp;• **Batterie :** 4000 mAh (Li‑Po)
 
-&nbsp;&nbsp;&nbsp;• **Autonomie :** ...........
-
-&nbsp;&nbsp;&nbsp;• **Chargeur :** ...........
+&nbsp;&nbsp;&nbsp;• **Type de charge :** Charge rapide 18 W
 
 ### • **Redmi Note 8 Pro :** 
 
-&nbsp;&nbsp;&nbsp;• **Batterie :** ...........
+&nbsp;&nbsp;&nbsp;• **Batterie :** 4500 mAh (Li‑Po)
 
-&nbsp;&nbsp;&nbsp;• **Autonomie :** ...........
-
-&nbsp;&nbsp;&nbsp;• **Chargeur :** ...........
+&nbsp;&nbsp;&nbsp;• **Type de charge :** Charge rapide 18 W
 
 ### • **Redmi Note 8T :** 
 
-&nbsp;&nbsp;&nbsp;• **Batterie :** ...........
+&nbsp;&nbsp;&nbsp;• **Batterie :** 4000 mAh (Li‑Po)
 
-&nbsp;&nbsp;&nbsp;• **Autonomie :** ...........
-
-&nbsp;&nbsp;&nbsp;• **Chargeur :** ...........
+&nbsp;&nbsp;&nbsp;• **Type de charge :** Charge rapide 18 W
 
 ### • **Redmi Note 8 (2021) :** 
 
-&nbsp;&nbsp;&nbsp;• **Batterie :** ...........
+&nbsp;&nbsp;&nbsp;• **Batterie :** 4000 mAh (Li‑Po)
 
-&nbsp;&nbsp;&nbsp;• **Autonomie :** ...........
-
-&nbsp;&nbsp;&nbsp;• **Chargeur :** ...........
+&nbsp;&nbsp;&nbsp;• **Type de charge :** Charge rapide 18 W
 
 </div> 
 
@@ -382,33 +376,33 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Port de connexion & Cartes SIM/Carte SD" bg="/images/logo-bg.webp" >}}
+{{< beamersbox title="Ports de connexion" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
 ### • **Redmi Note 8 (2019) :** 
 
-&nbsp;&nbsp;&nbsp;• **Port de connexion :** ...........
+&nbsp;&nbsp;&nbsp;• **Port principal :** USB Type-C
 
-&nbsp;&nbsp;&nbsp;• **Cartes SIM/Carte SD :** ...........
+&nbsp;&nbsp;&nbsp;• **Autres ports :** prise jack 3,5 mm
 
 ### • **Redmi Note 8 Pro :** 
 
-&nbsp;&nbsp;&nbsp;• **Port de connexion :** ...........
+&nbsp;&nbsp;&nbsp;• **Port principal :** USB Type-C
 
-&nbsp;&nbsp;&nbsp;• **Cartes SIM/Carte SD :** ...........
+&nbsp;&nbsp;&nbsp;• **Autres ports :** prise jack 3,5 mm
 
 ### • **Redmi Note 8T :** 
 
-&nbsp;&nbsp;&nbsp;• **Port de connexion :** ...........
+&nbsp;&nbsp;&nbsp;• **Port principal :** USB Type-C
 
-&nbsp;&nbsp;&nbsp;• **Cartes SIM/Carte SD :** ...........
+&nbsp;&nbsp;&nbsp;• **Autres ports :** prise jack 3,5 mm
 
 ### • **Redmi Note 8 (2021) :** 
 
-&nbsp;&nbsp;&nbsp;• **Port de connexion :** ...........
+&nbsp;&nbsp;&nbsp;• **Port principal :** USB Type-C
 
-&nbsp;&nbsp;&nbsp;• **Cartes SIM/Carte SD :** ...........
+&nbsp;&nbsp;&nbsp;• **Autres ports :** prise jack 3,5 mm
 
 </div> 
 
@@ -418,41 +412,93 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Connectivité, Réseaux, NFC" bg="/images/logo-bg.webp" >}}
+{{< beamersbox title="Cartes SIM & Carte microSD" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
 ### • **Redmi Note 8 (2019) :** 
 
-&nbsp;&nbsp;&nbsp;• **Connectivité :** ...........
+&nbsp;&nbsp;&nbsp;• **Cartes SIM :** Dual Nano-SIM
 
-&nbsp;&nbsp;&nbsp;• **Réseaux :** ...........
-
-&nbsp;&nbsp;&nbsp;• **NFC :** ...........
+&nbsp;&nbsp;&nbsp;• **Carte microSD :** emplacement dédié, jusqu’à 256 Go
 
 ### • **Redmi Note 8 Pro :** 
 
-&nbsp;&nbsp;&nbsp;• **Connectivité :** ...........
+&nbsp;&nbsp;&nbsp;• **Cartes SIM :** Dual Nano-SIM (hybride)
 
-&nbsp;&nbsp;&nbsp;• **Réseaux :** ...........
-
-&nbsp;&nbsp;&nbsp;• **NFC :** ...........
+&nbsp;&nbsp;&nbsp;• **Carte microSD :** emplacement hybride (microSD ou Nano-SIM), jusqu’à 256 Go
 
 ### • **Redmi Note 8T :** 
 
-&nbsp;&nbsp;&nbsp;• **Connectivité :** ...........
+&nbsp;&nbsp;&nbsp;• **Cartes SIM :** Dual Nano-SIM
 
-&nbsp;&nbsp;&nbsp;• **Réseaux :** ...........
-
-&nbsp;&nbsp;&nbsp;• **NFC :** ...........
+&nbsp;&nbsp;&nbsp;• **Carte microSD :** emplacement dédié, jusqu’à 256 Go
 
 ### • **Redmi Note 8 (2021) :** 
 
-&nbsp;&nbsp;&nbsp;• **Connectivité :** ...........
+&nbsp;&nbsp;&nbsp;• **Cartes SIM :** Dual Nano-SIM
 
-&nbsp;&nbsp;&nbsp;• **Réseaux :** ...........
+&nbsp;&nbsp;&nbsp;• **Carte microSD :** emplacement dédié, jusqu’à 256 Go
 
-&nbsp;&nbsp;&nbsp;• **NFC :** ...........
+</div> 
+
+{{< /beamersbox >}}
+
+</div> 
+
+<div class="fade-in">
+
+{{< beamersbox title="Réseaux & NFC" bg="/images/logo-bg.webp" >}}
+
+<div class="comparison">
+
+### • **Redmi Note 8 (2019) :** 
+
+&nbsp;&nbsp;&nbsp;• **Réseaux :** 2G / 3G / 4G LTE
+
+&nbsp;&nbsp;&nbsp;• **Wi-Fi :** Wi-Fi 802.11 a/b/g/n/ac (dual-band)
+
+&nbsp;&nbsp;&nbsp;• **Bluetooth :** 4.2
+
+&nbsp;&nbsp;&nbsp;• **GPS :** GPS, A-GPS, GLONASS, BeiDou
+
+&nbsp;&nbsp;&nbsp;• **NFC :** NON
+
+### • **Redmi Note 8 Pro :** 
+
+&nbsp;&nbsp;&nbsp;• **Réseaux :** 2G / 3G / 4G LTE
+
+&nbsp;&nbsp;&nbsp;• **Wi-Fi :** Wi-Fi 802.11 a/b/g/n/ac (dual-band)
+
+&nbsp;&nbsp;&nbsp;• **Bluetooth :** 5.0
+
+&nbsp;&nbsp;&nbsp;• **GPS :** GPS, A-GPS, GLONASS, BeiDou, Galileo
+
+&nbsp;&nbsp;&nbsp;• **NFC :** OUI
+
+### • **Redmi Note 8T :** 
+
+&nbsp;&nbsp;&nbsp;• **Réseaux :** 2G / 3G / 4G LTE
+
+&nbsp;&nbsp;&nbsp;• **Wi-Fi :** Wi-Fi 802.11 a/b/g/n/ac (dual-band)
+
+&nbsp;&nbsp;&nbsp;• **Bluetooth :** 4.2
+
+&nbsp;&nbsp;&nbsp;• **GPS :** GPS, A-GPS, GLONASS, BeiDou
+
+&nbsp;&nbsp;&nbsp;• **NFC :** OUI
+
+### • **Redmi Note 8 (2021) :** 
+
+&nbsp;&nbsp;&nbsp;• **Réseaux :** 2G / 3G / 4G LTE
+
+&nbsp;&nbsp;&nbsp;• **Wi-Fi :** Wi-Fi 802.11 a/b/g/n/ac (dual-band)
+
+&nbsp;&nbsp;&nbsp;• **Bluetooth :** 5.0
+
+&nbsp;&nbsp;&nbsp;• **GPS :** GPS, A-GPS, GLONASS, BeiDou
+
+&nbsp;&nbsp;&nbsp;• **NFC :** NON
 
 </div> 
 
@@ -468,27 +514,27 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 ### • **Redmi Note 8 (2019) :** 
 
-&nbsp;&nbsp;&nbsp;• **Dimensions :** ...........
+&nbsp;&nbsp;&nbsp;• **Dimensions (H × L × P) :** 158,3 × 75,3 × 8,4 mm
 
-&nbsp;&nbsp;&nbsp;• **Poids :** ...........
+&nbsp;&nbsp;&nbsp;• **Poids :** 190 g
 
 ### • **Redmi Note 8 Pro :** 
 
-&nbsp;&nbsp;&nbsp;• **Dimensions :** ...........
+&nbsp;&nbsp;&nbsp;• **Dimensions (H × L × P) :** 163,5 × 76,4 × 8,8 mm
 
-&nbsp;&nbsp;&nbsp;• **Poids :** ...........
+&nbsp;&nbsp;&nbsp;• **Poids :** 200 g
 
 ### • **Redmi Note 8T :** 
 
-&nbsp;&nbsp;&nbsp;• **Dimensions :** ...........
+&nbsp;&nbsp;&nbsp;• **Dimensions (H × L × P) :** 161,1 × 75,4 × 8,6 mm
 
-&nbsp;&nbsp;&nbsp;• **Poids :** ...........
+&nbsp;&nbsp;&nbsp;• **Poids :** 200 g
 
 ### • **Redmi Note 8 (2021) :** 
 
-&nbsp;&nbsp;&nbsp;• **Dimensions :** ...........
+&nbsp;&nbsp;&nbsp;• **Dimensions (H × L × P) :** 158,3 × 75,3 × 8,4 mm
 
-&nbsp;&nbsp;&nbsp;• **Poids :** ...........
+&nbsp;&nbsp;&nbsp;• **Poids :** 190 g
 
 </div> 
 
@@ -498,7 +544,7 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Les quatre cotés" bg="/images/logo-bg.webp" >}}
+{{< beamersbox title="Disposition des boutons & connecteurs" bg="/images/logo-bg.webp" >}}
 
 <!--
 <div class="comparison">
@@ -547,49 +593,82 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 </div>        -->
 
+<div class="comparison">
+
+### • **Similaire pour les quatre modèles :** 
+
+&nbsp;&nbsp;&nbsp;• **Côté Haut :**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ Émetteur infrarouge (IR blaster)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ Microphone secondaire
+
+&nbsp;&nbsp;&nbsp;• **Côté Bas :**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ Prise jack 3,5 mm
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ Port USB-C
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ Haut-parleur
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ Microphone principal
+
+&nbsp;&nbsp;&nbsp;• **Côté Droite :** 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ Bouton marche / arrêt
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ Boutons volume + / −
+
+&nbsp;&nbsp;&nbsp;• **Côté Gauche :** 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ Tiroir SIM / microSD
+
+</div> 
+
+<!--
 <div class="comparison-accordion">
 
 <details>
   <summary> Redmi Note 8 (2019)</summary>
     <ul>
-      <li><strong>Coté droit :</strong> ........</li>
-      <li><strong>Coté gauche :</strong> ........</li>
-      <li><strong>Coté haut :</strong> ........</li>
-      <li><strong>Coté bas :</strong> ........</li>
+      <li><strong>&nbsp;&nbsp;&nbsp;• Haut :</strong> ........</li>
+      <li><strong>&nbsp;&nbsp;&nbsp;• Bas :</strong> ........</li>
+      <li><strong>&nbsp;&nbsp;&nbsp;• Droite :</strong> ........</li>
+      <li><strong>&nbsp;&nbsp;&nbsp;• Gauche :</strong> ........</li>
     </ul>
 </details>
 
 <details>
   <summary> Redmi Note 8 Pro</summary>
     <ul>
-      <li><strong>Coté droit :</strong> ........</li>
-      <li><strong>Coté gauche :</strong> ........</li>
-      <li><strong>Coté haut :</strong> ........</li>
-      <li><strong>Coté bas :</strong> ........</li>
+      <li><strong>&nbsp;&nbsp;&nbsp;• Haut :</strong> ........</li>
+      <li><strong>&nbsp;&nbsp;&nbsp;• Bas :</strong> ........</li>
+      <li><strong>&nbsp;&nbsp;&nbsp;• Droite :</strong> ........</li>
+      <li><strong>&nbsp;&nbsp;&nbsp;• Gauche :</strong> ........</li>
     </ul>
 </details>
 
 <details>
   <summary> Redmi Note 8T</summary>
     <ul>
-      <li><strong>Coté droit :</strong> ........</li>
-      <li><strong>Coté gauche :</strong> ........</li>
-      <li><strong>Coté haut :</strong> ........</li>
-      <li><strong>Coté bas :</strong> ........</li>
+      <li><strong>&nbsp;&nbsp;&nbsp;• Haut :</strong> ........</li>
+      <li><strong>&nbsp;&nbsp;&nbsp;• Bas :</strong> ........</li>
+      <li><strong>&nbsp;&nbsp;&nbsp;• Droite :</strong> ........</li>
+      <li><strong>&nbsp;&nbsp;&nbsp;• Gauche :</strong> ........</li>
     </ul>
 </details>
 
 <details>
   <summary> Redmi Note 8 (2021)</summary>
     <ul>
-      <li><strong>Coté droit :</strong> ........</li>
-      <li><strong>Coté gauche :</strong> ........</li>
-      <li><strong>Coté haut :</strong> ........</li>
-      <li><strong>Coté bas :</strong> ........</li>
+      <li><strong>&nbsp;&nbsp;&nbsp;• Haut :</strong> ........</li>
+      <li><strong>&nbsp;&nbsp;&nbsp;• Bas :</strong> ........</li>
+      <li><strong>&nbsp;&nbsp;&nbsp;• Droite :</strong> ........</li>
+      <li><strong>&nbsp;&nbsp;&nbsp;• Gauche :</strong> ........</li>
     </ul>
 </details>
 
-</div>
+</div>     -->
 
 {{< /beamersbox >}}
 
@@ -597,69 +676,29 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 <div class="fade-in">
 
-{{< beamersbox title="Navigation & Emplacement" bg="/images/logo-bg.webp" >}}
+{{< beamersbox title="Capteurs & Sécurité" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
-### • **Redmi Note 8 (2019) :** 
+### • **Similaire pour les quatre modèles :** 
 
-&nbsp;&nbsp;&nbsp;• **Navigation :** ...........
+&nbsp;&nbsp;&nbsp;• **Capteurs :** 
 
-&nbsp;&nbsp;&nbsp;• **Emplacement :** ...........
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ Accéléromètre
 
-### • **Redmi Note 8 Pro :** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ Gyroscope
 
-&nbsp;&nbsp;&nbsp;• **Navigation :** ...........
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ Capteur de proximité
 
-&nbsp;&nbsp;&nbsp;• **Emplacement :** ...........
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ Capteur de luminosité
 
-### • **Redmi Note 8T :** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ Boussole (magnétomètre)
 
-&nbsp;&nbsp;&nbsp;• **Navigation :** ...........
+&nbsp;&nbsp;&nbsp;• **Sécurité :** 
 
-&nbsp;&nbsp;&nbsp;• **Emplacement :** ...........
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ Lecteur d’empreintes digitales (arrière)
 
-### • **Redmi Note 8 (2021) :** 
-
-&nbsp;&nbsp;&nbsp;• **Navigation :** ...........
-
-&nbsp;&nbsp;&nbsp;• **Emplacement :** ...........
-
-</div> 
-
-{{< /beamersbox >}}
-
-</div> 
-
-<div class="fade-in">
-
-{{< beamersbox title="Audio & Capteurs" bg="/images/logo-bg.webp" >}}
-
-<div class="comparison">
-
-### • **Redmi Note 8 (2019) :** 
-
-&nbsp;&nbsp;&nbsp;• **Audio :** ...........
-
-&nbsp;&nbsp;&nbsp;• **Capteurs :** ...........
-
-### • **Redmi Note 8 Pro :** 
-
-&nbsp;&nbsp;&nbsp;• **Audio :** ...........
-
-&nbsp;&nbsp;&nbsp;• **Capteurs :** ...........
-
-### • **Redmi Note 8T :** 
-
-&nbsp;&nbsp;&nbsp;• **Audio :** ...........
-
-&nbsp;&nbsp;&nbsp;• **Capteurs :** ...........
-
-### • **Redmi Note 8 (2021) :** 
-
-&nbsp;&nbsp;&nbsp;• **Audio :** ...........
-
-&nbsp;&nbsp;&nbsp;• **Capteurs :** ...........
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ Déverrouillage facial (caméra frontale)
 
 </div> 
 
@@ -706,23 +745,59 @@ licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</
 
 ### • **Points positifs :** 
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;**+** Performances générales équilibrées (Snapdragon 665)
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;**+** Écran Full HD+ bien calibré et assez lumineux pour une utilisation quotidienne
+
+&nbsp;&nbsp;&nbsp;**+** Quatre caméras polyvalentes avec capteur principal 48 MP
+
+&nbsp;&nbsp;&nbsp;**+** Bon rapport qualité‑prix dans la gamme moyenne
 
 ### • **Points négatifs :** 
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;**-** Performances modestes pour les jeux exigeants
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;**-** Absence du NFC 
 
-### • **Note globale (⭐/10 ou /5) :** 
+&nbsp;&nbsp;&nbsp;**-** Batterie 4000 mAh correcte mais pas exceptionnelle
 
-&nbsp;&nbsp;&nbsp;• ...........
+### • **Note globale :** 
 
-### • **Pour qui est-ce fait :** 
+<div style="text-align:center; margin:0px 0;">
+  <div class="note" style="
+    display:inline-block;
+    position:relative;
+    padding:15px 30px;
+    border-radius:12px;
+    font-size:1.2em;
+    font-weight:bold;
+    text-align:center;
+    cursor:pointer;
+    color:#6b21a8ff;
+    background-color:#d1fae5ff;
+    overflow:hidden;
+    transition: all 0.4s ease;
+  ">
+    ⭐ 8,0 / 10 ⭐
+  </div>
+</div>
 
-&nbsp;&nbsp;&nbsp;• ...........
+### • **Conclusion :** 
+
+<div style="
+  text-align:center;
+  font-style:italic;
+  font-weight:500;
+  font-size:1.1em;
+  color:#4b0082;
+  margin:0px 0;
+  padding:0; 
+  overflow:hidden;
+  display:inline-block;
+  position:relative;
+">
+  <span class="conclusion-text">Smartphone fiable pour usage quotidien, réseaux sociaux, vidéos, photos occasionnelles, sans besoin de grosses performances</span>
+</div>
 
 </div> 
 
@@ -738,23 +813,59 @@ licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</
 
 ### • **Points positifs :** 
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;**+** Très bonne performance générale, adaptée aux jeux et multitâche
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;**+** Écran lumineux et contrasté pour un smartphone milieu de gamme
+
+&nbsp;&nbsp;&nbsp;**+** Caméra principale 64 MP plus performante et utile, avec options vidéo intéressantes
+
+&nbsp;&nbsp;&nbsp;**+** Bonne autonomie grâce à la batterie 4500 mAh
 
 ### • **Points négatifs :** 
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;**-** Module photo proéminent peut gêner à plat
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;**-** Macro peu utile selon certains tests
 
-### • **Note globale (⭐/10 ou /5) :** 
+&nbsp;&nbsp;&nbsp;**-** Recharge rapide limitée à 18 W (pas très rapide pour certains utilisateurs)
 
-&nbsp;&nbsp;&nbsp;• ...........
+### • **Note globale :** 
 
-### • **Pour qui est-ce fait :** 
+<div style="text-align:center; margin:0px 0;">
+  <div class="note" style="
+    display:inline-block;
+    position:relative;
+    padding:15px 30px;
+    border-radius:12px;
+    font-size:1.2em;
+    font-weight:bold;
+    text-align:center;
+    cursor:pointer;
+    color:#6b21a8ff;
+    background-color:#d1fae5ff;
+    overflow:hidden;
+    transition: all 0.4s ease;
+  ">
+    ⭐ 9,0 / 10 ⭐
+  </div>
+</div>
 
-&nbsp;&nbsp;&nbsp;• ...........
+### • **Conclusion :** 
+
+<div style="
+  text-align:center;
+  font-style:italic;
+  font-weight:500;
+  font-size:1.1em;
+  color:#4b0082;
+  margin:0px 0;
+  padding:0; 
+  overflow:hidden;
+  display:inline-block;
+  position:relative;
+">
+  <span class="conclusion-text">Smartphone à performances élevées, bon jeu mobile, un appareil photo plus performant et une meilleure autonomie dans une tranche de prix abordable</span>
+</div>
 
 </div> 
 
@@ -770,23 +881,59 @@ licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</
 
 ### • **Points positifs :** 
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;**+** Design moderne pour la catégorie
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;**+** Ajout de NFC pour paiements mobiles / titres de transport
+
+&nbsp;&nbsp;&nbsp;**+** Écran IPS lumineux, lisible même en plein soleil
+
+&nbsp;&nbsp;&nbsp;**+** Excellent rapport qualité‑prix
 
 ### • **Points négatifs :** 
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;**-** MIUI peut afficher des publicités dans le système
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;**-** Qualité photo globale correcte mais pas exceptionnelle
 
-### • **Note globale (⭐/10 ou /5) :** 
+&nbsp;&nbsp;&nbsp;**-** Chargeur et autonomie jugés moyens dans certains tests
 
-&nbsp;&nbsp;&nbsp;• ...........
+### • **Note globale :** 
 
-### • **Pour qui est-ce fait :** 
+<div style="text-align:center; margin:0px 0;">
+  <div class="note" style="
+    display:inline-block;
+    position:relative;
+    padding:15px 30px;
+    border-radius:12px;
+    font-size:1.2em;
+    font-weight:bold;
+    text-align:center;
+    cursor:pointer;
+    color:#6b21a8ff;
+    background-color:#d1fae5ff;
+    overflow:hidden;
+    transition: all 0.4s ease;
+  ">
+    ⭐ 8,5 / 10 ⭐
+  </div>
+</div>
 
-&nbsp;&nbsp;&nbsp;• ...........
+### • **Conclusion : ** 
+
+<div style="
+  text-align:center;
+  font-style:italic;
+  font-weight:500;
+  font-size:1.1em;
+  color:#4b0082;
+  margin:0px 0;
+  padding:0; 
+  overflow:hidden;
+  display:inline-block;
+  position:relative;
+">
+  <span class="conclusion-text">Smartphone complet sans trop dépenser, avec NFC, bonnes performances générales et autonomie correcte</span>
+</div>
 
 </div> 
 
@@ -802,23 +949,57 @@ licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</
 
 ### • **Points positifs :** 
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;**+** Mise à jour technique pertinente pour le segment budget, avec un SoC Helio G85 plus récent
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;**+** Même formule éprouvée que Redmi Note 8 original
+
+&nbsp;&nbsp;&nbsp;**+** Compatible microSD, écran FHD+ et lecteur d’empreintes
 
 ### • **Points négatifs :** 
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;**-** Des tests le jugent peu innovant (édition *“plutôt banale”*)
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;**-** Performances photo moyennes par rapport à la concurrence
 
-### • **Note globale (⭐/10 ou /5) :** 
+&nbsp;&nbsp;&nbsp;**-** Pas de grandes améliorations significatives vs modèle précédent
 
-&nbsp;&nbsp;&nbsp;• ...........
+### • **Note globale :** 
 
-### • **Pour qui est-ce fait :** 
+<div style="text-align:center; margin:0px 0;">
+  <div class="note" style="
+    display:inline-block;
+    position:relative;
+    padding:15px 30px;
+    border-radius:12px;
+    font-size:1.2em;
+    font-weight:bold;
+    text-align:center;
+    cursor:pointer;
+    color:#6b21a8ff;
+    background-color:#d1fae5ff;
+    overflow:hidden;
+    transition: all 0.4s ease;
+  ">
+    ⭐ 4 / 10 ⭐
+  </div>
+</div>
 
-&nbsp;&nbsp;&nbsp;• ...........
+### • **Conclusion :** 
+
+<div style="
+  text-align:center;
+  font-style:italic;
+  font-weight:500;
+  font-size:1.1em;
+  color:#4b0082;
+  margin:0px 0;
+  padding:0; 
+  overflow:hidden;
+  display:inline-block;
+  position:relative;
+">
+  <span class="conclusion-text">Smartphone correct pour un usage basique (messages, applications, photos occasionnelles), adapté à un budget très serré</span>
+</div>
 
 </div> 
 
@@ -828,25 +1009,19 @@ licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</
 
 <div class="fade-in">
 
-{{< beamersbox title="Différences entre les variantes" bg="/images/logo-bg.webp" >}}
+{{< beamersbox title="Principales différences entre les modèles" bg="/images/logo-bg.webp" >}}
 
 <div class="comparison">
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;• Performance (processeur)
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;• Qualité de la photo principale
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;• Écran 
 
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;• Batterie
 
-&nbsp;&nbsp;&nbsp;• ...........
-
-&nbsp;&nbsp;&nbsp;• ...........
-
-&nbsp;&nbsp;&nbsp;• ...........
-
-&nbsp;&nbsp;&nbsp;• ...........
+&nbsp;&nbsp;&nbsp;• NFC
 
 </div> 
 
@@ -862,13 +1037,18 @@ licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</
 
 <div class="comparison">
 
+<h3>
+  • <strong class="shop-name">Cdiscount :</strong>
+  <span class="shop-price">voir le prix à jour sur 
+    <a href="https://www.cdiscount.com/telephonie/telephone-mobile/xiaomi-redmi-note-8-4go-64go-blanc/f-14404-xia6941059630869.html" class="tag-link" target="_blank" rel="noopener noreferrer">
+      <img src="/images/cdiscount.svg" alt="Cdiscount" class="shop-logo">
+    </a>
+  </span>
+</h3>
+
 ### • **Amazon :** 
 
-### • **Cdiscount :** 
-
-### • **AliExpress :** 
-
-### • **Darty :** 
+### • **Rakuten :** 
 
 </div> 
 
@@ -955,7 +1135,63 @@ Exemple de tag : Si tu veux consulter le : <a href="https://high-tech.pages.dev/
 
 
 
+<style>
+.note {
+  position: relative;
+  overflow: hidden;
+}
 
+/* Brillance */
+.note::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-20deg);
+  transition: none;
+  z-index:1;
+}
+
+/* Hover */
+.note:hover::before {
+  animation: shine 0.7s forwards;
+}
+
+@keyframes shine {
+  0% { left: -75%; }
+  100% { left: 125%; }
+}
+
+/* Inversion couleurs + agrandissement */
+.note:hover {
+  color: #047857ff !important;        
+  background-color: #ede9feff !important; 
+  transform: scale(1.1); 
+  z-index:2;
+}
+</style>
+
+<style>
+.conclusion-text {
+  display:inline-block;
+  position:relative;
+  animation: fadeInMove 1.2s ease forwards;
+}
+
+@keyframes fadeInMove {
+  0% { opacity:0; transform: translateY(10px); }
+  100% { opacity:1; transform: translateY(0); }
+}
+
+.conclusion-text:hover {
+  color:#6a0dad;        /* change légèrement au hover */
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+</style>
 
 
 
@@ -983,7 +1219,7 @@ Ce qu’est le produit (la marque aussi) et à qui il s’adresse
 
 Position dans le marché : entrée/milieu/haut de gamme
 
- - **Variantes :** 
+ - **Modèles :** 
 	> Redmi Note 8 (2019)
 	Redmi Note 8 Pro
 	Redmi Note 8T
@@ -1031,7 +1267,7 @@ Années de sortie :
 
  - **Dates de sortie :** 
 
-| Variante            | Date de sortie |
+| Modèle            | Date de sortie |
 |---------------------|----------------|
 | Redmi Note 8        | 29 août 2019   |
 | Redmi Note 8 Pro    | 29 août 2019   |
@@ -1050,9 +1286,9 @@ Années de sortie :
     <thead>
       <tr>
         <th>Informations</th>
-        <th>Variante 1</th>
-        <th>Variante 2</th>
-        <th>Variante 3</th>
+        <th>Modèle 1</th>
+        <th>Modèle 2</th>
+        <th>Modèle 3</th>
       </tr>
     </thead>
     <tbody>
@@ -1082,7 +1318,7 @@ Années de sortie :
 <div class="comparison-accordion">
 
 <details>
-  <summary> Variante 1</summary>
+  <summary> Modèle 1</summary>
     <ul>
       <li><strong>Info A :</strong> Valeur 1-A</li>
       <li><strong>Info B :</strong> Valeur 1-B</li>
@@ -1091,7 +1327,7 @@ Années de sortie :
 </details>
 
 <details close>
-  <summary> Variante 2</summary>
+  <summary> Modèle 2</summary>
     <ul>
       <li><strong>Info A :</strong> Valeur 2-A</li>
       <li><strong>Info B :</strong> Valeur 2-B</li>
@@ -1100,7 +1336,7 @@ Années de sortie :
 </details>
 
 <details>
-  <summary> Variante 3</summary>
+  <summary> Modèle 3</summary>
     <ul>
       <li><strong>Info A :</strong> Valeur 3-A</li>
       <li><strong>Info B :</strong> Valeur 3-B</li>
