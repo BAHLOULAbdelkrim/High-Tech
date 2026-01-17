@@ -1,14 +1,14 @@
 ---
-title: "Série Redmi Note 9 – Guide, modèles et spécifications"
+title: "Série Redmi Note 10 – Guide, modèles et spécifications"
 date: 2026-01-10    # année-mois-jour. Pour ajouter l'heure : 2025-01-03T00:00:00+01:00 ===> 00:00:00 heure locale (+1 UTC)
-slug: "redmi-note-9"     # Pour personnaliser l’URL de l’article.
+slug: "redmi-note-10"     # Pour personnaliser l’URL de l’article.
 image: "/images/redmi-note-8-1.webp"
 # image_caption: "Redmi Note 8 version globale"        # Pour afficher la légende de l’image principale.
-description: "Guide complet des smartphones Xiaomi Redmi Note 9 : modèles, caractéristiques techniques, avis et meilleures options d'achat."   # Résumé SEO de l’article en une phrase, qui devrait être courte, percutante et résumer le contenu (doit faire 140–160 caractères). 
-summary: "Guide des modèles de Xiaomi Redmi Note 9"
-tags: ["Redmi Note 9", "Redmi Note 9 Pro", "Xiaomi Redmi", "Smartphone Xiaomi", "Android"]    # Pour catégoriser par mot-clé. Utile pour filtres et SEO. Tags très précis.
+description: "Guide complet des smartphones Xiaomi Redmi Note 10 : modèles, caractéristiques techniques, avis et meilleures options d'achat."   # Résumé SEO de l’article en une phrase, qui devrait être courte, percutante et résumer le contenu (doit faire 140–160 caractères). 
+summary: "Guide des modèles de Xiaomi Redmi Note 10"
+tags: ["Redmi Note 10", "Redmi Note 10 Pro", "Xiaomi Redmi", "Smartphone Xiaomi", "Android"]    # Pour catégoriser par mot-clé. Utile pour filtres et SEO. Tags très précis.
 categories: ["Smartphones"]
-keywords: ["Redmi Note 9", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "guide Redmi Note"]     # Pour SEO avancé (balise meta keywords, facultatif).
+keywords: ["Redmi Note 10", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "guide Redmi Note"]     # Pour SEO avancé (balise meta keywords, facultatif).
 ---
 
 <body id="top">
@@ -1240,9 +1240,9 @@ licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</
 
 ### • **Articles connexes :**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://high-tech.pages.dev/smartphones/xiaomi/redmi-note-8/" target="_blank" rel="noopener noreferrer">Série Redmi Note 9</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://high-tech.pages.dev/smartphones/xiaomi/redmi-note-8/" target="_blank" rel="noopener noreferrer">Série Redmi Note 8</a>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://high-tech.pages.dev/smartphones/xiaomi/redmi-note-10/" target="_blank" rel="noopener noreferrer">Série Redmi Note 10</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://high-tech.pages.dev/smartphones/xiaomi/redmi-note-9/" target="_blank" rel="noopener noreferrer">Série Redmi Note 9</a>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://high-tech.pages.dev/smartphones/xiaomi/redmi-note-11/" target="_blank" rel="noopener noreferrer">Série Redmi Note 11</a>
 
@@ -1254,11 +1254,11 @@ licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</
 
 ### • **Liens externes :**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://www.mi.com/fr/redmi-note-9-pro/specs/" target="_blank" rel="noopener noreferrer">Fiche officielle Redmi Note 9 Pro (Xiaomi)</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://www.mi.com/fr/redmi-note-10-pro/specs/" target="_blank" rel="noopener noreferrer">Fiche officielle Redmi Note 10 Pro (Xiaomi)</a>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://www.mi.com/fr/redmi-note-9-t/specs/" target="_blank" rel="noopener noreferrer">Fiche officielle Redmi Note 9T (Xiaomi)</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://www.mi.com/fr/redmi-note-10-t/specs/" target="_blank" rel="noopener noreferrer">Fiche officielle Redmi Note 10T (Xiaomi)</a>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://www.mi.com/fr/product/redmi-note-9/specs/" target="_blank" rel="noopener noreferrer">Fiche officielle Redmi Note 9 (Xiaomi)</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://www.mi.com/fr/product/redmi-note-10/specs/" target="_blank" rel="noopener noreferrer">Fiche officielle Redmi Note 10 (Xiaomi)</a>
 
 {{< /beamersbox >}}
 

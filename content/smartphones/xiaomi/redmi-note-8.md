@@ -11,6 +11,8 @@ categories: ["Smartphones"]
 keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "guide Redmi Note"]     # Pour SEO avancé (balise meta keywords, facultatif).
 ---
 
+<body id="top">
+
 ## Aperçu général
 
 <div class="fade-in">
@@ -159,6 +161,10 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 {{< /beamersbox >}}
 
 </div>
+
+<p style="text-align:center;">
+  <a href="#top">🔝 Revenir en haut</a>
+</p>
 
 ## Spécifications techniques
 
@@ -706,6 +712,10 @@ keywords: ["Redmi Note 8", "Xiaomi Redmi Note série", "Smartphone Xiaomi", "gui
 
 </div> 
 
+<p style="text-align:center;">
+  <a href="#top">🔝 Revenir en haut</a>
+</p>
+
 ## Galerie de photos
 
 <div class="fade-in">
@@ -1029,6 +1039,10 @@ licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</
 
 </div> 
 
+<p style="text-align:center;">
+  <a href="#top">🔝 Revenir en haut</a>
+</p>
+
 ## Où acheter ? 
 
 <div class="fade-in">
@@ -1039,16 +1053,30 @@ licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</
 
 <h3>
   • <strong class="shop-name">Cdiscount :</strong>
-  <span class="shop-price">voir le prix à jour sur 
+  <span class="shop-price">voir le prix à jour du Redmi Note 8 (2019) sur 
     <a href="https://www.cdiscount.com/telephonie/telephone-mobile/xiaomi-redmi-note-8-4go-64go-blanc/f-14404-xia6941059630869.html" class="tag-link" target="_blank" rel="noopener noreferrer">
       <img src="/images/cdiscount.svg" alt="Cdiscount" class="shop-logo">
     </a>
   </span>
 </h3>
 
-### • **Amazon :** 
+<h3>
+  • <strong class="shop-name">Amazon :</strong>
+  <span class="shop-price">voir le prix à jour du Redmi Note 8 (2019) sur 
+    <a href="https://www.amazon.fr/xiaomi-Redmi-Note-64GB-White/dp/B07YJHXZT6" class="tag-link" target="_blank" rel="noopener noreferrer">
+      <img src="/images/amazon.svg" alt="Amazon" class="shop-logo">
+    </a>
+  </span>
+</h3>
 
-### • **Rakuten :** 
+<h3>
+  • <strong class="shop-name">Rakuten :</strong>
+  <span class="shop-price">voir le prix à jour du Redmi Note 8 (2019) sur 
+    <a href="https://fr.shopping.rakuten.com/mfp/6017527/xiaomi-redmi-note-8?pid=4258296297&fbbaid=16242077462&t=180108&csp" class="tag-link" target="_blank" rel="noopener noreferrer">
+      <img src="/images/rakuten.svg" alt="Rakuten" class="shop-logo">
+    </a>
+  </span>
+</h3>
 
 </div> 
 
@@ -1062,13 +1090,50 @@ licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</
 
 <div class="comparison">
 
-### • **Amazon :** 
+<h3>
+  • <strong class="shop-name">Xiaomi :</strong>
+  <span class="shop-price">voir le prix à jour du Redmi Note 8 Pro sur 
+    <a href="https://www.mi.com/fr/redmi-note-8-pro/" class="tag-link" target="_blank" rel="noopener noreferrer">
+      <img src="/images/xiaomi.svg" alt="Xiaomi" class="shop-logo">
+    </a>
+  </span>
+</h3>
 
-### • **Cdiscount :** 
+<h3>
+  • <strong class="shop-name">Amazon :</strong>
+  <span class="shop-price">voir le prix à jour du Redmi Note 8 Pro sur 
+    <a href="https://www.amazon.fr/Xiaomi-Processeur-Octa-Core-Arri%C3%A8re-Version/dp/B07XY26LDR" class="tag-link" target="_blank" rel="noopener noreferrer">
+      <img src="/images/amazon.svg" alt="Amazon" class="shop-logo">
+    </a>
+  </span>
+</h3>
 
-### • **AliExpress :** 
+<h3>
+  • <strong class="shop-name">Darty :</strong>
+  <span class="shop-price">voir le prix à jour du Redmi Note 8 Pro sur 
+    <a href="https://www.darty.com/nav/achat/ref/MC342339264.html?ofmp=1182084121&dartycid=sem_free-listing_MP-telephonie-et-mobilite_telephone-mobile" class="tag-link" target="_blank" rel="noopener noreferrer">
+      <img src="/images/darty.svg" alt="Darty" class="shop-logo">
+    </a>
+  </span>
+</h3>
 
-### • **Darty :** 
+<h3>
+  • <strong class="shop-name">Fnac :</strong>
+  <span class="shop-price">voir le prix à jour du Redmi Note 8 Pro sur 
+    <a href="https://www.fnac.com/mp42339264/Xiaomi-Redmi-Note-8-Pro-4G-smartphone-double-SIM-RAM-6-Go-Memoire-interne-64-Go-Ecran-LCD-6-53-2340-x-1080-pixels-4x-cameras-arriere-64-MP-8-MP-2-MP-2-MP-front-camera-20-MP-gris-mineral/w-4?oref=486cb0d2-6ed6-515a-611e-2dbf8aec3ecd&Origin=CMP_GOOGLE_FL_GPS" class="tag-link" target="_blank" rel="noopener noreferrer">
+      <img src="/images/fnac.svg" alt="Fnac" class="shop-logo">
+    </a>
+  </span>
+</h3>
+
+<h3>
+  • <strong class="shop-name">Rue du Commerce :</strong>
+  <span class="shop-price">voir le prix à jour du Redmi Note 8 Pro sur 
+    <a href="https://www.rueducommerce.fr/p/r24060010816.html" class="tag-link" target="_blank" rel="noopener noreferrer">
+      <img src="/images/rue-commerce.svg" alt="Rue du Commerce" class="shop-logo">
+    </a>
+  </span>
+</h3>
 
 </div> 
 
@@ -1082,13 +1147,41 @@ licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</
 
 <div class="comparison">
 
-### • **Amazon :** 
+<h3>
+  • <strong class="shop-name">Xiaomi :</strong>
+  <span class="shop-price">voir le prix à jour du Redmi Note 8T sur 
+    <a href="https://www.mi.com/fr/redmi-note-8-t/" class="tag-link" target="_blank" rel="noopener noreferrer">
+      <img src="/images/xiaomi.svg" alt="Xiaomi" class="shop-logo">
+    </a>
+  </span>
+</h3>
 
-### • **Cdiscount :** 
+<h3>
+  • <strong class="shop-name">Amazon :</strong>
+  <span class="shop-price">voir le prix à jour du Redmi Note 8T sur 
+    <a href="https://www.amazon.fr/Xiaomi-Redmi-Note-Dual-64GB/dp/B07ZHFYXP6/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&sr=8-1" class="tag-link" target="_blank" rel="noopener noreferrer">
+      <img src="/images/amazon.svg" alt="Amazon" class="shop-logo">
+    </a>
+  </span>
+</h3>
 
-### • **AliExpress :** 
+<h3>
+  • <strong class="shop-name">Rue du Commerce :</strong>
+  <span class="shop-price">voir le prix à jour du Redmi Note 8T sur 
+    <a href="https://www.rueducommerce.fr/p/r24060010739.html?utm_content=&gad_campaignid=23114503158" class="tag-link" target="_blank" rel="noopener noreferrer">
+      <img src="/images/rue-commerce.svg" alt="Rue du Commerce" class="shop-logo">
+    </a>
+  </span>
+</h3>
 
-### • **Darty :** 
+<h3>
+  • <strong class="shop-name">Rakuten :</strong>
+  <span class="shop-price">voir le prix à jour du Redmi Note 8T reconditionné sur 
+    <a href="https://fr.shopping.rakuten.com/mfp/6469040/xiaomi-redmi-note-8t?pid=4328591099&fbbaid=16564223247&t=10059822&csp&t=43095704&gad_source=1&gad_campaignid=17339245387&gbraid=0AAAAADrTKD8Zu9CifcwBbEPAYeVB34hFM" class="tag-link" target="_blank" rel="noopener noreferrer">
+      <img src="/images/rakuten.svg" alt="Rakuten" class="shop-logo">
+    </a>
+  </span>
+</h3>
 
 </div> 
 
@@ -1102,13 +1195,32 @@ licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</
 
 <div class="comparison">
 
-### • **Amazon :** 
+<h3>
+  • <strong class="shop-name">Amazon :</strong>
+  <span class="shop-price">voir le prix à jour du Redmi Note 8 (2021) sur 
+    <a href="https://www.amazon.fr/Xiaomi-Redmi-Note-Smartphone-Space/dp/B0968GPTYM" class="tag-link" target="_blank" rel="noopener noreferrer">
+      <img src="/images/amazon.svg" alt="Amazon" class="shop-logo">
+    </a>
+  </span>
+</h3>
 
-### • **Cdiscount :** 
+<h3>
+  • <strong class="shop-name">Cdiscount :</strong>
+  <span class="shop-price">voir le prix à jour du Redmi Note 8 reconditionné sur 
+    <a href="https://www.cdiscount.com/telephonie/telephone-mobile/xiaomi-redmi-note-8-2021-64-go-noir-2021-recon/f-1440402-rcdxia0283467ec.html" class="tag-link" target="_blank" rel="noopener noreferrer">
+      <img src="/images/cdiscount.svg" alt="Cdiscount" class="shop-logo">
+    </a>
+  </span>
+</h3>
 
-### • **AliExpress :** 
-
-### • **Darty :** 
+<h3>
+  • <strong class="shop-name">AliExpress :</strong>
+  <span class="shop-price">voir le prix à jour du Redmi Note 8 reconditionné sur 
+    <a href="https://fr.aliexpress.com/item/1005007907999378.html?spm=a2g0o.tesla.0.0.2851oZQZoZQZFT&pdp_npi=6%40dis%21EUR%2164%2C05%E2%82%AC%2161%2C99%E2%82%AC%21%21%21%21%21%40211b655217686828872367418e0723%2112000042795610947%21btfpre%21%21%21%211%210%21&afTraceInfo=1005007907999378__pc__c_ppc_item_bridge_pc_main__9fIyTwt__1768682887339&gatewayAdapt=glo2fra" class="tag-link" target="_blank" rel="noopener noreferrer">
+      <img src="/images/aliexpress.svg" alt="AliExpress" class="shop-logo">
+    </a>
+  </span>
+</h3>
 
 </div> 
 
@@ -1116,21 +1228,47 @@ licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</
 
 </div> 
 
-## Voir aussi
+<p style="text-align:center;">
+  <a href="#top">🔝 Revenir en haut</a>
+</p>
+
+## Ressources complémentaires
 
 <div class="fade-in">
 
-Articles sur la série suivante (ex : Redmi Note 9)
+{{< beamersbox title="Ressources complémentaires" bg="/images/logo-bg.webp" >}}
 
-Comparatifs entre séries
+### • **Articles connexes :**
 
-Autres gammes Xiaomi
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://high-tech.pages.dev/smartphones/xiaomi/redmi-note-9/" target="_blank" rel="noopener noreferrer">Série Redmi Note 9</a>
 
-Comparatifs, modèles similaires, autres gammes (ex : Redmi Note 8 vs Redmi Note 9)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://high-tech.pages.dev/smartphones/xiaomi/redmi-note-10/" target="_blank" rel="noopener noreferrer">Série Redmi Note 10</a>
 
-Exemple de tag : Si tu veux consulter le : <a href="https://high-tech.pages.dev/smartphones/android/redmi-note-9/" class="tag-link">Redmi Note 9</a> est ........
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://high-tech.pages.dev/smartphones/xiaomi/redmi-note-11/" target="_blank" rel="noopener noreferrer">Série Redmi Note 11</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://high-tech.pages.dev/smartphones/xiaomi/redmi-note-12/" target="_blank" rel="noopener noreferrer">Série Redmi Note 12</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://high-tech.pages.dev/smartphones/xiaomi/redmi-note-13/" target="_blank" rel="noopener noreferrer">Série Redmi Note 13</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://high-tech.pages.dev/smartphones/xiaomi/redmi-note-14/" target="_blank" rel="noopener noreferrer">Série Redmi Note 14</a>
+
+### • **Liens externes :**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://www.mi.com/fr/redmi-note-8-pro/specs/" target="_blank" rel="noopener noreferrer">Fiche officielle Redmi Note 8 Pro (Xiaomi)</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://www.mi.com/fr/redmi-note-8-t/specs/" target="_blank" rel="noopener noreferrer">Fiche officielle Redmi Note 8T (Xiaomi)</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦ <a href="https://www.mi.com/fr/product/redmi-note-8-2021/specs/" target="_blank" rel="noopener noreferrer">Fiche officielle Redmi Note 8 (2021) (Xiaomi)</a>
+
+{{< /beamersbox >}}
 
 </div>
+
+
+
+<p style="text-align:center;">
+  <a href="#top">🔝 Revenir en haut</a>
+</p>
 
 
 
