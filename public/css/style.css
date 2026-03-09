@@ -597,11 +597,11 @@ article a:hover,
 }
 
 .img-row img {
-  height: 250px;
+  height: 350px;
   width: auto;
 }
 
-/* 📱 Mobile uniquement */
+/* 📱 Mobile uniquement */ 
 @media (max-width: 900px) {
   .img-row > div {
     flex-direction: column !important;
@@ -614,3 +614,124 @@ article a:hover,
     max-width: 350px;
   }
 }
+
+
+
+
+
+
+
+.note {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Brillance */
+.note::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-20deg);
+  transition: none;
+  z-index:1;
+}
+
+/* Hover */
+.note:hover::before {
+  animation: shine 0.7s forwards;
+}
+
+@keyframes shine {
+  0% { left: -75%; }
+  100% { left: 125%; }
+}
+
+/* Inversion couleurs + agrandissement */
+.note:hover {
+  color: #047857ff !important;        
+  background-color: #ede9feff !important; 
+  transform: scale(1.1); 
+  z-index:2;
+}
+
+
+
+.conclusion-text {
+  display:inline-block;
+  position:relative;
+  animation: fadeInMove 1.2s ease forwards;
+}
+
+@keyframes fadeInMove {
+  0% { opacity:0; transform: translateY(10px); }
+  100% { opacity:1; transform: translateY(0); }
+}
+
+.conclusion-text:hover {
+  color:#6a0dad;        /* change légèrement au hover */
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+
+
+
+/* Rendre les images de l'article cliquables */ 
+
+/* Curseur pointer */
+.clickable-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.clickable-img:hover {
+  transform: scale(1.03);
+}
+
+/* Overlay */
+.image-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Image agrandie */
+.image-modal img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  animation: zoomIn 0.3s ease;
+}
+
+/* Bouton fermer */
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #d1fae5ff;
+  color: rgb(92, 25, 146);
+  font-size: 30px;
+  font-weight: bold;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+
+
+

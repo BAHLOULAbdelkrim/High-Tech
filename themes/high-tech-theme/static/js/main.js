@@ -114,3 +114,37 @@ document.querySelectorAll('.beamer-box').forEach(box => {
 });
 
 
+
+// ============================
+// Rendre les images cliquables 
+// ============================
+
+const images = document.querySelectorAll(".clickable-img");
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImage");
+const closeBtn = document.getElementById("closeModal");
+
+images.forEach(img => {
+  img.addEventListener("click", function() {
+    modal.style.display = "flex";
+    modalImg.src = this.src;
+    document.body.style.overflow = "hidden";
+  });
+});
+
+closeBtn.addEventListener("click", function() {
+  modal.style.display = "none";
+  document.body.style.overflow = "auto";
+});
+
+modal.addEventListener("click", function(e) {
+  if (e.target === modal) {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+});
+
+
+
+
+

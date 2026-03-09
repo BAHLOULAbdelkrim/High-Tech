@@ -20,7 +20,7 @@
 
 .beamer-title {
     border: none;           /* supprime le trait sous le titre */
-    background-color: #d1fae5ff;   /* couleur CambridgeUS (bleu foncé) */
+    background-color: #d1fae5ff;  
     color: #6b21a8ff;
     font-weight: bold;
     padding: 0.75rem 1rem;
